@@ -1,0 +1,26 @@
+* {
+    font-family: monospace,monospace;
+}
+
+/** Scrollbar **/
+*::-webkit-scrollbar {
+    background-color: #fff;
+    height: 4px;
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #fff
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+    border-radius: 4px
+}
+
+pre {
+    font-size: 1em;
+    background: #f0f5fe;
+    padding: 20px;
+    white-space: pre-line;
+}
