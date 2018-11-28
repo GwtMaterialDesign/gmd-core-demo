@@ -39,20 +39,6 @@
             <m:MaterialButton margin="8" text="Disabled" waves="LIGHT" iconType="POLYMER" iconPosition="RIGHT" enabled="false"/>
             <m:MaterialButton margin="8" text="Warn" waves="LIGHT" backgroundColor="RED" textColor="WHITE" iconType="POLYMER" iconPosition="RIGHT"/>
             <m:MaterialButton margin="8" text="Icon Color" waves="RED" backgroundColor="WHITE" textColor="BLACK" iconType="POLYMER" iconPosition="RIGHT" iconColor="RED"/>
-            
-            <g:HTMLPanel>
-                <pre>
-                    &lt;m:MaterialButton margin="8" text="Button" waves="DEFAULT" backgroundColor="WHITE"  textColor="BLACK"/>
-
-                    &lt;m:MaterialButton margin="8" text="Primary" waves="LIGHT" textColor="WHITE" iconType="POLYMER" iconPosition="LEFT"/>
-
-                    &lt;m:MaterialButton margin="8" text="Disabled" waves="LIGHT" iconType="POLYMER" iconPosition="RIGHT" enabled="false"/>
-
-                    &lt;m:MaterialButton margin="8" text="Warn" waves="LIGHT" backgroundColor="RED" textColor="WHITE" iconType="POLYMER" iconPosition="RIGHT"/>
-
-                    &lt;m:MaterialButton margin="8" text="Icon Color" waves="RED" backgroundColor="WHITE" textColor="BLACK" iconType="POLYMER" iconPosition="RIGHT" iconColor="RED"/>
-                </pre>
-            </g:HTMLPanel>
         </m:MaterialPanel>
     </m:MaterialPanel>
 </ui:UiBinder>
