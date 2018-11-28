@@ -1,6 +1,6 @@
 #!/bin/bash
 set -ev
-if [ "$TRAVIS_JDK_VERSION" == "oraclejdk8" ]  && [ "$TRAVIS_BRANCH" == "release_2.2" ]; then
+if [ "$TRAVIS_JDK_VERSION" == "oraclejdk8" ]  && [ "$TRAVIS_BRANCH" == "master" ]; then
 
 if [[ -z "$GH_TOKEN" ]]; then
 echo -e "GH_TOKEN is not set"
@@ -33,8 +33,8 @@ fi
 if [[ -d ./META-INF ]]; then
 git rm -rf ./META-INF
 fi
-if [[ -d ./snapshot/WEB-INF ]]; then
-git rm -rf ./snapshot/WEB-INF
+if [[ -d ./WEB-INF ]]; then
+git rm -rf ./WEB-INF
 fi
 
 # copy the new GmdCoreDemo the snapshot dir.
