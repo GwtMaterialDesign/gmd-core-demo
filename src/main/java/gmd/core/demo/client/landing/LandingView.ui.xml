@@ -18,9 +18,12 @@
   #L%
   -->
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-        xmlns:m='urn:import:gwt.material.design.client.ui'>
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:m="urn:import:gwt.material.design.client.ui">
+
+    <ui:with field="res" type="gmd.core.demo.client.resources.AppResources"/>
 
     <m:MaterialPanel>
-        <m:MaterialTitle title="Buttons" description="Some description" />
+        <m:MaterialContainer ui:field="container" paddingTop="64" />
     </m:MaterialPanel>
 </ui:UiBinder>

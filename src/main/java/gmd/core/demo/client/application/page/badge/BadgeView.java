@@ -17,14 +17,20 @@
  * limitations under the License.
  * #L%
  */
-package gmd.core.demo.client.application.home;
+package gmd.core.demo.client.application.page.badge;
 
-import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
+import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.user.client.ui.Widget;
+import com.gwtplatform.mvp.client.ViewImpl;
 
-public class HomeModule extends AbstractPresenterModule {
-    @Override
-    protected void configure() {
-        bindPresenter(HomePresenter.class, HomePresenter.MyView.class, HomeView.class,
-                HomePresenter.MyProxy.class);
+import javax.inject.Inject;
+
+public class BadgeView extends ViewImpl implements BadgePresenter.MyView {
+    interface Binder extends UiBinder<Widget, BadgeView> {
+    }
+
+    @Inject
+    BadgeView(Binder uiBinder) {
+        initWidget(uiBinder.createAndBindUi(this));
     }
 }

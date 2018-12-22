@@ -38,7 +38,7 @@ git rm -rf ./WEB-INF
 fi
 
 # copy the new GmdCoreDemo the snapshot dir.
-unzip -u $TRAVIS_BUILD_DIR/target/GmdCoreDemo-*.war -d ./
+unzip -u $TRAVIS_BUILD_DIR/target/GmdCoreDemo*.war -d ./
 rm -rf ./META-INF
 rm -rf ./WEB-INF
 

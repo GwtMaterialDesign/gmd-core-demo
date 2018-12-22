@@ -17,14 +17,16 @@
  * limitations under the License.
  * #L%
  */
-package gmd.core.demo.client.resources;
+package gmd.core.demo.client.landing;
 
-import javax.inject.Inject;
+import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
-public class ResourceLoader {
+public class LandingModule extends AbstractPresenterModule {
 
-    @Inject
-    ResourceLoader(AppResources appResources) {
-        appResources.normalize().ensureInjected();
+    @Override
+    protected void configure() {
+
+        bindPresenter(LandingPresenter.class, LandingPresenter.MyView.class, LandingView.class,
+                LandingPresenter.MyProxy.class);
     }
 }

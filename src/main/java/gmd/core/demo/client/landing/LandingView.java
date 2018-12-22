@@ -17,22 +17,25 @@
  * limitations under the License.
  * #L%
  */
-package gmd.core.demo.client.application.button;
+package gmd.core.demo.client.landing;
 
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
+import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gmd.core.demo.client.application.annotation.PageData;
+import gwt.material.design.client.ui.MaterialContainer;
 
-import javax.inject.Inject;
-
-@PageData(title = "Button", description = "Some description")
-public class ButtonView extends ViewImpl implements ButtonPresenter.MyView {
-    interface Binder extends UiBinder<Widget, ButtonView> {
+public class LandingView extends ViewImpl implements LandingPresenter.MyView {
+    interface Binder extends UiBinder<Widget, LandingView> {
     }
 
+    @UiField
+    MaterialContainer container;
+
     @Inject
-    ButtonView(Binder uiBinder) {
+    LandingView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+        bindSlot(LandingPresenter.SLOT_MAIN, container);
     }
 }

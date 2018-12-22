@@ -17,17 +17,14 @@
  * limitations under the License.
  * #L%
  */
-package gmd.core.demo.client.resources;
+package gmd.core.demo.client.application.page.badge;
 
-import com.google.gwt.core.client.GWT;
-import com.google.gwt.resources.client.ClientBundle;
-import com.google.gwt.resources.client.CssResource;
-import com.google.gwt.resources.client.TextResource;
+import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
-public interface AppResources extends ClientBundle {
-
-    AppResources INSTANCE = GWT.create(AppResources.class);
-
-    @Source("css/app.css")
-    TextResource appCss();
+public class BadgeModule extends AbstractPresenterModule {
+    @Override
+    protected void configure() {
+        bindPresenter(BadgePresenter.class, BadgePresenter.MyView.class, BadgeView.class,
+                BadgePresenter.MyProxy.class);
+    }
 }

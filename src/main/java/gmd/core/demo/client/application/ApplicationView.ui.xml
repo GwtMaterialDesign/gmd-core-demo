@@ -25,27 +25,43 @@
 
     <m:MaterialPanel>
         <m:MaterialHeader layoutPosition="FIXED" width="100%" top="0">
-            <m:MaterialNavBar ui:field="navBar" activates="sidenav" backgroundColor="WHITE">
-                <m:MaterialNavBrand fontSize="1.2em" textColor="BLACK">
-                    <m:MaterialImage url="/launcher-icons/launcher1x.png" alt="logo" float="LEFT" width="60px"/>
-                    <m:MaterialPanel>
-                        <m:MaterialLabel text="gwt-material" textColor="BLACK" fontWeight="BOLD" lineHeight="24" marginTop="12"/>
-                        <m:MaterialLabel text="Version 2.2" lineHeight="12" fontSize="0.6em"/>
-                    </m:MaterialPanel>
+            <m:MaterialNavBar ui:field="navBar" activates="right-sidenav" backgroundColor="WHITE" overflow="HIDDEN">
+                <m:MaterialNavBrand>
+                    <m:MaterialLabel ui:field="navBrand" text="Core" textColor="BLACK" fontSize="0.8em"/>
                 </m:MaterialNavBrand>
                 <m:MaterialNavSection float="RIGHT">
-                    <m:MaterialLink text="CORE" textColor="BLACK"/>
-                    <m:MaterialLink text="ADDINS" textColor="BLACK"/>
-                    <m:MaterialLink text="TABLE" textColor="BLACK"/>
                     <m:MaterialLink ui:field="install" visible="false" text="INSTALL" />
                 </m:MaterialNavSection>
             </m:MaterialNavBar>
         </m:MaterialHeader>
 
-        <m:MaterialContainer ui:field="container" paddingTop="64" />
+        <m:MaterialSideNavPush ui:field="sidenav" m:id="right-sidenav" width="300">
+            <m:MaterialSideNavContent ui:field="home" height="60px">
+                <m:MaterialImage url="/launcher-icons/launcher1x.png" alt="logo" float="LEFT" width="32px" marginRight="20"/>
+                <m:MaterialPanel>
+                    <m:MaterialLabel text="gwt-material" textColor="BLACK" fontWeight="BOLD" lineHeight="24" marginTop="12"/>
+                    <m:MaterialLabel text="Version 2.2" lineHeight="12" fontSize="0.8em"/>
+                </m:MaterialPanel>
+            </m:MaterialSideNavContent>
+        </m:MaterialSideNavPush>
 
-        <m:MaterialFAB>
-            <m:MaterialButton ui:field="btnAdd" iconType="FILE_DOWNLOAD" type="FLOATING" size="LARGE" backgroundColor="WHITE" iconColor="GREY_DARKEN_4"/>
-        </m:MaterialFAB>
+
+        <m:MaterialContainer paddingTop="64">
+            <m:MaterialRow>
+                <m:MaterialColumn grid="s12 m10 l10">
+                    <m:MaterialPanel padding="40">
+                        <m:MaterialLabel ui:field="title" fontSize="2.4em" />
+                        <m:MaterialLabel ui:field="description" marginBottom="20"/>
+                        <m:MaterialRow marginBottom="0">
+                            <m:MaterialAnchorButton ui:field="javaSource" text="Java" paddingLeft="0" customIconType="fab fa-java" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
+                            <m:MaterialAnchorButton ui:field="xmlSource" text="XML" iconType="CODE" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
+                        </m:MaterialRow>
+                    </m:MaterialPanel>
+
+                    <m:MaterialPanel ui:field="container"/>
+                </m:MaterialColumn>
+            </m:MaterialRow>
+        </m:MaterialContainer>
+
     </m:MaterialPanel>
 </ui:UiBinder>

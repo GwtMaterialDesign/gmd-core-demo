@@ -17,7 +17,7 @@
  * limitations under the License.
  * #L%
  */
-package gmd.core.demo.client.application.button;
+package gmd.core.demo.client.application.page.badge;
 
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
@@ -25,24 +25,27 @@ import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
+import com.gwtplatform.mvp.client.proxy.PlaceManager;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import gmd.core.demo.client.application.ApplicationPresenter;
+import gmd.core.demo.client.application.page.AppPresenter;
 import gmd.core.demo.client.place.NameTokens;
 
-public class ButtonPresenter extends Presenter<ButtonPresenter.MyView, ButtonPresenter.MyProxy> {
+public class BadgePresenter extends AppPresenter<BadgePresenter.MyView, BadgePresenter.MyProxy> {
     interface MyView extends View {
     }
 
     @ProxyStandard
-    @NameToken(NameTokens.BUTTON)
-    interface MyProxy extends ProxyPlace<ButtonPresenter> {
+    @NameToken(NameTokens.BADGE)
+    interface MyProxy extends ProxyPlace<BadgePresenter> {
     }
 
     @Inject
-    ButtonPresenter(
+    BadgePresenter(
             EventBus eventBus,
             MyView view,
-            MyProxy proxy) {
-        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
+            MyProxy proxy,
+            PlaceManager placeManager) {
+        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN, placeManager);
     }
 }

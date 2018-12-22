@@ -17,37 +17,21 @@
  * limitations under the License.
  * #L%
  */
-package gmd.core.demo.client.application.home;
+package gmd.core.demo.client.application.page.button;
+
+import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.user.client.ui.Widget;
+import com.gwtplatform.mvp.client.ViewImpl;
 
 import javax.inject.Inject;
 
-import com.google.gwt.uibinder.client.UiBinder;
-import com.google.gwt.uibinder.client.UiField;
-import com.google.gwt.user.client.ui.Widget;
-import com.gwtplatform.mvp.client.ViewImpl;
-import gmd.core.demo.client.application.navigation.Dashboard;
-import gmd.core.demo.client.application.widget.DashboardCard;
-import gwt.material.design.client.ui.MaterialRow;
-
-import java.util.List;
-
-public class HomeView extends ViewImpl implements HomePresenter.MyView {
-
-    interface Binder extends UiBinder<Widget, HomeView> {
+public class ButtonView extends ViewImpl implements ButtonPresenter.MyView {
+    interface Binder extends UiBinder<Widget, ButtonView> {
     }
 
-    @UiField
-    MaterialRow dashboardsRow;
-
     @Inject
-    HomeView(Binder uiBinder) {
+    ButtonView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
 
-    @Override
-    public void buildDashboards(List<Dashboard> dashboards) {
-        dashboards.forEach(dashboard -> {
-            dashboardsRow.add(new DashboardCard(dashboard));
-        });
-    }
 }

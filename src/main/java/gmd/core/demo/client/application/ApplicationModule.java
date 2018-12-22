@@ -20,9 +20,9 @@
 package gmd.core.demo.client.application;
 
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
-import gmd.core.demo.client.application.badge.BadgeModule;
-import gmd.core.demo.client.application.button.ButtonModule;
-import gmd.core.demo.client.application.home.HomeModule;
+import gmd.core.demo.client.application.page.badge.BadgeModule;
+import gmd.core.demo.client.application.page.button.ButtonModule;
+import gmd.core.demo.client.landing.home.HomeModule;
 
 public class ApplicationModule extends AbstractPresenterModule {
 

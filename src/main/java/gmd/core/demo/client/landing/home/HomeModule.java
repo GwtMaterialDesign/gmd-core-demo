@@ -17,14 +17,14 @@
  * limitations under the License.
  * #L%
  */
-package gmd.core.demo.client.application.button;
+package gmd.core.demo.client.landing.home;
 
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
-public class ButtonModule extends AbstractPresenterModule {
+public class HomeModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
-        bindPresenter(ButtonPresenter.class, ButtonPresenter.MyView.class, ButtonView.class,
-                ButtonPresenter.MyProxy.class);
+        bindPresenter(HomePresenter.class, HomePresenter.MyView.class, HomeView.class,
+                HomePresenter.MyProxy.class);
     }
 }

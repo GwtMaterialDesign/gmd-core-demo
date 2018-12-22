@@ -17,11 +17,12 @@
  * limitations under the License.
  * #L%
  */
-package gmd.core.demo.client.application.home;
+package gmd.core.demo.client.landing.home;
 
 import gmd.core.demo.client.application.ApplicationPresenter;
 import gmd.core.demo.client.application.navigation.Dashboard;
 import gmd.core.demo.client.application.navigation.DashboardService;
+import gmd.core.demo.client.landing.LandingPresenter;
 import gmd.core.demo.client.place.NameTokens;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
@@ -48,7 +49,7 @@ public class HomePresenter extends Presenter<HomePresenter.MyView, HomePresenter
             EventBus eventBus,
             MyView view,
             MyProxy proxy) {
-        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
+        super(eventBus, view, proxy, LandingPresenter.SLOT_MAIN);
     }
 
     @Override

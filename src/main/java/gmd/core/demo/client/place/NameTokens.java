@@ -20,7 +20,7 @@
 package gmd.core.demo.client.place;
 
 public class NameTokens {
-    public static final String HOME = "/";
+    public static final String HOME = "home";
     public static final String BADGE = "badge";
     public static final String BUTTON = "button";
 }

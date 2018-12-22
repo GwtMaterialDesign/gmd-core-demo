@@ -24,3 +24,41 @@ pre {
     padding: 20px;
     white-space: pre-line;
 }
+
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    color: #3a3a3a !important;
+    font-size: 0.8em;
+}
+
+/** Sidenav **/
+.side-nav a {
+    height: 40px;
+}
+
+.side-nav li {
+    line-height: 40px;
+}
+
+.side-nav li.active,.side-nav li:hover {
+    background: #f3f5ff;
+}
+
+.side-nav li.active a {
+    color: #3f51b5;
+}
+
+/** Code **/
+pre {
+    background: #f3f5ff;
+    padding: 20px;
+    white-space: pre-line;
+    opacity: 0.8;
+    font-size: 0.8em;
+}
+
+@media screen and (max-width: 600px) {
+    .card .card-content {
+        min-height: 360px;
+        height: unset !important;
+    }
+}

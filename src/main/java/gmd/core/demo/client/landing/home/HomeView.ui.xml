@@ -18,19 +18,21 @@
   #L%
   -->
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-        xmlns:m="urn:import:gwt.material.design.client.ui">
+             xmlns:m="urn:import:gwt.material.design.client.ui">
 
     <m:MaterialPanel>
-        <m:MaterialRow padding="40" paddingTop="80" paddingBottom="80" textAlign="CENTER">
-            <m:MaterialLabel text="GMD Project" fontWeight="BOLD" fontSize="3em" />
-            <m:MaterialLabel text="Build the future of GWT using PWAs and Material Design Look and Feel." />
+        <m:MaterialRow padding="40" paddingBottom="80" textAlign="CENTER">
+            <m:MaterialImage url="launcher-icons/launcher4x.png" width="70px"/>
+            <m:MaterialLabel text="GMD Project" fontWeight="BOLD" fontSize="3em"/>
+            <m:MaterialLabel text="Build the future of GWT using PWAs and Material Design Look and Feel."/>
+            <m:MaterialRow>
+                <m:MaterialButton text="Github" customIconType="fab fa-github" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
+                <m:MaterialButton text="Gitter" customIconType="fab fa-gitter" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
+            </m:MaterialRow>
         </m:MaterialRow>
         <m:MaterialPanel containerEnabled="true">
             <!-- Modules -->
-            <m:MaterialLabel text="Modules" fontWeight="BOLD" fontSize="1.6em"/>
             <m:MaterialRow ui:field="dashboardsRow"/>
-
-            <m:MaterialRow />
         </m:MaterialPanel>
     </m:MaterialPanel>
 </ui:UiBinder>

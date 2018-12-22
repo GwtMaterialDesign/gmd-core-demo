@@ -17,14 +17,14 @@
  * limitations under the License.
  * #L%
  */
-package gmd.core.demo.client.application.badge;
+package gmd.core.demo.client.application.page.button;
 
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
-public class BadgeModule extends AbstractPresenterModule {
+public class ButtonModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
-        bindPresenter(BadgePresenter.class, BadgePresenter.MyView.class, BadgeView.class,
-                BadgePresenter.MyProxy.class);
+        bindPresenter(ButtonPresenter.class, ButtonPresenter.MyView.class, ButtonView.class,
+                ButtonPresenter.MyProxy.class);
     }
 }

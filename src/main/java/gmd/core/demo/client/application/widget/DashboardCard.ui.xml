@@ -23,14 +23,14 @@
 
 	<m:MaterialColumn grid="s12 m4 l3">
 		<m:MaterialCard>
-			<m:MaterialCardContent padding="0">
+			<m:MaterialCardContent padding="0" height="360px">
 				<m:MaterialCardImage backgroundColor="GREY_LIGHTEN_5">
 					<m:MaterialImage ui:field="image" alt="dashboard-image" />
 				</m:MaterialCardImage>
 				<m:MaterialPanel padding="20">
 					<m:MaterialLabel ui:field="title" fontSize="1.6em" fontWeight="BOLD"/>
 					<m:MaterialLabel ui:field="description" marginBottom="20"/>
-					<m:MaterialLink text="EXPLORE" textColor="BLUE" fontWeight="BOLD"/>
+					<m:MaterialLink text="EXPLORE" layoutPosition="ABSOLUTE" bottom="20" textColor="BLUE" fontWeight="BOLD"/>
 				</m:MaterialPanel>
 			</m:MaterialCardContent>
 		</m:MaterialCard>

@@ -17,7 +17,7 @@
  * limitations under the License.
  * #L%
  */
-package gmd.core.demo.client.application;
+package gmd.core.demo.client.landing;
 
 import com.google.gwt.dom.client.Document;
 import com.google.gwt.dom.client.StyleInjector;
@@ -27,10 +27,7 @@ import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
 import com.gwtplatform.mvp.client.presenter.slots.NestedSlot;
-import com.gwtplatform.mvp.client.proxy.PlaceManager;
 import com.gwtplatform.mvp.client.proxy.Proxy;
-import gmd.core.demo.client.application.navigation.Component;
-import gmd.core.demo.client.application.navigation.NavigationService;
 import gmd.core.demo.client.resources.AppResources;
 import gwt.material.design.client.base.helper.ColorHelper;
 import gwt.material.design.client.constants.Color;
@@ -38,46 +35,27 @@ import gwt.material.design.client.pwa.PwaManager;
 import gwt.material.design.client.pwa.push.js.Notification;
 import gwt.material.design.client.ui.MaterialToast;
 
-import java.util.List;
-
-public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView, ApplicationPresenter.MyProxy> {
+public class LandingPresenter extends Presenter<LandingPresenter.MyView, LandingPresenter.MyProxy> {
     interface MyView extends View {
-        void setupSideNav(List<Component> links);
-        void setupHeader();
-        void updateSideNavActiveState(int index);
     }
-
-    private PlaceManager manager;
 
     public static final NestedSlot SLOT_MAIN = new NestedSlot();
 
     @ProxyStandard
-    interface MyProxy extends Proxy<ApplicationPresenter> {
+    interface MyProxy extends Proxy<LandingPresenter> {
     }
 
     @Inject
-    ApplicationPresenter(EventBus eventBus,
-                         MyView view,
-                         MyProxy proxy,
-                         PlaceManager manager) {
+    LandingPresenter(EventBus eventBus,
+                     MyView view,
+                     MyProxy proxy) {
         super(eventBus, view, proxy, RevealType.Root);
-
-        this.manager = manager;
-    }
-
-    @Override
-    protected void onBind() {
-        super.onBind();
-
-        getView().setupSideNav(NavigationService.getSideNavLinks());
-        getView().setupHeader();
     }
 
     @Override
     protected void onReveal() {
         super.onReveal();
 
-        //TODO: Find a way to replace this and move to bootstrap process
         if (PwaManager.isPwaSupported()) {
             PwaManager.getInstance()
                     .setServiceWorker("service-worker.js")
@@ -92,10 +70,5 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
         StyleInjector.inject(AppResources.INSTANCE.appCss().getText());
 
         Document.get().getElementById("splashscreen").removeFromParent();
-
-        String nameToken = manager.getCurrentPlaceRequest().getNameToken();
-        if (nameToken != null) {
-            getView().updateSideNavActiveState(NavigationService.getSideNavLinks().indexOf(NavigationService.get(nameToken)));
-        }
     }
 }

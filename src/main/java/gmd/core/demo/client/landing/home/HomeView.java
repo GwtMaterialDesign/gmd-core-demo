@@ -17,20 +17,37 @@
  * limitations under the License.
  * #L%
  */
-package gmd.core.demo.client.application.badge;
-
-import com.google.gwt.uibinder.client.UiBinder;
-import com.google.gwt.user.client.ui.Widget;
-import com.gwtplatform.mvp.client.ViewImpl;
+package gmd.core.demo.client.landing.home;
 
 import javax.inject.Inject;
 
-public class BadgeView extends ViewImpl implements BadgePresenter.MyView {
-    interface Binder extends UiBinder<Widget, BadgeView> {
+import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.user.client.ui.Widget;
+import com.gwtplatform.mvp.client.ViewImpl;
+import gmd.core.demo.client.application.navigation.Dashboard;
+import gmd.core.demo.client.application.widget.DashboardCard;
+import gwt.material.design.client.ui.MaterialRow;
+
+import java.util.List;
+
+public class HomeView extends ViewImpl implements HomePresenter.MyView {
+
+    interface Binder extends UiBinder<Widget, HomeView> {
     }
 
+    @UiField
+    MaterialRow dashboardsRow;
+
     @Inject
-    BadgeView(Binder uiBinder) {
+    HomeView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+    }
+
+    @Override
+    public void buildDashboards(List<Dashboard> dashboards) {
+        dashboards.forEach(dashboard -> {
+            dashboardsRow.add(new DashboardCard(dashboard));
+        });
     }
 }
