@@ -17,7 +17,7 @@
  * limitations under the License.
  * #L%
  */
-package gmd.core.demo.client.landing.home;
+package gmd.core.demo.client.application.page.home;
 
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
@@ -26,9 +26,10 @@ import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
+import gmd.core.demo.client.application.ApplicationPresenter;
+import gmd.core.demo.client.application.ApplicationView;
 import gmd.core.demo.client.application.navigation.Dashboard;
 import gmd.core.demo.client.application.navigation.DashboardService;
-import gmd.core.demo.client.landing.LandingPresenter;
 import gmd.core.demo.client.place.NameTokens;
 
 import java.util.List;
@@ -48,7 +49,7 @@ public class HomePresenter extends Presenter<HomePresenter.MyView, HomePresenter
             EventBus eventBus,
             MyView view,
             MyProxy proxy) {
-        super(eventBus, view, proxy, LandingPresenter.SLOT_MAIN);
+        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
     }
 
     @Override
@@ -56,5 +57,12 @@ public class HomePresenter extends Presenter<HomePresenter.MyView, HomePresenter
         super.onBind();
 
         getView().buildDashboards(DashboardService.getDashboards());
+    }
+
+    @Override
+    protected void onReveal() {
+        super.onReveal();
+
+        ApplicationView.showHeader(false);
     }
 }

@@ -23,8 +23,8 @@
 
     <ui:with field="res" type="gmd.core.demo.client.resources.AppResources"/>
 
-    <m:MaterialPanel>
-        <m:MaterialHeader layoutPosition="FIXED" width="100%" top="0">
+    <m:MaterialPanel m:id="app-container">
+        <m:MaterialHeader layoutPosition="FIXED" width="100%" top="0" depth="995">
             <m:MaterialNavBar ui:field="navBar" activates="right-sidenav" backgroundColor="WHITE" overflow="HIDDEN">
                 <m:MaterialNavBrand>
                     <m:MaterialLabel ui:field="navBrand" text="Core" textColor="BLACK" fontSize="0.8em"/>
@@ -47,20 +47,16 @@
 
 
         <m:MaterialContainer paddingTop="64">
-            <m:MaterialRow>
-                <m:MaterialColumn grid="s12 m10 l10">
-                    <m:MaterialPanel padding="40">
-                        <m:MaterialLabel ui:field="title" fontSize="2.4em" />
-                        <m:MaterialLabel ui:field="description" marginBottom="20"/>
-                        <m:MaterialRow marginBottom="0">
-                            <m:MaterialAnchorButton ui:field="javaSource" text="Java" paddingLeft="0" customIconType="fab fa-java" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
-                            <m:MaterialAnchorButton ui:field="xmlSource" text="XML" iconType="CODE" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
-                        </m:MaterialRow>
-                    </m:MaterialPanel>
+            <m:MaterialPanel ui:field="header" padding="40">
+                <m:MaterialLabel ui:field="title" fontSize="2.4em" />
+                <m:MaterialLabel ui:field="description" marginBottom="20"/>
+                <m:MaterialRow marginBottom="0">
+                    <m:MaterialAnchorButton ui:field="javaSource" text="Java" paddingLeft="0" customIconType="fab fa-java" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
+                    <m:MaterialAnchorButton ui:field="xmlSource" text="XML" iconType="CODE" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
+                </m:MaterialRow>
+            </m:MaterialPanel>
 
-                    <m:MaterialPanel ui:field="container"/>
-                </m:MaterialColumn>
-            </m:MaterialRow>
+            <m:MaterialPanel ui:field="container" padding="40"/>
         </m:MaterialContainer>
 
     </m:MaterialPanel>

@@ -19,37 +19,38 @@
  */
 package gmd.core.demo.client.application;
 
-import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
-import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
-import com.gwtplatform.mvp.client.proxy.PlaceManager;
-import com.gwtplatform.mvp.shared.proxy.PlaceRequest;
 import gmd.core.demo.client.application.navigation.Component;
-import gmd.core.demo.client.place.NameTokens;
 import gwt.material.design.client.base.helper.ScrollHelper;
-import gwt.material.design.client.base.viewport.Resolution;
-import gwt.material.design.client.base.viewport.ViewPort;
+import gwt.material.design.client.constants.Blur;
+import gwt.material.design.client.constants.Color;
+import gwt.material.design.client.constants.OverlayOption;
 import gwt.material.design.client.ui.*;
 import gwt.material.design.client.ui.animate.MaterialAnimation;
 import gwt.material.design.client.ui.animate.Transition;
 
 import java.util.List;
 
+import static gwt.material.design.jquery.client.api.JQuery.$;
+
 public class ApplicationView extends ViewImpl implements ApplicationPresenter.MyView {
 
     interface Binder extends UiBinder<Widget, ApplicationView> {
     }
 
-    @Inject
-    PlaceManager placeManager;
-
     @UiField
     static MaterialLabel title, description, navBrand;
+
+    @UiField
+    static MaterialPanel header;
+
+    @UiField
+    MaterialAnchorButton javaSource, xmlSource;
 
     @UiField
     MaterialSideNavPush sidenav;
@@ -65,6 +66,7 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
 
     @Override
     public void setupSideNav(List<Component> links) {
+        sidenav.setOverlayOption(new OverlayOption(new Blur(4, $("#app-container")),  Color.WHITE));
         links.forEach(component -> sidenav.add(new MaterialLink(component.getName(), component.getHref())));
     }
 
@@ -103,5 +105,9 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     public static void setComponent(Component component) {
         title.setText(component.getName());
         description.setText(component.getDescription());
+    }
+
+    public static void showHeader(boolean show) {
+        header.setVisible(show);
     }
 }

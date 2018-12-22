@@ -12,8 +12,6 @@ public class CodeSection extends MaterialPanel {
 
     public CodeSection() {
         super();
-
-        setPadding(40);
     }
 
     public CodeSection(String title, String description) {

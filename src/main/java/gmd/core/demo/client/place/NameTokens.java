@@ -23,4 +23,32 @@ public class NameTokens {
     public static final String HOME = "/";
     public static final String BADGE = "badge";
     public static final String BUTTON = "button";
+    public static final String BREADCRUMB = "breadcrumb";
+    public static final String CARDS = "cards";
+    public static final String CHECKBOX = "checkbox";
+    public static final String CHIPS = "chips";
+    public static final String COLLAPSIBLE = "collapsible";
+    public static final String COLLECTION = "collection";
+    public static final String DATE_PICKER = "datePicker";
+    public static final String DIALOGS = "dialogs";
+    public static final String DROPDOWN = "dropdown";
+    public static final String ERRORS = "errors";
+    public static final String FAB = "fab";
+    public static final String FOOTER = "footer";
+    public static final String LOADERS = "loaders";
+    public static final String LISTBOX = "listbox";
+    public static final String MEDIA = "media";
+    public static final String NAVBAR = "navbar";
+    public static final String PUSHPIN = "pushpin";
+    public static final String RADIO_BUTTON = "radioButton";
+    public static final String RANGE = "range";
+    public static final String SEARCH = "search";
+    public static final String SIDENAVS = "sidenavs";
+    public static final String SCROLLSPY = "scrollspy";
+    public static final String SWITCHES = "switches";
+    public static final String TABS = "tabs";
+    public static final String TEXTFIELDS = "textfields";
+
+
+
 }

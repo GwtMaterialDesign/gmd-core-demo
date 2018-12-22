@@ -31,5 +31,7 @@ public class AppPresenter<V extends View, P extends Proxy<?>> extends Presenter<
         if (component != null) {
             ApplicationView.setComponent(component);
         }
+
+        ApplicationView.showHeader(true);
     }
 }

@@ -33,6 +33,7 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 /** Sidenav **/
 .side-nav a {
     height: 40px;
+    padding-left: 32px;
 }
 
 .side-nav li {

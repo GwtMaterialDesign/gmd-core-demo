@@ -35,15 +35,15 @@ import gmd.core.demo.client.resources.AppResources;
 import gwt.material.design.client.base.helper.ColorHelper;
 import gwt.material.design.client.constants.Color;
 import gwt.material.design.client.pwa.PwaManager;
-import gwt.material.design.client.pwa.push.js.Notification;
-import gwt.material.design.client.ui.MaterialToast;
 
 import java.util.List;
 
 public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView, ApplicationPresenter.MyProxy> {
     interface MyView extends View {
         void setupSideNav(List<Component> links);
+
         void setupHeader();
+
         void updateSideNavActiveState(int index);
     }
 
@@ -77,7 +77,6 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
     protected void onReveal() {
         super.onReveal();
 
-        //TODO: Find a way to replace this and move to bootstrap process
         if (PwaManager.isPwaSupported()) {
             PwaManager.getInstance()
                     .setServiceWorker("service-worker.js")
@@ -86,7 +85,7 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
                     .load();
 
             // Will request a notification
-            Notification.requestPermission(status -> MaterialToast.fireToast("Permission Status: " + status));
+            // Notification.requestPermission(status -> MaterialToast.fireToast("Permission Status: " + status));
         }
 
         StyleInjector.inject(AppResources.INSTANCE.appCss().getText());

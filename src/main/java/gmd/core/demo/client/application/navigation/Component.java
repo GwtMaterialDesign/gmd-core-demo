@@ -8,6 +8,12 @@ public class Component {
 
     public Component() {}
 
+    public Component(String name, String description, String href) {
+        this.name = name;
+        this.description = description;
+        this.href = href;
+    }
+
     public Component(String href, String description) {
         this.href = href;
         this.description = description;

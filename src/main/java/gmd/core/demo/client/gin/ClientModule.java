@@ -25,7 +25,6 @@ import com.gwtplatform.mvp.client.annotations.UnauthorizedPlace;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 import com.gwtplatform.mvp.client.gin.DefaultModule;
 import gmd.core.demo.client.application.ApplicationModule;
-import gmd.core.demo.client.landing.LandingModule;
 import gmd.core.demo.client.place.NameTokens;
 
 public class ClientModule extends AbstractPresenterModule {
@@ -33,7 +32,6 @@ public class ClientModule extends AbstractPresenterModule {
     protected void configure() {
         install(new DefaultModule.Builder().build());
         install(new ApplicationModule());
-        install(new LandingModule());
 
         // DefaultPlaceManager Places
         bindConstant().annotatedWith(DefaultPlace.class).to(NameTokens.HOME);

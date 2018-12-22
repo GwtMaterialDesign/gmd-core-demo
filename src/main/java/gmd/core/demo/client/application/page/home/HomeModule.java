@@ -17,7 +17,7 @@
  * limitations under the License.
  * #L%
  */
-package gmd.core.demo.client.landing.home;
+package gmd.core.demo.client.application.page.home;
 
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
