@@ -47,7 +47,7 @@
 
 
         <m:MaterialContainer paddingTop="64">
-            <m:MaterialPanel ui:field="header" padding="40">
+            <m:MaterialPanel ui:field="header" padding="40" borderBottom="1px solid #e9e9e9">
                 <m:MaterialLabel ui:field="title" fontSize="2.4em" />
                 <m:MaterialLabel ui:field="description" marginBottom="20"/>
                 <m:MaterialRow marginBottom="0">

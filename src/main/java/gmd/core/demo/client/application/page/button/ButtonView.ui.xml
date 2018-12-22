@@ -31,13 +31,15 @@
             <m:MaterialButton margin="8" text="Warn" waves="LIGHT" backgroundColor="RED" textColor="WHITE" iconType="POLYMER" iconPosition="RIGHT"/>
             <m:MaterialButton margin="8" text="Icon Color" waves="RED" backgroundColor="WHITE" textColor="BLACK" iconType="POLYMER" iconPosition="RIGHT" iconColor="RED"/>
 
-            <m:html.Pre>
-                &lt;m:MaterialButton margin="8" text="Button" waves="DEFAULT" backgroundColor="WHITE"  textColor="BLACK"/><br/>
-                &lt;m:MaterialButton margin="8" text="Primary" waves="LIGHT" textColor="WHITE" iconType="POLYMER" iconPosition="LEFT"/><br/>
-                &lt;m:MaterialButton margin="8" text="Disabled" waves="LIGHT" iconType="POLYMER" iconPosition="RIGHT" enabled="false"/><br/>
-                &lt;m:MaterialButton margin="8" text="Warn" waves="LIGHT" backgroundColor="RED" textColor="WHITE" iconType="POLYMER" iconPosition="RIGHT"/><br/>
-                &lt;m:MaterialButton margin="8" text="Icon Color" waves="RED" backgroundColor="WHITE" textColor="BLACK" iconType="POLYMER" iconPosition="RIGHT" iconColor="RED"/><br/>
-            </m:html.Pre>
+           <g:HTMLPanel>
+                <pre>
+                    &lt;m:MaterialButton margin="8" text="Button" waves="DEFAULT" backgroundColor="WHITE"  textColor="BLACK"/>
+                    &lt;m:MaterialButton margin="8" text="Primary" waves="LIGHT" textColor="WHITE" iconType="POLYMER" iconPosition="LEFT"/>
+                    &lt;m:MaterialButton margin="8" text="Disabled" waves="LIGHT" iconType="POLYMER" iconPosition="RIGHT" enabled="false"/>
+                    &lt;m:MaterialButton margin="8" text="Warn" waves="LIGHT" backgroundColor="RED" textColor="WHITE" iconType="POLYMER" iconPosition="RIGHT"/>
+                    &lt;m:MaterialButton margin="8" text="Icon Color" waves="RED" backgroundColor="WHITE" textColor="BLACK" iconType="POLYMER" iconPosition="RIGHT" iconColor="RED"/>
+                </pre>
+            </g:HTMLPanel>
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="Outlined" description="Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app." >
@@ -47,13 +49,15 @@
             <m:MaterialButton margin="8" type="OUTLINED" text="Warn" border="1px solid #f44336" textColor="RED" iconType="POLYMER" iconPosition="RIGHT"/>
             <m:MaterialButton margin="8" type="OUTLINED" text="Icon Color" waves="RED" backgroundColor="WHITE" textColor="BLACK" iconType="POLYMER" iconPosition="RIGHT" iconColor="RED"/>
 
-            <m:html.Pre>
-                &lt;m:MaterialButton margin="8" type="OUTLINED" text="Button" waves="DEFAULT"  textColor="BLACK"/><br/>
-                &lt;m:MaterialButton margin="8" type="OUTLINED" text="Primary" border="1px solid #42a5f5" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/><br/>
-                &lt;m:MaterialButton margin="8" type="OUTLINED" text="Disabled" waves="LIGHT" iconType="POLYMER" iconPosition="RIGHT" enabled="false"/><br/>
-                &lt;m:MaterialButton margin="8" type="OUTLINED" text="Warn" border="1px solid #f44336" textColor="RED" iconType="POLYMER" iconPosition="RIGHT"/><br/>
-                &lt;m:MaterialButton margin="8" type="OUTLINED" text="Icon Color" waves="RED" backgroundColor="WHITE" textColor="BLACK" iconType="POLYMER" iconPosition="RIGHT" iconColor="RED"/><br/>
-            </m:html.Pre>
+           <g:HTMLPanel>
+                <pre>
+                    &lt;m:MaterialButton margin="8" type="OUTLINED" text="Button" waves="DEFAULT"  textColor="BLACK"/>
+                    &lt;m:MaterialButton margin="8" type="OUTLINED" text="Primary" border="1px solid #42a5f5" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+                    &lt;m:MaterialButton margin="8" type="OUTLINED" text="Disabled" waves="LIGHT" iconType="POLYMER" iconPosition="RIGHT" enabled="false"/>
+                    &lt;m:MaterialButton margin="8" type="OUTLINED" text="Warn" border="1px solid #f44336" textColor="RED" iconType="POLYMER" iconPosition="RIGHT"/>
+                    &lt;m:MaterialButton margin="8" type="OUTLINED" text="Icon Color" waves="RED" backgroundColor="WHITE" textColor="BLACK" iconType="POLYMER" iconPosition="RIGHT" iconColor="RED"/>
+                </pre>
+            </g:HTMLPanel>
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="Floating" description="The floating circular action button is meant for very important functions." >
@@ -64,14 +68,16 @@
             <m:MaterialButton margin="8" type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="RED" iconType="CAKE" />
             <m:MaterialButton margin="8" type="FLOATING" waves="DEFAULT" size="LARGE" backgroundColor="WHITE" iconColor="GREEN" iconType="ANDROID" />
 
-            <m:html.Pre>
-                &lt;m:MaterialButton margin="8" type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="RED" iconType="CAKE" /><br/>
-                &lt;m:MaterialButton margin="8" type="FLOATING" waves="LIGHT" size="LARGE" iconType="ANDROID" /><br/>
-                &lt;m:MaterialButton margin="8" type="FLOATING" waves="LIGHT" size="LARGE" iconType="MESSAGE" enabled="false"/><br/>
-                &lt;m:MaterialButton margin="8" type="FLOATING" waves="LIGHT" size="LARGE" iconType="GROUP" /><br/>
-                &lt;m:MaterialButton margin="8" type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="RED" iconType="CAKE" /><br/>
-                &lt;m:MaterialButton margin="8" type="FLOATING" waves="DEFAULT" size="LARGE" backgroundColor="WHITE" iconColor="GREEN" iconType="ANDROID" /><br/>
-            </m:html.Pre>
+            <g:HTMLPanel>
+                <pre>
+                    &lt;m:MaterialButton margin="8" type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="RED" iconType="CAKE" />
+                    &lt;m:MaterialButton margin="8" type="FLOATING" waves="LIGHT" size="LARGE" iconType="ANDROID" />
+                    &lt;m:MaterialButton margin="8" type="FLOATING" waves="LIGHT" size="LARGE" iconType="MESSAGE" enabled="false"/>
+                    &lt;m:MaterialButton margin="8" type="FLOATING" waves="LIGHT" size="LARGE" iconType="GROUP" />
+                    &lt;m:MaterialButton margin="8" type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="RED" iconType="CAKE" />
+                    &lt;m:MaterialButton margin="8" type="FLOATING" waves="DEFAULT" size="LARGE" backgroundColor="WHITE" iconColor="GREEN" iconType="ANDROID" />
+                </pre>
+            </g:HTMLPanel>
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="FLAT" description="Flat buttons are usually used within elements that already have depth like cards or dialog." >
@@ -80,12 +86,14 @@
             <m:MaterialButton margin="8" text="Disabled" type="FLAT" waves="DEFAULT"  enabled="false" />
             <m:MaterialButton margin="8" text="Warn" textColor="RED" type="FLAT" waves="RED" />
 
-            <m:html.Pre>
-                &lt;m:MaterialButton margin="8" text="Button" textColor="BLACK" type="FLAT" waves="DEFAULT" /><br/>
-                &lt;m:MaterialButton margin="8" text="Primary (No Waves)" textColor="BLUE" type="FLAT" /><br/>
-                &lt;m:MaterialButton margin="8" text="Disabled" type="FLAT" waves="DEFAULT"  enabled="false" /><br/>
-                &lt;m:MaterialButton margin="8" text="Warn" textColor="RED" type="FLAT" waves="RED" /><br/>
-            </m:html.Pre>
+           <g:HTMLPanel>
+                <pre>
+                    &lt;m:MaterialButton margin="8" text="Button" textColor="BLACK" type="FLAT" waves="DEFAULT" />
+                    &lt;m:MaterialButton margin="8" text="Primary (No Waves)" textColor="BLUE" type="FLAT" />
+                    &lt;m:MaterialButton margin="8" text="Disabled" type="FLAT" waves="DEFAULT"  enabled="false" />
+                    &lt;m:MaterialButton margin="8" text="Warn" textColor="RED" type="FLAT" waves="RED" />
+                </pre>
+            </g:HTMLPanel>
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="Large" description="This button has a larger height for buttons that need more attention." >
@@ -93,11 +101,13 @@
             <m:MaterialButton margin="8" text="Button" waves="LIGHT" iconType="POLYMER" iconPosition="LEFT" size="LARGE"/>
             <m:MaterialButton margin="8" text="Button" waves="LIGHT" iconType="POLYMER" iconPosition="RIGHT" size="LARGE"/>
 
-            <m:html.Pre>
-                &lt;m:MaterialButton margin="8" text="Button" waves="LIGHT" size="LARGE"/><br/>
-                &lt;m:MaterialButton margin="8" text="Button" waves="LIGHT" iconType="POLYMER" iconPosition="LEFT" size="LARGE"/><br/>
-                &lt;m:MaterialButton margin="8" text="Button" waves="LIGHT" iconType="POLYMER" iconPosition="RIGHT" size="LARGE"/><br/>
-            </m:html.Pre>
+           <g:HTMLPanel>
+                <pre>
+                    &lt;m:MaterialButton margin="8" text="Button" waves="LIGHT" size="LARGE"/>
+                    &lt;m:MaterialButton margin="8" text="Button" waves="LIGHT" iconType="POLYMER" iconPosition="LEFT" size="LARGE"/>
+                    &lt;m:MaterialButton margin="8" text="Button" waves="LIGHT" iconType="POLYMER" iconPosition="RIGHT" size="LARGE"/>
+                </pre>
+            </g:HTMLPanel>
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="Icon Button" description="Using MaterialIcon component extends ButtonBased which has predefined click events and functionalities" >
@@ -105,11 +115,13 @@
             <m:MaterialIcon margin="8" iconType="FAVORITE" iconColor="RED" waves="DEFAULT" enabled="false" circle="true"/>
             <m:MaterialIcon margin="8" iconType="MORE_VERT" iconColor="GREY" waves="DEFAULT" circle="true"/>
 
-            <m:html.Pre>
-                &lt;m:MaterialIcon margin="8" iconType="MENU" iconColor="BLUE" waves="DEFAULT" circle="true"/><br/>
-                &lt;m:MaterialIcon margin="8" iconType="FAVORITE" iconColor="RED" waves="DEFAULT" enabled="false" circle="true"/><br/>
-                &lt;m:MaterialIcon margin="8" iconType="MORE_VERT" iconColor="GREY" waves="DEFAULT" circle="true"/><br/>
-            </m:html.Pre>
+           <g:HTMLPanel>
+                <pre>
+                    &lt;m:MaterialIcon margin="8" iconType="MENU" iconColor="BLUE" waves="DEFAULT" circle="true"/>
+                    &lt;m:MaterialIcon margin="8" iconType="FAVORITE" iconColor="RED" waves="DEFAULT" enabled="false" circle="true"/>
+                    &lt;m:MaterialIcon margin="8" iconType="MORE_VERT" iconColor="GREY" waves="DEFAULT" circle="true"/>
+                </pre>
+            </g:HTMLPanel>
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="Disabled" description="When you set enabled='false' All events will be disabled." >
@@ -118,12 +130,14 @@
             <m:MaterialButton margin="8" text="Button" type="FLAT" enabled="false"/>
             <m:MaterialButton margin="8" type="FLOATING"  iconType="POLYMER" enabled="false"/>
 
-            <m:html.Pre>
-                &lt;m:MaterialButton margin="8" text="Button" iconType="POLYMER" iconPosition="LEFT" size="LARGE" enabled="false"/><br/>
-                &lt;m:MaterialButton margin="8" text="Button" iconType="POLYMER" iconPosition="LEFT" enabled="false"/><br/>
-                &lt;m:MaterialButton margin="8" text="Button" type="FLAT" enabled="false"/><br/>
-                &lt;m:MaterialButton margin="8" type="FLOATING"  iconType="POLYMER" enabled="false"/><br/>
-            </m:html.Pre>
+           <g:HTMLPanel>
+                <pre>
+                    &lt;m:MaterialButton margin="8" text="Button" iconType="POLYMER" iconPosition="LEFT" size="LARGE" enabled="false"/>
+                    &lt;m:MaterialButton margin="8" text="Button" iconType="POLYMER" iconPosition="LEFT" enabled="false"/>
+                    &lt;m:MaterialButton margin="8" text="Button" type="FLAT" enabled="false"/>
+                    &lt;m:MaterialButton margin="8" type="FLOATING"  iconType="POLYMER" enabled="false"/>
+                </pre>
+            </g:HTMLPanel>
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="Events" description="MaterialButtons , MaterialIcons and MaterialLinks extends ButtonBase which implements all Mouse Handlers, Click Handlers and other events." >
@@ -131,11 +145,13 @@
             <m:MaterialButton margin="8" ui:field="btnHover" text="Hover Me" waves="LIGHT" textColor="WHITE" iconType="POLYMER" iconPosition="LEFT"/>
             <m:MaterialButton margin="8" ui:field="btnDoubleClick" text="Double Click Me" waves="LIGHT" textColor="WHITE" iconType="POLYMER" iconPosition="LEFT"/>
 
-            <m:html.Pre>
-                &lt;m:MaterialButton margin="8" ui:field="btnClick" text="Click Me" waves="LIGHT" textColor="WHITE" iconType="POLYMER" iconPosition="LEFT"/><br/>
-                &lt;m:MaterialButton margin="8" ui:field="btnHover" text="Hover Me" waves="LIGHT" textColor="WHITE" iconType="POLYMER" iconPosition="LEFT"/><br/>
-                &lt;m:MaterialButton margin="8" ui:field="btnDoubleClick" text="Double Click Me" waves="LIGHT" textColor="WHITE" iconType="POLYMER" iconPosition="LEFT"/><br/>
-            </m:html.Pre>
+           <g:HTMLPanel>
+                <pre>
+                    &lt;m:MaterialButton margin="8" ui:field="btnClick" text="Click Me" waves="LIGHT" textColor="WHITE" iconType="POLYMER" iconPosition="LEFT"/>
+                    &lt;m:MaterialButton margin="8" ui:field="btnHover" text="Hover Me" waves="LIGHT" textColor="WHITE" iconType="POLYMER" iconPosition="LEFT"/>
+                    &lt;m:MaterialButton margin="8" ui:field="btnDoubleClick" text="Double Click Me" waves="LIGHT" textColor="WHITE" iconType="POLYMER" iconPosition="LEFT"/>
+                </pre>
+            </g:HTMLPanel>
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="Links" description="Using Material Link you can easily add href functionality into your app for navigation" >
@@ -144,12 +160,14 @@
             <m:MaterialLink href="#design" text="Link with Different Icon color" textColor="BLACK" iconType="POLYMER" iconPosition="LEFT" iconColor="RED" grid=" "/>
             <m:MaterialLink href="#design" text="Disabled Link" textColor="BLACK" iconType="POLYMER" iconPosition="LEFT" iconColor="RED" enabled="false"/>
 
-            <m:html.Pre>
-                &lt;m:MaterialLink href="#normal" text="Normal Link" textColor="RED" iconType="POLYMER" iconPosition="LEFT" grid=" "/><br/>
-                &lt;m:MaterialLink href="#material" text="Link with Href" textColor="RED" iconType="POLYMER" iconPosition="LEFT" grid=" "/><br/>
-                &lt;m:MaterialLink href="#design" text="Link with Different Icon color" textColor="BLACK" iconType="POLYMER" iconPosition="LEFT" iconColor="RED" grid=" "/><br/>
-                &lt;m:MaterialLink href="#design" text="Disabled Link" textColor="BLACK" iconType="POLYMER" iconPosition="LEFT" iconColor="RED" enabled="false"/><br/>
-            </m:html.Pre>
+           <g:HTMLPanel>
+                <pre>
+                    &lt;m:MaterialLink href="#normal" text="Normal Link" textColor="RED" iconType="POLYMER" iconPosition="LEFT" grid=" "/>
+                    &lt;m:MaterialLink href="#material" text="Link with Href" textColor="RED" iconType="POLYMER" iconPosition="LEFT" grid=" "/>
+                    &lt;m:MaterialLink href="#design" text="Link with Different Icon color" textColor="BLACK" iconType="POLYMER" iconPosition="LEFT" iconColor="RED" grid=" "/>
+                    &lt;m:MaterialLink href="#design" text="Disabled Link" textColor="BLACK" iconType="POLYMER" iconPosition="LEFT" iconColor="RED" enabled="false"/>
+                </pre>
+            </g:HTMLPanel>
         </widget:CodeSection>
 
     </m:MaterialRow>

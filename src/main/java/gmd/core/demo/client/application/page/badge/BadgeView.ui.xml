@@ -18,9 +18,136 @@
   #L%
   -->
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-        xmlns:m='urn:import:gwt.material.design.client.ui'>
+             xmlns:m='urn:import:gwt.material.design.client.ui'
+             xmlns:widget="urn:import:gmd.core.demo.client.application.widget"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <m:MaterialPanel>
+        <widget:CodeSection sectionTitle="Collections">
+            <m:MaterialCollection>
+                <m:MaterialCollectionItem>
+                    <m:MaterialLink text="Sample 1">
+                        <m:MaterialBadge text="1 new" textColor="WHITE"/>
+                    </m:MaterialLink>
+                </m:MaterialCollectionItem>
+                <m:MaterialCollectionItem>
+                    <m:MaterialLink text="Sample 2">
+                        <m:MaterialBadge text="1 new" textColor="WHITE"/>
+                    </m:MaterialLink>
+                </m:MaterialCollectionItem>
+                <m:MaterialCollectionItem>
+                    <m:MaterialLink text="Collecton 3"/>
+                </m:MaterialCollectionItem>
+                <m:MaterialCollectionItem>
+                    <m:MaterialLink text="Collecton 4"/>
+                </m:MaterialCollectionItem>
+            </m:MaterialCollection>
 
+            <g:HTMLPanel>
+                <pre>
+                    &lt;m:MaterialCollection>
+                    &lt;m:MaterialCollectionItem>
+                    &lt;m:MaterialLink text="Sample 1" >
+                    &lt;m:MaterialBadge text="1 new" textColor="WHITE"/>
+                    &lt;/m:MaterialLink>
+                    &lt;/m:MaterialCollectionItem>
+                    &lt;m:MaterialCollectionItem>
+                    &lt;m:MaterialLink text="Sample 2" >
+                    &lt;m:MaterialBadge text="1 new" textColor="WHITE"/>
+                    &lt;/m:MaterialLink>
+                    &lt;/m:MaterialCollectionItem>
+                    &lt;m:MaterialCollectionItem>&lt;m:MaterialLink text="Collecton 3"/>&lt;/m:MaterialCollectionItem>
+                    &lt;m:MaterialCollectionItem>&lt;m:MaterialLink text="Collecton 4"/>&lt;/m:MaterialCollectionItem>
+                    &lt;/m:MaterialCollection>
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Badges in Dropdown">
+            <!-- Activator -->
+            <m:MaterialButton activates="dp-4" text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"
+                              textColor="WHITE"/>
+            <!-- My Drop Down -->
+            <m:MaterialDropDown activator="dp-4" belowOrigin="false" constrainWidth="true">
+                <m:MaterialLink text="First"/>
+                <m:MaterialLink text="Second">
+                    <m:MaterialBadge text="1 new" textColor="WHITE"/>
+                </m:MaterialLink>
+                <m:MaterialLink text="Third"/>
+            </m:MaterialDropDown>
+
+            <g:HTMLPanel>
+                <pre>
+                    &lt;!-- Activator -->
+                    &lt;m:MaterialButton activates="dp-4" text="Dropdown" iconType="ARROW_DROP_DOWN"
+                    iconPosition="RIGHT" textColor="WHITE"/>
+                    &lt;!-- My Drop Down -->
+                    &lt;m:MaterialDropDown activator="dp-4" belowOrigin="false" constrainWidth="true">
+                    &lt;m:MaterialLink text="First" />
+                    &lt;m:MaterialLink text="Second" >
+                    &lt;m:MaterialBadge text="1 new" textColor="WHITE"/>
+                    &lt;/m:MaterialLink>
+                    &lt;m:MaterialLink text="Third" />
+                    &lt;/m:MaterialDropDown>
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Badges in NavBar">
+            <m:MaterialNavBar width="100%">
+                <m:MaterialNavSection hideOn="NONE" float="RIGHT">
+                    <m:MaterialLink text="One"/>
+                    <m:MaterialLink text="Two" paddingLeft="0" paddingRight="0">
+                        <m:MaterialBadge text="New" backgroundColor="RED"/>
+                    </m:MaterialLink>
+                    <m:MaterialLink text="Three"/>
+                </m:MaterialNavSection>
+            </m:MaterialNavBar>
+            <g:HTMLPanel>
+                <pre>
+                    &lt;m:MaterialNavBar width="100%">
+                    &lt;m:MaterialNavSection hideOn="NONE" float="RIGHT">
+                    &lt;m:MaterialLink text="One" />
+                    &lt;m:MaterialLink text="Two" paddingLeft="0" paddingRight="0">
+                    &lt;m:MaterialBadge text="New" backgroundColor="RED"/>
+                    &lt;/m:MaterialLink>
+                    &lt;m:MaterialLink text="Three" />
+                    &lt;/m:MaterialNavSection>
+                    &lt;/m:MaterialNavBar>
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Circular Badge inside Icon Link">
+            <m:MaterialNavBar width="100%">
+                <m:MaterialNavSection hideOn="NONE" float="LEFT">
+                    <!-- Nav Sections with Badge components beside the icon if any -->
+                    <m:MaterialLink textColor="WHITE" href="#" iconPosition="NONE" iconType="SEARCH"
+                                    layoutPosition="RELATIVE"/>
+                    <m:MaterialLink textColor="WHITE" href="#" iconPosition="NONE" iconType="NOTIFICATIONS"
+                                    layoutPosition="RELATIVE">
+                        <m:MaterialBadge text="2" backgroundColor="PINK" textColor="WHITE" circle="true"/>
+                    </m:MaterialLink>
+                    <m:MaterialLink textColor="WHITE" href="#" iconPosition="NONE" iconType="BOOKMARK_BORDER"
+                                    layoutPosition="RELATIVE">
+                        <m:MaterialBadge text="21" backgroundColor="PINK" textColor="WHITE" circle="true"/>
+                    </m:MaterialLink>
+                </m:MaterialNavSection>
+            </m:MaterialNavBar>
+            <g:HTMLPanel>
+                <pre>
+                    &lt;m:MaterialLink textColor="WHITE" href="#" iconPosition="NONE" iconType="SEARCH"
+                    layoutPosition="RELATIVE"/>
+                    &lt;m:MaterialLink textColor="WHITE" href="#" iconPosition="NONE" iconType="NOTIFICATIONS"
+                    layoutPosition="RELATIVE">
+                    &lt;m:MaterialBadge text="2" backgroundColor="PINK" textColor="WHITE" circle="true"/>
+                    &lt;/m:MaterialLink>
+                    &lt;m:MaterialLink textColor="WHITE" href="#" iconPosition="NONE" iconType="BOOKMARK_BORDER"
+                    layoutPosition="RELATIVE">
+                    &lt;m:MaterialBadge text="21" backgroundColor="PINK" textColor="WHITE" circle="true"/>
+                    &lt;/m:MaterialLink>
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
     </m:MaterialPanel>
 </ui:UiBinder>
