@@ -35,6 +35,7 @@
 
     <!--GWT Material-->
     <inherits name="gwt.material.design.GwtMaterialBasicWithJQuery"/>
+    <inherits name="gwt.material.design.incubator.AddinsIncubator"/>
     <inherits name="gwt.material.design.incubator.FontAwesomeResources"/>
     <inherits name="gwt.material.design.themes.ThemeBlue"/>
 
