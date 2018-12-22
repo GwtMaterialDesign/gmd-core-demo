@@ -29,6 +29,7 @@ import com.google.gwt.user.client.ui.Widget;
 import gmd.core.demo.client.application.navigation.Dashboard;
 import gwt.material.design.client.ui.MaterialImage;
 import gwt.material.design.client.ui.MaterialLabel;
+import gwt.material.design.client.ui.MaterialLink;
 
 public class DashboardCard extends Composite {
 
@@ -42,6 +43,9 @@ public class DashboardCard extends Composite {
 
     @UiField
     MaterialLabel title, description;
+
+    @UiField
+    MaterialLink link;
 
     private Dashboard dashboard;
 
@@ -58,5 +62,6 @@ public class DashboardCard extends Composite {
         image.setUrl(dashboard.getImage());
         title.setText(dashboard.getTitle());
         description.setText(dashboard.getDescription());
+        link.setHref(dashboard.getUrl());
     }
 }

@@ -30,7 +30,7 @@
 				<m:MaterialPanel padding="20">
 					<m:MaterialLabel ui:field="title" fontSize="1.6em" fontWeight="BOLD"/>
 					<m:MaterialLabel ui:field="description" marginBottom="20"/>
-					<m:MaterialLink text="EXPLORE" layoutPosition="ABSOLUTE" bottom="20" textColor="BLUE" fontWeight="BOLD"/>
+					<m:MaterialLink ui:field="link" text="EXPLORE" layoutPosition="ABSOLUTE" bottom="20" textColor="BLUE" fontWeight="BOLD"/>
 				</m:MaterialPanel>
 			</m:MaterialCardContent>
 		</m:MaterialCard>

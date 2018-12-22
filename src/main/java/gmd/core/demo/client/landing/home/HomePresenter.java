@@ -19,11 +19,6 @@
  */
 package gmd.core.demo.client.landing.home;
 
-import gmd.core.demo.client.application.ApplicationPresenter;
-import gmd.core.demo.client.application.navigation.Dashboard;
-import gmd.core.demo.client.application.navigation.DashboardService;
-import gmd.core.demo.client.landing.LandingPresenter;
-import gmd.core.demo.client.place.NameTokens;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
@@ -31,6 +26,10 @@ import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
+import gmd.core.demo.client.application.navigation.Dashboard;
+import gmd.core.demo.client.application.navigation.DashboardService;
+import gmd.core.demo.client.landing.LandingPresenter;
+import gmd.core.demo.client.place.NameTokens;
 
 import java.util.List;
 
