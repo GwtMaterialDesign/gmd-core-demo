@@ -4,7 +4,7 @@ splashcontainer.id = "splashscreen";
 var splashContent = document.createElement('div');
 
 var image = document.createElement("img");
-image.src = "/launcher-icons/launcher2x.png";
+image.src = "https://gwtmaterialdesign.github.io/gmd-core-demo/launcher-icons/launcher2x.png";
 
 var title = document.createElement("span");
 title.className = "title";
