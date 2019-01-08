@@ -33,11 +33,7 @@
 
            <g:HTMLPanel>
                 <pre>
-                    &lt;m:MaterialButton margin="8" text="Button" waves="DEFAULT" backgroundColor="WHITE"  textColor="BLACK"/>
-                    &lt;m:MaterialButton margin="8" text="Primary" waves="LIGHT" textColor="WHITE" iconType="POLYMER" iconPosition="LEFT"/>
-                    &lt;m:MaterialButton margin="8" text="Disabled" waves="LIGHT" iconType="POLYMER" iconPosition="RIGHT" enabled="false"/>
-                    &lt;m:MaterialButton margin="8" text="Warn" waves="LIGHT" backgroundColor="RED" textColor="WHITE" iconType="POLYMER" iconPosition="RIGHT"/>
-                    &lt;m:MaterialButton margin="8" text="Icon Color" waves="RED" backgroundColor="WHITE" textColor="BLACK" iconType="POLYMER" iconPosition="RIGHT" iconColor="RED"/>
+
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -51,11 +47,7 @@
 
            <g:HTMLPanel>
                 <pre>
-                    &lt;m:MaterialButton margin="8" type="OUTLINED" text="Button" waves="DEFAULT"  textColor="BLACK"/>
-                    &lt;m:MaterialButton margin="8" type="OUTLINED" text="Primary" border="1px solid #42a5f5" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
-                    &lt;m:MaterialButton margin="8" type="OUTLINED" text="Disabled" waves="LIGHT" iconType="POLYMER" iconPosition="RIGHT" enabled="false"/>
-                    &lt;m:MaterialButton margin="8" type="OUTLINED" text="Warn" border="1px solid #f44336" textColor="RED" iconType="POLYMER" iconPosition="RIGHT"/>
-                    &lt;m:MaterialButton margin="8" type="OUTLINED" text="Icon Color" waves="RED" backgroundColor="WHITE" textColor="BLACK" iconType="POLYMER" iconPosition="RIGHT" iconColor="RED"/>
+
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -70,12 +62,7 @@
 
             <g:HTMLPanel>
                 <pre>
-                    &lt;m:MaterialButton margin="8" type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="RED" iconType="CAKE" />
-                    &lt;m:MaterialButton margin="8" type="FLOATING" waves="LIGHT" size="LARGE" iconType="ANDROID" />
-                    &lt;m:MaterialButton margin="8" type="FLOATING" waves="LIGHT" size="LARGE" iconType="MESSAGE" enabled="false"/>
-                    &lt;m:MaterialButton margin="8" type="FLOATING" waves="LIGHT" size="LARGE" iconType="GROUP" />
-                    &lt;m:MaterialButton margin="8" type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="RED" iconType="CAKE" />
-                    &lt;m:MaterialButton margin="8" type="FLOATING" waves="DEFAULT" size="LARGE" backgroundColor="WHITE" iconColor="GREEN" iconType="ANDROID" />
+
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -88,10 +75,7 @@
 
            <g:HTMLPanel>
                 <pre>
-                    &lt;m:MaterialButton margin="8" text="Button" textColor="BLACK" type="FLAT" waves="DEFAULT" />
-                    &lt;m:MaterialButton margin="8" text="Primary (No Waves)" textColor="BLUE" type="FLAT" />
-                    &lt;m:MaterialButton margin="8" text="Disabled" type="FLAT" waves="DEFAULT"  enabled="false" />
-                    &lt;m:MaterialButton margin="8" text="Warn" textColor="RED" type="FLAT" waves="RED" />
+
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -103,9 +87,7 @@
 
            <g:HTMLPanel>
                 <pre>
-                    &lt;m:MaterialButton margin="8" text="Button" waves="LIGHT" size="LARGE"/>
-                    &lt;m:MaterialButton margin="8" text="Button" waves="LIGHT" iconType="POLYMER" iconPosition="LEFT" size="LARGE"/>
-                    &lt;m:MaterialButton margin="8" text="Button" waves="LIGHT" iconType="POLYMER" iconPosition="RIGHT" size="LARGE"/>
+
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -117,9 +99,7 @@
 
            <g:HTMLPanel>
                 <pre>
-                    &lt;m:MaterialIcon margin="8" iconType="MENU" iconColor="BLUE" waves="DEFAULT" circle="true"/>
-                    &lt;m:MaterialIcon margin="8" iconType="FAVORITE" iconColor="RED" waves="DEFAULT" enabled="false" circle="true"/>
-                    &lt;m:MaterialIcon margin="8" iconType="MORE_VERT" iconColor="GREY" waves="DEFAULT" circle="true"/>
+
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -132,10 +112,7 @@
 
            <g:HTMLPanel>
                 <pre>
-                    &lt;m:MaterialButton margin="8" text="Button" iconType="POLYMER" iconPosition="LEFT" size="LARGE" enabled="false"/>
-                    &lt;m:MaterialButton margin="8" text="Button" iconType="POLYMER" iconPosition="LEFT" enabled="false"/>
-                    &lt;m:MaterialButton margin="8" text="Button" type="FLAT" enabled="false"/>
-                    &lt;m:MaterialButton margin="8" type="FLOATING"  iconType="POLYMER" enabled="false"/>
+
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -147,9 +124,7 @@
 
            <g:HTMLPanel>
                 <pre>
-                    &lt;m:MaterialButton margin="8" ui:field="btnClick" text="Click Me" waves="LIGHT" textColor="WHITE" iconType="POLYMER" iconPosition="LEFT"/>
-                    &lt;m:MaterialButton margin="8" ui:field="btnHover" text="Hover Me" waves="LIGHT" textColor="WHITE" iconType="POLYMER" iconPosition="LEFT"/>
-                    &lt;m:MaterialButton margin="8" ui:field="btnDoubleClick" text="Double Click Me" waves="LIGHT" textColor="WHITE" iconType="POLYMER" iconPosition="LEFT"/>
+
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -162,10 +137,7 @@
 
            <g:HTMLPanel>
                 <pre>
-                    &lt;m:MaterialLink href="#normal" text="Normal Link" textColor="RED" iconType="POLYMER" iconPosition="LEFT" grid=" "/>
-                    &lt;m:MaterialLink href="#material" text="Link with Href" textColor="RED" iconType="POLYMER" iconPosition="LEFT" grid=" "/>
-                    &lt;m:MaterialLink href="#design" text="Link with Different Icon color" textColor="BLACK" iconType="POLYMER" iconPosition="LEFT" iconColor="RED" grid=" "/>
-                    &lt;m:MaterialLink href="#design" text="Disabled Link" textColor="BLACK" iconType="POLYMER" iconPosition="LEFT" iconColor="RED" enabled="false"/>
+
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>

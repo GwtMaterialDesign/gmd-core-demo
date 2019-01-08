@@ -21,7 +21,9 @@ package gmd.core.demo.client.application;
 
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 import gmd.core.demo.client.application.page.badge.BadgeModule;
+import gmd.core.demo.client.application.page.breadcrumb.BreadcrumbModule;
 import gmd.core.demo.client.application.page.button.ButtonModule;
+import gmd.core.demo.client.application.page.cards.CardModule;
 import gmd.core.demo.client.application.page.home.HomeModule;
 
 public class ApplicationModule extends AbstractPresenterModule {
@@ -31,6 +33,8 @@ public class ApplicationModule extends AbstractPresenterModule {
         install(new HomeModule());
         install(new BadgeModule());
         install(new ButtonModule());
+        install(new BreadcrumbModule());
+        install(new CardModule());
 
         bindPresenter(ApplicationPresenter.class, ApplicationPresenter.MyView.class, ApplicationView.class,
                 ApplicationPresenter.MyProxy.class);

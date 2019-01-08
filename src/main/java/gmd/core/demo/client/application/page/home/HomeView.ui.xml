@@ -31,7 +31,9 @@
             </m:MaterialRow>
         </m:MaterialRow>
         <m:MaterialRow>
-            <m:MaterialRow ui:field="dashboardsRow"/>
+            <m:MaterialColumn grid="s12 m12 l8" offset="l2">
+                <m:MaterialRow ui:field="dashboardsRow"/>
+            </m:MaterialColumn>
         </m:MaterialRow>
     </m:MaterialPanel>
 </ui:UiBinder>

@@ -37,7 +37,7 @@
 
         <m:MaterialSideNavPush ui:field="sidenav" m:id="right-sidenav" width="300">
             <m:MaterialSideNavContent ui:field="home" height="60px">
-                <m:MaterialImage url="/launcher-icons/launcher1x.png" alt="logo" float="LEFT" width="32px" marginRight="20"/>
+                <m:MaterialImage url="https://gwtmaterialdesign.github.io/gmd-core-demo/launcher-icons/launcher1x.png" alt="logo" float="LEFT" width="32px" marginRight="20"/>
                 <m:MaterialPanel>
                     <m:MaterialLabel text="gwt-material" textColor="BLACK" fontWeight="BOLD" lineHeight="24" marginTop="12"/>
                     <m:MaterialLabel text="Version 2.2" lineHeight="12" fontSize="0.8em"/>
@@ -48,15 +48,19 @@
 
         <m:MaterialContainer paddingTop="64">
             <m:MaterialPanel ui:field="header" padding="40" borderBottom="1px solid #e9e9e9">
-                <m:MaterialLabel ui:field="title" fontSize="2.4em" />
-                <m:MaterialLabel ui:field="description" marginBottom="20"/>
+                <m:MaterialRow marginBottom="0">
+                    <m:MaterialColumn grid="s12 m12 l9">
+                        <m:MaterialLabel ui:field="title" fontSize="2.4em" />
+                        <m:MaterialLabel ui:field="description" marginBottom="20"/>
+                    </m:MaterialColumn>
+                </m:MaterialRow>
                 <m:MaterialRow marginBottom="0">
                     <m:MaterialAnchorButton ui:field="javaSource" text="Java" paddingLeft="0" customIconType="fab fa-java" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
                     <m:MaterialAnchorButton ui:field="xmlSource" text="XML" iconType="CODE" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
                 </m:MaterialRow>
             </m:MaterialPanel>
 
-            <m:MaterialPanel ui:field="container" padding="40"/>
+            <m:MaterialRow ui:field="container" padding="40"/>
         </m:MaterialContainer>
 
     </m:MaterialPanel>

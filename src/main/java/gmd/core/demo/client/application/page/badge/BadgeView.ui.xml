@@ -45,20 +45,7 @@
 
             <g:HTMLPanel>
                 <pre>
-                    &lt;m:MaterialCollection>
-                    &lt;m:MaterialCollectionItem>
-                    &lt;m:MaterialLink text="Sample 1" >
-                    &lt;m:MaterialBadge text="1 new" textColor="WHITE"/>
-                    &lt;/m:MaterialLink>
-                    &lt;/m:MaterialCollectionItem>
-                    &lt;m:MaterialCollectionItem>
-                    &lt;m:MaterialLink text="Sample 2" >
-                    &lt;m:MaterialBadge text="1 new" textColor="WHITE"/>
-                    &lt;/m:MaterialLink>
-                    &lt;/m:MaterialCollectionItem>
-                    &lt;m:MaterialCollectionItem>&lt;m:MaterialLink text="Collecton 3"/>&lt;/m:MaterialCollectionItem>
-                    &lt;m:MaterialCollectionItem>&lt;m:MaterialLink text="Collecton 4"/>&lt;/m:MaterialCollectionItem>
-                    &lt;/m:MaterialCollection>
+
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -78,17 +65,7 @@
 
             <g:HTMLPanel>
                 <pre>
-                    &lt;!-- Activator -->
-                    &lt;m:MaterialButton activates="dp-4" text="Dropdown" iconType="ARROW_DROP_DOWN"
-                    iconPosition="RIGHT" textColor="WHITE"/>
-                    &lt;!-- My Drop Down -->
-                    &lt;m:MaterialDropDown activator="dp-4" belowOrigin="false" constrainWidth="true">
-                    &lt;m:MaterialLink text="First" />
-                    &lt;m:MaterialLink text="Second" >
-                    &lt;m:MaterialBadge text="1 new" textColor="WHITE"/>
-                    &lt;/m:MaterialLink>
-                    &lt;m:MaterialLink text="Third" />
-                    &lt;/m:MaterialDropDown>
+
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -105,15 +82,7 @@
             </m:MaterialNavBar>
             <g:HTMLPanel>
                 <pre>
-                    &lt;m:MaterialNavBar width="100%">
-                    &lt;m:MaterialNavSection hideOn="NONE" float="RIGHT">
-                    &lt;m:MaterialLink text="One" />
-                    &lt;m:MaterialLink text="Two" paddingLeft="0" paddingRight="0">
-                    &lt;m:MaterialBadge text="New" backgroundColor="RED"/>
-                    &lt;/m:MaterialLink>
-                    &lt;m:MaterialLink text="Three" />
-                    &lt;/m:MaterialNavSection>
-                    &lt;/m:MaterialNavBar>
+
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -136,16 +105,7 @@
             </m:MaterialNavBar>
             <g:HTMLPanel>
                 <pre>
-                    &lt;m:MaterialLink textColor="WHITE" href="#" iconPosition="NONE" iconType="SEARCH"
-                    layoutPosition="RELATIVE"/>
-                    &lt;m:MaterialLink textColor="WHITE" href="#" iconPosition="NONE" iconType="NOTIFICATIONS"
-                    layoutPosition="RELATIVE">
-                    &lt;m:MaterialBadge text="2" backgroundColor="PINK" textColor="WHITE" circle="true"/>
-                    &lt;/m:MaterialLink>
-                    &lt;m:MaterialLink textColor="WHITE" href="#" iconPosition="NONE" iconType="BOOKMARK_BORDER"
-                    layoutPosition="RELATIVE">
-                    &lt;m:MaterialBadge text="21" backgroundColor="PINK" textColor="WHITE" circle="true"/>
-                    &lt;/m:MaterialLink>
+
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>

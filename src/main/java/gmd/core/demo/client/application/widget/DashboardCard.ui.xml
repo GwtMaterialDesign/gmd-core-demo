@@ -23,7 +23,7 @@
 
 	<m:MaterialColumn grid="s12 m4 l3">
 		<m:MaterialCard>
-			<m:MaterialCardContent padding="0" height="360px">
+			<m:MaterialCardContent padding="0">
 				<m:MaterialCardImage backgroundColor="GREY_LIGHTEN_5">
 					<m:MaterialImage ui:field="image" alt="dashboard-image" />
 				</m:MaterialCardImage>

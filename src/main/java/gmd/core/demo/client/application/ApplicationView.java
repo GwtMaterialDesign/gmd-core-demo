@@ -56,7 +56,7 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     MaterialSideNavPush sidenav;
 
     @UiField
-    MaterialPanel container;
+    MaterialRow container;
 
     @Inject
     ApplicationView(Binder uiBinder) {

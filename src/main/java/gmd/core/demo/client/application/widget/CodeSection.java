@@ -24,6 +24,7 @@ public class CodeSection extends MaterialPanel {
     protected void onLoad() {
         super.onLoad();
 
+        setScrollspy(sectionTitle.toLowerCase().replace(" ", "_"));
 
         if (sectionTitle != null) {
             titleLabel.setFontSize("1.4em");
