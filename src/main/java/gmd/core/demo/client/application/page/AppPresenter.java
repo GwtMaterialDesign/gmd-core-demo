@@ -16,6 +16,7 @@ import gmd.core.demo.client.application.navigation.Component;
 import gmd.core.demo.client.application.navigation.NavigationService;
 import gmd.core.demo.client.application.widget.CodeSection;
 import gwt.material.design.client.base.MaterialWidget;
+import gwt.material.design.client.base.helper.ScrollHelper;
 import gwt.material.design.client.constants.HideOn;
 import gwt.material.design.client.ui.*;
 
@@ -39,6 +40,9 @@ public class AppPresenter<V extends View, P extends Proxy<?>> extends Presenter<
     @Override
     protected void onReveal() {
         super.onReveal();
+
+        ScrollHelper scrollHelper = new ScrollHelper();
+        scrollHelper.scrollTo(0);
 
         Component component = NavigationService.get(placeManager.getCurrentPlaceRequest().getNameToken());
 

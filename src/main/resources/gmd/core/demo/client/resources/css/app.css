@@ -59,6 +59,17 @@ nav .nav-wrapper ul a.btn span {
     line-height: 60px;
 }
 
+/** Search **/
+#app-container .search-result a {
+    padding-left: 60px;
+    height: 40px;
+    line-height: 40px;
+}
+
+#app-container .input-field.inline-search {
+    right: 30%;
+}
+
 /** Code **/
 pre {
     background: #f3f5ff;

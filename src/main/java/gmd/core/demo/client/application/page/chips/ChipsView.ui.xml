@@ -23,9 +23,83 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <m:MaterialPanel>
-        <widget:CodeSection sectionTitle="Text Only">
+        <widget:CodeSection sectionTitle="Simple Chip" description="If you want just text only chip, you can use this for autocomplete textbox and search capability">
+            <m:MaterialRow>
+                <m:MaterialChip margin="8" tooltip="Sample" tooltipPosition="BOTTOM" text="Default" iconType="CLOSE"/>
+                <m:MaterialChip margin="8" text="Apple" backgroundColor="RED" textColor="WHITE" iconType="CLOSE"/>
+                <m:MaterialChip margin="8" text="ORANGE" backgroundColor="ORANGE" textColor="WHITE"  iconType="CLOSE"/>
+                <m:MaterialChip margin="8" text="Banana" backgroundColor="AMBER" textColor="WHITE" iconType="CLOSE"/>
+                <m:MaterialChip margin="8" text="Mango" backgroundColor="GREEN" textColor="WHITE" iconType="CLOSE"/>
+            </m:MaterialRow>
 
+            <g:HTMLPanel>
+                <pre>
 
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Outlined Chip" description="Provide a simple and outlined chip component.">
+            <m:MaterialRow>
+                <m:MaterialChip margin="8" type="OUTLINED" letterColor="WHITE" letterBackgroundColor="RED" text="Apple" />
+                <m:MaterialChip margin="8" type="OUTLINED" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Grapes" iconType="CLOSE"/>
+                <m:MaterialChip margin="8" type="OUTLINED" letter="D" letterColor="WHITE" letterBackgroundColor="GREEN" text="Dalandan" iconType="CLOSE"/>
+                <m:MaterialChip margin="8" type="OUTLINED" letter="M" letterColor="ORANGE" letterBackgroundColor="YELLOW" text="Mango" iconType="CLOSE"/>
+            </m:MaterialRow>
+
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Static Chip" description="Static chips cannot be selected, removed or edited, and are not part of any model.">
+            <m:MaterialRow>
+                <m:MaterialChip margin="8" text="Apple" />
+                <m:MaterialChip margin="8" text="Banana" />
+                <m:MaterialChip margin="8" text="Mango" />
+            </m:MaterialRow>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Letter Chip" description="You can specify a letter as an avatar from Aa to Zz.">
+            <m:MaterialRow>
+                <m:MaterialChip margin="8" letter="A" letterColor="WHITE" letterBackgroundColor="RED" text="Apple" iconType="CLOSE"/>
+                <m:MaterialChip margin="8" letter="G" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Grapes" iconType="CLOSE"/>
+                <m:MaterialChip margin="8" letter="D" letterColor="WHITE" letterBackgroundColor="GREEN" text="Dalandan" iconType="CLOSE"/>
+                <m:MaterialChip margin="8" letter="M" letterColor="ORANGE" letterBackgroundColor="YELLOW" text="Mango" iconType="CLOSE"/>
+            </m:MaterialRow>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Contact Chips" description="Contact chips represent contact information that users have for people in a compact way. They are invoked and inserted into a text field (usually the To field) when the user starts typing a contact's name, sees the contact's addresses, and selects the correct one. Contact chips can be added directly to a text field from a menu of contacts. Contact chips efficiently confirm that the user will be sending their message to the correct person.">
+            <m:MaterialRow>
+                <m:MaterialChip margin="8" url="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi9lfCkLutb7ugJlIjn84qWNoiICopC-Vyx7QQJRHF5E7GlqFG" text="Yunalis Mat Zara'ai" iconType="CLOSE"/>
+                <m:MaterialChip margin="8" url="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi9lfCkLutb7ugJlIjn84qWNoiICopC-Vyx7QQJRHF5E7GlqFG" text="Marjorie Matias" iconType="CLOSE"/>
+                <m:MaterialChip margin="8" url="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi9lfCkLutb7ugJlIjn84qWNoiICopC-Vyx7QQJRHF5E7GlqFG" text="Zenaida Ringor" iconType="CLOSE"/>
+            </m:MaterialRow>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Events" description="Adding events on chip is easy, you can get the secondary icon by calling getIcon() then addClickHandles etc.">
+            <m:MaterialButton ui:field="closeChip" text="Close Chip" />
+            <m:MaterialRow>
+                <m:MaterialChip margin="8" ui:field="chip" url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" iconType="CLOSE"/>
+                <m:MaterialChip margin="8" ui:field="chipClick" text="Click Me" />
+            </m:MaterialRow>
             <g:HTMLPanel>
                 <pre>
 

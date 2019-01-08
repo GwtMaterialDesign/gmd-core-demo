@@ -19,16 +19,18 @@
   -->
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
              xmlns:g='urn:import:com.google.gwt.user.client.ui'
-             xmlns:m="urn:import:gwt.material.design.client.ui">
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:incubator="urn:import:gwt.material.design.incubator.client">
 
     <ui:with field="res" type="gmd.core.demo.client.resources.AppResources"/>
 
     <m:MaterialPanel m:id="app-container">
         <m:MaterialHeader layoutPosition="FIXED" width="100%" top="0" depth="995">
-            <m:MaterialNavBar ui:field="navBar" activates="right-sidenav" backgroundColor="WHITE" overflow="HIDDEN">
+            <m:MaterialNavBar ui:field="navBar" activates="right-sidenav" backgroundColor="WHITE">
                 <m:MaterialNavBrand>
                     <m:MaterialLabel ui:field="navBrand" text="Core" textColor="BLACK" fontSize="0.8em"/>
                 </m:MaterialNavBrand>
+                <incubator:search.InlineSearch hideOn="HIDE_ON_MED_DOWN" ui:field="search" theme="LIGHT" width="50%" placeholder="Search" display="INLINE"/>
                 <m:MaterialNavSection float="RIGHT">
                     <m:MaterialAnchorButton ui:field="github" text="Github" target="_blank" customIconType="fab fa-github" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
                     <m:MaterialAnchorButton ui:field="gitter" text="Gitter" target="_blank" customIconType="fab fa-gitter" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
@@ -64,5 +66,8 @@
             <m:MaterialRow ui:field="container" padding="40"/>
         </m:MaterialContainer>
 
+        <m:MaterialFAB ui:field="fabUp" opacity="0">
+            <m:MaterialButton iconType="KEYBOARD_ARROW_UP" type="FLOATING" size="LARGE" backgroundColor="WHITE" iconColor="INDIGO"/>
+        </m:MaterialFAB>
     </m:MaterialPanel>
 </ui:UiBinder>

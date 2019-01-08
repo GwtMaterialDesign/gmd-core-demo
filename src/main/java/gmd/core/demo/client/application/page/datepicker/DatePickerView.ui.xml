@@ -23,8 +23,262 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <m:MaterialPanel>
-        <widget:CodeSection sectionTitle="Text Only">
+        <widget:CodeSection sectionTitle="Basic"  description="You can easily add placeholder to indicate a label into your datepicker.">
+            <m:MaterialRow>
+                <m:MaterialDatePicker placeholder="Date" grid="s12 m4"/>
+            </m:MaterialRow>
 
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Disabled Styles" description="You can disable the datepicker by adding enabled='false'">
+            <m:MaterialRow>
+                <m:MaterialDatePicker placeholder="Birthday" enabled="false" grid="s12 m4"/>
+            </m:MaterialRow>
+
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Date Picker Selection Types" description="You can set easily the selection type of your datepicker by adding an attribute, selectionType='YEAR'. Here is the available formats [DAY, MONTH_DAY, YEAR_MONTH_DAY, YEAR]">
+            <m:MaterialRow>
+                <m:MaterialDatePicker  placeholder="Date" selectionType="YEAR" grid="s12 m4"/>
+            </m:MaterialRow>
+
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="SELF or BODY Container" description="Set whether the parent of the root picker should be attached. For Dialogs it is good to use BODY instead of SELF container.">
+            <m:MaterialRow>
+                <m:MaterialDatePicker  placeholder="Picker attached on it's own (SELF)" container="SELF" selectionType="YEAR" grid="s12 m4"/>
+                <m:MaterialDatePicker  placeholder="Picker attached on root (BODY)" container="BODY" selectionType="YEAR" grid="s12 m4"/>
+            </m:MaterialRow>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Years to Display" description="You can easily adjust how many years to display in listbox. Good for Birthdate">
+            <m:MaterialRow>
+                <m:MaterialDatePicker ui:field="dpBirthdate" placeholder="Birthdate" selectionType="YEAR" yearsToDisplay="50" grid="s12 m4"/>
+            </m:MaterialRow>
+
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Auto Close" description="Provides a way to automatically closes the datepicker after selecting dates.">
+            <m:MaterialRow>
+                <m:MaterialDatePicker ui:field="dpAutoClose" grid="s12 m4" autoClose="true" placeholder="Date" />
+            </m:MaterialRow>
+
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Mobile" description="Open this time picker on a mobile device to test.">
+            <m:MaterialRow>
+                <m:MaterialDatePicker detectOrientation="true" grid="s12 m4" placeholder="Supports mobile orientations" />
+            </m:MaterialRow>
+
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Setting and Getting Date">
+            <m:MaterialRow>
+                <m:MaterialDatePicker ui:field="dp" grid="s12 m4" placeholder="Date" selectionType="YEAR"/>
+                <m:MaterialButton ui:field="btnSetDate" text="Set Date to January 1 2016" marginRight="20" marginTop="24"/>
+                <m:MaterialButton ui:field="btnGetDate" text="Get the date" marginTop="24"/>
+            </m:MaterialRow>
+
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Set Value with Events">
+            <m:MaterialRow>
+                <m:MaterialDatePicker ui:field="dpValue" placeholder="DatePicker" grid="s12 m4" />
+                <m:MaterialButton text="Set Value" ui:field="btnDpValue" marginRight="20" marginTop="24"/>
+                <m:MaterialButton text="Set Value with Event" ui:field="btnDpValueEvent" marginTop="24"/>
+            </m:MaterialRow>
+
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Formats" description="You can set the format of the date picker by adding format='FORMAT'">
+            <m:MaterialRow>
+                <m:MaterialDatePicker ui:field="dpFormat" grid="s12 m4" placeholder="Custom Format" format="YYYY/MM/DD"/>
+                <m:MaterialButton ui:field="btnSetFormat" text="Set Date with custom format" marginTop="24"/>
+            </m:MaterialRow>
+
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Formatting Rules" description="The following rules can be used to format any date supported by Pickadate JS (Our core datepicker API)">
+            <g:HTMLPanel>
+                <table class="format-table striped">
+                    <thead>
+                        <tr>
+                            <th>Rule</th>
+                            <th>Description</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>d</td>
+                            <td>Date of the month</td>
+                            <td>1 – 31</td>
+                        </tr>
+                        <tr>
+                            <td>dd</td>
+                            <td>Date of the month with a leading zero</td>
+                            <td>01 – 31</td>
+                        </tr>
+                        <tr>
+                            <td>ddd</td>
+                            <td>Day of the week in short form</td>
+                            <td>Sun – Sat</td>
+                        </tr>
+                        <tr>
+                            <td>dddd</td>
+                            <td>Day of the week in full form</td>
+                            <td>Sunday – Saturday</td>
+                        </tr>
+                        <tr>
+                            <td>m</td>
+                            <td>Month of the year</td>
+                            <td>1 – 12</td>
+                        </tr>
+                        <tr>
+                            <td>mm</td>
+                            <td>Month of the year with a leading zero</td>
+                            <td>01 – 12</td>
+                        </tr>
+                        <tr>
+                            <td>mmm</td>
+                            <td>Month name in short form</td>
+                            <td>Jan – Dec</td>
+                        </tr>
+                        <tr>
+                            <td>mmmm</td>
+                            <td>Month name in full form</td>
+                            <td>January – December</td>
+                        </tr>
+                        <tr>
+                            <td>yy</td>
+                            <td>Year in short form *</td>
+                            <td>00 – 99</td>
+                        </tr>
+                        <tr>
+                            <td>yyyy</td>
+                            <td>Year in full form</td>
+                            <td>2000 – 2999</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </g:HTMLPanel>
+
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Date Limit" description="You can limit the date by calling setDateLimit(Date min, Date max) method.">
+            <m:MaterialRow>
+                <m:MaterialDatePicker ui:field="dpLimit" placeholder="With Limit"/>
+            </m:MaterialRow>
+
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Clear" description="Clearing the value of datepicker.">
+            <m:MaterialRow>
+                <m:MaterialDatePicker ui:field="dpClear" grid="s12 m4" placeholder="Birthday" />
+            </m:MaterialRow>
+            <m:MaterialRow>
+                <m:MaterialButton ui:field="btnClear" text="Clear" iconType="CLEAR" marginRight="20" marginTop="24"/>
+                <m:MaterialButton ui:field="btnGetValue" text="Get Value" marginTop="24"/>
+            </m:MaterialRow>
+
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Open and Close control" description="You can control programmatically the date picker. We added value change event with datepicker.close() upon triggering the event.">
+            <m:MaterialRow>
+                <m:MaterialDatePicker ui:field="dpOpenClose" grid="s12 m4" placeholder="Birthdate" />
+            </m:MaterialRow>
+            <m:MaterialButton ui:field="btnOpen" text="Open DatePicker" marginTop="24"/>
+
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Events" description="We provided events on date picker namely : Close, Open, ValueChange events.">
+            <m:MaterialRow>
+                <m:MaterialDatePicker ui:field="dpEvents" grid="s12 m4" placeholder="Birthday"/>
+            </m:MaterialRow>
+
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Language Translations" description="With API we have supported 43 languages into the datepicker component.">
+            <m:MaterialRow>
+                <m:MaterialListBox ui:field="lstLanguage" placeholder="Select Language" grid="l4"/>
+                <m:MaterialDatePicker ui:field="dpTranslation" placeholder="With Translation" grid="l4"/>
+            </m:MaterialRow>
 
             <g:HTMLPanel>
                 <pre>

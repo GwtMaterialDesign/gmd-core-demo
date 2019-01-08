@@ -46,6 +46,8 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
         void setupHeader();
 
         void updateSideNavActiveState(int index);
+
+        void setupSearch();
     }
 
     private PlaceManager manager;
@@ -72,6 +74,7 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
 
         getView().setupSideNav(NavigationService.getSideNavLinks());
         getView().setupHeader();
+        getView().setupSearch();
     }
 
     @Override
