@@ -29,7 +29,25 @@ import gmd.core.demo.client.application.page.chips.ChipsModule;
 import gmd.core.demo.client.application.page.collapsible.CollapsibleModule;
 import gmd.core.demo.client.application.page.collection.CollectionModule;
 import gmd.core.demo.client.application.page.datepicker.DatePickerModule;
+import gmd.core.demo.client.application.page.dialogs.DialogModule;
+import gmd.core.demo.client.application.page.dropdown.DropdownModule;
+import gmd.core.demo.client.application.page.errors.ErrorsModule;
+import gmd.core.demo.client.application.page.fab.FabModule;
+import gmd.core.demo.client.application.page.footer.FooterModule;
 import gmd.core.demo.client.application.page.home.HomeModule;
+import gmd.core.demo.client.application.page.listbox.ListBoxModule;
+import gmd.core.demo.client.application.page.loaders.LoadersModule;
+import gmd.core.demo.client.application.page.media.MediaModule;
+import gmd.core.demo.client.application.page.navbar.NavBarModule;
+import gmd.core.demo.client.application.page.pushpin.PushPinModule;
+import gmd.core.demo.client.application.page.radiobutton.RadioButtonModule;
+import gmd.core.demo.client.application.page.range.RangeModule;
+import gmd.core.demo.client.application.page.scrollspy.ScrollspyModule;
+import gmd.core.demo.client.application.page.search.SearchModule;
+import gmd.core.demo.client.application.page.sidenavs.SideNavModule;
+import gmd.core.demo.client.application.page.switches.SwitchModule;
+import gmd.core.demo.client.application.page.tabs.TabsModule;
+import gmd.core.demo.client.application.page.textfields.TextFieldModule;
 
 public class ApplicationModule extends AbstractPresenterModule {
 
@@ -37,14 +55,33 @@ public class ApplicationModule extends AbstractPresenterModule {
     protected void configure() {
         install(new HomeModule());
         install(new BadgeModule());
-        install(new ButtonModule());
         install(new BreadcrumbModule());
+        install(new ButtonModule());
         install(new CardModule());
         install(new CheckboxModule());
         install(new ChipsModule());
         install(new CollapsibleModule());
         install(new CollectionModule());
         install(new DatePickerModule());
+        install(new DialogModule());
+        install(new DropdownModule());
+        install(new ErrorsModule());
+        install(new FabModule());
+        install(new FooterModule());
+        install(new ListBoxModule());
+        install(new LoadersModule());
+        install(new MediaModule());
+        install(new NavBarModule());
+        install(new PushPinModule());
+        install(new RadioButtonModule());
+        install(new RangeModule());
+        install(new ScrollspyModule());
+        install(new SearchModule());
+        install(new SideNavModule());
+        install(new SwitchModule());
+        install(new TabsModule());
+        install(new TextFieldModule());
+
 
         bindPresenter(ApplicationPresenter.class, ApplicationPresenter.MyView.class, ApplicationView.class,
                 ApplicationPresenter.MyProxy.class);

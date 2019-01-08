@@ -1,0 +1,231 @@
+<!--
+  #%L
+  GwtMaterial
+  %%
+  Copyright (C) 2015 - 2017 GwtMaterialDesign
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:m='urn:import:gwt.material.design.client.ui'
+             xmlns:widget="urn:import:gmd.core.demo.client.application.widget"
+             xmlns:ma="urn:import:gwt.material.design.addins.client"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+    <m:MaterialPanel>
+        <widget:CodeSection sectionTitle="Validation" description="You can add validators and error handlers to input fields.">
+            <m:MaterialRow paddingTop="10">
+                <m:MaterialTextBox ui:field="txtBoxValidator" label="Email" grid="s12 m12 l5" validateOnBlur="true" allowBlank="false"/>
+            </m:MaterialRow>
+            <m:MaterialRow>
+                <m:MaterialButton ui:field="btnValidate" text="Validate" waves="LIGHT"/>
+            </m:MaterialRow>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Allow Blank Property" description="Allow blank property is similar to not required property. By setting allowBlank='false' it means that your field is required.">
+            <m:MaterialRow>
+                <m:MaterialTextBox ui:field="txtBoxValidate" validateOnBlur="true" allowBlank="false" label="Required Value (TextBox)" grid="s12"/>
+                <m:MaterialTextArea ui:field="txtAreaValidate" validateOnBlur="true" allowBlank="false" label="Required Value (Text Area)" grid="s12"/>
+                <m:MaterialIntegerBox ui:field="intBoxValidate" validateOnBlur="true" allowBlank="false" label="Required Value (IntegerBox)" grid="s12"/>
+                <m:MaterialDoubleBox ui:field="doubleBoxValidate" validateOnBlur="true" allowBlank="false" label="Required Value (DoubleBox)" grid="s12"/>
+                <m:MaterialFloatBox ui:field="floatBoxValidate" validateOnBlur="true" allowBlank="false" label="Required Value (FloatBox)" grid="s12"/>
+                <m:MaterialLongBox ui:field="longBoxValidate" validateOnBlur="true" allowBlank="false" label="Required Value (LongBox)" grid="s12"/>
+                <m:MaterialDatePicker ui:field="datePickerValidate" validateOnBlur="true" allowBlank="false" placeholder="Required Value (DatePicker)" grid="s12"/>
+                <ma:timepicker.MaterialTimePicker ui:field="timePickerValidate" validateOnBlur="true" allowBlank="false" placeholder="Required Value (TimePicker)" grid="s12"/>
+                <m:MaterialButton ui:field="btnValidateAll" text="Validate" waves="LIGHT" />
+            </m:MaterialRow>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Autocomplete" >
+            <!-- Autocomplete -->
+            <m:MaterialRow>
+                <ma:autocomplete.MaterialAutoComplete ui:field="acList" placeholder="States" grid="s12 m12 l5"/>
+            </m:MaterialRow>
+            <m:MaterialRow>
+                <m:MaterialButton ui:field="btnError" text="Error" backgroundColor="RED" waves="LIGHT" marginRight="20"/>
+                <m:MaterialButton ui:field="btnSuccess" text="Success" backgroundColor="GREEN" waves="LIGHT" marginRight="20"/>
+                <m:MaterialButton ui:field="btnHelper" text="Helper" backgroundColor="WHITE" textColor="BLACK" waves="LIGHT" marginRight="20"/>
+                <m:MaterialButton ui:field="btnClear" text="Clear" waves="LIGHT"/>
+            </m:MaterialRow>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Date Picker">
+            <!-- Date Picker -->
+            <m:MaterialRow>
+                <m:MaterialDatePicker ui:field="dp" placeholder="States" grid="s12 m12 l5"/>
+            </m:MaterialRow>
+            <m:MaterialRow>
+                <m:MaterialButton ui:field="btnErrorDp" text="Error" backgroundColor="RED" waves="LIGHT" marginRight="20"/>
+                <m:MaterialButton ui:field="btnSuccessDp" text="Success" backgroundColor="GREEN" waves="LIGHT" marginRight="20"/>
+                <m:MaterialButton ui:field="btnHelperDp" text="Helper" backgroundColor="WHITE" textColor="BLACK" waves="LIGHT" marginRight="20"/>
+                <m:MaterialButton ui:field="btnClearDp" text="Clear" waves="LIGHT"/>
+            </m:MaterialRow>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+        <widget:CodeSection sectionTitle="Time Picker">
+            <!-- Time Picker -->
+            <m:MaterialRow>
+                <ma:timepicker.MaterialTimePicker placeholder="Time" ui:field="tp"  grid="s12 m12 l5" />
+            </m:MaterialRow>
+            <m:MaterialRow>
+                <m:MaterialButton ui:field="btnErrorTime" text="Error" backgroundColor="RED" waves="LIGHT" marginRight="20"/>
+                <m:MaterialButton ui:field="btnSuccessTime" text="Success" backgroundColor="GREEN" waves="LIGHT" marginRight="20"/>
+                <m:MaterialButton ui:field="btnHelperTime" text="Helper" backgroundColor="WHITE" textColor="BLACK" waves="LIGHT" marginRight="20"/>
+                <m:MaterialButton ui:field="btnClearTime" text="Clear" waves="LIGHT"/>
+            </m:MaterialRow>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Range">
+            <!-- Range -->
+            <m:MaterialRow>
+                <m:MaterialRange min="0" max="100" value="50" ui:field="range" grid="s12 m12 l5" />
+            </m:MaterialRow>
+            <m:MaterialRow>
+                <m:MaterialButton ui:field="btnErrorRange" text="Error" backgroundColor="RED" waves="LIGHT" marginRight="20"/>
+                <m:MaterialButton ui:field="btnSuccessRange" text="Success" backgroundColor="GREEN" waves="LIGHT" marginRight="20"/>
+                <m:MaterialButton ui:field="btnHelperRange" text="Helper" backgroundColor="WHITE" textColor="BLACK" waves="LIGHT" marginRight="20"/>
+                <m:MaterialButton ui:field="btnClearRange" text="Clear" waves="LIGHT"/>
+            </m:MaterialRow>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Switch">
+            <!-- Switch -->
+            <m:MaterialRow>
+                <m:MaterialSwitch ui:field="sw" grid="s12 m12 l5" />
+            </m:MaterialRow>
+            <m:MaterialRow>
+                <m:MaterialButton ui:field="btnErrorSwitch" text="Error" backgroundColor="RED" waves="LIGHT" marginRight="20"/>
+                <m:MaterialButton ui:field="btnSuccessSwitch" text="Success" backgroundColor="GREEN" waves="LIGHT" marginRight="20"/>
+                <m:MaterialButton ui:field="btnHelperSwitch" text="Helper" backgroundColor="WHITE" textColor="BLACK" waves="LIGHT" marginRight="20"/>
+                <m:MaterialButton ui:field="btnClearSwitch" text="Clear" waves="LIGHT"/>
+            </m:MaterialRow>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Text Area">
+            <!-- Text Area -->
+            <m:MaterialRow>
+                <m:MaterialTextArea ui:field="txtArea" label="About You" grid="s12 m12 l5" text="I Love Material Design"/>
+            </m:MaterialRow>
+            <m:MaterialRow>
+                <m:MaterialButton ui:field="btnErrorTxtArea" text="Error" backgroundColor="RED" waves="LIGHT" marginRight="20"/>
+                <m:MaterialButton ui:field="btnSuccessTxtArea" text="Success" backgroundColor="GREEN" waves="LIGHT" marginRight="20"/>
+                <m:MaterialButton ui:field="btnHelperTxtArea" text="Helper" backgroundColor="WHITE" textColor="BLACK" waves="LIGHT" marginRight="20"/>
+                <m:MaterialButton ui:field="btnClearTxtArea" text="Clear" waves="LIGHT"/>
+            </m:MaterialRow>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Text Box">
+            <!-- Text Box -->
+            <m:MaterialRow>
+                <m:MaterialTextBox ui:field="txtBox" label="First Name" grid="s12 m12 l5" text="Marjorie Matias"/>
+            </m:MaterialRow>
+            <m:MaterialRow>
+                <m:MaterialButton ui:field="btnErrorTxtBox" text="Error" backgroundColor="RED" waves="LIGHT" marginRight="20"/>
+                <m:MaterialButton ui:field="btnSuccessTxtBox" text="Success" backgroundColor="GREEN" waves="LIGHT" marginRight="20"/>
+                <m:MaterialButton ui:field="btnHelperTxtBox" text="Helper" backgroundColor="WHITE" textColor="BLACK" waves="LIGHT" marginRight="20"/>
+                <m:MaterialButton ui:field="btnClearTxtBox" text="Clear" waves="LIGHT"/>
+            </m:MaterialRow>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Combo Box">
+            <!-- ComboBox -->
+            <m:MaterialRow>
+                <m:MaterialColumn grid="s12 m12 l5" >
+                    <ma:combobox.MaterialComboBox label="Select your choice" ui:field="combobox">
+                        <m:html.Option text="Option 1"/>
+                        <m:html.Option text="Option 2"/>
+                        <m:html.Option text="Option 3"/>
+                    </ma:combobox.MaterialComboBox>
+                </m:MaterialColumn>
+            </m:MaterialRow>
+            <m:MaterialRow>
+                <m:MaterialButton ui:field="btnErrorComboBox" text="Error" backgroundColor="RED" waves="LIGHT" marginRight="20"/>
+                <m:MaterialButton ui:field="btnSuccessComboBox" text="Success" backgroundColor="GREEN" waves="LIGHT" marginRight="20"/>
+                <m:MaterialButton ui:field="btnHelperComboBox" text="Helper" backgroundColor="WHITE" textColor="BLACK" waves="LIGHT" marginRight="20"/>
+                <m:MaterialButton ui:field="btnClearComboBox" text="Clear" waves="LIGHT"/>
+            </m:MaterialRow>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="List Box">
+            <!-- ListBox -->
+            <m:MaterialRow>
+                <m:MaterialListBox ui:field="listbox" placeholder="Select Your choice" grid="s12 m12 l5">
+                    <m:html.Option text="Option 1"/>
+                    <m:html.Option text="Option 2"/>
+                    <m:html.Option text="Option 3"/>
+                </m:MaterialListBox>
+            </m:MaterialRow>
+            <m:MaterialRow>
+                <m:MaterialButton ui:field="btnErrorListBox" text="Error" backgroundColor="RED" waves="LIGHT" marginRight="20"/>
+                <m:MaterialButton ui:field="btnSuccessListBox" text="Success" backgroundColor="GREEN" waves="LIGHT" marginRight="20"/>
+                <m:MaterialButton ui:field="btnHelperListBox" text="Helper" backgroundColor="WHITE" textColor="BLACK" waves="LIGHT" marginRight="20"/>
+                <m:MaterialButton ui:field="btnClearListBox" text="Clear" waves="LIGHT"/>
+            </m:MaterialRow>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+    </m:MaterialPanel>
+</ui:UiBinder>

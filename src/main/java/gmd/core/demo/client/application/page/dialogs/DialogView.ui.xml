@@ -1,0 +1,239 @@
+<!--
+  #%L
+  GwtMaterial
+  %%
+  Copyright (C) 2015 - 2017 GwtMaterialDesign
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:m='urn:import:gwt.material.design.client.ui'
+             xmlns:widget="urn:import:gmd.core.demo.client.application.widget"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+    <m:MaterialPanel>
+        <widget:CodeSection sectionTitle="Toast" description="GWT Material provides an easy way for you to send unobtrusive alerts to your users through toasts. These toasts are also placed and sized responsively, try it out by clicking the button below on different device sizes.">
+            <m:MaterialButton text="Toast Me" waves="LIGHT" ui:field="btnToast"/>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Toast with Action" description="Provides an advance toast with any widget (MaterialLink) for declaration of actions when toast is applied.">
+            <m:MaterialButton text="Toast Me" waves="LIGHT" ui:field="btnToastAction"/>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Styling Toasts" description="We've added the ability to customize your toasts easily. You can pass in classes as an optional parameter into the toast function. We've added a rounded class for you, but you can create your own CSS classes and apply them to toasts. Checkout out our full example below.">
+            <m:MaterialButton text="Toast Me" waves="LIGHT" ui:field="btnToastRounded"/>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Toasts with Callback" description="You can add finishing callbacks to your toasts to invoke actions.">
+            <m:MaterialButton text="Toast Me" waves="LIGHT" ui:field="btnToastCallback"/>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Dialogs" description="Use a dialog for dialog boxes, confirmation messages, or other content that can be called up. You can set the type by adding, type='DEFAULT, FIXED_FOOTER, BOTTOM_SHEET'">
+            <!-- Default Dialog -->
+            <m:MaterialDialog ui:field="dialog" type="DEFAULT" dismissible="false" inDuration="500" outDuration="500">
+                <m:MaterialDialogContent>
+                    <m:MaterialTitle title="Default Dialog" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+                </m:MaterialDialogContent>
+                <m:MaterialDialogFooter>
+                    <m:MaterialButton text="Close Dialog" type="FLAT" ui:field="btnCloseDialog"/>
+                </m:MaterialDialogFooter>
+            </m:MaterialDialog>
+            <m:MaterialButton text="Show Dialog" ui:field="btnDialog" waves="LIGHT"/>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Dialog with Fixed Footer">
+            <!-- Fixed Footer Dialog -->
+            <m:MaterialDialog ui:field="dialogFixed" type="FIXED_FOOTER" dismissible="false" inDuration="500" outDuration="500">
+                <m:MaterialDialogContent>
+                    <m:MaterialTitle title="Fixed Footer Dialog" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+                </m:MaterialDialogContent>
+                <m:MaterialDialogFooter>
+                    <m:MaterialButton text="Close Dialog" type="FLAT" ui:field="btnCloseFixedDialog"/>
+                </m:MaterialDialogFooter>
+            </m:MaterialDialog>
+            <m:MaterialButton text="Dialog with Fix Footer" ui:field="btnDialogFixFooter" waves="LIGHT"/>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Bottom Sheet Dialog">
+            <!-- Bottom Sheet Dialog -->
+            <m:MaterialDialog ui:field="dialogBottomSheet" type="BOTTOM_SHEET" dismissible="false" inDuration="500" outDuration="500">
+                <m:MaterialDialogContent>
+                    <m:MaterialTitle title="Bottom Sheet Dialog" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+                </m:MaterialDialogContent>
+                <m:MaterialDialogFooter>
+                    <m:MaterialButton text="Close Dialog" type="FLAT" ui:field="btnCloseBottomSheetDialog"/>
+                </m:MaterialDialogFooter>
+            </m:MaterialDialog>
+            <m:MaterialButton text="Dialog Bottom Sheet Style" ui:field="btnMoadalBottomSheets" waves="LIGHT"/>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Auto Hide Dialogs" description="Just set the boolean parameter on the method showDialog. If TRUE == you can click outside and the dialog will be close.">
+            <m:MaterialDialog ui:field="dialogClosable" type="FIXED_FOOTER" dismissible="true" inDuration="500" outDuration="500">
+                <m:MaterialDialogContent>
+                    <m:MaterialTitle title="Closable Dialog" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+                </m:MaterialDialogContent>
+                <m:MaterialDialogFooter>
+                    <m:MaterialButton text="Close Dialog" type="FLAT" ui:field="btnCloseDialogDismiss"/>
+                </m:MaterialDialogFooter>
+            </m:MaterialDialog>
+            <m:MaterialButton text="Closable Dialog" ui:field="btnClosable" waves="LIGHT"/>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="FullScreen Dialog" description="You can easily maximize / set to full screen your Dialog by setting fullscreen='true' before opening the dialog.">
+            <m:MaterialButton ui:field="openFullscreenDialog" text="Open Dialog in fullscreen" />
+            <m:MaterialDialog ui:field="dialogFullScreen" type="FIXED_FOOTER" dismissible="false" inDuration="500" outDuration="500">
+                <m:MaterialDialogContent>
+                    <m:MaterialTitle title="Full Screen Dialog" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+                </m:MaterialDialogContent>
+                <m:MaterialDialogFooter>
+                    <m:MaterialButton text="Exit Full Screen" ui:field="turnOffFullscreen" />
+                    <m:MaterialButton text="Close Dialog" type="FLAT" ui:field="closeFullscreenDialog"/>
+                </m:MaterialDialogFooter>
+            </m:MaterialDialog>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Events" description="We have provided an open / close events for dialog component.">
+            <m:MaterialDialog ui:field="dialogEvents" type="FIXED_FOOTER" dismissible="true" inDuration="500" outDuration="500">
+                <m:MaterialDialogContent>
+                    <m:MaterialTitle title="Dialog with Events" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+                </m:MaterialDialogContent>
+                <m:MaterialDialogFooter>
+                    <m:MaterialButton text="Close Dialog" type="FLAT" ui:field="btnCloseDialogEvents"/>
+                </m:MaterialDialogFooter>
+            </m:MaterialDialog>
+            <m:MaterialButton text="Dialog with Events" ui:field="btnEvents" waves="LIGHT"/>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Multiple Instances" description="You can easily add multiple instances of dialog. And we handle the z-index throught DialogManager for the calculation.">
+            <!-- Dialog 1 -->
+            <m:MaterialDialog ui:field="dialog1" type="FIXED_FOOTER">
+                <m:MaterialDialogContent>
+                    <m:MaterialTitle title="Dialog 1" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+                </m:MaterialDialogContent>
+                <m:MaterialDialogFooter>
+                    <m:MaterialButton text="Open Dialog 2" type="FLAT" ui:field="btnOpenDialog2"/>
+                    <m:MaterialButton text="Close Dialog 1" type="FLAT" ui:field="btnCloseDialog1"/>
+                </m:MaterialDialogFooter>
+            </m:MaterialDialog>
+            <!-- Dialog 2 -->
+            <m:MaterialDialog ui:field="dialog2" type="FIXED_FOOTER">
+                <m:MaterialDialogContent>
+                    <m:MaterialTitle title="Dialog 2" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+                </m:MaterialDialogContent>
+                <m:MaterialDialogFooter>
+                    <m:MaterialButton text="Open Dialog 3" type="FLAT" ui:field="btnOpenDialog3"/>
+                    <m:MaterialButton text="Close Dialog 2" type="FLAT" ui:field="btnCloseDialog2"/>
+                </m:MaterialDialogFooter>
+            </m:MaterialDialog>
+            <!-- Dialog 3 -->
+            <m:MaterialDialog ui:field="dialog3" type="FIXED_FOOTER">
+                <m:MaterialDialogContent>
+                    <m:MaterialTitle title="Dialog 3" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+                </m:MaterialDialogContent>
+                <m:MaterialDialogFooter>
+                    <m:MaterialButton text="Close Dialog 3" type="FLAT" ui:field="btnCloseDialog3"/>
+                </m:MaterialDialogFooter>
+            </m:MaterialDialog>
+
+            <m:MaterialButton text="Open Dialog 1" ui:field="btnOpenDialog1" waves="LIGHT"/>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Tooltip" description="Tooltips are small, interactive, textual hints for mainly graphical elements. When using icons for actions you can use a tooltip to give people clarification on its function.">
+            <m:MaterialTooltip text="I am tooltip" position="BOTTOM">
+                <m:MaterialButton margin="12" text="Bottom" waves="LIGHT"/>
+            </m:MaterialTooltip>
+
+            <m:MaterialTooltip text="I am tooltip" position="TOP">
+                <m:MaterialButton margin="12" text="Top" waves="LIGHT"/>
+            </m:MaterialTooltip>
+
+            <m:MaterialTooltip text="I am tooltip" position="LEFT">
+                <m:MaterialButton margin="12" text="Left" waves="LIGHT"/>
+            </m:MaterialTooltip>
+
+            <m:MaterialTooltip text="I am tooltip" position="RIGHT">
+                <m:MaterialButton margin="12" text="Right" waves="LIGHT"/>
+            </m:MaterialTooltip>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Tooltip with HTML" description="You can set any html element inside the tooltip component.">
+            <m:MaterialButton tooltipDelayMs="0" tooltipHTML="&lt;i&gt;Italic text&lt;/i&gt;" text="Tooltip with HTML" />
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+    </m:MaterialPanel>
+</ui:UiBinder>
