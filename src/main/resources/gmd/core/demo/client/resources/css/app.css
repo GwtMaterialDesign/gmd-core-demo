@@ -30,6 +30,12 @@ pre {
     font-size: 0.6em;
 }
 
+/** Scrollspy **/
+ul.col.s12.l3.hide-on-med-and-down.section.table-of-contents.pinned {
+    padding: 68px;
+    padding-top: 0px;
+}
+
 /** Sidenav **/
 .side-nav a {
     height: 40px;

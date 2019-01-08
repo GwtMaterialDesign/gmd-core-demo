@@ -26,6 +26,7 @@ import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gmd.core.demo.client.application.navigation.Component;
+import gmd.core.demo.client.constants.AppConstants;
 import gwt.material.design.client.base.helper.ScrollHelper;
 import gwt.material.design.client.constants.Blur;
 import gwt.material.design.client.constants.Color;
@@ -56,6 +57,9 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     MaterialSideNavPush sidenav;
 
     @UiField
+    MaterialLabel name, version;
+
+    @UiField
     MaterialRow container;
 
     @Inject
@@ -66,7 +70,9 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
 
     @Override
     public void setupSideNav(List<Component> links) {
-        sidenav.setOverlayOption(new OverlayOption(new Blur(4, $("#app-container")),  Color.WHITE));
+        name.setText(AppConstants.NAME);
+        version.setText("Version " + AppConstants.VERSION);
+        sidenav.setOverlayOption(new OverlayOption(new Blur(4, $("#app-container")), Color.WHITE));
         links.forEach(component -> sidenav.add(new MaterialLink(component.getName(), component.getHref())));
     }
 

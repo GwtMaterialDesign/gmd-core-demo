@@ -24,6 +24,11 @@ import gmd.core.demo.client.application.page.badge.BadgeModule;
 import gmd.core.demo.client.application.page.breadcrumb.BreadcrumbModule;
 import gmd.core.demo.client.application.page.button.ButtonModule;
 import gmd.core.demo.client.application.page.cards.CardModule;
+import gmd.core.demo.client.application.page.checkbox.CheckboxModule;
+import gmd.core.demo.client.application.page.chips.ChipsModule;
+import gmd.core.demo.client.application.page.collapsible.CollapsibleModule;
+import gmd.core.demo.client.application.page.collection.CollectionModule;
+import gmd.core.demo.client.application.page.datepicker.DatePickerModule;
 import gmd.core.demo.client.application.page.home.HomeModule;
 
 public class ApplicationModule extends AbstractPresenterModule {
@@ -35,6 +40,11 @@ public class ApplicationModule extends AbstractPresenterModule {
         install(new ButtonModule());
         install(new BreadcrumbModule());
         install(new CardModule());
+        install(new CheckboxModule());
+        install(new ChipsModule());
+        install(new CollapsibleModule());
+        install(new CollectionModule());
+        install(new DatePickerModule());
 
         bindPresenter(ApplicationPresenter.class, ApplicationPresenter.MyView.class, ApplicationView.class,
                 ApplicationPresenter.MyProxy.class);

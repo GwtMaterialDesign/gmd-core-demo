@@ -1,5 +1,7 @@
 package gmd.core.demo.client.application.page;
 
+import com.google.gwt.core.client.GWT;
+import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.dom.client.Style;
 import com.google.gwt.event.shared.GwtEvent;
 import com.google.gwt.user.client.ui.Widget;
@@ -15,10 +17,7 @@ import gmd.core.demo.client.application.navigation.NavigationService;
 import gmd.core.demo.client.application.widget.CodeSection;
 import gwt.material.design.client.base.MaterialWidget;
 import gwt.material.design.client.constants.HideOn;
-import gwt.material.design.client.ui.MaterialLink;
-import gwt.material.design.client.ui.MaterialPushpin;
-import gwt.material.design.client.ui.MaterialScrollspy;
-import gwt.material.design.client.ui.MaterialToast;
+import gwt.material.design.client.ui.*;
 
 public class AppPresenter<V extends View, P extends Proxy<?>> extends Presenter<V, P> {
 
@@ -28,6 +27,13 @@ public class AppPresenter<V extends View, P extends Proxy<?>> extends Presenter<
         super(eventBus, view, proxy, slot);
 
         this.placeManager = placeManager;
+    }
+
+    @Override
+    protected void onBind() {
+        super.onBind();
+
+        MaterialLoader.progress(true);
     }
 
     @Override
@@ -43,6 +49,11 @@ public class AppPresenter<V extends View, P extends Proxy<?>> extends Presenter<
         ApplicationView.showHeader(true);
 
         createTableOfContents();
+
+        Scheduler.get().scheduleFixedDelay(() -> {
+            MaterialLoader.progress(false);
+            return false;
+        }, 400);
     }
 
     protected void createTableOfContents() {

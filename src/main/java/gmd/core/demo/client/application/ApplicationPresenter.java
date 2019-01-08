@@ -35,6 +35,7 @@ import gmd.core.demo.client.resources.AppResources;
 import gwt.material.design.client.base.helper.ColorHelper;
 import gwt.material.design.client.constants.Color;
 import gwt.material.design.client.pwa.PwaManager;
+import gwt.material.design.client.ui.MaterialToast;
 
 import java.util.List;
 

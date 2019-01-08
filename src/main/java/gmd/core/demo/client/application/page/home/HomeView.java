@@ -27,6 +27,8 @@ import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gmd.core.demo.client.application.navigation.Dashboard;
 import gmd.core.demo.client.application.widget.DashboardCard;
+import gmd.core.demo.client.constants.AppConstants;
+import gwt.material.design.client.ui.MaterialAnchorButton;
 import gwt.material.design.client.ui.MaterialRow;
 
 import java.util.List;
@@ -39,6 +41,9 @@ public class HomeView extends ViewImpl implements HomePresenter.MyView {
     @UiField
     MaterialRow dashboardsRow;
 
+    @UiField
+    MaterialAnchorButton github, gitter;
+
     @Inject
     HomeView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
@@ -46,6 +51,8 @@ public class HomeView extends ViewImpl implements HomePresenter.MyView {
 
     @Override
     public void buildDashboards(List<Dashboard> dashboards) {
+        github.setHref(AppConstants.GITHUB_REPO);
+        gitter.setHref(AppConstants.GITTER_CHANNEL);
         dashboards.forEach(dashboard -> dashboardsRow.add(new DashboardCard(dashboard)));
     }
 }

@@ -30,7 +30,8 @@
                     <m:MaterialLabel ui:field="navBrand" text="Core" textColor="BLACK" fontSize="0.8em"/>
                 </m:MaterialNavBrand>
                 <m:MaterialNavSection float="RIGHT">
-                    <m:MaterialLink ui:field="install" visible="false" text="INSTALL" />
+                    <m:MaterialButton text="Github" customIconType="fab fa-github" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
+                    <m:MaterialButton text="Gitter" customIconType="fab fa-gitter" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
                 </m:MaterialNavSection>
             </m:MaterialNavBar>
         </m:MaterialHeader>
@@ -39,8 +40,8 @@
             <m:MaterialSideNavContent ui:field="home" height="60px">
                 <m:MaterialImage url="https://gwtmaterialdesign.github.io/gmd-core-demo/launcher-icons/launcher1x.png" alt="logo" float="LEFT" width="32px" marginRight="20"/>
                 <m:MaterialPanel>
-                    <m:MaterialLabel text="gwt-material" textColor="BLACK" fontWeight="BOLD" lineHeight="24" marginTop="12"/>
-                    <m:MaterialLabel text="Version 2.2" lineHeight="12" fontSize="0.8em"/>
+                    <m:MaterialLabel ui:field="name" textColor="BLACK" fontWeight="BOLD" lineHeight="24" marginTop="12"/>
+                    <m:MaterialLabel ui:field="version" lineHeight="12" fontSize="0.8em"/>
                 </m:MaterialPanel>
             </m:MaterialSideNavContent>
         </m:MaterialSideNavPush>
