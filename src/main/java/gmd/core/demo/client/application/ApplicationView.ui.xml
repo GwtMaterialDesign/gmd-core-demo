@@ -30,8 +30,8 @@
                     <m:MaterialLabel ui:field="navBrand" text="Core" textColor="BLACK" fontSize="0.8em"/>
                 </m:MaterialNavBrand>
                 <m:MaterialNavSection float="RIGHT">
-                    <m:MaterialButton text="Github" customIconType="fab fa-github" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
-                    <m:MaterialButton text="Gitter" customIconType="fab fa-gitter" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
+                    <m:MaterialAnchorButton ui:field="github" text="Github" target="_blank" customIconType="fab fa-github" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
+                    <m:MaterialAnchorButton ui:field="gitter" text="Gitter" target="_blank" customIconType="fab fa-gitter" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
                 </m:MaterialNavSection>
             </m:MaterialNavBar>
         </m:MaterialHeader>

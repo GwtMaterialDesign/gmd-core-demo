@@ -51,7 +51,7 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     static MaterialPanel header;
 
     @UiField
-    MaterialAnchorButton javaSource, xmlSource;
+    MaterialAnchorButton javaSource, xmlSource, github, gitter;
 
     @UiField
     MaterialSideNavPush sidenav;
@@ -72,6 +72,8 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     public void setupSideNav(List<Component> links) {
         name.setText(AppConstants.NAME);
         version.setText("Version " + AppConstants.VERSION);
+        github.setHref(AppConstants.GITHUB_REPO);
+        gitter.setHref(AppConstants.GITTER_CHANNEL);
         sidenav.setOverlayOption(new OverlayOption(new Blur(4, $("#app-container")), Color.WHITE));
         links.forEach(component -> sidenav.add(new MaterialLink(component.getName(), component.getHref())));
     }

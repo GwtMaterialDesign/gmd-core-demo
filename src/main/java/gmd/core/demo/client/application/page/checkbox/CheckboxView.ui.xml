@@ -50,7 +50,7 @@
             </g:HTMLPanel>
         </widget:CodeSection>
 
-        <widget:CodeSection sectionTitle="CheckBox : setValue(value, fireEvents)">
+        <widget:CodeSection sectionTitle="CheckBox SetValue">
             <m:MaterialCheckBox ui:field="cbValue" text="CheckBox"/>
 
             <m:MaterialRow>

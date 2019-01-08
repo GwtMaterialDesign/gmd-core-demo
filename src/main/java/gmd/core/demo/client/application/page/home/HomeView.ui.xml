@@ -26,8 +26,8 @@
             <m:MaterialLabel text="GMD Project" fontWeight="BOLD" fontSize="3em"/>
             <m:MaterialLabel text="Build the future of GWT using PWAs and Material Design Look and Feel."/>
             <m:MaterialRow>
-                <m:MaterialAnchorButton ui:field="github" text="Github" customIconType="fab fa-github" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
-                <m:MaterialAnchorButton ui:field="gitter" text="Gitter" customIconType="fab fa-gitter" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
+                <m:MaterialAnchorButton ui:field="github" target="_blank" text="Github" customIconType="fab fa-github" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
+                <m:MaterialAnchorButton ui:field="gitter" target="_blank" text="Gitter" customIconType="fab fa-gitter" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
             </m:MaterialRow>
         </m:MaterialRow>
         <m:MaterialRow>
