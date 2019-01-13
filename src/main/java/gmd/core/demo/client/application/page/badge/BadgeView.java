@@ -22,6 +22,8 @@ package gmd.core.demo.client.application.page.badge;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gmd.core.demo.client.resources.AppResources;
+import gwt.material.design.client.MaterialDesignBase;
 
 import javax.inject.Inject;
 
@@ -29,8 +31,30 @@ public class BadgeView extends ViewImpl implements BadgePresenter.MyView {
     interface Binder extends UiBinder<Widget, BadgeView> {
     }
 
+    static {
+        MaterialDesignBase.injectCss(AppResources.INSTANCE.highlightCSs());
+        MaterialDesignBase.injectJs(AppResources.INSTANCE.highlightJs());
+    }
+
     @Inject
     BadgeView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+
+
     }
+
+
+    @Override
+    protected void onAttach() {
+        super.onAttach();
+
+        initHighlightJs();
+    }
+
+    native void initHighlightJs() /*-{
+        $wnd.hljs.configure({useBR: true});
+        $wnd.jQuery('pre code').each(function(i, block) {
+            $wnd.hljs.highlightBlock(block);
+        });
+    }-*/;
 }

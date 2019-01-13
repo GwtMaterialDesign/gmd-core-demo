@@ -19,9 +19,15 @@
  */
 package gmd.core.demo.client.application.page.switches;
 
+import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.client.ui.MaterialSwitch;
+import gwt.material.design.client.ui.MaterialToast;
 
 import javax.inject.Inject;
 
@@ -29,9 +35,39 @@ public class SwitchView extends ViewImpl implements SwitchPresenter.MyView {
     interface Binder extends UiBinder<Widget, SwitchView> {
     }
 
+    @UiField
+    MaterialSwitch switch1, switch2, switchSetValue;
 
     @Inject
     SwitchView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+    }
+
+    @UiHandler("switchEvent")
+    void onSwitchEvent(ValueChangeEvent<Boolean> e) {
+        MaterialToast.fireToast("Value " + e.getValue());
+    }
+
+    @UiHandler("btnSwitchValue")
+    void onSwitchValue(ClickEvent e) {
+        if (!switchSetValue.getValue()) {
+            switchSetValue.setValue(true);
+        } else {
+            switchSetValue.setValue(false);
+        }
+    }
+
+    @UiHandler("btnSwitchValueEvent")
+    void onSwitchValueEvent(ClickEvent e) {
+        if (!switchSetValue.getValue()) {
+            switchSetValue.setValue(true, true);
+        } else {
+            switchSetValue.setValue(false, true);
+        }
+    }
+
+    @UiHandler("switchSetValue")
+    void onSwitchSetValue(ValueChangeEvent<Boolean> e) {
+        MaterialToast.fireToast("Value " + e.getValue());
     }
 }

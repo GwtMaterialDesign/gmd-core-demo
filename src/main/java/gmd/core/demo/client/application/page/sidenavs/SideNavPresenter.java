@@ -32,6 +32,7 @@ import gmd.core.demo.client.place.NameTokens;
 
 public class SideNavPresenter extends AppPresenter<SideNavPresenter.MyView, SideNavPresenter.MyProxy> {
     interface MyView extends View {
+        void buildPanel();
     }
 
     @ProxyStandard
@@ -46,5 +47,12 @@ public class SideNavPresenter extends AppPresenter<SideNavPresenter.MyView, Side
             MyProxy proxy,
             PlaceManager placeManager) {
         super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN, placeManager);
+    }
+
+    @Override
+    protected void onBind() {
+        super.onBind();
+
+        getView().buildPanel();
     }
 }

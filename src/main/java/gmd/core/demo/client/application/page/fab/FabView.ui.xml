@@ -23,13 +23,122 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <m:MaterialPanel>
-        <widget:CodeSection sectionTitle="Basic"  description="You can easily add placeholder to indicate a label into your datepicker.">
-
+        <widget:CodeSection sectionTitle="Fixed Action Button" description="If you want a fixed floating action button, you can add multiple actions that will appear on hover. Our demo is in the bottom righthand corner of the page.">
+            <m:MaterialFAB depth="995">
+                <m:MaterialButton type="FLOATING" iconType="POLYMER" size="LARGE"/>
+                <m:MaterialFABList>
+                    <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" iconType="POLYMER"/>
+                    <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="GREEN"  iconType="POLYMER"/>
+                    <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="RED"  iconType="POLYMER"/>
+                    <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="ORANGE"  iconType="POLYMER"/>
+                    <m:MaterialAnchorButton type="FLOATING" waves="LIGHT"  iconType="POLYMER"/>
+                </m:MaterialFABList>
+            </m:MaterialFAB>
             <g:HTMLPanel>
                 <pre>
 
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Open / Close FAB" description="You can also open the Fixed Action Button Menu programatically.">
+            <m:MaterialButton text="Open" ui:field="btnOpen" />
+            <m:MaterialButton text="Close" ui:field="btnClose" backgroundColor="WHITE" textColor="BLACK"/>
+            <m:MaterialRow>
+                <m:MaterialColumn grid="l6 m6 s12" layoutPosition="RELATIVE" height="80px">
+                    <m:MaterialFAB ui:field="fab" axis="HORIZONTAL" depth="995" layoutPosition="ABSOLUTE" right="0">
+                        <m:MaterialButton type="FLOATING" iconType="POLYMER" size="LARGE"/>
+                        <m:MaterialFABList>
+                            <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" iconType="POLYMER"/>
+                            <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="GREEN"  iconType="POLYMER"/>
+                            <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="RED"  iconType="POLYMER"/>
+                            <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="ORANGE"  iconType="POLYMER"/>
+                            <m:MaterialAnchorButton type="FLOATING" waves="LIGHT"  iconType="POLYMER"/>
+                        </m:MaterialFABList>
+                    </m:MaterialFAB>
+                </m:MaterialColumn>
+            </m:MaterialRow>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="FAB Type : Horizontal" description="Creating a horizontal FAB is easy! Just add axis='HORIZONTAL'.">
+            <m:MaterialRow>
+                <m:MaterialColumn grid="l6 m6 s12" layoutPosition="RELATIVE" height="80px">
+                    <m:MaterialFAB axis="HORIZONTAL" depth="995" layoutPosition="ABSOLUTE" right="0">
+                        <m:MaterialButton type="FLOATING" iconType="POLYMER" size="LARGE"/>
+                        <m:MaterialFABList>
+                            <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" iconType="POLYMER"/>
+                            <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="GREEN"  iconType="POLYMER"/>
+                            <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="RED"  iconType="POLYMER"/>
+                            <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="ORANGE"  iconType="POLYMER"/>
+                            <m:MaterialAnchorButton type="FLOATING" waves="LIGHT"  iconType="POLYMER"/>
+                        </m:MaterialFABList>
+                    </m:MaterialFAB>
+                </m:MaterialColumn>
+            </m:MaterialRow>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="FAB Type : Click Only" description="If you want to disable the hover behaviour, and instead toggle the FAB menu when the user clicks on the large button (works great on mobile!), Just add type='CLICK_ONLY' ">
+            <m:MaterialRow>
+                <m:MaterialColumn grid="l6 m6 s12" layoutPosition="RELATIVE" height="80px">
+                    <m:MaterialFAB type="CLICK_ONLY" axis="HORIZONTAL" depth="995" layoutPosition="ABSOLUTE" right="0">
+                        <m:MaterialButton type="FLOATING" iconType="POLYMER" size="LARGE"/>
+                        <m:MaterialFABList>
+                            <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" iconType="POLYMER"/>
+                            <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="GREEN"  iconType="POLYMER"/>
+                            <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="RED"  iconType="POLYMER"/>
+                            <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="ORANGE"  iconType="POLYMER"/>
+                            <m:MaterialAnchorButton type="FLOATING" waves="LIGHT"  iconType="POLYMER"/>
+                        </m:MaterialFABList>
+                    </m:MaterialFAB>
+                </m:MaterialColumn>
+            </m:MaterialRow>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+        <widget:CodeSection sectionTitle="Events" description="We provided Open and Close Events for FAB">
+            <m:MaterialRow>
+                <m:MaterialColumn grid="l6 m6 s12" layoutPosition="RELATIVE" height="80px">
+                    <m:MaterialFAB ui:field="btnFABEvent" axis="HORIZONTAL" depth="995" layoutPosition="ABSOLUTE" right="0">
+                        <m:MaterialButton type="FLOATING" tooltip="Hover" tooltipPosition="RIGHT" iconType="POLYMER" size="LARGE"/>
+                        <m:MaterialFABList>
+                            <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" iconType="POLYMER"/>
+                            <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="GREEN"  iconType="POLYMER"/>
+                            <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="RED"  iconType="POLYMER"/>
+                            <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="ORANGE"  iconType="POLYMER"/>
+                            <m:MaterialAnchorButton type="FLOATING" waves="LIGHT"  iconType="POLYMER"/>
+                        </m:MaterialFABList>
+                    </m:MaterialFAB>
+                    <m:MaterialFAB ui:field="btnClickOnlyFABEvent" top="80" type="CLICK_ONLY" axis="HORIZONTAL" depth="995" layoutPosition="ABSOLUTE" right="0">
+                        <m:MaterialButton type="FLOATING" tooltip="Click" tooltipPosition="RIGHT" backgroundColor="RED" iconType="POLYMER" size="LARGE"/>
+                        <m:MaterialFABList>
+                            <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" iconType="POLYMER"/>
+                            <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="GREEN"  iconType="POLYMER"/>
+                            <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="RED"  iconType="POLYMER"/>
+                            <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="ORANGE"  iconType="POLYMER"/>
+                            <m:MaterialAnchorButton type="FLOATING" waves="LIGHT"  iconType="POLYMER"/>
+                        </m:MaterialFABList>
+                    </m:MaterialFAB>
+                </m:MaterialColumn>
+            </m:MaterialRow>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
     </m:MaterialPanel>
 </ui:UiBinder>

@@ -23,8 +23,60 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <m:MaterialPanel>
-        <widget:CodeSection sectionTitle="Basic"  description="You can easily add placeholder to indicate a label into your datepicker.">
+        <widget:CodeSection sectionTitle="Links Icons and Waves" description="Based on material links you can add icons, link with icons or link only and apply ripple effect by adding waves attribute.">
+            <m:MaterialNavBar>
+                <m:MaterialNavBrand marginLeft="60" href="#Test" float="LEFT" text="Title" />
+                <m:MaterialNavSection float="RIGHT">
+                    <m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account"  textColor="WHITE" waves="LIGHT"/>
+                    <m:MaterialLink iconType="AUTORENEW" iconPosition="LEFT" text="Refresh" textColor="WHITE" waves="LIGHT"/>
+                    <m:MaterialTooltip text="Menu">
+                        <m:MaterialLink iconType="SEARCH" textColor="WHITE" waves="LIGHT"/>
+                    </m:MaterialTooltip>
+                    <m:MaterialTooltip text="Starter">
+                        <m:MaterialLink iconType="MORE_VERT" textColor="WHITE" waves="LIGHT"/>
+                    </m:MaterialTooltip>
+                </m:MaterialNavSection>
+            </m:MaterialNavBar>
+            <g:HTMLPanel>
+                <pre>
 
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Selection Event" description="We have provided a selection event to easily get the selected index.">
+            <m:MaterialNavBar width="100%">
+                <m:MaterialNavBrand marginLeft="60" href="#Test" float="LEFT" text="Title" />
+                <m:MaterialNavSection ui:field="navSection" float="RIGHT">
+                    <m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account"  textColor="WHITE" waves="LIGHT"/>
+                    <m:MaterialLink iconType="AUTORENEW" iconPosition="LEFT" text="Refresh" textColor="WHITE" waves="LIGHT"/>
+                    <m:MaterialTooltip text="Menu">
+                        <m:MaterialLink iconType="SEARCH" textColor="WHITE" waves="LIGHT"/>
+                    </m:MaterialTooltip>
+                    <m:MaterialTooltip text="Starter">
+                        <m:MaterialLink iconType="MORE_VERT" textColor="WHITE" waves="LIGHT"/>
+                    </m:MaterialTooltip>
+                </m:MaterialNavSection>
+            </m:MaterialNavBar>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Alignment" description="Add align='right' to your nav brand and align='left' to your nav section">
+            <m:MaterialNavBar width="100%">
+                <m:MaterialNavBrand href="#Test" float="RIGHT" text="App Title"/>
+                <m:MaterialNavSection float="LEFT">
+                    <m:MaterialTooltip text="Menu">
+                        <m:MaterialLink iconType="SEARCH" textColor="WHITE"/>
+                    </m:MaterialTooltip>
+                    <m:MaterialTooltip text="Starter">
+                        <m:MaterialLink iconType="MORE_VERT" textColor="WHITE"/>
+                    </m:MaterialTooltip>
+                </m:MaterialNavSection>
+            </m:MaterialNavBar>
             <g:HTMLPanel>
                 <pre>
 

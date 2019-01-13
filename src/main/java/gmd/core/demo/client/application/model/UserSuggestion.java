@@ -1,8 +1,10 @@
+package gmd.core.demo.client.application.model;
+
 /*
  * #%L
  * GwtMaterial
  * %%
- * Copyright (C) 2015 - 2017 GwtMaterialDesign
+ * Copyright (C) 2015 - 2016 GwtMaterialDesign
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,23 +19,33 @@
  * limitations under the License.
  * #L%
  */
-package gmd.core.demo.client.resources;
 
-import com.google.gwt.core.client.GWT;
-import com.google.gwt.resources.client.ClientBundle;
-import com.google.gwt.resources.client.CssResource;
-import com.google.gwt.resources.client.TextResource;
 
-public interface AppResources extends ClientBundle {
+import com.google.gwt.user.client.ui.SuggestOracle;
 
-    AppResources INSTANCE = GWT.create(AppResources.class);
+/**
+ * Created by Mark Kevin on 4/12/2016.
+ */
+public class UserSuggestion implements SuggestOracle.Suggestion {
 
-    @Source("css/app.css")
-    TextResource appCss();
+    private User user;
 
-    @Source("css/highlight/default.css")
-    TextResource highlightCSs();
+    public UserSuggestion(User user) {
+        this.user = user;
+    }
 
-    @Source("js/highlight.pack.js")
-    TextResource highlightJs();
+    @Override
+    public String getDisplayString() {
+        return getReplacementString();
+    }
+
+    @Override
+    public String getReplacementString() {
+        return user.getName();
+    }
+
+    public User getUser() {
+        return user;
+    }
 }
+

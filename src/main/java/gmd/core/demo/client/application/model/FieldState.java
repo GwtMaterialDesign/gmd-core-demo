@@ -2,7 +2,7 @@
  * #%L
  * GwtMaterial
  * %%
- * Copyright (C) 2015 - 2017 GwtMaterialDesign
+ * Copyright (C) 2015 - 2018 GwtMaterialDesign
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,23 +17,27 @@
  * limitations under the License.
  * #L%
  */
-package gmd.core.demo.client.resources;
+package gmd.core.demo.client.application.model;
 
-import com.google.gwt.core.client.GWT;
-import com.google.gwt.resources.client.ClientBundle;
-import com.google.gwt.resources.client.CssResource;
-import com.google.gwt.resources.client.TextResource;
+public enum FieldState {
 
-public interface AppResources extends ClientBundle {
+    DEFAULT(""),
+    ERROR("This is an error"),
+    ERROR_HOVERABLE("This is an error"),
+    SUCCESS("This is a success message"),
+    SUCCESS_HOVERABLE("This is a success message"),
+    HELPER("Some helper message"),
+    READ_ONLY(""),
+    DISABLED("");
 
-    AppResources INSTANCE = GWT.create(AppResources.class);
 
-    @Source("css/app.css")
-    TextResource appCss();
+    private String message;
 
-    @Source("css/highlight/default.css")
-    TextResource highlightCSs();
+    FieldState(String message) {
+        this.message = message;
+    }
 
-    @Source("js/highlight.pack.js")
-    TextResource highlightJs();
+    public String getMessage() {
+        return message;
+    }
 }

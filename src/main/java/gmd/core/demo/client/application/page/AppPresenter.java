@@ -1,6 +1,5 @@
 package gmd.core.demo.client.application.page;
 
-import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.dom.client.Style;
 import com.google.gwt.event.shared.GwtEvent;
@@ -18,11 +17,15 @@ import gmd.core.demo.client.application.widget.CodeSection;
 import gwt.material.design.client.base.MaterialWidget;
 import gwt.material.design.client.base.helper.ScrollHelper;
 import gwt.material.design.client.constants.HideOn;
-import gwt.material.design.client.ui.*;
+import gwt.material.design.client.ui.MaterialLink;
+import gwt.material.design.client.ui.MaterialLoader;
+import gwt.material.design.client.ui.MaterialPushpin;
+import gwt.material.design.client.ui.MaterialScrollspy;
 
 public class AppPresenter<V extends View, P extends Proxy<?>> extends Presenter<V, P> {
 
     private PlaceManager placeManager;
+    private MaterialScrollspy scrollspy;
 
     public AppPresenter(EventBus eventBus, V view, P proxy, GwtEvent.Type<RevealContentHandler<?>> slot, PlaceManager placeManager) {
         super(eventBus, view, proxy, slot);
@@ -67,7 +70,7 @@ public class AppPresenter<V extends View, P extends Proxy<?>> extends Presenter<
             widget.setGrid("s12 l9");
             widget.setFloat(Style.Float.LEFT);
 
-            MaterialScrollspy scrollspy = new MaterialScrollspy();
+            scrollspy = new MaterialScrollspy();
             scrollspy.setGrid("s12 l3");
             scrollspy.setRight(0);
             scrollspy.setHideOn(HideOn.HIDE_ON_MED_DOWN);
@@ -93,5 +96,9 @@ public class AppPresenter<V extends View, P extends Proxy<?>> extends Presenter<
                 widget.add(scrollspy);
             }
         }
+    }
+
+    public MaterialScrollspy getScrollspy() {
+        return scrollspy;
     }
 }

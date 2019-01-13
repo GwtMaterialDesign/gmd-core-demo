@@ -19,9 +19,15 @@
  */
 package gmd.core.demo.client.application.page.radiobutton;
 
+import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.client.ui.MaterialRadioButton;
+import gwt.material.design.client.ui.MaterialToast;
 
 import javax.inject.Inject;
 
@@ -29,9 +35,26 @@ public class RadioButtonView extends ViewImpl implements RadioButtonPresenter.My
     interface Binder extends UiBinder<Widget, RadioButtonView> {
     }
 
+    @UiField
+    MaterialRadioButton radioValue;
 
     @Inject
     RadioButtonView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+    }
+
+    @UiHandler("radioValue")
+    void onRadioValue(ValueChangeEvent<Boolean> e) {
+        MaterialToast.fireToast("Value : " + e.getValue());
+    }
+
+    @UiHandler("btnRadioValue")
+    void onClickRadioValue(ClickEvent e) {
+        radioValue.setValue(true);
+    }
+
+    @UiHandler("btnRadioValueEvent")
+    void onClickRadioValueEvent(ClickEvent e) {
+        radioValue.setValue(false, true);
     }
 }

@@ -19,9 +19,14 @@
  */
 package gmd.core.demo.client.application.page.fab;
 
+import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.client.ui.MaterialFAB;
+import gwt.material.design.client.ui.MaterialToast;
 
 import javax.inject.Inject;
 
@@ -29,9 +34,25 @@ public class FabView extends ViewImpl implements FabPresenter.MyView {
     interface Binder extends UiBinder<Widget, FabView> {
     }
 
+    @UiField
+    MaterialFAB fab, btnFABEvent, btnClickOnlyFABEvent;
 
     @Inject
     FabView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+        btnFABEvent.addOpenHandler(openEvent -> MaterialToast.fireToast("Opened Default FAB"));
+        btnFABEvent.addCloseHandler(closeEvent -> MaterialToast.fireToast("Closed Default FAB"));
+        btnClickOnlyFABEvent.addOpenHandler(openEvent -> MaterialToast.fireToast("Opened Click Only FAB"));
+        btnClickOnlyFABEvent.addCloseHandler(closeEvent -> MaterialToast.fireToast("Closed Click Only FAB"));
+    }
+
+    @UiHandler("btnOpen")
+    void onOpen(ClickEvent e) {
+        fab.open();
+    }
+
+    @UiHandler("btnClose")
+    void onClose(ClickEvent e) {
+        fab.close();
     }
 }

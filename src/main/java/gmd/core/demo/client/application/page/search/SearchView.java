@@ -19,19 +19,80 @@
  */
 package gmd.core.demo.client.application.page.search;
 
+import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gmd.core.demo.client.application.model.DataHelper;
+import gmd.core.demo.client.application.model.Hero;
+import gwt.material.design.client.base.SearchObject;
+import gwt.material.design.client.ui.*;
+import gwt.material.design.client.ui.animate.MaterialAnimation;
+import gwt.material.design.client.ui.animate.Transition;
 
 import javax.inject.Inject;
+import java.util.ArrayList;
+import java.util.List;
 
 public class SearchView extends ViewImpl implements SearchPresenter.MyView {
     interface Binder extends UiBinder<Widget, SearchView> {
     }
 
+    @UiField
+    MaterialNavBar navBar, navBarSearch;
+
+    @UiField
+    MaterialSearch txtSearch;
+
+    @UiField
+    MaterialImage imgHero;
+
+    @UiField
+    MaterialLabel lblName, lblDescription;
 
     @Inject
     SearchView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+
+        // Add Open Handler
+        txtSearch.addOpenHandler(openEvent -> {
+            navBar.setVisible(false);
+            navBarSearch.setVisible(true);
+            MaterialToast.fireToast("Open Event was fired");
+        });
+
+        // Add Close Handler
+        txtSearch.addCloseHandler(event -> {
+            navBar.setVisible(true);
+            navBarSearch.setVisible(false);
+            MaterialToast.fireToast("Close Event was fired");
+        });
+
+        // Populate the search keyword into search component
+        List<SearchObject> objects = new ArrayList<>();
+        for(Hero hero : DataHelper.getAllHeroes()){
+            objects.add(hero);
+        }
+        txtSearch.setListSearches(objects);
+
+        txtSearch.setSelectedObject(objects.get(3));
+
+        // Add Finish Handler
+        txtSearch.addSearchFinishHandler(event -> {
+            // Get the selected search object
+            Hero hero = (Hero)txtSearch.getSelectedObject();
+            new MaterialAnimation().transition(Transition.ZOOMIN).animate(imgHero);
+            imgHero.setUrl(hero.getImageUrl());
+            lblName.setText(hero.getName());
+            lblDescription.setText(hero.getDescription());
+            MaterialToast.fireToast("Search Finish Event was fired");
+        });
+    }
+
+    @UiHandler("btnSearch")
+    void onSearch(ClickEvent e){
+        txtSearch.open();
     }
 }

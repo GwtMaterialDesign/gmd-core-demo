@@ -44,9 +44,12 @@
             </m:MaterialCollection>
 
             <g:HTMLPanel>
-                <pre>
-
-                </pre>
+                <pre><code class="html">
+                    &lt;p>Sample&lt;/p>
+                    &lt;div>
+                        &lt;p>Test&lt;/p>
+                    &lt;/div>
+                </code></pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 

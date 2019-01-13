@@ -23,8 +23,12 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <m:MaterialPanel>
-        <widget:CodeSection sectionTitle="Basic"  description="You can easily add placeholder to indicate a label into your datepicker.">
-
+        <widget:CodeSection sectionTitle="Basic"  description="A pushpinned element has 3 states. One above (TOP) and below (BELOW) the scrolling threshold, and the pinned state where the element becomes fixed (OFFSET).">
+            <m:MaterialRow height="1000px">
+                <m:MaterialPanel ui:field="source" grid="s12 m12 l12" backgroundColor="BLUE" paddingTop="50" shadow="1" height="200px" width="200px">
+                    <m:MaterialLabel textColor="WHITE" text="Pinned Options top at 300, offset at 64 (navbar's height)" />
+                </m:MaterialPanel>
+            </m:MaterialRow>
             <g:HTMLPanel>
                 <pre>
 

@@ -23,7 +23,85 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <m:MaterialPanel>
-        <widget:CodeSection sectionTitle="Basic"  description="You can easily add placeholder to indicate a label into your datepicker.">
+        <widget:CodeSection sectionTitle="Super Heroes" description="Search icon must activate a search component inside the navbar. See below the guidelines on how to implement it.">
+            <m:MaterialRow>
+                <!-- Navbar component that contains a search icon -->
+                <m:MaterialNavBar ui:field="navBar" paddingLeft="20" width="100%" textColor="WHITE">
+                    <m:MaterialNavBrand ui:field="navBrand" text="GMD"/>
+                    <m:MaterialLink ui:field="btnSearch" iconType="SEARCH" iconColor="WHITE" float="RIGHT"/>
+                </m:MaterialNavBar>
+
+                <!-- NavBar Search -->
+                <m:MaterialNavBar ui:field="navBarSearch" width="100%" visible="false">
+                    <m:MaterialSearch ui:field="txtSearch" placeholder="Component" backgroundColor="WHITE" iconColor="BLACK"  active="true" grid="l3" shadow="1"/>
+                </m:MaterialNavBar>
+
+                <m:MaterialRow padding="32" textAlign="CENTER">
+                    <m:MaterialColumn grid="l6 m6 s12" offset="l3 m3 l0">
+                        <m:MaterialImage ui:field="imgHero" url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/batman.png" circle="true" shadow="1"/>
+                        <m:MaterialLabel ui:field="lblName" text="Batman" fontSize="2em"/>
+                        <m:MaterialLabel ui:field="lblDescription" text="Batman's secret identity is Bruce Wayne, an American billionaire, playboy, philanthropist, and owner of Wayne Enterprises. After witnessing the murder of his parents as a child, he swore revenge on criminals, an oath tempered by a sense of justice. Wayne trains himself both physically and intellectually and crafts a bat-inspired persona to fight crime."/>
+                        <m:MaterialRow offset="l3 m3 l0" grid="l6 m6 s12" marginTop="20">
+                            <m:MaterialIcon iconType="STAR" grid="l2 m2 s2" offset="l1" iconColor="AMBER"/>
+                            <m:MaterialIcon iconType="STAR" grid="l2 m2 s2" iconColor="AMBER"/>
+                            <m:MaterialIcon iconType="STAR" grid="l2 m2 s2" iconColor="AMBER"/>
+                            <m:MaterialIcon iconType="STAR" grid="l2 m2 s2" iconColor="AMBER"/>
+                            <m:MaterialIcon iconType="STAR" grid="l2 m2 s2" iconColor="AMBER"/>
+                        </m:MaterialRow>
+                    </m:MaterialColumn>
+                </m:MaterialRow>
+            </m:MaterialRow>
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Markup" description="You must add visible='false' property into your navbar search component.">
+
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Open" description="To show the search input field try to call open().">
+
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+        <widget:CodeSection sectionTitle="Open Handler" description="You must specify the event callback after your search is open.">
+
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+        <widget:CodeSection sectionTitle="Populating data" description="Take note that we are using Search Object by default to handle the search results. You can also create an object and extend it to Search Object so that you can add your custom attribute e.g Hero.">
+
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Add Close Handler" description="You can add a logic into your search component.">
+
+            <g:HTMLPanel>
+                <pre>
+
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Add Finish Handler" description="You can add a finish handler into your search component but by default you can just add link value to your search object to set its href attribute.">
 
             <g:HTMLPanel>
                 <pre>

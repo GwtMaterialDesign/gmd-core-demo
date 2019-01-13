@@ -2,6 +2,12 @@
     font-family: monospace,monospace;
 }
 
+/** Custom Footer **/
+.custom-footer{
+    margin-left: 0 !important;
+    margin-bottom: 20px;
+}
+
 /** Scrollbar **/
 *::-webkit-scrollbar {
     background-color: #fff;

@@ -23,12 +23,15 @@ import com.google.gwt.dom.client.Document;
 import com.google.gwt.dom.client.StyleInjector;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
+import com.gwtplatform.mvp.client.HasUiHandlers;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
 import com.gwtplatform.mvp.client.presenter.slots.NestedSlot;
 import com.gwtplatform.mvp.client.proxy.PlaceManager;
 import com.gwtplatform.mvp.client.proxy.Proxy;
+import gmd.core.demo.client.application.events.ContentPushEvent;
+import gmd.core.demo.client.application.events.MenuHandlers;
 import gmd.core.demo.client.application.navigation.Component;
 import gmd.core.demo.client.application.navigation.NavigationService;
 import gmd.core.demo.client.resources.AppResources;
@@ -39,8 +42,10 @@ import gwt.material.design.client.ui.MaterialToast;
 
 import java.util.List;
 
-public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView, ApplicationPresenter.MyProxy> {
-    interface MyView extends View {
+public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView, ApplicationPresenter.MyProxy>
+        implements MenuHandlers {
+
+    interface MyView extends View, HasUiHandlers<MenuHandlers> {
         void setupSideNav(List<Component> links);
 
         void setupHeader();
@@ -66,6 +71,7 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
         super(eventBus, view, proxy, RevealType.Root);
 
         this.manager = manager;
+        getView().setUiHandlers(this);
     }
 
     @Override
@@ -100,5 +106,10 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
         if (nameToken != null) {
             getView().updateSideNavActiveState(NavigationService.getSideNavLinks().indexOf(NavigationService.get(nameToken)));
         }
+    }
+
+    @Override
+    public void setContentPush() {
+        ContentPushEvent.fire(this);
     }
 }

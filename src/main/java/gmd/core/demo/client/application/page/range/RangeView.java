@@ -19,9 +19,16 @@
  */
 package gmd.core.demo.client.application.page.range;
 
+import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.client.ui.MaterialLabel;
+import gwt.material.design.client.ui.MaterialRange;
+import gwt.material.design.client.ui.MaterialToast;
 
 import javax.inject.Inject;
 
@@ -29,9 +36,34 @@ public class RangeView extends ViewImpl implements RangePresenter.MyView {
     interface Binder extends UiBinder<Widget, RangeView> {
     }
 
+    @UiField
+    MaterialLabel lblRange;
+
+    @UiField
+    MaterialRange range, rangeSetValue;
 
     @Inject
     RangeView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+    }
+
+    @UiHandler("range")
+    void onRange(ValueChangeEvent<Integer> e) {
+        lblRange.setText("Value: " + e.getValue());
+    }
+
+    @UiHandler("rangeSetValue")
+    void onRangeSetValue(ValueChangeEvent<Integer> e) {
+        MaterialToast.fireToast("Value: " + rangeSetValue.getValue());
+    }
+
+    @UiHandler("btnRangeValue")
+    void onRangeValue(ClickEvent e) {
+        rangeSetValue.setValue(50);
+    }
+
+    @UiHandler("btnRangeValueEvent")
+    void onRangeValueEvent(ClickEvent e) {
+        rangeSetValue.setValue(20, true);
     }
 }

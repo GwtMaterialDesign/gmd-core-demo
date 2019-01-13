@@ -26,7 +26,8 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
-import com.gwtplatform.mvp.client.ViewImpl;
+import com.gwtplatform.mvp.client.ViewWithUiHandlers;
+import gmd.core.demo.client.application.events.MenuHandlers;
 import gmd.core.demo.client.application.navigation.Component;
 import gmd.core.demo.client.application.navigation.NavigationService;
 import gmd.core.demo.client.constants.AppConstants;
@@ -45,7 +46,7 @@ import java.util.List;
 
 import static gwt.material.design.jquery.client.api.JQuery.$;
 
-public class ApplicationView extends ViewImpl implements ApplicationPresenter.MyView {
+public class ApplicationView extends ViewWithUiHandlers<MenuHandlers> implements ApplicationPresenter.MyView {
 
     interface Binder extends UiBinder<Widget, ApplicationView> {
     }
@@ -88,6 +89,8 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         gitter.setHref(AppConstants.GITTER_CHANNEL);
         sidenav.setOverlayOption(new OverlayOption(new Blur(4, $("#app-container")), Color.WHITE));
         links.forEach(component -> sidenav.add(new MaterialLink(component.getName(), component.getHref())));
+        sidenav.addOpenedHandler(event -> getUiHandlers().setContentPush());
+        sidenav.addClosedHandler(event -> getUiHandlers().setContentPush());
     }
 
     boolean scrolling;

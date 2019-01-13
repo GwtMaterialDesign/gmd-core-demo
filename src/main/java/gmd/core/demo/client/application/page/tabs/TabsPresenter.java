@@ -27,11 +27,14 @@ import com.gwtplatform.mvp.client.annotations.ProxyStandard;
 import com.gwtplatform.mvp.client.proxy.PlaceManager;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import gmd.core.demo.client.application.ApplicationPresenter;
+import gmd.core.demo.client.application.events.ContentPushEvent;
 import gmd.core.demo.client.application.page.AppPresenter;
 import gmd.core.demo.client.place.NameTokens;
 
-public class TabsPresenter extends AppPresenter<TabsPresenter.MyView, TabsPresenter.MyProxy> {
+public class TabsPresenter extends AppPresenter<TabsPresenter.MyView, TabsPresenter.MyProxy> implements ContentPushEvent.ContentPushHandler  {
+
     interface MyView extends View {
+        void recalculateTabs();
     }
 
     @ProxyStandard
@@ -46,5 +49,11 @@ public class TabsPresenter extends AppPresenter<TabsPresenter.MyView, TabsPresen
             MyProxy proxy,
             PlaceManager placeManager) {
         super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN, placeManager);
+        addRegisteredHandler(ContentPushEvent.TYPE, this);
+    }
+
+    @Override
+    public void onContentPush(ContentPushEvent event) {
+        getView().recalculateTabs();
     }
 }
