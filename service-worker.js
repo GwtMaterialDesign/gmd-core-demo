@@ -2,7 +2,7 @@ var cacheName = 'cache_1547355294771';
 
 var filesToCache = [
     
-    'GmdCoreDemo/favicon.ico',
+    'https://github.com/GwtMaterialDesign/gmd-core-demo/blob/gh-pages/favicon.ico',
     
     'GmdCoreDemo/60CC6903DD35737DDFAA06FDADC31250.cache.js',
 
