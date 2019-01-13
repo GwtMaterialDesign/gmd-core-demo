@@ -25,7 +25,9 @@ function browseAllFilesInDirectory(folder) {
         const resource = folder + "/" + fileName;
         if (exceptions.indexOf(fileName) < 0) {
             if (fileName.match(filesRegExp)) {
-                filesToCache.push(resource.replace(rootFolder + "/", ""));
+                if (!fileName.includes(".cache.js")) {
+                    filesToCache.push(resource.replace(rootFolder + "/", ""));
+                }
             } else if (fs.lstatSync(resource).isDirectory()) {
                 browseAllFilesInDirectory(resource);
             }
