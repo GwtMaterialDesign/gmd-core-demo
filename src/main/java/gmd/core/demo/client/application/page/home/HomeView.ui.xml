@@ -25,14 +25,27 @@
             <m:MaterialImage url="launcher-icons/launcher4x.png" width="70px"/>
             <m:MaterialLabel text="GMD Project" fontWeight="BOLD" fontSize="3em"/>
             <m:MaterialLabel text="Build the future of GWT using PWAs and Material Design Look and Feel."/>
-            <m:MaterialRow>
-                <m:MaterialAnchorButton ui:field="github" target="_blank" text="Github" customIconType="fab fa-github" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
-                <m:MaterialAnchorButton ui:field="gitter" target="_blank" text="Gitter" customIconType="fab fa-gitter" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
-            </m:MaterialRow>
         </m:MaterialRow>
+
+        <m:MaterialRow textAlign="CENTER">
+            <m:MaterialLabel text="Related Projects" fontSize="1.6em"/>
+            <m:MaterialLabel text="Explore our available modules below." />
+        </m:MaterialRow>
+
         <m:MaterialRow>
             <m:MaterialColumn grid="s12 m12 l10" offset="l1">
                 <m:MaterialRow ui:field="dashboardsRow"/>
+            </m:MaterialColumn>
+        </m:MaterialRow>
+
+        <m:MaterialRow textAlign="CENTER">
+            <m:MaterialLabel text="See our Tutorial Videos" fontSize="1.6em"/>
+            <m:MaterialLabel text="Below are series of videos on how to getting started with gwt-material." />
+        </m:MaterialRow>
+
+        <m:MaterialRow>
+            <m:MaterialColumn grid="s12 m12 l10" offset="l1">
+                <m:MaterialRow ui:field="videosRow"/>
             </m:MaterialColumn>
         </m:MaterialRow>
     </m:MaterialPanel>

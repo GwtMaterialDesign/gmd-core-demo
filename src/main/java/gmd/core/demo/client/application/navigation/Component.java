@@ -5,6 +5,8 @@ public class Component {
     private String name;
     private String description;
     private String href;
+    private String javaSource;
+    private String xmlSource;
 
     public Component() {}
 
@@ -52,5 +54,21 @@ public class Component {
 
         output = output.substring(0, 1).toUpperCase() + output.substring(1);
         return output;
+    }
+
+    public String getJavaSource() {
+        return javaSource;
+    }
+
+    public void setJavaSource(String javaSource) {
+        this.javaSource = javaSource;
+    }
+
+    public String getXmlSource() {
+        return xmlSource;
+    }
+
+    public void setXmlSource(String xmlSource) {
+        this.xmlSource = xmlSource;
     }
 }

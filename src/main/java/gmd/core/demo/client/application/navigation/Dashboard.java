@@ -14,6 +14,11 @@ public class Dashboard {
         this.image = image;
     }
 
+    public Dashboard(String url, String image) {
+        this.url = url;
+        this.image = image;
+    }
+
     public String getTitle() {
         return title;
     }

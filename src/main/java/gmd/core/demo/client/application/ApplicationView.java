@@ -55,10 +55,13 @@ public class ApplicationView extends ViewWithUiHandlers<MenuHandlers> implements
     static MaterialLabel title, description, navBrand;
 
     @UiField
-    static MaterialPanel header;
+    static MaterialPanel header, footer;
 
     @UiField
-    MaterialAnchorButton javaSource, xmlSource, github, gitter;
+    MaterialAnchorButton github, gitter;
+
+    @UiField
+    static MaterialAnchorButton javaSource, xmlSource;
 
     @UiField
     MaterialSideNavPush sidenav;
@@ -104,7 +107,7 @@ public class ApplicationView extends ViewWithUiHandlers<MenuHandlers> implements
                     MaterialAnimation animation = new MaterialAnimation();
                     animation.setTransition(Transition.FADEINUP);
                     animation.animate(navBrand);
-                    navBrand.setText("Core | " + title.getText());
+                    navBrand.setText(title.getText());
                     scrolling = true;
                 }
 
@@ -112,7 +115,7 @@ public class ApplicationView extends ViewWithUiHandlers<MenuHandlers> implements
                 MaterialAnimation animation = new MaterialAnimation();
                 animation.setTransition(Transition.FADEINUP);
                 animation.animate(navBrand);
-                navBrand.setText("Core");
+                navBrand.setText("");
                 scrolling = false;
             }
 
@@ -168,9 +171,13 @@ public class ApplicationView extends ViewWithUiHandlers<MenuHandlers> implements
     public static void setComponent(Component component) {
         title.setText(component.getName());
         description.setText(component.getDescription());
+        javaSource.setHref(component.getJavaSource());
+        xmlSource.setHref(component.getXmlSource());
     }
 
     public static void showHeader(boolean show) {
         header.setVisible(show);
+        footer.setVisible(show);
+        navBrand.setVisible(show);
     }
 }

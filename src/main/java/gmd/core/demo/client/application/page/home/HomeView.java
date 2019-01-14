@@ -19,18 +19,15 @@
  */
 package gmd.core.demo.client.application.page.home;
 
-import javax.inject.Inject;
-
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gmd.core.demo.client.application.navigation.Dashboard;
 import gmd.core.demo.client.application.widget.DashboardCard;
-import gmd.core.demo.client.constants.AppConstants;
-import gwt.material.design.client.ui.MaterialAnchorButton;
 import gwt.material.design.client.ui.MaterialRow;
 
+import javax.inject.Inject;
 import java.util.List;
 
 public class HomeView extends ViewImpl implements HomePresenter.MyView {
@@ -39,10 +36,7 @@ public class HomeView extends ViewImpl implements HomePresenter.MyView {
     }
 
     @UiField
-    MaterialRow dashboardsRow;
-
-    @UiField
-    MaterialAnchorButton github, gitter;
+    MaterialRow dashboardsRow, videosRow;
 
     @Inject
     HomeView(Binder uiBinder) {
@@ -51,8 +45,11 @@ public class HomeView extends ViewImpl implements HomePresenter.MyView {
 
     @Override
     public void buildDashboards(List<Dashboard> dashboards) {
-        github.setHref(AppConstants.GITHUB_REPO);
-        gitter.setHref(AppConstants.GITTER_CHANNEL);
         dashboards.forEach(dashboard -> dashboardsRow.add(new DashboardCard(dashboard)));
+    }
+
+    @Override
+    public void buildVideos(List<Dashboard> videos) {
+        videos.forEach(video -> videosRow.add(new DashboardCard(video)));
     }
 }

@@ -28,13 +28,10 @@
         <m:MaterialHeader layoutPosition="FIXED" width="100%" top="0" depth="995">
             <m:MaterialNavBar ui:field="navBar" activates="right-sidenav" backgroundColor="WHITE">
                 <m:MaterialNavBrand>
-                    <m:MaterialLabel ui:field="navBrand" text="Core" textColor="BLACK" fontSize="0.8em"/>
+                    <m:MaterialLabel ui:field="navBrand" textColor="BLACK" fontSize="0.8em"/>
                 </m:MaterialNavBrand>
                 <incubator:search.InlineSearch hideOn="HIDE_ON_MED_DOWN" ui:field="search" theme="LIGHT" width="50%" placeholder="Search" display="INLINE"/>
-                <m:MaterialNavSection float="RIGHT">
-                    <m:MaterialAnchorButton ui:field="github" text="Github" target="_blank" customIconType="fab fa-github" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
-                    <m:MaterialAnchorButton ui:field="gitter" text="Gitter" target="_blank" customIconType="fab fa-gitter" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
-                </m:MaterialNavSection>
+
             </m:MaterialNavBar>
         </m:MaterialHeader>
 
@@ -58,12 +55,25 @@
                     </m:MaterialColumn>
                 </m:MaterialRow>
                 <m:MaterialRow marginBottom="0">
-                    <m:MaterialAnchorButton ui:field="javaSource" text="Java" paddingLeft="0" customIconType="fab fa-java" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
-                    <m:MaterialAnchorButton ui:field="xmlSource" text="XML" iconType="CODE" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
+                    <m:MaterialAnchorButton ui:field="javaSource" target="_blank" text="Java" paddingLeft="0" customIconType="fab fa-java" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
+                    <m:MaterialAnchorButton ui:field="xmlSource" target="_blank" text="XML" iconType="CODE" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
                 </m:MaterialRow>
             </m:MaterialPanel>
 
-            <m:MaterialRow ui:field="container" padding="40"/>
+            <m:MaterialRow ui:field="container" padding="40" marginBottom="0"/>
+
+            <m:MaterialPanel ui:field="footer" addStyleNames="app-footer">
+                <m:MaterialRow marginBottom="0">
+                    <m:MaterialColumn grid="s6 l4">
+                        <m:MaterialImage filterStyle="grayscale(100%)" url="https://gwtmaterialdesign.github.io/gmd-core-demo/launcher-icons/launcher1x.png" alt="logo" float="LEFT" width="20px" marginRight="20"/>
+                        <m:MaterialLabel text="Copyright gwt-material" float="LEFT"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s6 l5" marginTop="-8" textAlign="RIGHT">
+                        <m:MaterialAnchorButton ui:field="github" text="Github" customIconType="fab fa-github" target="_blank" backgroundColor="WHITE" textColor="BLACK" shadow="0"/>
+                        <m:MaterialAnchorButton ui:field="gitter" text="Gitter" customIconType="fab fa-gitter" target="_blank" backgroundColor="WHITE" textColor="BLACK" shadow="0"/>
+                    </m:MaterialColumn>
+                </m:MaterialRow>
+            </m:MaterialPanel>
         </m:MaterialContainer>
 
         <m:MaterialFAB ui:field="fabUp" opacity="0">

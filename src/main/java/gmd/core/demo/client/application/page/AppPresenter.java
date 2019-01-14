@@ -14,13 +14,11 @@ import gmd.core.demo.client.application.ApplicationView;
 import gmd.core.demo.client.application.navigation.Component;
 import gmd.core.demo.client.application.navigation.NavigationService;
 import gmd.core.demo.client.application.widget.CodeSection;
+import gmd.core.demo.client.constants.AppConstants;
 import gwt.material.design.client.base.MaterialWidget;
 import gwt.material.design.client.base.helper.ScrollHelper;
 import gwt.material.design.client.constants.HideOn;
-import gwt.material.design.client.ui.MaterialLink;
-import gwt.material.design.client.ui.MaterialLoader;
-import gwt.material.design.client.ui.MaterialPushpin;
-import gwt.material.design.client.ui.MaterialScrollspy;
+import gwt.material.design.client.ui.*;
 
 public class AppPresenter<V extends View, P extends Proxy<?>> extends Presenter<V, P> {
 
@@ -48,7 +46,9 @@ public class AppPresenter<V extends View, P extends Proxy<?>> extends Presenter<
         scrollHelper.scrollTo(0);
 
         Component component = NavigationService.get(placeManager.getCurrentPlaceRequest().getNameToken());
-
+        String source = AppConstants.GITHUB_SOURCE_CODE + getView().getClass().getName().replace(".", "/");
+        component.setJavaSource(source + ".java");
+        component.setXmlSource(source + ".ui.xml");
         if (component != null) {
             ApplicationView.setComponent(component);
         }

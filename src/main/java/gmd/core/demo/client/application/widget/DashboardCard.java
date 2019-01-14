@@ -22,30 +22,36 @@ package gmd.core.demo.client.application.widget;
 
 
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.dom.client.Style;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
 import gmd.core.demo.client.application.navigation.Dashboard;
-import gwt.material.design.client.ui.MaterialImage;
-import gwt.material.design.client.ui.MaterialLabel;
-import gwt.material.design.client.ui.MaterialLink;
+import gwt.material.design.client.ui.*;
 
 public class DashboardCard extends Composite {
 
     private static DashboardCardUiBinder uiBinder = GWT.create(DashboardCardUiBinder.class);
 
-    interface DashboardCardUiBinder extends UiBinder<Widget, DashboardCard> {
+    interface DashboardCardUiBinder extends UiBinder<MaterialColumn, DashboardCard> {
     }
 
     @UiField
     MaterialImage image;
 
     @UiField
-    MaterialLabel title, description;
+    MaterialImage iconImage;
+
+    @UiField
+    MaterialLabel title;
 
     @UiField
     MaterialLink link;
+
+    @UiField
+    MaterialPanel namePanel;
 
     private Dashboard dashboard;
 
@@ -59,9 +65,23 @@ public class DashboardCard extends Composite {
     protected void onAttach() {
         super.onAttach();
 
+        if (dashboard.getTitle() == null) {
+            namePanel.removeFromParent();
+            getWidget().setCursor(Style.Cursor.POINTER);
+            getWidget().addClickHandler(event -> Window.open(dashboard.getUrl(), "", "_blank"));
+
+        } else {
+            iconImage.setUrl(dashboard.getImage());
+            image.removeFromParent();
+        }
+
         image.setUrl(dashboard.getImage());
         title.setText(dashboard.getTitle());
-        description.setText(dashboard.getDescription());
         link.setHref(dashboard.getUrl());
+    }
+
+    @Override
+    protected MaterialColumn getWidget() {
+        return (MaterialColumn) super.getWidget();
     }
 }
