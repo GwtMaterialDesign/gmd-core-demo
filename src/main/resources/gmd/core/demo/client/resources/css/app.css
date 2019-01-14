@@ -1,14 +1,13 @@
 * {
-    font-family: monospace,monospace;
+    font-family: monospace, monospace;
 }
-
 
 main {
     position: relative;
 }
 
 /** Custom Footer **/
-.custom-footer{
+.custom-footer {
     margin-left: 0 !important;
     margin-bottom: 20px;
 }
@@ -41,14 +40,7 @@ main {
     border-radius: 4px
 }
 
-pre {
-    font-size: 1em;
-    background: #f0f5fe;
-    padding: 20px;
-    white-space: pre !important;
-}
-
- nav a.button-collapse, nav a.button-collapse i {
+nav a.button-collapse, nav a.button-collapse i {
     color: #3a3a3a !important;
     font-size: 0.6em;
 }
@@ -69,7 +61,7 @@ ul.col.s12.l3.hide-on-med-and-down.section.table-of-contents.pinned {
     line-height: 40px;
 }
 
-.side-nav li.active,.side-nav li:hover {
+.side-nav li.active, .side-nav li:hover {
     background: #f3f5ff;
 }
 
@@ -95,11 +87,28 @@ nav .nav-wrapper ul a.btn span {
 
 /** Code **/
 pre {
-    background: #f3f5ff;
-    padding: 20px;
-    white-space: pre-line;
-    opacity: 0.8;
+    padding-top: 32px !important;
+    border: 1px solid #e9e9e9;
+    background-color: #f2f9ff !important;
+    position: relative;
+}
+
+pre.java:before,
+pre.xml:before {
+    content: "java";
+    position: absolute;
+    top: 0px;
+    text-transform: uppercase;
     font-size: 0.8em;
+    background: #64b5f6;
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+
+pre.xml:before {
+    content: "xml";
 }
 
 @media screen and (max-width: 600px) {

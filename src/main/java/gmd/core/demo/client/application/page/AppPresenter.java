@@ -15,12 +15,19 @@ import gmd.core.demo.client.application.navigation.Component;
 import gmd.core.demo.client.application.navigation.NavigationService;
 import gmd.core.demo.client.application.widget.CodeSection;
 import gmd.core.demo.client.constants.AppConstants;
+import gmd.core.demo.client.resources.AppResources;
+import gwt.material.design.client.MaterialDesignBase;
 import gwt.material.design.client.base.MaterialWidget;
 import gwt.material.design.client.base.helper.ScrollHelper;
 import gwt.material.design.client.constants.HideOn;
 import gwt.material.design.client.ui.*;
 
 public class AppPresenter<V extends View, P extends Proxy<?>> extends Presenter<V, P> {
+
+    static {
+        MaterialDesignBase.injectCss(AppResources.INSTANCE.highlightCSs());
+        MaterialDesignBase.injectJs(AppResources.INSTANCE.highlightJs());
+    }
 
     private PlaceManager placeManager;
     private MaterialScrollspy scrollspy;
@@ -61,6 +68,8 @@ public class AppPresenter<V extends View, P extends Proxy<?>> extends Presenter<
             MaterialLoader.progress(false);
             return false;
         }, 400);
+
+        initPre();
     }
 
     protected void createTableOfContents() {
@@ -97,6 +106,14 @@ public class AppPresenter<V extends View, P extends Proxy<?>> extends Presenter<
             }
         }
     }
+
+    public native void initPre() /*-{
+        $wnd.jQuery(document).ready(function() {
+            $wnd.jQuery('pre').each(function(i, block) {
+                $wnd.hljs.highlightBlock(block);
+            });
+        });
+    }-*/;
 
     public MaterialScrollspy getScrollspy() {
         return scrollspy;

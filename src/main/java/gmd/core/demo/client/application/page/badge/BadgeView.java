@@ -31,30 +31,10 @@ public class BadgeView extends ViewImpl implements BadgePresenter.MyView {
     interface Binder extends UiBinder<Widget, BadgeView> {
     }
 
-    static {
-        MaterialDesignBase.injectCss(AppResources.INSTANCE.highlightCSs());
-        MaterialDesignBase.injectJs(AppResources.INSTANCE.highlightJs());
-    }
-
     @Inject
     BadgeView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
 
     }
-
-
-    @Override
-    protected void onAttach() {
-        super.onAttach();
-
-        initHighlightJs();
-    }
-
-    native void initHighlightJs() /*-{
-        $wnd.hljs.configure({useBR: true});
-        $wnd.jQuery('pre code').each(function(i, block) {
-            $wnd.hljs.highlightBlock(block);
-        });
-    }-*/;
 }

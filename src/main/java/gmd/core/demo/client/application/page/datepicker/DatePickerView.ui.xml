@@ -29,7 +29,7 @@
             </m:MaterialRow>
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -41,7 +41,7 @@
             </m:MaterialRow>
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -53,7 +53,7 @@
             </m:MaterialRow>
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -65,7 +65,7 @@
                 <m:MaterialDatePicker  placeholder="Picker attached on root (BODY)" container="BODY" selectionType="YEAR" grid="s12 m4"/>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -77,7 +77,7 @@
             </m:MaterialRow>
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -89,7 +89,7 @@
             </m:MaterialRow>
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -101,7 +101,7 @@
             </m:MaterialRow>
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -115,7 +115,7 @@
             </m:MaterialRow>
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -129,7 +129,7 @@
             </m:MaterialRow>
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -142,7 +142,7 @@
             </m:MaterialRow>
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -215,7 +215,7 @@
             </g:HTMLPanel>
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -227,7 +227,7 @@
             </m:MaterialRow>
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -243,7 +243,7 @@
             </m:MaterialRow>
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -256,7 +256,7 @@
             <m:MaterialButton ui:field="btnOpen" text="Open DatePicker" marginTop="24"/>
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -268,7 +268,7 @@
             </m:MaterialRow>
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -281,7 +281,7 @@
             </m:MaterialRow>
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>

@@ -38,7 +38,7 @@
                 </m:MaterialNavSection>
             </m:MaterialNavBar>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -59,7 +59,7 @@
                 </m:MaterialNavSection>
             </m:MaterialNavBar>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -78,7 +78,7 @@
                 </m:MaterialNavSection>
             </m:MaterialNavBar>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>

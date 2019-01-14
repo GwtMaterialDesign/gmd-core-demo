@@ -28,7 +28,7 @@
             <m:MaterialTextBox label="First Name" grid="s12"/>
             <m:MaterialTextBox label="Email" iconType="ACCOUNT_CIRCLE" grid="s12"/>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -69,7 +69,7 @@
                 <m:MaterialButton text="Reset" ui:field="reset" marginLeft="12"/>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -82,7 +82,7 @@
             <m:MaterialTextBox placeholder="This is an active textbox" label="This is a label" active="true"
                                grid="s12"/>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -93,7 +93,7 @@
             <m:MaterialTextArea label="Content" grid="s12"/>
             <m:MaterialTextArea label="About" iconType="FACE" grid="s12"/>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -103,14 +103,14 @@
                             description="Textareas use a resize policy that can be configured to suit your need. ">
             <m:MaterialTextArea ui:field="txtAreaAuto" label="Using AUTO" resizeRule="AUTO" grid="s12"/>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
 
             <m:MaterialTextArea ui:field="txtAreaFocus" label="Using FOCUS" resizeRule="FOCUS" grid="s12"/>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -121,7 +121,7 @@
             <m:MaterialTextBox label="Input Text" length="10" maxLength="10" type="NUMBER" grid="s12"/>
             <m:MaterialTextArea label="Text Area" length="120" grid="s12"/>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -138,7 +138,7 @@
             <!-- Long Box -->
             <m:MaterialLongBox ui:field="txtLongBox" label="Long value" grid="s12"/>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -153,7 +153,7 @@
             <m:MaterialDoubleBox enabled="false" label="DoubleBox" grid="s12"/>
             <m:MaterialLongBox enabled="false" label="LongBox" grid="s12"/>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -169,7 +169,7 @@
             <m:MaterialDoubleBox ui:field="txtDoubleRO" readOnly="true" label="DoubleBox" grid="s12"/>
             <m:MaterialLongBox ui:field="txtLongRO" readOnly="true" label="LongBox" grid="s12"/>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -188,7 +188,7 @@
                                  grid="s12"/>
             <m:MaterialLongBox ui:field="txtLongTRO" readOnly="true" toggleReadOnly="true" label="LongBox" grid="s12"/>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -200,7 +200,7 @@
             <m:MaterialSwitch ui:field="switchAsNullValue" onLabel="As Null" offLabel="As Empty" grid="s12"/>
             <m:MaterialButton text="Get Value" ui:field="getValueAsNull" margin="12"/>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -246,7 +246,7 @@
                 <m:MaterialButton text="Get Value" ui:field="btnTextFloatGetValue"/>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>

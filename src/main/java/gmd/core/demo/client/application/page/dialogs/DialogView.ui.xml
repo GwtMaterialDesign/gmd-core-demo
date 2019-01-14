@@ -26,7 +26,7 @@
         <widget:CodeSection sectionTitle="Toast" description="GWT Material provides an easy way for you to send unobtrusive alerts to your users through toasts. These toasts are also placed and sized responsively, try it out by clicking the button below on different device sizes.">
             <m:MaterialButton text="Toast Me" waves="LIGHT" ui:field="btnToast"/>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -35,7 +35,7 @@
         <widget:CodeSection sectionTitle="Toast with Action" description="Provides an advance toast with any widget (MaterialLink) for declaration of actions when toast is applied.">
             <m:MaterialButton text="Toast Me" waves="LIGHT" ui:field="btnToastAction"/>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -44,7 +44,7 @@
         <widget:CodeSection sectionTitle="Styling Toasts" description="We've added the ability to customize your toasts easily. You can pass in classes as an optional parameter into the toast function. We've added a rounded class for you, but you can create your own CSS classes and apply them to toasts. Checkout out our full example below.">
             <m:MaterialButton text="Toast Me" waves="LIGHT" ui:field="btnToastRounded"/>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -53,7 +53,7 @@
         <widget:CodeSection sectionTitle="Toasts with Callback" description="You can add finishing callbacks to your toasts to invoke actions.">
             <m:MaterialButton text="Toast Me" waves="LIGHT" ui:field="btnToastCallback"/>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -71,7 +71,7 @@
             </m:MaterialDialog>
             <m:MaterialButton text="Show Dialog" ui:field="btnDialog" waves="LIGHT"/>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -89,7 +89,7 @@
             </m:MaterialDialog>
             <m:MaterialButton text="Dialog with Fix Footer" ui:field="btnDialogFixFooter" waves="LIGHT"/>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -107,7 +107,7 @@
             </m:MaterialDialog>
             <m:MaterialButton text="Dialog Bottom Sheet Style" ui:field="btnMoadalBottomSheets" waves="LIGHT"/>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -124,7 +124,7 @@
             </m:MaterialDialog>
             <m:MaterialButton text="Closable Dialog" ui:field="btnClosable" waves="LIGHT"/>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -142,7 +142,7 @@
                 </m:MaterialDialogFooter>
             </m:MaterialDialog>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -159,7 +159,7 @@
             </m:MaterialDialog>
             <m:MaterialButton text="Dialog with Events" ui:field="btnEvents" waves="LIGHT"/>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -198,7 +198,7 @@
 
             <m:MaterialButton text="Open Dialog 1" ui:field="btnOpenDialog1" waves="LIGHT"/>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -221,7 +221,7 @@
                 <m:MaterialButton margin="12" text="Right" waves="LIGHT"/>
             </m:MaterialTooltip>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -230,7 +230,7 @@
         <widget:CodeSection sectionTitle="Tooltip with HTML" description="You can set any html element inside the tooltip component.">
             <m:MaterialButton tooltipDelayMs="0" tooltipHTML="&lt;i&gt;Italic text&lt;/i&gt;" text="Tooltip with HTML" />
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>

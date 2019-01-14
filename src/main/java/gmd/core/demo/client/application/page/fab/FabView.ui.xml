@@ -35,7 +35,7 @@
                 </m:MaterialFABList>
             </m:MaterialFAB>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -59,7 +59,7 @@
                 </m:MaterialColumn>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -81,7 +81,7 @@
                 </m:MaterialColumn>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -103,7 +103,7 @@
                 </m:MaterialColumn>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -134,7 +134,7 @@
                 </m:MaterialColumn>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>

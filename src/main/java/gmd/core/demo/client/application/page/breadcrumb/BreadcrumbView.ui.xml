@@ -31,8 +31,12 @@
             </m:MaterialNavBar>
 
             <g:HTMLPanel>
-                <pre>
-
+                <pre class="xml">
+    &lt;m:MaterialNavBar>
+        &lt;m:MaterialBreadcrumb marginLeft="12" text="First"/>
+        &lt;m:MaterialBreadcrumb text="Second"/>
+        &lt;m:MaterialBreadcrumb text="Third"/>
+    &lt;/m:MaterialNavBar>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -45,8 +49,12 @@
             </m:MaterialNavBar>
 
             <g:HTMLPanel>
-                <pre>
-
+                <pre class="xml">
+    &lt;m:MaterialNavBar>
+        &lt;m:MaterialBreadcrumb marginLeft="12" iconType="POLYMER"/>
+        &lt;m:MaterialBreadcrumb iconType="STAR"/>
+        &lt;m:MaterialBreadcrumb iconType="MOTORCYCLE"/>
+    &lt;/m:MaterialNavBar>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -59,8 +67,12 @@
             </m:MaterialNavBar>
 
             <g:HTMLPanel>
-                <pre>
-
+                <pre class="xml">
+    &lt;m:MaterialNavBar>
+        &lt;m:MaterialBreadcrumb marginLeft="12" iconPosition="LEFT" iconType="POLYMER" text="First"/>
+        &lt;m:MaterialBreadcrumb iconPosition="LEFT" iconType="STAR" text="Second"/>
+        &lt;m:MaterialBreadcrumb iconPosition="LEFT" iconType="MOTORCYCLE" text="Third"/>
+    &lt;/m:MaterialNavBar>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>

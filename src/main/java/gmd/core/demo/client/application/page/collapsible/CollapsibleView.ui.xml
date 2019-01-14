@@ -56,7 +56,7 @@
             </m:MaterialCollapsible>
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -99,7 +99,7 @@
             </m:MaterialRow>
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -139,7 +139,7 @@
             </m:MaterialCollapsible>
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -177,7 +177,7 @@
             </m:MaterialCollapsible>
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -197,7 +197,7 @@
             </m:MaterialCollapsible>
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -235,7 +235,7 @@
             </m:MaterialCollapsible>
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -273,7 +273,7 @@
             </m:MaterialCollapsible>
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -340,7 +340,7 @@
             </m:MaterialCollapsible>
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -384,7 +384,7 @@
             </m:MaterialCollapsible>
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>

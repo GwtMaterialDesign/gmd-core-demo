@@ -43,7 +43,7 @@
                 <m:MaterialLink text="Third" />
             </m:MaterialDropDown>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -59,7 +59,7 @@
                 <m:MaterialLink text="Third" iconType="POLYMER" iconPosition="RIGHT" separator="true"/>
             </m:MaterialDropDown>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -74,7 +74,7 @@
                 <m:MaterialLink ui:field="linkNotification" fontSize="0.9em"  width="200px" waves="DEFAULT" textColor="BLACK" iconType="NOTIFICATIONS_OFF" iconPosition="LEFT" text="Disable Notification" />
             </m:MaterialDropDown>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -96,7 +96,7 @@
                 <m:MaterialLink waves="DEFAULT" textColor="BLACK" text="Drop 3" />
             </m:MaterialDropDown>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -111,7 +111,7 @@
                 <m:MaterialLink text="Third" />
             </m:MaterialDropDown>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>

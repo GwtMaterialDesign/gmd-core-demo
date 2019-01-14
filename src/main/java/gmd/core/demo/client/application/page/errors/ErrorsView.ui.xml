@@ -32,7 +32,7 @@
                 <m:MaterialButton ui:field="btnValidate" text="Validate" waves="LIGHT"/>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -51,7 +51,7 @@
                 <m:MaterialButton ui:field="btnValidateAll" text="Validate" waves="LIGHT" />
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -69,7 +69,7 @@
                 <m:MaterialButton ui:field="btnClear" text="Clear" waves="LIGHT"/>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -87,7 +87,7 @@
                 <m:MaterialButton ui:field="btnClearDp" text="Clear" waves="LIGHT"/>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -104,7 +104,7 @@
                 <m:MaterialButton ui:field="btnClearTime" text="Clear" waves="LIGHT"/>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -122,7 +122,7 @@
                 <m:MaterialButton ui:field="btnClearRange" text="Clear" waves="LIGHT"/>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -140,7 +140,7 @@
                 <m:MaterialButton ui:field="btnClearSwitch" text="Clear" waves="LIGHT"/>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -158,7 +158,7 @@
                 <m:MaterialButton ui:field="btnClearTxtArea" text="Clear" waves="LIGHT"/>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -176,7 +176,7 @@
                 <m:MaterialButton ui:field="btnClearTxtBox" text="Clear" waves="LIGHT"/>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -200,7 +200,7 @@
                 <m:MaterialButton ui:field="btnClearComboBox" text="Clear" waves="LIGHT"/>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -222,7 +222,7 @@
                 <m:MaterialButton ui:field="btnClearListBox" text="Clear" waves="LIGHT"/>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>

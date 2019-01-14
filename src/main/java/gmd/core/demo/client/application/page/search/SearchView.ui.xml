@@ -52,7 +52,7 @@
                 </m:MaterialRow>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -61,7 +61,7 @@
         <widget:CodeSection sectionTitle="Markup" description="You must add visible='false' property into your navbar search component.">
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -70,7 +70,7 @@
         <widget:CodeSection sectionTitle="Open" description="To show the search input field try to call open().">
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -78,7 +78,7 @@
         <widget:CodeSection sectionTitle="Open Handler" description="You must specify the event callback after your search is open.">
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -86,7 +86,7 @@
         <widget:CodeSection sectionTitle="Populating data" description="Take note that we are using Search Object by default to handle the search results. You can also create an object and extend it to Search Object so that you can add your custom attribute e.g Hero.">
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -95,7 +95,7 @@
         <widget:CodeSection sectionTitle="Add Close Handler" description="You can add a logic into your search component.">
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -104,7 +104,7 @@
         <widget:CodeSection sectionTitle="Add Finish Handler" description="You can add a finish handler into your search component but by default you can just add link value to your search object to set its href attribute.">
 
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>

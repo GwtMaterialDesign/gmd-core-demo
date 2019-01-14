@@ -41,7 +41,7 @@
                 </m:MaterialFooterCopyright>
             </m:MaterialFooter>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>

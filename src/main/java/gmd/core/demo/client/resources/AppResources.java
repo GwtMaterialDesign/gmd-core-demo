@@ -31,7 +31,7 @@ public interface AppResources extends ClientBundle {
     @Source("css/app.css")
     TextResource appCss();
 
-    @Source("css/highlight/default.css")
+    @Source("css/highlight/xcode.css")
     TextResource highlightCSs();
 
     @Source("js/highlight.pack.js")

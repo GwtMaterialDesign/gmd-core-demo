@@ -33,8 +33,12 @@
             </m:MaterialRow>
 
             <g:HTMLPanel>
-                <pre>
-
+                <pre class="xml">
+    &lt;m:MaterialChip margin="8" tooltip="Sample" tooltipPosition="BOTTOM" text="Default" iconType="CLOSE"/>
+    &lt;m:MaterialChip margin="8" text="Apple" backgroundColor="RED" textColor="WHITE" iconType="CLOSE"/>
+    &lt;m:MaterialChip margin="8" text="ORANGE" backgroundColor="ORANGE" textColor="WHITE"  iconType="CLOSE"/>
+    &lt;m:MaterialChip margin="8" text="Banana" backgroundColor="AMBER" textColor="WHITE" iconType="CLOSE"/>
+    &lt;m:MaterialChip margin="8" text="Mango" backgroundColor="GREEN" textColor="WHITE" iconType="CLOSE"/>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -48,8 +52,11 @@
             </m:MaterialRow>
 
             <g:HTMLPanel>
-                <pre>
-
+                <pre class="xml">
+    &lt;m:MaterialChip margin="8" type="OUTLINED" letterColor="WHITE" letterBackgroundColor="RED" text="Apple" />
+    &lt;m:MaterialChip margin="8" type="OUTLINED" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Grapes" iconType="CLOSE"/>
+    &lt;m:MaterialChip margin="8" type="OUTLINED" letter="D" letterColor="WHITE" letterBackgroundColor="GREEN" text="Dalandan" iconType="CLOSE"/>
+    &lt;m:MaterialChip margin="8" type="OUTLINED" letter="M" letterColor="ORANGE" letterBackgroundColor="YELLOW" text="Mango" iconType="CLOSE"/>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -61,8 +68,10 @@
                 <m:MaterialChip margin="8" text="Mango" />
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
-
+                <pre class="xml">
+    &lt;m:MaterialChip margin="8" text="Apple" />
+    &lt;m:MaterialChip margin="8" text="Banana" />
+    &lt;m:MaterialChip margin="8" text="Mango" />
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -75,8 +84,11 @@
                 <m:MaterialChip margin="8" letter="M" letterColor="ORANGE" letterBackgroundColor="YELLOW" text="Mango" iconType="CLOSE"/>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
-
+                <pre class="xml">
+    &lt;m:MaterialChip margin="8" letter="A" letterColor="WHITE" letterBackgroundColor="RED" text="Apple" iconType="CLOSE"/>
+    &lt;m:MaterialChip margin="8" letter="G" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Grapes" iconType="CLOSE"/>
+    &lt;m:MaterialChip margin="8" letter="D" letterColor="WHITE" letterBackgroundColor="GREEN" text="Dalandan" iconType="CLOSE"/>
+    &lt;m:MaterialChip margin="8" letter="M" letterColor="ORANGE" letterBackgroundColor="YELLOW" text="Mango" iconType="CLOSE"/>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -88,8 +100,10 @@
                 <m:MaterialChip margin="8" url="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi9lfCkLutb7ugJlIjn84qWNoiICopC-Vyx7QQJRHF5E7GlqFG" text="Zenaida Ringor" iconType="CLOSE"/>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
-
+                <pre class="xml">
+    &lt;m:MaterialChip margin="8" url="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi9lfCkLutb7ugJlIjn84qWNoiICopC-Vyx7QQJRHF5E7GlqFG" text="Yunalis Mat Zara'ai" iconType="CLOSE"/>
+    &lt;m:MaterialChip margin="8" url="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi9lfCkLutb7ugJlIjn84qWNoiICopC-Vyx7QQJRHF5E7GlqFG" text="Marjorie Matias" iconType="CLOSE"/>
+    &lt;m:MaterialChip margin="8" url="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi9lfCkLutb7ugJlIjn84qWNoiICopC-Vyx7QQJRHF5E7GlqFG" text="Zenaida Ringor" iconType="CLOSE"/>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -101,8 +115,29 @@
                 <m:MaterialChip margin="8" ui:field="chipClick" text="Click Me" />
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
+    &lt;m:MaterialButton ui:field="closeChip" text="Close Chip" />
+    &lt;m:MaterialRow>
+        &lt;m:MaterialChip margin="8" ui:field="chip" url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" iconType="CLOSE"/>
+        &lt;m:MaterialChip margin="8" ui:field="chipClick" text="Click Me" />
+    &lt;/m:MaterialRow>
+                </pre>
+            </g:HTMLPanel>
 
+            <g:HTMLPanel>
+                <pre class="java">
+    @UiField
+    MaterialChip chip;
+
+    @UiHandler("chipClick")
+    void onClickChip(ClickEvent e) {
+        MaterialToast.fireToast("You clicked me");
+    }
+
+    @UiHandler("closeChip")
+    void closeChip(ClickEvent e) {
+        chip.close();
+    }
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>

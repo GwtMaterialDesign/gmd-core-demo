@@ -30,7 +30,7 @@
                 </m:MaterialPanel>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>

@@ -27,7 +27,7 @@
         <widget:CodeSection sectionTitle="Circular">
             <m:MaterialButton text="Show Loader" ui:field="btnShowLoader"/>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -36,7 +36,7 @@
         <widget:CodeSection sectionTitle="Linear">
             <m:MaterialButton text="Show Progress" ui:field="btnShowProgress"/>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -45,7 +45,7 @@
         <widget:CodeSection sectionTitle="Determinate Type">
             <m:MaterialProgress type="DETERMINATE" percent="30"/>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -54,7 +54,7 @@
         <widget:CodeSection sectionTitle="Indeterminate Type">
             <m:MaterialProgress type="INDETERMINATE" />
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -79,7 +79,7 @@
                 </m:MaterialColumn>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -101,7 +101,7 @@
                 </m:MaterialNavSection>
             </m:MaterialNavBar>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -154,7 +154,7 @@
                 </m:MaterialColumn>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>

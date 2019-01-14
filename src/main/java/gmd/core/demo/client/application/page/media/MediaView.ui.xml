@@ -26,7 +26,7 @@
         <widget:CodeSection sectionTitle="Material Box" description="Material box is a material design implementation of the Lightbox plugin. When a user clicks on an image that can be enlarged. Material box centers the image and enlarges it in a smooth, non-jarring manner. To dismiss the image, the user can either click on the image again, scroll away, or press the ESC key.">
             <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/candy-icons.gif"  type="MATERIALBOXED"/>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -35,7 +35,7 @@
         <widget:CodeSection sectionTitle="Captions" description="It is very easy to add a short caption to your photo. Just add the caption as a caption attribute.">
             <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/md-card-ripple.gif"  type="MATERIALBOXED" caption="I love Material Design"/>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -44,7 +44,7 @@
         <widget:CodeSection sectionTitle="Responsive Videos" description="We provide a container for Embedded Videos that resizes them responsively.">
             <m:MaterialVideo url="https://www.youtube.com/embed/Q8TXgCzxEnw?rel=0"/>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -81,7 +81,7 @@
                 </m:MaterialSlideItem>
             </m:MaterialSlider>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -120,7 +120,7 @@
             <m:MaterialButton text="START" ui:field="start" />
             <m:MaterialButton text="PAUSE" ui:field="pause" type="FLAT" waves="DEFAULT" />
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>
@@ -128,7 +128,7 @@
         <widget:CodeSection sectionTitle="Basic"  description="You can easily add placeholder to indicate a label into your datepicker.">
             <m:MaterialButton ui:field="fullscreenBtn" text="Fullscreen Slider" waves="LIGHT" iconType="FULLSCREEN" />
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
 
                 </pre>
             </g:HTMLPanel>

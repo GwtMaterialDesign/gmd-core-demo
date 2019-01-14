@@ -52,8 +52,17 @@
                 </m:MaterialColumn>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
-
+                <pre class="xml">
+    &lt;m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
+        &lt;m:MaterialCardContent textColor="WHITE">
+            &lt;m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
+            &lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+        &lt;/m:MaterialCardContent>
+        &lt;m:MaterialCardAction>
+            &lt;m:MaterialLink text="Link 1" iconType="POLYMER"/>
+            &lt;m:MaterialLink text="Link 1" iconType="POLYMER"/>
+        &lt;/m:MaterialCardAction>
+    &lt;/m:MaterialCard>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -96,8 +105,22 @@
                 </m:MaterialColumn>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
+    &lt;m:MaterialCard backgroundColor="WHITE">
+        &lt;m:MaterialCardImage waves="LIGHT">
+            &lt;m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.png"/>
+            &lt;m:MaterialCardTitle text="Sample"/>
+        &lt;/m:MaterialCardImage>
 
+        &lt;m:MaterialCardContent textColor="BLACK">
+            &lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+        &lt;/m:MaterialCardContent>
+
+        &lt;m:MaterialCardAction>
+            &lt;m:MaterialLink text="Link 1" />
+            &lt;m:MaterialLink text="Link 1" />
+        &lt;/m:MaterialCardAction>
+    &lt;/m:MaterialCard>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -174,8 +197,22 @@
                 </m:MaterialColumn>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
+    &lt;m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE" detectOrientation="true">
+        &lt;m:MaterialCardImage waves="LIGHT">
+            &lt;m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif" height="146px" />
+        &lt;/m:MaterialCardImage>
 
+        &lt;m:MaterialCardContent textColor="BLACK">
+            &lt;m:MaterialLabel text="Title of your card" fontSize="1.5em" truncate="true"/>
+            &lt;m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit" truncate="true"/>
+        &lt;/m:MaterialCardContent>
+
+        &lt;m:MaterialCardAction>
+            &lt;m:MaterialLink iconType="SHARE" textColor="BLACK" />
+            &lt;m:MaterialLink iconType="LOCATION_ON" textColor="RED" />
+        &lt;/m:MaterialCardAction>
+    &lt;/m:MaterialCard>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -201,8 +238,22 @@
                 </m:MaterialColumn>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
+    &lt;m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE" detectOrientation="true">
+        &lt;m:MaterialCardImage waves="LIGHT">
+            &lt;m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif" height="146px"/>
+        &lt;/m:MaterialCardImage>
 
+        &lt;m:MaterialCardContent textColor="BLACK">
+            &lt;m:MaterialLabel text="Title of your card" fontSize="1.5em" truncate="true"/>
+            &lt;m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit" truncate="true"/>
+        &lt;/m:MaterialCardContent>
+
+        &lt;m:MaterialCardAction>
+            &lt;m:MaterialLink iconType="SHARE" textColor="BLACK" />
+            &lt;m:MaterialLink iconType="LOCATION_ON" textColor="RED" />
+        &lt;/m:MaterialCardAction>
+    &lt;/m:MaterialCard>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -276,8 +327,26 @@
                 </m:MaterialColumn>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
+    &lt;m:MaterialCard backgroundColor="WHITE">
+        &lt;m:MaterialCardImage waves="LIGHT">
+            &lt;m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif" />
+        &lt;/m:MaterialCardImage>
 
+        &lt;m:MaterialCardContent textColor="BLACK">
+            &lt;m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="BLACK"/>
+        &lt;/m:MaterialCardContent>
+
+        &lt;m:MaterialCardReveal>
+            &lt;m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
+            &lt;m:MaterialLabel text="Here is some more information about this product that is only revealed once clicked on." />
+        &lt;/m:MaterialCardReveal>
+
+        &lt;m:MaterialCardAction>
+            &lt;m:MaterialLink text="Link 1" textColor="BLUE" />
+            &lt;m:MaterialLink text="Link 1" textColor="BLUE" />
+        &lt;/m:MaterialCardAction>
+    &lt;/m:MaterialCard>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -325,8 +394,44 @@
                 </m:MaterialColumn>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
-
+                <pre class="xml">
+    &lt;m:MaterialCard>
+        &lt;m:MaterialCardContent>
+            &lt;m:MaterialRow marginBottom="0">
+                &lt;m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/profile.jpg" width="50" height="50" circle="true" float="LEFT" marginRight="20"/>
+                &lt;m:MaterialLabel fontWeight="BOLD" text="Mark Kevin Baldemor" fontSize="1.2em" float="LEFT" marginTop="20"/>
+                &lt;m:MaterialLabel text="2d"  textColor="GREY" float="RIGHT" marginTop="20" marginRight="20"/>
+            &lt;/m:MaterialRow>
+            &lt;m:MaterialRow marginBottom="0" padding="20">
+                &lt;m:MaterialLabel text="Amazingly clear seas of the Philippines" />
+                &lt;m:MaterialRow marginBottom="0">
+                    &lt;m:MaterialChip margin="4" text="#philippines" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
+                    &lt;m:MaterialChip margin="4" text="#vacation" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
+                    &lt;m:MaterialChip margin="4" text="#holiday" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
+                    &lt;m:MaterialChip margin="4" text="#sea" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
+                &lt;/m:MaterialRow>
+            &lt;/m:MaterialRow>
+        &lt;/m:MaterialCardContent>
+        &lt;m:MaterialCardImage>
+            &lt;m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/boat.png" />
+        &lt;/m:MaterialCardImage>
+        &lt;m:MaterialCardAction padding="0">
+            &lt;m:MaterialRow margin="12">
+                &lt;m:MaterialButton type="FLOATING" iconType="PLUS_ONE" iconColor="GREY" backgroundColor="GREY_LIGHTEN_2" shadow="0" float="LEFT"/>
+                &lt;m:MaterialLabel text="310" textColor="GREY" float="LEFT" marginTop="12" marginLeft="12"/>
+                &lt;m:MaterialLabel text="1000" textColor="GREY" float="RIGHT" marginTop="12" marginLeft="12"/>
+                &lt;m:MaterialButton type="FLOATING" iconType="SHARE" iconColor="GREY" backgroundColor="GREY_LIGHTEN_2" shadow="0" float="RIGHT"/>
+            &lt;/m:MaterialRow>
+            &lt;!-- Collection items for comments -->
+            &lt;m:MaterialCollection>
+                &lt;m:MaterialCollectionItem type="AVATAR">
+                    &lt;m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/yuna.jpg" circle="true" width="40px" height="40px"/>
+                    &lt;m:MaterialLabel text="Yuna" fontWeight="BOLD" />
+                    &lt;m:MaterialLabel text="I grew up in the island of the Philippines. The water is clear. Some are not sandy. Water is just the right temperature." />
+                &lt;/m:MaterialCollectionItem>
+            &lt;/m:MaterialCollection>
+        &lt;/m:MaterialCardAction>
+    &lt;/m:MaterialCard>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -398,8 +503,20 @@
                 </m:MaterialColumn>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
-
+                <pre class="xml">
+    &lt;m:MaterialCard backgroundColor="INDIGO_LIGHTEN_1">
+        &lt;m:MaterialCardImage>
+            &lt;ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card-1.webp" fallbackExtension="png"/>
+        &lt;/m:MaterialCardImage>
+        &lt;m:MaterialCardContent textColor="WHITE" height="120px">
+            &lt;m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/profile.jpg" circle="true" width="32px" height="32px" />
+            &lt;m:MaterialLabel fontSize="1.5em" text="Android Development Patterns"/>
+            &lt;m:MaterialLabel opacity="0.6" marginTop="4" text="Android Developers" />
+        &lt;/m:MaterialCardContent>
+        &lt;m:MaterialCardAction>
+            &lt;m:MaterialLink text="FOLLOW" fontSize="1.5em" fontWeight="BOLDER" textColor="WHITE"/>
+        &lt;/m:MaterialCardAction>
+    &lt;/m:MaterialCard>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -628,8 +745,239 @@
                 </m:MaterialColumn>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre>
+                <pre class="xml">
+                    &lt;m:MaterialRow ui:field="rowCards" layoutPosition="RELATIVE" opacity="0">
+                        &lt;m:MaterialColumn grid="l3">
+                            &lt;m:MaterialCard backgroundColor="WHITE">
+                                &lt;m:MaterialCardImage waves="LIGHT">
+                                    &lt;ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
+                                &lt;/m:MaterialCardImage>
 
+                                &lt;m:MaterialCardContent textColor="BLACK">
+                                    &lt;m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="BLACK"/>
+                                &lt;/m:MaterialCardContent>
+
+                                &lt;m:MaterialCardReveal>
+                                    &lt;m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
+                                    &lt;m:MaterialLabel text="Here is some more information about this product that is only revealed once clicked on." />
+                                &lt;/m:MaterialCardReveal>
+
+                                &lt;m:MaterialCardAction>
+                                    &lt;m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+                                    &lt;m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+                                &lt;/m:MaterialCardAction>
+                            &lt;/m:MaterialCard>
+                        &lt;/m:MaterialColumn>
+
+                        &lt;m:MaterialColumn grid="l3">
+                            &lt;m:MaterialCard backgroundColor="WHITE">
+                                &lt;m:MaterialCardImage waves="LIGHT">
+                                    &lt;ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
+                                &lt;/m:MaterialCardImage>
+
+                                &lt;m:MaterialCardContent textColor="BLACK">
+                                    &lt;m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="BLACK"/>
+                                &lt;/m:MaterialCardContent>
+
+                                &lt;m:MaterialCardReveal>
+                                    &lt;m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
+                                    &lt;m:MaterialLabel text="Here is some more information about this product that is only revealed once clicked on." />
+                                &lt;/m:MaterialCardReveal>
+
+                                &lt;m:MaterialCardAction>
+                                    &lt;m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+                                    &lt;m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+                                &lt;/m:MaterialCardAction>
+                            &lt;/m:MaterialCard>
+                        &lt;/m:MaterialColumn>
+
+                        &lt;m:MaterialColumn grid="l3">
+                            &lt;m:MaterialCard backgroundColor="WHITE">
+                                &lt;m:MaterialCardImage waves="LIGHT">
+                                    &lt;ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
+                                &lt;/m:MaterialCardImage>
+
+                                &lt;m:MaterialCardContent textColor="BLACK">
+                                    &lt;m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="BLACK"/>
+                                &lt;/m:MaterialCardContent>
+
+                                &lt;m:MaterialCardReveal>
+                                    &lt;m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
+                                    &lt;m:MaterialLabel text="Here is some more information about this product that is only revealed once clicked on." />
+                                &lt;/m:MaterialCardReveal>
+
+                                &lt;m:MaterialCardAction>
+                                    &lt;m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+                                    &lt;m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+                                &lt;/m:MaterialCardAction>
+                            &lt;/m:MaterialCard>
+                        &lt;/m:MaterialColumn>
+
+                        &lt;m:MaterialColumn grid="l3">
+                            &lt;m:MaterialCard backgroundColor="WHITE">
+                                &lt;m:MaterialCardImage waves="LIGHT">
+                                    &lt;ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
+                                &lt;/m:MaterialCardImage>
+
+                                &lt;m:MaterialCardContent textColor="BLACK">
+                                    &lt;m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="BLACK"/>
+                                &lt;/m:MaterialCardContent>
+
+                                &lt;m:MaterialCardReveal>
+                                    &lt;m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
+                                    &lt;m:MaterialLabel text="Here is some more information about this product that is only revealed once clicked on." />
+                                &lt;/m:MaterialCardReveal>
+
+                                &lt;m:MaterialCardAction>
+                                    &lt;m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+                                    &lt;m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+                                &lt;/m:MaterialCardAction>
+                            &lt;/m:MaterialCard>
+                        &lt;/m:MaterialColumn>
+
+                        &lt;m:MaterialColumn grid="l3">
+                            &lt;m:MaterialCard backgroundColor="WHITE">
+                                &lt;m:MaterialCardImage waves="LIGHT">
+                                    &lt;ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
+                                &lt;/m:MaterialCardImage>
+
+                                &lt;m:MaterialCardContent textColor="BLACK">
+                                    &lt;m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="BLACK"/>
+                                &lt;/m:MaterialCardContent>
+
+                                &lt;m:MaterialCardReveal>
+                                    &lt;m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
+                                    &lt;m:MaterialLabel text="Here is some more information about this product that is only revealed once clicked on." />
+                                &lt;/m:MaterialCardReveal>
+
+                                &lt;m:MaterialCardAction>
+                                    &lt;m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+                                    &lt;m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+                                &lt;/m:MaterialCardAction>
+                            &lt;/m:MaterialCard>
+                        &lt;/m:MaterialColumn>
+
+                        &lt;m:MaterialColumn grid="l3">
+                            &lt;m:MaterialCard backgroundColor="WHITE">
+                                &lt;m:MaterialCardImage waves="LIGHT">
+                                    &lt;ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
+                                &lt;/m:MaterialCardImage>
+
+                                &lt;m:MaterialCardContent textColor="BLACK">
+                                    &lt;m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="BLACK"/>
+                                &lt;/m:MaterialCardContent>
+
+                                &lt;m:MaterialCardReveal>
+                                    &lt;m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
+                                    &lt;m:MaterialLabel text="Here is some more information about this product that is only revealed once clicked on." />
+                                &lt;/m:MaterialCardReveal>
+
+                                &lt;m:MaterialCardAction>
+                                    &lt;m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+                                    &lt;m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+                                &lt;/m:MaterialCardAction>
+                            &lt;/m:MaterialCard>
+                        &lt;/m:MaterialColumn>
+
+                        &lt;m:MaterialColumn grid="l3">
+                            &lt;m:MaterialCard backgroundColor="WHITE">
+                                &lt;m:MaterialCardImage waves="LIGHT">
+                                    &lt;ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
+                                &lt;/m:MaterialCardImage>
+
+                                &lt;m:MaterialCardContent textColor="BLACK">
+                                    &lt;m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="BLACK"/>
+                                &lt;/m:MaterialCardContent>
+
+                                &lt;m:MaterialCardReveal>
+                                    &lt;m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
+                                    &lt;m:MaterialLabel text="Here is some more information about this product that is only revealed once clicked on." />
+                                &lt;/m:MaterialCardReveal>
+
+                                &lt;m:MaterialCardAction>
+                                    &lt;m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+                                    &lt;m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+                                &lt;/m:MaterialCardAction>
+                            &lt;/m:MaterialCard>
+                        &lt;/m:MaterialColumn>
+
+                        &lt;m:MaterialColumn grid="l3">
+                            &lt;m:MaterialCard backgroundColor="WHITE">
+                                &lt;m:MaterialCardImage waves="LIGHT">
+                                    &lt;ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
+                                &lt;/m:MaterialCardImage>
+
+                                &lt;m:MaterialCardContent textColor="BLACK">
+                                    &lt;m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="BLACK"/>
+                                &lt;/m:MaterialCardContent>
+
+                                &lt;m:MaterialCardReveal>
+                                    &lt;m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
+                                    &lt;m:MaterialLabel text="Here is some more information about this product that is only revealed once clicked on." />
+                                &lt;/m:MaterialCardReveal>
+
+                                &lt;m:MaterialCardAction>
+                                    &lt;m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+                                    &lt;m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+                                &lt;/m:MaterialCardAction>
+                            &lt;/m:MaterialCard>
+                        &lt;/m:MaterialColumn>
+
+                        &lt;m:MaterialColumn grid="l3">
+                            &lt;m:MaterialCard backgroundColor="WHITE">
+                                &lt;m:MaterialCardImage waves="LIGHT">
+                                    &lt;ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
+                                &lt;/m:MaterialCardImage>
+
+                                &lt;m:MaterialCardContent textColor="BLACK">
+                                    &lt;m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="BLACK"/>
+                                &lt;/m:MaterialCardContent>
+
+                                &lt;m:MaterialCardReveal>
+                                    &lt;m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
+                                    &lt;m:MaterialLabel text="Here is some more information about this product that is only revealed once clicked on." />
+                                &lt;/m:MaterialCardReveal>
+
+                                &lt;m:MaterialCardAction>
+                                    &lt;m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+                                    &lt;m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+                                &lt;/m:MaterialCardAction>
+                            &lt;/m:MaterialCard>
+                        &lt;/m:MaterialColumn>
+
+                        &lt;m:MaterialColumn grid="l3">
+                            &lt;m:MaterialCard backgroundColor="WHITE">
+                                &lt;m:MaterialCardImage waves="LIGHT">
+                                    &lt;ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
+                                &lt;/m:MaterialCardImage>
+
+                                &lt;m:MaterialCardContent textColor="BLACK">
+                                    &lt;m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="BLACK"/>
+                                &lt;/m:MaterialCardContent>
+
+                                &lt;m:MaterialCardReveal>
+                                    &lt;m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
+                                    &lt;m:MaterialLabel text="Here is some more information about this product that is only revealed once clicked on." />
+                                &lt;/m:MaterialCardReveal>
+
+                                &lt;m:MaterialCardAction>
+                                    &lt;m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+                                    &lt;m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+                                &lt;/m:MaterialCardAction>
+                            &lt;/m:MaterialCard>
+                        &lt;/m:MaterialColumn>
+                    &lt;/m:MaterialRow>
+                </pre>
+            </g:HTMLPanel>
+            <g:HTMLPanel>
+                <pre class="java">
+                    @UiField
+                    MaterialRow rowCards;
+
+                    @UiHandler("btnShow")
+                    void onShow(ClickEvent e) {
+                        new MaterialAnimation().transition(Transition.SHOW_GRID).animate(rowCards);
+                    }
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
