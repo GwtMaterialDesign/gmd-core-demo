@@ -24,20 +24,20 @@
         "http://gwtproject.org/doctype/2.7.0/gwt-module.dtd">
 <module rename-to='GmdCoreDemo'>
     <inherits name='com.google.gwt.user.User'/>
-    <inherits name="com.gwtplatform.mvp.MvpWithEntryPoint"/>
-
-    <extend-configuration-property name="gin.ginjector.modules"
-                                   value="gmd.core.demo.client.gin.ClientModule"/>
 
     <!-- Specify the paths for translatable code                    -->
     <source path='client'/>
     <source path='shared'/>
 
-    <!--GWT Material-->
+    <!-- GWT Material-->
     <inherits name="gwt.material.design.GwtMaterialBasicWithJQuery"/>
     <inherits name="gwt.material.design.incubator.AddinsIncubator"/>
     <inherits name="gwt.material.design.incubator.FontAwesomeResources"/>
     <inherits name="gwt.material.design.themes.ThemeBlue"/>
+
+    <!-- Note MvpWithEntryPoint Must be called after the JQuery has been imported -->
+    <inherits name="com.gwtplatform.mvp.MvpWithEntryPoint"/>
+    <extend-configuration-property name="gin.ginjector.modules" value="gmd.core.demo.client.gin.ClientModule"/>
 
     <inherits name="com.google.gwt.precompress.Precompress"/>
 

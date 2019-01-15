@@ -165,7 +165,9 @@ public class ApplicationView extends ViewWithUiHandlers<MenuHandlers> implements
     @UiHandler("fabUp")
     void fabUp(ClickEvent e) {
         ScrollHelper scrollHelper = new ScrollHelper();
-        scrollHelper.scrollTo(0);
+        if (scrollHelper.hasVerticalScrollbar()) {
+            scrollHelper.scrollTo(0);
+        }
     }
 
     public static void setComponent(Component component) {
