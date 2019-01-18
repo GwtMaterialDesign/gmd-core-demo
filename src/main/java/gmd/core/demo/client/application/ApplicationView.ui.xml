@@ -65,8 +65,9 @@
             <m:MaterialPanel ui:field="footer" addStyleNames="app-footer">
                 <m:MaterialRow marginBottom="0">
                     <m:MaterialColumn grid="s6 l4">
-                        <m:MaterialImage filterStyle="grayscale(100%)" url="https://gwtmaterialdesign.github.io/gmd-core-demo/launcher-icons/launcher1x.png" alt="logo" float="LEFT" width="20px" marginRight="20"/>
-                        <m:MaterialLabel text="Copyright gwt-material" float="LEFT"/>
+                        <m:MaterialImage url="https://gwtmaterialdesign.github.io/gmd-core-demo/launcher-icons/launcher1x.png" alt="logo" float="LEFT" width="20px" marginRight="20"/>
+                        <m:MaterialLabel text="Copyright gwt-material - " float="LEFT" marginRight="12"/>
+                        <m:MaterialLabel ui:field="year" float="LEFT" />
                     </m:MaterialColumn>
                     <m:MaterialColumn grid="s6 l5" marginTop="-8" textAlign="RIGHT">
                         <m:MaterialAnchorButton ui:field="github" text="Github" customIconType="fab fa-github" target="_blank" backgroundColor="WHITE" textColor="BLACK" shadow="0"/>

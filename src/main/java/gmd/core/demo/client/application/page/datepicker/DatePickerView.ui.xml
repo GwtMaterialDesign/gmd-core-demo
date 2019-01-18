@@ -30,7 +30,7 @@
 
             <g:HTMLPanel>
                 <pre class="xml">
-
+    &lt;m:MaterialDatePicker placeholder="Date" grid="s12 m4"/>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -42,7 +42,7 @@
 
             <g:HTMLPanel>
                 <pre class="xml">
-
+    &lt;m:MaterialDatePicker placeholder="Birthday" enabled="false" grid="s12 m4"/>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -54,7 +54,7 @@
 
             <g:HTMLPanel>
                 <pre class="xml">
-
+    &lt;m:MaterialDatePicker  placeholder="Date" selectionType="YEAR" grid="s12 m4"/>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -66,7 +66,10 @@
             </m:MaterialRow>
             <g:HTMLPanel>
                 <pre class="xml">
-
+    &lt;m:MaterialRow>
+        &lt;m:MaterialDatePicker  placeholder="Picker attached on it's own (SELF)" container="SELF" selectionType="YEAR" grid="s12 m4"/>
+        &lt;m:MaterialDatePicker  placeholder="Picker attached on root (BODY)" container="BODY" selectionType="YEAR" grid="s12 m4"/>
+    &lt;/m:MaterialRow>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -78,7 +81,7 @@
 
             <g:HTMLPanel>
                 <pre class="xml">
-
+    &lt;m:MaterialDatePicker ui:field="dpBirthdate" placeholder="Birthdate" selectionType="YEAR" yearsToDisplay="50" grid="s12 m4"/>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -90,7 +93,7 @@
 
             <g:HTMLPanel>
                 <pre class="xml">
-
+    &lt;m:MaterialDatePicker ui:field="dpAutoClose" grid="s12 m4" autoClose="true" placeholder="Date" />
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -102,7 +105,7 @@
 
             <g:HTMLPanel>
                 <pre class="xml">
-
+    &lt;m:MaterialDatePicker detectOrientation="true" grid="s12 m4" placeholder="Supports mobile orientations" />
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -116,7 +119,23 @@
 
             <g:HTMLPanel>
                 <pre class="xml">
+    &lt;m:MaterialDatePicker ui:field="dp" grid="s12 m4" placeholder="Date" selectionType="YEAR"/>
+    &lt;m:MaterialButton ui:field="btnSetDate" text="Set Date to January 1 2016" marginRight="20" marginTop="24"/>
+    &lt;m:MaterialButton ui:field="btnGetDate" text="Get the date" marginTop="24"/>
+                </pre>
+            </g:HTMLPanel>
+            
+            <g:HTMLPanel>
+                <pre class="java">
+    @UiHandler("btnSetDate")
+    void onSetDate(ClickEvent e){
+        dp.setDate(new Date(116, 0,1));
+    }
 
+    @UiHandler("btnGetDate")
+    void onGetDate(ClickEvent e){
+        MaterialToast.fireToast("" + dp.getDate());
+    }
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -130,7 +149,30 @@
 
             <g:HTMLPanel>
                 <pre class="xml">
+    &lt;m:MaterialDatePicker ui:field="dpValue" placeholder="DatePicker" grid="s12 m4" />
+    &lt;m:MaterialButton text="Set Value" ui:field="btnDpValue" marginRight="20" marginTop="24"/>
+    &lt;m:MaterialButton text="Set Value with Event" ui:field="btnDpValueEvent" marginTop="24"/>
+                </pre>
+            </g:HTMLPanel>
 
+            <g:HTMLPanel>
+                <pre class="java">
+    @UiHandler("btnDpValue")
+    void onDpValue(ClickEvent e) {
+        //dpValue.setValue(new Date());
+        dpValue.setValue(new Date(), false);
+        Long l = new Date().getTime();
+        l = l - 2592000000L;      //1 Months in Milliseconds = 2592000000
+        Date dd = new Date();
+        dd.setTime(l);
+        dpValue.setPickerDate(JsDate.create(dd.getTime()), dpValue.getDateInput().getElement());
+    }
+
+    @UiHandler("btnDpValueEvent")
+    void onDpValueEvent(ClickEvent e) {
+        Date date = new Date(123,1,1);
+        dpValue.setValue(date, true);
+    }
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -143,7 +185,17 @@
 
             <g:HTMLPanel>
                 <pre class="xml">
-
+    &lt;m:MaterialDatePicker ui:field="dpFormat" grid="s12 m4" placeholder="Custom Format" format="YYYY/MM/DD"/>
+    &lt;m:MaterialButton ui:field="btnSetFormat" text="Set Date with custom format" marginTop="24"/>
+                </pre>
+            </g:HTMLPanel>
+            
+            <g:HTMLPanel>
+                <pre class="java">
+    @UiHandler("btnSetFormat")
+    void onDpFormat(ClickEvent e){
+        dpFormat.setDate(new Date());
+    }
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -228,7 +280,14 @@
 
             <g:HTMLPanel>
                 <pre class="xml">
-
+    &lt;m:MaterialDatePicker ui:field="dpLimit" placeholder="With Limit"/>
+                </pre>
+            </g:HTMLPanel>
+            
+            <g:HTMLPanel>
+                <pre class="java">
+    dpLimit.setDateMin(new Date(117, 0, 1));
+    dpLimit.setDateMax(new Date(117, 0, 15));
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -244,7 +303,25 @@
 
             <g:HTMLPanel>
                 <pre class="xml">
+    &lt;m:MaterialRow>
+        &lt;m:MaterialDatePicker ui:field="dpClear" grid="s12 m4" placeholder="Birthday" />
+    &lt;/m:MaterialRow>
+    &lt;m:MaterialRow>
+        &lt;m:MaterialButton ui:field="btnClear" text="Clear" iconType="CLEAR" marginRight="20" marginTop="24"/>
+        &lt;m:MaterialButton ui:field="btnGetValue" text="Get Value" marginTop="24"/>
+    &lt;/m:MaterialRow>
+                </pre>
+            </g:HTMLPanel>
+            
+            <g:HTMLPanel>
+                <pre class="java">
+    @UiHandler("btnClear")
+    void onDpClear(ClickEvent e) { dpClear.clear(); }
 
+    @UiHandler("btnGetValue")
+    void onDpGetValue(ClickEvent e) {
+        MaterialToast.fireToast(dpClear.getValue() + "");
+    }
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -257,7 +334,36 @@
 
             <g:HTMLPanel>
                 <pre class="xml">
+    &lt;m:MaterialRow>
+        &lt;m:MaterialDatePicker ui:field="dpOpenClose" grid="s12 m4" placeholder="Birthdate" />
+    &lt;/m:MaterialRow>
+    &lt;m:MaterialButton ui:field="btnOpen" text="Open DatePicker" marginTop="24"/>
+                </pre>
+            </g:HTMLPanel>
 
+            <g:HTMLPanel>
+                <pre class="java">
+    dpOpenClose.addOpenHandler(event -> {
+        if(event.getTarget().getValue() != null){
+            MaterialToast.fireToast("Opened Date Picker " + event.getTarget().getValue());
+        } else {
+            MaterialToast.fireToast("Opened Date Picker" );
+        }
+    });
+    dpOpenClose.addCloseHandler(event -> MaterialToast.fireToast("Closed Date Picker with value " + event.getTarget().getValue()));
+    dpOpenClose.addValueChangeHandler(event -> {
+        MaterialToast.fireToast("Date Selected " + event.getValue());
+        dpOpenClose.close();
+    });
+                </pre>
+            </g:HTMLPanel> 
+            
+            <g:HTMLPanel>
+                <pre class="java">
+    @UiHandler("btnOpen")
+    void onOpen(ClickEvent e) {
+        dpOpenClose.open();
+    }
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -268,8 +374,17 @@
             </m:MaterialRow>
 
             <g:HTMLPanel>
-                <pre class="xml">
-
+                <pre class="java">
+    // Events on date picker
+    dpEvents.addOpenHandler(event -> {
+        if(event.getTarget().getValue() != null){
+            MaterialToast.fireToast("Opened Date Picker " + event.getTarget().getValue());
+        } else {
+            MaterialToast.fireToast("Opened Date Picker" );
+        }
+    });
+    dpEvents.addCloseHandler(event -> MaterialToast.fireToast("Closed Date Picker with value " + event.getTarget().getValue()));
+    dpEvents.addValueChangeHandler(event -> MaterialToast.fireToast("Date Selected " + event.getValue()));
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -277,12 +392,12 @@
         <widget:CodeSection sectionTitle="Language Translations" description="With API we have supported 43 languages into the datepicker component.">
             <m:MaterialRow>
                 <m:MaterialListBox ui:field="lstLanguage" placeholder="Select Language" grid="l4"/>
-                <m:MaterialDatePicker ui:field="dpTranslation" placeholder="With Translation" grid="l4"/>
+                <m:MaterialDatePicker ui:field="dpTranslation" language="AR" placeholder="With Translation" grid="l4"/>
             </m:MaterialRow>
 
             <g:HTMLPanel>
                 <pre class="xml">
-
+    &lt;m:MaterialDatePicker ui:field="dpTranslation" language="AR" placeholder="With Translation" grid="l4"/>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>

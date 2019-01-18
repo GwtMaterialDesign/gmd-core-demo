@@ -20,6 +20,7 @@
 package gmd.core.demo.client.application;
 
 import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.i18n.client.DateTimeFormat;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
@@ -42,6 +43,7 @@ import gwt.material.design.client.ui.animate.Transition;
 import gwt.material.design.incubator.client.search.InlineSearch;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import static gwt.material.design.jquery.client.api.JQuery.$;
@@ -67,7 +69,7 @@ public class ApplicationView extends ViewWithUiHandlers<MenuHandlers> implements
     MaterialSideNavPush sidenav;
 
     @UiField
-    MaterialLabel name, version;
+    MaterialLabel name, version, year;
 
     @UiField
     MaterialRow container;
@@ -94,6 +96,7 @@ public class ApplicationView extends ViewWithUiHandlers<MenuHandlers> implements
         links.forEach(component -> sidenav.add(new MaterialLink(component.getName(), component.getHref())));
         sidenav.addOpenedHandler(event -> getUiHandlers().setContentPush());
         sidenav.addClosedHandler(event -> getUiHandlers().setContentPush());
+        year.setText(DateTimeFormat.getFormat("yyyy").format(new Date()));
     }
 
     boolean scrolling;

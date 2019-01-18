@@ -29,7 +29,7 @@
 				</m:MaterialCardImage>
 				<m:MaterialPanel ui:field="namePanel" padding="20">
 					<m:MaterialImage ui:field="iconImage" alt="icon-image" width="60px" float="LEFT" marginRight="12"/>
-					<m:MaterialLabel ui:field="title" fontSize="1.6em" fontWeight="BOLD"/>
+					<m:MaterialLabel ui:field="title" fontSize="1.2em" fontWeight="BOLD"/>
 					<m:MaterialLink ui:field="link" text="EXPLORE" textColor="BLUE" fontWeight="BOLD"/>
 				</m:MaterialPanel>
 			</m:MaterialCardContent>
