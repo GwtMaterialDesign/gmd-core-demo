@@ -44,7 +44,13 @@
             </m:MaterialDropDown>
             <g:HTMLPanel>
                 <pre class="xml">
-
+    &lt;m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="WHITE" activates="dp-2"/>
+    &lt;!-- My Drop Down -->
+    &lt;m:MaterialDropDown activator="dp-2" constrainWidth="true">
+        &lt;m:MaterialLink text="First" />
+        &lt;m:MaterialLink text="Second" />
+        &lt;m:MaterialLink text="Third" />
+    &lt;/m:MaterialDropDown>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -60,7 +66,14 @@
             </m:MaterialDropDown>
             <g:HTMLPanel>
                 <pre class="xml">
-
+    &lt;!-- Activator -->
+    &lt;m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="WHITE" activates="dp-3"/>
+    &lt;!-- My Drop Down -->
+    &lt;m:MaterialDropDown activator="dp-3" constrainWidth="true">
+        &lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="RIGHT" separator="true"/>
+        &lt;m:MaterialLink text="Second" iconType="POLYMER" iconPosition="RIGHT" separator="true"/>
+        &lt;m:MaterialLink text="Third" iconType="POLYMER" iconPosition="RIGHT" separator="true"/>
+    &lt;/m:MaterialDropDown>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -75,7 +88,13 @@
             </m:MaterialDropDown>
             <g:HTMLPanel>
                 <pre class="xml">
+    &lt;m:MaterialIcon iconType="PHONE" iconColor="BLACK" activates="dp-4" waves="DEFAULT"/>
 
+    &lt;m:MaterialDropDown activator="dp-4" constrainWidth="false">
+        &lt;m:MaterialLink ui:field="linkDialPad" fontSize="0.9em"  width="200px" waves="DEFAULT" textColor="BLACK" iconType="DIALPAD" iconPosition="LEFT" text="Redial" />
+        &lt;m:MaterialLink ui:field="linkVoicemail" fontSize="0.9em"  width="200px" waves="DEFAULT" enabled="false" textColor="BLACK" iconType="VOICEMAIL" iconPosition="LEFT" text="Check voicemail" separator="true"/>
+        &lt;m:MaterialLink ui:field="linkNotification" fontSize="0.9em"  width="200px" waves="DEFAULT" textColor="BLACK" iconType="NOTIFICATIONS_OFF" iconPosition="LEFT" text="Disable Notification" />
+    &lt;/m:MaterialDropDown>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -97,7 +116,20 @@
             </m:MaterialDropDown>
             <g:HTMLPanel>
                 <pre class="xml">
+    &lt;m:MaterialNavBar width="100%">
+        &lt;m:MaterialNavBrand paddingLeft="20" text="GMD" position="LEFT"/>
+        &lt;m:MaterialNavSection position="RIGHT" hideOn="NONE">
+            &lt;!--Activator -->
+            &lt;m:MaterialLink text="Dropdown" activates="dp-5" textColor="WHITE" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"/>
+        &lt;/m:MaterialNavSection>
+    &lt;/m:MaterialNavBar>
 
+    &lt;!-- My Dropdown -->
+    &lt;m:MaterialDropDown activator="dp-5" constrainWidth="true">
+        &lt;m:MaterialLink waves="DEFAULT" textColor="BLACK" text="Drop 1" />
+        &lt;m:MaterialLink waves="DEFAULT" enabled="false" textColor="BLACK" text="Drop 2"  separator="true"/>
+        &lt;m:MaterialLink waves="DEFAULT" textColor="BLACK" text="Drop 3" />
+    &lt;/m:MaterialDropDown>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -112,7 +144,10 @@
             </m:MaterialDropDown>
             <g:HTMLPanel>
                 <pre class="xml">
-
+    @UiHandler("dropdown")
+    void onDropdown(SelectionEvent&lt;Widget> callback){
+        MaterialToast.fireToast("Selected : " + ((MaterialLink)callback.getSelectedItem()).getText());
+    }
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>

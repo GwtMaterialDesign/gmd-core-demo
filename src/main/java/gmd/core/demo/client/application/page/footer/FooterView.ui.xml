@@ -42,7 +42,22 @@
             </m:MaterialFooter>
             <g:HTMLPanel>
                 <pre class="xml">
+    &lt;m:MaterialFooter ui:field="footer" addStyleNames="custom-footer">
+        &lt;m:MaterialRow>
+            &lt;m:MaterialColumn grid="s12 m6 l6">
+                &lt;m:MaterialTitle textColor="WHITE" title="Join The Discussion" description="We provide Gitter Chat rooms in order for GWT Developers discussed and collaborate about GWT Material Design and Phonegap Integration."/>
+                &lt;m:MaterialButton ui:field="btnChat" text="CHAT" waves="LIGHT"/>
+            &lt;/m:MaterialColumn>
+            &lt;m:MaterialColumn grid="s12 m6 l6">
+                &lt;m:MaterialTitle textColor="WHITE" title="GWT Phonegap" description="We provide Gitter Chat rooms in order for GWT Developers discussed and collaborate about GWT Material Design and Phonegap Integration."/>
+                &lt;m:MaterialButton ui:field="btnDownloadPhonegap" text="GWT Material APK" waves="LIGHT"/>
+            &lt;/m:MaterialColumn>
+        &lt;/m:MaterialRow>
 
+        &lt;m:MaterialFooterCopyright addStyleNames="footer-copyright">
+            &lt;m:MaterialLabel text="© 2015 Copyright GWT Material" />
+        &lt;/m:MaterialFooterCopyright>
+    &lt;/m:MaterialFooter>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>

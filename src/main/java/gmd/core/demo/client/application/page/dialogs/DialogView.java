@@ -116,20 +116,13 @@ public class DialogView extends ViewImpl implements DialogPresenter.MyView {
     @UiHandler("btnToastAction")
     void onToastAction(ClickEvent e) {
         MaterialLink link = new MaterialLink("UNDO");
-        link.addClickHandler(new ClickHandler() {
-            @Override
-            public void onClick(ClickEvent event) {
-                MaterialToast.fireToast("UNDO DONE");
-            }
-        });
+        link.addClickHandler(event -> MaterialToast.fireToast("UNDO DONE"));
         new MaterialToast(link).toast("Item Deleted");
     }
 
     @UiHandler("btnToastCallback")
     void onToastCallback(ClickEvent e) {
-        new MaterialToast(() -> {
-            MaterialToast.fireToast("BANG!");
-        }).toast("Explosion in: 5, 4, 3, 2, 1", 5000);
+        new MaterialToast(() -> MaterialToast.fireToast("BANG!")).toast("Explosion in: 5, 4, 3, 2, 1", 5000);
     }
 
     @UiHandler("btnToastRounded")

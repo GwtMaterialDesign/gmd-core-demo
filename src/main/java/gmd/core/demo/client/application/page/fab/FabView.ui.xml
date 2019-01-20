@@ -36,12 +36,21 @@
             </m:MaterialFAB>
             <g:HTMLPanel>
                 <pre class="xml">
-
+    &lt;m:MaterialFAB depth="995">
+        &lt;m:MaterialButton type="FLOATING" iconType="POLYMER" size="LARGE"/>
+        &lt;m:MaterialFABList>
+            &lt;m:MaterialAnchorButton type="FLOATING" waves="LIGHT" iconType="POLYMER"/>
+            &lt;m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="GREEN"  iconType="POLYMER"/>
+            &lt;m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="RED"  iconType="POLYMER"/>
+            &lt;m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="ORANGE"  iconType="POLYMER"/>
+            &lt;m:MaterialAnchorButton type="FLOATING" waves="LIGHT"  iconType="POLYMER"/>
+        &lt;/m:MaterialFABList>
+    &lt;/m:MaterialFAB>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 
-        <widget:CodeSection sectionTitle="Open / Close FAB" description="You can also open the Fixed Action Button Menu programatically.">
+        <widget:CodeSection sectionTitle="Open or Close FAB" description="You can also open the Fixed Action Button Menu programatically.">
             <m:MaterialButton text="Open" ui:field="btnOpen" />
             <m:MaterialButton text="Close" ui:field="btnClose" backgroundColor="WHITE" textColor="BLACK"/>
             <m:MaterialRow>
@@ -59,13 +68,17 @@
                 </m:MaterialColumn>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre class="xml">
-
+                <pre class="java">
+    // Opening the FAB
+    fab.open();
+    
+    // Closing the FAB
+    fab.close();
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 
-        <widget:CodeSection sectionTitle="FAB Type : Horizontal" description="Creating a horizontal FAB is easy! Just add axis='HORIZONTAL'.">
+        <widget:CodeSection sectionTitle="FAB Type Horizontal" description="Creating a horizontal FAB is easy! Just add axis='HORIZONTAL'.">
             <m:MaterialRow>
                 <m:MaterialColumn grid="l6 m6 s12" layoutPosition="RELATIVE" height="80px">
                     <m:MaterialFAB axis="HORIZONTAL" depth="995" layoutPosition="ABSOLUTE" right="0">
@@ -82,12 +95,14 @@
             </m:MaterialRow>
             <g:HTMLPanel>
                 <pre class="xml">
-
+    &lt;m:MaterialFAB axis="HORIZONTAL" depth="995" layoutPosition="ABSOLUTE" right="0">
+        .....
+    &lt;/m:MaterialFAB>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 
-        <widget:CodeSection sectionTitle="FAB Type : Click Only" description="If you want to disable the hover behaviour, and instead toggle the FAB menu when the user clicks on the large button (works great on mobile!), Just add type='CLICK_ONLY' ">
+        <widget:CodeSection sectionTitle="FAB Type Click Only" description="If you want to disable the hover behaviour, and instead toggle the FAB menu when the user clicks on the large button (works great on mobile!), Just add type='CLICK_ONLY' ">
             <m:MaterialRow>
                 <m:MaterialColumn grid="l6 m6 s12" layoutPosition="RELATIVE" height="80px">
                     <m:MaterialFAB type="CLICK_ONLY" axis="HORIZONTAL" depth="995" layoutPosition="ABSOLUTE" right="0">
@@ -104,7 +119,9 @@
             </m:MaterialRow>
             <g:HTMLPanel>
                 <pre class="xml">
-
+    &lt;m:MaterialFAB type="CLICK_ONLY">
+        .....
+    &lt;/m:MaterialFAB>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -134,8 +151,9 @@
                 </m:MaterialColumn>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre class="xml">
-
+                <pre class="java">
+    btnFABEvent.addOpenHandler(openEvent -> MaterialToast.fireToast("Opened Default FAB"));
+    btnFABEvent.addCloseHandler(closeEvent -> MaterialToast.fireToast("Closed Default FAB"));
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>

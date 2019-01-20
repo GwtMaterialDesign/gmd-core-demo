@@ -33,26 +33,58 @@
             </m:MaterialRow>
             <g:HTMLPanel>
                 <pre class="xml">
+                    &lt;m:MaterialTextBox ui:field="txtBox" label="Email" validateOnBlur="true" allowBlank="false" />
+                </pre>
+            </g:HTMLPanel>
+            <g:HTMLPanel>
+                <pre class="java">
+    public class EmailValidator extends RegExValidator {
+      public EmailValidator() {
+        super("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.(?:[a-zA-Z]{2,6})$", "Not a valid email address.");
+      }
 
+      @Override
+      public int getPriority() {
+        return 0;
+      }
+    }
+
+    // Add the validator to the input component
+    txtBox.addValidator(new EmailValidator());
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 
-        <widget:CodeSection sectionTitle="Allow Blank Property" description="Allow blank property is similar to not required property. By setting allowBlank='false' it means that your field is required.">
+        <widget:CodeSection sectionTitle="Required" description="This will indicate that the value box will be a required field and will perform the validation on blur event.">
             <m:MaterialRow>
-                <m:MaterialTextBox ui:field="txtBoxValidate" validateOnBlur="true" allowBlank="false" label="Required Value (TextBox)" grid="s12"/>
-                <m:MaterialTextArea ui:field="txtAreaValidate" validateOnBlur="true" allowBlank="false" label="Required Value (Text Area)" grid="s12"/>
-                <m:MaterialIntegerBox ui:field="intBoxValidate" validateOnBlur="true" allowBlank="false" label="Required Value (IntegerBox)" grid="s12"/>
-                <m:MaterialDoubleBox ui:field="doubleBoxValidate" validateOnBlur="true" allowBlank="false" label="Required Value (DoubleBox)" grid="s12"/>
-                <m:MaterialFloatBox ui:field="floatBoxValidate" validateOnBlur="true" allowBlank="false" label="Required Value (FloatBox)" grid="s12"/>
-                <m:MaterialLongBox ui:field="longBoxValidate" validateOnBlur="true" allowBlank="false" label="Required Value (LongBox)" grid="s12"/>
-                <m:MaterialDatePicker ui:field="datePickerValidate" validateOnBlur="true" allowBlank="false" placeholder="Required Value (DatePicker)" grid="s12"/>
-                <ma:timepicker.MaterialTimePicker ui:field="timePickerValidate" validateOnBlur="true" allowBlank="false" placeholder="Required Value (TimePicker)" grid="s12"/>
+                <m:MaterialTextBox ui:field="txtBoxValidate" required="true" label="Required Value (TextBox)" grid="s12"/>
+                <m:MaterialTextArea ui:field="txtAreaValidate" required="true" label="Required Value (Text Area)" grid="s12"/>
+                <m:MaterialIntegerBox ui:field="intBoxValidate" required="true" label="Required Value (IntegerBox)" grid="s12"/>
+                <m:MaterialDoubleBox ui:field="doubleBoxValidate" required="true" label="Required Value (DoubleBox)" grid="s12"/>
+                <m:MaterialFloatBox ui:field="floatBoxValidate" required="true" label="Required Value (FloatBox)" grid="s12"/>
+                <m:MaterialLongBox ui:field="longBoxValidate" required="true" label="Required Value (LongBox)" grid="s12"/>
+                <m:MaterialDatePicker ui:field="datePickerValidate" required="true" placeholder="Required Value (DatePicker)" grid="s12"/>
+                <ma:timepicker.MaterialTimePicker ui:field="timePickerValidate" required="true" placeholder="Required Value (TimePicker)" grid="s12"/>
                 <m:MaterialButton ui:field="btnValidateAll" text="Validate" waves="LIGHT" />
             </m:MaterialRow>
             <g:HTMLPanel>
                 <pre class="xml">
+    &lt;m:MaterialTextBox ui:field="txtBoxValidate" required="true" label="Required Value (TextBox)" grid="s12"/>
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
 
+        <widget:CodeSection sectionTitle="Setting Error Success and Helper">
+            <g:HTMLPanel>
+                <pre class="java">
+    // Setting Error
+    txtBox.setErrorText("This is an error message for Text Field.");
+    // Setting Success
+    txtBox.setSuccessText("This is a success message for Text Field.");
+    // Setting Helper
+    txtBox.setHelperText("This is a helper text for Text Field.");
+    // Clearing Status Text
+    txtBox.clearStatusText();
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -68,11 +100,7 @@
                 <m:MaterialButton ui:field="btnHelper" text="Helper" backgroundColor="WHITE" textColor="BLACK" waves="LIGHT" marginRight="20"/>
                 <m:MaterialButton ui:field="btnClear" text="Clear" waves="LIGHT"/>
             </m:MaterialRow>
-            <g:HTMLPanel>
-                <pre class="xml">
-
-                </pre>
-            </g:HTMLPanel>
+            
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="Date Picker">
@@ -86,11 +114,7 @@
                 <m:MaterialButton ui:field="btnHelperDp" text="Helper" backgroundColor="WHITE" textColor="BLACK" waves="LIGHT" marginRight="20"/>
                 <m:MaterialButton ui:field="btnClearDp" text="Clear" waves="LIGHT"/>
             </m:MaterialRow>
-            <g:HTMLPanel>
-                <pre class="xml">
-
-                </pre>
-            </g:HTMLPanel>
+            
         </widget:CodeSection>
         <widget:CodeSection sectionTitle="Time Picker">
             <!-- Time Picker -->
@@ -103,11 +127,7 @@
                 <m:MaterialButton ui:field="btnHelperTime" text="Helper" backgroundColor="WHITE" textColor="BLACK" waves="LIGHT" marginRight="20"/>
                 <m:MaterialButton ui:field="btnClearTime" text="Clear" waves="LIGHT"/>
             </m:MaterialRow>
-            <g:HTMLPanel>
-                <pre class="xml">
-
-                </pre>
-            </g:HTMLPanel>
+            
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="Range">
@@ -121,11 +141,7 @@
                 <m:MaterialButton ui:field="btnHelperRange" text="Helper" backgroundColor="WHITE" textColor="BLACK" waves="LIGHT" marginRight="20"/>
                 <m:MaterialButton ui:field="btnClearRange" text="Clear" waves="LIGHT"/>
             </m:MaterialRow>
-            <g:HTMLPanel>
-                <pre class="xml">
-
-                </pre>
-            </g:HTMLPanel>
+            
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="Switch">
@@ -139,11 +155,7 @@
                 <m:MaterialButton ui:field="btnHelperSwitch" text="Helper" backgroundColor="WHITE" textColor="BLACK" waves="LIGHT" marginRight="20"/>
                 <m:MaterialButton ui:field="btnClearSwitch" text="Clear" waves="LIGHT"/>
             </m:MaterialRow>
-            <g:HTMLPanel>
-                <pre class="xml">
-
-                </pre>
-            </g:HTMLPanel>
+            
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="Text Area">
@@ -157,11 +169,7 @@
                 <m:MaterialButton ui:field="btnHelperTxtArea" text="Helper" backgroundColor="WHITE" textColor="BLACK" waves="LIGHT" marginRight="20"/>
                 <m:MaterialButton ui:field="btnClearTxtArea" text="Clear" waves="LIGHT"/>
             </m:MaterialRow>
-            <g:HTMLPanel>
-                <pre class="xml">
-
-                </pre>
-            </g:HTMLPanel>
+            
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="Text Box">
@@ -175,11 +183,7 @@
                 <m:MaterialButton ui:field="btnHelperTxtBox" text="Helper" backgroundColor="WHITE" textColor="BLACK" waves="LIGHT" marginRight="20"/>
                 <m:MaterialButton ui:field="btnClearTxtBox" text="Clear" waves="LIGHT"/>
             </m:MaterialRow>
-            <g:HTMLPanel>
-                <pre class="xml">
-
-                </pre>
-            </g:HTMLPanel>
+            
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="Combo Box">
@@ -199,11 +203,7 @@
                 <m:MaterialButton ui:field="btnHelperComboBox" text="Helper" backgroundColor="WHITE" textColor="BLACK" waves="LIGHT" marginRight="20"/>
                 <m:MaterialButton ui:field="btnClearComboBox" text="Clear" waves="LIGHT"/>
             </m:MaterialRow>
-            <g:HTMLPanel>
-                <pre class="xml">
-
-                </pre>
-            </g:HTMLPanel>
+            
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="List Box">
@@ -221,11 +221,7 @@
                 <m:MaterialButton ui:field="btnHelperListBox" text="Helper" backgroundColor="WHITE" textColor="BLACK" waves="LIGHT" marginRight="20"/>
                 <m:MaterialButton ui:field="btnClearListBox" text="Clear" waves="LIGHT"/>
             </m:MaterialRow>
-            <g:HTMLPanel>
-                <pre class="xml">
-
-                </pre>
-            </g:HTMLPanel>
+            
         </widget:CodeSection>
     </m:MaterialPanel>
 </ui:UiBinder>
