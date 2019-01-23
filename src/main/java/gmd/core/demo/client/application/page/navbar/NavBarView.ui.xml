@@ -39,7 +39,19 @@
             </m:MaterialNavBar>
             <g:HTMLPanel>
                 <pre class="xml">
-
+    &lt;m:MaterialNavBar>
+        &lt;m:MaterialNavBrand marginLeft="60" href="#Test" float="LEFT" text="Title" />
+        &lt;m:MaterialNavSection float="RIGHT">
+            &lt;m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account"  textColor="WHITE" waves="LIGHT"/>
+            &lt;m:MaterialLink iconType="AUTORENEW" iconPosition="LEFT" text="Refresh" textColor="WHITE" waves="LIGHT"/>
+            &lt;m:MaterialTooltip text="Menu">
+                &lt;m:MaterialLink iconType="SEARCH" textColor="WHITE" waves="LIGHT"/>
+            &lt;/m:MaterialTooltip>
+            &lt;m:MaterialTooltip text="Starter">
+                &lt;m:MaterialLink iconType="MORE_VERT" textColor="WHITE" waves="LIGHT"/>
+            &lt;/m:MaterialTooltip>
+        &lt;/m:MaterialNavSection>
+    &lt;/m:MaterialNavBar>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -59,8 +71,8 @@
                 </m:MaterialNavSection>
             </m:MaterialNavBar>
             <g:HTMLPanel>
-                <pre class="xml">
-
+                <pre class="java">
+    navSection.addSelectionHandler(selectionEvent -> MaterialToast.fireToast(selectionEvent.getSelectedItem() + " Selected Index"));
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -79,7 +91,17 @@
             </m:MaterialNavBar>
             <g:HTMLPanel>
                 <pre class="xml">
-
+    &lt;m:MaterialNavBar width="100%">
+        &lt;m:MaterialNavBrand href="#Test" float="RIGHT" text="App Title"/>
+        &lt;m:MaterialNavSection float="LEFT">
+            &lt;m:MaterialTooltip text="Menu">
+                &lt;m:MaterialLink iconType="SEARCH" textColor="WHITE"/>
+            &lt;/m:MaterialTooltip>
+            &lt;m:MaterialTooltip text="Starter">
+                &lt;m:MaterialLink iconType="MORE_VERT" textColor="WHITE"/>
+            &lt;/m:MaterialTooltip>
+        &lt;/m:MaterialNavSection>
+    &lt;/m:MaterialNavBar>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>

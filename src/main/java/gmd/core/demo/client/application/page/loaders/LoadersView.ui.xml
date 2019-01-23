@@ -27,8 +27,15 @@
         <widget:CodeSection sectionTitle="Circular">
             <m:MaterialButton text="Show Loader" ui:field="btnShowLoader"/>
             <g:HTMLPanel>
-                <pre class="xml">
-
+                <pre class="java">
+    MaterialLoader.loading(true);
+    Timer t = new Timer() {
+        @Override
+        public void run() {
+            MaterialLoader.loading(false);
+        }
+    };
+    t.schedule(3000);
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -36,8 +43,15 @@
         <widget:CodeSection sectionTitle="Linear">
             <m:MaterialButton text="Show Progress" ui:field="btnShowProgress"/>
             <g:HTMLPanel>
-                <pre class="xml">
-
+                <pre class="java">
+    MaterialLoader.progress(true);
+    Timer t = new Timer() {
+        @Override
+        public void run() {
+            MaterialLoader.progress(false);
+        }
+    };
+    t.schedule(3000);
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -46,7 +60,7 @@
             <m:MaterialProgress type="DETERMINATE" percent="30"/>
             <g:HTMLPanel>
                 <pre class="xml">
-
+    &lt;m:MaterialProgress type="DETERMINATE" percent="30"/>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -54,8 +68,8 @@
         <widget:CodeSection sectionTitle="Indeterminate Type">
             <m:MaterialProgress type="INDETERMINATE" />
             <g:HTMLPanel>
-                <pre class="xml">
-
+                <pre class="java">
+    &lt;m:MaterialProgress type="INDETERMINATE" percent="30"/>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -80,7 +94,23 @@
             </m:MaterialRow>
             <g:HTMLPanel>
                 <pre class="xml">
-
+    &lt;m:MaterialRow>
+        &lt;m:MaterialColumn grid="l4">
+            &lt;m:MaterialPreLoader size="BIG">
+                &lt;m:MaterialSpinner color="BLUE_ONLY" />
+            &lt;/m:MaterialPreLoader>
+        &lt;/m:MaterialColumn>
+        &lt;m:MaterialColumn grid="l4">
+            &lt;m:MaterialPreLoader>
+                &lt;m:MaterialSpinner color="RED_ONLY" />
+            &lt;/m:MaterialPreLoader>
+        &lt;/m:MaterialColumn>
+        &lt;m:MaterialColumn grid="l4">
+            &lt;m:MaterialPreLoader size="SMALL">
+                &lt;m:MaterialSpinner color="YELLOW_ONLY" />
+            &lt;/m:MaterialPreLoader>
+        &lt;/m:MaterialColumn>
+    &lt;/m:MaterialRow>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -101,8 +131,15 @@
                 </m:MaterialNavSection>
             </m:MaterialNavBar>
             <g:HTMLPanel>
-                <pre class="xml">
-
+                <pre class="java">
+    navBar.showProgress(ProgressType.INDETERMINATE);
+    Timer t = new Timer() {
+        @Override
+        public void run() {
+            navBar.hideProgress();
+        }
+    };
+    t.schedule(3000);
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -154,8 +191,17 @@
                 </m:MaterialColumn>
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre class="xml">
-
+                <pre class="java">
+    MaterialLoader.loading(true, loaderCard);
+    btnProgress.setEnabled(false);
+    Timer timer = new Timer() {
+        @Override
+        public void run() {
+            btnProgress.setEnabled(true);
+            MaterialLoader.loading(false);
+        }
+    };
+    timer.schedule(2000);
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>

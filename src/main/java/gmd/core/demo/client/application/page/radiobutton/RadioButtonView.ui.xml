@@ -38,7 +38,18 @@
             </m:MaterialRow>
             <g:HTMLPanel>
                 <pre class="xml">
-
+    &lt;m:MaterialRow>
+        &lt;m:MaterialRadioButton name="color" text="Red" type="GAP"/>
+    &lt;/m:MaterialRow>
+    &lt;m:MaterialRow>
+        &lt;m:MaterialRadioButton name="color" text="Yellow"/>
+    &lt;/m:MaterialRow>
+    &lt;m:MaterialRow>
+        &lt;m:MaterialRadioButton name="color" text="Green"/>
+    &lt;/m:MaterialRow>
+    &lt;m:MaterialRow>
+        &lt;m:MaterialRadioButton name="color" text="Brown" enabled="false"/>
+    &lt;/m:MaterialRow>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -51,8 +62,21 @@
                 <m:MaterialButton text="Set Value with Event" ui:field="btnRadioValueEvent" />
             </m:MaterialRow>
             <g:HTMLPanel>
-                <pre class="xml">
+                <pre class="java">
+    @UiHandler("radioValue")
+    void onRadioValue(ValueChangeEvent&lt;Boolean> e) {
+        MaterialToast.fireToast("Value : " + e.getValue());
+    }
 
+    @UiHandler("btnRadioValue")
+    void onClickRadioValue(ClickEvent e) {
+        radioValue.setValue(true);
+    }
+
+    @UiHandler("btnRadioValueEvent")
+    void onClickRadioValueEvent(ClickEvent e) {
+        radioValue.setValue(false, true);
+    }
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
