@@ -23,7 +23,7 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <m:MaterialPanel>
-        <widget:CodeSection sectionTitle="Range">
+        <widget:CodeSection sectionTitle="Setting Range">
             <m:MaterialRange ui:field="range" min="10" max="500" value="250"/>
             <m:MaterialLabel text="Min: 10"/>
             <m:MaterialLabel text="Min: 500"/>

@@ -111,6 +111,15 @@ pre.xml:before {
     content: "xml";
 }
 
+/** TAB **/
+.tab-content {
+    height: 200px;
+    background: #e9e9e9;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 60px !important;
+}
+
 @media screen and (max-width: 600px) {
     .card .card-content {
         min-height: 360px;
