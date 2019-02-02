@@ -1,9 +1,11 @@
-var cacheName = 'cache_1549091266494';
+var cacheName = 'cache_1549091962847';
 
 var filesToCache = [  
-'favicon.ico',
+'GmdCoreDemo/B266C84ABBBC221357EAF85E1E227C79.cache.js',
 
-'GmdCoreDemo/116776E8EC156EBA3F6D95167519DE8B.cache.js',
+'GmdCoreDemo/GmdCoreDemo.devmode.js',
+
+'GmdCoreDemo/GmdCoreDemo.nocache.js',
 
 'GmdCoreDemo/clear.cache.gif',
 
@@ -89,9 +91,7 @@ var filesToCache = [
 
 'GmdCoreDemo/fontawesome-icons/fa-solid-900.woff2',
 
-'GmdCoreDemo/GmdCoreDemo.devmode.js',
-
-'GmdCoreDemo/GmdCoreDemo.nocache.js',
+'favicon.ico',
 
 'index.html',
 
