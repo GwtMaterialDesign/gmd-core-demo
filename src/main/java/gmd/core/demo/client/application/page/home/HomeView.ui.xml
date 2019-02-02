@@ -18,7 +18,8 @@
   #L%
   -->
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-             xmlns:m="urn:import:gwt.material.design.client.ui">
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <m:MaterialPanel>
         <m:MaterialRow padding="40" textAlign="CENTER">
@@ -47,6 +48,21 @@
             <m:MaterialColumn grid="s12 m12 l10" offset="l1">
                 <m:MaterialRow ui:field="videosRow"/>
             </m:MaterialColumn>
+        </m:MaterialRow>
+
+        <m:MaterialRow textAlign="CENTER">
+            <m:MaterialLabel text="Getting Started Using Maven" fontSize="1.6em"/>
+            <m:MaterialLabel text="Run this project into cmd / terminal, just follow the prompts. Then once you're done open your project on Eclipse / Intelij IDEA.Gwt-material-archetype provides a faster way to create a GMD Project. You can also watch at the very bottom of this page about the real time procedure." />
+            <g:HTMLPanel>
+                <pre class="xml">
+                    mvn archetype:generate -DarchetypeGroupId=com.github.gwtmaterialdesign -DarchetypeArtifactId=gwt-material-archetype -DarchetypeVersion=2.1.1
+                </pre>
+            </g:HTMLPanel>
+        </m:MaterialRow>
+
+        <m:MaterialRow textAlign="CENTER">
+            <m:MaterialLabel text="Or download the JARs" fontSize="1.6em"/>
+            <m:MaterialLabel text="Below are series of videos on how to getting started with gwt-material." />
         </m:MaterialRow>
     </m:MaterialPanel>
 </ui:UiBinder>

@@ -107,7 +107,7 @@ public class AppPresenter<V extends View, P extends Proxy<?>> extends Presenter<
         }
     }
 
-    public native void initPre() /*-{
+    public static native void initPre() /*-{
         $wnd.jQuery(document).ready(function() {
             $wnd.jQuery('pre').each(function(i, block) {
                 $wnd.hljs.highlightBlock(block);

@@ -30,7 +30,7 @@
                 <m:MaterialNavBrand>
                     <m:MaterialLabel ui:field="navBrand" textColor="BLACK" fontSize="0.8em"/>
                 </m:MaterialNavBrand>
-                <incubator:search.InlineSearch hideOn="HIDE_ON_MED_DOWN" ui:field="search" theme="LIGHT" width="50%" placeholder="Search" display="INLINE"/>
+                <incubator:search.InlineSearch autocomplete="false" hideOn="HIDE_ON_MED_DOWN" ui:field="search" theme="LIGHT" width="50%" placeholder="Search" display="INLINE"/>
 
             </m:MaterialNavBar>
         </m:MaterialHeader>

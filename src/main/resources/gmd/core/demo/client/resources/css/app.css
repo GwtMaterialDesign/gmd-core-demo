@@ -111,6 +111,15 @@ pre.xml:before {
     content: "xml";
 }
 
+/** SEARCH **/
+#app-container .input-field.inline-search {
+    overflow: unset;
+}
+
+#app-container .inline-search .search-result {
+    display: block;
+}
+
 /** TAB **/
 .tab-content {
     height: 200px;

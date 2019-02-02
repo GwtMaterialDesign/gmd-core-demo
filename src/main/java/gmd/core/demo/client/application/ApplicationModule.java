@@ -20,6 +20,7 @@
 package gmd.core.demo.client.application;
 
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
+import gmd.core.demo.client.application.page.animation.AnimationModule;
 import gmd.core.demo.client.application.page.badge.BadgeModule;
 import gmd.core.demo.client.application.page.breadcrumb.BreadcrumbModule;
 import gmd.core.demo.client.application.page.button.ButtonModule;
@@ -28,6 +29,7 @@ import gmd.core.demo.client.application.page.checkbox.CheckboxModule;
 import gmd.core.demo.client.application.page.chips.ChipsModule;
 import gmd.core.demo.client.application.page.collapsible.CollapsibleModule;
 import gmd.core.demo.client.application.page.collection.CollectionModule;
+import gmd.core.demo.client.application.page.color.ColorModule;
 import gmd.core.demo.client.application.page.datepicker.DatePickerModule;
 import gmd.core.demo.client.application.page.dialogs.DialogModule;
 import gmd.core.demo.client.application.page.dropdown.DropdownModule;
@@ -35,6 +37,8 @@ import gmd.core.demo.client.application.page.errors.ErrorsModule;
 import gmd.core.demo.client.application.page.fab.FabModule;
 import gmd.core.demo.client.application.page.footer.FooterModule;
 import gmd.core.demo.client.application.page.home.HomeModule;
+import gmd.core.demo.client.application.page.icon.IconModule;
+import gmd.core.demo.client.application.page.layout.LayoutModule;
 import gmd.core.demo.client.application.page.listbox.ListBoxModule;
 import gmd.core.demo.client.application.page.loaders.LoadersModule;
 import gmd.core.demo.client.application.page.media.MediaModule;
@@ -44,6 +48,7 @@ import gmd.core.demo.client.application.page.radiobutton.RadioButtonModule;
 import gmd.core.demo.client.application.page.range.RangeModule;
 import gmd.core.demo.client.application.page.scrollspy.ScrollspyModule;
 import gmd.core.demo.client.application.page.search.SearchModule;
+import gmd.core.demo.client.application.page.shadow.ShadowModule;
 import gmd.core.demo.client.application.page.sidenavs.SideNavModule;
 import gmd.core.demo.client.application.page.switches.SwitchModule;
 import gmd.core.demo.client.application.page.tabs.TabsModule;
@@ -54,6 +59,7 @@ public class ApplicationModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
         install(new HomeModule());
+        install(new AnimationModule());
         install(new BadgeModule());
         install(new BreadcrumbModule());
         install(new ButtonModule());
@@ -62,12 +68,15 @@ public class ApplicationModule extends AbstractPresenterModule {
         install(new ChipsModule());
         install(new CollapsibleModule());
         install(new CollectionModule());
+        install(new ColorModule());
         install(new DatePickerModule());
         install(new DialogModule());
         install(new DropdownModule());
         install(new ErrorsModule());
         install(new FabModule());
         install(new FooterModule());
+        install(new IconModule());
+        install(new LayoutModule());
         install(new ListBoxModule());
         install(new LoadersModule());
         install(new MediaModule());
@@ -78,6 +87,7 @@ public class ApplicationModule extends AbstractPresenterModule {
         install(new ScrollspyModule());
         install(new SearchModule());
         install(new SideNavModule());
+        install(new ShadowModule());
         install(new SwitchModule());
         install(new TabsModule());
         install(new TextFieldModule());
