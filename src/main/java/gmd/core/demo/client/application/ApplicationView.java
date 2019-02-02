@@ -36,6 +36,7 @@ import gwt.material.design.client.base.SearchObject;
 import gwt.material.design.client.base.helper.ScrollHelper;
 import gwt.material.design.client.constants.Blur;
 import gwt.material.design.client.constants.Color;
+import gwt.material.design.client.constants.Display;
 import gwt.material.design.client.constants.OverlayOption;
 import gwt.material.design.client.ui.*;
 import gwt.material.design.client.ui.animate.MaterialAnimation;
@@ -97,6 +98,7 @@ public class ApplicationView extends ViewWithUiHandlers<MenuHandlers> implements
         sidenav.addOpenedHandler(event -> getUiHandlers().setContentPush());
         sidenav.addClosedHandler(event -> getUiHandlers().setContentPush());
         year.setText(DateTimeFormat.getFormat("yyyy").format(new Date()));
+        search.addCloseHandler(event -> search.close());
     }
 
     boolean scrolling;

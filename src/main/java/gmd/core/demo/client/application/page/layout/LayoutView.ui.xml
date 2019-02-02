@@ -20,16 +20,531 @@
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
              xmlns:m='urn:import:gwt.material.design.client.ui'
              xmlns:widget="urn:import:gmd.core.demo.client.application.widget"
+             xmlns:m.html="urn:import:gwt.material.design.client.ui.html"
+			 xmlns:ma="urn:import:gwt.material.design.addins.client"
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <m:MaterialPanel>
-        <widget:CodeSection sectionTitle="Layout">
-
+        <widget:CodeSection sectionTitle="Container" description="The container class is not strictly part of the grid but is important in laying out content. It allows you to center your page content. The container class is set to ~70% of the window width. It helps you center and contain your page content. We use the container to contain our body content.">
+            <m:MaterialButton ui:field="toggleContainer" text="Toggle Container" marginBottom="20" />
+            <m:MaterialPanel padding="20" backgroundColor="GREY_LIGHTEN_3">
+                <m:MaterialPanel ui:field="container" containerEnabled="true">
+                    <m:MaterialRow>
+                        <m:MaterialColumn grid="s4" offset="s4" backgroundColor="GREY_LIGHTEN_2" padding="12" />
+                    </m:MaterialRow>
+                    <m:MaterialRow>
+                        <m:MaterialColumn grid="s12" backgroundColor="GREY_LIGHTEN_2" padding="12" />
+                    </m:MaterialRow>
+                    <m:MaterialRow>
+                        <m:MaterialColumn grid="s12" backgroundColor="GREY_LIGHTEN_2" padding="12" />
+                    </m:MaterialRow>
+                    <m:MaterialRow>
+                        <m:MaterialColumn grid="s12" backgroundColor="GREY_LIGHTEN_2" padding="12" />
+                    </m:MaterialRow>
+                    <m:MaterialRow>
+                        <m:MaterialColumn grid="s12" backgroundColor="GREY_LIGHTEN_2" padding="12" />
+                    </m:MaterialRow>
+                </m:MaterialPanel>
+            </m:MaterialPanel>
             <g:HTMLPanel>
                 <pre class="xml">
-
+    &lt;m:MaterialPanel ui:field="container" containerEnabled="true">
+        .....
+    &lt;/m:MaterialPanel>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Layout">
+            <m:MaterialRow>
+                <m:MaterialColumn grid="s1" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER"><m.html:Span> 1 </m.html:Span>  </m:MaterialColumn>
+                <m:MaterialColumn grid="s1" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER"><m.html:Span> 2 </m.html:Span> </m:MaterialColumn>
+                <m:MaterialColumn grid="s1" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER"><m.html:Span> 3 </m.html:Span> </m:MaterialColumn>
+                <m:MaterialColumn grid="s1" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER"><m.html:Span> 4 </m.html:Span> </m:MaterialColumn>
+                <m:MaterialColumn grid="s1" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER"><m.html:Span> 5 </m.html:Span> </m:MaterialColumn>
+                <m:MaterialColumn grid="s1" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER"><m.html:Span> 6 </m.html:Span> </m:MaterialColumn>
+                <m:MaterialColumn grid="s1" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER"><m.html:Span> 7 </m.html:Span> </m:MaterialColumn>
+                <m:MaterialColumn grid="s1" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER"><m.html:Span> 8 </m.html:Span> </m:MaterialColumn>
+                <m:MaterialColumn grid="s1" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER"><m.html:Span> 9 </m.html:Span> </m:MaterialColumn>
+                <m:MaterialColumn grid="s1" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER"><m.html:Span> 10 </m.html:Span> </m:MaterialColumn>
+                <m:MaterialColumn grid="s1" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER"><m.html:Span> 11 </m.html:Span> </m:MaterialColumn>
+                <m:MaterialColumn grid="s1" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER"><m.html:Span> 12 </m.html:Span> </m:MaterialColumn>
+            </m:MaterialRow>
+            <m:MaterialLabel text="To get a feel of how the grid is used in HTML. Take a look at this code below which will produce a similar result as the one above."/>
+
+            <g:HTMLPanel>
+                <pre class="xml">
+    &lt;m:MaterialRow>
+        &lt;m:MaterialColumn grid="s1" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER">&lt;m.html:Span> 1 &lt;/m.html:Span>  &lt;/m:MaterialColumn>
+        &lt;m:MaterialColumn grid="s1" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER">&lt;m.html:Span> 2 &lt;/m.html:Span> &lt;/m:MaterialColumn>
+        &lt;m:MaterialColumn grid="s1" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER">&lt;m.html:Span> 3 &lt;/m.html:Span> &lt;/m:MaterialColumn>
+        &lt;m:MaterialColumn grid="s1" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER">&lt;m.html:Span> 4 &lt;/m.html:Span> &lt;/m:MaterialColumn>
+        &lt;m:MaterialColumn grid="s1" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER">&lt;m.html:Span> 5 &lt;/m.html:Span> &lt;/m:MaterialColumn>
+        &lt;m:MaterialColumn grid="s1" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER">&lt;m.html:Span> 6 &lt;/m.html:Span> &lt;/m:MaterialColumn>
+        &lt;m:MaterialColumn grid="s1" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER">&lt;m.html:Span> 7 &lt;/m.html:Span> &lt;/m:MaterialColumn>
+        &lt;m:MaterialColumn grid="s1" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER">&lt;m.html:Span> 8 &lt;/m.html:Span> &lt;/m:MaterialColumn>
+        &lt;m:MaterialColumn grid="s1" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER">&lt;m.html:Span> 9 &lt;/m.html:Span> &lt;/m:MaterialColumn>
+        &lt;m:MaterialColumn grid="s1" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER">&lt;m.html:Span> 10 &lt;/m.html:Span> &lt;/m:MaterialColumn>
+        &lt;m:MaterialColumn grid="s1" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER">&lt;m.html:Span> 11 &lt;/m.html:Span> &lt;/m:MaterialColumn>
+        &lt;m:MaterialColumn grid="s1" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER">&lt;m.html:Span> 12 &lt;/m.html:Span> &lt;/m:MaterialColumn>
+    &lt;/m:MaterialRow>
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Columns live inside Rows" description="Remember when you are creating your layout that all columns must be contained inside a row and that you must add the col class to your inner divs to make them into columns">
+            <m:MaterialRow>
+                <m:MaterialColumn grid="s12" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER">
+					<g:HTMLPanel><m.html:Span > This div is 12-columns wide on all screen sizes </m.html:Span> </g:HTMLPanel>
+				</m:MaterialColumn>
+            </m:MaterialRow>
+            <m:MaterialRow>
+                <m:MaterialColumn grid="s6" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER">
+					<g:HTMLPanel><m.html:Span > 6-columns (one-half) </m.html:Span></g:HTMLPanel>
+				</m:MaterialColumn>
+                <m:MaterialColumn grid="s6" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER">
+					<g:HTMLPanel><m.html:Span > 6-columns (one-half) </m.html:Span></g:HTMLPanel>
+				</m:MaterialColumn>
+            </m:MaterialRow>
+            <g:HTMLPanel>
+                <pre class="xml">
+	&lt;m:MaterialRow>
+		&lt;m:MaterialColumn grid="s12" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER">
+			&lt;g:HTMLPanel>&lt;m.html:Span > This div is 12-columns wide on all screen sizes &lt;/m.html:Span> &lt;/g:HTMLPanel>
+		&lt;/m:MaterialColumn>
+	&lt;/m:MaterialRow>
+	&lt;m:MaterialRow>
+		&lt;m:MaterialColumn grid="s6" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER">
+			&lt;g:HTMLPanel>&lt;m.html:Span > 6-columns (one-half) &lt;/m.html:Span>&lt;/g:HTMLPanel>
+		&lt;/m:MaterialColumn>
+		&lt;m:MaterialColumn grid="s6" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER">
+			&lt;g:HTMLPanel>&lt;m.html:Span > 6-columns (one-half) &lt;/m.html:Span>&lt;/g:HTMLPanel>
+		&lt;/m:MaterialColumn>
+	&lt;/m:MaterialRow>
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Offsets" description="To offset, simply add offset-s2 to the class where s signifies the screen class-prefix (s = small, m = medium, l = large) and the number after is the number of columns you want to offset by.">
+			<m:MaterialRow>
+				<m:MaterialColumn grid="s12" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER">
+					<g:HTMLPanel><m.html:Span>This div is 12-columns wide on all screen sizes</m.html:Span></g:HTMLPanel>
+				</m:MaterialColumn>
+				<m:MaterialColumn grid="s6" offset="s6" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER">
+					<g:HTMLPanel><m.html:Span>6-columns (offset-by-6)</m.html:Span></g:HTMLPanel>
+				</m:MaterialColumn>
+			</m:MaterialRow>
+            <g:HTMLPanel>
+                <pre class="xml">
+	&lt;m:MaterialRow>
+		&lt;m:MaterialColumn grid="s12" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER">
+			&lt;g:HTMLPanel>&lt;m.html:Span>This div is 12-columns wide on all screen sizes&lt;/m.html:Span>&lt;/g:HTMLPanel>
+		&lt;/m:MaterialColumn>
+		&lt;m:MaterialColumn grid="s6" offset="s6" backgroundColor="RED" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER">
+			&lt;g:HTMLPanel>&lt;m.html:Span>6-columns (offset-by-6)&lt;/m.html:Span>&lt;/g:HTMLPanel>
+		&lt;/m:MaterialColumn>
+	&lt;/m:MaterialRow>
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+		<widget:CodeSection sectionTitle="Adding Responsiveness" description="In the previous examples, we only defined the size for small screens using 'col s12'. This is fine if we want a fixed layout since the rules propogate upwards. By just saying s12, we are essentially saying 'col s12 m12 l12'. But by explicitly defining the size we can make our website more responsive.">
+			<m:MaterialRow>
+				<m:MaterialColumn grid="s12" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER" backgroundColor="TEAL_LIGHTEN_2">
+					<m.html:Span>I am always full-width (col s12)</m.html:Span>
+				</m:MaterialColumn>
+				<m:MaterialColumn grid="s12 m6" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER" backgroundColor="TEAL_LIGHTEN_2">
+					<m.html:Span>I am full-width on mobile (col s12 m6)</m.html:Span>
+				</m:MaterialColumn>
+			</m:MaterialRow>
+			<g:HTMLPanel>
+				<pre class="xml">
+	&lt;m:MaterialRow>
+		&lt;m:MaterialColumn grid="s12" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER" backgroundColor="TEAL_LIGHTEN_2">
+			&lt;m.html:Span>I am always full-width (col s12)&lt;/m.html:Span>
+		&lt;/m:MaterialColumn>
+		&lt;m:MaterialColumn grid="s12 m6" textColor="WHITE" padding="12" border="2px solid #ffffff" textAlign="CENTER" backgroundColor="TEAL_LIGHTEN_2">
+			&lt;m.html:Span>I am full-width on mobile (col s12 m6)&lt;/m.html:Span>
+		&lt;/m:MaterialColumn>
+	&lt;/m:MaterialRow>
+				</pre>
+			</g:HTMLPanel>
+		</widget:CodeSection>
+
+		<widget:CodeSection sectionTitle="Sections and Dividers" description="For Additional Grid components you can use the built section and divider components to separate two components">
+			<m:MaterialSection>
+				<m:MaterialTitle title="Section 1" description="Stuff"/>
+			</m:MaterialSection>
+			<m:MaterialDivider/>
+			<m:MaterialSection>
+				<m:MaterialTitle title="Section 2" description="Stuff"/>
+			</m:MaterialSection>
+			<m:MaterialDivider/>
+			<m:MaterialSection>
+				<m:MaterialTitle title="Section 3" description="Stuff"/>
+			</m:MaterialSection>
+			<m:MaterialDivider/>
+			<g:HTMLPanel>
+				<pre class="xml">
+	&lt;m:MaterialSection>
+		&lt;m:MaterialTitle title="Section 1" description="Stuff"/>
+	&lt;/m:MaterialSection>
+	&lt;m:MaterialDivider/>
+	&lt;m:MaterialSection>
+		&lt;m:MaterialTitle title="Section 2" description="Stuff"/>
+	&lt;/m:MaterialSection>
+	&lt;m:MaterialDivider/>
+	&lt;m:MaterialSection>
+		&lt;m:MaterialTitle title="Section 3" description="Stuff"/>
+	&lt;/m:MaterialSection>
+	&lt;m:MaterialDivider/>
+				</pre>
+			</g:HTMLPanel>
+		</widget:CodeSection>
+
+		<widget:CodeSection sectionTitle="Vertical Alignment" description="Vertical Align - You can easily vertically center things by adding the class valign-wrapper to the container holding the items you want to vertically align.">
+			<m:MaterialPanel valignWrapper="true" height="400px" backgroundColor="GREY_LIGHTEN_3">
+				<m:MaterialLabel fontSize="2em" textAlign="CENTER" text="This should be vertically aligned"/>
+			</m:MaterialPanel>
+			<g:HTMLPanel>
+				<pre class="xml">
+	&lt;m:MaterialPanel valignWrapper="true" height="400px" backgroundColor="GREY_LIGHTEN_3">
+		&lt;m:MaterialLabel fontSize="2em" textAlign="CENTER" text="This should be vertically aligned"/>
+	&lt;/m:MaterialPanel>
+				</pre>
+			</g:HTMLPanel>
+		</widget:CodeSection>
+
+		<widget:CodeSection sectionTitle="Text Alignment" description="Vertical Align - You can easily vertically center things by adding the class valign-wrapper to the container holding the items you want to vertically align.">
+			<m:MaterialPanel textAlign="LEFT" backgroundColor="GREY_LIGHTEN_3" padding="12" marginTop="12">
+				<m:MaterialLabel fontSize="1.5em" text="This should be left aligned"/>
+			</m:MaterialPanel>
+			
+			<m:MaterialPanel textAlign="CENTER" backgroundColor="GREY_LIGHTEN_3" padding="12" marginTop="12">
+				<m:MaterialLabel fontSize="1.5em" text="This should be center aligned"/>
+			</m:MaterialPanel>
+
+			<m:MaterialPanel textAlign="RIGHT" backgroundColor="GREY_LIGHTEN_3" padding="12" marginTop="12">
+				<m:MaterialLabel fontSize="1.5em" text="This should be right aligned"/>
+			</m:MaterialPanel>
+			<g:HTMLPanel>
+				<pre class="xml">
+	&lt;m:MaterialPanel textAlign="LEFT" backgroundColor="GREY_LIGHTEN_3" padding="12" marginTop="12">
+		&lt;m:MaterialLabel fontSize="1.5em" text="This should be left aligned"/>
+	&lt;/m:MaterialPanel>
+
+	&lt;m:MaterialPanel textAlign="CENTER" backgroundColor="GREY_LIGHTEN_3" padding="12" marginTop="12">
+		&lt;m:MaterialLabel fontSize="1.5em" text="This should be center aligned"/>
+	&lt;/m:MaterialPanel>
+
+	&lt;m:MaterialPanel textAlign="RIGHT" backgroundColor="GREY_LIGHTEN_3" padding="12" marginTop="12">
+		&lt;m:MaterialLabel fontSize="1.5em" text="This should be right aligned"/>
+	&lt;/m:MaterialPanel>
+				</pre>
+			</g:HTMLPanel>
+		</widget:CodeSection>
+
+		<widget:CodeSection sectionTitle="Float" description="Quick Floats - Quickly float things by adding float='RIGHT , LEFT, or NONE' to any material components.">
+			<g:HTMLPanel>
+				<pre class="xml">
+	&lt;m:MaterialPanel valignWrapper="true" backgroundColor="GREY_LIGHTEN_3">
+		&lt;m:MaterialLabel text="FLOAT LEFT" float="LEFT" />
+		&lt;m:MaterialLabel text="FLOAT RIGHT" float="RIGHT" />
+	&lt;/m:MaterialPanel>
+				</pre>
+			</g:HTMLPanel>
+		</widget:CodeSection>
+
+		<widget:CodeSection sectionTitle="Hide On" description="We provide easy to use classes to hide content on specific screen sizes. Just add hideOn='HIDE_ON_SMALL...' to any material components; ">
+			<m:MaterialPanel backgroundColor="GREY_LIGHTEN_3" hideOn="HIDE_ON_SMALL">
+				<m:MaterialLabel fontSize="2em" textAlign="CENTER" text="HIDE_ON_SMALL"/>
+			</m:MaterialPanel>
+			<g:HTMLPanel>
+				<table class="striped">
+					<thead>
+						<tr>
+							<th></th>
+							<th>Screen Range</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code class="language-markup">HIDE_ON_SMALL</code></td>
+							<td>Hidden for Mobile Only</td>
+						</tr>
+						<tr>
+							<td><code class="language-markup">HIDE_ON_SMALL_DOWN</code></td>
+							<td>Hidden for Mobile Only and Below</td>
+						</tr>
+						<tr>
+							<td><code class="language-markup">HIDE_ON_MED</code></td>
+							<td>Hidden for Tablet Only</td>
+						</tr>
+						<tr>
+							<td><code class=" language-markup">HIDE_ON_MED_DOWN</code></td>
+							<td>Hidden for Tablet and Below</td>
+						</tr>
+						<tr>
+							<td><code class=" language-markup">HIDE_ON_MED_UP</code></td>
+							<td>Hidden for Tablet and Above</td>
+						</tr>
+						<tr>
+							<td><code class=" language-markup">HIDE_ON_LARGE</code></td>
+							<td>Hidden for Desktop Only</td>
+						</tr>
+					</tbody>
+				</table>
+			</g:HTMLPanel>
+
+			<g:HTMLPanel>
+				<pre class="xml">
+	&lt;m:MaterialPanel backgroundColor="GREY_LIGHTEN_3" hideOn="HIDE_ON_SMALL">
+		&lt;m:MaterialLabel fontSize="2em" textAlign="CENTER" text="HIDE_ON_SMALL"/>
+	&lt;/m:MaterialPanel>
+				</pre>
+			</g:HTMLPanel>
+		</widget:CodeSection>
+
+		<widget:CodeSection sectionTitle="Show On" description="We provide easy to use classes to show content on specific screen sizes. Just add showOn='SHOW_ON_LARGE...' to any material components; ">
+			<m:MaterialPanel backgroundColor="GREY_LIGHTEN_3" showOn="SHOW_ON_MED">
+				<m:MaterialLabel fontSize="2em" textAlign="CENTER" text="SHOW_ON_MED"/>
+			</m:MaterialPanel>
+			<g:HTMLPanel>
+				<table class="striped">
+					<thead>
+						<tr>
+							<th></th>
+							<th>Screen Range</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code class="language-markup">SHOW_ON_SMALL</code></td>
+							<td>Shown for Mobile Only</td>
+						</tr>
+						<tr>
+							<td><code class="language-markup">SHOW_ON_LARGE</code></td>
+							<td>Shown for Large Only</td>
+						</tr>
+						<tr>
+							<td><code class="language-markup">SHOW_ON_MED</code></td>
+							<td>Shown for Tablet Only</td>
+						</tr>
+						<tr>
+							<td><code class=" language-markup">SHOW_ON_MED_UP</code></td>
+							<td>Shown for Tablet and Above</td>
+						</tr>
+						<tr>
+							<td><code class=" language-markup">SHOW_ON_MED_DOWN</code></td>
+							<td>Shown for Tablet and Below</td>
+						</tr>
+					</tbody>
+				</table>
+			</g:HTMLPanel>
+			<g:HTMLPanel>
+				<pre class="xml">
+	&lt;m:MaterialPanel backgroundColor="GREY_LIGHTEN_3" showOn="SHOW_ON_MED">
+		&lt;m:MaterialLabel fontSize="2em" textAlign="CENTER" text="SHOW_ON_MED"/>
+	&lt;/m:MaterialPanel>
+				</pre>
+			</g:HTMLPanel>
+		</widget:CodeSection>
+
+		<widget:CodeSection sectionTitle="ViewPort" description="Easily detects the browser size viewport on Resize Event. Try it yourself, resize the browser to see it's use.">
+			<m:MaterialLink ui:field="lblViewPort" />
+			<g:HTMLPanel>
+				<pre class="xml">
+	ViewPort.when(Resolution.MOBILE_SMALL).then(viewPortChange -> {
+		lblViewPort.setText("ViewPort : Mobile Small");
+		lblViewPort.setIconType(IconType.PHONE_ANDROID);
+	});
+
+	ViewPort.when(Resolution.MOBILE_MEDIUM).then(viewPortChange -> {
+		lblViewPort.setText("ViewPort : Mobile Medium");
+		lblViewPort.setIconType(IconType.PHONE_ANDROID);
+	});
+
+	ViewPort.when(Resolution.MOBILE_LARGE).then(viewPortChange -> {
+		lblViewPort.setText("ViewPort : Mobile Large");
+		lblViewPort.setIconType(IconType.PHONE_ANDROID);
+	});
+
+	ViewPort.when(Resolution.TABLET).then(viewPortChange -> {
+		lblViewPort.setText("ViewPort : Tablet");
+		lblViewPort.setIconType(IconType.TABLET_ANDROID);
+	});
+
+	ViewPort.when(Resolution.LAPTOP).then(viewPortChange -> {
+		lblViewPort.setText("ViewPort : Laptop");
+		lblViewPort.setIconType(IconType.LAPTOP);
+	});
+
+	ViewPort.when(Resolution.LAPTOP_LARGE).then(viewPortChange -> {
+		lblViewPort.setText("ViewPort : Laptop Large");
+		lblViewPort.setIconType(IconType.LAPTOP);
+	});
+
+	ViewPort.when(Resolution.LAPTOP_4K).then(viewPortChange -> {
+		lblViewPort.setText("ViewPort : Laptop 4K");
+		lblViewPort.setIconType(IconType.LAPTOP);
+	});
+				</pre>
+			</g:HTMLPanel>
+		</widget:CodeSection>
+
+		<widget:CodeSection ui:field="scrollHelperPanel" sectionTitle="ScrollHelper" description="A utility class for Scrolling capabilities">
+			<m:MaterialRow>
+				<m:MaterialButton text="Scroll To Top (Element)" ui:field="scrollToTop"/>
+				<m:MaterialButton text="Scroll To Middle (Element)" ui:field="scrollToMiddle"/>
+				<m:MaterialButton text="Scroll To Bottom (Element)" ui:field="scrollToBottom"/>
+				<m:MaterialLink iconType="VISIBILITY" ui:field="scrollScope" text="Out of ViewPort Scope" display="BLOCK" marginTop="40" marginBottom="40"/>
+				<m:MaterialPanel ui:field="panel" grid="s12 m6 l4" height="400px" overflow="AUTO" backgroundColor="GREY_LIGHTEN_3">
+					<m:MaterialPanel ui:field="target" width="200px" height="200px" backgroundColor="BLUE" marginTop="500" marginBottom="500"/>
+				</m:MaterialPanel>
+			</m:MaterialRow>
+			<g:HTMLPanel>
+				<pre class="java">
+	ScrollHelper scrollHelper = new ScrollHelper();
+	scrollHelper.setOffsetPosition(OffsetPosition.TOP);
+	scrollHelper.setContainer(panel);
+
+	$(panel).on("scroll", (e, param1) -> {
+
+		if (scrollHelper.isInViewPort(target)) {
+			scrollScope.setText("Visible inside the ViewPort");
+			scrollScope.setIconType(IconType.VISIBILITY);
+		} else {
+			scrollScope.setText("Out of ViewPort Scope");
+			scrollScope.setIconType(IconType.VISIBILITY_OFF);
+		}
+	return false;
+	});
+				</pre>
+			</g:HTMLPanel>
+		</widget:CodeSection>
+
+		<widget:CodeSection sectionTitle="Formatting" description="These classes help format various content on your site.">
+			<m:MaterialPanel shadow="1">
+				<m:MaterialLabel text="This is an extremely long title that will be truncated" truncate="true" fontSize="2.5em"/>
+			</m:MaterialPanel>
+			<g:HTMLPanel>
+				<pre class="xml">
+	&lt;m:MaterialLabel text="This is an extremely long title that will be truncated" truncate="true" fontSize="2.5em"/>
+				</pre>
+			</g:HTMLPanel>
+		</widget:CodeSection>
+
+		<widget:CodeSection sectionTitle="Hoverable" description="The hoverable is a hover class that adds an animation for box shadow as seen below. It can be used on most elements, but meant for use on cards.">
+			<m:MaterialRow>
+				<m:MaterialColumn grid="l4 s12">
+					<m:MaterialCard backgroundColor="WHITE" hoverable="true">
+						<m:MaterialCardImage waves="LIGHT">
+							<ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
+							<m:MaterialCardTitle text="Sample"/>
+						</m:MaterialCardImage>
+
+						<m:MaterialCardContent textColor="BLACK">
+							<m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+						</m:MaterialCardContent>
+
+						<m:MaterialCardAction>
+							<m:MaterialLink text="Link 1" />
+							<m:MaterialLink text="Link 1" />
+						</m:MaterialCardAction>
+					</m:MaterialCard>
+				</m:MaterialColumn>
+				<m:MaterialColumn grid="l4 s12">
+					<m:MaterialCard backgroundColor="WHITE" hoverable="true">
+						<m:MaterialCardImage waves="LIGHT">
+							<ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
+							<m:MaterialCardTitle text="Sample"/>
+						</m:MaterialCardImage>
+
+						<m:MaterialCardContent textColor="BLACK">
+							<m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+						</m:MaterialCardContent>
+
+						<m:MaterialCardAction>
+							<m:MaterialLink text="Link 1" />
+							<m:MaterialLink text="Link 1" />
+						</m:MaterialCardAction>
+					</m:MaterialCard>
+				</m:MaterialColumn>
+				<m:MaterialColumn grid="l4 s12">
+					<m:MaterialCard backgroundColor="WHITE" hoverable="true">
+						<m:MaterialCardImage waves="LIGHT">
+							<ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
+							<m:MaterialCardTitle text="Sample"/>
+						</m:MaterialCardImage>
+
+						<m:MaterialCardContent textColor="BLACK">
+							<m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+						</m:MaterialCardContent>
+
+						<m:MaterialCardAction>
+							<m:MaterialLink text="Link 1" />
+							<m:MaterialLink text="Link 1" />
+						</m:MaterialCardAction>
+					</m:MaterialCard>
+				</m:MaterialColumn>
+			</m:MaterialRow>
+			<g:HTMLPanel>
+				<pre class="xml">
+	&lt;m:MaterialRow>
+		&lt;m:MaterialColumn grid="l4 s12">
+			&lt;m:MaterialCard backgroundColor="WHITE" hoverable="true">
+				&lt;m:MaterialCardImage waves="LIGHT">
+					&lt;ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
+					&lt;m:MaterialCardTitle text="Sample"/>
+				&lt;/m:MaterialCardImage>
+
+				&lt;m:MaterialCardContent textColor="BLACK">
+					&lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+				&lt;/m:MaterialCardContent>
+
+				&lt;m:MaterialCardAction>
+					&lt;m:MaterialLink text="Link 1" />
+					&lt;m:MaterialLink text="Link 1" />
+				&lt;/m:MaterialCardAction>
+			&lt;/m:MaterialCard>
+		&lt;/m:MaterialColumn>
+		&lt;m:MaterialColumn grid="l4 s12">
+			&lt;m:MaterialCard backgroundColor="WHITE" hoverable="true">
+				&lt;m:MaterialCardImage waves="LIGHT">
+					&lt;ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
+					&lt;m:MaterialCardTitle text="Sample"/>
+				&lt;/m:MaterialCardImage>
+
+				&lt;m:MaterialCardContent textColor="BLACK">
+					&lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+				&lt;/m:MaterialCardContent>
+
+				&lt;m:MaterialCardAction>
+					&lt;m:MaterialLink text="Link 1" />
+					&lt;m:MaterialLink text="Link 1" />
+				&lt;/m:MaterialCardAction>
+			&lt;/m:MaterialCard>
+		&lt;/m:MaterialColumn>
+		&lt;m:MaterialColumn grid="l4 s12">
+			&lt;m:MaterialCard backgroundColor="WHITE" hoverable="true">
+				&lt;m:MaterialCardImage waves="LIGHT">
+					&lt;ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
+					&lt;m:MaterialCardTitle text="Sample"/>
+				&lt;/m:MaterialCardImage>
+
+				&lt;m:MaterialCardContent textColor="BLACK">
+					&lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+				&lt;/m:MaterialCardContent>
+
+				&lt;m:MaterialCardAction>
+					&lt;m:MaterialLink text="Link 1" />
+					&lt;m:MaterialLink text="Link 1" />
+				&lt;/m:MaterialCardAction>
+			&lt;/m:MaterialCard>
+		&lt;/m:MaterialColumn>
+	&lt;/m:MaterialRow>
+				</pre>
+			</g:HTMLPanel>
+		</widget:CodeSection>
     </m:MaterialPanel>
 </ui:UiBinder>
