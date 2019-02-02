@@ -3,10 +3,6 @@ var cacheName = 'cache_1549091962847';
 var filesToCache = [  
 'GmdCoreDemo/B266C84ABBBC221357EAF85E1E227C79.cache.js',
 
-'GmdCoreDemo/GmdCoreDemo.devmode.js',
-
-'GmdCoreDemo/GmdCoreDemo.nocache.js',
-
 'GmdCoreDemo/clear.cache.gif',
 
 'GmdCoreDemo/css/animation.css',
