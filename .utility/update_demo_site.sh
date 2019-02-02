@@ -24,23 +24,12 @@ git clone --quiet --branch=gh-pages https://$GH_TOKEN@github.com/GwtMaterialDesi
 cd gh-pages
 
 # remove the GmdCoreDemo directories from git.
-if [[ -d ./GmdCoreDemo ]]; then
-git rm -rf ./GmdCoreDemo
-fi
-if [[ -f ./index.html ]]; then
-git rm -rf ./index.html
-fi
-if [[ -d ./META-INF ]]; then
-git rm -rf ./META-INF
-fi
-if [[ -d ./WEB-INF ]]; then
-git rm -rf ./WEB-INF
+if [[ -d ./ ]]; then
+git rm -rf ./
 fi
 
 # copy the new GmdCoreDemo the snapshot dir.
 unzip -u $TRAVIS_BUILD_DIR/target/GmdCoreDemo*.war -d ./
-rm -rf ./META-INF
-rm -rf ./WEB-INF
 
 git add -f .
 git commit -m "Auto-push demo to gh-pages successful. (Travis build: $TRAVIS_BUILD_NUMBER)"

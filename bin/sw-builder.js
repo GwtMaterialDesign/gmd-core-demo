@@ -18,16 +18,14 @@ var filesToCache = [];
 browseAllFilesInDirectory(rootFolder);
 
 function browseAllFilesInDirectory(folder) {
-    const filesRegExp = /\.(html|css|js|gif|png|jpeg|eot|ttf|woff|woff2)$/i;
+    const filesRegExp = /\.(html|css|js|gif|png|jpeg|eot|ttf|woff|woff2|ico)$/i;
     const exceptions = ["WEB-INF", "META-INF"];
 
     fs.readdirSync(folder).forEach(fileName => {
         const resource = folder + "/" + fileName;
         if (exceptions.indexOf(fileName) < 0) {
             if (fileName.match(filesRegExp)) {
-                if (!fileName.includes(".cache.js")) {
-                    filesToCache.push(resource.replace(rootFolder + "/", ""));
-                }
+                filesToCache.push(resource.replace(rootFolder + "/", ""));
             } else if (fs.lstatSync(resource).isDirectory()) {
                 browseAllFilesInDirectory(resource);
             }
