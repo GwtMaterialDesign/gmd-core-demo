@@ -3,9 +3,9 @@ var cacheName = 'cache_1549091962847';
 var filesToCache = [  
 '/',
 'favicon.ico',
-'/manifest.json',
-'/service-worker.js',
-'/index.html',
+'manifest.json',
+'service-worker.js',
+'index.html',
 'GmdCoreDemo/GmdCoreDemo.nocache.js',
 'GmdCoreDemo/clear.cache.gif',
 'GmdCoreDemo/css/animation.css',
