@@ -23,7 +23,6 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <m:MaterialRow>
-
         <widget:CodeSection sectionTitle="Raised" description="The raised button is a standard button that signify actions and seek to give depth to a mostly flat page." >
             <m:MaterialButton margin="8" text="Button" waves="DEFAULT" backgroundColor="WHITE"  textColor="BLACK"/>
             <m:MaterialButton margin="8" text="Primary" waves="LIGHT" textColor="WHITE" iconType="POLYMER" iconPosition="LEFT"/>

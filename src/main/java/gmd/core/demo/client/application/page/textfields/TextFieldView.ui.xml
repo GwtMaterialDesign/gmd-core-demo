@@ -49,7 +49,7 @@
                 <!-- IntegerBox -->
                 <m:MaterialIntegerBox fieldType="DEFAULT" label="NumberBox" grid="s6" required="true" clearOnKeyUp="true"/>
                 <!-- InputMask -->
-                <ma:inputmask.MaterialTextInputMask fieldType="DEFAULT" label="InputMask" placeholder="eg: 0000-0000-0000-0000" mask="0000-0000-0000-0000" grid="s6" required="true" clearOnKeyUp="true"/>
+                <ma:inputmask.AbstractInputMask fieldType="DEFAULT" label="InputMask" placeholder="eg: 0000-0000-0000-0000" mask="0000-0000-0000-0000" grid="s6" required="true" clearOnKeyUp="true"/>
                 <!-- DatePicker -->
                 <m:MaterialDatePicker fieldType="DEFAULT" placeholder="DatePicker" grid="s6" required="true" clearOnKeyUp="true"/>
                 <!-- TimePicker -->

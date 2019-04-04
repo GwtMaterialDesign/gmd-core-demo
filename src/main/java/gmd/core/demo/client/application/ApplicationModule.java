@@ -20,6 +20,7 @@
 package gmd.core.demo.client.application;
 
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
+import gmd.core.demo.client.application.addins.inputmask.InputMaskModule;
 import gmd.core.demo.client.application.page.animation.AnimationModule;
 import gmd.core.demo.client.application.page.badge.BadgeModule;
 import gmd.core.demo.client.application.page.breadcrumb.BreadcrumbModule;
@@ -93,6 +94,7 @@ public class ApplicationModule extends AbstractPresenterModule {
         install(new TextFieldModule());
 
 
+        install(new InputMaskModule());
         bindPresenter(ApplicationPresenter.class, ApplicationPresenter.MyView.class, ApplicationView.class,
                 ApplicationPresenter.MyProxy.class);
     }

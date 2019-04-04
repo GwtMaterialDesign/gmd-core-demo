@@ -55,5 +55,5 @@ public class NameTokens {
     public static final String TEXTFIELDS = "textfields";
 
 
-
+    public static final String INPUT_MASK = "inputMask";
 }

@@ -51,6 +51,8 @@ ul.col.s12.l3.hide-on-med-and-down.section.table-of-contents.pinned {
     padding-top: 0px;
 }
 
+
+
 /** Sidenav **/
 .side-nav a {
     height: 40px;
@@ -135,3 +137,4 @@ pre.xml:before {
         height: unset !important;
     }
 }
+
