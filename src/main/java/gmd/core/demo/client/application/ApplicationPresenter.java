@@ -35,9 +35,6 @@ import gmd.core.demo.client.application.events.MenuHandlers;
 import gmd.core.demo.client.application.navigation.Component;
 import gmd.core.demo.client.application.navigation.NavigationService;
 import gmd.core.demo.client.resources.AppResources;
-import gwt.material.design.client.base.helper.ColorHelper;
-import gwt.material.design.client.constants.Color;
-import gwt.material.design.client.pwa.PwaManager;
 
 import java.util.List;
 
@@ -86,7 +83,7 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
     protected void onReveal() {
         super.onReveal();
 
-        if (PwaManager.isPwaSupported()) {
+        /*if (PwaManager.isPwaSupported()) {
             PwaManager.getInstance()
                     .setServiceWorker("service-worker.js")
                     .setThemeColor(ColorHelper.setupComputedBackgroundColor(Color.BLUE_DARKEN_3))
@@ -95,7 +92,7 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
 
             // Will request a notification
             // Notification.requestPermission(status -> MaterialToast.fireToast("Permission Status: " + status));
-        }
+        }*/
 
         StyleInjector.inject(AppResources.INSTANCE.appCss().getText());
 
