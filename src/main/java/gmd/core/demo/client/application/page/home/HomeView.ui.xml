@@ -33,7 +33,7 @@
             <m:MaterialLabel text="Explore our available modules below." />
         </m:MaterialRow>
 
-        <m:MaterialRow>
+        <m:MaterialRow addStyleNames="dashboard-row">
             <m:MaterialColumn grid="s12 m12 l10" offset="l1">
                 <m:MaterialRow ui:field="dashboardsRow"/>
             </m:MaterialColumn>
@@ -44,7 +44,7 @@
             <m:MaterialLabel text="Below are series of videos on how to getting started with gwt-material." />
         </m:MaterialRow>
 
-        <m:MaterialRow>
+        <m:MaterialRow addStyleNames="video-row">
             <m:MaterialColumn grid="s12 m12 l10" offset="l1">
                 <m:MaterialRow ui:field="videosRow"/>
             </m:MaterialColumn>

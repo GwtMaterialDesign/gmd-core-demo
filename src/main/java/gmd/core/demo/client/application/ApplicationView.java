@@ -34,9 +34,9 @@ import gmd.core.demo.client.application.navigation.NavigationService;
 import gmd.core.demo.client.constants.AppConstants;
 import gwt.material.design.client.base.SearchObject;
 import gwt.material.design.client.base.helper.ScrollHelper;
+import gwt.material.design.client.base.viewport.Resolution;
 import gwt.material.design.client.constants.Blur;
 import gwt.material.design.client.constants.Color;
-import gwt.material.design.client.constants.Display;
 import gwt.material.design.client.constants.OverlayOption;
 import gwt.material.design.client.ui.*;
 import gwt.material.design.client.ui.animate.MaterialAnimation;
@@ -94,7 +94,16 @@ public class ApplicationView extends ViewWithUiHandlers<MenuHandlers> implements
         github.setHref(AppConstants.GITHUB_REPO);
         gitter.setHref(AppConstants.GITTER_CHANNEL);
         sidenav.setOverlayOption(new OverlayOption(new Blur(4, $("#app-container")), Color.WHITE));
-        links.forEach(component -> sidenav.add(new MaterialLink(component.getName(), component.getHref())));
+        links.forEach(component -> {
+            MaterialLink link = new MaterialLink(component.getName(), component.getHref());
+            link.addClickHandler(event -> {
+                if (gwt.material.design.client.js.Window.matchMedia(Resolution.ALL_MOBILE.asMediaQuery()) ||
+                        gwt.material.design.client.js.Window.matchMedia(Resolution.TABLET.asMediaQuery())) {
+                    sidenav.close();
+                }
+            });
+            sidenav.add(link);
+        });
         sidenav.addOpenedHandler(event -> getUiHandlers().setContentPush());
         sidenav.addClosedHandler(event -> getUiHandlers().setContentPush());
         year.setText(DateTimeFormat.getFormat("yyyy").format(new Date()));

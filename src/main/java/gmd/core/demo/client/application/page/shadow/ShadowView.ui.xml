@@ -26,11 +26,11 @@
     <m:MaterialPanel>
         <widget:CodeSection sectionTitle="Panels" description="By adding shadow='1' to any material panel, material row, material column, material card, you can easily apply a shadow to that element">
             <m:MaterialRow>
-                <m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="1" waves="DEFAULT" height="200px" margin="12"/>
-                <m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="2" waves="RED" height="200px" margin="12"/>
-                <m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="3" waves="TEAL" height="200px" margin="12"/>
-                <m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="4" waves="YELLOW" height="200px" margin="12"/>
-                <m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="5" waves="PURPLE" height="200px" margin="12"/>
+                <m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="1" waves="DEFAULT" height="200px" marginRight="20" marginBottom="20"/>
+                <m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="2" waves="RED" height="200px" marginRight="20" marginBottom="20"/>
+                <m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="3" waves="TEAL" height="200px" marginRight="20" marginBottom="20"/>
+                <m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="4" waves="YELLOW" height="200px" marginRight="20" marginBottom="20"/>
+                <m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="5" waves="PURPLE" height="200px" marginRight="20" marginBottom="20"/>
             </m:MaterialRow>
             <g:HTMLPanel>
                 <pre class="xml">

@@ -47,20 +47,20 @@
 
 
         <m:MaterialContainer paddingTop="64">
-            <m:MaterialPanel ui:field="header" padding="40" borderBottom="1px solid #e9e9e9">
+            <m:MaterialPanel addStyleNames="app-header" ui:field="header" padding="40" borderBottom="1px solid #e9e9e9">
                 <m:MaterialRow marginBottom="0">
                     <m:MaterialColumn grid="s12 m12 l9">
                         <m:MaterialLabel ui:field="title" fontSize="2.4em" />
                         <m:MaterialLabel ui:field="description" marginBottom="20"/>
                     </m:MaterialColumn>
                 </m:MaterialRow>
-                <m:MaterialRow marginBottom="0">
+                <m:MaterialRow marginBottom="0" paddingLeft="20">
                     <m:MaterialAnchorButton ui:field="javaSource" target="_blank" text="Java" paddingLeft="0" customIconType="fab fa-java" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
                     <m:MaterialAnchorButton ui:field="xmlSource" target="_blank" text="XML" iconType="CODE" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
                 </m:MaterialRow>
             </m:MaterialPanel>
 
-            <m:MaterialRow ui:field="container" padding="40" marginBottom="0"/>
+            <m:MaterialRow addStyleNames="app-container" ui:field="container" padding="40" marginBottom="0"/>
 
             <m:MaterialPanel ui:field="footer" addStyleNames="app-footer">
                 <m:MaterialRow marginBottom="0">
