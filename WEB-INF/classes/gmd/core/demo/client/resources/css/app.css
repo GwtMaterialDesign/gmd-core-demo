@@ -52,7 +52,6 @@ ul.col.s12.l3.hide-on-med-and-down.section.table-of-contents.pinned {
 }
 
 
-
 /** Sidenav **/
 .side-nav a {
     height: 40px;
@@ -132,9 +131,32 @@ pre.xml:before {
 }
 
 @media screen and (max-width: 600px) {
-    .card .card-content {
-        min-height: 360px;
-        height: unset !important;
+    .app-header,
+    .app-container {
+        padding: 12px !important;
+    }
+
+    .dashboard-row .card {
+        height: 100px !important;
     }
 }
+
+@media screen and (max-width: 425px) {
+    .video-row .card {
+        height: 246px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .video-row .card {
+        height: 208px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .video-row .card {
+        height: 180px;
+    }
+}
+
 
