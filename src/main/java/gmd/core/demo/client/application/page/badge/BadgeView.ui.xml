@@ -22,7 +22,7 @@
 			 xmlns:widget="urn:import:gmd.core.demo.client.application.widget"
 			 xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
-	<m:MaterialPanel>
+	<m:MaterialPanel ui:field="panel">
 		<widget:CodeSection sectionTitle="Collections">
 			<m:MaterialCollection>
 				<m:MaterialCollectionItem>

@@ -13,7 +13,9 @@ const rootFolder = 'target/' + buildFolderName;
 const fs = require('fs');
 var Handlebars = require('handlebars');
 
-var filesToCache = [];
+var filesToCache = [
+    "/"
+];
 
 browseAllFilesInDirectory(rootFolder);
 

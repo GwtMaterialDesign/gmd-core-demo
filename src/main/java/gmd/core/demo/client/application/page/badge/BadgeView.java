@@ -20,10 +20,12 @@
 package gmd.core.demo.client.application.page.badge;
 
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gmd.core.demo.client.resources.AppResources;
 import gwt.material.design.client.MaterialDesignBase;
+import gwt.material.design.client.ui.MaterialPanel;
 
 import javax.inject.Inject;
 
@@ -31,10 +33,16 @@ public class BadgeView extends ViewImpl implements BadgePresenter.MyView {
     interface Binder extends UiBinder<Widget, BadgeView> {
     }
 
+    @UiField
+    MaterialPanel panel;
+
     @Inject
     BadgeView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+    }
 
-
+    @Override
+    protected void onAttach() {
+        super.onAttach();
     }
 }
