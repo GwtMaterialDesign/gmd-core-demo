@@ -1,7 +1,7 @@
 var cacheName = 'cache_1574956470424';
 
 var filesToCache = [  
-'/',
+'/gmd-core-demo',
 
 'GmdCoreDemo/794222A2305441CCDFA76D31F57D7848.cache.js',
 
