@@ -5,6 +5,8 @@ var filesToCache = [
 
 'GmdCoreDemo/794222A2305441CCDFA76D31F57D7848.cache.js',
 
+'GmdCoreDemo/GmdCoreDemo.nocache.js',    
+    
 'GmdCoreDemo/clear.cache.gif',
 
 'GmdCoreDemo/css/animation.css',
