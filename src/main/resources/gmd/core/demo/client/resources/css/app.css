@@ -353,6 +353,43 @@ button.btn.btn-outlined.disabled {
     color: #a87be0;
 }
 
+/** Date Picker **/
+.picker__weekday-display {
+    background-color: #141414;
+}
+
+.picker__box {
+    background: #2e3033;
+    border: 1px solid #1e1f22;
+    border-top-color: #141414;
+}
+
+.picker__date-display {
+    background-color: #1e1f22;
+}
+
+.picker__header {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.picker__day--selected.picker__day--outfocus, .picker__day--selected:hover.picker__day--outfocus, .picker--focused .picker__day--selected.picker__day--outfocus,
+.picker__day--selected, .picker__day--selected:hover, .picker--focused .picker__day--selected, .picker__day.picker__day--today.picker__day--selected {
+    background-color: #bb86fc;
+    color: black;
+}
+
+.picker__day--infocus:hover:not(.picker__day--selected) {
+    color: rgba(166, 121, 222, 0.5);
+}
+
+.picker__day.picker__day--today {
+    color: #b080ed;
+}
+
+.picker__nav--prev:hover, .picker__nav--next:hover {
+    background: #2e3033;
+}
+
 /** Dialog **/
 .modal,
 .modal .modal-footer {
@@ -533,4 +570,21 @@ input[type=checkbox]:checked:not(:disabled) ~ .lever:active:after {
 
 .material-tooltip .backdrop {
     background: #aaaaaa;
+}
+
+/** Scrollspy **/
+.table-of-contents a.active {
+    border-left: 2px solid #bb86fc !important;
+}
+
+.table-of-contents a:hover {
+    border-left: 1px solid #bb86fc !important;
+}
+
+.table-of-contents a {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.table-of-contents a:hover {
+    color: rgba(255, 255, 255, 1);
 }
