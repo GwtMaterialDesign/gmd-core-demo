@@ -166,6 +166,19 @@ body {
     color: #ffffff;
 }
 
+/** Others **/
+.app-header {
+    border-bottom: 1px solid rgb(49, 49, 49) !important;
+}
+
+.app-footer {
+    border-top: 1px solid rgb(49, 49, 49) !important;
+}
+
+.tab-content {
+    background: transparent;
+}
+
 /** Pre **/
 pre {
     border: 1px solid #1e1e1e;
@@ -335,6 +348,11 @@ button.btn.btn-outlined.disabled {
     color: #ffffff !important;
 }
 
+.collection .collection-item.active {
+    background-color: #39353e;
+    color: #a87be0;
+}
+
 /** Dialog **/
 .modal,
 .modal .modal-footer {
@@ -363,6 +381,30 @@ footer.page-footer {
 
 footer.page-footer .footer-copyright {
     background-color: rgb(39, 39, 39);
+}
+
+/** List Box **/
+.dropdown-content li.active.selected {
+    background-color: #1e1e1e;
+}
+
+/** Loader **/
+.loader-wrapper {
+    background: rgba(0, 0, 0, 0.701961);
+}
+
+.spinner-layer {
+    border-color: #BB86FC !important;
+}
+
+/** Progress **/
+.progress {
+    background: #4c3f5b;
+}
+
+.progress .determinate,
+.progress .indeterminate {
+    background: #bb86fc;
 }
 
 /** Radio Button **/
@@ -401,6 +443,29 @@ footer.page-footer .footer-copyright {
     border-top: none;
 }
 
+/** Range **/
+input[type=range] {
+    border: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    background: #BB86FC;
+}
+
+input[type=range]::-webkit-slider-runnable-track,
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #4c3f5b;
+}
+
+
+input[type=range] + .thumb {
+    background-color: #BB86FC;
+}
+
+input[type=range] + .thumb .value {
+    color: #000000 !important;
+}
+
 /** Side Nav **/
 ul.side-nav {
     background-color: #2e2e2e;
@@ -420,6 +485,36 @@ ul.side-nav li:hover a span {
     color: rgb(187, 134, 252);
 }
 
+/** Switch **/
+.switch label input[type=checkbox]:checked + .lever {
+    background: #604c79;
+}
+
+input[type=checkbox]:checked:not(:disabled) ~ .lever:active:after {
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .4), 0 0 0 15px rgba(187, 134, 252, 0.1);
+}
+
+.switch label input[type=checkbox]:checked + .lever:after {
+    background: rgb(187, 134, 252);
+}
+
+.switch.disabled {
+    opacity: 0.4;
+}
+
+/** Tabs **/
+.tabs {
+    background: #272727;
+}
+
+.tabs .tab a {
+    color: rgb(187, 134, 252);
+}
+
+.tabs .indicator {
+    background: rgb(187, 134, 252);
+}
+
 /** Toast **/
 .toast {
     background: #e4e4e4;
@@ -428,4 +523,14 @@ ul.side-nav li:hover a span {
 
 .toast a {
     color: rgb(187, 134, 252);
+}
+
+/** Tooltip **/
+.material-tooltip {
+    color: #212121;
+    background: #aaaaaa !important;
+}
+
+.material-tooltip .backdrop {
+    background: #aaaaaa;
 }

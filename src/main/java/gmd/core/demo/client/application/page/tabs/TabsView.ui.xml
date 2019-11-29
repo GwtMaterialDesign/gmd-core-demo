@@ -26,15 +26,15 @@
         <widget:CodeSection sectionTitle="Introduction" description="You can add a Label as a Tab Item and for contents any Material Widget can be added as a Tab Content (e.g MaterialTopNav)">
             <m:MaterialRow>
                 <m:MaterialColumn grid="s12">
-                    <m:MaterialTab ui:field="tabIntro" shadow="1" indicatorColor="YELLOW">
-                        <m:MaterialTabItem waves="YELLOW">
-                            <m:MaterialLink text="Tab 1" href="#tab1" textColor="WHITE"/>
+                    <m:MaterialTab ui:field="tabIntro" shadow="1">
+                        <m:MaterialTabItem waves="DEFAULT">
+                            <m:MaterialLink text="Tab 1" href="#tab1"/>
                         </m:MaterialTabItem>
                         <m:MaterialTabItem waves="YELLOW">
-                            <m:MaterialLink text="Tab 2" href="#tab2" textColor="WHITE"/>
+                            <m:MaterialLink text="Tab 2" href="#tab2"/>
                         </m:MaterialTabItem>
                         <m:MaterialTabItem waves="YELLOW">
-                            <m:MaterialLink text="Tab 3" href="#tab3" textColor="WHITE"/>
+                            <m:MaterialLink text="Tab 3" href="#tab3"/>
                         </m:MaterialTabItem>
                     </m:MaterialTab>
                 </m:MaterialColumn>
@@ -53,7 +53,7 @@
                 <pre class="xml">
     &lt;m:MaterialRow>
         &lt;m:MaterialColumn grid="s12">
-            &lt;m:MaterialTab ui:field="tabIntro" shadow="1" indicatorColor="YELLOW">
+            &lt;m:MaterialTab ui:field="tabIntro" shadow="1">
                 &lt;m:MaterialTabItem waves="YELLOW">
                     &lt;m:MaterialLink text="Tab 1" href="#tab1" textColor="WHITE"/>
                 &lt;/m:MaterialTabItem>
@@ -84,13 +84,13 @@
             <m:MaterialRow>
                 <m:MaterialTab ui:field="tabFit" shadow="1" backgroundColor="PURPLE" indicatorColor="PINK">
                     <m:MaterialTabItem waves="LIGHT" flex="NONE">
-                        <m:MaterialLink text="Tab 1" href="#tabFit1" textColor="WHITE"/>
+                        <m:MaterialLink text="Tab 1" href="#tabFit1"/>
                     </m:MaterialTabItem>
                     <m:MaterialTabItem waves="YELLOW" flex="NONE">
-                        <m:MaterialLink text="Tab 2" href="#tabFit2" textColor="WHITE"/>
+                        <m:MaterialLink text="Tab 2" href="#tabFit2"/>
                     </m:MaterialTabItem>
                     <m:MaterialTabItem waves="YELLOW" flex="NONE">
-                        <m:MaterialLink text="Tab 3" href="#tabFit3" textColor="WHITE"/>
+                        <m:MaterialLink text="Tab 3" href="#tabFit3"/>
                     </m:MaterialTabItem>
                 </m:MaterialTab>
 
@@ -109,13 +109,13 @@
     &lt;m:MaterialRow>
         &lt;m:MaterialTab ui:field="tabFit" shadow="1" backgroundColor="PURPLE" indicatorColor="PINK">
             &lt;m:MaterialTabItem waves="LIGHT" flex="NONE">
-                &lt;m:MaterialLink text="Tab 1" href="#tabFit1" textColor="WHITE"/>
+                &lt;m:MaterialLink text="Tab 1" href="#tabFit1" />
             &lt;/m:MaterialTabItem>
             &lt;m:MaterialTabItem waves="YELLOW" flex="NONE">
-                &lt;m:MaterialLink text="Tab 2" href="#tabFit2" textColor="WHITE"/>
+                &lt;m:MaterialLink text="Tab 2" href="#tabFit2" />
             &lt;/m:MaterialTabItem>
             &lt;m:MaterialTabItem waves="YELLOW" flex="NONE">
-                &lt;m:MaterialLink text="Tab 3" href="#tabFit3" textColor="WHITE"/>
+                &lt;m:MaterialLink text="Tab 3" href="#tabFit3" />
             &lt;/m:MaterialTabItem>
         &lt;/m:MaterialTab>
 
@@ -138,13 +138,13 @@
                 <m:MaterialColumn grid="s12">
                     <m:MaterialTab ui:field="tabBasic" type="ICON" shadow="1">
                         <m:MaterialTabItem grid="s4">
-                            <m:MaterialLink iconType="PHONE" text="Recents" href="#tab51" textColor="WHITE"/>
+                            <m:MaterialLink iconType="PHONE" text="Recents" href="#tab51" />
                         </m:MaterialTabItem>
                         <m:MaterialTabItem enabled="false" waves="YELLOW" grid="s4">
-                            <m:MaterialLink iconType="FAVORITE" text="Favorites" href="#tab52" textColor="WHITE"/>
+                            <m:MaterialLink iconType="FAVORITE" text="Favorites" href="#tab52" />
                         </m:MaterialTabItem>
                         <m:MaterialTabItem waves="YELLOW" grid="s4">
-                            <m:MaterialLink iconType="NEAR_ME" text="NearBy" href="#tab53" textColor="WHITE"/>
+                            <m:MaterialLink iconType="NEAR_ME" text="NearBy" href="#tab53" />
                         </m:MaterialTabItem>
                     </m:MaterialTab>
 
@@ -162,7 +162,7 @@
             <g:HTMLPanel>
                 <pre class="xml">
     &lt;m:MaterialTabItem enabled="false" waves="YELLOW" grid="s4">
-        &lt;m:MaterialLink iconType="FAVORITE" text="Favorites" href="#tab52" textColor="WHITE"/>
+        &lt;m:MaterialLink iconType="FAVORITE" text="Favorites" href="#tab52" />
     &lt;/m:MaterialTabItem>
                 </pre>
             </g:HTMLPanel>
@@ -174,13 +174,13 @@
                 <m:MaterialColumn grid="s12">
                     <m:MaterialTab ui:field="tabSetIndex" shadow="1" indicatorColor="YELLOW">
                         <m:MaterialTabItem waves="YELLOW" grid="s4">
-                            <m:MaterialLink text="Tab 1" href="#tab21" textColor="WHITE"/>
+                            <m:MaterialLink text="Tab 1" href="#tab21" />
                         </m:MaterialTabItem>
                         <m:MaterialTabItem waves="YELLOW" grid="s4">
-                            <m:MaterialLink text="Tab 2" href="#tab22" textColor="WHITE"/>
+                            <m:MaterialLink text="Tab 2" href="#tab22" />
                         </m:MaterialTabItem>
                         <m:MaterialTabItem waves="YELLOW" grid="s4">
-                            <m:MaterialLink text="Tab 3" href="#tab23" textColor="WHITE"/>
+                            <m:MaterialLink text="Tab 3" href="#tab23" />
                         </m:MaterialTabItem>
                     </m:MaterialTab>
                 </m:MaterialColumn>
@@ -242,13 +242,13 @@
                 <m:MaterialColumn grid="s12">
                     <m:MaterialTab ui:field="tabGetIndex" shadow="1" indicatorColor="YELLOW">
                         <m:MaterialTabItem waves="YELLOW" grid="s4">
-                            <m:MaterialLink text="Tab Item 1" href="#item1" textColor="WHITE"/>
+                            <m:MaterialLink text="Tab Item 1" href="#item1" />
                         </m:MaterialTabItem>
                         <m:MaterialTabItem waves="YELLOW" grid="s4">
-                            <m:MaterialLink text="Tab Item 2" href="#item2" textColor="WHITE"/>
+                            <m:MaterialLink text="Tab Item 2" href="#item2" />
                         </m:MaterialTabItem>
                         <m:MaterialTabItem waves="YELLOW" grid="s4">
-                            <m:MaterialLink text="Tab Item 3" href="#item3" textColor="WHITE"/>
+                            <m:MaterialLink text="Tab Item 3" href="#item3" />
                         </m:MaterialTabItem>
                     </m:MaterialTab>
                 </m:MaterialColumn>
