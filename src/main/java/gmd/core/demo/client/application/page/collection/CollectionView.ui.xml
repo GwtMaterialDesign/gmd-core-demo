@@ -402,19 +402,19 @@
         <widget:CodeSection sectionTitle="Clickable Items with Secondary Controls">
             <m:MaterialCollection>
                 <m:MaterialCollectionItem ui:field="collectWifi" type="CHECKBOX" waves="DEFAULT">
-                    <m:MaterialLink text="Wifi" iconPosition="LEFT" iconType="NETWORK_WIFI" backgroundColor="WHITE" textColor="BLACK"/>
+                    <m:MaterialLink text="Wifi" iconPosition="LEFT" iconType="NETWORK_WIFI" textColor="BLACK"/>
                     <m:MaterialCollectionSecondary>
                         <m:MaterialSwitch value="true"/>
                     </m:MaterialCollectionSecondary>
                 </m:MaterialCollectionItem>
                 <m:MaterialCollectionItem ui:field="collectBluetooth" type="CHECKBOX" waves="DEFAULT">
-                    <m:MaterialLink text="Bluetooth" iconPosition="LEFT" iconType="BLUETOOTH" backgroundColor="WHITE" textColor="BLACK"/>
+                    <m:MaterialLink text="Bluetooth" iconPosition="LEFT" iconType="BLUETOOTH" textColor="BLACK"/>
                     <m:MaterialCollectionSecondary>
                         <m:MaterialSwitch value="true"/>
                     </m:MaterialCollectionSecondary>
                 </m:MaterialCollectionItem>
                 <m:MaterialCollectionItem ui:field="collectData" type="CHECKBOX" waves="DEFAULT">
-                    <m:MaterialLink text="Data Usage" iconPosition="LEFT" iconType="DATA_USAGE" backgroundColor="WHITE" textColor="BLACK"/>
+                    <m:MaterialLink text="Data Usage" iconPosition="LEFT" iconType="DATA_USAGE" textColor="BLACK"/>
                     <m:MaterialCollectionSecondary>
                         <m:MaterialSwitch value="true"/>
                     </m:MaterialCollectionSecondary>

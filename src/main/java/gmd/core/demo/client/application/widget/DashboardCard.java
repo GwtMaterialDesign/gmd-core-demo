@@ -81,12 +81,6 @@ public class DashboardCard extends Composite {
         image.setUrl(dashboard.getImage());
         title.setText(dashboard.getTitle());
         link.setHref(dashboard.getUrl());
-
-        if (!dashboard.isEnabled()) {
-            link.setEnabled(false);
-            link.setText("WIP");
-            card.setBackgroundColor(Color.GREY_LIGHTEN_3);
-        }
     }
 
     @Override

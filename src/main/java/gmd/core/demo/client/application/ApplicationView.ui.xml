@@ -51,12 +51,12 @@
                 <m:MaterialRow marginBottom="0">
                     <m:MaterialColumn grid="s12 m12 l9">
                         <m:MaterialLabel ui:field="title" fontSize="2.4em" />
-                        <m:MaterialLabel ui:field="description" marginBottom="20"/>
+                        <m:MaterialLabel secondary="true" ui:field="description" marginBottom="20"/>
                     </m:MaterialColumn>
                 </m:MaterialRow>
                 <m:MaterialRow marginBottom="0" paddingLeft="20">
-                    <m:MaterialAnchorButton ui:field="javaSource" target="_blank" text="Java" paddingLeft="0" customIconType="fab fa-java" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
-                    <m:MaterialAnchorButton ui:field="xmlSource" target="_blank" text="XML" iconType="CODE" backgroundColor="WHITE" textColor="INDIGO" shadow="0"/>
+                    <m:MaterialLink ui:field="javaSource" display="INLINE_BLOCK" marginRight="20" target="_blank" text="Java" paddingLeft="0" customIconType="fab fa-java" textColor="INDIGO"/>
+                    <m:MaterialLink ui:field="xmlSource" display="INLINE_BLOCK" target="_blank" text="XML" iconType="CODE" textColor="INDIGO"/>
                 </m:MaterialRow>
             </m:MaterialPanel>
 

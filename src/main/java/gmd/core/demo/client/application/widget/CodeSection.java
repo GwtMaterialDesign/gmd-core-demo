@@ -24,6 +24,8 @@ public class CodeSection extends MaterialPanel {
     protected void onLoad() {
         super.onLoad();
 
+        descriptionLabel.setSecondary(true);
+
         setScrollspy(sectionTitle.toLowerCase().replace(" ", "_"));
 
         if (sectionTitle != null) {

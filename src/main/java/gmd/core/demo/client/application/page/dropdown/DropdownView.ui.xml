@@ -35,7 +35,7 @@
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="Introduction" description="Add a dropdown list to any button. Make sure to add the property activates to be able to initialize the dropdown plugin, it will use that as your id on your dropdown menu.">
-            <m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="WHITE" activates="dp-2"/>
+            <m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"  activates="dp-2"/>
             <!-- My Drop Down -->
             <m:MaterialDropDown activator="dp-2" constrainWidth="true">
                 <m:MaterialLink text="First" />
@@ -44,7 +44,7 @@
             </m:MaterialDropDown>
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="WHITE" activates="dp-2"/>
+    &lt;m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"  activates="dp-2"/>
     &lt;!-- My Drop Down -->
     &lt;m:MaterialDropDown activator="dp-2" constrainWidth="true">
         &lt;m:MaterialLink text="First" />
@@ -57,7 +57,7 @@
 
         <widget:CodeSection sectionTitle="Designing">
             <!-- Activator -->
-            <m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="WHITE" activates="dp-3"/>
+            <m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"  activates="dp-3"/>
             <!-- My Drop Down -->
             <m:MaterialDropDown activator="dp-3" constrainWidth="true">
                 <m:MaterialLink text="First" iconType="POLYMER" iconPosition="RIGHT" separator="true"/>
@@ -67,7 +67,7 @@
             <g:HTMLPanel>
                 <pre class="xml">
     &lt;!-- Activator -->
-    &lt;m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="WHITE" activates="dp-3"/>
+    &lt;m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"  activates="dp-3"/>
     &lt;!-- My Drop Down -->
     &lt;m:MaterialDropDown activator="dp-3" constrainWidth="true">
         &lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="RIGHT" separator="true"/>
@@ -104,7 +104,7 @@
                 <m:MaterialNavBrand paddingLeft="20" text="GMD" position="LEFT"/>
                 <m:MaterialNavSection position="RIGHT" hideOn="NONE">
                     <!--Activator -->
-                    <m:MaterialLink text="Dropdown" activates="dp-5" textColor="WHITE" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"/>
+                    <m:MaterialLink text="Dropdown" activates="dp-5"  iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"/>
                 </m:MaterialNavSection>
             </m:MaterialNavBar>
 
@@ -120,7 +120,7 @@
         &lt;m:MaterialNavBrand paddingLeft="20" text="GMD" position="LEFT"/>
         &lt;m:MaterialNavSection position="RIGHT" hideOn="NONE">
             &lt;!--Activator -->
-            &lt;m:MaterialLink text="Dropdown" activates="dp-5" textColor="WHITE" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"/>
+            &lt;m:MaterialLink text="Dropdown" activates="dp-5"  iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"/>
         &lt;/m:MaterialNavSection>
     &lt;/m:MaterialNavBar>
 
@@ -135,7 +135,7 @@
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="Selection Event">
-            <m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="WHITE" activates="dp-selection"/>
+            <m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"  activates="dp-selection"/>
             <!-- My Drop Down -->
             <m:MaterialDropDown ui:field="dropdown" activator="dp-selection" constrainWidth="true">
                 <m:MaterialLink text="First" />

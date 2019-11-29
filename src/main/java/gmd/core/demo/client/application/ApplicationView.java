@@ -64,7 +64,7 @@ public class ApplicationView extends ViewWithUiHandlers<MenuHandlers> implements
     MaterialAnchorButton github, gitter;
 
     @UiField
-    static MaterialAnchorButton javaSource, xmlSource;
+    static MaterialLink javaSource, xmlSource;
 
     @UiField
     MaterialSideNavPush sidenav;
