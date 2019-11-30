@@ -35,6 +35,8 @@ import gmd.core.demo.client.application.events.MenuHandlers;
 import gmd.core.demo.client.application.navigation.Component;
 import gmd.core.demo.client.application.navigation.NavigationService;
 import gmd.core.demo.client.resources.AppResources;
+import gwt.material.design.client.pwa.serviceworker.ServiceWorkerManager;
+import gwt.material.design.client.pwa.serviceworker.js.ServiceWorkerOption;
 import gwt.material.design.client.theme.dark.DarkThemeManager;
 import gwt.material.design.client.base.helper.ColorHelper;
 import gwt.material.design.client.constants.Color;
@@ -88,8 +90,12 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
         super.onReveal();
 
         if (PwaManager.isPwaSupported()) {
+            ServiceWorkerManager manager = new ServiceWorkerManager("/gmd-core-demo/service-worker.js");
+            ServiceWorkerOption option = ServiceWorkerOption.create();
+            option.setScope("/gmd-core-demo/");
+            manager.setOption(option);
             PwaManager.getInstance()
-                    .setServiceWorker("service-worker.js")
+                    .setServiceWorker(manager)
                     .setThemeColor(ColorHelper.setupComputedBackgroundColor(Color.BLUE_DARKEN_3))
                     .setWebManifest("manifest.url")
                     .load();

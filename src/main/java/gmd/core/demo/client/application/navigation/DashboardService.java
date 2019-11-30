@@ -21,7 +21,7 @@ public class DashboardService {
         dashboards.add(new Dashboard("https://www.youtube.com/watch?v=79owqV8PPhQ", "images/style-banner.png"));
         dashboards.add(new Dashboard("https://www.youtube.com/watch?v=Ishwhsy95GA", "images/animations-banner.png"));
         dashboards.add(new Dashboard("https://www.youtube.com/watch?v=UXVf9-OntGI", "images/snapshots-banner.png"));
-        dashboards.add(new Dashboard("https://www.youtube.com/watch?v=eFjqrxFIQvI", "images/jquery-banner.png.png"));
+        dashboards.add(new Dashboard("https://www.youtube.com/watch?v=eFjqrxFIQvI", "images/jquery-banner.png"));
         return dashboards;
     }
 }
