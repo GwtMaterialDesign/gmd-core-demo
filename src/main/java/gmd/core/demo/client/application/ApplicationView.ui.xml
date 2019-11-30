@@ -28,10 +28,12 @@
         <m:MaterialHeader layoutPosition="FIXED" width="100%" top="0" depth="995">
             <m:MaterialNavBar ui:field="navBar" activates="right-sidenav" backgroundColor="WHITE">
                 <m:MaterialNavBrand>
-                    <m:MaterialLabel ui:field="navBrand" textColor="BLACK" fontSize="0.8em"/>
+                    <m:MaterialLabel ui:field="navBrand" fontSize="0.8em"/>
                 </m:MaterialNavBrand>
                 <incubator:search.InlineSearch autocomplete="false" hideOn="HIDE_ON_MED_DOWN" ui:field="search" theme="LIGHT" width="50%" placeholder="Search" display="INLINE"/>
-
+                <m:MaterialNavSection hideOn="NONE" float="RIGHT" marginRight="40">
+                    <m:MaterialDarkModeToggle/>
+                </m:MaterialNavSection>
             </m:MaterialNavBar>
         </m:MaterialHeader>
 
@@ -39,7 +41,7 @@
             <m:MaterialSideNavContent ui:field="home" height="60px">
                 <m:MaterialImage url="https://gwtmaterialdesign.github.io/gmd-core-demo/launcher-icons/launcher1x.png" alt="logo" float="LEFT" width="32px" marginRight="20"/>
                 <m:MaterialPanel>
-                    <m:MaterialLabel ui:field="name" textColor="BLACK" fontWeight="BOLD" lineHeight="24" marginTop="12"/>
+                    <m:MaterialLabel ui:field="name" fontWeight="BOLD" lineHeight="24" marginTop="12"/>
                     <m:MaterialLabel ui:field="version" lineHeight="12" fontSize="0.8em"/>
                 </m:MaterialPanel>
             </m:MaterialSideNavContent>
@@ -55,8 +57,8 @@
                     </m:MaterialColumn>
                 </m:MaterialRow>
                 <m:MaterialRow marginBottom="0" paddingLeft="20">
-                    <m:MaterialLink ui:field="javaSource" display="INLINE_BLOCK" marginRight="20" target="_blank" text="Java" paddingLeft="0" customIconType="fab fa-java" textColor="INDIGO"/>
-                    <m:MaterialLink ui:field="xmlSource" display="INLINE_BLOCK" target="_blank" text="XML" iconType="CODE" textColor="INDIGO"/>
+                    <m:MaterialLink ui:field="javaSource" display="INLINE_BLOCK" marginRight="20" target="_blank" text="Java" paddingLeft="0" customIconType="fab fa-java"/>
+                    <m:MaterialLink ui:field="xmlSource" display="INLINE_BLOCK" target="_blank" text="XML" iconType="CODE"/>
                 </m:MaterialRow>
             </m:MaterialPanel>
 

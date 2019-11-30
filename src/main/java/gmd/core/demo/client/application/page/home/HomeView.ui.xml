@@ -24,7 +24,7 @@
     <m:MaterialPanel>
         <m:MaterialRow padding="40" textAlign="CENTER">
             <m:MaterialImage url="launcher-icons/launcher4x.png" width="70px"/>
-            <m:MaterialLabel text="GMD Project" fontWeight="BOLD" fontSize="3em"/>
+            <m:MaterialLabel text="GMD Project + PWA" fontWeight="BOLD" fontSize="3em"/>
             <m:MaterialLabel text="Build the future of GWT using PWAs and Material Design Look and Feel."/>
         </m:MaterialRow>
 

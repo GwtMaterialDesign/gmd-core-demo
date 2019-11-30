@@ -35,6 +35,7 @@ import gmd.core.demo.client.application.events.MenuHandlers;
 import gmd.core.demo.client.application.navigation.Component;
 import gmd.core.demo.client.application.navigation.NavigationService;
 import gmd.core.demo.client.resources.AppResources;
+import gwt.material.design.client.theme.dark.DarkThemeManager;
 import gwt.material.design.client.base.helper.ColorHelper;
 import gwt.material.design.client.constants.Color;
 import gwt.material.design.client.pwa.PwaManager;
