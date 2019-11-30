@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" type="text/css" href="splash/splash.css" />
 
+    <link rel="stylesheet" href="../resources/gmd/core/demo/client/resources/css/dark.css" media="(prefers-color-scheme: dark)" />
+
     <script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
     
     <script src="GmdCoreDemo/GmdCoreDemo.nocache.js"></script>
@@ -20,6 +22,13 @@
     <style>
         :focus {
             outline: none;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            #splashscreen {
+                background: #292929 !important;
+                color: white !important;
+            }
         }
     </style>
 </head>
