@@ -35,12 +35,13 @@ import gmd.core.demo.client.application.events.MenuHandlers;
 import gmd.core.demo.client.application.navigation.Component;
 import gmd.core.demo.client.application.navigation.NavigationService;
 import gmd.core.demo.client.resources.AppResources;
-import gwt.material.design.client.pwa.serviceworker.ServiceWorkerManager;
-import gwt.material.design.client.pwa.serviceworker.js.ServiceWorkerOption;
-import gwt.material.design.client.theme.dark.DarkThemeManager;
 import gwt.material.design.client.base.helper.ColorHelper;
 import gwt.material.design.client.constants.Color;
 import gwt.material.design.client.pwa.PwaManager;
+import gwt.material.design.client.pwa.serviceworker.ServiceWorkerManager;
+import gwt.material.design.client.pwa.serviceworker.js.ServiceWorkerOption;
+import gwt.material.design.client.theme.dark.CoreDarkThemeLoader;
+import gwt.material.design.client.theme.dark.DarkThemeManager;
 
 import java.util.List;
 
@@ -88,6 +89,12 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
     @Override
     protected void onReveal() {
         super.onReveal();
+
+        // Dark Theme Mode
+        DarkThemeManager.get()
+            .register(new CoreDarkThemeLoader())
+            .load();
+
 
         if (PwaManager.isPwaSupported()) {
             ServiceWorkerManager manager = new ServiceWorkerManager("/gmd-core-demo/service-worker.js");
