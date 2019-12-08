@@ -30,6 +30,9 @@ public interface AppResources extends ClientBundle {
     @Source("css/app.css")
     TextResource appCss();
 
+    @Source("css/app-dark.css")
+    TextResource appDarkCss();
+
     @Source("css/highlight/androidstudio.css")
     TextResource highlightCSs();
 

@@ -53,6 +53,13 @@ public class TabsPresenter extends AppPresenter<TabsPresenter.MyView, TabsPresen
     }
 
     @Override
+    protected void onReveal() {
+        super.onReveal();
+
+        getView().recalculateTabs();
+    }
+
+    @Override
     public void onContentPush(ContentPushEvent event) {
         getView().recalculateTabs();
     }

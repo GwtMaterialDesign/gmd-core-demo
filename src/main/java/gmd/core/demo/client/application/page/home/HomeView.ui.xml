@@ -19,12 +19,13 @@
   -->
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
              xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:ma="urn:import:gwt.material.design.addins.client"
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <m:MaterialPanel>
         <m:MaterialRow padding="40" textAlign="CENTER">
-            <m:MaterialImage url="launcher-icons/launcher4x.png" width="70px"/>
-            <m:MaterialLabel text="GMD Project + PWA" fontWeight="BOLD" fontSize="3em"/>
+            <ma:webp.MaterialWebpImage url="images/gmd-logo.webp" alt="logo"/>
+            <m:MaterialLabel text="GMD 2.3 + PWA" fontWeight="BOLD" fontSize="3em"/>
             <m:MaterialLabel text="Build the future of GWT using PWAs and Material Design Look and Feel."/>
         </m:MaterialRow>
 

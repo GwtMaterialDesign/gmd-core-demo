@@ -203,7 +203,7 @@
 		</widget:CodeSection>
 
 		<widget:CodeSection sectionTitle="Vertical Alignment" description="Vertical Align - You can easily vertically center things by adding the class valign-wrapper to the container holding the items you want to vertically align.">
-			<m:MaterialPanel valignWrapper="true" height="400px" backgroundColor="GREY_LIGHTEN_3">
+			<m:MaterialPanel valignWrapper="true" height="400px">
 				<m:MaterialLabel fontSize="2em" textAlign="CENTER" text="This should be vertically aligned"/>
 			</m:MaterialPanel>
 			<g:HTMLPanel>
@@ -216,15 +216,15 @@
 		</widget:CodeSection>
 
 		<widget:CodeSection sectionTitle="Text Alignment" description="Vertical Align - You can easily vertically center things by adding the class valign-wrapper to the container holding the items you want to vertically align.">
-			<m:MaterialPanel textAlign="LEFT" backgroundColor="GREY_LIGHTEN_3" padding="12" marginTop="12">
+			<m:MaterialPanel textAlign="LEFT" padding="12" marginTop="12">
 				<m:MaterialLabel fontSize="1.5em" text="This should be left aligned"/>
 			</m:MaterialPanel>
 			
-			<m:MaterialPanel textAlign="CENTER" backgroundColor="GREY_LIGHTEN_3" padding="12" marginTop="12">
+			<m:MaterialPanel textAlign="CENTER" padding="12" marginTop="12">
 				<m:MaterialLabel fontSize="1.5em" text="This should be center aligned"/>
 			</m:MaterialPanel>
 
-			<m:MaterialPanel textAlign="RIGHT" backgroundColor="GREY_LIGHTEN_3" padding="12" marginTop="12">
+			<m:MaterialPanel textAlign="RIGHT" padding="12" marginTop="12">
 				<m:MaterialLabel fontSize="1.5em" text="This should be right aligned"/>
 			</m:MaterialPanel>
 			<g:HTMLPanel>
@@ -256,7 +256,7 @@
 		</widget:CodeSection>
 
 		<widget:CodeSection sectionTitle="Hide On" description="We provide easy to use classes to hide content on specific screen sizes. Just add hideOn='HIDE_ON_SMALL...' to any material components; ">
-			<m:MaterialPanel backgroundColor="GREY_LIGHTEN_3" hideOn="HIDE_ON_SMALL">
+			<m:MaterialPanel hideOn="HIDE_ON_SMALL">
 				<m:MaterialLabel fontSize="2em" textAlign="CENTER" text="HIDE_ON_SMALL"/>
 			</m:MaterialPanel>
 			<g:HTMLPanel>
@@ -306,7 +306,7 @@
 		</widget:CodeSection>
 
 		<widget:CodeSection sectionTitle="Show On" description="We provide easy to use classes to show content on specific screen sizes. Just add showOn='SHOW_ON_LARGE...' to any material components; ">
-			<m:MaterialPanel backgroundColor="GREY_LIGHTEN_3" showOn="SHOW_ON_MED">
+			<m:MaterialPanel showOn="SHOW_ON_MED">
 				<m:MaterialLabel fontSize="2em" textAlign="CENTER" text="SHOW_ON_MED"/>
 			</m:MaterialPanel>
 			<g:HTMLPanel>
@@ -398,7 +398,7 @@
 				<m:MaterialButton text="Scroll To Middle (Element)" ui:field="scrollToMiddle"/>
 				<m:MaterialButton text="Scroll To Bottom (Element)" ui:field="scrollToBottom"/>
 				<m:MaterialLink iconType="VISIBILITY" ui:field="scrollScope" text="Out of ViewPort Scope" display="BLOCK" marginTop="40" marginBottom="40"/>
-				<m:MaterialPanel ui:field="panel" grid="s12 m6 l4" height="400px" overflow="AUTO" backgroundColor="GREY_LIGHTEN_3">
+				<m:MaterialPanel ui:field="panel" grid="s12 m6 l4" height="400px" overflow="AUTO" backgroundColor="BLUE_LIGHTEN_4">
 					<m:MaterialPanel ui:field="target" width="200px" height="200px" backgroundColor="BLUE" marginTop="500" marginBottom="500"/>
 				</m:MaterialPanel>
 			</m:MaterialRow>
@@ -437,7 +437,7 @@
 		<widget:CodeSection sectionTitle="Hoverable" description="The hoverable is a hover class that adds an animation for box shadow as seen below. It can be used on most elements, but meant for use on cards.">
 			<m:MaterialRow>
 				<m:MaterialColumn grid="l4 s12">
-					<m:MaterialCard backgroundColor="WHITE" hoverable="true">
+					<m:MaterialCard hoverable="true">
 						<m:MaterialCardImage waves="LIGHT">
 							<ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
 							<m:MaterialCardTitle text="Sample"/>
@@ -454,7 +454,7 @@
 					</m:MaterialCard>
 				</m:MaterialColumn>
 				<m:MaterialColumn grid="l4 s12">
-					<m:MaterialCard backgroundColor="WHITE" hoverable="true">
+					<m:MaterialCard hoverable="true">
 						<m:MaterialCardImage waves="LIGHT">
 							<ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
 							<m:MaterialCardTitle text="Sample"/>
@@ -471,7 +471,7 @@
 					</m:MaterialCard>
 				</m:MaterialColumn>
 				<m:MaterialColumn grid="l4 s12">
-					<m:MaterialCard backgroundColor="WHITE" hoverable="true">
+					<m:MaterialCard hoverable="true">
 						<m:MaterialCardImage waves="LIGHT">
 							<ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
 							<m:MaterialCardTitle text="Sample"/>

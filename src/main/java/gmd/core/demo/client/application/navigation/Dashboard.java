@@ -15,6 +15,14 @@ public class Dashboard {
         this.image = image;
     }
 
+    public Dashboard(String title, String url, String image) {
+        this.title = title;
+        this.url = url;
+        this.image = image;
+    }
+
+
+
     public Dashboard(String title, String description, String url, String image, boolean enabled) {
         this.title = title;
         this.description = description;

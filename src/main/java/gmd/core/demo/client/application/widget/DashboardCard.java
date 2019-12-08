@@ -28,6 +28,7 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Composite;
 import gmd.core.demo.client.application.navigation.Dashboard;
+import gwt.material.design.addins.client.webp.MaterialWebpImage;
 import gwt.material.design.client.constants.Color;
 import gwt.material.design.client.ui.*;
 
@@ -42,7 +43,7 @@ public class DashboardCard extends Composite {
     MaterialCard card;
 
     @UiField
-    MaterialImage image;
+    MaterialWebpImage image;
 
     @UiField
     MaterialImage iconImage;
@@ -79,6 +80,7 @@ public class DashboardCard extends Composite {
         }
 
         image.setUrl(dashboard.getImage());
+        image.setFallbackExtension("png");
         title.setText(dashboard.getTitle());
         link.setHref(dashboard.getUrl());
     }

@@ -37,7 +37,7 @@
                 </m:MaterialCardAction>
             </m:MaterialCard>
             <m:MaterialListBox ui:field="lstAnimations" old="true" />
-            <m:MaterialButton ui:field="btnAnimate" text="Animate" marginTop="20" textColor="WHITE"/>
+            <m:MaterialButton ui:field="btnAnimate" text="Animate" marginTop="20"/>
             <g:HTMLPanel>
                 <pre class="java">
     MaterialAnimation animation = new MaterialAnimation();
@@ -55,7 +55,7 @@
                 <m:MaterialButton ui:field="iconHeart" width="100px" height="100px" type="FLOATING" size="LARGE" iconType="FAVORITE" backgroundColor="PINK" />
             </m:MaterialRow>
             <m:MaterialRow>
-                <m:MaterialButton ui:field="btnAnimateInfinite" text="Infinite Animation" textColor="WHITE"/>
+                <m:MaterialButton ui:field="btnAnimateInfinite" text="Infinite Animation"/>
                 <m:MaterialButton ui:field="btnStopAnimation" text="Stop Animation" type="FLAT" />
             </m:MaterialRow>
             <g:HTMLPanel>
@@ -75,7 +75,7 @@
                 <m:MaterialButton ui:field="iconCallback" width="100px" height="100px" type="FLOATING" size="LARGE" iconType="DIRECTIONS_BIKE" />
             </m:MaterialRow>
             <m:MaterialRow>
-                <m:MaterialButton ui:field="btnAnimateCallback" text="Animate with Callback" textColor="WHITE"/>
+                <m:MaterialButton ui:field="btnAnimateCallback" text="Animate with Callback"/>
             </m:MaterialRow>
             <g:HTMLPanel>
                 <pre class="java">

@@ -56,6 +56,8 @@
                 <ma:timepicker.MaterialTimePicker fieldType="DEFAULT" placeholder="TimePicker" grid="s6" required="true" clearOnKeyUp="true"/>
                 <!-- ComboBox -->
                 <ma:combobox.MaterialComboBox ui:field="combo4"  fieldType="DEFAULT" label="ComboBox" grid="s6" required="true" clearOnKeyUp="true"/>
+                <!-- ComboBox Multiple -->
+                <ma:combobox.MaterialComboBox ui:field="combo5"  fieldType="DEFAULT" multiple="true" label="ComboBox" grid="s6" required="true" clearOnKeyUp="true"/>
                 <!-- ListBox -->
                 <m:MaterialListBox fieldType="DEFAULT" placeholder="Listbox" grid="s6" required="true" clearOnKeyUp="true">
                     <m:html.Option text="Option 1" />

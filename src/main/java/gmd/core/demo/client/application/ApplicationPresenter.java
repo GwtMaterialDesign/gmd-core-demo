@@ -35,18 +35,22 @@ import gmd.core.demo.client.application.events.MenuHandlers;
 import gmd.core.demo.client.application.navigation.Component;
 import gmd.core.demo.client.application.navigation.NavigationService;
 import gmd.core.demo.client.resources.AppResources;
+import gwt.material.design.addins.client.dark.AddinsDarkThemeLoader;
+import gwt.material.design.client.MaterialDesignBase;
 import gwt.material.design.client.base.helper.ColorHelper;
 import gwt.material.design.client.constants.Color;
 import gwt.material.design.client.pwa.PwaManager;
-import gwt.material.design.client.pwa.serviceworker.ServiceWorkerManager;
-import gwt.material.design.client.pwa.serviceworker.js.ServiceWorkerOption;
 import gwt.material.design.client.theme.dark.CoreDarkThemeLoader;
 import gwt.material.design.client.theme.dark.DarkThemeManager;
 
 import java.util.List;
 
 public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView, ApplicationPresenter.MyProxy>
-        implements MenuHandlers {
+    implements MenuHandlers {
+    static {
+        MaterialDesignBase.injectCss(AppResources.INSTANCE.highlightCSs());
+        MaterialDesignBase.injectJs(AppResources.INSTANCE.highlightJs());
+    }
 
     interface MyView extends View, HasUiHandlers<MenuHandlers> {
         void setupSideNav(List<Component> links);
@@ -93,19 +97,18 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
         // Dark Theme Mode
         DarkThemeManager.get()
             .register(new CoreDarkThemeLoader())
+            .register(new AddinsDarkThemeLoader())
+            .register(new AppDarkThemeLoader())
             .load();
 
 
         if (PwaManager.isPwaSupported()) {
-            ServiceWorkerManager manager = new ServiceWorkerManager("/gmd-core-demo/service-worker.js");
-            ServiceWorkerOption option = ServiceWorkerOption.create();
-            option.setScope("/gmd-core-demo/");
-            manager.setOption(option);
+
             PwaManager.getInstance()
-                    .setServiceWorker(manager)
-                    .setThemeColor(ColorHelper.setupComputedBackgroundColor(Color.BLUE_DARKEN_3))
-                    .setWebManifest("manifest.url")
-                    .load();
+                .setServiceWorker(new AppServiceWorkerManager())
+                .setThemeColor(ColorHelper.setupComputedBackgroundColor(Color.BLUE_DARKEN_3))
+                .setWebManifest("manifest.url")
+                .load();
 
             // Will request a notification
             // Notification.requestPermission(status -> MaterialToast.fireToast("Permission Status: " + status));

@@ -26,14 +26,14 @@
         <widget:CodeSection sectionTitle="Super Heroes" description="Search icon must activate a search component inside the navbar. See below the guidelines on how to implement it.">
             <m:MaterialRow>
                 <!-- Navbar component that contains a search icon -->
-                <m:MaterialNavBar ui:field="navBar" paddingLeft="20" width="100%" textColor="WHITE">
+                <m:MaterialNavBar ui:field="navBar" paddingLeft="20" width="100%">
                     <m:MaterialNavBrand ui:field="navBrand" text="GMD"/>
-                    <m:MaterialLink ui:field="btnSearch" iconType="SEARCH" iconColor="WHITE" float="RIGHT"/>
+                    <m:MaterialLink ui:field="btnSearch" iconType="SEARCH" float="RIGHT"/>
                 </m:MaterialNavBar>
 
                 <!-- NavBar Search -->
                 <m:MaterialNavBar ui:field="navBarSearch" width="100%" visible="false">
-                    <m:MaterialSearch ui:field="txtSearch" placeholder="Component" backgroundColor="WHITE" iconColor="BLACK"  active="true" grid="l3" shadow="1"/>
+                    <m:MaterialSearch ui:field="txtSearch" width="100%" placeholder="Component" backgroundColor="WHITE" iconColor="BLACK"  active="true" shadow="1"/>
                 </m:MaterialNavBar>
 
                 <m:MaterialRow padding="32" textAlign="CENTER">

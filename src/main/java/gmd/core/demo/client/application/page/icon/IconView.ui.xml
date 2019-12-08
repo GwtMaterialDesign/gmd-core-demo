@@ -121,10 +121,10 @@
             </m:MaterialRow>
 
             <m:MaterialRow padding="20">
-                <m:MaterialLink text="CSV File" customIconType="fas fa-file-csv" display="BLOCK"/>
-                <m:MaterialLink text="Contract File" customIconType="fas fa-file-contract" display="BLOCK"/>
-                <m:MaterialLink text="Code File" customIconType="fas fa-file-code" display="BLOCK"/>
-                <m:MaterialLink text="PDF File" customIconType="fas fa-file-pdf" display="BLOCK"/>
+                <m:MaterialLink text="CSV File" customIconType="fas fa-file-csv" display="FLEX" marginBottom="8"/>
+                <m:MaterialLink text="Contract File" customIconType="fas fa-file-contract" display="FLEX" marginBottom="8"/>
+                <m:MaterialLink text="Code File" customIconType="fas fa-file-code" display="FLEX" marginBottom="8"/>
+                <m:MaterialLink text="PDF File" customIconType="fas fa-file-pdf" display="FLEX" marginBottom="8"/>
             </m:MaterialRow>
         </widget:CodeSection>
         

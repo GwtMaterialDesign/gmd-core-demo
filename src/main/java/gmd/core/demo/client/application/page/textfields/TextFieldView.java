@@ -64,7 +64,7 @@ public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView
     MaterialLongBox txtLongBox, txtLongRO, txtLongTRO, txtLongValue;
 
     @UiField
-    MaterialComboBox<String> combo4;
+    MaterialComboBox<String> combo4, combo5;
 
     @UiField
     MaterialListValueBox<FieldState>  defaultStates;
@@ -145,6 +145,7 @@ public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView
 
 
         generateComboBox(combo4);
+        generateComboBox(combo5);
 
         setupFieldStates();
         setupFieldType();

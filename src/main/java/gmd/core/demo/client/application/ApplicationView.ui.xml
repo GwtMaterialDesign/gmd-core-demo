@@ -20,6 +20,7 @@
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
              xmlns:g='urn:import:com.google.gwt.user.client.ui'
              xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:ma="urn:import:gwt.material.design.addins.client"
              xmlns:incubator="urn:import:gwt.material.design.incubator.client">
 
     <ui:with field="res" type="gmd.core.demo.client.resources.AppResources"/>
@@ -39,7 +40,7 @@
 
         <m:MaterialSideNavPush ui:field="sidenav" m:id="right-sidenav" width="300">
             <m:MaterialSideNavContent ui:field="home" height="60px">
-                <m:MaterialImage url="https://gwtmaterialdesign.github.io/gmd-core-demo/launcher-icons/launcher1x.png" alt="logo" float="LEFT" width="32px" marginRight="20"/>
+                <ma:webp.MaterialWebpImage url="images/gmd-logo.webp" alt="logo" float="LEFT" width="32px" marginRight="20"/>
                 <m:MaterialPanel>
                     <m:MaterialLabel ui:field="name" fontWeight="BOLD" lineHeight="24" marginTop="12"/>
                     <m:MaterialLabel ui:field="version" lineHeight="12" fontSize="0.8em"/>
@@ -67,13 +68,12 @@
             <m:MaterialPanel ui:field="footer" addStyleNames="app-footer">
                 <m:MaterialRow marginBottom="0">
                     <m:MaterialColumn grid="s6 l4">
-                        <m:MaterialImage url="https://gwtmaterialdesign.github.io/gmd-core-demo/launcher-icons/launcher1x.png" alt="logo" float="LEFT" width="20px" marginRight="20"/>
                         <m:MaterialLabel text="Copyright gwt-material - " float="LEFT" marginRight="12"/>
                         <m:MaterialLabel ui:field="year" float="LEFT" />
                     </m:MaterialColumn>
                     <m:MaterialColumn grid="s6 l5" marginTop="-8" textAlign="RIGHT">
-                        <m:MaterialAnchorButton ui:field="github" text="Github" customIconType="fab fa-github" target="_blank" backgroundColor="WHITE" textColor="BLACK" shadow="0"/>
-                        <m:MaterialAnchorButton ui:field="gitter" text="Gitter" customIconType="fab fa-gitter" target="_blank" backgroundColor="WHITE" textColor="BLACK" shadow="0"/>
+                        <m:MaterialLink ui:field="github" display="INLINE_BLOCK" text="Github" marginRight="32" customIconType="fab fa-github" target="_blank" shadow="0"/>
+                        <m:MaterialLink ui:field="gitter" display="INLINE_BLOCK" text="Gitter" customIconType="fab fa-gitter" target="_blank" shadow="0"/>
                     </m:MaterialColumn>
                 </m:MaterialRow>
             </m:MaterialPanel>

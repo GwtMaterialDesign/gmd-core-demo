@@ -61,7 +61,7 @@ public class ApplicationView extends ViewWithUiHandlers<MenuHandlers> implements
     static MaterialPanel header, footer;
 
     @UiField
-    MaterialAnchorButton github, gitter;
+    MaterialLink github, gitter;
 
     @UiField
     static MaterialLink javaSource, xmlSource;
@@ -107,7 +107,7 @@ public class ApplicationView extends ViewWithUiHandlers<MenuHandlers> implements
         sidenav.addOpenedHandler(event -> getUiHandlers().setContentPush());
         sidenav.addClosedHandler(event -> getUiHandlers().setContentPush());
         year.setText(DateTimeFormat.getFormat("yyyy").format(new Date()));
-        search.addCloseHandler(event -> search.close());
+        search.addCloseHandler(event -> search.close(false));
     }
 
     boolean scrolling;
@@ -171,9 +171,7 @@ public class ApplicationView extends ViewWithUiHandlers<MenuHandlers> implements
             searchObjects.add(searchObject);
         }
         search.setListSearches(searchObjects);
-        search.addCloseHandler(event -> {
-            search.clear();
-        });
+        search.addCloseHandler(event -> search.close(true));
     }
 
     @UiHandler("fabUp")
