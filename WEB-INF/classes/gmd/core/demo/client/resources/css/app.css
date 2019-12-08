@@ -7,8 +7,13 @@ main {
 }
 
 /** Custom header **/
+nav a,
 nav .brand-logo {
     color: #282b2e;
+}
+
+nav, nav .nav-wrapper {
+    background-color: white;
 }
 
 nav .nav-wrapper ul li i {
@@ -96,7 +101,7 @@ nav .nav-wrapper ul a.btn span {
 }
 
 /** Search **/
-#app-container .search-result a {
+#app-container .inline-search .search-result a {
     padding-left: 60px;
     height: 40px;
     line-height: 40px;
@@ -190,6 +195,10 @@ pre.xml:before {
 
     .tab-content {
         background: transparent;
+    }
+
+    table.striped>tbody>tr:nth-child(odd) {
+        background-color: #232323;
     }
 }
 
