@@ -9,7 +9,7 @@ A modern demo for GMD widgets.
 
 ### Running the demo app
 Note: You must know Git and Maven before as prerequisites
-1. Clone https://github.com/GwtMaterialDesign/gmd-core-demo using git.
-2. Open the project on your desired IDE.
+1. Clone this demo project using git. `git clone https://github.com/GwtMaterialDesign/gmd-core-demo`
+2. Open the project on your desired IDE (Intellij IDE or Eclipse)
 3. Install the project using `mvn clean install`
-4. Then run the project using `mvn gwt:devmode`
+4. Then run the project using `mvn gwt:codeserver`
