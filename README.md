@@ -8,6 +8,7 @@ A modern demo for GMD widgets.
 - [AmCharts](https://gwtmaterialdesign.github.io/gmd-amcharts4-demo/)
 
 ### Running the demo app
+Note: You must know Git and Maven before as prerequisites
 1. Clone https://github.com/GwtMaterialDesign/gmd-core-demo using git.
 2. Open the project on your desired IDE.
 3. Install the project using `mvn clean install`
