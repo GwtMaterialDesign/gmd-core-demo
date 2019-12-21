@@ -310,5 +310,19 @@
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Paste Event" description="A useful feature to implement to your textfield to get the clipboard data easily using copy and paste.">
+            <m:MaterialRow>
+                <m:MaterialTextBox ui:field="pasteItHere" label="Paste it here" grid="s12"/>
+            </m:MaterialRow>
+            <g:HTMLPanel>
+                <pre class="java">
+@UiHandler("pasteItHere")
+void pasteItHere(PasteEvent event) {
+    MaterialToast.fireToast("Paste Event fire : " + event.getValue());
+}
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
     </m:MaterialPanel>
 </ui:UiBinder>

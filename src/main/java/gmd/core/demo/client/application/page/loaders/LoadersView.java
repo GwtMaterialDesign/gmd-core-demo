@@ -26,10 +26,12 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.client.constants.ProgressType;
+import gwt.material.design.client.constants.*;
 import gwt.material.design.client.ui.*;
 
 import javax.inject.Inject;
+
+import static gwt.material.design.jquery.client.api.JQuery.$;
 
 public class LoadersView extends ViewImpl implements LoadersPresenter.MyView {
     interface Binder extends UiBinder<Widget, LoadersView> {
@@ -46,6 +48,9 @@ public class LoadersView extends ViewImpl implements LoadersPresenter.MyView {
 
     @UiField
     MaterialButton btnLoader, btnProgress;
+
+    @UiField
+    MaterialCheckBox loaderWithMessage, loaderWithBackground, loaderWithBlur, loaderWithOpacity, loaderWithoutScrolling;
 
     @Inject
     LoadersView(Binder uiBinder) {
@@ -82,11 +87,31 @@ public class LoadersView extends ViewImpl implements LoadersPresenter.MyView {
 
     @UiHandler("btnShowLoader")
     void onShowLoader(ClickEvent e) {
-        MaterialLoader.loading(true);
+        MaterialLoader loader = new MaterialLoader();
+        loader.setType(LoaderType.CIRCULAR);
+
+        OverlayOption option = OverlayOption.create();
+        if (loaderWithBackground.getValue()) {
+            option.setBackgroundColor(Color.BLUE);
+        }
+
+        if (loaderWithBlur.getValue()) {
+            option.setBlur(new Blur(4, $("#app-container")));
+        }
+
+        if (loaderWithOpacity.getValue()) {
+            option.setOpacity(1.0);
+        }
+
+        loader.setMessage(loaderWithMessage.getValue() ? "Please Wait" : "");
+
+        loader.setOverlayOption(option);
+        loader.setScrollDisabled(loaderWithoutScrolling.getValue());
+        loader.show();
         Timer t = new Timer() {
             @Override
             public void run() {
-                MaterialLoader.loading(false);
+                loader.hide();
             }
         };
         t.schedule(3000);

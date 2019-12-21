@@ -24,34 +24,43 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <m:MaterialPanel>
-        <widget:CodeSection sectionTitle="Circular">
-            <m:MaterialButton text="Show Loader" ui:field="btnShowLoader"/>
+        <widget:CodeSection sectionTitle="Loader Types">
+            <m:MaterialButton text="Show Loader" ui:field="btnShowLoader" marginTop="20" marginBottom="20"/>
+            <m:MaterialCheckBox ui:field="loaderWithMessage" text="With Message"/>
+            <m:MaterialCheckBox ui:field="loaderWithBackground" text="With Background Color"/>
+            <m:MaterialCheckBox ui:field="loaderWithBlur" text="With Blur"/>
+            <m:MaterialCheckBox ui:field="loaderWithOpacity" text="With Opacity 1"/>
+            <m:MaterialCheckBox ui:field="loaderWithoutScrolling" text="Disable Scrolling"/>
             <g:HTMLPanel>
                 <pre class="java">
-    MaterialLoader.loading(true);
-    Timer t = new Timer() {
-        @Override
-        public void run() {
-            MaterialLoader.loading(false);
-        }
-    };
-    t.schedule(3000);
-                </pre>
-            </g:HTMLPanel>
-        </widget:CodeSection>
+MaterialLoader loader = new MaterialLoader();
+loader.setType(LoaderType.CIRCULAR);
 
-        <widget:CodeSection sectionTitle="Linear">
-            <m:MaterialButton text="Show Progress" ui:field="btnShowProgress"/>
-            <g:HTMLPanel>
-                <pre class="java">
-    MaterialLoader.progress(true);
-    Timer t = new Timer() {
-        @Override
-        public void run() {
-            MaterialLoader.progress(false);
-        }
-    };
-    t.schedule(3000);
+OverlayOption option = OverlayOption.create();
+if (loaderWithBackground.getValue()) {
+    option.setBackgroundColor(Color.BLUE);
+}
+
+if (loaderWithBlur.getValue()) {
+    option.setBlur(new Blur(4, $("#app-container")));
+}
+
+if (loaderWithOpacity.getValue()) {
+    option.setOpacity(1.0);
+}
+
+loader.setMessage(loaderWithMessage.getValue() ? "Please Wait" : "");
+
+loader.setOverlayOption(option);
+loader.setScrollDisabled(loaderWithoutScrolling.getValue());
+loader.show();
+Timer t = new Timer() {
+    @Override
+    public void run() {
+        loader.hide();
+    }
+};
+t.schedule(3000);
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>

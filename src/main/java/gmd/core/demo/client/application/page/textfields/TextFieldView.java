@@ -35,6 +35,7 @@ import gwt.material.design.addins.client.combobox.MaterialComboBox;
 import gwt.material.design.client.base.*;
 import gwt.material.design.client.constants.FieldType;
 import gwt.material.design.client.constants.StatusDisplayType;
+import gwt.material.design.client.events.PasteEvent;
 import gwt.material.design.client.ui.*;
 
 import javax.inject.Inject;
@@ -46,7 +47,7 @@ public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView
     }
 
     @UiField
-    MaterialTextBox txtBoxValue, txtBoxAsNullValue;
+    MaterialTextBox txtBoxValue, txtBoxAsNullValue, pasteItHere;
 
     @UiField
     MaterialTextArea txtAreaAuto, txtAreaValue, txtAreaFocus;
@@ -258,6 +259,11 @@ public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView
         combo.addItem("Option 1");
         combo.addItem("Option 2");
         combo.addItem("Option 3");
+    }
+
+    @UiHandler("pasteItHere")
+    void pasteItHere(PasteEvent event) {
+        MaterialToast.fireToast("Paste Event fire : " + event.getValue());
     }
 
     @UiHandler("validateDefault")
