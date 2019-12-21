@@ -65,6 +65,22 @@ t.schedule(3000);
             </g:HTMLPanel>
         </widget:CodeSection>
 
+        <widget:CodeSection sectionTitle="Linear">
+            <m:MaterialButton text="Show Progress" ui:field="btnShowProgress"/>
+            <g:HTMLPanel>
+                <pre class="java">
+MaterialLoader.progress(true);
+Timer t = new Timer() {
+    @Override
+    public void run() {
+        MaterialLoader.progress(false);
+    }
+};
+t.schedule(3000);
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
         <widget:CodeSection sectionTitle="Determinate Type">
             <m:MaterialProgress type="DETERMINATE" percent="30"/>
             <g:HTMLPanel>
