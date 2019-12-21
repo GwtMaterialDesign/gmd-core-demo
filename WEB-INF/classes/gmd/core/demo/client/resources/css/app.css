@@ -197,12 +197,17 @@ pre.xml:before {
         background: transparent;
     }
 
-    table.striped>tbody>tr:nth-child(odd) {
+    table.striped > tbody > tr:nth-child(odd) {
         background-color: #232323;
     }
 }
 
-/** TODO: MOve to GMD **/
+/** TODO: Need to migrate to GMD Themes before the release **/
 .secondary-label {
     color: rgba(0, 0, 0, 0.6)
+}
+
+[type="radio"]:not(:checked) + label, [type="radio"]:checked + label,
+[type="checkbox"] + label {
+    color: rgba(0, 0, 0, 0.87);
 }
