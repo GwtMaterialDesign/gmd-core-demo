@@ -142,7 +142,7 @@
 						<m:MaterialCardImage waves="LIGHT">
 							<m:MaterialImage
 							 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif"
-							 height="146px"/>
+							 height="126px"/>
 						</m:MaterialCardImage>
 
 						<m:MaterialCardContent textColor="BLACK">
@@ -163,7 +163,7 @@
 						<m:MaterialCardImage waves="LIGHT">
 							<m:MaterialImage
 							 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif"
-							 height="146px"/>
+							 height="126px"/>
 						</m:MaterialCardImage>
 
 						<m:MaterialCardContent textColor="BLACK">
@@ -184,7 +184,7 @@
 						<m:MaterialCardImage waves="LIGHT">
 							<m:MaterialImage
 							 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif"
-							 height="146px"/>
+							 height="126px"/>
 						</m:MaterialCardImage>
 
 						<m:MaterialCardContent textColor="BLACK">
@@ -205,7 +205,7 @@
 						<m:MaterialCardImage waves="LIGHT">
 							<m:MaterialImage
 							 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif"
-							 height="146px"/>
+							 height="126px"/>
 						</m:MaterialCardImage>
 
 						<m:MaterialCardContent textColor="BLACK">
@@ -227,7 +227,7 @@
 					&lt;m:MaterialCard orientation="LANDSCAPE" detectOrientation="true">
 					&lt;m:MaterialCardImage waves="LIGHT">
 					&lt;m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif"
-					height="146px" />
+					height="126px" />
 					&lt;/m:MaterialCardImage>
 
 					&lt;m:MaterialCardContent textColor="BLACK">
@@ -252,7 +252,7 @@
 						<m:MaterialCardImage waves="LIGHT">
 							<m:MaterialImage
 							 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif"
-							 height="146px"/>
+							 height="126px"/>
 						</m:MaterialCardImage>
 
 						<m:MaterialCardContent textColor="BLACK">
@@ -274,7 +274,7 @@
 					&lt;m:MaterialCard orientation="LANDSCAPE" detectOrientation="true">
 					&lt;m:MaterialCardImage waves="LIGHT">
 					&lt;m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif"
-					height="146px"/>
+					height="126px"/>
 					&lt;/m:MaterialCardImage>
 
 					&lt;m:MaterialCardContent textColor="BLACK">

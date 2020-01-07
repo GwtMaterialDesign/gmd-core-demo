@@ -27,7 +27,7 @@
             <m:MaterialRow>
                 <m:MaterialColumn grid="l2">
                     <m:MaterialCheckBox text="Blue" value="true" />
-                    <m:MaterialCheckBox text="Red" />
+                    <m:MaterialCheckBox text="Red" type="INTERMEDIATE"/>
                     <m:MaterialCheckBox text="Cyan" value="true" type="FILLED"/>
                     <m:MaterialCheckBox text="Green" value="true" enabled="false"/>
                     <m:MaterialCheckBox text="Brown" enabled="false"/>
