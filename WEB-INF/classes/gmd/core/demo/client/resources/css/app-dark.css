@@ -3,7 +3,7 @@ nav i,
 nav span,
 nav .brand-logo,
 nav .breadcrumb:before {
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 .app-header {
