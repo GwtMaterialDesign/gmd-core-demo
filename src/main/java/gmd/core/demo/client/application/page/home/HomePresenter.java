@@ -31,6 +31,7 @@ import gmd.core.demo.client.application.ApplicationView;
 import gmd.core.demo.client.application.navigation.Dashboard;
 import gmd.core.demo.client.application.navigation.DashboardService;
 import gmd.core.demo.client.place.NameTokens;
+import gwt.material.design.client.base.helper.ScrollHelper;
 
 import java.util.List;
 
@@ -66,5 +67,6 @@ public class HomePresenter extends Presenter<HomePresenter.MyView, HomePresenter
         super.onReveal();
 
         ApplicationView.showHeader(false);
+        new ScrollHelper().scrollTo(0);
     }
 }

@@ -8,7 +8,10 @@ main {
 
 /** Custom header **/
 nav a,
-nav .brand-logo {
+nav i,
+nav span,
+nav .brand-logo,
+nav .breadcrumb:before {
     color: #282b2e;
 }
 
@@ -200,14 +203,4 @@ pre.xml:before {
     table.striped > tbody > tr:nth-child(odd) {
         background-color: #232323;
     }
-}
-
-/** TODO: Need to migrate to GMD Themes before the release **/
-.secondary-label {
-    color: rgba(0, 0, 0, 0.6)
-}
-
-[type="radio"]:not(:checked) + label, [type="radio"]:checked + label,
-[type="checkbox"] + label {
-    color: rgba(0, 0, 0, 0.87);
 }

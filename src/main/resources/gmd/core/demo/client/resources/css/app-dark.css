@@ -1,3 +1,11 @@
+nav a,
+nav i,
+nav span,
+nav .brand-logo,
+nav .breadcrumb:before {
+    color: #ffffff;
+}
+
 .app-header {
     border-bottom: 1px solid rgb(49, 49, 49) !important;
 }

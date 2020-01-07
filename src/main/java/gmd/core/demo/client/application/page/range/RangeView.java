@@ -40,7 +40,7 @@ public class RangeView extends ViewImpl implements RangePresenter.MyView {
     MaterialLabel lblRange;
 
     @UiField
-    MaterialRange range, rangeSetValue;
+    MaterialRange range, rangeSetValue, thumbRange;
 
     @Inject
     RangeView(Binder uiBinder) {
