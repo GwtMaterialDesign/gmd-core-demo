@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.GmdCoreDemo;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.8.2";
-var $strongName = '72BAB16DE1AB74871EC1DC69DC47CF92';
+var $strongName = '6F50211B72600B64676A1C8D7682696D';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -13906,6 +13906,7 @@ function AppServiceWorkerManager(){
 
 defineClass(1317, 1316, {}, AppServiceWorkerManager);
 _.onNewServiceWorkerFound = function onNewServiceWorkerFound_0(event_0, serviceWorker){
+  $wnd.location.reload();
   $toast(new MaterialToast_0(stampJavaTypeInfo(getClassLiteralForArray(Lcom_google_gwt_user_client_ui_Widget_2_classLit, 1), $intern_2, 18, 0, [])), 'New Updates Installed', $intern_62, null);
   return $onNewServiceWorkerFound(this, event_0);
 }
