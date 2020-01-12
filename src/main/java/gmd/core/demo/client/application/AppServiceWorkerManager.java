@@ -1,6 +1,5 @@
 package gmd.core.demo.client.application;
 
-import com.google.gwt.user.client.Window;
 import gwt.material.design.client.pwa.serviceworker.ServiceEvent;
 import gwt.material.design.client.pwa.serviceworker.ServiceWorkerManager;
 import gwt.material.design.client.pwa.serviceworker.js.ServiceWorker;
@@ -19,7 +18,6 @@ public class AppServiceWorkerManager extends ServiceWorkerManager {
 
     @Override
     public boolean onNewServiceWorkerFound(ServiceEvent event, ServiceWorker serviceWorker) {
-        Window.Location.reload();
         MaterialToast.fireToast("New Updates Installed");
         return super.onNewServiceWorkerFound(event, serviceWorker);
     }
