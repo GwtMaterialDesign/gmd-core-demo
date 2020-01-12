@@ -25,6 +25,8 @@ import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gmd.core.demo.client.application.navigation.Dashboard;
 import gmd.core.demo.client.application.widget.DashboardCard;
+import gmd.core.demo.client.constants.AppConstants;
+import gwt.material.design.client.ui.MaterialLink;
 import gwt.material.design.client.ui.MaterialRow;
 
 import javax.inject.Inject;
@@ -38,9 +40,15 @@ public class HomeView extends ViewImpl implements HomePresenter.MyView {
     @UiField
     MaterialRow dashboardsRow, videosRow;
 
+    @UiField
+    MaterialLink github, slack;
+
     @Inject
     HomeView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+
+        github.setHref(AppConstants.GITHUB_REPO);
+        slack.setHref(AppConstants.SLACK_CHANNEL);
     }
 
     @Override

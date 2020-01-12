@@ -61,7 +61,7 @@ public class ApplicationView extends ViewWithUiHandlers<MenuHandlers> implements
     static MaterialPanel header, footer;
 
     @UiField
-    MaterialLink github, gitter;
+    MaterialLink github, slack;
 
     @UiField
     static MaterialLink javaSource, xmlSource;
@@ -92,7 +92,7 @@ public class ApplicationView extends ViewWithUiHandlers<MenuHandlers> implements
         name.setText(AppConstants.NAME);
         version.setText("Version " + AppConstants.VERSION);
         github.setHref(AppConstants.GITHUB_REPO);
-        gitter.setHref(AppConstants.GITTER_CHANNEL);
+        slack.setHref(AppConstants.SLACK_CHANNEL);
         sidenav.setOverlayOption(new OverlayOption(new Blur(4, $("#app-container")), Color.WHITE));
         links.forEach(component -> {
             MaterialLink link = new MaterialLink(component.getName(), component.getHref());

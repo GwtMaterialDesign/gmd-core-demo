@@ -73,7 +73,7 @@
                     </m:MaterialColumn>
                     <m:MaterialColumn grid="s6 l5" marginTop="-8" textAlign="RIGHT">
                         <m:MaterialLink ui:field="github" display="INLINE_BLOCK" text="Github" marginRight="32" customIconType="fab fa-github" target="_blank" shadow="0"/>
-                        <m:MaterialLink ui:field="gitter" display="INLINE_BLOCK" text="Gitter" customIconType="fab fa-gitter" target="_blank" shadow="0"/>
+                        <m:MaterialLink ui:field="slack" display="INLINE_BLOCK" text="Slack" customIconType="fab fa-slack" target="_blank" shadow="0"/>
                     </m:MaterialColumn>
                 </m:MaterialRow>
             </m:MaterialPanel>
