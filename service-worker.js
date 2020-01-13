@@ -1,4 +1,4 @@
-var cacheName = 'cache_1578865410560';
+var cacheName = 'cache_1578903186765';
 
 var filesToCache = [  
 '/gmd-core-demo/',

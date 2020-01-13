@@ -19,12 +19,12 @@ progress.className = "progress";
 
 var progressFill = document.createElement("div");
 progressFill.className = "indeterminate";
-progress.append(progressFill);
+progress.appendChild(progressFill);
 
-splashContent.append(image);
-splashContent.append(title);
-splashContent.append(description);
-splashContent.append(progress);
+splashContent.appendChild(image);
+splashContent.appendChild(title);
+splashContent.appendChild(description);
+splashContent.appendChild(progress);
 
-splashcontainer.append(splashContent);
+splashcontainer.appendChild(splashContent);
 document.body.appendChild(splashcontainer);
