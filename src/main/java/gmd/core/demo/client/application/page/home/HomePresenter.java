@@ -37,8 +37,6 @@ import java.util.List;
 
 public class HomePresenter extends Presenter<HomePresenter.MyView, HomePresenter.MyProxy> {
     interface MyView extends View {
-        void buildDashboards(List<Dashboard> dashboards);
-        void buildVideos(List<Dashboard> videos);
     }
 
     @ProxyStandard
@@ -57,9 +55,6 @@ public class HomePresenter extends Presenter<HomePresenter.MyView, HomePresenter
     @Override
     protected void onBind() {
         super.onBind();
-
-        getView().buildDashboards(DashboardService.getDashboards());
-        getView().buildVideos(DashboardService.getVideos());
     }
 
     @Override

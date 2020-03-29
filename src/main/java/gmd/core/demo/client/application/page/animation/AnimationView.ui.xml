@@ -19,11 +19,27 @@
   -->
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
              xmlns:m='urn:import:gwt.material.design.client.ui'
+             xmlns:ma="urn:import:gwt.material.design.addins.client"
              xmlns:m.html="urn:import:gwt.material.design.client.ui.html"
              xmlns:widget="urn:import:gmd.core.demo.client.application.widget"
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <m:MaterialPanel>
+        <widget:CodeSection sectionTitle="Global Config" description="You can set the global animation config or setting">
+            <ma:combobox.MaterialComboBox ui:field="animationSpeedList" label="Animation Speed"/>
+            <m:MaterialCheckBox ui:field="enableDebugging" text="Enable Debugging" />
+            <g:HTMLPanel>
+                <pre class="java">
+    // Will change the speed of the global animation
+    // SLOWEST, SLOWER, SLOW, NORMAL, FAST, FASTER, FASTEST
+    AnimationGlobalConfig.SPEED = AnimationGlobalConfig.SLOWEST
+
+    // Will log animation configs in the browser console
+    AnimationGlobalConfig.ENABLE_DEBUGGING = true
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
         <!-- Core Animation -->
         <widget:CodeSection sectionTitle="Core Animation">
             <m:MaterialCard ui:field="card">
@@ -370,7 +386,7 @@
                 &lt;/m:MaterialCardAction>
             &lt;/m:MaterialCard>
         &lt;/m:MaterialColumn>
-        
+
         ..... Other columns
     &lt;/m:MaterialRow>
                 </pre>

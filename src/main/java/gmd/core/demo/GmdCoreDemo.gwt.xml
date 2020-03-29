@@ -34,6 +34,7 @@
     <inherits name="gwt.material.design.incubator.AddinsIncubator"/>
     <inherits name="gwt.material.design.incubator.FontAwesomeResources"/>
     <inherits name="gwt.material.design.themes.ThemeBlue"/>
+    <inherits name="gwt.material.design.motion.GwtMaterialMotion"/>
 
     <!-- Note MvpWithEntryPoint Must be called after the JQuery has been imported -->
     <inherits name="com.gwtplatform.mvp.MvpWithEntryPoint"/>

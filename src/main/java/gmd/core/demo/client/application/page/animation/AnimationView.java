@@ -26,9 +26,12 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.addins.client.combobox.MaterialComboBox;
 import gwt.material.design.client.ui.*;
 import gwt.material.design.client.ui.animate.MaterialAnimation;
 import gwt.material.design.client.ui.animate.Transition;
+import gwt.material.design.client.ui.animate.debugger.AnimationGlobalConfig;
+import gwt.material.design.client.ui.animate.debugger.AnimationSpeed;
 import gwt.material.design.client.ui.html.UnorderedList;
 
 import javax.inject.Inject;
@@ -55,6 +58,12 @@ public class AnimationView extends ViewImpl implements AnimationPresenter.MyView
     @UiField
     MaterialRow gridPanel;
 
+    @UiField
+    MaterialComboBox<AnimationSpeed> animationSpeedList;
+
+    @UiField
+    MaterialCheckBox enableDebugging;
+
     private MaterialAnimation infiniteAnimation;
 
     @Inject
@@ -67,6 +76,12 @@ public class AnimationView extends ViewImpl implements AnimationPresenter.MyView
         super.onAttach();
 
         buildSelection();
+        for (AnimationSpeed animationSpeed : AnimationSpeed.values()) {
+            animationSpeedList.addItem(animationSpeed);
+        }
+        animationSpeedList.setSingleValue(AnimationSpeed.NORMAL);
+        animationSpeedList.addValueChangeHandler(event -> AnimationGlobalConfig.SPEED = event.getValue().get(0));
+        enableDebugging.addValueChangeHandler(event -> AnimationGlobalConfig.ENABLE_DEBUGGING = event.getValue());
     }
 
     protected void buildSelection() {
