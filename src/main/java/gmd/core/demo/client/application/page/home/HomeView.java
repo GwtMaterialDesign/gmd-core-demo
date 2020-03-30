@@ -33,6 +33,7 @@ import gwt.material.design.client.ui.animate.debugger.AnimationSpeed;
 import gwt.material.design.motion.client.pattern.fade.MaterialFade;
 import gwt.material.design.motion.client.pattern.fadethrough.MaterialFadeThrough;
 import gwt.material.design.motion.client.pattern.sharedaxis.MaterialSharedAxis;
+import gwt.material.design.motion.client.pattern.sharedaxis.SharedAxisConfig;
 import gwt.material.design.motion.client.pattern.sharedaxis.SharedAxisType;
 
 import javax.inject.Inject;
@@ -51,67 +52,72 @@ public class HomeView extends ViewImpl implements HomePresenter.MyView {
     @UiField
     MaterialButton fadeButton;
 
-    protected MaterialSharedAxis saX, saY, saZ;
-    protected MaterialFade fade;
-
     @Inject
     HomeView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
         AnimationGlobalConfig.SPEED = AnimationSpeed.SLOWEST;
-        saX = new MaterialSharedAxis(sharedAxisX.getSource(), sharedAxisX.getTarget(), SharedAxisType.X_AXIS);
-        saY = new MaterialSharedAxis(sharedAxisY.getSource(), sharedAxisY.getTarget(), SharedAxisType.Y_AXIS);
-        saZ = new MaterialSharedAxis(sharedAxisZ.getSource(), sharedAxisZ.getTarget(), SharedAxisType.Z_AXIS);
-        fade = new MaterialFade(fadeTarget);
     }
 
     @UiHandler("fadeEnter")
     void fadeEnter(ClickEvent event) {
-        fade.enter();
+        MaterialFade.getInstance().enter(fadeTarget);
     }
 
     @UiHandler("fadeExit")
     void fadeExit(ClickEvent event) {
-        fade.exit();
+        MaterialFade.getInstance().exit(fadeTarget);
     }
 
     @UiHandler("fadeThroughEnter")
     void item1(ClickEvent event) {
-        new MaterialFadeThrough(fadeThrough.getSource(), fadeThrough.getTarget()).enter();
+        MaterialFadeThrough.getInstance().animate(fadeThrough.getSource(), fadeThrough.getTarget());
     }
 
     @UiHandler("fadeThroughExit")
     void item2(ClickEvent event) {
-        new MaterialFadeThrough(fadeThrough.getTarget(), fadeThrough.getSource()).enter();
+        MaterialFadeThrough.getInstance().animate(fadeThrough.getTarget(), fadeThrough.getSource());
     }
 
     @UiHandler("sharedXAxisEnter")
     void sharedXAxisEnter(ClickEvent event) {
-        saX.enter();
+        MaterialSharedAxis.getInstance()
+            .setConfig(new SharedAxisConfig(SharedAxisType.X_AXIS, true))
+            .animate(sharedAxisX.getSource(), sharedAxisX.getTarget());
     }
 
     @UiHandler("sharedXAxisExit")
     void sharedXAxisExit(ClickEvent event) {
-        saX.exit();
+        MaterialSharedAxis.getInstance()
+            .setConfig(new SharedAxisConfig(SharedAxisType.X_AXIS, false))
+            .animate(sharedAxisX.getTarget(), sharedAxisX.getSource());
     }
 
     @UiHandler("sharedYAxisEnter")
     void sharedYAxisEnter(ClickEvent event) {
-        saY.enter();
+        MaterialSharedAxis.getInstance()
+            .setConfig(new SharedAxisConfig(SharedAxisType.Y_AXIS, true))
+            .animate(sharedAxisY.getSource(), sharedAxisY.getTarget());
     }
 
     @UiHandler("sharedYAxisExit")
     void sharedYAxisExit(ClickEvent event) {
-        saY.exit();
+        MaterialSharedAxis.getInstance()
+            .setConfig(new SharedAxisConfig(SharedAxisType.Y_AXIS, false))
+            .animate(sharedAxisY.getTarget(), sharedAxisY.getSource());
     }
 
     @UiHandler("sharedZAxisEnter")
     void sharedZAxisEnter(ClickEvent event) {
-        saZ.enter();
+        MaterialSharedAxis.getInstance()
+            .setConfig(new SharedAxisConfig(SharedAxisType.Z_AXIS, true))
+            .animate(sharedAxisZ.getSource(), sharedAxisZ.getTarget());
     }
 
     @UiHandler("sharedZAxisExit")
     void sharedZAxisExit(ClickEvent event) {
-        saZ.exit();
+        MaterialSharedAxis.getInstance()
+            .setConfig(new SharedAxisConfig(SharedAxisType.Z_AXIS, false))
+            .animate(sharedAxisZ.getTarget(), sharedAxisZ.getSource());
     }
 }

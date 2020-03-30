@@ -24,29 +24,6 @@
 	<m:MaterialPanel>
 		<m:MaterialTitle title="Material Motion POC" description="Below are just proof of concepts that needs standardization."/>
 
-		<!-- Shared Z Axis -->
-		<m:MaterialPanel>
-			<demo:MotionDemo ui:field="sharedAxisZ" title="Z-Position" description="UI elements that do not have a strong relationship"
-							 sourceUrl="https://i.imgur.com/cE6HYtb.png" targetUrl="https://i.imgur.com/bbLDVuY.png" headerUrl="https://i.imgur.com/t0okRcI.png"/>
-			<m:MaterialButton text="Enter" ui:field="sharedZAxisEnter"/>
-			<m:MaterialButton text="Exit" ui:field="sharedZAxisExit"/>
-		</m:MaterialPanel>
-
-		<!-- Shared Y Axis -->
-		<m:MaterialPanel>
-			<demo:MotionDemo ui:field="sharedAxisY" title="Y-Position" description="UI elements that do not have a strong relationship"
-							 sourceUrl="https://i.imgur.com/dY3AiMG.png" targetUrl="https://i.imgur.com/HnmiKLt.png" headerUrl="https://i.imgur.com/t0okRcI.png"/>
-			<m:MaterialButton text="Enter" ui:field="sharedYAxisEnter"/>
-			<m:MaterialButton text="Exit" ui:field="sharedYAxisExit"/>
-		</m:MaterialPanel>
-
-		<!-- Shared X Axis -->
-		<m:MaterialPanel>
-			<demo:MotionDemo ui:field="sharedAxisX" title="X-Position" description="UI elements that do not have a strong relationship"
-							 sourceUrl="https://i.imgur.com/NM4t8GN.png" targetUrl="https://i.imgur.com/KJSrLmE.png" headerUrl="https://i.imgur.com/t0okRcI.png"/>
-			<m:MaterialButton text="Enter" ui:field="sharedXAxisEnter"/>
-			<m:MaterialButton text="Exit" ui:field="sharedXAxisExit"/>
-		</m:MaterialPanel>
 
 		<!-- Fade Through -->
 		<m:MaterialPanel>
@@ -54,6 +31,30 @@
 							 sourceUrl="https://i.imgur.com/dY3AiMG.png" targetUrl="https://i.imgur.com/HnmiKLt.png" headerUrl="https://i.imgur.com/t0okRcI.png"/>
 			<m:MaterialButton text="Enter" ui:field="fadeThroughEnter"/>
 			<m:MaterialButton text="Exit" ui:field="fadeThroughExit"/>
+		</m:MaterialPanel>
+
+		<!-- Shared Z Axis -->
+		<m:MaterialPanel>
+			<demo:MotionDemo ui:field="sharedAxisZ" title="Z-Position" description="UI elements that do not have a strong relationship"
+							 sourceUrl="https://i.imgur.com/cE6HYtb.png" targetUrl="https://i.imgur.com/bbLDVuY.png" headerUrl="https://i.imgur.com/t0okRcI.png"/>
+			<m:MaterialButton text="Backward" ui:field="sharedZAxisExit"/>
+			<m:MaterialButton text="Forward" ui:field="sharedZAxisEnter"/>
+		</m:MaterialPanel>
+
+		<!-- Shared Y Axis -->
+		<m:MaterialPanel>
+			<demo:MotionDemo ui:field="sharedAxisY" title="Y-Position" description="UI elements that do not have a strong relationship"
+							 sourceUrl="https://i.imgur.com/dY3AiMG.png" targetUrl="https://i.imgur.com/HnmiKLt.png" headerUrl="https://i.imgur.com/t0okRcI.png"/>
+			<m:MaterialButton text="Backward" ui:field="sharedYAxisExit"/>
+			<m:MaterialButton text="Forward" ui:field="sharedYAxisEnter"/>
+		</m:MaterialPanel>
+
+		<!-- Shared X Axis -->
+		<m:MaterialPanel>
+			<demo:MotionDemo ui:field="sharedAxisX" title="X-Position" description="UI elements that do not have a strong relationship"
+							 sourceUrl="https://i.imgur.com/NM4t8GN.png" targetUrl="https://i.imgur.com/KJSrLmE.png" headerUrl="https://i.imgur.com/t0okRcI.png"/>
+			<m:MaterialButton text="Backward" ui:field="sharedXAxisExit"/>
+			<m:MaterialButton text="Forward" ui:field="sharedXAxisEnter"/>
 		</m:MaterialPanel>
 
 		<!-- Fade -->

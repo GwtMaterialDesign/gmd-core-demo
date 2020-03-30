@@ -32,6 +32,7 @@ import gmd.core.demo.client.application.navigation.Dashboard;
 import gmd.core.demo.client.application.navigation.DashboardService;
 import gmd.core.demo.client.place.NameTokens;
 import gwt.material.design.client.base.helper.ScrollHelper;
+import gwt.material.design.motion.client.pattern.fadethrough.MaterialFadeThrough;
 
 import java.util.List;
 
@@ -63,5 +64,10 @@ public class HomePresenter extends Presenter<HomePresenter.MyView, HomePresenter
 
         ApplicationView.showHeader(false);
         new ScrollHelper().scrollTo(0);
+    }
+
+    @Override
+    protected void onHide() {
+        super.onHide();
     }
 }
