@@ -324,5 +324,18 @@ void pasteItHere(PasteEvent event) {
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Field Sensitivity" description="This will change all the field to be not visible to any value box widget setting it's input type to password.">
+            <m:MaterialRow>
+                <m:MaterialTextBox ui:field="firstName" label="First Name" grid="s12" toggleReadOnly="true"/>
+            </m:MaterialRow>
+            <m:MaterialCheckBox ui:field="sensitive" text="Sensitive" />
+            <m:MaterialCheckBox ui:field="getSensitiveValue" text="Get Value" />
+            <g:HTMLPanel>
+                <pre class="xml">
+                    firstName.setSensitive(true);
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
     </m:MaterialPanel>
 </ui:UiBinder>
