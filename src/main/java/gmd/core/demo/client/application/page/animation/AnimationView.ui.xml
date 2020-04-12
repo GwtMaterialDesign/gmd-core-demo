@@ -24,20 +24,40 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <m:MaterialPanel>
+        <!-- Global Animation Config -->
+        <widget:CodeSection sectionTitle="AnimationGlobalConfig">
+            <g:HTMLPanel>
+                <pre class="java">
+// Will make all the animations to 4times slower
+// Available options are: FASTEST, FASTER, FAST, NORMAL, SLOW, SLOWER, SLOWEST
+AnimationGlobalConfig.SPEED = AnimationSpeed.SLOWEST
+
+// Will log all the animation properties on the browser's console
+AnimationGlobalConfig.ENABLE_DEBUGGING = true
+
+// Will disable the animation that is present into your application
+AnimationGlobalConfig.ENABLE_ANIMATION = false;
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
         <!-- Core Animation -->
-        <widget:CodeSection sectionTitle="Core Animation">
-            <m:MaterialCard ui:field="card">
-                <m:MaterialCardContent>
-                    <m:MaterialCardTitle textColor="BLACK" text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
-                    <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
-                </m:MaterialCardContent>
-                <m:MaterialCardAction>
-                    <m:MaterialLink text="Link 1" />
-                    <m:MaterialLink text="Link 1" />
-                </m:MaterialCardAction>
-            </m:MaterialCard>
-            <m:MaterialListBox ui:field="lstAnimations" old="true" />
-            <m:MaterialButton ui:field="btnAnimate" text="Animate" marginTop="20"/>
+        <widget:CodeSection sectionTitle="Core Animation" description="Composing of animate.css plus new google motion transitions.">
+            <m:MaterialRow>
+                <m:MaterialColumn grid="s12 m4">
+                    <m:MaterialCard ui:field="card">
+                        <m:MaterialCardContent>
+                            <m:MaterialCardTitle textColor="BLACK" text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
+                            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+                        </m:MaterialCardContent>
+                        <m:MaterialCardAction>
+                            <m:MaterialLink text="Link 1" />
+                            <m:MaterialLink text="Link 1" />
+                        </m:MaterialCardAction>
+                    </m:MaterialCard>
+                    <m:MaterialListBox ui:field="lstAnimations" old="true" />
+                    <m:MaterialButton ui:field="btnAnimate" text="Animate" marginTop="20"/>
+                </m:MaterialColumn>
+            </m:MaterialRow>
             <g:HTMLPanel>
                 <pre class="java">
     MaterialAnimation animation = new MaterialAnimation();
