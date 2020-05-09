@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.GmdCoreDemo;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.8.2";
-var $strongName = '723D378C56EAA729A6B46BC0BFDF3CDE';
+var $strongName = '2AE313127701926173E1CC3FF0FDFC33';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -22,7 +22,7 @@ var $stats = $wnd.__gwtStatsEvent ? function(a) {
 return $wnd.__gwtStatsEvent && $wnd.__gwtStatsEvent(a);
 } : null;
 var $sessionId = $wnd.__gwtStatsSessionId ? $wnd.__gwtStatsSessionId : null;
-var $intern_0 = 2147483647, $intern_1 = 3.141592653589793, $intern_2 = {4:1, 8:1}, $intern_3 = {4:1, 83:1, 50:1, 48:1}, $intern_4 = {217:1}, $intern_5 = 65535, $intern_6 = 1000, $intern_7 = {4:1, 35:1, 8:1}, $intern_8 = {68:1, 38:1, 4:1, 28:1, 22:1}, $intern_9 = {65:1, 38:1, 4:1, 28:1, 22:1}, $intern_10 = {198:1, 38:1, 4:1, 28:1, 22:1}, $intern_11 = {177:1, 38:1, 4:1, 28:1, 22:1}, $intern_12 = {38:1, 178:1, 4:1, 28:1, 22:1}, $intern_13 = {38:1, 179:1, 4:1, 28:1, 22:1}, $intern_14 = {114:1, 4:1, 28:1, 22:1}, $intern_15 = {38:1, 236:1, 4:1, 28:1, 22:1}, $intern_16 = 1525, $intern_17 = {14:1}, $intern_18 = {374:1, 483:1}, $intern_19 = {219:1, 4:1, 83:1, 50:1, 48:1}, $intern_20 = {4:1}, $intern_21 = 1900, $intern_22 = {4:1, 28:1, 101:1}, $intern_23 = -2147483648, $intern_24 = 4194303, $intern_25 = 1048575, $intern_26 = 524288, $intern_27 = 4194304, $intern_28 = 17592186044416, $intern_29 = -17592186044416, $intern_30 = {325:1, 4:1}, $intern_31 = 65536, $intern_32 = 131072, $intern_33 = 1048576, $intern_34 = 16777216, $intern_35 = 33554432, $intern_36 = 67108864, $intern_37 = {225:1}, $intern_38 = {32:1, 14:1, 31:1, 30:1, 20:1, 29:1, 18:1}, $intern_39 = {32:1, 14:1, 31:1, 30:1, 34:1, 20:1, 29:1, 18:1}, $intern_40 = {32:1, 14:1, 31:1, 30:1, 34:1, 373:1, 20:1, 29:1, 18:1}, $intern_41 = {32:1, 14:1, 31:1, 33:1, 30:1, 20:1, 29:1, 18:1}, $intern_42 = {32:1, 14:1, 31:1, 33:1, 58:1, 30:1, 20:1, 29:1, 18:1}, $intern_43 = {32:1, 14:1, 31:1, 30:1, 381:1, 20:1, 29:1, 18:1}, $intern_44 = {32:1, 14:1, 31:1, 322:1, 30:1, 34:1, 20:1, 29:1, 18:1}, $intern_45 = {32:1, 14:1, 31:1, 30:1, 34:1, 20:1, 261:1, 29:1, 18:1}, $intern_46 = {174:1, 10:1}, $intern_47 = {375:1, 10:1}, $intern_48 = {70:1, 10:1}, $intern_49 = {32:1, 14:1, 31:1, 30:1, 34:1, 373:1, 20:1, 237:1, 29:1, 18:1}, $intern_50 = {163:1, 10:1}, $intern_51 = {1499:1, 10:1}, $intern_52 = {180:1, 4:1, 28:1, 22:1}, $intern_53 = {248:1, 306:1}, $intern_54 = {14:1, 20:1, 60:1}, $intern_55 = {20:1}, $intern_56 = {148:1, 10:1}, $intern_57 = {291:1}, $intern_58 = {70:1, 10:1, 14:1, 1492:1}, $intern_59 = 1526, $intern_60 = {14:1, 75:1, 73:1}, $intern_61 = {97:1}, $intern_62 = 4000, $intern_63 = {14:1, 42:1}, $intern_64 = {24:1, 10:1}, $intern_65 = {32:1, 14:1, 31:1, 33:1, 30:1, 34:1, 20:1, 29:1, 18:1, 37:1, 36:1, 23:1}, $intern_66 = {32:1, 14:1, 31:1, 33:1, 30:1, 34:1, 20:1, 29:1, 18:1, 37:1, 36:1, 23:1, 9:1}, $intern_67 = {32:1, 14:1, 31:1, 33:1, 30:1, 34:1, 20:1, 29:1, 18:1, 19:1, 37:1, 36:1, 23:1, 9:1}, $intern_68 = {14:1, 42:1, 75:1, 73:1}, $intern_69 = {376:1, 10:1}, $intern_70 = {1496:1, 10:1}, $intern_71 = {10:1, 1494:1}, $intern_72 = {10:1, 1495:1}, $intern_73 = {185:1, 10:1}, $intern_74 = {233:1, 10:1}, $intern_75 = {292:1, 10:1}, $intern_76 = 1000.25, $intern_77 = 9999.9, $intern_78 = {32:1, 14:1, 31:1, 33:1, 58:1, 30:1, 34:1, 20:1, 29:1, 18:1, 59:1, 37:1, 64:1, 36:1, 23:1, 103:1}, $intern_79 = {32:1, 14:1, 31:1, 33:1, 58:1, 30:1, 34:1, 20:1, 29:1, 18:1, 59:1, 107:1, 121:1, 37:1, 64:1, 36:1, 23:1, 103:1}, $intern_80 = {260:1, 10:1}, $intern_81 = {80:1, 97:1}, $intern_82 = {32:1, 14:1, 31:1, 33:1, 58:1, 30:1, 34:1, 20:1, 29:1, 18:1, 59:1, 107:1, 121:1, 37:1, 64:1, 36:1, 23:1, 103:1, 119:1}, $intern_83 = {10:1, 1498:1}, $intern_84 = {32:1, 14:1, 31:1, 33:1, 58:1, 30:1, 34:1, 20:1, 29:1, 18:1, 164:1, 37:1, 36:1, 23:1, 66:1}, $intern_85 = {32:1, 14:1, 31:1, 33:1, 58:1, 30:1, 34:1, 20:1, 29:1, 18:1, 164:1, 175:1, 37:1, 36:1, 23:1}, $intern_86 = {32:1, 14:1, 31:1, 33:1, 30:1, 34:1, 20:1, 29:1, 18:1, 293:1, 37:1, 36:1, 23:1}, $intern_87 = {32:1, 14:1, 31:1, 33:1, 58:1, 30:1, 34:1, 20:1, 29:1, 18:1, 37:1, 36:1, 23:1}, $intern_88 = {377:1, 10:1}, $intern_89 = {378:1, 10:1}, $intern_90 = {485:1, 10:1}, $intern_91 = {32:1, 14:1, 31:1, 33:1, 30:1, 34:1, 20:1, 29:1, 18:1, 37:1, 36:1, 23:1, 124:1}, $intern_92 = {10:1, 1500:1}, $intern_93 = {10:1, 1501:1}, $intern_94 = {32:1, 14:1, 31:1, 33:1, 30:1, 34:1, 20:1, 29:1, 18:1, 37:1, 36:1, 23:1, 40:1}, $intern_95 = {4:1, 83:1, 113:1, 50:1, 48:1}, $intern_96 = 1521, $intern_97 = {118:1, 172:1}, $intern_98 = {118:1, 136:1}, $intern_99 = {4:1, 118:1, 136:1}, $intern_100 = {4:1, 118:1, 172:1}, $intern_101 = {4:1, 194:1}, $intern_102 = {4:1, 28:1, 22:1, 188:1}, $intern_103 = {4:1, 8:1, 1489:1};
+var $intern_0 = 2147483647, $intern_1 = 3.141592653589793, $intern_2 = {4:1, 8:1}, $intern_3 = {4:1, 83:1, 50:1, 48:1}, $intern_4 = {217:1}, $intern_5 = 65535, $intern_6 = 1000, $intern_7 = {4:1, 35:1, 8:1}, $intern_8 = {68:1, 38:1, 4:1, 28:1, 22:1}, $intern_9 = {65:1, 38:1, 4:1, 28:1, 22:1}, $intern_10 = {198:1, 38:1, 4:1, 28:1, 22:1}, $intern_11 = {177:1, 38:1, 4:1, 28:1, 22:1}, $intern_12 = {38:1, 178:1, 4:1, 28:1, 22:1}, $intern_13 = {38:1, 179:1, 4:1, 28:1, 22:1}, $intern_14 = {114:1, 4:1, 28:1, 22:1}, $intern_15 = {38:1, 236:1, 4:1, 28:1, 22:1}, $intern_16 = 1525, $intern_17 = {14:1}, $intern_18 = {374:1, 483:1}, $intern_19 = {219:1, 4:1, 83:1, 50:1, 48:1}, $intern_20 = {4:1}, $intern_21 = 1900, $intern_22 = {4:1, 28:1, 101:1}, $intern_23 = -2147483648, $intern_24 = 4194303, $intern_25 = 1048575, $intern_26 = 524288, $intern_27 = 4194304, $intern_28 = 17592186044416, $intern_29 = -17592186044416, $intern_30 = {325:1, 4:1}, $intern_31 = 65536, $intern_32 = 131072, $intern_33 = 1048576, $intern_34 = 16777216, $intern_35 = 33554432, $intern_36 = 67108864, $intern_37 = {225:1}, $intern_38 = {32:1, 14:1, 31:1, 30:1, 20:1, 29:1, 18:1}, $intern_39 = {32:1, 14:1, 31:1, 30:1, 34:1, 20:1, 29:1, 18:1}, $intern_40 = {32:1, 14:1, 31:1, 30:1, 34:1, 373:1, 20:1, 29:1, 18:1}, $intern_41 = {32:1, 14:1, 31:1, 33:1, 30:1, 20:1, 29:1, 18:1}, $intern_42 = {32:1, 14:1, 31:1, 33:1, 58:1, 30:1, 20:1, 29:1, 18:1}, $intern_43 = {32:1, 14:1, 31:1, 30:1, 381:1, 20:1, 29:1, 18:1}, $intern_44 = {32:1, 14:1, 31:1, 322:1, 30:1, 34:1, 20:1, 29:1, 18:1}, $intern_45 = {32:1, 14:1, 31:1, 30:1, 34:1, 20:1, 261:1, 29:1, 18:1}, $intern_46 = {174:1, 10:1}, $intern_47 = {375:1, 10:1}, $intern_48 = {70:1, 10:1}, $intern_49 = {32:1, 14:1, 31:1, 30:1, 34:1, 373:1, 20:1, 237:1, 29:1, 18:1}, $intern_50 = {163:1, 10:1}, $intern_51 = {1499:1, 10:1}, $intern_52 = {180:1, 4:1, 28:1, 22:1}, $intern_53 = {248:1, 306:1}, $intern_54 = {14:1, 20:1, 60:1}, $intern_55 = {20:1}, $intern_56 = {148:1, 10:1}, $intern_57 = {291:1}, $intern_58 = {70:1, 10:1, 14:1, 1492:1}, $intern_59 = 1526, $intern_60 = {14:1, 75:1, 73:1}, $intern_61 = {97:1}, $intern_62 = 4000, $intern_63 = {14:1, 42:1}, $intern_64 = {24:1, 10:1}, $intern_65 = {32:1, 14:1, 31:1, 33:1, 30:1, 34:1, 20:1, 29:1, 18:1, 37:1, 36:1, 23:1}, $intern_66 = {32:1, 14:1, 31:1, 33:1, 30:1, 34:1, 20:1, 29:1, 18:1, 37:1, 36:1, 23:1, 9:1}, $intern_67 = {32:1, 14:1, 31:1, 33:1, 30:1, 34:1, 20:1, 29:1, 18:1, 19:1, 37:1, 36:1, 23:1, 9:1}, $intern_68 = {14:1, 42:1, 75:1, 73:1}, $intern_69 = {376:1, 10:1}, $intern_70 = {1496:1, 10:1}, $intern_71 = {10:1, 1494:1}, $intern_72 = {10:1, 1495:1}, $intern_73 = {185:1, 10:1}, $intern_74 = {233:1, 10:1}, $intern_75 = {292:1, 10:1}, $intern_76 = 1000.25, $intern_77 = 9999.9, $intern_78 = {32:1, 14:1, 31:1, 33:1, 58:1, 30:1, 34:1, 20:1, 29:1, 18:1, 59:1, 37:1, 64:1, 36:1, 23:1, 103:1}, $intern_79 = {32:1, 14:1, 31:1, 33:1, 58:1, 30:1, 34:1, 20:1, 29:1, 18:1, 59:1, 107:1, 121:1, 37:1, 64:1, 36:1, 23:1, 103:1}, $intern_80 = {260:1, 10:1}, $intern_81 = {80:1, 97:1}, $intern_82 = {32:1, 14:1, 31:1, 33:1, 58:1, 30:1, 34:1, 20:1, 29:1, 18:1, 59:1, 107:1, 121:1, 37:1, 64:1, 36:1, 23:1, 103:1, 119:1}, $intern_83 = {10:1, 1498:1}, $intern_84 = {32:1, 14:1, 31:1, 33:1, 58:1, 30:1, 34:1, 20:1, 29:1, 18:1, 164:1, 37:1, 36:1, 23:1, 66:1}, $intern_85 = {32:1, 14:1, 31:1, 33:1, 58:1, 30:1, 34:1, 20:1, 29:1, 18:1, 164:1, 175:1, 37:1, 36:1, 23:1}, $intern_86 = {32:1, 14:1, 31:1, 33:1, 30:1, 34:1, 20:1, 29:1, 18:1, 293:1, 37:1, 36:1, 23:1}, $intern_87 = {32:1, 14:1, 31:1, 33:1, 58:1, 30:1, 34:1, 20:1, 29:1, 18:1, 37:1, 36:1, 23:1}, $intern_88 = {377:1, 10:1}, $intern_89 = {378:1, 10:1}, $intern_90 = {485:1, 10:1}, $intern_91 = {32:1, 14:1, 31:1, 33:1, 30:1, 34:1, 20:1, 29:1, 18:1, 37:1, 36:1, 23:1, 124:1}, $intern_92 = {10:1, 1500:1}, $intern_93 = {10:1, 1501:1}, $intern_94 = {32:1, 14:1, 31:1, 33:1, 30:1, 34:1, 20:1, 29:1, 18:1, 37:1, 36:1, 23:1, 40:1}, $intern_95 = {4:1, 83:1, 113:1, 50:1, 48:1}, $intern_96 = 1521, $intern_97 = {118:1, 172:1}, $intern_98 = {118:1, 137:1}, $intern_99 = {4:1, 118:1, 137:1}, $intern_100 = {4:1, 118:1, 172:1}, $intern_101 = {4:1, 194:1}, $intern_102 = {4:1, 28:1, 22:1, 188:1}, $intern_103 = {4:1, 8:1, 1489:1};
 var _, prototypesByTypeId_0, initFnList_0, permutationId = -1;
 function create_com_google_gwt_user_client_ui_impl_PopupImpl(){
   if (permutationId == 0) {
@@ -1013,12 +1013,12 @@ function PrimitiveValueAttribute(name_0){
   Attribute.call(this, name_0);
 }
 
-defineClass(135, 481, {}, PrimitiveValueAttribute);
+defineClass(136, 481, {}, PrimitiveValueAttribute);
 _.getSingleValue = function getSingleValue_0(value_0){
   return value_0 == null?'null':toString_10(value_0);
 }
 ;
-var Lcom_google_gwt_aria_client_PrimitiveValueAttribute_2_classLit = createForClass('com.google.gwt.aria.client', 'PrimitiveValueAttribute', 135, Lcom_google_gwt_aria_client_Attribute_2_classLit);
+var Lcom_google_gwt_aria_client_PrimitiveValueAttribute_2_classLit = createForClass('com.google.gwt.aria.client', 'PrimitiveValueAttribute', 136, Lcom_google_gwt_aria_client_Attribute_2_classLit);
 function ProgressbarRoleImpl(){
   RoleImpl.call(this, 'progressbar');
 }
@@ -3962,7 +3962,7 @@ function $setRelativeElement(this$static, relativeElem){
 function fireNativeEvent(nativeEvent, handlerSource, relativeElem){
   var currentNative, currentRelativeElem, type_0, type$iterator, types;
   if (registered) {
-    types = castTo($unsafeGet(registered, ($clinit_DOMImpl() , nativeEvent).type), 136);
+    types = castTo($unsafeGet(registered, ($clinit_DOMImpl() , nativeEvent).type), 137);
     if (types) {
       for (type$iterator = types.iterator(); type$iterator.hasNext_0();) {
         type_0 = castTo(type$iterator.next_1(), 123);
@@ -4069,7 +4069,7 @@ function DomEvent$Type(eventName, flyweight){
   GwtEvent$Type.call(this);
   this.flyweight = flyweight;
   !registered && (registered = new PrivateMap);
-  types = castTo($unsafeGet(registered, eventName), 136);
+  types = castTo($unsafeGet(registered, eventName), 137);
   if (!types) {
     types = new ArrayList;
     $unsafePut(registered, eventName, types);
@@ -4651,7 +4651,7 @@ function $doRemoveNow(this$static, type_0, source, handler){
   var l, removed, sourceMap;
   l = $getHandlerList(this$static, type_0, source);
   removed = l.remove_1(handler);
-  removed && l.isEmpty() && (sourceMap = castTo($get_3(this$static.map_0, type_0), 194) , castTo(sourceMap.remove_3(source), 136) , sourceMap.isEmpty() && $remove_7(this$static.map_0, type_0) , undefined);
+  removed && l.isEmpty() && (sourceMap = castTo($get_3(this$static.map_0, type_0), 194) , castTo(sourceMap.remove_3(source), 137) , sourceMap.isEmpty() && $remove_7(this$static.map_0, type_0) , undefined);
 }
 
 function $ensureHandlerList(this$static, type_0, source){
@@ -4661,7 +4661,7 @@ function $ensureHandlerList(this$static, type_0, source){
     sourceMap = new HashMap;
     $put(this$static.map_0, type_0, sourceMap);
   }
-  handlers = castTo(sourceMap.get_1(source), 136);
+  handlers = castTo(sourceMap.get_1(source), 137);
   if (!handlers) {
     handlers = new ArrayList;
     sourceMap.put(source, handlers);
@@ -4687,7 +4687,7 @@ function $getHandlerList(this$static, type_0, source){
   if (!sourceMap) {
     return $clinit_Collections() , $clinit_Collections() , EMPTY_LIST;
   }
-  handlers = castTo(sourceMap.get_1(source), 136);
+  handlers = castTo(sourceMap.get_1(source), 137);
   if (!handlers) {
     return $clinit_Collections() , $clinit_Collections() , EMPTY_LIST;
   }
@@ -9907,7 +9907,7 @@ var Lcom_google_gwt_user_client_ui_SuggestOracle_2_classLit = createForClass('co
 function $add_6(this$static, suggestion){
   var candidate, i, l, realSuggestions, word, words;
   candidate = $normalizeSuggestion(this$static, suggestion);
-  realSuggestions = castTo($getStringValue(this$static.toRealSuggestions, candidate), 136);
+  realSuggestions = castTo($getStringValue(this$static.toRealSuggestions, candidate), 137);
   if (!realSuggestions) {
     realSuggestions = new ArrayList;
     $putStringValue(this$static.toRealSuggestions, candidate, realSuggestions);
@@ -9931,7 +9931,7 @@ function $convertToFormattedSuggestions(this$static, query, candidates){
   suggestions = new ArrayList;
   for (i = 0; i < candidates.array.length; i++) {
     candidate = (checkCriticalElementIndex(i, candidates.array.length) , castToString(candidates.array[i]));
-    realSuggestions = castTo($getStringValue(this$static.toRealSuggestions, candidate), 136);
+    realSuggestions = castTo($getStringValue(this$static.toRealSuggestions, candidate), 137);
     realSuggestionsSet = new TreeSet;
     $add_31(realSuggestionsSet, castToString(realSuggestions.get_2(0)));
     realSuggestionsIterator = (entryIterator = new TreeMap$EntryIterator((new TreeMap$EntrySet((new AbstractNavigableMap$NavigableKeySet(realSuggestionsSet.map_0)).map_0)).this$01_0) , new AbstractNavigableMap$NavigableKeySet$1(entryIterator));
@@ -12079,7 +12079,7 @@ function $addToSlot_0(this$static, slot, content_0){
   var index_0, insertPanel, list;
   if ($containsKey(this$static.hasWidgetSlots, slot)) {
     if ($containsKey(this$static.orderedSlots, slot)) {
-      list = castTo($get_3(this$static.orderedSlots, slot), 136);
+      list = castTo($get_3(this$static.orderedSlots, slot), 137);
       list.add_1(throwClassCastExceptionUnlessNull(content_0));
       $clinit_Collections();
       list.sort_0(null);
@@ -12139,8 +12139,8 @@ _.setInSlot = function setInSlot(slot, content_0){
     castTo($get_3(this.hasWidgetSlots, slot), 34).clear_0();
     !!content_0 && castTo($get_3(this.hasWidgetSlots, slot), 34).add_0(content_0.view.asWidget());
     if ($containsKey(this.orderedSlots, slot)) {
-      castTo($get_3(this.orderedSlots, slot), 136).clear_0();
-      !!content_0 && castTo($get_3(this.orderedSlots, slot), 136).add_1(throwClassCastExceptionUnlessNull(content_0));
+      castTo($get_3(this.orderedSlots, slot), 137).clear_0();
+      !!content_0 && castTo($get_3(this.orderedSlots, slot), 137).add_1(throwClassCastExceptionUnlessNull(content_0));
     }
   }
 }
@@ -14278,8 +14278,8 @@ function DemoImageDTO(title_0, description, url_0, demo, source){
   this.source = source;
 }
 
-defineClass(131, 1, {}, DemoImageDTO);
-var Lgmd_core_demo_client_application_model_DemoImageDTO_2_classLit = createForClass('gmd.core.demo.client.application.model', 'DemoImageDTO', 131, Ljava_lang_Object_2_classLit);
+defineClass(132, 1, {}, DemoImageDTO);
+var Lgmd_core_demo_client_application_model_DemoImageDTO_2_classLit = createForClass('gmd.core.demo.client.application.model', 'DemoImageDTO', 132, Ljava_lang_Object_2_classLit);
 function $add_9(this$static, child){
   $add_1(this$static, child, ($clinit_DOM() , this$static.element));
 }
@@ -14792,8 +14792,8 @@ function DemoImagePanel(dto){
   $setTarget(this.demo);
 }
 
-defineClass(130, 19, $intern_67, DemoImagePanel);
-var Lgmd_core_demo_client_application_model_DemoImagePanel_2_classLit = createForClass('gmd.core.demo.client.application.model', 'DemoImagePanel', 130, Lgmd_core_demo_client_application_widget_CodeSection_2_classLit);
+defineClass(131, 19, $intern_67, DemoImagePanel);
+var Lgmd_core_demo_client_application_model_DemoImagePanel_2_classLit = createForClass('gmd.core.demo.client.application.model', 'DemoImagePanel', 131, Lgmd_core_demo_client_application_widget_CodeSection_2_classLit);
 function $clinit_FieldState(){
   $clinit_FieldState = emptyMethod;
   DEFAULT_1 = new FieldState('DEFAULT', 0, '');
@@ -14840,8 +14840,8 @@ function Hero(imgProfile, name_0, description){
   this.description = description;
 }
 
-defineClass(129, 200, {129:1, 200:1, 4:1}, Hero);
-var Lgmd_core_demo_client_application_model_Hero_2_classLit = createForClass('gmd.core.demo.client.application.model', 'Hero', 129, Lgwt_material_design_client_base_SearchObject_2_classLit);
+defineClass(130, 200, {130:1, 200:1, 4:1}, Hero);
+var Lgmd_core_demo_client_application_model_Hero_2_classLit = createForClass('gmd.core.demo.client.application.model', 'Hero', 130, Lgwt_material_design_client_base_SearchObject_2_classLit);
 function User(name_0){
   this.name_0 = name_0;
 }
@@ -14938,8 +14938,8 @@ function Dashboard_1(title_0, url_0, image){
   this.image = image;
 }
 
-defineClass(139, 1, {}, Dashboard, Dashboard_0, Dashboard_1);
-var Lgmd_core_demo_client_application_navigation_Dashboard_2_classLit = createForClass('gmd.core.demo.client.application.navigation', 'Dashboard', 139, Ljava_lang_Object_2_classLit);
+defineClass(129, 1, {}, Dashboard, Dashboard_0, Dashboard_1);
+var Lgmd_core_demo_client_application_navigation_Dashboard_2_classLit = createForClass('gmd.core.demo.client.application.navigation', 'Dashboard', 129, Ljava_lang_Object_2_classLit);
 function getAllDateLanguage(){
   var dpLanguages;
   dpLanguages = new ArrayList;
@@ -18601,7 +18601,7 @@ defineClass(582, 268, $intern_54, HomePresenter);
 _.onBind = function onBind_3(){
   var dashboards, dashboards_0;
   $buildDashboards(castTo(this.view, 1490), (dashboards = new ArrayList , $add_28(dashboards, new Dashboard_0('Core', '#button', 'images/gmd-logo.webp')) , $add_28(dashboards, new Dashboard_1('Addins', 'https://gwtmaterialdesign.github.io/gmd-addins-demo/', 'images/addins-logo.webp')) , $add_28(dashboards, new Dashboard_1('DataTable', 'https://gwtmaterialdesign.github.io/gmd-table-demo/', 'images/datatable-logo.webp')) , $add_28(dashboards, new Dashboard_0('AmCharts', 'https://gwtmaterialdesign.github.io/gmd-amcharts4-demo/', 'images/charts-logo.webp')) , dashboards));
-  $buildVideos(castTo(this.view, 1490), (dashboards_0 = new ArrayList , $add_28(dashboards_0, new Dashboard('https://www.youtube.com/watch?v=sEVqfqDUOpE', 'https://i9.ytimg.com/vi/sEVqfqDUOpE/hqdefault.jpg?time=1588974754911&sqp=CIio1_UF&rs=AOn4CLDntwRiXWbYdOhbijWYOElMderoWg')) , $add_28(dashboards_0, new Dashboard('https://www.youtube.com/watch?v=e-XY4EGVIuc', 'https://i9.ytimg.com/vi/e-XY4EGVIuc/hqdefault.jpg?time=1588974768597&sqp=CIio1_UF&rs=AOn4CLBFLZ2-8erGPSLVSC9qxcIOlQHl-Q')) , $add_28(dashboards_0, new Dashboard('https://www.youtube.com/watch?v=79owqV8PPhQ', 'https://i9.ytimg.com/vi/79owqV8PPhQ/hqdefault.jpg?time=1588974793863&sqp=CIio1_UF&rs=AOn4CLCJ89ogIwHw6LP_xtjFcZUNC__Wkw')) , $add_28(dashboards_0, new Dashboard('https://www.youtube.com/watch?v=Ishwhsy95GA', 'https://i9.ytimg.com/vi/Ishwhsy95GA/hqdefault.jpg?time=1588974814084&sqp=CIio1_UF&rs=AOn4CLDBy1dGm1UFFYL7YqB9Kr2k3x39Fg')) , $add_28(dashboards_0, new Dashboard('https://www.youtube.com/watch?v=UXVf9-OntGI', 'https://i9.ytimg.com/vi/UXVf9-OntGI/hqdefault.jpg?time=1588974829109&sqp=CIio1_UF&rs=AOn4CLDDJcX8Qu5DP38AEBueCZGKCRpp2Q')) , $add_28(dashboards_0, new Dashboard('https://www.youtube.com/watch?v=snVp1blqzAk', 'https://i9.ytimg.com/vi/snVp1blqzAk/hqdefault.jpg?time=1588974594984&sqp=CNyl1_UF&rs=AOn4CLAmWWUKoKXGjoncgaaZ0jejtsf3jQ')) , $add_28(dashboards_0, new Dashboard('https://www.youtube.com/watch?v=ABzcNAzERf4', 'https://i9.ytimg.com/vi/ABzcNAzERf4/hqdefault.jpg?time=1588974848729&sqp=CIio1_UF&rs=AOn4CLB4cXErvknT40xI3tlzWQ-zVr_AxQ')) , $add_28(dashboards_0, new Dashboard('https://www.youtube.com/watch?v=RULFd9mLZEI', 'https://i9.ytimg.com/vi/RULFd9mLZEI/hqdefault.jpg?time=1588974912520&sqp=CLSq1_UF&rs=AOn4CLBL0c_Pdf5v3lefXo7qjF0N94QVhg')) , $add_28(dashboards_0, new Dashboard('https://www.youtube.com/watch?v=nbhhGDBtcCs', 'https://i9.ytimg.com/vi/nbhhGDBtcCs/hqdefault.jpg?time=1588974944220&sqp=CLSq1_UF&rs=AOn4CLBirt6SlyA2eLP2iXHDeJruJxwk2g')) , $add_28(dashboards_0, new Dashboard('https://www.youtube.com/watch?v=FuMt4Q0xuPE', 'https://i9.ytimg.com/vi/FuMt4Q0xuPE/hqdefault.jpg?time=1588974970661&sqp=CLSq1_UF&rs=AOn4CLDc0HAIUxNsbfFGuBjAwhN1CgWa3g')) , $add_28(dashboards_0, new Dashboard('https://www.youtube.com/watch?v=lHHbk5ICuoo', 'https://i9.ytimg.com/vi/lHHbk5ICuoo/hqdefault.jpg?time=1588975007701&sqp=CLSq1_UF&rs=AOn4CLA9XMdXU7znKwbTLp08OMK_wqD0ow')) , $add_28(dashboards_0, new Dashboard('https://www.youtube.com/watch?v=npYq9tb7lB8', 'https://i9.ytimg.com/vi/npYq9tb7lB8/hqdefault.jpg?time=1588975028390&sqp=CLSq1_UF&rs=AOn4CLDYunnpdIxj0YMFaeQ-bSp1gYitQw')) , dashboards_0));
+  $buildVideos(castTo(this.view, 1490), (dashboards_0 = new ArrayList , $add_28(dashboards_0, new Dashboard('https://www.youtube.com/watch?v=sEVqfqDUOpE', 'images/setup-banner.png')) , $add_28(dashboards_0, new Dashboard('https://www.youtube.com/watch?v=e-XY4EGVIuc', 'images/build-banner.png')) , $add_28(dashboards_0, new Dashboard('https://www.youtube.com/watch?v=79owqV8PPhQ', 'images/style-banner.png')) , $add_28(dashboards_0, new Dashboard('https://www.youtube.com/watch?v=Ishwhsy95GA', 'images/animations-banner.png')) , $add_28(dashboards_0, new Dashboard('https://www.youtube.com/watch?v=UXVf9-OntGI', 'images/snapshots-banner.png')) , $add_28(dashboards_0, new Dashboard('https://www.youtube.com/watch?v=eFjqrxFIQvI', 'images/jquery-banner.png')) , $add_28(dashboards_0, new Dashboard('https://www.youtube.com/watch?v=snVp1blqzAk', 'images/dark.jpg')) , $add_28(dashboards_0, new Dashboard('https://www.youtube.com/watch?v=ABzcNAzERf4', 'images/badge.jpg')) , $add_28(dashboards_0, new Dashboard('https://www.youtube.com/watch?v=RULFd9mLZEI', 'images/button.jpg')) , $add_28(dashboards_0, new Dashboard('https://www.youtube.com/watch?v=nbhhGDBtcCs', 'images/breadcrumb.jpg')) , $add_28(dashboards_0, new Dashboard('https://www.youtube.com/watch?v=FuMt4Q0xuPE', 'images/card.jpg')) , $add_28(dashboards_0, new Dashboard('https://www.youtube.com/watch?v=lHHbk5ICuoo', 'images/checkbox.jpg')) , $add_28(dashboards_0, new Dashboard('https://www.youtube.com/watch?v=npYq9tb7lB8', 'images/chips.jpg')) , dashboards_0));
 }
 ;
 _.onReveal = function onReveal_2(){
@@ -19329,7 +19329,7 @@ function $buildListHeroes(listBox){
   var hero, hero$iterator;
   $addHandler_1(listBox, new ListBoxView$lambda$5$Type, (!TYPE_20 && (TYPE_20 = new GwtEvent$Type) , TYPE_20));
   for (hero$iterator = new ArrayList$1(getAllHeroes()); hero$iterator.i < hero$iterator.this$01.array.length;) {
-    hero = castTo($next_5(hero$iterator), 129);
+    hero = castTo($next_5(hero$iterator), 130);
     $addItem_3(listBox, hero, hero.name_0);
   }
 }
@@ -19416,7 +19416,7 @@ function ListBoxView$lambda$5$Type(){
 
 defineClass(749, 1, $intern_48, ListBoxView$lambda$5$Type);
 _.onValueChange = function onValueChange_12(arg0){
-  fireToast('VALUE [ ' + castTo(arg0.value_0, 129).name_0 + ' ]');
+  fireToast('VALUE [ ' + castTo(arg0.value_0, 130).name_0 + ' ]');
 }
 ;
 var Lgmd_core_demo_client_application_page_listbox_ListBoxView$lambda$5$Type_2_classLit = createForClass('gmd.core.demo.client.application.page.listbox', 'ListBoxView/lambda$5$Type', 749, Ljava_lang_Object_2_classLit);
@@ -20777,7 +20777,7 @@ function $lambda$1_3(this$static){
 
 function $lambda$2_2(this$static){
   var hero;
-  hero = castTo(this$static.txtSearch.selectedObject, 129);
+  hero = castTo(this$static.txtSearch.selectedObject, 130);
   $animate_0($transition(new MaterialAnimation, ($clinit_Transition() , ZOOMIN)), this$static.imgHero, null);
   $setValue_7(this$static.imgHero, hero.imageUrl, true);
   $setValue_12(this$static.lblName, hero.name_0, true);
@@ -20793,7 +20793,7 @@ function SearchView(){
   $addHandler_1(this.txtSearch, new MaterialSearch$0methodref$onClose$Type(new SearchView$lambda$1$Type(this)), TYPE_16?TYPE_16:(TYPE_16 = new GwtEvent$Type));
   objects = new ArrayList;
   for (hero$iterator = new ArrayList$1(getAllHeroes()); hero$iterator.i < hero$iterator.this$01.array.length;) {
-    hero = castTo($next_5(hero$iterator), 129);
+    hero = castTo($next_5(hero$iterator), 130);
     objects.array[objects.array.length] = hero;
   }
   $setListSearches(this.txtSearch, objects);
@@ -26049,8 +26049,8 @@ function CssTypeMixin_0(widget, target){
   this.target_0 = target;
 }
 
-defineClass(132, 69, {}, CssTypeMixin, CssTypeMixin_0);
-var Lgwt_material_design_client_base_mixin_CssTypeMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'CssTypeMixin', 132, Lgwt_material_design_client_base_mixin_AbstractMixin_2_classLit);
+defineClass(133, 69, {}, CssTypeMixin, CssTypeMixin_0);
+var Lgwt_material_design_client_base_mixin_CssTypeMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'CssTypeMixin', 133, Lgwt_material_design_client_base_mixin_AbstractMixin_2_classLit);
 function $applyEnabled(enabled, obj){
   if (enabled) {
     setStyleName(obj.getStyleElement(), 'disabled', false);
@@ -28178,14 +28178,14 @@ function Flex(enum$name, enum$ordinal, grow, shrink, basis){
 
 function values_32(){
   $clinit_Flex();
-  return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_client_constants_Flex_2_classLit, 1), $intern_7, 134, 0, [INITIAL_1, NONE_2, AUTO_1, ONE_0, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, ELEVEN, TWELVE]);
+  return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_client_constants_Flex_2_classLit, 1), $intern_7, 135, 0, [INITIAL_1, NONE_2, AUTO_1, ONE_0, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, ELEVEN, TWELVE]);
 }
 
-defineClass(134, 22, {134:1, 4:1, 28:1, 22:1}, Flex);
+defineClass(135, 22, {135:1, 4:1, 28:1, 22:1}, Flex);
 _.grow = 0;
 _.shrink = 0;
 var AUTO_1, EIGHT, ELEVEN, FIVE, FOUR, INITIAL_1, NINE, NONE_2, ONE_0, SEVEN, SIX, TEN, THREE, TWELVE, TWO;
-var Lgwt_material_design_client_constants_Flex_2_classLit = createForEnum('gwt.material.design.client.constants', 'Flex', 134, Ljava_lang_Enum_2_classLit, values_32);
+var Lgwt_material_design_client_constants_Flex_2_classLit = createForEnum('gwt.material.design.client.constants', 'Flex', 135, Ljava_lang_Enum_2_classLit, values_32);
 function $clinit_HeadingSize(){
   $clinit_HeadingSize = emptyMethod;
   H1 = new HeadingSize('H1', 0, 'h1');
@@ -31196,7 +31196,7 @@ function applyUnload(object){
 
 function getWidgetThemes(clazz, widgetThemes){
   var cachedThemes;
-  cachedThemes = castTo($get_3(themeCache, clazz), 136);
+  cachedThemes = castTo($get_3(themeCache, clazz), 137);
   !!cachedThemes && widgetThemes.addAll(cachedThemes);
   return !!clazz.superclass && clazz.superclass != Lgwt_material_design_client_base_MaterialWidget_2_classLit?getWidgetThemes(clazz.superclass, widgetThemes):widgetThemes;
 }
@@ -35015,8 +35015,8 @@ function MaterialTextBox(){
   $setType(this, ($clinit_InputType() , TEXT_1));
 }
 
-defineClass(138, 119, $intern_82, MaterialTextBox);
-var Lgwt_material_design_client_ui_MaterialTextBox_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialTextBox', 138, Lgwt_material_design_client_ui_MaterialValueBox_2_classLit);
+defineClass(139, 119, $intern_82, MaterialTextBox);
+var Lgwt_material_design_client_ui_MaterialTextBox_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialTextBox', 139, Lgwt_material_design_client_ui_MaterialValueBox_2_classLit);
 function $setValue_18(this$static, value_0, fireEvents){
   $setInnerHTML($getElement(this$static.header), ($clinit_SafeHtmlUtils() , (new SafeHtmlString(htmlEscape(value_0))).html_0));
   fireEvents && fire_5(this$static, value_0);
@@ -35175,7 +35175,7 @@ function MaterialTooltip_0(w){
   $setWidget_3(this, w);
 }
 
-defineClass(133, 1, {322:1, 34:1, 20:1}, MaterialTooltip, MaterialTooltip_0);
+defineClass(134, 1, {322:1, 34:1, 20:1}, MaterialTooltip, MaterialTooltip_0);
 _.add_0 = function add_29(child){
   $add_26(this, child);
 }
@@ -35218,7 +35218,7 @@ _.toString_0 = function toString_19(){
   return $toString_0(this.widget);
 }
 ;
-var Lgwt_material_design_client_ui_MaterialTooltip_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialTooltip', 133, Ljava_lang_Object_2_classLit);
+var Lgwt_material_design_client_ui_MaterialTooltip_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialTooltip', 134, Ljava_lang_Object_2_classLit);
 function $next_2(this$static){
   if (!this$static.hasElement || !this$static.this$01.widget) {
     throw toJs(new NoSuchElementException);
@@ -35342,7 +35342,7 @@ function MaterialValueBox$lambda$33$Type($$outer_0){
   this.$$outer_0 = $$outer_0;
 }
 
-defineClass(137, $wnd.Function, {}, MaterialValueBox$lambda$33$Type);
+defineClass(138, $wnd.Function, {}, MaterialValueBox$lambda$33$Type);
 _.call_1 = function call_70(arg0){
   $call_0(this, arg0);
 }
@@ -36760,10 +36760,10 @@ _.equals_0 = function equals_18(o){
   if (o === this) {
     return true;
   }
-  if (!instanceOf(o, 136)) {
+  if (!instanceOf(o, 137)) {
     return false;
   }
-  other = castTo(o, 136);
+  other = castTo(o, 137);
   if (this.size_1() != other.size_1()) {
     return false;
   }
