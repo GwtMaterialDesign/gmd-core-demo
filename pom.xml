@@ -33,7 +33,7 @@
         <app.id>gmd-core-demo</app.id>
         <app.version>1</app.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <gwt.version>2.8.2</gwt.version>
+        <gwt.version>2.9.0</gwt.version>
         <gwtp.version>1.6</gwtp.version>
         <gin.version>2.1.2</gin.version>
         <gwt-material.version>2.3.0</gwt-material.version>
