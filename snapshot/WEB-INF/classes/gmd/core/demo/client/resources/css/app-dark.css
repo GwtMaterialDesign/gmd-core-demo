@@ -1,0 +1,23 @@
+nav a,
+nav i,
+nav span,
+nav .brand-logo,
+nav .breadcrumb:before {
+    color: #ffffff !important;
+}
+
+.app-header {
+    border-bottom: 1px solid rgb(49, 49, 49) !important;
+}
+
+.app-footer {
+    border-top: 1px solid rgb(49, 49, 49) !important;
+}
+
+.tab-content {
+    background: transparent;
+}
+
+table.striped>tbody>tr:nth-child(odd) {
+    background-color: #232323;
+}
