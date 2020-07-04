@@ -126,13 +126,13 @@
 			<m:MaterialNavBar width="100%">
 				<m:MaterialNavSection hideOn="NONE" float="LEFT">
 					<!-- Nav Sections with Badge components beside the icon if any -->
-					<m:MaterialLink textColor="WHITE" href="#" iconPosition="NONE" iconType="SEARCH"
+					<m:MaterialLink textColor="WHITE" iconPosition="NONE" iconType="SEARCH"
 									layoutPosition="RELATIVE"/>
-					<m:MaterialLink textColor="WHITE" href="#" iconPosition="NONE" iconType="NOTIFICATIONS"
+					<m:MaterialLink textColor="WHITE" iconPosition="NONE" iconType="NOTIFICATIONS"
 									layoutPosition="RELATIVE">
 						<m:MaterialBadge text="2" backgroundColor="PINK" textColor="WHITE" circle="true"/>
 					</m:MaterialLink>
-					<m:MaterialLink textColor="WHITE" href="#" iconPosition="NONE" iconType="BOOKMARK_BORDER"
+					<m:MaterialLink textColor="WHITE" iconPosition="NONE" iconType="BOOKMARK_BORDER"
 									layoutPosition="RELATIVE">
 						<m:MaterialBadge text="21" backgroundColor="PINK" textColor="WHITE" circle="true"/>
 					</m:MaterialLink>
