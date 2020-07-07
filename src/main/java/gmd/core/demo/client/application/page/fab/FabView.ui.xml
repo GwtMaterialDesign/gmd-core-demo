@@ -126,7 +126,7 @@
             </g:HTMLPanel>
         </widget:CodeSection>
         <widget:CodeSection sectionTitle="Events" description="We provided Open and Close Events for FAB">
-            <m:MaterialRow>
+            <m:MaterialRow marginBottom="84">
                 <m:MaterialColumn grid="l6 m6 s12" layoutPosition="RELATIVE" height="80px">
                     <m:MaterialFAB ui:field="btnFABEvent" axis="HORIZONTAL" depth="995" layoutPosition="ABSOLUTE" right="0">
                         <m:MaterialButton type="FLOATING" tooltip="Hover" tooltipPosition="RIGHT" iconType="POLYMER" size="LARGE"/>
