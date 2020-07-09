@@ -9272,6 +9272,9 @@ input[type=range]::-ms-fill-lower {
 .range-field {
   padding-top: 12px; }
 
+.no-thumb .range-field .thumb {
+  display: none; }
+
 input[type=range] {
   border: none;
   color: transparent;
@@ -9473,6 +9476,9 @@ table .gwt-CheckBox label {
 
 .table-container .top-panel {
   background: #42A5F5; }
+
+.tabs .tab a {
+  color: #cbe2f5; }
 
 /**
 * Date Picker - Landscape
