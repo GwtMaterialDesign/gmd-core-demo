@@ -111,14 +111,14 @@
         <widget:CodeSection sectionTitle="Events" description="Adding events on chip is easy, you can get the secondary icon by calling getIcon() then addClickHandles etc.">
             <m:MaterialButton ui:field="closeChip" text="Close Chip" />
             <m:MaterialRow>
-                <m:MaterialChip margin="8" ui:field="chip" url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" iconType="CLOSE"/>
+                <m:MaterialChip margin="8" ui:field="chip" url="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi9lfCkLutb7ugJlIjn84qWNoiICopC-Vyx7QQJRHF5E7GlqFG" text="Yunalis Mat Zara'ai" iconType="CLOSE"/>
                 <m:MaterialChip margin="8" ui:field="chipClick" text="Click Me" />
             </m:MaterialRow>
             <g:HTMLPanel>
                 <pre class="xml">
     &lt;m:MaterialButton ui:field="closeChip" text="Close Chip" />
     &lt;m:MaterialRow>
-        &lt;m:MaterialChip margin="8" ui:field="chip" url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" iconType="CLOSE"/>
+        &lt;m:MaterialChip margin="8" ui:field="chip" url="https://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" iconType="CLOSE"/>
         &lt;m:MaterialChip margin="8" ui:field="chipClick" text="Click Me" />
     &lt;/m:MaterialRow>
                 </pre>

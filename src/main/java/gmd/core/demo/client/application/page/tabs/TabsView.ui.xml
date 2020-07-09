@@ -354,19 +354,17 @@
 
         <widget:CodeSection sectionTitle="Selection Event" description="We have provided a selection event to easily get the selected index.">
             <m:MaterialRow>
-                <m:MaterialColumn grid="s12">
-                    <m:MaterialTab ui:field="tabEvents">
-                        <m:MaterialTabItem waves="YELLOW" grid="s4">
-                            <m:MaterialLink text="Tab 1" href="#tab1" textColor="WHITE"/>
-                        </m:MaterialTabItem>
-                        <m:MaterialTabItem waves="YELLOW" grid="s4">
-                            <m:MaterialLink text="Tab 2" href="#tab2" textColor="WHITE"/>
-                        </m:MaterialTabItem>
-                        <m:MaterialTabItem waves="YELLOW" grid="s4">
-                            <m:MaterialLink text="Tab 3" href="#tab3" textColor="WHITE"/>
-                        </m:MaterialTabItem>
-                    </m:MaterialTab>
-                </m:MaterialColumn>
+                <m:MaterialTab ui:field="tabEvents">
+                    <m:MaterialTabItem waves="YELLOW" grid="s4">
+                        <m:MaterialLink text="Tab 1" href="#tab1" textColor="WHITE"/>
+                    </m:MaterialTabItem>
+                    <m:MaterialTabItem waves="YELLOW" grid="s4">
+                        <m:MaterialLink text="Tab 2" href="#tab2" textColor="WHITE"/>
+                    </m:MaterialTabItem>
+                    <m:MaterialTabItem waves="YELLOW" grid="s4">
+                        <m:MaterialLink text="Tab 3" href="#tab3" textColor="WHITE"/>
+                    </m:MaterialTabItem>
+                </m:MaterialTab>
             </m:MaterialRow>
             <g:HTMLPanel>
                 <pre class="java">

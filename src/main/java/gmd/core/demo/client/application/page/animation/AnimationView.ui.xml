@@ -144,11 +144,11 @@ AnimationGlobalConfig.ENABLE_ANIMATION = false;
 
         <widget:CodeSection sectionTitle="Fade in Image" description="Use this to fade in images. It also animates grayscale and brightness to give it a unique effect.">
             <m:MaterialButton ui:field="btnFade" text="Click Me" waves="LIGHT" />
-            <m:MaterialImage opacity="0" ui:field="image" url="http://www.topofandroid.com/wp-content/uploads/2015/05/Android-L-Material-Design-Wallpapers-5.png"  caption="I love Material Design"/>
+            <m:MaterialImage opacity="0" ui:field="image" url="https://www.topofandroid.com/wp-content/uploads/2015/05/Android-L-Material-Design-Wallpapers-5.png"  caption="I love Material Design"/>
             <g:HTMLPanel>
                 <pre class="xml">
     &lt;m:MaterialButton ui:field="btnFade" text="Click Me" waves="LIGHT" />
-    &lt;m:MaterialImage opacity="0" ui:field="image" url="http://www.topofandroid.com/wp-content/uploads/2015/05/Android-L-Material-Design-Wallpapers-5.png"  caption="I love Material Design"/>
+    &lt;m:MaterialImage opacity="0" ui:field="image" url="https://www.topofandroid.com/wp-content/uploads/2015/05/Android-L-Material-Design-Wallpapers-5.png"  caption="I love Material Design"/>
                 </pre>
             </g:HTMLPanel>
             <g:HTMLPanel>
