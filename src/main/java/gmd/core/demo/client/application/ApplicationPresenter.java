@@ -89,10 +89,6 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
         getView().setupSideNav(NavigationService.getSideNavLinks());
         getView().setupHeader();
         getView().setupSearch();
-
-        // TODO: Turn off later before merging to master.
-        // Load JQuery Migrate Plugin
-        JQueryMigrate.load(true);
     }
 
     @Override
