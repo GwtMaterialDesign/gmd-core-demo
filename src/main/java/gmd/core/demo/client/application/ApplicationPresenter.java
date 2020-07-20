@@ -36,7 +36,6 @@ import gmd.core.demo.client.application.navigation.Component;
 import gmd.core.demo.client.application.navigation.NavigationService;
 import gmd.core.demo.client.resources.AppResources;
 import gwt.material.design.addins.client.dark.AddinsDarkThemeLoader;
-import gwt.material.design.client.JQueryMigrate;
 import gwt.material.design.client.MaterialDesignBase;
 import gwt.material.design.client.base.helper.ColorHelper;
 import gwt.material.design.client.constants.Color;
