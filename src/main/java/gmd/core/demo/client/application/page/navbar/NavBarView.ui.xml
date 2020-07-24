@@ -24,7 +24,7 @@
 
     <m:MaterialPanel>
         <widget:CodeSection sectionTitle="Links Icons and Waves" description="Based on material links you can add icons, link with icons or link only and apply ripple effect by adding waves attribute.">
-            <m:MaterialNavBar>
+            <m:MaterialNavBar marginBottom="20">
                 <m:MaterialNavBrand marginLeft="60" href="#Test" float="LEFT" text="Title" />
                 <m:MaterialNavSection float="RIGHT">
                     <m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account"  textColor="WHITE" waves="LIGHT"/>
@@ -57,7 +57,7 @@
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="Selection Event" description="We have provided a selection event to easily get the selected index.">
-            <m:MaterialNavBar width="100%">
+            <m:MaterialNavBar width="100%" marginBottom="20">
                 <m:MaterialNavBrand marginLeft="60" href="#Test" float="LEFT" text="Title" />
                 <m:MaterialNavSection ui:field="navSection" float="RIGHT">
                     <m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account"  textColor="WHITE" waves="LIGHT"/>
@@ -78,7 +78,7 @@
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="Alignment" description="Add align='right' to your nav brand and align='left' to your nav section">
-            <m:MaterialNavBar width="100%">
+            <m:MaterialNavBar width="100%" marginBottom="20">
                 <m:MaterialNavBrand href="#Test" float="RIGHT" text="App Title"/>
                 <m:MaterialNavSection float="LEFT">
                     <m:MaterialTooltip text="Menu">

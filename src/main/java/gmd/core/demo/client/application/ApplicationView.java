@@ -25,6 +25,7 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.Window;
+import com.google.gwt.user.client.ui.IsWidget;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewWithUiHandlers;
@@ -189,11 +190,48 @@ public class ApplicationView extends ViewWithUiHandlers<MenuHandlers> implements
         description.setText(component.getDescription());
         javaSource.setHref(component.getJavaSource());
         xmlSource.setHref(component.getXmlSource());
+
+        title.setOpacity(0);
+        new MaterialAnimation()
+            .duration(400)
+            .transition(Transition.SHARED_AXIS_X_FORWARD_IN)
+            .animate(title, () -> title.setOpacity(1));
+
+        description.setOpacity(0);
+        new MaterialAnimation()
+            .duration(400)
+            .delay(100)
+            .transition(Transition.SHARED_AXIS_X_FORWARD_IN)
+            .animate(description, () -> description.setOpacity(1));
+
+        javaSource.setOpacity(0);
+        new MaterialAnimation()
+            .transition(Transition.FADE_THROUGH)
+            .duration(600)
+            .delay(200)
+            .animate(javaSource, () -> javaSource.setOpacity(1));
+
+        xmlSource.setOpacity(0);
+        new MaterialAnimation()
+            .transition(Transition.FADE_THROUGH)
+            .duration(800)
+            .delay(200)
+            .animate(xmlSource, () -> xmlSource.setOpacity(1));
     }
 
     public static void showHeader(boolean show) {
         header.setVisible(show);
         footer.setVisible(show);
         navBrand.setVisible(show);
+    }
+
+    @Override
+    public void setInSlot(Object slot, IsWidget content) {
+        super.setInSlot(slot, content);
+
+        new MaterialAnimation()
+            .duration(400)
+            .transition(Transition.SHARED_AXIS_Y_FORWARD_IN)
+            .animate(container);
     }
 }

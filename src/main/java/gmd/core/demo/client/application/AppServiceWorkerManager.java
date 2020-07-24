@@ -8,11 +8,13 @@ import gwt.material.design.client.ui.MaterialToast;
 
 public class AppServiceWorkerManager extends ServiceWorkerManager {
 
+    public static final String SCOPE = "/gmd-core-demo/snapshot/";
+
     public AppServiceWorkerManager() {
-        super("/gmd-core-demo/service-worker.js");
+        super(SCOPE + "service-worker.js");
 
         ServiceWorkerOption option = ServiceWorkerOption.create();
-        option.setScope("/gmd-core-demo/");
+        option.setScope(SCOPE);
         setOption(option);
     }
 

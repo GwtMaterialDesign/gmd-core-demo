@@ -337,8 +337,8 @@
             </g:HTMLPanel>
         </widget:CodeSection>
 
-        <widget:CodeSection sectionTitle="Preselected Section" description="If you want a collapsible with a preopened section just add active='1' the parameter is the index of the collapsible item.">
-            <m:MaterialCollapsible type="POPOUT" active="1">
+        <widget:CodeSection sectionTitle="Preselected Section" description="You might need to attach the parent first before preselecting a collapsible item.">
+            <m:MaterialCollapsible ui:field="preselect" type="POPOUT">
                 <!-- ITEM 1 -->
                 <m:MaterialCollapsibleItem>
                     <m:MaterialCollapsibleHeader>
@@ -377,10 +377,10 @@
             </g:HTMLPanel>
         </widget:CodeSection>
 
-        <widget:CodeSection sectionTitle="Pre Selection" description="Or you can simply set the MaterialCollapsibleItem as active='true'.">
+        <widget:CodeSection sectionTitle="Pre Selection" description="You might need to attach the parent first before preselecting a collapsible item.">
             <m:MaterialCollapsible type="POPOUT">
                 <!-- ITEM 1 -->
-                <m:MaterialCollapsibleItem active="true">
+                <m:MaterialCollapsibleItem ui:field="activeCollaps">
                     <m:MaterialCollapsibleHeader>
                         <m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
                     </m:MaterialCollapsibleHeader>

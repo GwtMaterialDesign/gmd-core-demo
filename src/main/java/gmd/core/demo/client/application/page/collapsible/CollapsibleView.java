@@ -34,10 +34,10 @@ public class CollapsibleView extends ViewImpl implements CollapsiblePresenter.My
     }
 
     @UiField
-    MaterialCollapsible colaps, expandable;
+    MaterialCollapsible colaps, expandable, preselect;
 
     @UiField
-    MaterialCollapsibleItem secondItem;
+    MaterialCollapsibleItem secondItem, activeCollaps;
 
     @UiField
     MaterialCollapsibleItem item;
@@ -61,6 +61,14 @@ public class CollapsibleView extends ViewImpl implements CollapsiblePresenter.My
         expandable.addExpandHandler(event -> {
             MaterialToast.fireToast("ExpandEvent fired: " + getCollapseText(event.getTarget()));
         });
+    }
+
+    @Override
+    protected void onAttach() {
+        super.onAttach();
+
+        preselect.setActive(2);
+        activeCollaps.setActive(true);
     }
 
     protected String getCollapseText(MaterialCollapsibleItem target) {

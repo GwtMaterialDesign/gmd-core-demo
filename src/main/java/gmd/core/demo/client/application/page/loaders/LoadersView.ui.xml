@@ -142,7 +142,7 @@ t.schedule(3000);
 
         <widget:CodeSection sectionTitle="NavBar Integration" description="Using the progress we can attach it below the nav for better UI / UX when displaying important content on your app.">
             <m:MaterialButton text="Show Progress" ui:field="btnShowNavBarProgress"/>
-            <m:MaterialNavBar ui:field="navBar" width="100%">
+            <m:MaterialNavBar ui:field="navBar" width="100%" marginBottom="32">
                 <m:MaterialNavBrand marginLeft="60" href="#Test" float="LEFT" text="Title" />
                 <m:MaterialNavSection float="RIGHT">
                     <m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account"  textColor="WHITE" waves="LIGHT"/>
