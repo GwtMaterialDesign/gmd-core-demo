@@ -55,7 +55,7 @@ nav .nav-wrapper ul li:hover i {
 /** Scrollbar **/
 *::-webkit-scrollbar {
     background-color: #fff;
-    height: 4px;
+    height: 8px !important;
     width: 12px;
 }
 

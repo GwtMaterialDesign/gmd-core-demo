@@ -1,4 +1,4 @@
-ABE948976135281B5B8C7394B31AA900.cache.js
+3D57CC8CE000DB1672375275868B4FA1.cache.js
 ClientBundle.enableInlining true
 audioElementSupport maybe
 canvasElementSupport maybe
@@ -11,8 +11,14 @@ dragEventSupport maybe
 gwt.cspCompatModeEnabled false
 gwt.enableDebugId false
 gwt.forceBidi false
-gwt.logging.enabled FALSE
-gwt.logging.simpleConsoleHandler ENABLED
+gwt.logging.consoleHandler ENABLED
+gwt.logging.developmentModeHandler ENABLED
+gwt.logging.enabled SEVERE
+gwt.logging.hasWidgetsHandler DISABLED
+gwt.logging.logLevel INFO
+gwt.logging.simpleConsoleHandler DISABLED
+gwt.logging.simpleRemoteHandler DISABLED
+gwt.logging.systemHandler DISABLED
 gwt.suppressNonStaticFinalFieldWarnings false
 gwt.uncaughtexceptionhandler.windowonerror REPORT_IF_NO_HANDLER
 gwtp.crashOnLegacySlot false
@@ -24,8 +30,8 @@ jre.checks.checkLevel NORMAL
 jre.checks.numeric AUTO
 jre.checks.type AUTO
 jre.debugMode DISABLED
-jre.logging.logLevel OFF
-jre.logging.simpleConsoleHandler ENABLED
+jre.logging.logLevel SEVERE
+jre.logging.simpleConsoleHandler DISABLED
 locale default
 rpc.XserializeFinalFields false
 superdevmode off
@@ -34,7 +40,7 @@ user.agent gecko1_8
 videoElementSupport maybe
 webApiUsage modern
 
-ABE948976135281B5B8C7394B31AA900.cache.js
+3D57CC8CE000DB1672375275868B4FA1.cache.js
 ClientBundle.enableInlining true
 audioElementSupport maybe
 canvasElementSupport maybe
@@ -47,8 +53,14 @@ dragEventSupport maybe
 gwt.cspCompatModeEnabled false
 gwt.enableDebugId false
 gwt.forceBidi false
-gwt.logging.enabled FALSE
-gwt.logging.simpleConsoleHandler ENABLED
+gwt.logging.consoleHandler ENABLED
+gwt.logging.developmentModeHandler ENABLED
+gwt.logging.enabled SEVERE
+gwt.logging.hasWidgetsHandler DISABLED
+gwt.logging.logLevel INFO
+gwt.logging.simpleConsoleHandler DISABLED
+gwt.logging.simpleRemoteHandler DISABLED
+gwt.logging.systemHandler DISABLED
 gwt.suppressNonStaticFinalFieldWarnings false
 gwt.uncaughtexceptionhandler.windowonerror REPORT_IF_NO_HANDLER
 gwtp.crashOnLegacySlot false
@@ -60,8 +72,8 @@ jre.checks.checkLevel NORMAL
 jre.checks.numeric AUTO
 jre.checks.type AUTO
 jre.debugMode DISABLED
-jre.logging.logLevel OFF
-jre.logging.simpleConsoleHandler ENABLED
+jre.logging.logLevel SEVERE
+jre.logging.simpleConsoleHandler DISABLED
 locale default
 rpc.XserializeFinalFields false
 superdevmode off
@@ -70,7 +82,7 @@ user.agent ie10
 videoElementSupport maybe
 webApiUsage modern
 
-ABE948976135281B5B8C7394B31AA900.cache.js
+3D57CC8CE000DB1672375275868B4FA1.cache.js
 ClientBundle.enableInlining true
 audioElementSupport maybe
 canvasElementSupport maybe
@@ -83,8 +95,14 @@ dragEventSupport maybe
 gwt.cspCompatModeEnabled false
 gwt.enableDebugId false
 gwt.forceBidi false
-gwt.logging.enabled FALSE
-gwt.logging.simpleConsoleHandler ENABLED
+gwt.logging.consoleHandler ENABLED
+gwt.logging.developmentModeHandler ENABLED
+gwt.logging.enabled SEVERE
+gwt.logging.hasWidgetsHandler DISABLED
+gwt.logging.logLevel INFO
+gwt.logging.simpleConsoleHandler DISABLED
+gwt.logging.simpleRemoteHandler DISABLED
+gwt.logging.systemHandler DISABLED
 gwt.suppressNonStaticFinalFieldWarnings false
 gwt.uncaughtexceptionhandler.windowonerror REPORT_IF_NO_HANDLER
 gwtp.crashOnLegacySlot false
@@ -96,8 +114,8 @@ jre.checks.checkLevel NORMAL
 jre.checks.numeric AUTO
 jre.checks.type AUTO
 jre.debugMode DISABLED
-jre.logging.logLevel OFF
-jre.logging.simpleConsoleHandler ENABLED
+jre.logging.logLevel SEVERE
+jre.logging.simpleConsoleHandler DISABLED
 locale default
 rpc.XserializeFinalFields false
 superdevmode off
