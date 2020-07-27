@@ -1,0 +1,185 @@
+<!--
+  #%L
+  GwtMaterial
+  %%
+  Copyright (C) 2015 - 2017 GwtMaterialDesign
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:m='urn:import:gwt.material.design.client.ui'
+             xmlns:widget="urn:import:gmd.core.demo.client.application.widget"
+             xmlns:m.html="urn:import:gwt.material.design.client.ui.html"
+			 xmlns:ma="urn:import:gwt.material.design.addins.client"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+    <m:MaterialPanel>
+		<widget:CodeSection sectionTitle="Current Browser Support">
+			<m:MaterialChip text="Edge" backgroundColor="GREEN" textColor="WHITE" marginRight="12"/>
+			<m:MaterialChip text="Firefox" backgroundColor="GREEN" textColor="WHITE" marginRight="12"/>
+			<m:MaterialChip text="Chrome" backgroundColor="GREEN" textColor="WHITE" marginRight="12"/>
+			<m:MaterialChip text="Safari" backgroundColor="GREEN" textColor="WHITE"/>
+		</widget:CodeSection>
+
+		<widget:CodeSection sectionTitle="Super Centered" description="place-items: center">
+			<m:MaterialPanel display="GRID" backgroundColor="BLUE" height="400px" placeItems="center"
+							 resize="BOTH" overflow="AUTO" layoutPosition="RELATIVE" depth="995">
+				<m:MaterialIcon iconType="POLYMER" size="MEDIUM"/>
+			</m:MaterialPanel>
+		</widget:CodeSection>
+
+		<widget:CodeSection sectionTitle="The Deconstructed Pancake" description="flex: 0 1 baseWidth">
+			<m:MaterialPanel height="400px" display="FLEX" flexWrap="WRAP" justifyContent="center"
+							 resize="BOTH" overflow="AUTO" layoutPosition="RELATIVE" depth="995" fontSize="1.6em">
+				<m:MaterialPanel display="GRID" placeItems="center" flexValue="0 1 150px" margin="5" backgroundColor="GREEN_LIGHTEN_3">
+					<m:MaterialLabel text="1" textColor="BLACK"/>
+				</m:MaterialPanel>
+				<m:MaterialPanel display="GRID" placeItems="center" flexValue="0 1 150px" margin="5" backgroundColor="GREEN_LIGHTEN_3">
+					<m:MaterialLabel text="2" textColor="BLACK"/>
+				</m:MaterialPanel>
+				<m:MaterialPanel display="GRID" placeItems="center" flexValue="0 1 150px" margin="5" backgroundColor="GREEN_LIGHTEN_3">
+					<m:MaterialLabel text="3" textColor="BLACK"/>
+				</m:MaterialPanel>
+			</m:MaterialPanel>
+		</widget:CodeSection>
+
+		<widget:CodeSection sectionTitle="Sidebar Says" description="grid-template-columns: minmax">
+			<m:MaterialPanel height="400px" display="GRID" gridTemplateColumns="minmax(150px, 25%) 1fr"
+							 resize="BOTH" overflow="AUTO" layoutPosition="RELATIVE" depth="995">
+				<m:MaterialPanel display="GRID" textColor="BLACK" backgroundColor="YELLOW_LIGHTEN_3">
+					<m:MaterialLabel text="Min: 150px / Max: 25%" />
+				</m:MaterialPanel>
+				<m:MaterialPanel textColor="BLACK" backgroundColor="PURPLE_LIGHTEN_3">
+					<m:MaterialLabel text="This element takes the second grid position (1fr), meaning it takes up the rest of the remaining space." />
+				</m:MaterialPanel>
+			</m:MaterialPanel>
+		</widget:CodeSection>
+
+		<widget:CodeSection sectionTitle="Pancake Stack" description="grid-template-rows: auto 1fr auto">
+			<m:MaterialPanel height="400px" display="GRID" gridTemplateRows="auto 1fr auto"
+							 resize="BOTH" overflow="AUTO" layoutPosition="RELATIVE" depth="995" fontSize="1.6em">
+				<m:MaterialPanel backgroundColor="BLUE_LIGHTEN_3" textColor="BLACK" padding="20">
+					<m:MaterialLabel text="Header"/>
+				</m:MaterialPanel>
+				<m:MaterialPanel backgroundColor="ORANGE_LIGHTEN_3" textColor="BLACK" padding="20">
+					<m:MaterialLabel text="Content" />
+				</m:MaterialPanel>
+				<m:MaterialPanel backgroundColor="PURPLE_LIGHTEN_3" textColor="BLACK" padding="20">
+					<m:MaterialLabel text="Footer" />
+				</m:MaterialPanel>
+			</m:MaterialPanel>
+		</widget:CodeSection>
+
+		<widget:CodeSection sectionTitle="Classic Holy Grail Layout" description="grid-template: auto 1fr auto / auto 1fr auto">
+			<m:MaterialPanel height="400px" display="GRID" gridTemplate="auto 1fr auto / auto 1fr auto"
+							 resize="BOTH" overflow="AUTO" layoutPosition="RELATIVE" depth="995" fontSize="1.6em">
+				<m:MaterialPanel gridColumn="1 / 4" backgroundColor="PINK_LIGHTEN_3" textColor="BLACK" padding="20">
+					<m:MaterialLabel text="Header"/>
+				</m:MaterialPanel>
+				<m:MaterialPanel gridColumn="1 / 2" backgroundColor="BLUE_LIGHTEN_3" textColor="BLACK" padding="20">
+					<m:MaterialLabel text="Left Side"/>
+				</m:MaterialPanel>
+				<m:MaterialPanel gridColumn="2 / 3" backgroundColor="ORANGE_LIGHTEN_3" textColor="BLACK" padding="20">
+					<m:MaterialLabel text="Content" />
+				</m:MaterialPanel>
+				<m:MaterialPanel gridColumn="3 / 4" backgroundColor="YELLOW_LIGHTEN_3" textColor="BLACK" padding="20">
+					<m:MaterialLabel text="Right Side"/>
+				</m:MaterialPanel>
+				<m:MaterialPanel gridColumn="1 / 4" backgroundColor="PURPLE_LIGHTEN_3" textColor="BLACK" padding="20">
+					<m:MaterialLabel text="Footer" />
+				</m:MaterialPanel>
+			</m:MaterialPanel>
+		</widget:CodeSection>
+
+		<widget:CodeSection sectionTitle="12-Span Grid" description="grid-template-columns: repeat(12, 1fr)">
+			<m:MaterialPanel height="400px" display="GRID" gridTemplateColumns="repeat(12, 1fr)"
+							 resize="BOTH" overflow="AUTO" layoutPosition="RELATIVE" depth="995" fontSize="1.6em">
+				<m:MaterialPanel display="GRID" placeItems="center" gridColumn="1 / span 12" backgroundColor="PINK_LIGHTEN_3" textColor="BLACK" padding="20">
+					<m:MaterialLabel text="Span 12"/>
+				</m:MaterialPanel>
+				<m:MaterialPanel display="GRID" placeItems="center" gridColumn="1 / span 6" backgroundColor="BLUE_LIGHTEN_3" textColor="BLACK" padding="20">
+					<m:MaterialLabel text="Span 6"/>
+				</m:MaterialPanel>
+				<m:MaterialPanel display="GRID" placeItems="center" gridColumn="4 / span 4" backgroundColor="ORANGE_LIGHTEN_3" textColor="BLACK" padding="20">
+					<m:MaterialLabel text="Span 4" />
+				</m:MaterialPanel>
+				<m:MaterialPanel display="GRID" placeItems="center" gridColumn="3 / span 2" backgroundColor="YELLOW_LIGHTEN_3" textColor="BLACK" padding="20">
+					<m:MaterialLabel text="Span 2"/>
+				</m:MaterialPanel>
+			</m:MaterialPanel>
+		</widget:CodeSection>
+
+		<widget:CodeSection sectionTitle="Repeat Auto Minmax" description="grid-template-columns: repeat(auto-fit, minmax(base, 1fr))">
+			<m:MaterialPanel height="400px" display="GRID" gridGap="1rem" gridTemplateColumns="repeat(auto-fit, minmax(150px, 1fr))"
+							 resize="BOTH" overflow="AUTO" layoutPosition="RELATIVE" depth="995" fontSize="1.6em">
+				<m:MaterialPanel display="GRID" placeItems="center" backgroundColor="PINK_LIGHTEN_3" textColor="BLACK" padding="20">
+					<m:MaterialLabel text="1" />
+				</m:MaterialPanel>
+				<m:MaterialPanel display="GRID" placeItems="center" backgroundColor="BLUE_LIGHTEN_3" textColor="BLACK" padding="20">
+					<m:MaterialLabel text="2"/>
+				</m:MaterialPanel>
+				<m:MaterialPanel display="GRID" placeItems="center" backgroundColor="ORANGE_LIGHTEN_3" textColor="BLACK" padding="20">
+					<m:MaterialLabel text="3" />
+				</m:MaterialPanel>
+				<m:MaterialPanel display="GRID" placeItems="center" backgroundColor="YELLOW_LIGHTEN_3" textColor="BLACK" padding="20">
+					<m:MaterialLabel text="4"/>
+				</m:MaterialPanel>
+			</m:MaterialPanel>
+		</widget:CodeSection>
+
+		<widget:CodeSection sectionTitle="Line Up" description="justify-content: space-between">
+			<m:MaterialPanel width="600px" display="GRID" gridGap="1rem" gridTemplateColumns="repeat(3, 1fr)"
+							 resize="BOTH" overflow="AUTO" layoutPosition="RELATIVE" depth="995" >
+				<m:MaterialPanel backgroundColor="YELLOW_LIGHTEN_3" textColor="BLACK" padding="20">
+					<m:MaterialLabel text="Title - Card 1" fontSize="1.6em"/>
+					<m:MaterialLabel text="Medium length description with a few more words here." contentEditable="true"/>
+					<m:MaterialPanel height="100px" width="100%" backgroundColor="PINK_LIGHTEN_3" />
+				</m:MaterialPanel>
+				<m:MaterialPanel backgroundColor="YELLOW_LIGHTEN_3" textColor="BLACK" padding="20">
+					<m:MaterialLabel text="Title - Card 2" fontSize="1.6em"/>
+					<m:MaterialLabel text="Medium length description with a few more words here." contentEditable="true"/>
+					<m:MaterialPanel height="100px" width="100%" backgroundColor="PINK_LIGHTEN_3" />
+				</m:MaterialPanel>
+				<m:MaterialPanel backgroundColor="YELLOW_LIGHTEN_3" textColor="BLACK" padding="20">
+					<m:MaterialLabel text="Title - Card 3" fontSize="1.6em"/>
+					<m:MaterialLabel text="Medium length description with a few more words here." contentEditable="true"/>
+					<m:MaterialPanel height="100px" width="100%" backgroundColor="PINK_LIGHTEN_3" />
+				</m:MaterialPanel>
+
+			</m:MaterialPanel>
+		</widget:CodeSection>
+
+		<widget:CodeSection sectionTitle="Clamping My Style" description="clamp(min, actual, max)">
+			<m:MaterialPanel width="600px" display="GRID" placeItems="center"
+							 resize="BOTH" overflow="AUTO" layoutPosition="RELATIVE" depth="995">
+				<m:MaterialPanel width="clamp(23ch, 50%, 46ch)" display="FLEX" flexDirection="COLUMN" backgroundColor="PURPLE_LIGHTEN_3" textColor="BLACK" padding="20">
+					<m:MaterialLabel text="Title - Card 1" fontSize="1.6em"/>
+					<m:MaterialPanel height="125px" width="100%" backgroundColor="YELLOW_LIGHTEN_3" />
+					<m:MaterialLabel text="Medium length description with a few more words here." contentEditable="true"/>
+				</m:MaterialPanel>
+			</m:MaterialPanel>
+		</widget:CodeSection>
+
+		<widget:CodeSection sectionTitle="Respect for Aspect" description="aspect-ratio: width / height" marginBottom="200">
+			<m:MaterialPanel width="600px" display="GRID" placeItems="center"
+							 resize="BOTH" overflow="AUTO" layoutPosition="RELATIVE" depth="995">
+				<m:MaterialPanel width="50%" display="FLEX" flexDirection="COLUMN" backgroundColor="PURPLE_LIGHTEN_3" textColor="BLACK" padding="20">
+					<m:MaterialLabel text="Title - Card 1" fontSize="1.6em"/>
+					<m:MaterialPanel aspectRatio="16 / 9" backgroundColor="YELLOW_LIGHTEN_3" />
+					<m:MaterialLabel text="Medium length description with a few more words here." contentEditable="true"/>
+				</m:MaterialPanel>
+			</m:MaterialPanel>
+		</widget:CodeSection>
+    </m:MaterialPanel>
+</ui:UiBinder>
