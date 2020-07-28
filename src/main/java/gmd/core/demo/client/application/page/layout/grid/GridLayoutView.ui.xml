@@ -171,7 +171,7 @@
 			</m:MaterialPanel>
 		</widget:CodeSection>
 
-		<widget:CodeSection sectionTitle="Respect for Aspect" description="aspect-ratio: width / height" marginBottom="200">
+		<widget:CodeSection sectionTitle="Respect for Aspect" description="aspect-ratio: width / height">
 			<m:MaterialPanel width="600px" display="GRID" placeItems="center"
 							 resize="BOTH" overflow="AUTO" layoutPosition="RELATIVE" depth="995">
 				<m:MaterialPanel width="50%" display="FLEX" flexDirection="COLUMN" backgroundColor="PURPLE_LIGHTEN_3" textColor="BLACK" padding="20">
@@ -179,6 +179,13 @@
 					<m:MaterialPanel aspectRatio="16 / 9" backgroundColor="YELLOW_LIGHTEN_3" />
 					<m:MaterialLabel text="Medium length description with a few more words here." contentEditable="true"/>
 				</m:MaterialPanel>
+			</m:MaterialPanel>
+		</widget:CodeSection>
+
+		<widget:CodeSection marginBottom="200" sectionTitle="Resizable and Content Editable" description="Make any Panel resizable using resize='BOTH' and editable content using contentEditable='true'">
+			<m:MaterialPanel width="600px" height="600px" backgroundColor="TEAL" display="GRID" placeItems="center"
+							 resize="BOTH" overflow="AUTO" textAlign="CENTER" layoutPosition="RELATIVE" depth="995" contentEditable="true">
+				<m:MaterialLabel text="Resize and edit this panel" fontSize="2em"/>
 			</m:MaterialPanel>
 		</widget:CodeSection>
     </m:MaterialPanel>
