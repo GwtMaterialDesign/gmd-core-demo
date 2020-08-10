@@ -26,7 +26,7 @@
     <m:MaterialPanel>
         <widget:CodeSection sectionTitle="TextBox" description="Text fields allow user input. The border should light up simply and clearly indicating which field the user is currently editing. ">
             <m:MaterialRow>
-                <m:MaterialTextBox label="First Name" grid="s12"/>
+                <m:MaterialTextBox autocomplete="OFF" label="First Name" grid="s12"/>
                 <m:MaterialTextBox label="Email" iconType="ACCOUNT_CIRCLE" grid="s12"/>
             </m:MaterialRow>
             <g:HTMLPanel>
@@ -45,11 +45,11 @@
 
             <m:MaterialRow ui:field="defaultStatesRow">
                 <!-- TextBox -->
-                <m:MaterialTextBox fieldType="DEFAULT" label="TextBox" grid="s6" required="true" clearOnKeyUp="true"/>
+                <m:MaterialTextBox autocomplete="ON" fieldType="DEFAULT" label="TextBox" grid="s6" required="true" clearOnKeyUp="true"/>
                 <!-- IntegerBox -->
-                <m:MaterialIntegerBox fieldType="DEFAULT" label="NumberBox" grid="s6" required="true" clearOnKeyUp="true"/>
+                <m:MaterialIntegerBox autocomplete="ON" fieldType="DEFAULT" label="NumberBox" grid="s6" required="true" clearOnKeyUp="true"/>
                 <!-- InputMask -->
-                <ma:inputmask.AbstractInputMask fieldType="DEFAULT" label="InputMask" placeholder="eg: 0000-0000-0000-0000" mask="0000-0000-0000-0000" grid="s6" required="true" clearOnKeyUp="true"/>
+                <ma:inputmask.AbstractInputMask autocomplete="ON" fieldType="DEFAULT" label="InputMask" placeholder="eg: 0000-0000-0000-0000" mask="0000-0000-0000-0000" grid="s6" required="true" clearOnKeyUp="true"/>
                 <!-- DatePicker -->
                 <m:MaterialDatePicker fieldType="DEFAULT" placeholder="DatePicker" grid="s6" required="true" clearOnKeyUp="true"/>
                 <!-- TimePicker -->
@@ -67,7 +67,7 @@
                 <!-- Autocomplete -->
                 <ma:autocomplete.MaterialAutoComplete ui:field="acDefault" display="NONE" fieldType="DEFAULT" label="Contacts" grid="s6"/>
                 <!-- TextArea -->
-                <m:MaterialTextArea fieldType="DEFAULT" label="Field 6" grid="s6" required="true" clearOnKeyUp="true"/>
+                <m:MaterialTextArea autocomplete="ON" fieldType="DEFAULT" label="Field 6" grid="s6" required="true" clearOnKeyUp="true"/>
             </m:MaterialRow>
             <m:MaterialRow>
                 <m:MaterialButton text="Validate" ui:field="validateDefault" />
@@ -334,6 +334,21 @@ void pasteItHere(PasteEvent event) {
             <g:HTMLPanel>
                 <pre class="xml">
                     firstName.setSensitive(true);
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Autocomplete" description="The autocomplete attribute specifies whether or not an input field should have autocomplete enabled.">
+            <m:MaterialRow>
+                <m:MaterialTextBox autocomplete="ON" label="Autocomplete ON" grid="s12 m4"/>
+                <m:MaterialTextBox autocomplete="OFF" label="Autocomplete OFF" grid="s12 m4"/>
+                <m:MaterialTextBox autocomplete="NEW_PASSWORD" type="PASSWORD" label="Autocomplete NEW PASSWORD" grid="s12 m4"/>
+            </m:MaterialRow>
+            <g:HTMLPanel>
+                <pre class="xml">
+                    &lt;m:MaterialTextBox autocomplete="ON" label="Autocomplete ON" grid="s12 m4"/>
+                    &lt;m:MaterialTextBox autocomplete="OFF" label="Autocomplete OFF" grid="s12 m4"/>
+                    &lt;m:MaterialTextBox autocomplete="NEW_PASSWORD" type="PASSWORD" label="Autocomplete NEW PASSWORD" grid="s12 m4"/>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
