@@ -1,6 +1,6 @@
 #!/bin/bash
 set -ev
-if [ "$TRAVIS_JDK_VERSION" == "oraclejdk8" ]  && [ "$TRAVIS_BRANCH" == "release_2.4.0" ]; then
+if [ "$TRAVIS_JDK_VERSION" == "oraclejdk8" ]  && [ "$TRAVIS_BRANCH" == "master" ]; then
 
 if [[ -z "$GH_TOKEN" ]]; then
 echo -e "GH_TOKEN is not set"
@@ -24,12 +24,12 @@ git clone --quiet --branch=gh-pages https://$GH_TOKEN@github.com/GwtMaterialDesi
 cd gh-pages
 
 # remove the GmdCoreDemo Snapshot directories from git.
-if [[ -d ./snapshot/ ]]; then
-git rm -rf ./snapshot/
+if [[ -d ./ ]]; then
+git rm -rf ./
 fi
 
 # copy the new GmdCoreDemo the snapshot dir.
-unzip -u $TRAVIS_BUILD_DIR/target/GmdCoreDemo*.war -d ./snapshot/
+unzip -u $TRAVIS_BUILD_DIR/target/GmdCoreDemo*.war -d ./
 
 git add -f .
 git commit -m "Auto-push demo to gh-pages successful. (Travis build: $TRAVIS_BUILD_NUMBER)"
