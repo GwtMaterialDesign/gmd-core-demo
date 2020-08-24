@@ -23,6 +23,16 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <m:MaterialPanel>
+
+        <widget:CodeSection sectionTitle="Chip Container" description="This container provides a chip selection feature.">
+            <m:MaterialChipContainer>
+                <m:MaterialChip margin="8" text="Apple" iconType="CLOSE"/>
+                <m:MaterialChip margin="8" text="Banana" iconType="CLOSE"/>
+                <m:MaterialChip margin="8" text="Grapes" iconType="CLOSE"/>
+                <m:MaterialChip margin="8" text="Orange" iconType="CLOSE"/>
+            </m:MaterialChipContainer>
+        </widget:CodeSection>
+
         <widget:CodeSection sectionTitle="Simple Chip" description="If you want just text only chip, you can use this for autocomplete textbox and search capability">
             <m:MaterialRow>
                 <m:MaterialChip margin="8" tooltip="Sample" tooltipPosition="BOTTOM" text="Default" iconType="CLOSE"/>
