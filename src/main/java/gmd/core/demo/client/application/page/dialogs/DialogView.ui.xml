@@ -74,6 +74,36 @@
             <m:MaterialButton text="Show Dialog" ui:field="btnDialog" waves="LIGHT"/>
             <g:HTMLPanel>
                 <pre class="xml">
+                    &lt;m:MaterialDialog ui:field="dialog" type="DEFAULT" dismissible="false" inDuration="500" outDuration="500">
+                    &lt;m:MaterialDialogContent>
+                    &lt;m:MaterialTitle title="Default Dialog" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+                    &lt;/m:MaterialDialogContent>
+                    &lt;m:MaterialDialogFooter>
+                    &lt;m:MaterialButton text="Close Dialog" type="FLAT" ui:field="btnCloseDialog"/>
+                    &lt;/m:MaterialDialogFooter>
+                    &lt;/m:MaterialDialog>
+                </pre>
+            </g:HTMLPanel>
+            <g:HTMLPanel>
+                <pre class="java">
+                    dialog.open();
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Dialog with Blur Background" description="Use a dialog for dialog boxes, confirmation messages, or other content that can be called up. You can set the type by adding, type='DEFAULT, FIXED_FOOTER, BOTTOM_SHEET'">
+            <!-- Default Dialog -->
+            <m:MaterialDialog ui:field="dialogBlur" type="DEFAULT" dismissible="false" inDuration="500" outDuration="500">
+                <m:MaterialDialogContent>
+                    <m:MaterialTitle title="Blurred Behind" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+                </m:MaterialDialogContent>
+                <m:MaterialDialogFooter>
+                    <m:MaterialButton text="Close Dialog" type="FLAT" ui:field="btnCloseDialogBlur"/>
+                </m:MaterialDialogFooter>
+            </m:MaterialDialog>
+            <m:MaterialButton text="Show Dialog" ui:field="btnDialogBlur" waves="LIGHT"/>
+            <g:HTMLPanel>
+                <pre class="xml">
     &lt;m:MaterialDialog ui:field="dialog" type="DEFAULT" dismissible="false" inDuration="500" outDuration="500">
         &lt;m:MaterialDialogContent>
             &lt;m:MaterialTitle title="Default Dialog" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />

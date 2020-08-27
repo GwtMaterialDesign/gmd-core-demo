@@ -80,7 +80,7 @@ public class ApplicationView extends ViewWithUiHandlers<MenuHandlers> implements
     MaterialFAB fabUp;
 
     @UiField
-        InlineSearch search;
+    InlineSearch search;
 
     @Inject
     ApplicationView(Binder uiBinder) {
@@ -99,7 +99,7 @@ public class ApplicationView extends ViewWithUiHandlers<MenuHandlers> implements
             MaterialLink link = new MaterialLink(component.getName(), component.getHref());
             link.addClickHandler(event -> {
                 if (gwt.material.design.client.js.Window.matchMedia(Resolution.ALL_MOBILE.asMediaQuery()) ||
-                        gwt.material.design.client.js.Window.matchMedia(Resolution.TABLET.asMediaQuery())) {
+                    gwt.material.design.client.js.Window.matchMedia(Resolution.TABLET.asMediaQuery())) {
                     sidenav.close();
                 }
             });

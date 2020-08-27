@@ -90,14 +90,6 @@ ul.col.s12.l3.hide-on-med-and-down.section.table-of-contents.pinned {
     line-height: 40px;
 }
 
-.side-nav li.active, .side-nav li:hover {
-    background: #f3f5ff;
-}
-
-.side-nav li.active a {
-    color: #3f51b5;
-}
-
 /** Header **/
 nav .nav-wrapper ul a.btn span {
     line-height: 60px;
