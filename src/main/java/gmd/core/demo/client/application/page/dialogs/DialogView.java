@@ -46,7 +46,7 @@ public class DialogView extends ViewImpl implements DialogPresenter.MyView {
         dialog1, dialog2, dialog3, dialogFullScreen, dialogBlur;
 
     @UiField
-    MaterialButton turnOffFullscreen;
+    MaterialButton turnOffFullscreen, buttonWithTooltip;
 
     @Inject
     DialogView(Binder uiBinder) {
@@ -199,5 +199,10 @@ public class DialogView extends ViewImpl implements DialogPresenter.MyView {
     @UiHandler("btnCloseDialogDismiss")
     void onCloseDialogDismiss(ClickEvent e) {
         dialogClosable.close();
+    }
+
+    @UiHandler("removeTooltip")
+    void removeTooltip(ClickEvent e) {
+        buttonWithTooltip.removeTooltip();
     }
 }
