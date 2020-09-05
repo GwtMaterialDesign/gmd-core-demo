@@ -1,0 +1,198 @@
+* {
+    font-family: monospace, monospace;
+}
+
+main {
+    position: relative;
+}
+
+/** Custom header **/
+nav a,
+nav i,
+nav span,
+nav .brand-logo,
+nav .breadcrumb:before {
+    color: #282b2e;
+}
+
+nav, nav .nav-wrapper {
+    background-color: white;
+}
+
+nav .nav-wrapper ul li i {
+    color: #3a3a3a;
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    text-align: center;
+    margin-top: 12px;
+    border-radius: 100%;
+    font-size: 1.8em;
+}
+
+nav .nav-wrapper ul li:hover i {
+    background-color: #dddddd;
+}
+
+/** Custom Footer **/
+.custom-footer {
+    margin-left: 0 !important;
+    margin-bottom: 20px;
+}
+
+/** App Footer **/
+.app-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-top: 80px;
+    right: 0;
+    padding: 20px;
+    height: 60px;
+    border-top: 1px solid #e9e9e9;
+}
+
+/** Scrollbar **/
+*::-webkit-scrollbar {
+    background-color: #fff;
+    height: 8px !important;
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #fff
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+    border-radius: 4px
+}
+
+nav a.button-collapse, nav a.button-collapse i {
+    color: #3a3a3a;
+    font-size: 0.6em;
+}
+
+/** Scrollspy **/
+ul.col.s12.l3.hide-on-med-and-down.section.table-of-contents.pinned {
+    padding: 68px;
+    padding-top: 0px;
+}
+
+
+/** Sidenav **/
+.side-nav a {
+    height: 40px;
+    padding-left: 32px;
+}
+
+.side-nav li {
+    line-height: 40px;
+}
+
+/** Header **/
+nav .nav-wrapper ul a.btn span {
+    line-height: 60px;
+}
+
+/** Search **/
+#app-container .inline-search .search-result a {
+    padding-left: 60px;
+    height: 40px;
+    line-height: 40px;
+}
+
+#app-container .input-field.inline-search {
+    right: 30%;
+}
+
+/** Code **/
+pre.hljs {
+    padding-top: 32px !important;
+    border: 1px solid #e9e9e9;
+    background-color: #f2f9ff;
+    position: relative;
+}
+
+pre.java:before,
+pre.xml:before {
+    content: "java";
+    position: absolute;
+    top: 0px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    background: #64b5f6;
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+
+pre.xml:before {
+    content: "xml";
+}
+
+/** SEARCH **/
+#app-container .input-field.inline-search {
+    overflow: unset;
+}
+
+#app-container .inline-search .search-result {
+    display: block;
+}
+
+/** TAB **/
+.tab-content {
+    height: 200px;
+    background: #e9e9e9;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 60px !important;
+}
+
+@media screen and (max-width: 600px) {
+    .app-header,
+    .app-container {
+        padding: 12px !important;
+    }
+
+    .dashboard-row .card {
+        height: 100px !important;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .video-row .card {
+        height: 246px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .video-row .card {
+        height: 208px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .video-row .card {
+        height: 180px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .app-header {
+        border-bottom: 1px solid rgb(49, 49, 49) !important;
+    }
+
+    .app-footer {
+        border-top: 1px solid rgb(49, 49, 49) !important;
+    }
+
+    .tab-content {
+        background: transparent;
+    }
+
+    table.striped > tbody > tr:nth-child(odd) {
+        background-color: #232323;
+    }
+}
