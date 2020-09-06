@@ -16,20 +16,16 @@ public class DashboardService {
 
     public static List<Dashboard> getVideos() {
         List<Dashboard> dashboards = new ArrayList<>();
-        dashboards.add(new Dashboard("https://www.youtube.com/watch?v=sEVqfqDUOpE", "images/setup-banner.png"));
+        dashboards.add(new Dashboard("https://www.youtube.com/watch?v=rVo_CeDaA8s", "images/setup-banner.png"));
+        dashboards.add(new Dashboard("https://www.youtube.com/watch?v=ijRgwm8wZiU", "images/setup-pwa.png"));
         dashboards.add(new Dashboard("https://www.youtube.com/watch?v=e-XY4EGVIuc", "images/build-banner.png"));
         dashboards.add(new Dashboard("https://www.youtube.com/watch?v=79owqV8PPhQ", "images/style-banner.png"));
         dashboards.add(new Dashboard("https://www.youtube.com/watch?v=Ishwhsy95GA", "images/animations-banner.png"));
         dashboards.add(new Dashboard("https://www.youtube.com/watch?v=UXVf9-OntGI", "images/snapshots-banner.png"));
         dashboards.add(new Dashboard("https://www.youtube.com/watch?v=eFjqrxFIQvI", "images/jquery-banner.png"));
         dashboards.add(new Dashboard("https://www.youtube.com/watch?v=snVp1blqzAk", "images/dark.jpg"));
-        // Widgets
-        dashboards.add(new Dashboard("https://www.youtube.com/watch?v=ABzcNAzERf4", "images/badge.jpg"));
-        dashboards.add(new Dashboard("https://www.youtube.com/watch?v=RULFd9mLZEI", "images/button.jpg"));
-        dashboards.add(new Dashboard("https://www.youtube.com/watch?v=nbhhGDBtcCs", "images/breadcrumb.jpg"));
-        dashboards.add(new Dashboard("https://www.youtube.com/watch?v=FuMt4Q0xuPE", "images/card.jpg"));
-        dashboards.add(new Dashboard("https://www.youtube.com/watch?v=lHHbk5ICuoo", "images/checkbox.jpg"));
-        dashboards.add(new Dashboard("https://www.youtube.com/watch?v=npYq9tb7lB8", "images/chips.jpg"));
+        dashboards.add(new Dashboard("https://www.youtube.com/watch?v=57RH_V7V4CI", "images/custom-widget.png"));
+        dashboards.add(new Dashboard("https://www.youtube.com/watch?v=higukSoPr9Q", "images/custom-widget-2.png"));
         return dashboards;
     }
 }
