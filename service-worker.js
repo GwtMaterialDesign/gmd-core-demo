@@ -1,9 +1,9 @@
-var cacheName = 'cache_1598569063598';
+var cacheName = 'cache_1599356214349';
 
 var filesToCache = [  
 '/gmd-core-demo/',
 
-'GmdCoreDemo/991F8F630CE71279EC4E62438B0C7921.cache.js',
+'GmdCoreDemo/1D3ABB5ABE7C1D11A4247303586189C9.cache.js',
 
 'GmdCoreDemo/GmdCoreDemo.devmode.js',
 
@@ -101,6 +101,10 @@ var filesToCache = [
 
 'images/charts-logo.png',
 
+'images/custom-widget-2.png',
+
+'images/custom-widget.png',
+
 'images/datatable-logo.png',
 
 'images/gmd-logo.png',
@@ -108,6 +112,8 @@ var filesToCache = [
 'images/jquery-banner.png',
 
 'images/setup-banner.png',
+
+'images/setup-pwa.png',
 
 'images/snapshots-banner.png',
 
