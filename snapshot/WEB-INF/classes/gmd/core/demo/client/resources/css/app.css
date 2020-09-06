@@ -196,3 +196,11 @@ pre.xml:before {
         background-color: #232323;
     }
 }
+
+.search-result a.focus-visible {
+    background-color: #eee;
+}
+
+.search-result a.focus-visible {
+    background-color: #353535;
+}
