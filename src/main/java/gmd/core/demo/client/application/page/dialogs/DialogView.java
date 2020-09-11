@@ -7,9 +7,9 @@
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -20,12 +20,14 @@
 package gmd.core.demo.client.application.page.dialogs;
 
 import com.google.gwt.event.dom.client.ClickEvent;
-import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
+import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.client.constants.Blur;
+import gwt.material.design.client.constants.OverlayOption;
 import gwt.material.design.client.ui.MaterialButton;
 import gwt.material.design.client.ui.MaterialDialog;
 import gwt.material.design.client.ui.MaterialLink;
@@ -33,16 +35,18 @@ import gwt.material.design.client.ui.MaterialToast;
 
 import javax.inject.Inject;
 
+import static gwt.material.design.jquery.client.api.JQuery.$;
+
 public class DialogView extends ViewImpl implements DialogPresenter.MyView {
     interface Binder extends UiBinder<Widget, DialogView> {
     }
 
     @UiField
     MaterialDialog dialog, dialogFixed, dialogBottomSheet, dialogClosable, dialogEvents,
-            dialog1, dialog2, dialog3, dialogFullScreen;
+        dialog1, dialog2, dialog3, dialogFullScreen, dialogBlur;
 
     @UiField
-    MaterialButton turnOffFullscreen;
+    MaterialButton turnOffFullscreen, buttonWithTooltip;
 
     @Inject
     DialogView(Binder uiBinder) {
@@ -58,6 +62,7 @@ public class DialogView extends ViewImpl implements DialogPresenter.MyView {
         dialog1.addCloseHandler(closeEvent -> MaterialToast.fireToast("Dialog 1 - Closed"));
         dialog2.addCloseHandler(closeEvent -> MaterialToast.fireToast("Dialog 2 - Closed"));
         dialog3.addCloseHandler(closeEvent -> MaterialToast.fireToast("Dialog 3 - Closed"));
+        dialogBlur.addCloseHandler(event -> dialogBlur.removeFromParent());
     }
 
     @UiHandler("openFullscreenDialog")
@@ -135,6 +140,22 @@ public class DialogView extends ViewImpl implements DialogPresenter.MyView {
         dialog.open();
     }
 
+    @UiHandler("btnDialogBlur")
+    void onDialogBlur(ClickEvent e) {
+        OverlayOption option = OverlayOption.create();
+        option.setBlur(new Blur(4, $("header"),
+            $(".side-nav"),
+            $(".app-container")));
+        RootPanel.get().add(dialogBlur);
+        dialogBlur.setOverlayOption(option);
+        dialogBlur.open();
+    }
+
+    @UiHandler("btnCloseDialogBlur")
+    void onDialogBlurClose(ClickEvent e) {
+        dialogBlur.close();
+    }
+
     @UiHandler("btnMoadalBottomSheets")
     void onDialogBottom(ClickEvent e) {
         dialogBottomSheet.open();
@@ -156,7 +177,7 @@ public class DialogView extends ViewImpl implements DialogPresenter.MyView {
     }
 
     @UiHandler("btnCloseDialog")
-    void onCloseDialog(ClickEvent e){
+    void onCloseDialog(ClickEvent e) {
         dialog.close();
     }
 
@@ -178,5 +199,10 @@ public class DialogView extends ViewImpl implements DialogPresenter.MyView {
     @UiHandler("btnCloseDialogDismiss")
     void onCloseDialogDismiss(ClickEvent e) {
         dialogClosable.close();
+    }
+
+    @UiHandler("removeTooltip")
+    void removeTooltip(ClickEvent e) {
+        buttonWithTooltip.removeTooltip();
     }
 }

@@ -110,9 +110,9 @@
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="Icon Button" description="Using MaterialIcon component extends ButtonBased which has predefined click events and functionalities" >
-            <m:MaterialIcon margin="8" iconType="MENU" iconColor="BLUE" waves="DEFAULT" circle="true"/>
-            <m:MaterialIcon margin="8" iconType="FAVORITE" iconColor="RED" waves="DEFAULT" enabled="false" circle="true"/>
-            <m:MaterialIcon margin="8" iconType="MORE_VERT" iconColor="GREY" waves="DEFAULT" circle="true"/>
+            <m:MaterialIcon margin="8" tabIndex="0" iconType="MENU" iconColor="BLUE" waves="DEFAULT" circle="true"/>
+            <m:MaterialIcon margin="8" tabIndex="0" iconType="FAVORITE" iconColor="RED" waves="DEFAULT" enabled="false" circle="true"/>
+            <m:MaterialIcon margin="8" tabIndex="0" iconType="MORE_VERT" iconColor="GREY" waves="DEFAULT" circle="true"/>
 
            <g:HTMLPanel>
                 <pre class="xml">
