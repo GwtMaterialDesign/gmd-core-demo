@@ -28,7 +28,8 @@ public class NavigationService {
         components.add(new Component(NameTokens.ICON, "We have included 740 Material Design Icons courtesy of Google. You can download them directly from the Material Design specs."));
         components.add(new Component(NameTokens.FAB, "FAB or Floating action buttons are used for a promoted action. They are distinguished by a circled icon floating above the UI and have motion behaviors that include morphing, launching, and a transferring anchor point."));
         components.add(new Component(NameTokens.FOOTER, "Footers are a great way to organize a lot of site navigation and information at the end of a page. This is where the user will look once hes finished scrolling through the current page or is looking for additional information about your website."));
-        components.add(new Component(NameTokens.LAYOUT, "Provides you an easy way to layout your content using the Grid System and also using helper classes."));
+        components.add(new Component(NameTokens.GRID_LAYOUT, "CSS Grid Layout introduces a two-dimensional grid system to CSS. Grids can be used to lay out major page areas or small user interface elements."));
+        components.add(new Component(NameTokens.TWELEVE_COL_LAYOUT, "Provides you an easy way to layout your content using the Grid System and also using helper classes."));
         components.add(new Component(NameTokens.LOADERS, "If you have content that will take a long time to load, you should give the user feedback. For this reason we provide a number activity + progress indicators."));
         components.add(new Component(NameTokens.LISTBOX, "Material ListBox is another dropdown component that will set / get the value depends on the selected index"));
         components.add(new Component(NameTokens.MEDIA, "Media components include things that have to do with large media objects like Images, Video, Audio, etc."));

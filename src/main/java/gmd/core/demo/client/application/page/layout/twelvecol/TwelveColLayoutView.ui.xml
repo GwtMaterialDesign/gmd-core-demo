@@ -219,7 +219,7 @@
 			<m:MaterialPanel textAlign="LEFT" padding="12" marginTop="12">
 				<m:MaterialLabel fontSize="1.5em" text="This should be left aligned"/>
 			</m:MaterialPanel>
-			
+
 			<m:MaterialPanel textAlign="CENTER" padding="12" marginTop="12">
 				<m:MaterialLabel fontSize="1.5em" text="This should be center aligned"/>
 			</m:MaterialPanel>
