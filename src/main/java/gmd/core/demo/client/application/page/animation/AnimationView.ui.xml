@@ -112,7 +112,8 @@ AnimationGlobalConfig.ENABLE_ANIMATION = false;
 
         <!-- Meaningful animation -->
         <widget:CodeSection sectionTitle="Show Staggered List" description="You can add a transition staggered reveal effect for any Unordered List material widget with List Items.">
-            <m:MaterialButton ui:field="btnStaggered" text="Click Me" waves="LIGHT" marginBottom="20"/>
+            <m:MaterialButton ui:field="btnStaggered" text="ShowStaggeredList" waves="LIGHT" marginBottom="20"/>
+            <m:MaterialButton ui:field="btnHideStaggered" backgroundColor="WHITE" text="HideStaggeredList" waves="LIGHT" marginBottom="20"/>
             <m.html:UnorderedList ui:field="listContainer">
                 <m.html:ListItem opacity="0"><m:MaterialTitle title="List Item" description="List Item"/></m.html:ListItem>
                 <m.html:ListItem opacity="0"><m:MaterialTitle title="List Item" description="List Item"/></m.html:ListItem>
@@ -136,6 +137,13 @@ AnimationGlobalConfig.ENABLE_ANIMATION = false;
     void onStaggered(ClickEvent e) {
         MaterialAnimation gridAnimation = new MaterialAnimation();
         gridAnimation.setTransition(Transition.SHOW_STAGGERED_LIST);
+        gridAnimation.animate(listContainer);
+    }
+
+    @UiHandler("btnHideStaggered")
+    void onHideStaggered(ClickEvent e) {
+        MaterialAnimation gridAnimation = new MaterialAnimation();
+        gridAnimation.setTransition(Transition.HIDE_STAGGERED_LIST);
         gridAnimation.animate(listContainer);
     }
                 </pre>

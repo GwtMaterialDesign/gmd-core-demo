@@ -195,12 +195,8 @@ pre.xml:before {
     table.striped > tbody > tr:nth-child(odd) {
         background-color: #232323;
     }
-}
 
-.search-result a.focus-visible {
-    background-color: #eee;
-}
-
-.search-result a.focus-visible {
-    background-color: #353535;
+    .entity-widget.card > .wrapper {
+        background: #3a3a3a;
+    }
 }
