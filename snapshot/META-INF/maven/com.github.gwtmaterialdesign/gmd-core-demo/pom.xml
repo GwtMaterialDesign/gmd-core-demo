@@ -36,7 +36,6 @@
         <gwt.version>2.9.0</gwt.version>
         <gwtp.version>1.6</gwtp.version>
         <gin.version>2.1.2</gin.version>
-        <gwt-material.version>2.4.0-SNAPSHOT</gwt-material.version>
         <gwt-material.version>2.5.0-SNAPSHOT</gwt-material.version>
 
         <maven.compiler.source>1.8</maven.compiler.source>
