@@ -24,23 +24,6 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <m:MaterialPanel>
-        <widget:CodeSection sectionTitle="Copy To Clipboard" description="You can enable copying to clipboard by adding enableCopyToClipboard='true'">
-            <m:MaterialRow padding="20">
-                <m:MaterialTextBox ui:field="copyToClipboard" label="Input Text" value="I love GMD" enableCopyToClipboard="true" readOnly="true" grid="s12"/>
-                <m:MaterialIntegerBox label="Integer Box" value="12345" enableCopyToClipboard="true" readOnly="true" grid="s12"/>
-                <m:MaterialTextBox type="PASSWORD" label="Text Box" value="Lorem Ipsum" enableCopyToClipboard="true" readOnly="true" grid="s12"/>
-                <m:MaterialTextArea label="Text Area" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                                    enableCopyToClipboard="true" readOnly="true" grid="s12"/>
-                <m:MaterialTextBox label="Text Box" value="Lorem Ipsum" enableCopyToClipboard="true" required="true" statusDisplayType="HOVERABLE" fieldType="OUTLINED" grid="s12"/>
-            </m:MaterialRow>
-            <g:HTMLPanel>
-                <pre class="xml">
-                    &lt;m:MaterialTextBox label="Input Text" length="10" maxLength="10" type="NUMBER" grid="s12"/>
-                    &lt;m:MaterialTextArea label="Text Area" length="120" grid="s12"/>
-                </pre>
-            </g:HTMLPanel>
-        </widget:CodeSection>
-
         <widget:CodeSection sectionTitle="TextBox" description="Text fields allow user input. The border should light up simply and clearly indicating which field the user is currently editing. ">
             <m:MaterialRow>
                 <m:MaterialTextBox autocomplete="OFF" label="First Name" grid="s6" />
@@ -161,6 +144,24 @@
             <g:HTMLPanel>
                 <pre class="xml">
     &lt;m:MaterialTextArea ui:field="txtAreaFocus" label="Using FOCUS" resizeRule="FOCUS" grid="s12"/>
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Copy To Clipboard" description="You can enable copying to clipboard by adding enableCopyToClipboard='true'">
+            <m:MaterialRow padding="20">
+                <m:MaterialTextBox ui:field="copyToClipboard" label="OFF" value="I love GMD" copyCommand="OFF" readOnly="true" grid="s12"/>
+                <m:MaterialIntegerBox label="ON_READ_ONLY" value="12345" copyCommand="ON_READ_ONLY" readOnly="true" grid="s12"/>
+                <m:MaterialTextBox label="ON_ALWAYS_HOVER" value="Lorem Ipsum" copyCommand="ON_ALWAYS_HOVER" readOnly="true" grid="s12"/>
+                <m:MaterialTextArea label="Text Area" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                    copyCommand="ON_READ_ONLY" readOnly="true" grid="s12"/>
+                <m:MaterialTextBox label="ON_ALWAYS" value="Lorem Ipsum" copyCommand="ON_ALWAYS" required="true" statusDisplayType="HOVERABLE" fieldType="OUTLINED" grid="s12"/>
+
+            </m:MaterialRow>
+            <g:HTMLPanel>
+                <pre class="xml">
+                    &lt;m:MaterialTextBox label="Input Text" length="10" maxLength="10" type="NUMBER" grid="s12"/>
+                    &lt;m:MaterialTextArea label="Text Area" length="120" grid="s12"/>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>

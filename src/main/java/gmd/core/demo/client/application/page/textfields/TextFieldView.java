@@ -34,7 +34,6 @@ import gwt.material.design.addins.client.autocomplete.MaterialAutoComplete;
 import gwt.material.design.addins.client.combobox.MaterialComboBox;
 import gwt.material.design.client.base.*;
 import gwt.material.design.client.constants.FieldType;
-import gwt.material.design.client.constants.Position;
 import gwt.material.design.client.constants.StatusDisplayType;
 import gwt.material.design.client.events.PasteEvent;
 import gwt.material.design.client.ui.*;
@@ -160,7 +159,7 @@ public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView
         oracle.addContacts(getAllUsers());
         acDefault.setSuggestions(oracle);
 
-        copyToClipboard.setCopyToClipboardCallback((widget, clipboardIcon, text) -> {
+        copyToClipboard.setCopyCommandCallback((widget, clipboardIcon, text) -> {
             MaterialToast.fireToast("Callback fired: " + text);
         });
     }
