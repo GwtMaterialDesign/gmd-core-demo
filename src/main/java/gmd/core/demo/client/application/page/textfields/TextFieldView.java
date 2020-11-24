@@ -34,6 +34,7 @@ import gwt.material.design.addins.client.autocomplete.MaterialAutoComplete;
 import gwt.material.design.addins.client.combobox.MaterialComboBox;
 import gwt.material.design.client.base.*;
 import gwt.material.design.client.constants.FieldType;
+import gwt.material.design.client.constants.Position;
 import gwt.material.design.client.constants.StatusDisplayType;
 import gwt.material.design.client.events.PasteEvent;
 import gwt.material.design.client.ui.*;
@@ -42,12 +43,14 @@ import javax.inject.Inject;
 import java.util.ArrayList;
 import java.util.List;
 
+import static gwt.material.design.jquery.client.api.JQuery.$;
+
 public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView {
     interface Binder extends UiBinder<Widget, TextFieldView> {
     }
 
     @UiField
-    MaterialTextBox txtBoxValue, txtBoxAsNullValue, pasteItHere;
+    MaterialTextBox txtBoxValue, txtBoxAsNullValue, pasteItHere, copyToClipboard;
 
     @UiField
     MaterialTextArea txtAreaAuto, txtAreaValue, txtAreaFocus;
@@ -156,6 +159,10 @@ public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView
         UserOracle oracle = new UserOracle();
         oracle.addContacts(getAllUsers());
         acDefault.setSuggestions(oracle);
+
+        copyToClipboard.setCopyToClipboardCallback((widget, clipboardIcon, text) -> {
+            MaterialToast.fireToast("Callback fired: " + text);
+        });
     }
 
 
