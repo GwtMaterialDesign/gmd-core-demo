@@ -33,16 +33,16 @@ import gmd.core.demo.client.application.model.UserOracle;
 import gwt.material.design.addins.client.autocomplete.MaterialAutoComplete;
 import gwt.material.design.addins.client.combobox.MaterialComboBox;
 import gwt.material.design.client.base.*;
+import gwt.material.design.client.base.CopyCommandCallback;
 import gwt.material.design.client.constants.FieldType;
 import gwt.material.design.client.constants.StatusDisplayType;
 import gwt.material.design.client.events.PasteEvent;
+import gwt.material.design.client.js.CopyCommandData;
 import gwt.material.design.client.ui.*;
 
 import javax.inject.Inject;
 import java.util.ArrayList;
 import java.util.List;
-
-import static gwt.material.design.jquery.client.api.JQuery.$;
 
 public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView {
     interface Binder extends UiBinder<Widget, TextFieldView> {
@@ -159,8 +159,17 @@ public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView
         oracle.addContacts(getAllUsers());
         acDefault.setSuggestions(oracle);
 
-        copyToClipboard.setCopyCommandCallback((widget, clipboardIcon, text) -> {
-            MaterialToast.fireToast("Callback fired: " + text);
+        copyToClipboard.setCopyCommandCallback(new CopyCommandCallback() {
+
+            @Override
+            public void success(MaterialWidget widget, MaterialIcon clipboardIcon, CopyCommandData data) {
+                MaterialToast.fireToast("Copied: " + data.text);
+            }
+
+            @Override
+            public void error(CopyCommandData data) {
+                MaterialToast.fireToast("Error copying text : " + data.text);
+            }
         });
     }
 
