@@ -371,9 +371,9 @@ function GmdCoreDemo(){
     }
     var strongName;
     try {
-      unflattenKeylistIntoAnswers(['gecko1_8'], 'D3D376FFD5C534A110310426E3E054C8');
-      unflattenKeylistIntoAnswers(['ie10'], 'D3D376FFD5C534A110310426E3E054C8' + ':1');
-      unflattenKeylistIntoAnswers(['safari'], 'D3D376FFD5C534A110310426E3E054C8' + ':2');
+      unflattenKeylistIntoAnswers(['gecko1_8'], 'D2BC76FE4A4C468421A89753C6EEAA67');
+      unflattenKeylistIntoAnswers(['ie10'], 'D2BC76FE4A4C468421A89753C6EEAA67' + ':1');
+      unflattenKeylistIntoAnswers(['safari'], 'D2BC76FE4A4C468421A89753C6EEAA67' + ':2');
       strongName = answers[computePropValue('user.agent')];
       var idx = strongName.indexOf(':');
       if (idx != -1) {
