@@ -198,6 +198,8 @@
 					<m:html.Option text="Option 1"/>
 					<m:html.Option text="Option 2"/>
 				</m:MaterialListBox>
+
+				<m:MaterialLabel ui:field="label" value="This label can be copied" copyCommand="ON_ALWAYS" fontSize="1.8em" grid="s12" layoutPosition="RELATIVE"/>
 			</m:MaterialRow>
 			<g:HTMLPanel>
 				<pre class="xml">
