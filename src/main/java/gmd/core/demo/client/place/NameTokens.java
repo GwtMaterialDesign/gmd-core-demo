@@ -47,6 +47,7 @@ public class NameTokens {
     public static final String RADIO_BUTTON = "radioButton";
     public static final String RANGE = "range";
     public static final String SEARCH = "search";
+    public static final String SECURITY = "security";
     public static final String SIDENAVS = "sidenavs";
     public static final String SCROLLSPY = "scrollspy";
     public static final String SHADOW = "shadow";

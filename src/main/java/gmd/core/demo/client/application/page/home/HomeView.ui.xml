@@ -25,7 +25,7 @@
     <m:MaterialPanel>
         <m:MaterialRow padding="40" textAlign="CENTER">
             <ma:webp.MaterialWebpImage url="images/gmd-logo.webp" alt="logo"/>
-            <m:MaterialLabel text="GMD 2.4.1 + PWA" fontWeight="BOLD" fontSize="3em"/>
+            <m:MaterialLabel text="GMD 2.4.2 + PWA" fontWeight="BOLD" fontSize="3em"/>
             <m:MaterialLabel text="Build the future of GWT using PWAs and Material Design Look and Feel."/>
             <m:MaterialLink ui:field="github" display="INLINE_BLOCK" marginTop="32" text="Github" marginRight="32" customIconType="fab fa-github" target="_blank" shadow="0"/>
             <m:MaterialLink ui:field="slack" display="INLINE_BLOCK" marginTop="32" text="Slack" customIconType="fab fa-slack" target="_blank" shadow="0"/>
