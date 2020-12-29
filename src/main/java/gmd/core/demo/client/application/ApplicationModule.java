@@ -48,6 +48,7 @@ import gmd.core.demo.client.application.page.radiobutton.RadioButtonModule;
 import gmd.core.demo.client.application.page.range.RangeModule;
 import gmd.core.demo.client.application.page.scrollspy.ScrollspyModule;
 import gmd.core.demo.client.application.page.search.SearchModule;
+import gmd.core.demo.client.application.page.security.SecurityModule;
 import gmd.core.demo.client.application.page.shadow.ShadowModule;
 import gmd.core.demo.client.application.page.sidenavs.SideNavModule;
 import gmd.core.demo.client.application.page.switches.SwitchModule;
@@ -85,6 +86,7 @@ public class ApplicationModule extends AbstractPresenterModule {
         install(new RadioButtonModule());
         install(new RangeModule());
         install(new ScrollspyModule());
+        install(new SecurityModule());
         install(new SearchModule());
         install(new SideNavModule());
         install(new ShadowModule());

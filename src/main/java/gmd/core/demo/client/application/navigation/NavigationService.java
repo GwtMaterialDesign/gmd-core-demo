@@ -31,6 +31,7 @@ public class NavigationService {
         components.add(new Component(NameTokens.LAYOUT, "Provides you an easy way to layout your content using the Grid System and also using helper classes."));
         components.add(new Component(NameTokens.LOADERS, "If you have content that will take a long time to load, you should give the user feedback. For this reason we provide a number activity + progress indicators."));
         components.add(new Component(NameTokens.LISTBOX, "Material ListBox is another dropdown component that will set / get the value depends on the selected index"));
+        components.add(new Component(NameTokens.SECURITY, "We've used GWT's SafeHtml Utility and Sanitization classes to avoid XSS Injection inside our TextMixin."));
         components.add(new Component(NameTokens.MEDIA, "Media components include things that have to do with large media objects like Images, Video, Audio, etc."));
         components.add(new Component(NameTokens.NAVBAR, "The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right."));
         components.add(new Component(NameTokens.PUSHPIN, "Pushpin is our fixed positioning plugin. You can check out our live examples: the fixed Table of Contents on the right."));
