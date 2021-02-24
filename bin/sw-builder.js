@@ -14,7 +14,7 @@ const fs = require('fs');
 var Handlebars = require('handlebars');
 
 var filesToCache = [
-    "/gmd-core-demo/snapshot/"
+    "/gmd-core-demo/"
 ];
 
 browseAllFilesInDirectory(rootFolder);
