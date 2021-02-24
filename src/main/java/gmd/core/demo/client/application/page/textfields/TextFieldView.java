@@ -33,9 +33,11 @@ import gmd.core.demo.client.application.model.UserOracle;
 import gwt.material.design.addins.client.autocomplete.MaterialAutoComplete;
 import gwt.material.design.addins.client.combobox.MaterialComboBox;
 import gwt.material.design.client.base.*;
+import gwt.material.design.client.base.CopyCommandCallback;
 import gwt.material.design.client.constants.FieldType;
 import gwt.material.design.client.constants.StatusDisplayType;
 import gwt.material.design.client.events.PasteEvent;
+import gwt.material.design.client.js.CopyCommandData;
 import gwt.material.design.client.ui.*;
 
 import javax.inject.Inject;
@@ -47,7 +49,7 @@ public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView
     }
 
     @UiField
-    MaterialTextBox txtBoxValue, txtBoxAsNullValue, pasteItHere;
+    MaterialTextBox txtBoxValue, txtBoxAsNullValue, pasteItHere, copyToClipboard;
 
     @UiField
     MaterialTextArea txtAreaAuto, txtAreaValue, txtAreaFocus;
@@ -156,6 +158,19 @@ public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView
         UserOracle oracle = new UserOracle();
         oracle.addContacts(getAllUsers());
         acDefault.setSuggestions(oracle);
+
+        copyToClipboard.setCopyCommandCallback(new CopyCommandCallback() {
+
+            @Override
+            public void success(MaterialWidget widget, MaterialIcon clipboardIcon, CopyCommandData data) {
+                MaterialToast.fireToast("Copied: " + data.text);
+            }
+
+            @Override
+            public void error(CopyCommandData data) {
+                MaterialToast.fireToast("Error copying text : " + data.text);
+            }
+        });
     }
 
 

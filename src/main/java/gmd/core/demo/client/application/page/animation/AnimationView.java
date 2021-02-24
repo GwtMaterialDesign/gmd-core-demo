@@ -148,6 +148,13 @@ public class AnimationView extends ViewImpl implements AnimationPresenter.MyView
         gridAnimation.animate(listContainer);
     }
 
+    @UiHandler("btnHideStaggered")
+    void onHideStaggered(ClickEvent e) {
+        MaterialAnimation gridAnimation = new MaterialAnimation();
+        gridAnimation.setTransition(Transition.HIDE_STAGGERED_LIST);
+        gridAnimation.animate(listContainer);
+    }
+
     @UiHandler("btnFade")
     void onFade(ClickEvent e) {
         MaterialAnimation gridAnimation = new MaterialAnimation();

@@ -46,10 +46,10 @@
 
         <widget:CodeSection sectionTitle="Preselection">
             <m:MaterialCollection active="1">
-                <m:MaterialCollectionItem><m:MaterialLabel text="Collecton 1"/></m:MaterialCollectionItem>
-                <m:MaterialCollectionItem><m:MaterialLabel text="Collecton 2"/></m:MaterialCollectionItem>
-                <m:MaterialCollectionItem><m:MaterialLabel text="Collecton 3"/></m:MaterialCollectionItem>
-                <m:MaterialCollectionItem><m:MaterialLabel text="Collecton 4"/></m:MaterialCollectionItem>
+                <m:MaterialCollectionItem tabIndex="0"><m:MaterialLabel text="Collecton 1"/></m:MaterialCollectionItem>
+                <m:MaterialCollectionItem tabIndex="0"><m:MaterialLabel text="Collecton 2"/></m:MaterialCollectionItem>
+                <m:MaterialCollectionItem tabIndex="0"><m:MaterialLabel text="Collecton 3"/></m:MaterialCollectionItem>
+                <m:MaterialCollectionItem tabIndex="0"><m:MaterialLabel text="Collecton 4"/></m:MaterialCollectionItem>
             </m:MaterialCollection>
 
             <g:HTMLPanel>
