@@ -1,9 +1,9 @@
-var cacheName = 'cache_1609149872433';
+var cacheName = 'cache_1614161295830';
 
 var filesToCache = [  
 '/gmd-core-demo/',
 
-'GmdCoreDemo/D2BC76FE4A4C468421A89753C6EEAA67.cache.js',
+'GmdCoreDemo/9CF3972666DA0470413B928542FABC6A.cache.js',
 
 'GmdCoreDemo/GmdCoreDemo.devmode.js',
 
@@ -38,36 +38,6 @@ var filesToCache = [
 'GmdCoreDemo/font/material-icons/MaterialIcons-Regular.woff',
 
 'GmdCoreDemo/font/material-icons/MaterialIcons-Regular.woff2',
-
-'GmdCoreDemo/font/roboto/Roboto-Bold.ttf',
-
-'GmdCoreDemo/font/roboto/Roboto-Bold.woff',
-
-'GmdCoreDemo/font/roboto/Roboto-Bold.woff2',
-
-'GmdCoreDemo/font/roboto/Roboto-Light.ttf',
-
-'GmdCoreDemo/font/roboto/Roboto-Light.woff',
-
-'GmdCoreDemo/font/roboto/Roboto-Light.woff2',
-
-'GmdCoreDemo/font/roboto/Roboto-Medium.ttf',
-
-'GmdCoreDemo/font/roboto/Roboto-Medium.woff',
-
-'GmdCoreDemo/font/roboto/Roboto-Medium.woff2',
-
-'GmdCoreDemo/font/roboto/Roboto-Regular.ttf',
-
-'GmdCoreDemo/font/roboto/Roboto-Regular.woff',
-
-'GmdCoreDemo/font/roboto/Roboto-Regular.woff2',
-
-'GmdCoreDemo/font/roboto/Roboto-Thin.ttf',
-
-'GmdCoreDemo/font/roboto/Roboto-Thin.woff',
-
-'GmdCoreDemo/font/roboto/Roboto-Thin.woff2',
 
 'GmdCoreDemo/fontawesome-icons/fa-brands-400.eot',
 
