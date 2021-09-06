@@ -1,4 +1,4 @@
-# gmd-core-demo 2.5.0-rc1
+# gmd-core-demo 2.5.0
 A modern demo for GMD widgets.
 
 ### Related Demo sites
