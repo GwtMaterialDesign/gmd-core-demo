@@ -24,7 +24,7 @@
 
     <m:MaterialPanel>
         <widget:CodeSection sectionTitle="Usage" description="Using MaterialIcon Widget you can easily make it by adding the lines below. Just set the icon attribute and indicate which icon you want to display. Please refer below about the list of icon.">
-            <m:MaterialIcon iconType="ROTATION_3D" />
+            <m:MaterialIcon iconType="_3D_ROTATION" />
             <g:HTMLPanel>
                 <pre class="xml">
     &lt;m:MaterialIcon iconType="ROTATION_3D" />
@@ -73,6 +73,31 @@
     &lt;/m:MaterialRow>
                 </pre>
             </g:HTMLPanel>
+        </widget:CodeSection>
+
+        <widget:CodeSection sectionTitle="Display Types">
+            <m:MaterialRow addStyleNames="valign-wrapper">
+                <m:MaterialColumn grid="s4 m2" textAlign="CENTER">
+                    <m:MaterialIcon iconType="HOME" iconDisplay="OUTLINED" iconSize="MEDIUM" />
+                    <m:MaterialLabel text="OUTLINED" />
+                </m:MaterialColumn>
+                <m:MaterialColumn grid="s4 m2" textAlign="CENTER">
+                    <m:MaterialIcon iconType="HOME" iconDisplay="FILLED" iconSize="MEDIUM" />
+                    <m:MaterialLabel text="FILLED" />
+                </m:MaterialColumn>
+                <m:MaterialColumn grid="s4 m2" textAlign="CENTER">
+                    <m:MaterialIcon iconType="HOME" iconDisplay="ROUNDED" iconSize="MEDIUM" />
+                    <m:MaterialLabel text="ROUNDED" />
+                </m:MaterialColumn>
+                <m:MaterialColumn grid="s4 m2" textAlign="CENTER">
+                    <m:MaterialIcon iconType="HOME" iconDisplay="SHARP" iconSize="MEDIUM" />
+                    <m:MaterialLabel text="SHARP" />
+                </m:MaterialColumn>
+                <m:MaterialColumn grid="s4 m2" textAlign="CENTER">
+                    <m:MaterialIcon iconType="HOME" iconDisplay="TWO_TONE" iconSize="MEDIUM" />
+                    <m:MaterialLabel text="TWO TONE" />
+                </m:MaterialColumn>
+            </m:MaterialRow>
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="Icon inside MaterialLink" description="You can add in your material link an icon instance by adding icon attribute">
