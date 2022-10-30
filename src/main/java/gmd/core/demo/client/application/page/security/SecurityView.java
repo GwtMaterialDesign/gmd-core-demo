@@ -28,8 +28,11 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.base.mixin.TextMixin;
+import gwt.material.design.client.sanitizer.DefaultValueSanitizer;
+import gwt.material.design.client.sanitizer.StandardValueSanitizer;
 import gwt.material.design.client.ui.MaterialChip;
 import gwt.material.design.client.ui.MaterialLabel;
+import gwt.material.design.client.ui.MaterialTextBox;
 
 import javax.inject.Inject;
 
@@ -43,14 +46,21 @@ public class SecurityView extends ViewImpl implements SecurityPresenter.MyView {
     @UiField
     MaterialChip chip, chip2;
 
+    @UiField
+    MaterialTextBox valueSanitizerBox;
+
     @Inject
     SecurityView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+
+
+        valueSanitizerBox.setValueSanitizer(new DefaultValueSanitizer());
     }
 
     @Override
     protected void onAttach() {
         super.onAttach();
+
 
         chip.setText("<b>Chip</b> with <i>SimpleHtmlSanitizer</i>");
         label.setText("<b>Sanitized Label</b> with <i>SimpleHtmlSanitizer</i>");

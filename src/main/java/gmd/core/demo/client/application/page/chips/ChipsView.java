@@ -26,6 +26,7 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.ui.MaterialChip;
+import gwt.material.design.client.ui.MaterialChipContainer;
 import gwt.material.design.client.ui.MaterialToast;
 
 import javax.inject.Inject;
@@ -36,6 +37,9 @@ public class ChipsView extends ViewImpl implements ChipsPresenter.MyView {
 
     @UiField
     MaterialChip chip;
+
+    @UiField
+    MaterialChipContainer chipContainer;
 
     @Inject
     ChipsView(Binder uiBinder) {
@@ -50,5 +54,10 @@ public class ChipsView extends ViewImpl implements ChipsPresenter.MyView {
     @UiHandler("closeChip")
     void closeChip(ClickEvent e) {
         chip.close();
+    }
+
+    @UiHandler("reload")
+    void reload(ClickEvent e) {
+        chipContainer.reload();
     }
 }

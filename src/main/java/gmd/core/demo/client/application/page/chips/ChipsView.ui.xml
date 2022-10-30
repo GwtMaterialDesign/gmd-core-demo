@@ -33,6 +33,20 @@
             </m:MaterialChipContainer>
         </widget:CodeSection>
 
+        <widget:CodeSection sectionTitle="Chip Container Max Visible Chips" description="It will provide a collapse mode which displays max visible chips and add a Show More link to expand">
+            <m:MaterialChipContainer ui:field="chipContainer" maxWidth="200px" visibleChips="3">
+                <m:MaterialChip letter="A" letterColor="WHITE" letterBackgroundColor="RED"  margin="8" text="Apple" iconType="CLOSE"/>
+                <m:MaterialChip letter="B" letterColor="WHITE" letterBackgroundColor="AMBER" margin="8" text="Banana" iconType="CLOSE"/>
+                <m:MaterialChip letter="G" letterColor="WHITE" letterBackgroundColor="PURPLE" margin="8" text="Grapes" iconType="CLOSE"/>
+                <m:MaterialChip letter="O" letterColor="WHITE" letterBackgroundColor="ORANGE" margin="8" text="Orange" iconType="CLOSE"/>
+                <m:MaterialChip letter="W" letterColor="WHITE" letterBackgroundColor="GREEN" margin="8" text="Watermelon" iconType="CLOSE"/>
+                <m:MaterialChip letter="S" letterColor="WHITE" letterBackgroundColor="RED" margin="8" text="Strawberry" iconType="CLOSE"/>
+            </m:MaterialChipContainer>
+            <m:MaterialRow marginTop="12" marginLeft="12">
+                <m:MaterialButton ui:field="reload" text="Reload" />
+            </m:MaterialRow>
+        </widget:CodeSection>
+
         <widget:CodeSection sectionTitle="Simple Chip" description="If you want just text only chip, you can use this for autocomplete textbox and search capability">
             <m:MaterialRow>
                 <m:MaterialChip margin="8" tooltip="Sample" tooltipPosition="BOTTOM" text="Default" iconType="CLOSE"/>
