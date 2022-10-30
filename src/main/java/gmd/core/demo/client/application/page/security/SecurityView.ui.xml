@@ -23,7 +23,12 @@
 			 xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
 	<m:MaterialPanel>
-
+		<widget:CodeSection sectionTitle="ValueSanitizer"
+							description="Uses a value sanitization algorithm for naughty or invalid strings.">
+			<m:MaterialPanel>
+				<m:MaterialTextBox ui:field="valueSanitizerBox" fieldType="OUTLINED" maxWidth="400px" label="TextBox" />
+			</m:MaterialPanel>
+		</widget:CodeSection>
 
 		<widget:CodeSection sectionTitle="DefaultHtmlSanitizer"
 							description="By default we are using our DefaultHtmlSanitizer - used by TextMixin#setText(text) and
@@ -64,5 +69,7 @@ label2.setText("&lt;b>Sanitized Label&lt;/b> with &lt;i>SimpleHtmlSanitizer&lt;/
 				</blockquote>
 			</g:HTMLPanel>
 		</widget:CodeSection>
+
+
 	</m:MaterialPanel>
 </ui:UiBinder>
