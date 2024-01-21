@@ -340,12 +340,12 @@ public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView
 
     @UiHandler("btnTextLongValue")
     void onTextLongValue(ClickEvent e) {
-        txtLongValue.setValue(20000l);
+        txtLongValue.setValue(20000L);
     }
 
     @UiHandler("btnTextLongValueEvent")
     void onTextLongValueEvent(ClickEvent e) {
-        txtLongValue.setValue(1000l, true);
+        txtLongValue.setValue(1000L, true);
     }
 
     @UiHandler("txtDoubleValue")
