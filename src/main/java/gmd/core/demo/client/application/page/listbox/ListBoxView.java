@@ -7,9 +7,9 @@
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -59,17 +59,11 @@ public class ListBoxView extends ViewImpl implements ListBoxPresenter.MyView {
         lstFocusAndBlur.addBlurHandler(blurEvent -> MaterialToast.fireToast("Blur Event Fired"));
         buildListHeroes(lstFocusAndBlur);
 
-        lstOptions.addFocusHandler(focusEvent -> {
-            MaterialToast.fireToast("FOCUSED");
-        });
+        lstOptions.addFocusHandler(focusEvent -> MaterialToast.fireToast("FOCUSED"));
 
-        lstOptions.addBlurHandler(blurEvent -> {
-            MaterialToast.fireToast("BLURRED");
-        });
+        lstOptions.addBlurHandler(blurEvent -> MaterialToast.fireToast("BLURRED"));
 
-        lstOptions.addValueChangeHandler(valueChangeEvent -> {
-            MaterialToast.fireToast(valueChangeEvent.getValue());
-        });
+        lstOptions.addValueChangeHandler(valueChangeEvent -> MaterialToast.fireToast(valueChangeEvent.getValue()));
     }
 
     protected void buildListHeroes(MaterialListValueBox<Hero> listBox) {

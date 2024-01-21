@@ -83,9 +83,7 @@ public class DatePickerView extends ViewImpl implements DatePickerPresenter.MyVi
             dpOpenClose.close();
         });
 
-        dpAutoClose.addValueChangeHandler(event -> {
-            MaterialToast.fireToast("Date Selected " + event.getValue());
-        });
+        dpAutoClose.addValueChangeHandler(event -> MaterialToast.fireToast("Date Selected " + event.getValue()));
 
         dpBirthdate.setDate(new Date(50, 1, 1));
 
