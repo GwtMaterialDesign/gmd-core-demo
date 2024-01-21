@@ -7,7 +7,7 @@ import java.util.List;
 
 public class NavigationService {
 
-    private static List<Component> components = new ArrayList<>();
+    private static final List<Component> components = new ArrayList<>();
 
     static {
         components.add(new Component("Get Started", "", "/"));

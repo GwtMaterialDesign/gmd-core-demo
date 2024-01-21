@@ -7,9 +7,9 @@
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -28,9 +28,9 @@ import gwt.material.design.client.ui.*;
  */
 public class DemoImagePanel extends CodeSection {
 
-    private MaterialImage image = new MaterialImage("");
-    private MaterialAnchorButton source = new MaterialAnchorButton("Source");
-    private MaterialAnchorButton demo = new MaterialAnchorButton("Demo");
+    private final MaterialImage image = new MaterialImage("");
+    private final MaterialAnchorButton source = new MaterialAnchorButton("Source");
+    private final MaterialAnchorButton demo = new MaterialAnchorButton("Demo");
 
     public DemoImagePanel(DemoImageDTO dto) {
         super();

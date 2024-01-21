@@ -29,7 +29,7 @@ public class AppPresenter<V extends View, P extends Proxy<?>> extends Presenter<
         MaterialDesignBase.injectJs(AppResources.INSTANCE.highlightJs());
     }
 
-    private PlaceManager placeManager;
+    private final PlaceManager placeManager;
     private MaterialScrollspy scrollspy;
 
     public AppPresenter(EventBus eventBus, V view, P proxy, GwtEvent.Type<RevealContentHandler<?>> slot, PlaceManager placeManager) {

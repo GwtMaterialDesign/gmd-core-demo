@@ -29,12 +29,11 @@ import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Composite;
 import gmd.core.demo.client.application.navigation.Dashboard;
 import gwt.material.design.addins.client.webp.MaterialWebpImage;
-import gwt.material.design.client.constants.Color;
 import gwt.material.design.client.ui.*;
 
 public class DashboardCard extends Composite {
 
-    private static DashboardCardUiBinder uiBinder = GWT.create(DashboardCardUiBinder.class);
+    private static final DashboardCardUiBinder uiBinder = GWT.create(DashboardCardUiBinder.class);
 
     interface DashboardCardUiBinder extends UiBinder<MaterialColumn, DashboardCard> {
     }
@@ -57,7 +56,7 @@ public class DashboardCard extends Composite {
     @UiField
     MaterialPanel namePanel;
 
-    private Dashboard dashboard;
+    private final Dashboard dashboard;
 
     public DashboardCard(Dashboard dashboard) {
         initWidget(uiBinder.createAndBindUi(this));

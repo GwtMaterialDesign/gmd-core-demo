@@ -28,7 +28,7 @@ import gwt.material.design.client.ui.MaterialPanel;
 
 public class AppSelector extends Composite {
 
-    private static DashboardCardUiBinder uiBinder = GWT.create(DashboardCardUiBinder.class);
+    private static final DashboardCardUiBinder uiBinder = GWT.create(DashboardCardUiBinder.class);
 
     interface DashboardCardUiBinder extends UiBinder<MaterialPanel, AppSelector> {
     }
