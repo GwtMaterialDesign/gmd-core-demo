@@ -22,9 +22,9 @@ package gmd.core.demo.client.application.page.color;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class ColorModule extends AbstractPresenterModule {
-    @Override
-    protected void configure() {
-        bindPresenter(ColorPresenter.class, ColorPresenter.MyView.class, ColorView.class,
-                ColorPresenter.MyProxy.class);
-    }
+	@Override
+	protected void configure() {
+		bindPresenter(ColorPresenter.class, ColorPresenter.MyView.class, ColorView.class,
+			ColorPresenter.MyProxy.class);
+	}
 }

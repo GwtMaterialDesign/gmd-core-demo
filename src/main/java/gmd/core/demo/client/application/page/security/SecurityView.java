@@ -36,45 +36,45 @@ import gwt.material.design.client.ui.MaterialTextBox;
 import javax.inject.Inject;
 
 public class SecurityView extends ViewImpl implements SecurityPresenter.MyView {
-    interface Binder extends UiBinder<Widget, SecurityView> {
-    }
+	interface Binder extends UiBinder<Widget, SecurityView> {
+	}
 
-    @UiField
-    MaterialLabel label, label2;
+	@UiField
+	MaterialLabel label, label2;
 
-    @UiField
-    MaterialChip chip, chip2;
+	@UiField
+	MaterialChip chip, chip2;
 
-    @UiField
-    MaterialTextBox valueSanitizerBox;
+	@UiField
+	MaterialTextBox valueSanitizerBox;
 
-    @Inject
-    SecurityView(Binder uiBinder) {
-        initWidget(uiBinder.createAndBindUi(this));
-
-
-        valueSanitizerBox.setValueSanitizer(new DefaultValueSanitizer());
-    }
-
-    @Override
-    protected void onAttach() {
-        super.onAttach();
+	@Inject
+	SecurityView(Binder uiBinder) {
+		initWidget(uiBinder.createAndBindUi(this));
 
 
-        chip.setText("<b>Chip</b> with <i>SimpleHtmlSanitizer</i>");
-        label.setText("<b>Sanitized Label</b> with <i>SimpleHtmlSanitizer</i>");
+		valueSanitizerBox.setValueSanitizer(new DefaultValueSanitizer());
+	}
 
-        GWT.log(label.getText());
+	@Override
+	protected void onAttach() {
+		super.onAttach();
 
-        TextMixin.setDefaultSanitizer(SimpleHtmlSanitizer.getInstance());
-        chip2.setText("<b>Chip</b> with <i>SimpleHtmlSanitizer</i>");
-        label2.setText("<b>Sanitized Label</b> with <i>SimpleHtmlSanitizer</i>");
 
-        GWT.log(label2.getText());
-    }
+		chip.setText("<b>Chip</b> with <i>SimpleHtmlSanitizer</i>");
+		label.setText("<b>Sanitized Label</b> with <i>SimpleHtmlSanitizer</i>");
 
-    @UiHandler("getValue")
-    void getValue(ClickEvent event) {
-        GWT.log(label.getText());
-    }
+		GWT.log(label.getText());
+
+		TextMixin.setDefaultSanitizer(SimpleHtmlSanitizer.getInstance());
+		chip2.setText("<b>Chip</b> with <i>SimpleHtmlSanitizer</i>");
+		label2.setText("<b>Sanitized Label</b> with <i>SimpleHtmlSanitizer</i>");
+
+		GWT.log(label2.getText());
+	}
+
+	@UiHandler("getValue")
+	void getValue(ClickEvent event) {
+		GWT.log(label.getText());
+	}
 }

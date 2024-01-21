@@ -7,9 +7,9 @@
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -34,30 +34,30 @@ import java.util.List;
 
 public class HomeView extends ViewImpl implements HomePresenter.MyView {
 
-    interface Binder extends UiBinder<Widget, HomeView> {
-    }
+	interface Binder extends UiBinder<Widget, HomeView> {
+	}
 
-    @UiField
-    MaterialRow dashboardsRow, videosRow;
+	@UiField
+	MaterialRow dashboardsRow, videosRow;
 
-    @UiField
-    MaterialLink github, slack;
+	@UiField
+	MaterialLink github, slack;
 
-    @Inject
-    HomeView(Binder uiBinder) {
-        initWidget(uiBinder.createAndBindUi(this));
+	@Inject
+	HomeView(Binder uiBinder) {
+		initWidget(uiBinder.createAndBindUi(this));
 
-        github.setHref(AppConstants.GITHUB_REPO);
-        slack.setHref(AppConstants.SLACK_CHANNEL);
-    }
+		github.setHref(AppConstants.GITHUB_REPO);
+		slack.setHref(AppConstants.SLACK_CHANNEL);
+	}
 
-    @Override
-    public void buildDashboards(List<Dashboard> dashboards) {
-        dashboards.forEach(dashboard -> dashboardsRow.add(new DashboardCard(dashboard)));
-    }
+	@Override
+	public void buildDashboards(List<Dashboard> dashboards) {
+		dashboards.forEach(dashboard -> dashboardsRow.add(new DashboardCard(dashboard)));
+	}
 
-    @Override
-    public void buildVideos(List<Dashboard> videos) {
-        videos.forEach(video -> videosRow.add(new DashboardCard(video)));
-    }
+	@Override
+	public void buildVideos(List<Dashboard> videos) {
+		videos.forEach(video -> videosRow.add(new DashboardCard(video)));
+	}
 }

@@ -7,9 +7,9 @@
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -36,37 +36,38 @@ import gwt.material.design.client.base.helper.ScrollHelper;
 import java.util.List;
 
 public class HomePresenter extends Presenter<HomePresenter.MyView, HomePresenter.MyProxy> {
-    interface MyView extends View {
-        void buildDashboards(List<Dashboard> dashboards);
-        void buildVideos(List<Dashboard> videos);
-    }
+	interface MyView extends View {
+		void buildDashboards(List<Dashboard> dashboards);
 
-    @ProxyStandard
-    @NameToken(NameTokens.HOME)
-    interface MyProxy extends ProxyPlace<HomePresenter> {
-    }
+		void buildVideos(List<Dashboard> videos);
+	}
 
-    @Inject
-    HomePresenter(
-            EventBus eventBus,
-            MyView view,
-            MyProxy proxy) {
-        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
-    }
+	@ProxyStandard
+	@NameToken(NameTokens.HOME)
+	interface MyProxy extends ProxyPlace<HomePresenter> {
+	}
 
-    @Override
-    protected void onBind() {
-        super.onBind();
+	@Inject
+	HomePresenter(
+		EventBus eventBus,
+		MyView view,
+		MyProxy proxy) {
+		super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
+	}
 
-        getView().buildDashboards(DashboardService.getDashboards());
-        getView().buildVideos(DashboardService.getVideos());
-    }
+	@Override
+	protected void onBind() {
+		super.onBind();
 
-    @Override
-    protected void onReveal() {
-        super.onReveal();
+		getView().buildDashboards(DashboardService.getDashboards());
+		getView().buildVideos(DashboardService.getVideos());
+	}
 
-        ApplicationView.showHeader(false);
-        new ScrollHelper().scrollTo(0);
-    }
+	@Override
+	protected void onReveal() {
+		super.onReveal();
+
+		ApplicationView.showHeader(false);
+		new ScrollHelper().scrollTo(0);
+	}
 }

@@ -7,9 +7,9 @@
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -32,19 +32,19 @@ import gwt.material.design.client.ui.animate.Transition;
 import javax.inject.Inject;
 
 public class CardView extends ViewImpl implements CardPresenter.MyView {
-    interface Binder extends UiBinder<Widget, CardView> {
-    }
+	interface Binder extends UiBinder<Widget, CardView> {
+	}
 
-    @UiField
-    MaterialRow rowCards;
+	@UiField
+	MaterialRow rowCards;
 
-    @Inject
-    CardView(Binder uiBinder) {
-        initWidget(uiBinder.createAndBindUi(this));
-    }
+	@Inject
+	CardView(Binder uiBinder) {
+		initWidget(uiBinder.createAndBindUi(this));
+	}
 
-    @UiHandler("btnShow")
-    void onShow(ClickEvent e) {
-        new MaterialAnimation().transition(Transition.SHOW_GRID).animate(rowCards);
-    }
+	@UiHandler("btnShow")
+	void onShow(ClickEvent e) {
+		new MaterialAnimation().transition(Transition.SHOW_GRID).animate(rowCards);
+	}
 }

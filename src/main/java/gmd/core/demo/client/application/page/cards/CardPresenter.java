@@ -31,20 +31,20 @@ import gmd.core.demo.client.application.page.AppPresenter;
 import gmd.core.demo.client.place.NameTokens;
 
 public class CardPresenter extends AppPresenter<CardPresenter.MyView, CardPresenter.MyProxy> {
-    interface MyView extends View {
-    }
+	interface MyView extends View {
+	}
 
-    @ProxyStandard
-    @NameToken(NameTokens.CARDS)
-    interface MyProxy extends ProxyPlace<CardPresenter> {
-    }
+	@ProxyStandard
+	@NameToken(NameTokens.CARDS)
+	interface MyProxy extends ProxyPlace<CardPresenter> {
+	}
 
-    @Inject
-    CardPresenter(
-            EventBus eventBus,
-            MyView view,
-            MyProxy proxy,
-            PlaceManager placeManager) {
-        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN, placeManager);
-    }
+	@Inject
+	CardPresenter(
+		EventBus eventBus,
+		MyView view,
+		MyProxy proxy,
+		PlaceManager placeManager) {
+		super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN, placeManager);
+	}
 }

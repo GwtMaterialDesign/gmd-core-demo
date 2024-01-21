@@ -22,9 +22,9 @@ package gmd.core.demo.client.application.page.fab;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class FabModule extends AbstractPresenterModule {
-    @Override
-    protected void configure() {
-        bindPresenter(FabPresenter.class, FabPresenter.MyView.class, FabView.class,
-                FabPresenter.MyProxy.class);
-    }
+	@Override
+	protected void configure() {
+		bindPresenter(FabPresenter.class, FabPresenter.MyView.class, FabView.class,
+			FabPresenter.MyProxy.class);
+	}
 }

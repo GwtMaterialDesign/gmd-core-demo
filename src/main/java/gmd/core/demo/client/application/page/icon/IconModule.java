@@ -22,9 +22,9 @@ package gmd.core.demo.client.application.page.icon;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class IconModule extends AbstractPresenterModule {
-    @Override
-    protected void configure() {
-        bindPresenter(IconPresenter.class, IconPresenter.MyView.class, IconView.class,
-                IconPresenter.MyProxy.class);
-    }
+	@Override
+	protected void configure() {
+		bindPresenter(IconPresenter.class, IconPresenter.MyView.class, IconView.class,
+			IconPresenter.MyProxy.class);
+	}
 }

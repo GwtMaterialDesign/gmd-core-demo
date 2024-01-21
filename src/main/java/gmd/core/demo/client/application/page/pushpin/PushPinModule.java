@@ -22,9 +22,9 @@ package gmd.core.demo.client.application.page.pushpin;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class PushPinModule extends AbstractPresenterModule {
-    @Override
-    protected void configure() {
-        bindPresenter(PushPinPresenter.class, PushPinPresenter.MyView.class, PushPinView.class,
-                PushPinPresenter.MyProxy.class);
-    }
+	@Override
+	protected void configure() {
+		bindPresenter(PushPinPresenter.class, PushPinPresenter.MyView.class, PushPinView.class,
+			PushPinPresenter.MyProxy.class);
+	}
 }

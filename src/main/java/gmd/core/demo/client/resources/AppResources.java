@@ -25,17 +25,17 @@ import com.google.gwt.resources.client.TextResource;
 
 public interface AppResources extends ClientBundle {
 
-    AppResources INSTANCE = GWT.create(AppResources.class);
+	AppResources INSTANCE = GWT.create(AppResources.class);
 
-    @Source("css/app.css")
-    TextResource appCss();
+	@Source("css/app.css")
+	TextResource appCss();
 
-    @Source("css/app-dark.css")
-    TextResource appDarkCss();
+	@Source("css/app-dark.css")
+	TextResource appDarkCss();
 
-    @Source("css/highlight/androidstudio.css")
-    TextResource highlightCSs();
+	@Source("css/highlight/androidstudio.css")
+	TextResource highlightCSs();
 
-    @Source("js/highlight.pack.js")
-    TextResource highlightJs();
+	@Source("js/highlight.pack.js")
+	TextResource highlightJs();
 }

@@ -22,9 +22,9 @@ package gmd.core.demo.client.application.page.range;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class RangeModule extends AbstractPresenterModule {
-    @Override
-    protected void configure() {
-        bindPresenter(RangePresenter.class, RangePresenter.MyView.class, RangeView.class,
-                RangePresenter.MyProxy.class);
-    }
+	@Override
+	protected void configure() {
+		bindPresenter(RangePresenter.class, RangePresenter.MyView.class, RangeView.class,
+			RangePresenter.MyProxy.class);
+	}
 }

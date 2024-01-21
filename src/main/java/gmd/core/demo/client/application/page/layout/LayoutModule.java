@@ -22,9 +22,9 @@ package gmd.core.demo.client.application.page.layout;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class LayoutModule extends AbstractPresenterModule {
-    @Override
-    protected void configure() {
-        bindPresenter(LayoutPresenter.class, LayoutPresenter.MyView.class, LayoutView.class,
-                LayoutPresenter.MyProxy.class);
-    }
+	@Override
+	protected void configure() {
+		bindPresenter(LayoutPresenter.class, LayoutPresenter.MyView.class, LayoutView.class,
+			LayoutPresenter.MyProxy.class);
+	}
 }

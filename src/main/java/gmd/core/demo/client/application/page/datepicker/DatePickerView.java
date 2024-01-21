@@ -52,7 +52,8 @@ public class DatePickerView extends ViewImpl implements DatePickerPresenter.MyVi
 
     private final List<DatePickerLanguage> languages = new ArrayList<>();
 
-    @Inject
+	@SuppressWarnings({"deprecation"})
+	@Inject
     DatePickerView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 

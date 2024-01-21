@@ -22,9 +22,9 @@ package gmd.core.demo.client.application.page.listbox;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class ListBoxModule extends AbstractPresenterModule {
-    @Override
-    protected void configure() {
-        bindPresenter(ListBoxPresenter.class, ListBoxPresenter.MyView.class, ListBoxView.class,
-                ListBoxPresenter.MyProxy.class);
-    }
+	@Override
+	protected void configure() {
+		bindPresenter(ListBoxPresenter.class, ListBoxPresenter.MyView.class, ListBoxView.class,
+			ListBoxPresenter.MyProxy.class);
+	}
 }

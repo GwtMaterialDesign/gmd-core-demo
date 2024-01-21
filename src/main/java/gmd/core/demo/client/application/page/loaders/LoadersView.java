@@ -43,110 +43,110 @@ import javax.inject.Inject;
 import static gwt.material.design.jquery.client.api.JQuery.$;
 
 public class LoadersView extends ViewImpl implements LoadersPresenter.MyView {
-    interface Binder extends UiBinder<Widget, LoadersView> {
-    }
+	interface Binder extends UiBinder<Widget, LoadersView> {
+	}
 
-    @UiField
-    MaterialNavBar navBar;
+	@UiField
+	MaterialNavBar navBar;
 
-    @UiField
-    MaterialCard loaderCard;
+	@UiField
+	MaterialCard loaderCard;
 
-    @UiField
-    MaterialCardContent cardContent;
+	@UiField
+	MaterialCardContent cardContent;
 
-    @UiField
-    MaterialButton btnLoader, btnProgress;
+	@UiField
+	MaterialButton btnLoader, btnProgress;
 
-    @UiField
-    MaterialCheckBox loaderWithMessage, loaderWithBackground, loaderWithBlur, loaderWithOpacity, loaderWithoutScrolling;
+	@UiField
+	MaterialCheckBox loaderWithMessage, loaderWithBackground, loaderWithBlur, loaderWithOpacity, loaderWithoutScrolling;
 
-    @Inject
-    LoadersView(Binder uiBinder) {
-        initWidget(uiBinder.createAndBindUi(this));
-    }
+	@Inject
+	LoadersView(Binder uiBinder) {
+		initWidget(uiBinder.createAndBindUi(this));
+	}
 
-    @UiHandler("btnLoader")
-    void onShowLoaderSpecific(ClickEvent e) {
-        MaterialLoader.loading(true, loaderCard);
-        btnProgress.setEnabled(false);
-        Timer timer = new Timer() {
-            @Override
-            public void run() {
-                btnProgress.setEnabled(true);
-                MaterialLoader.loading(false);
-            }
-        };
-        timer.schedule(2000);
-    }
+	@UiHandler("btnLoader")
+	void onShowLoaderSpecific(ClickEvent e) {
+		MaterialLoader.loading(true, loaderCard);
+		btnProgress.setEnabled(false);
+		Timer timer = new Timer() {
+			@Override
+			public void run() {
+				btnProgress.setEnabled(true);
+				MaterialLoader.loading(false);
+			}
+		};
+		timer.schedule(2000);
+	}
 
-    @UiHandler("btnProgress")
-    void onShowProgressSpecific(ClickEvent e) {
-        MaterialLoader.progress(true, cardContent);
-        btnLoader.setEnabled(false);
-        Timer timer = new Timer() {
-            @Override
-            public void run() {
-                btnLoader.setEnabled(true);
-                MaterialLoader.progress(false);
-            }
-        };
-        timer.schedule(2000);
-    }
+	@UiHandler("btnProgress")
+	void onShowProgressSpecific(ClickEvent e) {
+		MaterialLoader.progress(true, cardContent);
+		btnLoader.setEnabled(false);
+		Timer timer = new Timer() {
+			@Override
+			public void run() {
+				btnLoader.setEnabled(true);
+				MaterialLoader.progress(false);
+			}
+		};
+		timer.schedule(2000);
+	}
 
-    @UiHandler("btnShowLoader")
-    void onShowLoader(ClickEvent e) {
-        MaterialLoader loader = new MaterialLoader();
-        loader.setType(LoaderType.CIRCULAR);
+	@UiHandler("btnShowLoader")
+	void onShowLoader(ClickEvent e) {
+		MaterialLoader loader = new MaterialLoader();
+		loader.setType(LoaderType.CIRCULAR);
 
-        OverlayOption option = OverlayOption.create();
-        if (loaderWithBackground.getValue()) {
-            option.setBackgroundColor(Color.BLUE);
-        }
+		OverlayOption option = OverlayOption.create();
+		if (loaderWithBackground.getValue()) {
+			option.setBackgroundColor(Color.BLUE);
+		}
 
-        if (loaderWithBlur.getValue()) {
-            option.setBlur(new Blur(4, $("#app-container")));
-        }
+		if (loaderWithBlur.getValue()) {
+			option.setBlur(new Blur(4, $("#app-container")));
+		}
 
-        if (loaderWithOpacity.getValue()) {
-            option.setOpacity(1.0);
-        }
+		if (loaderWithOpacity.getValue()) {
+			option.setOpacity(1.0);
+		}
 
-        loader.setMessage(loaderWithMessage.getValue() ? "Please Wait" : "");
+		loader.setMessage(loaderWithMessage.getValue() ? "Please Wait" : "");
 
-        loader.setOverlayOption(option);
-        loader.setScrollDisabled(loaderWithoutScrolling.getValue());
-        loader.show();
-        Timer t = new Timer() {
-            @Override
-            public void run() {
-                loader.hide();
-            }
-        };
-        t.schedule(3000);
-    }
+		loader.setOverlayOption(option);
+		loader.setScrollDisabled(loaderWithoutScrolling.getValue());
+		loader.show();
+		Timer t = new Timer() {
+			@Override
+			public void run() {
+				loader.hide();
+			}
+		};
+		t.schedule(3000);
+	}
 
-    @UiHandler("btnShowProgress")
-    void onShowProgress(ClickEvent e) {
-        MaterialLoader.progress(true);
-        Timer t = new Timer() {
-            @Override
-            public void run() {
-                MaterialLoader.progress(false);
-            }
-        };
-        t.schedule(3000);
-    }
+	@UiHandler("btnShowProgress")
+	void onShowProgress(ClickEvent e) {
+		MaterialLoader.progress(true);
+		Timer t = new Timer() {
+			@Override
+			public void run() {
+				MaterialLoader.progress(false);
+			}
+		};
+		t.schedule(3000);
+	}
 
-    @UiHandler("btnShowNavBarProgress")
-    void onShowNavBarProgress(ClickEvent e) {
-        navBar.showProgress(ProgressType.INDETERMINATE);
-        Timer t = new Timer() {
-            @Override
-            public void run() {
-                navBar.hideProgress();
-            }
-        };
-        t.schedule(3000);
-    }
+	@UiHandler("btnShowNavBarProgress")
+	void onShowNavBarProgress(ClickEvent e) {
+		navBar.showProgress(ProgressType.INDETERMINATE);
+		Timer t = new Timer() {
+			@Override
+			public void run() {
+				navBar.hideProgress();
+			}
+		};
+		t.schedule(3000);
+	}
 }

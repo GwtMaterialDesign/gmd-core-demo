@@ -7,9 +7,9 @@
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
-  
+
        http://www.apache.org/licenses/LICENSE-2.0
-  
+
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -77,7 +77,7 @@
 					<m:MaterialCard>
 						<m:MaterialCardImage waves="LIGHT">
 							<m:MaterialImage
-							 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.png"/>
+								url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.png"/>
 							<m:MaterialCardTitle text="Sample"/>
 						</m:MaterialCardImage>
 
@@ -96,7 +96,7 @@
 					<m:MaterialCard>
 						<m:MaterialCardImage waves="LIGHT">
 							<m:MaterialImage
-							 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.png"/>
+								url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.png"/>
 							<m:MaterialCardTitle text="Sample"/>
 						</m:MaterialCardImage>
 
@@ -141,8 +141,8 @@
 					<m:MaterialCard orientation="LANDSCAPE" detectOrientation="true">
 						<m:MaterialCardImage waves="LIGHT">
 							<m:MaterialImage
-							 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif"
-							 height="126px"/>
+								url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif"
+								height="126px"/>
 						</m:MaterialCardImage>
 
 						<m:MaterialCardContent textColor="BLACK">
@@ -162,8 +162,8 @@
 					<m:MaterialCard orientation="LANDSCAPE" detectOrientation="true">
 						<m:MaterialCardImage waves="LIGHT">
 							<m:MaterialImage
-							 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif"
-							 height="126px"/>
+								url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif"
+								height="126px"/>
 						</m:MaterialCardImage>
 
 						<m:MaterialCardContent textColor="BLACK">
@@ -183,8 +183,8 @@
 					<m:MaterialCard orientation="LANDSCAPE" detectOrientation="true">
 						<m:MaterialCardImage waves="LIGHT">
 							<m:MaterialImage
-							 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif"
-							 height="126px"/>
+								url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif"
+								height="126px"/>
 						</m:MaterialCardImage>
 
 						<m:MaterialCardContent textColor="BLACK">
@@ -204,8 +204,8 @@
 					<m:MaterialCard orientation="LANDSCAPE" detectOrientation="true">
 						<m:MaterialCardImage waves="LIGHT">
 							<m:MaterialImage
-							 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif"
-							 height="126px"/>
+								url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif"
+								height="126px"/>
 						</m:MaterialCardImage>
 
 						<m:MaterialCardContent textColor="BLACK">
@@ -251,8 +251,8 @@
 					<m:MaterialCard orientation="LANDSCAPE" detectOrientation="true">
 						<m:MaterialCardImage waves="LIGHT">
 							<m:MaterialImage
-							 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif"
-							 height="126px"/>
+								url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif"
+								height="126px"/>
 						</m:MaterialCardImage>
 
 						<m:MaterialCardContent textColor="BLACK">
@@ -295,10 +295,10 @@
 		<widget:CodeSection sectionTitle="Card Reveal">
 			<m:MaterialRow>
 				<m:MaterialColumn grid="l3">
-					<m:MaterialCard >
+					<m:MaterialCard>
 						<m:MaterialCardImage waves="LIGHT">
 							<m:MaterialImage
-							 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif"/>
+								url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif"/>
 						</m:MaterialCardImage>
 
 						<m:MaterialCardContent textColor="BLACK">
@@ -309,7 +309,7 @@
 						<m:MaterialCardReveal>
 							<m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
 							<m:MaterialLabel
-							 text="Here is some more information about this product that is only revealed once clicked on."/>
+								text="Here is some more information about this product that is only revealed once clicked on."/>
 						</m:MaterialCardReveal>
 
 						<m:MaterialCardAction>
@@ -320,10 +320,10 @@
 				</m:MaterialColumn>
 
 				<m:MaterialColumn grid="l3">
-					<m:MaterialCard >
+					<m:MaterialCard>
 						<m:MaterialCardImage waves="LIGHT">
 							<m:MaterialImage
-							 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/shoes.png"/>
+								url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/shoes.png"/>
 						</m:MaterialCardImage>
 
 						<m:MaterialCardContent textColor="BLACK">
@@ -334,7 +334,7 @@
 						<m:MaterialCardReveal>
 							<m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
 							<m:MaterialLabel
-							 text="Here is some more information about this product that is only revealed once clicked on."/>
+								text="Here is some more information about this product that is only revealed once clicked on."/>
 						</m:MaterialCardReveal>
 
 						<m:MaterialCardAction>
@@ -345,7 +345,7 @@
 				</m:MaterialColumn>
 
 				<m:MaterialColumn grid="l3">
-					<m:MaterialCard >
+					<m:MaterialCard>
 						<m:MaterialCardImage waves="LIGHT">
 							<m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/md.gif"/>
 						</m:MaterialCardImage>
@@ -358,7 +358,7 @@
 						<m:MaterialCardReveal>
 							<m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
 							<m:MaterialLabel
-							 text="Here is some more information about this product that is only revealed once clicked on."/>
+								text="Here is some more information about this product that is only revealed once clicked on."/>
 						</m:MaterialCardReveal>
 
 						<m:MaterialCardAction>
@@ -402,8 +402,8 @@
 						<m:MaterialCardContent>
 							<m:MaterialRow marginBottom="0">
 								<m:MaterialImage
-								 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/profile.jpg"
-								 width="50" height="50" circle="true" float="LEFT" marginRight="20"/>
+									url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/profile.jpg"
+									width="50" height="50" circle="true" float="LEFT" marginRight="20"/>
 								<m:MaterialLabel fontWeight="BOLD" text="Mark Kevin Baldemor" fontSize="1.2em"
 												 float="LEFT" marginTop="20"/>
 								<m:MaterialLabel text="2d" textColor="GREY" float="RIGHT" marginTop="20"
@@ -425,7 +425,7 @@
 						</m:MaterialCardContent>
 						<m:MaterialCardImage>
 							<m:MaterialImage
-							 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/boat.png"/>
+								url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/boat.png"/>
 						</m:MaterialCardImage>
 						<m:MaterialCardAction padding="0">
 							<m:MaterialRow margin="12">
@@ -442,11 +442,11 @@
 							<m:MaterialCollection>
 								<m:MaterialCollectionItem type="AVATAR">
 									<m:MaterialImage
-									 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/yuna.jpg"
-									 circle="true" width="40px" height="40px"/>
+										url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/yuna.jpg"
+										circle="true" width="40px" height="40px"/>
 									<m:MaterialLabel text="Yuna" fontWeight="BOLD"/>
 									<m:MaterialLabel
-									 text="I grew up in the island of the Philippines. The water is clear. Some are not sandy. Water is just the right temperature."/>
+										text="I grew up in the island of the Philippines. The water is clear. Some are not sandy. Water is just the right temperature."/>
 								</m:MaterialCollectionItem>
 							</m:MaterialCollection>
 						</m:MaterialCardAction>
@@ -511,8 +511,8 @@
 					<m:MaterialCard backgroundColor="INDIGO_LIGHTEN_1">
 						<m:MaterialCardImage>
 							<ma:webp.MaterialWebpImage
-							 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card-1.webp"
-							 fallbackExtension="png"/>
+								url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card-1.webp"
+								fallbackExtension="png"/>
 						</m:MaterialCardImage>
 						<m:MaterialCardContent textColor="WHITE" height="120px">
 							<m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32"
@@ -531,8 +531,8 @@
 					<m:MaterialCard backgroundColor="RED_LIGHTEN_1">
 						<m:MaterialCardImage>
 							<ma:webp.MaterialWebpImage
-							 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card-2.webp"
-							 fallbackExtension="png"/>
+								url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card-2.webp"
+								fallbackExtension="png"/>
 						</m:MaterialCardImage>
 						<m:MaterialCardContent textColor="WHITE" height="120px">
 							<m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32"
@@ -551,8 +551,8 @@
 					<m:MaterialCard backgroundColor="TEAL_LIGHTEN_1">
 						<m:MaterialCardImage>
 							<ma:webp.MaterialWebpImage
-							 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card-3.webp"
-							 fallbackExtension="png"/>
+								url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card-3.webp"
+								fallbackExtension="png"/>
 						</m:MaterialCardImage>
 						<m:MaterialCardContent textColor="WHITE" height="120px">
 							<m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32"
@@ -571,8 +571,8 @@
 					<m:MaterialCard backgroundColor="BLACK">
 						<m:MaterialCardImage>
 							<ma:webp.MaterialWebpImage
-							 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card-4.webp"
-							 fallbackExtension="png"/>
+								url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card-4.webp"
+								fallbackExtension="png"/>
 						</m:MaterialCardImage>
 						<m:MaterialCardContent textColor="WHITE" height="120px">
 							<m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32"
@@ -614,11 +614,11 @@
 			<m:MaterialButton ui:field="btnShow" text="Show Cards" textColor="BLACK"/>
 			<m:MaterialRow ui:field="rowCards" layoutPosition="RELATIVE" opacity="0">
 				<m:MaterialColumn grid="l3">
-					<m:MaterialCard >
+					<m:MaterialCard>
 						<m:MaterialCardImage waves="LIGHT">
 							<ma:webp.MaterialWebpImage
-							 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp"
-							 fallbackExtension="png"/>
+								url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp"
+								fallbackExtension="png"/>
 						</m:MaterialCardImage>
 
 						<m:MaterialCardContent textColor="BLACK">
@@ -629,7 +629,7 @@
 						<m:MaterialCardReveal>
 							<m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
 							<m:MaterialLabel
-							 text="Here is some more information about this product that is only revealed once clicked on."/>
+								text="Here is some more information about this product that is only revealed once clicked on."/>
 						</m:MaterialCardReveal>
 
 						<m:MaterialCardAction>
@@ -640,11 +640,11 @@
 				</m:MaterialColumn>
 
 				<m:MaterialColumn grid="l3">
-					<m:MaterialCard >
+					<m:MaterialCard>
 						<m:MaterialCardImage waves="LIGHT">
 							<ma:webp.MaterialWebpImage
-							 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp"
-							 fallbackExtension="png"/>
+								url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp"
+								fallbackExtension="png"/>
 						</m:MaterialCardImage>
 
 						<m:MaterialCardContent textColor="BLACK">
@@ -655,7 +655,7 @@
 						<m:MaterialCardReveal>
 							<m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
 							<m:MaterialLabel
-							 text="Here is some more information about this product that is only revealed once clicked on."/>
+								text="Here is some more information about this product that is only revealed once clicked on."/>
 						</m:MaterialCardReveal>
 
 						<m:MaterialCardAction>
@@ -666,11 +666,11 @@
 				</m:MaterialColumn>
 
 				<m:MaterialColumn grid="l3">
-					<m:MaterialCard >
+					<m:MaterialCard>
 						<m:MaterialCardImage waves="LIGHT">
 							<ma:webp.MaterialWebpImage
-							 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp"
-							 fallbackExtension="png"/>
+								url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp"
+								fallbackExtension="png"/>
 						</m:MaterialCardImage>
 
 						<m:MaterialCardContent textColor="BLACK">
@@ -681,7 +681,7 @@
 						<m:MaterialCardReveal>
 							<m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
 							<m:MaterialLabel
-							 text="Here is some more information about this product that is only revealed once clicked on."/>
+								text="Here is some more information about this product that is only revealed once clicked on."/>
 						</m:MaterialCardReveal>
 
 						<m:MaterialCardAction>
@@ -692,11 +692,11 @@
 				</m:MaterialColumn>
 
 				<m:MaterialColumn grid="l3">
-					<m:MaterialCard >
+					<m:MaterialCard>
 						<m:MaterialCardImage waves="LIGHT">
 							<ma:webp.MaterialWebpImage
-							 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp"
-							 fallbackExtension="png"/>
+								url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp"
+								fallbackExtension="png"/>
 						</m:MaterialCardImage>
 
 						<m:MaterialCardContent textColor="BLACK">
@@ -707,7 +707,7 @@
 						<m:MaterialCardReveal>
 							<m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
 							<m:MaterialLabel
-							 text="Here is some more information about this product that is only revealed once clicked on."/>
+								text="Here is some more information about this product that is only revealed once clicked on."/>
 						</m:MaterialCardReveal>
 
 						<m:MaterialCardAction>
@@ -718,11 +718,11 @@
 				</m:MaterialColumn>
 
 				<m:MaterialColumn grid="l3">
-					<m:MaterialCard >
+					<m:MaterialCard>
 						<m:MaterialCardImage waves="LIGHT">
 							<ma:webp.MaterialWebpImage
-							 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp"
-							 fallbackExtension="png"/>
+								url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp"
+								fallbackExtension="png"/>
 						</m:MaterialCardImage>
 
 						<m:MaterialCardContent textColor="BLACK">
@@ -733,7 +733,7 @@
 						<m:MaterialCardReveal>
 							<m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
 							<m:MaterialLabel
-							 text="Here is some more information about this product that is only revealed once clicked on."/>
+								text="Here is some more information about this product that is only revealed once clicked on."/>
 						</m:MaterialCardReveal>
 
 						<m:MaterialCardAction>
@@ -744,11 +744,11 @@
 				</m:MaterialColumn>
 
 				<m:MaterialColumn grid="l3">
-					<m:MaterialCard >
+					<m:MaterialCard>
 						<m:MaterialCardImage waves="LIGHT">
 							<ma:webp.MaterialWebpImage
-							 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp"
-							 fallbackExtension="png"/>
+								url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp"
+								fallbackExtension="png"/>
 						</m:MaterialCardImage>
 
 						<m:MaterialCardContent textColor="BLACK">
@@ -759,7 +759,7 @@
 						<m:MaterialCardReveal>
 							<m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
 							<m:MaterialLabel
-							 text="Here is some more information about this product that is only revealed once clicked on."/>
+								text="Here is some more information about this product that is only revealed once clicked on."/>
 						</m:MaterialCardReveal>
 
 						<m:MaterialCardAction>
@@ -770,11 +770,11 @@
 				</m:MaterialColumn>
 
 				<m:MaterialColumn grid="l3">
-					<m:MaterialCard >
+					<m:MaterialCard>
 						<m:MaterialCardImage waves="LIGHT">
 							<ma:webp.MaterialWebpImage
-							 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp"
-							 fallbackExtension="png"/>
+								url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp"
+								fallbackExtension="png"/>
 						</m:MaterialCardImage>
 
 						<m:MaterialCardContent textColor="BLACK">
@@ -785,7 +785,7 @@
 						<m:MaterialCardReveal>
 							<m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
 							<m:MaterialLabel
-							 text="Here is some more information about this product that is only revealed once clicked on."/>
+								text="Here is some more information about this product that is only revealed once clicked on."/>
 						</m:MaterialCardReveal>
 
 						<m:MaterialCardAction>
@@ -796,11 +796,11 @@
 				</m:MaterialColumn>
 
 				<m:MaterialColumn grid="l3">
-					<m:MaterialCard >
+					<m:MaterialCard>
 						<m:MaterialCardImage waves="LIGHT">
 							<ma:webp.MaterialWebpImage
-							 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp"
-							 fallbackExtension="png"/>
+								url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp"
+								fallbackExtension="png"/>
 						</m:MaterialCardImage>
 
 						<m:MaterialCardContent textColor="BLACK">
@@ -811,7 +811,7 @@
 						<m:MaterialCardReveal>
 							<m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
 							<m:MaterialLabel
-							 text="Here is some more information about this product that is only revealed once clicked on."/>
+								text="Here is some more information about this product that is only revealed once clicked on."/>
 						</m:MaterialCardReveal>
 
 						<m:MaterialCardAction>
@@ -822,11 +822,11 @@
 				</m:MaterialColumn>
 
 				<m:MaterialColumn grid="l3">
-					<m:MaterialCard >
+					<m:MaterialCard>
 						<m:MaterialCardImage waves="LIGHT">
 							<ma:webp.MaterialWebpImage
-							 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp"
-							 fallbackExtension="png"/>
+								url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp"
+								fallbackExtension="png"/>
 						</m:MaterialCardImage>
 
 						<m:MaterialCardContent textColor="BLACK">
@@ -837,7 +837,7 @@
 						<m:MaterialCardReveal>
 							<m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
 							<m:MaterialLabel
-							 text="Here is some more information about this product that is only revealed once clicked on."/>
+								text="Here is some more information about this product that is only revealed once clicked on."/>
 						</m:MaterialCardReveal>
 
 						<m:MaterialCardAction>
@@ -848,11 +848,11 @@
 				</m:MaterialColumn>
 
 				<m:MaterialColumn grid="l3">
-					<m:MaterialCard >
+					<m:MaterialCard>
 						<m:MaterialCardImage waves="LIGHT">
 							<ma:webp.MaterialWebpImage
-							 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp"
-							 fallbackExtension="png"/>
+								url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp"
+								fallbackExtension="png"/>
 						</m:MaterialCardImage>
 
 						<m:MaterialCardContent textColor="BLACK">
@@ -863,7 +863,7 @@
 						<m:MaterialCardReveal>
 							<m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
 							<m:MaterialLabel
-							 text="Here is some more information about this product that is only revealed once clicked on."/>
+								text="Here is some more information about this product that is only revealed once clicked on."/>
 						</m:MaterialCardReveal>
 
 						<m:MaterialCardAction>

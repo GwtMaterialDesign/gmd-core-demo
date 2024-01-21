@@ -7,9 +7,9 @@
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
-  
+
        http://www.apache.org/licenses/LICENSE-2.0
-  
+
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -18,44 +18,44 @@
   #L%
   -->
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-             xmlns:m='urn:import:gwt.material.design.client.ui'
-             xmlns:widget="urn:import:gmd.core.demo.client.application.widget"
-             xmlns:g="urn:import:com.google.gwt.user.client.ui">
+			 xmlns:m='urn:import:gwt.material.design.client.ui'
+			 xmlns:widget="urn:import:gmd.core.demo.client.application.widget"
+			 xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
-    <m:MaterialPanel>
-        <widget:CodeSection sectionTitle="Setting Range">
-            <m:MaterialRange ui:field="range" min="10" max="500" value="250"/>
-            <m:MaterialLabel text="Min: 10"/>
-            <m:MaterialLabel text="Min: 500"/>
-            <m:MaterialLabel ui:field="lblRange" text="Value: 250" paddingBottom="20"/>
-            <g:HTMLPanel>
-                <pre class="xml">
-    &lt;m:MaterialRange ui:field="range" min="10" max="500" value="250"/>
-                </pre>
-            </g:HTMLPanel>
-        </widget:CodeSection>
+	<m:MaterialPanel>
+		<widget:CodeSection sectionTitle="Setting Range">
+			<m:MaterialRange ui:field="range" min="10" max="500" value="250"/>
+			<m:MaterialLabel text="Min: 10"/>
+			<m:MaterialLabel text="Min: 500"/>
+			<m:MaterialLabel ui:field="lblRange" text="Value: 250" paddingBottom="20"/>
+			<g:HTMLPanel>
+				<pre class="xml">
+					&lt;m:MaterialRange ui:field="range" min="10" max="500" value="250"/>
+				</pre>
+			</g:HTMLPanel>
+		</widget:CodeSection>
 
-        <widget:CodeSection sectionTitle="Hide Thumb">
-            <m:MaterialRange ui:field="thumbRange" min="10" max="500" value="250" enableThumb="false"/>
-            <g:HTMLPanel>
-                <pre class="xml">
-    &lt;m:MaterialRange ui:field="thumbRange" min="10" max="500" value="250" enableThumb="false"/>
-                </pre>
-            </g:HTMLPanel>
-        </widget:CodeSection>
+		<widget:CodeSection sectionTitle="Hide Thumb">
+			<m:MaterialRange ui:field="thumbRange" min="10" max="500" value="250" enableThumb="false"/>
+			<g:HTMLPanel>
+				<pre class="xml">
+					&lt;m:MaterialRange ui:field="thumbRange" min="10" max="500" value="250" enableThumb="false"/>
+				</pre>
+			</g:HTMLPanel>
+		</widget:CodeSection>
 
-        <widget:CodeSection sectionTitle="Setting Value">
-            <m:MaterialRange ui:field="rangeSetValue" min="10" max="500" value="250"/>
-            <m:MaterialButton text="Set Value" ui:field="btnRangeValue" marginRight="20" />
-            <m:MaterialButton text="Set Value with Event" ui:field="btnRangeValueEvent" />
-            <g:HTMLPanel>
-                <pre class="java">
-    rangeSetValue.setValue(50);
+		<widget:CodeSection sectionTitle="Setting Value">
+			<m:MaterialRange ui:field="rangeSetValue" min="10" max="500" value="250"/>
+			<m:MaterialButton text="Set Value" ui:field="btnRangeValue" marginRight="20"/>
+			<m:MaterialButton text="Set Value with Event" ui:field="btnRangeValueEvent"/>
+			<g:HTMLPanel>
+				<pre class="java">
+					rangeSetValue.setValue(50);
 
-    // Will fire ValueChangeEvent
-    rangeSetValue.setValue(20, true);
-                </pre>
-            </g:HTMLPanel>
-        </widget:CodeSection>
-    </m:MaterialPanel>
+					// Will fire ValueChangeEvent
+					rangeSetValue.setValue(20, true);
+				</pre>
+			</g:HTMLPanel>
+		</widget:CodeSection>
+	</m:MaterialPanel>
 </ui:UiBinder>

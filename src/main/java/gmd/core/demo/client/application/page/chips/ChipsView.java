@@ -7,9 +7,9 @@
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -32,32 +32,32 @@ import gwt.material.design.client.ui.MaterialToast;
 import javax.inject.Inject;
 
 public class ChipsView extends ViewImpl implements ChipsPresenter.MyView {
-    interface Binder extends UiBinder<Widget, ChipsView> {
-    }
+	interface Binder extends UiBinder<Widget, ChipsView> {
+	}
 
-    @UiField
-    MaterialChip chip;
+	@UiField
+	MaterialChip chip;
 
-    @UiField
-    MaterialChipContainer chipContainer;
+	@UiField
+	MaterialChipContainer chipContainer;
 
-    @Inject
-    ChipsView(Binder uiBinder) {
-        initWidget(uiBinder.createAndBindUi(this));
-    }
+	@Inject
+	ChipsView(Binder uiBinder) {
+		initWidget(uiBinder.createAndBindUi(this));
+	}
 
-    @UiHandler("chipClick")
-    void onClickChip(ClickEvent e) {
-        MaterialToast.fireToast("You clicked me");
-    }
+	@UiHandler("chipClick")
+	void onClickChip(ClickEvent e) {
+		MaterialToast.fireToast("You clicked me");
+	}
 
-    @UiHandler("closeChip")
-    void closeChip(ClickEvent e) {
-        chip.close();
-    }
+	@UiHandler("closeChip")
+	void closeChip(ClickEvent e) {
+		chip.close();
+	}
 
-    @UiHandler("reload")
-    void reload(ClickEvent e) {
-        chipContainer.reload();
-    }
+	@UiHandler("reload")
+	void reload(ClickEvent e) {
+		chipContainer.reload();
+	}
 }
