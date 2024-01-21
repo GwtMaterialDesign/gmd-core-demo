@@ -28,7 +28,10 @@ import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gmd.core.demo.client.application.model.DataHelper;
 import gmd.core.demo.client.application.model.Hero;
-import gwt.material.design.client.ui.*;
+import gwt.material.design.client.ui.MaterialButton;
+import gwt.material.design.client.ui.MaterialListBox;
+import gwt.material.design.client.ui.MaterialListValueBox;
+import gwt.material.design.client.ui.MaterialToast;
 
 import javax.inject.Inject;
 

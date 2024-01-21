@@ -20,7 +20,10 @@ import gwt.material.design.client.MaterialDesignBase;
 import gwt.material.design.client.base.MaterialWidget;
 import gwt.material.design.client.base.helper.ScrollHelper;
 import gwt.material.design.client.constants.HideOn;
-import gwt.material.design.client.ui.*;
+import gwt.material.design.client.ui.MaterialLink;
+import gwt.material.design.client.ui.MaterialLoader;
+import gwt.material.design.client.ui.MaterialPushpin;
+import gwt.material.design.client.ui.MaterialScrollspy;
 
 public class AppPresenter<V extends View, P extends Proxy<?>> extends Presenter<V, P> {
 

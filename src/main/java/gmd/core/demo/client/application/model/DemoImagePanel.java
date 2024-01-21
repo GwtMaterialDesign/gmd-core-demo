@@ -21,7 +21,8 @@ package gmd.core.demo.client.application.model;
 
 import gmd.core.demo.client.application.widget.CodeSection;
 import gwt.material.design.client.constants.Color;
-import gwt.material.design.client.ui.*;
+import gwt.material.design.client.ui.MaterialAnchorButton;
+import gwt.material.design.client.ui.MaterialImage;
 
 /**
  * Created by kevzl on 4/13/2017.

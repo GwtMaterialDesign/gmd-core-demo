@@ -26,7 +26,11 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.client.ui.*;
+import gwt.material.design.client.ui.MaterialCollapsible;
+import gwt.material.design.client.ui.MaterialCollapsibleHeader;
+import gwt.material.design.client.ui.MaterialCollapsibleItem;
+import gwt.material.design.client.ui.MaterialLink;
+import gwt.material.design.client.ui.MaterialToast;
 
 import javax.inject.Inject;
 

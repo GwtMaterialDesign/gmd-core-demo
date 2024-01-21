@@ -28,7 +28,11 @@ import com.gwtplatform.mvp.client.ViewImpl;
 import gmd.core.demo.client.application.model.DataHelper;
 import gmd.core.demo.client.application.model.Hero;
 import gwt.material.design.client.base.SearchObject;
-import gwt.material.design.client.ui.*;
+import gwt.material.design.client.ui.MaterialImage;
+import gwt.material.design.client.ui.MaterialLabel;
+import gwt.material.design.client.ui.MaterialNavBar;
+import gwt.material.design.client.ui.MaterialSearch;
+import gwt.material.design.client.ui.MaterialToast;
 import gwt.material.design.client.ui.animate.MaterialAnimation;
 import gwt.material.design.client.ui.animate.Transition;
 
