@@ -54,6 +54,7 @@ public class AppPresenter<V extends View, P extends Proxy<?>> extends Presenter<
 
         Component component = NavigationService.get(placeManager.getCurrentPlaceRequest().getNameToken());
         String source = AppConstants.GITHUB_SOURCE_CODE + getView().getClass().getName().replace(".", "/");
+        assert component != null;
         component.setJavaSource(source + ".java");
         component.setXmlSource(source + ".ui.xml");
         ApplicationView.setComponent(component);
