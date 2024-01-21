@@ -140,7 +140,7 @@ public class DatePickerView extends ViewImpl implements DatePickerPresenter.MyVi
     void onDpValue(ClickEvent e) {
         //dpValue.setValue(new Date());
         dpValue.setValue(new Date(), false);
-        Long l = new Date().getTime();
+        long l = new Date().getTime();
         l = l - 2592000000L;      //1 Months in Milliseconds = 2592000000
         Date dd = new Date();
         dd.setTime(l);
