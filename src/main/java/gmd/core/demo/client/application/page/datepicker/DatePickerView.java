@@ -85,7 +85,7 @@ public class DatePickerView extends ViewImpl implements DatePickerPresenter.MyVi
 
         dpAutoClose.addValueChangeHandler(event -> MaterialToast.fireToast("Date Selected " + event.getValue()));
 
-        dpBirthdate.setDate(new Date(50, 1, 1));
+        dpBirthdate.setDate(new Date(50, Calendar.JANUARY, 1));
 
         initLanguage();
     }
@@ -105,7 +105,7 @@ public class DatePickerView extends ViewImpl implements DatePickerPresenter.MyVi
 
     @UiHandler("btnSetDate")
     void onSetDate(ClickEvent e){
-        dp.setDate(new Date(116, 0,1));
+        dp.setDate(new Date(116, Calendar.JANUARY,1));
     }
 
     @UiHandler("btnGetDate")
@@ -149,7 +149,7 @@ public class DatePickerView extends ViewImpl implements DatePickerPresenter.MyVi
 
     @UiHandler("btnDpValueEvent")
     void onDpValueEvent(ClickEvent e) {
-        Date date = new Date(123,1,1);
+        Date date = new Date(123,Calendar.JANUARY,1);
         dpValue.setValue(date, true);
     }
 }
