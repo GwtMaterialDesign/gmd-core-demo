@@ -7,9 +7,9 @@
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
-  
+
        http://www.apache.org/licenses/LICENSE-2.0
-  
+
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -26,7 +26,7 @@
         <widget:CodeSection sectionTitle="Dropdown Properties">
             <g:HTMLPanel>
                 <blockquote>
-                    <p><b>activator</b> - name of your dropdown, a unique name needs for the activator to set it e.g activates='dropdown_name'</p>
+                    <p><b>activator</b> - name of your dropdown, a unique name needs for the activator to set it e.g. activates='dropdown_name'</p>
                     <p><b>constraintWidth</b> - Does not change width of dropdown to that of the activator</p>
                     <p><b>belowOrigin</b> - displays dropdown below the button</p>
                     <p><b>hover</b> - If sets to true, when you hover to your activator, dropdown component will be shown.</p>
@@ -36,7 +36,7 @@
 
         <widget:CodeSection sectionTitle="Introduction" description="Add a dropdown list to any button. Make sure to add the property activates to be able to initialize the dropdown plugin, it will use that as your id on your dropdown menu.">
             <m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"  activates="dp-2"/>
-            <!-- My Drop Down -->
+            <!-- My Drop-Down -->
             <m:MaterialDropDown activator="dp-2" constrainWidth="true">
                 <m:MaterialLink text="First" />
                 <m:MaterialLink text="Second" />
@@ -58,7 +58,7 @@
         <widget:CodeSection sectionTitle="Designing">
             <!-- Activator -->
             <m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"  activates="dp-3"/>
-            <!-- My Drop Down -->
+            <!-- My Drop-Down -->
             <m:MaterialDropDown activator="dp-3" constrainWidth="true">
                 <m:MaterialLink text="First" iconType="POLYMER" iconPosition="RIGHT" separator="true"/>
                 <m:MaterialLink text="Second" iconType="POLYMER" iconPosition="RIGHT" separator="true"/>
@@ -136,7 +136,7 @@
 
         <widget:CodeSection sectionTitle="Selection Event">
             <m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"  activates="dp-selection"/>
-            <!-- My Drop Down -->
+            <!-- My Drop-Down -->
             <m:MaterialDropDown ui:field="dropdown" activator="dp-selection" constrainWidth="true">
                 <m:MaterialLink text="First" />
                 <m:MaterialLink text="Second" />

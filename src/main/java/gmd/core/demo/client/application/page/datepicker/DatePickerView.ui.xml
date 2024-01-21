@@ -7,9 +7,9 @@
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
-  
+
        http://www.apache.org/licenses/LICENSE-2.0
-  
+
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -67,7 +67,7 @@
             <g:HTMLPanel>
                 <pre class="xml">
     &lt;m:MaterialRow>
-        &lt;m:MaterialDatePicker  placeholder="Picker attached on it's own (SELF)" container="SELF" selectionType="YEAR" grid="s12 m4"/>
+        &lt;m:MaterialDatePicker  placeholder="Picker attached on its own (SELF)" container="SELF" selectionType="YEAR" grid="s12 m4"/>
         &lt;m:MaterialDatePicker  placeholder="Picker attached on root (BODY)" container="BODY" selectionType="YEAR" grid="s12 m4"/>
     &lt;/m:MaterialRow>
                 </pre>
@@ -120,11 +120,11 @@
             <g:HTMLPanel>
                 <pre class="xml">
     &lt;m:MaterialDatePicker ui:field="dp" grid="s12 m4" placeholder="Date" selectionType="YEAR"/>
-    &lt;m:MaterialButton ui:field="btnSetDate" text="Set Date to January 1 2016" marginRight="20" marginTop="24"/>
+    &lt;m:MaterialButton ui:field="btnSetDate" text="Set Date to January 1, 2016" marginRight="20" marginTop="24"/>
     &lt;m:MaterialButton ui:field="btnGetDate" text="Get the date" marginTop="24"/>
                 </pre>
             </g:HTMLPanel>
-            
+
             <g:HTMLPanel>
                 <pre class="java">
     @UiHandler("btnSetDate")
@@ -189,7 +189,7 @@
     &lt;m:MaterialButton ui:field="btnSetFormat" text="Set Date with custom format" marginTop="24"/>
                 </pre>
             </g:HTMLPanel>
-            
+
             <g:HTMLPanel>
                 <pre class="java">
     @UiHandler("btnSetFormat")
@@ -283,7 +283,7 @@
     &lt;m:MaterialDatePicker ui:field="dpLimit" placeholder="With Limit"/>
                 </pre>
             </g:HTMLPanel>
-            
+
             <g:HTMLPanel>
                 <pre class="java">
     dpLimit.setDateMin(new Date(117, 0, 1));
@@ -312,7 +312,7 @@
     &lt;/m:MaterialRow>
                 </pre>
             </g:HTMLPanel>
-            
+
             <g:HTMLPanel>
                 <pre class="java">
     @UiHandler("btnClear")
@@ -356,8 +356,8 @@
         dpOpenClose.close();
     });
                 </pre>
-            </g:HTMLPanel> 
-            
+            </g:HTMLPanel>
+
             <g:HTMLPanel>
                 <pre class="java">
     @UiHandler("btnOpen")
