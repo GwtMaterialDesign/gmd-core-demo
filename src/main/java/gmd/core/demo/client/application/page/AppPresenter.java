@@ -56,9 +56,7 @@ public class AppPresenter<V extends View, P extends Proxy<?>> extends Presenter<
         String source = AppConstants.GITHUB_SOURCE_CODE + getView().getClass().getName().replace(".", "/");
         component.setJavaSource(source + ".java");
         component.setXmlSource(source + ".ui.xml");
-        if (component != null) {
-            ApplicationView.setComponent(component);
-        }
+        ApplicationView.setComponent(component);
 
         ApplicationView.showHeader(true);
 
