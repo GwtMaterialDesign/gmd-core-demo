@@ -36,38 +36,38 @@ import gwt.material.design.client.base.helper.ScrollHelper;
 import java.util.List;
 
 public class HomePresenter extends Presenter<HomePresenter.MyView, HomePresenter.MyProxy> {
-	interface MyView extends View {
-		void buildDashboards(List<Dashboard> dashboards);
+    interface MyView extends View {
+        void buildDashboards(List<Dashboard> dashboards);
 
-		void buildVideos(List<Dashboard> videos);
-	}
+        void buildVideos(List<Dashboard> videos);
+    }
 
-	@ProxyStandard
-	@NameToken(NameTokens.HOME)
-	interface MyProxy extends ProxyPlace<HomePresenter> {
-	}
+    @ProxyStandard
+    @NameToken(NameTokens.HOME)
+    interface MyProxy extends ProxyPlace<HomePresenter> {
+    }
 
-	@Inject
-	HomePresenter(
-		EventBus eventBus,
-		MyView view,
-		MyProxy proxy) {
-		super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
-	}
+    @Inject
+    HomePresenter(
+        EventBus eventBus,
+        MyView view,
+        MyProxy proxy) {
+        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
+    }
 
-	@Override
-	protected void onBind() {
-		super.onBind();
+    @Override
+    protected void onBind() {
+        super.onBind();
 
-		getView().buildDashboards(DashboardService.getDashboards());
-		getView().buildVideos(DashboardService.getVideos());
-	}
+        getView().buildDashboards(DashboardService.getDashboards());
+        getView().buildVideos(DashboardService.getVideos());
+    }
 
-	@Override
-	protected void onReveal() {
-		super.onReveal();
+    @Override
+    protected void onReveal() {
+        super.onReveal();
 
-		ApplicationView.showHeader(false);
-		new ScrollHelper().scrollTo(0);
-	}
+        ApplicationView.showHeader(false);
+        new ScrollHelper().scrollTo(0);
+    }
 }

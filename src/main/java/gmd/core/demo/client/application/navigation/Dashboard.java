@@ -22,7 +22,6 @@ public class Dashboard {
     }
 
 
-
     public Dashboard(String title, String description, String url, String image, boolean enabled) {
         this.title = title;
         this.description = description;

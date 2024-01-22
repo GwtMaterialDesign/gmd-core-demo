@@ -22,9 +22,9 @@ package gmd.core.demo.client.application.page.button;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class ButtonModule extends AbstractPresenterModule {
-	@Override
-	protected void configure() {
-		bindPresenter(ButtonPresenter.class, ButtonPresenter.MyView.class, ButtonView.class,
-			ButtonPresenter.MyProxy.class);
-	}
+    @Override
+    protected void configure() {
+        bindPresenter(ButtonPresenter.class, ButtonPresenter.MyView.class, ButtonView.class,
+            ButtonPresenter.MyProxy.class);
+    }
 }

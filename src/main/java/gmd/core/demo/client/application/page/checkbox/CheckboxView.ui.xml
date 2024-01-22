@@ -18,114 +18,114 @@
   #L%
   -->
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-			 xmlns:m='urn:import:gwt.material.design.client.ui'
-			 xmlns:widget="urn:import:gmd.core.demo.client.application.widget"
-			 xmlns:g="urn:import:com.google.gwt.user.client.ui">
+             xmlns:m='urn:import:gwt.material.design.client.ui'
+             xmlns:widget="urn:import:gmd.core.demo.client.application.widget"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
-	<m:MaterialPanel>
-		<widget:CodeSection sectionTitle="Check Box">
-			<m:MaterialRow>
-				<m:MaterialColumn grid="l2">
-					<m:MaterialCheckBox text="Blue" value="true" marginBottom="12"/>
-					<m:MaterialCheckBox text="Red" type="INTERMEDIATE" marginBottom="12"/>
-					<m:MaterialCheckBox text="Cyan" value="true" type="FILLED" marginBottom="12"/>
-					<m:MaterialCheckBox text="Green" value="true" enabled="false" marginBottom="12"/>
-					<m:MaterialCheckBox text="Brown" enabled="false" marginBottom="12"/>
-					<m:MaterialCheckBox ui:field="cbBox" text="CheckBox 1: true" value="true" type="FILLED"
-										marginBottom="12"/>
-				</m:MaterialColumn>
-				<m:MaterialColumn grid="l2">
-					<m:MaterialCheckBox ui:field="cbBoxAll" text="Check all" type="FILLED" marginBottom="12"/>
-					<m:MaterialCheckBox ui:field="cbBlue" text="Blue" type="FILLED" marginBottom="12"/>
-					<m:MaterialCheckBox ui:field="cbRed" text="Red" type="FILLED" marginBottom="12"/>
-					<m:MaterialCheckBox ui:field="cbCyan" text="Cyan" type="FILLED" marginBottom="12"/>
-					<m:MaterialCheckBox ui:field="cbGreen" text="Green" type="FILLED" marginBottom="12"/>
-					<m:MaterialCheckBox ui:field="cbBrown" text="Brown" type="FILLED" marginBottom="12"/>
-				</m:MaterialColumn>
-			</m:MaterialRow>
+    <m:MaterialPanel>
+        <widget:CodeSection sectionTitle="Check Box">
+            <m:MaterialRow>
+                <m:MaterialColumn grid="l2">
+                    <m:MaterialCheckBox text="Blue" value="true" marginBottom="12"/>
+                    <m:MaterialCheckBox text="Red" type="INTERMEDIATE" marginBottom="12"/>
+                    <m:MaterialCheckBox text="Cyan" value="true" type="FILLED" marginBottom="12"/>
+                    <m:MaterialCheckBox text="Green" value="true" enabled="false" marginBottom="12"/>
+                    <m:MaterialCheckBox text="Brown" enabled="false" marginBottom="12"/>
+                    <m:MaterialCheckBox ui:field="cbBox" text="CheckBox 1: true" value="true" type="FILLED"
+                                        marginBottom="12"/>
+                </m:MaterialColumn>
+                <m:MaterialColumn grid="l2">
+                    <m:MaterialCheckBox ui:field="cbBoxAll" text="Check all" type="FILLED" marginBottom="12"/>
+                    <m:MaterialCheckBox ui:field="cbBlue" text="Blue" type="FILLED" marginBottom="12"/>
+                    <m:MaterialCheckBox ui:field="cbRed" text="Red" type="FILLED" marginBottom="12"/>
+                    <m:MaterialCheckBox ui:field="cbCyan" text="Cyan" type="FILLED" marginBottom="12"/>
+                    <m:MaterialCheckBox ui:field="cbGreen" text="Green" type="FILLED" marginBottom="12"/>
+                    <m:MaterialCheckBox ui:field="cbBrown" text="Brown" type="FILLED" marginBottom="12"/>
+                </m:MaterialColumn>
+            </m:MaterialRow>
 
-			<g:HTMLPanel>
-				<pre class="xml">
-					&lt;m:MaterialRow>
-					&lt;m:MaterialColumn grid="l2">
-					&lt;m:MaterialCheckBox text="Blue" value="true" />
-					&lt;m:MaterialCheckBox text="Red" />
-					&lt;m:MaterialCheckBox text="Cyan" value="true" type="FILLED"/>
-					&lt;m:MaterialCheckBox text="Green" value="true" enabled="false"/>
-					&lt;m:MaterialCheckBox text="Brown" enabled="false"/>
-					&lt;m:MaterialCheckBox ui:field="cbBox" text="CheckBox 1: true" value="true" type="FILLED"/>
-					&lt;/m:MaterialColumn>
-					&lt;m:MaterialColumn grid="l2">
-					&lt;m:MaterialCheckBox ui:field="cbBoxAll" text="Check all" type="FILLED"/>
-					&lt;m:MaterialCheckBox ui:field="cbBlue" text="Blue" type="FILLED" />
-					&lt;m:MaterialCheckBox ui:field="cbRed" text="Red" type="FILLED"/>
-					&lt;m:MaterialCheckBox ui:field="cbCyan" text="Cyan" type="FILLED"/>
-					&lt;m:MaterialCheckBox ui:field="cbGreen" text="Green" type="FILLED"/>
-					&lt;m:MaterialCheckBox ui:field="cbBrown" text="Brown" type="FILLED"/>
-					&lt;/m:MaterialColumn>
-					&lt;/m:MaterialRow>
-				</pre>
-			</g:HTMLPanel>
+            <g:HTMLPanel>
+                <pre class="xml">
+                    &lt;m:MaterialRow>
+                    &lt;m:MaterialColumn grid="l2">
+                    &lt;m:MaterialCheckBox text="Blue" value="true" />
+                    &lt;m:MaterialCheckBox text="Red" />
+                    &lt;m:MaterialCheckBox text="Cyan" value="true" type="FILLED"/>
+                    &lt;m:MaterialCheckBox text="Green" value="true" enabled="false"/>
+                    &lt;m:MaterialCheckBox text="Brown" enabled="false"/>
+                    &lt;m:MaterialCheckBox ui:field="cbBox" text="CheckBox 1: true" value="true" type="FILLED"/>
+                    &lt;/m:MaterialColumn>
+                    &lt;m:MaterialColumn grid="l2">
+                    &lt;m:MaterialCheckBox ui:field="cbBoxAll" text="Check all" type="FILLED"/>
+                    &lt;m:MaterialCheckBox ui:field="cbBlue" text="Blue" type="FILLED" />
+                    &lt;m:MaterialCheckBox ui:field="cbRed" text="Red" type="FILLED"/>
+                    &lt;m:MaterialCheckBox ui:field="cbCyan" text="Cyan" type="FILLED"/>
+                    &lt;m:MaterialCheckBox ui:field="cbGreen" text="Green" type="FILLED"/>
+                    &lt;m:MaterialCheckBox ui:field="cbBrown" text="Brown" type="FILLED"/>
+                    &lt;/m:MaterialColumn>
+                    &lt;/m:MaterialRow>
+                </pre>
+            </g:HTMLPanel>
 
-			<g:HTMLPanel>
-				<pre class="java">
-					@UiHandler("cbBoxAll")
-					void onCheckAll(ValueChangeEvent&lt;Boolean> e) {
-					if(e.getValue()) {
-					cbBlue.setValue(true);
-					cbRed.setValue(true);
-					cbCyan.setValue(true);
-					cbGreen.setValue(true);
-					cbBrown.setValue(true);
-					} else {
-					cbBlue.setValue(false);
-					cbRed.setValue(false);
-					cbCyan.setValue(false);
-					cbGreen.setValue(false);
-					cbBrown.setValue(false);
-					}
-					}
-				</pre>
-			</g:HTMLPanel>
-		</widget:CodeSection>
+            <g:HTMLPanel>
+                <pre class="java">
+                    @UiHandler("cbBoxAll")
+                    void onCheckAll(ValueChangeEvent&lt;Boolean> e) {
+                    if(e.getValue()) {
+                    cbBlue.setValue(true);
+                    cbRed.setValue(true);
+                    cbCyan.setValue(true);
+                    cbGreen.setValue(true);
+                    cbBrown.setValue(true);
+                    } else {
+                    cbBlue.setValue(false);
+                    cbRed.setValue(false);
+                    cbCyan.setValue(false);
+                    cbGreen.setValue(false);
+                    cbBrown.setValue(false);
+                    }
+                    }
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
 
-		<widget:CodeSection sectionTitle="CheckBox SetValue">
-			<m:MaterialCheckBox ui:field="cbValue" text="CheckBox" marginTop="32" grid="s12"/>
+        <widget:CodeSection sectionTitle="CheckBox SetValue">
+            <m:MaterialCheckBox ui:field="cbValue" text="CheckBox" marginTop="32" grid="s12"/>
 
-			<m:MaterialRow marginTop="32">
-				<m:MaterialButton text="Set Value" ui:field="btnCbValue" marginRight="20"/>
-				<m:MaterialButton text="Set Value with Event" ui:field="btnCbValueEvent"/>
-			</m:MaterialRow>
+            <m:MaterialRow marginTop="32">
+                <m:MaterialButton text="Set Value" ui:field="btnCbValue" marginRight="20"/>
+                <m:MaterialButton text="Set Value with Event" ui:field="btnCbValueEvent"/>
+            </m:MaterialRow>
 
-			<g:HTMLPanel>
-				<pre class="xml">
-					&lt;m:MaterialCheckBox ui:field="cbValue" text="CheckBox"/>
+            <g:HTMLPanel>
+                <pre class="xml">
+                    &lt;m:MaterialCheckBox ui:field="cbValue" text="CheckBox"/>
 
-					&lt;m:MaterialRow>
-					&lt;m:MaterialButton text="Set Value" ui:field="btnCbValue" marginRight="20" />
-					&lt;m:MaterialButton text="Set Value with Event" ui:field="btnCbValueEvent" />
-					&lt;/m:MaterialRow>
-				</pre>
-			</g:HTMLPanel>
+                    &lt;m:MaterialRow>
+                    &lt;m:MaterialButton text="Set Value" ui:field="btnCbValue" marginRight="20" />
+                    &lt;m:MaterialButton text="Set Value with Event" ui:field="btnCbValueEvent" />
+                    &lt;/m:MaterialRow>
+                </pre>
+            </g:HTMLPanel>
 
-			<g:HTMLPanel>
-				<pre class="java">
-					@UiHandler("cbValue")
-					void onCheckValue(ValueChangeEvent&lt;Boolean> e) {
-					MaterialToast.fireToast("Value : " + e.getValue());
-					}
+            <g:HTMLPanel>
+                <pre class="java">
+                    @UiHandler("cbValue")
+                    void onCheckValue(ValueChangeEvent&lt;Boolean> e) {
+                    MaterialToast.fireToast("Value : " + e.getValue());
+                    }
 
-					@UiHandler("btnCbValue")
-					void onClickCbValue(ClickEvent e) {
-					cbValue.setValue(true);
-					}
+                    @UiHandler("btnCbValue")
+                    void onClickCbValue(ClickEvent e) {
+                    cbValue.setValue(true);
+                    }
 
-					@UiHandler("btnCbValueEvent")
-					void onClickCbValueEvent(ClickEvent e) {
-					cbValue.setValue(false, true);
-					}
-				</pre>
-			</g:HTMLPanel>
-		</widget:CodeSection>
-	</m:MaterialPanel>
+                    @UiHandler("btnCbValueEvent")
+                    void onClickCbValueEvent(ClickEvent e) {
+                    cbValue.setValue(false, true);
+                    }
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+    </m:MaterialPanel>
 </ui:UiBinder>

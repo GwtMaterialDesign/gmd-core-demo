@@ -33,34 +33,34 @@ import gmd.core.demo.client.place.NameTokens;
 
 public class TabsPresenter extends AppPresenter<TabsPresenter.MyView, TabsPresenter.MyProxy> implements ContentPushEvent.ContentPushHandler {
 
-	interface MyView extends View {
-		void recalculateTabs();
-	}
+    interface MyView extends View {
+        void recalculateTabs();
+    }
 
-	@ProxyStandard
-	@NameToken(NameTokens.TABS)
-	interface MyProxy extends ProxyPlace<TabsPresenter> {
-	}
+    @ProxyStandard
+    @NameToken(NameTokens.TABS)
+    interface MyProxy extends ProxyPlace<TabsPresenter> {
+    }
 
-	@Inject
-	TabsPresenter(
-		EventBus eventBus,
-		MyView view,
-		MyProxy proxy,
-		PlaceManager placeManager) {
-		super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN, placeManager);
-		addRegisteredHandler(ContentPushEvent.TYPE, this);
-	}
+    @Inject
+    TabsPresenter(
+        EventBus eventBus,
+        MyView view,
+        MyProxy proxy,
+        PlaceManager placeManager) {
+        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN, placeManager);
+        addRegisteredHandler(ContentPushEvent.TYPE, this);
+    }
 
-	@Override
-	protected void onReveal() {
-		super.onReveal();
+    @Override
+    protected void onReveal() {
+        super.onReveal();
 
-		getView().recalculateTabs();
-	}
+        getView().recalculateTabs();
+    }
 
-	@Override
-	public void onContentPush(ContentPushEvent event) {
-		getView().recalculateTabs();
-	}
+    @Override
+    public void onContentPush(ContentPushEvent event) {
+        getView().recalculateTabs();
+    }
 }

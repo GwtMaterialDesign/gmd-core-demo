@@ -22,9 +22,9 @@ package gmd.core.demo.client.application.page.cards;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class CardModule extends AbstractPresenterModule {
-	@Override
-	protected void configure() {
-		bindPresenter(CardPresenter.class, CardPresenter.MyView.class, CardView.class,
-			CardPresenter.MyProxy.class);
-	}
+    @Override
+    protected void configure() {
+        bindPresenter(CardPresenter.class, CardPresenter.MyView.class, CardView.class,
+            CardPresenter.MyProxy.class);
+    }
 }

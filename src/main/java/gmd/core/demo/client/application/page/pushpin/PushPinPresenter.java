@@ -31,20 +31,20 @@ import gmd.core.demo.client.application.page.AppPresenter;
 import gmd.core.demo.client.place.NameTokens;
 
 public class PushPinPresenter extends AppPresenter<PushPinPresenter.MyView, PushPinPresenter.MyProxy> {
-	interface MyView extends View {
-	}
+    interface MyView extends View {
+    }
 
-	@ProxyStandard
-	@NameToken(NameTokens.PUSHPIN)
-	interface MyProxy extends ProxyPlace<PushPinPresenter> {
-	}
+    @ProxyStandard
+    @NameToken(NameTokens.PUSHPIN)
+    interface MyProxy extends ProxyPlace<PushPinPresenter> {
+    }
 
-	@Inject
-	PushPinPresenter(
-		EventBus eventBus,
-		MyView view,
-		MyProxy proxy,
-		PlaceManager placeManager) {
-		super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN, placeManager);
-	}
+    @Inject
+    PushPinPresenter(
+        EventBus eventBus,
+        MyView view,
+        MyProxy proxy,
+        PlaceManager placeManager) {
+        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN, placeManager);
+    }
 }

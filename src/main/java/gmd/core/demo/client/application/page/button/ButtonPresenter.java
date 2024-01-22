@@ -31,22 +31,22 @@ import gmd.core.demo.client.application.page.AppPresenter;
 import gmd.core.demo.client.place.NameTokens;
 
 public class ButtonPresenter extends AppPresenter<ButtonPresenter.MyView, ButtonPresenter.MyProxy> {
-	interface MyView extends View {
-	}
+    interface MyView extends View {
+    }
 
-	@ProxyStandard
-	@NameToken(NameTokens.BUTTON)
-	interface MyProxy extends ProxyPlace<ButtonPresenter> {
-	}
+    @ProxyStandard
+    @NameToken(NameTokens.BUTTON)
+    interface MyProxy extends ProxyPlace<ButtonPresenter> {
+    }
 
-	@Inject
-	ButtonPresenter(
-		EventBus eventBus,
-		MyView view,
-		MyProxy proxy,
-		PlaceManager placeManager) {
-		super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN, placeManager);
-	}
+    @Inject
+    ButtonPresenter(
+        EventBus eventBus,
+        MyView view,
+        MyProxy proxy,
+        PlaceManager placeManager) {
+        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN, placeManager);
+    }
 
 
 }

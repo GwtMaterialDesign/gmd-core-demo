@@ -22,9 +22,9 @@ package gmd.core.demo.client.application.page.navbar;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class NavBarModule extends AbstractPresenterModule {
-	@Override
-	protected void configure() {
-		bindPresenter(NavBarPresenter.class, NavBarPresenter.MyView.class, NavBarView.class,
-			NavBarPresenter.MyProxy.class);
-	}
+    @Override
+    protected void configure() {
+        bindPresenter(NavBarPresenter.class, NavBarPresenter.MyView.class, NavBarView.class,
+            NavBarPresenter.MyProxy.class);
+    }
 }

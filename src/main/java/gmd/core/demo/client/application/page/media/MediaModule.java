@@ -22,9 +22,9 @@ package gmd.core.demo.client.application.page.media;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class MediaModule extends AbstractPresenterModule {
-	@Override
-	protected void configure() {
-		bindPresenter(MediaPresenter.class, MediaPresenter.MyView.class, MediaView.class,
-			MediaPresenter.MyProxy.class);
-	}
+    @Override
+    protected void configure() {
+        bindPresenter(MediaPresenter.class, MediaPresenter.MyView.class, MediaView.class,
+            MediaPresenter.MyProxy.class);
+    }
 }

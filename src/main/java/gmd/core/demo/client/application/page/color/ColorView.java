@@ -26,11 +26,11 @@ import com.gwtplatform.mvp.client.ViewImpl;
 import javax.inject.Inject;
 
 public class ColorView extends ViewImpl implements ColorPresenter.MyView {
-	interface Binder extends UiBinder<Widget, ColorView> {
-	}
+    interface Binder extends UiBinder<Widget, ColorView> {
+    }
 
-	@Inject
-	ColorView(Binder uiBinder) {
-		initWidget(uiBinder.createAndBindUi(this));
-	}
+    @Inject
+    ColorView(Binder uiBinder) {
+        initWidget(uiBinder.createAndBindUi(this));
+    }
 }

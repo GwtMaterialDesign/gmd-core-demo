@@ -51,14 +51,14 @@ public class CollapsibleView extends ViewImpl implements CollapsiblePresenter.My
     CollapsibleView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
-		HandlerRegistration handlerRegistration = colaps.addCollapseHandler(event -> MaterialToast.fireToast("CollapseEvent fired: " + getCollapseText(event.getTarget())));
+        HandlerRegistration handlerRegistration = colaps.addCollapseHandler(event -> MaterialToast.fireToast("CollapseEvent fired: " + getCollapseText(event.getTarget())));
 
-		expandable.addCollapseHandler(event -> MaterialToast.fireToast("CollapseEvent fired: " + getCollapseText(event.getTarget())));
+        expandable.addCollapseHandler(event -> MaterialToast.fireToast("CollapseEvent fired: " + getCollapseText(event.getTarget())));
 
-		colaps.addExpandHandler(event -> MaterialToast.fireToast("ExpandEvent fired: " + getCollapseText(event.getTarget())));
+        colaps.addExpandHandler(event -> MaterialToast.fireToast("ExpandEvent fired: " + getCollapseText(event.getTarget())));
 
-		expandable.addExpandHandler(event -> MaterialToast.fireToast("ExpandEvent fired: " + getCollapseText(event.getTarget())));
-	}
+        expandable.addExpandHandler(event -> MaterialToast.fireToast("ExpandEvent fired: " + getCollapseText(event.getTarget())));
+    }
 
     @Override
     protected void onAttach() {

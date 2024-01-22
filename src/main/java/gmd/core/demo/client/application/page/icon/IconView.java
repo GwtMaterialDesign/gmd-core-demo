@@ -34,40 +34,40 @@ import gwt.material.design.client.ui.MaterialRow;
 import javax.inject.Inject;
 
 public class IconView extends ViewImpl implements IconPresenter.MyView {
-	interface Binder extends UiBinder<Widget, IconView> {
-	}
+    interface Binder extends UiBinder<Widget, IconView> {
+    }
 
-	@UiField
-	MaterialRow iconsRow;
+    @UiField
+    MaterialRow iconsRow;
 
-	@Inject
-	IconView(Binder uiBinder) {
-		initWidget(uiBinder.createAndBindUi(this));
-	}
+    @Inject
+    IconView(Binder uiBinder) {
+        initWidget(uiBinder.createAndBindUi(this));
+    }
 
-	@Override
-	protected void onAttach() {
-		super.onAttach();
+    @Override
+    protected void onAttach() {
+        super.onAttach();
 
-		getAllIcons();
-	}
+        getAllIcons();
+    }
 
-	protected void getAllIcons() {
-		for (IconType i : IconType.values()) {
-			MaterialColumn column = new MaterialColumn(4, 3, 2);
-			column.setTextAlign(TextAlign.CENTER);
-			column.setPadding(40);
-			MaterialIcon icon = new MaterialIcon();
-			icon.setIconSize(IconSize.MEDIUM);
-			icon.setIconType(i);
+    protected void getAllIcons() {
+        for (IconType i : IconType.values()) {
+            MaterialColumn column = new MaterialColumn(4, 3, 2);
+            column.setTextAlign(TextAlign.CENTER);
+            column.setPadding(40);
+            MaterialIcon icon = new MaterialIcon();
+            icon.setIconSize(IconSize.MEDIUM);
+            icon.setIconType(i);
 
-			MaterialLabel label = new MaterialLabel();
-			label.setFontSize("0.8em");
-			label.setText(i.name().toUpperCase());
+            MaterialLabel label = new MaterialLabel();
+            label.setFontSize("0.8em");
+            label.setText(i.name().toUpperCase());
 
-			column.add(icon);
-			column.add(label);
-			iconsRow.add(column);
-		}
-	}
+            column.add(icon);
+            column.add(label);
+            iconsRow.add(column);
+        }
+    }
 }

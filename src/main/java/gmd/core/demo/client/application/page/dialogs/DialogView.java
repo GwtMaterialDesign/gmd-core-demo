@@ -38,171 +38,171 @@ import javax.inject.Inject;
 import static gwt.material.design.jquery.client.api.JQuery.$;
 
 public class DialogView extends ViewImpl implements DialogPresenter.MyView {
-	interface Binder extends UiBinder<Widget, DialogView> {
-	}
+    interface Binder extends UiBinder<Widget, DialogView> {
+    }
 
-	@UiField
-	MaterialDialog dialog, dialogFixed, dialogBottomSheet, dialogClosable, dialogEvents,
-		dialog1, dialog2, dialog3, dialogFullScreen, dialogBlur;
+    @UiField
+    MaterialDialog dialog, dialogFixed, dialogBottomSheet, dialogClosable, dialogEvents,
+        dialog1, dialog2, dialog3, dialogFullScreen, dialogBlur;
 
-	@UiField
-	MaterialButton turnOffFullscreen, buttonWithTooltip;
+    @UiField
+    MaterialButton turnOffFullscreen, buttonWithTooltip;
 
-	@Inject
-	DialogView(Binder uiBinder) {
-		initWidget(uiBinder.createAndBindUi(this));
+    @Inject
+    DialogView(Binder uiBinder) {
+        initWidget(uiBinder.createAndBindUi(this));
 
-		dialogEvents.addOpenHandler(openEvent -> MaterialToast.fireToast("Opened"));
-		dialogEvents.addCloseHandler(closeEvent -> MaterialToast.fireToast("Closed"));
+        dialogEvents.addOpenHandler(openEvent -> MaterialToast.fireToast("Opened"));
+        dialogEvents.addCloseHandler(closeEvent -> MaterialToast.fireToast("Closed"));
 
-		dialog1.addOpenHandler(openEvent -> MaterialToast.fireToast("Dialog 1 - Open"));
-		dialog2.addOpenHandler(openEvent -> MaterialToast.fireToast("Dialog 2 - Open"));
-		dialog3.addOpenHandler(openEvent -> MaterialToast.fireToast("Dialog 3 - Open"));
+        dialog1.addOpenHandler(openEvent -> MaterialToast.fireToast("Dialog 1 - Open"));
+        dialog2.addOpenHandler(openEvent -> MaterialToast.fireToast("Dialog 2 - Open"));
+        dialog3.addOpenHandler(openEvent -> MaterialToast.fireToast("Dialog 3 - Open"));
 
-		dialog1.addCloseHandler(closeEvent -> MaterialToast.fireToast("Dialog 1 - Closed"));
-		dialog2.addCloseHandler(closeEvent -> MaterialToast.fireToast("Dialog 2 - Closed"));
-		dialog3.addCloseHandler(closeEvent -> MaterialToast.fireToast("Dialog 3 - Closed"));
-		dialogBlur.addCloseHandler(event -> dialogBlur.removeFromParent());
-	}
+        dialog1.addCloseHandler(closeEvent -> MaterialToast.fireToast("Dialog 1 - Closed"));
+        dialog2.addCloseHandler(closeEvent -> MaterialToast.fireToast("Dialog 2 - Closed"));
+        dialog3.addCloseHandler(closeEvent -> MaterialToast.fireToast("Dialog 3 - Closed"));
+        dialogBlur.addCloseHandler(event -> dialogBlur.removeFromParent());
+    }
 
-	@UiHandler("openFullscreenDialog")
-	void onOpenFullScreenDialog(ClickEvent e) {
-		dialogFullScreen.setFullscreen(true);
-		turnOffFullscreen.setVisible(true);
-		dialogFullScreen.open();
-	}
+    @UiHandler("openFullscreenDialog")
+    void onOpenFullScreenDialog(ClickEvent e) {
+        dialogFullScreen.setFullscreen(true);
+        turnOffFullscreen.setVisible(true);
+        dialogFullScreen.open();
+    }
 
-	@UiHandler("turnOffFullscreen")
-	void turnOffFullScreen(ClickEvent e) {
-		turnOffFullscreen.setVisible(false);
-		dialogFullScreen.setFullscreen(false);
-	}
+    @UiHandler("turnOffFullscreen")
+    void turnOffFullScreen(ClickEvent e) {
+        turnOffFullscreen.setVisible(false);
+        dialogFullScreen.setFullscreen(false);
+    }
 
-	@UiHandler("closeFullscreenDialog")
-	void closeFullScreen(ClickEvent e) {
-		dialogFullScreen.close();
-	}
+    @UiHandler("closeFullscreenDialog")
+    void closeFullScreen(ClickEvent e) {
+        dialogFullScreen.close();
+    }
 
-	@UiHandler("btnOpenDialog1")
-	void onOpenDialog1(ClickEvent e) {
-		dialog1.open();
-	}
+    @UiHandler("btnOpenDialog1")
+    void onOpenDialog1(ClickEvent e) {
+        dialog1.open();
+    }
 
-	@UiHandler("btnOpenDialog2")
-	void onOpenDialog2(ClickEvent e) {
-		dialog2.open();
-	}
+    @UiHandler("btnOpenDialog2")
+    void onOpenDialog2(ClickEvent e) {
+        dialog2.open();
+    }
 
-	@UiHandler("btnOpenDialog3")
-	void onOpenDialog3(ClickEvent e) {
-		dialog3.open();
-	}
+    @UiHandler("btnOpenDialog3")
+    void onOpenDialog3(ClickEvent e) {
+        dialog3.open();
+    }
 
-	@UiHandler("btnCloseDialog1")
-	void onCloseDialog1(ClickEvent e) {
-		dialog1.close();
-	}
+    @UiHandler("btnCloseDialog1")
+    void onCloseDialog1(ClickEvent e) {
+        dialog1.close();
+    }
 
-	@UiHandler("btnCloseDialog2")
-	void onCloseDialog2(ClickEvent e) {
-		dialog2.close();
-	}
+    @UiHandler("btnCloseDialog2")
+    void onCloseDialog2(ClickEvent e) {
+        dialog2.close();
+    }
 
-	@UiHandler("btnCloseDialog3")
-	void onCloseDialog3(ClickEvent e) {
-		dialog3.close();
-	}
+    @UiHandler("btnCloseDialog3")
+    void onCloseDialog3(ClickEvent e) {
+        dialog3.close();
+    }
 
-	@UiHandler("btnToast")
-	void onToast(ClickEvent e) {
-		MaterialToast.fireToast("I Love Material Design");
-	}
+    @UiHandler("btnToast")
+    void onToast(ClickEvent e) {
+        MaterialToast.fireToast("I Love Material Design");
+    }
 
-	@UiHandler("btnToastAction")
-	void onToastAction(ClickEvent e) {
-		MaterialLink link = new MaterialLink("UNDO");
-		link.addClickHandler(event -> MaterialToast.fireToast("UNDO DONE"));
-		new MaterialToast(link).toast("Item Deleted");
-	}
+    @UiHandler("btnToastAction")
+    void onToastAction(ClickEvent e) {
+        MaterialLink link = new MaterialLink("UNDO");
+        link.addClickHandler(event -> MaterialToast.fireToast("UNDO DONE"));
+        new MaterialToast(link).toast("Item Deleted");
+    }
 
-	@UiHandler("btnToastCallback")
-	void onToastCallback(ClickEvent e) {
-		new MaterialToast(() -> MaterialToast.fireToast("BANG!")).toast("Explosion in: 5, 4, 3, 2, 1", 5000);
-	}
+    @UiHandler("btnToastCallback")
+    void onToastCallback(ClickEvent e) {
+        new MaterialToast(() -> MaterialToast.fireToast("BANG!")).toast("Explosion in: 5, 4, 3, 2, 1", 5000);
+    }
 
-	@UiHandler("btnToastRounded")
-	void onToastStyle(ClickEvent e) {
-		MaterialToast.fireToast("I Love Material Design", "rounded");
-	}
+    @UiHandler("btnToastRounded")
+    void onToastStyle(ClickEvent e) {
+        MaterialToast.fireToast("I Love Material Design", "rounded");
+    }
 
-	@UiHandler("btnDialog")
-	void onDialog(ClickEvent e) {
-		dialog.open();
-	}
+    @UiHandler("btnDialog")
+    void onDialog(ClickEvent e) {
+        dialog.open();
+    }
 
-	@UiHandler("btnDialogBlur")
-	void onDialogBlur(ClickEvent e) {
-		OverlayOption option = OverlayOption.create();
-		option.setBlur(new Blur(4, $("header"),
-			$(".side-nav"),
-			$(".app-container")));
-		RootPanel.get().add(dialogBlur);
-		dialogBlur.setOverlayOption(option);
-		dialogBlur.open();
-	}
+    @UiHandler("btnDialogBlur")
+    void onDialogBlur(ClickEvent e) {
+        OverlayOption option = OverlayOption.create();
+        option.setBlur(new Blur(4, $("header"),
+            $(".side-nav"),
+            $(".app-container")));
+        RootPanel.get().add(dialogBlur);
+        dialogBlur.setOverlayOption(option);
+        dialogBlur.open();
+    }
 
-	@UiHandler("btnCloseDialogBlur")
-	void onDialogBlurClose(ClickEvent e) {
-		dialogBlur.close();
-	}
+    @UiHandler("btnCloseDialogBlur")
+    void onDialogBlurClose(ClickEvent e) {
+        dialogBlur.close();
+    }
 
-	@UiHandler("btnMoadalBottomSheets")
-	void onDialogBottom(ClickEvent e) {
-		dialogBottomSheet.open();
-	}
+    @UiHandler("btnMoadalBottomSheets")
+    void onDialogBottom(ClickEvent e) {
+        dialogBottomSheet.open();
+    }
 
-	@UiHandler("btnDialogFixFooter")
-	void onDialogFix(ClickEvent e) {
-		dialogFixed.open();
-	}
+    @UiHandler("btnDialogFixFooter")
+    void onDialogFix(ClickEvent e) {
+        dialogFixed.open();
+    }
 
-	@UiHandler("btnClosable")
-	void onClosable(ClickEvent e) {
-		dialogClosable.open();
-	}
+    @UiHandler("btnClosable")
+    void onClosable(ClickEvent e) {
+        dialogClosable.open();
+    }
 
-	@UiHandler("btnEvents")
-	void onEvents(ClickEvent e) {
-		dialogEvents.open();
-	}
+    @UiHandler("btnEvents")
+    void onEvents(ClickEvent e) {
+        dialogEvents.open();
+    }
 
-	@UiHandler("btnCloseDialog")
-	void onCloseDialog(ClickEvent e) {
-		dialog.close();
-	}
+    @UiHandler("btnCloseDialog")
+    void onCloseDialog(ClickEvent e) {
+        dialog.close();
+    }
 
-	@UiHandler("btnCloseDialogEvents")
-	void onCloseEvents(ClickEvent e) {
-		dialogEvents.close();
-	}
+    @UiHandler("btnCloseDialogEvents")
+    void onCloseEvents(ClickEvent e) {
+        dialogEvents.close();
+    }
 
-	@UiHandler("btnCloseFixedDialog")
-	void onCloseFixedDialog(ClickEvent e) {
-		dialogFixed.close();
-	}
+    @UiHandler("btnCloseFixedDialog")
+    void onCloseFixedDialog(ClickEvent e) {
+        dialogFixed.close();
+    }
 
-	@UiHandler("btnCloseBottomSheetDialog")
-	void onCloseBottomDialog(ClickEvent e) {
-		dialogBottomSheet.close();
-	}
+    @UiHandler("btnCloseBottomSheetDialog")
+    void onCloseBottomDialog(ClickEvent e) {
+        dialogBottomSheet.close();
+    }
 
-	@UiHandler("btnCloseDialogDismiss")
-	void onCloseDialogDismiss(ClickEvent e) {
-		dialogClosable.close();
-	}
+    @UiHandler("btnCloseDialogDismiss")
+    void onCloseDialogDismiss(ClickEvent e) {
+        dialogClosable.close();
+    }
 
-	@UiHandler("removeTooltip")
-	void removeTooltip(ClickEvent e) {
-		buttonWithTooltip.removeTooltip();
-	}
+    @UiHandler("removeTooltip")
+    void removeTooltip(ClickEvent e) {
+        buttonWithTooltip.removeTooltip();
+    }
 }

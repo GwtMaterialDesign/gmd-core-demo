@@ -33,37 +33,37 @@ import gwt.material.design.client.ui.MaterialToast;
 import javax.inject.Inject;
 
 public class RangeView extends ViewImpl implements RangePresenter.MyView {
-	interface Binder extends UiBinder<Widget, RangeView> {
-	}
+    interface Binder extends UiBinder<Widget, RangeView> {
+    }
 
-	@UiField
-	MaterialLabel lblRange;
+    @UiField
+    MaterialLabel lblRange;
 
-	@UiField
-	MaterialRange range, rangeSetValue, thumbRange;
+    @UiField
+    MaterialRange range, rangeSetValue, thumbRange;
 
-	@Inject
-	RangeView(Binder uiBinder) {
-		initWidget(uiBinder.createAndBindUi(this));
-	}
+    @Inject
+    RangeView(Binder uiBinder) {
+        initWidget(uiBinder.createAndBindUi(this));
+    }
 
-	@UiHandler("range")
-	void onRange(ValueChangeEvent<Integer> e) {
-		lblRange.setText("Value: " + e.getValue());
-	}
+    @UiHandler("range")
+    void onRange(ValueChangeEvent<Integer> e) {
+        lblRange.setText("Value: " + e.getValue());
+    }
 
-	@UiHandler("rangeSetValue")
-	void onRangeSetValue(ValueChangeEvent<Integer> e) {
-		MaterialToast.fireToast("Value: " + rangeSetValue.getValue());
-	}
+    @UiHandler("rangeSetValue")
+    void onRangeSetValue(ValueChangeEvent<Integer> e) {
+        MaterialToast.fireToast("Value: " + rangeSetValue.getValue());
+    }
 
-	@UiHandler("btnRangeValue")
-	void onRangeValue(ClickEvent e) {
-		rangeSetValue.setValue(50);
-	}
+    @UiHandler("btnRangeValue")
+    void onRangeValue(ClickEvent e) {
+        rangeSetValue.setValue(50);
+    }
 
-	@UiHandler("btnRangeValueEvent")
-	void onRangeValueEvent(ClickEvent e) {
-		rangeSetValue.setValue(20, true);
-	}
+    @UiHandler("btnRangeValueEvent")
+    void onRangeValueEvent(ClickEvent e) {
+        rangeSetValue.setValue(20, true);
+    }
 }

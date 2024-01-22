@@ -39,96 +39,96 @@ import gwt.material.design.client.ui.MaterialToast;
 import javax.inject.Inject;
 
 public class TabsView extends ViewImpl implements TabsPresenter.MyView {
-	interface Binder extends UiBinder<Widget, TabsView> {
-	}
+    interface Binder extends UiBinder<Widget, TabsView> {
+    }
 
-	@UiField
-	MaterialTab tabBasic, tabIntro, tabSetIndex, tabIcons, tabIndicatorColor, tabControlWidth, tabEvents, tabGetIndex, tabFit, dynamicTabs;
+    @UiField
+    MaterialTab tabBasic, tabIntro, tabSetIndex, tabIcons, tabIndicatorColor, tabControlWidth, tabEvents, tabGetIndex, tabFit, dynamicTabs;
 
-	@UiField
-	MaterialRow dynamicTabsRow;
+    @UiField
+    MaterialRow dynamicTabsRow;
 
-	@UiField
-	MaterialListBox lstTabIds;
+    @UiField
+    MaterialListBox lstTabIds;
 
-	private int index = 0;
+    private int index = 0;
 
-	@Inject
-	TabsView(Binder uiBinder) {
-		initWidget(uiBinder.createAndBindUi(this));
-	}
+    @Inject
+    TabsView(Binder uiBinder) {
+        initWidget(uiBinder.createAndBindUi(this));
+    }
 
-	@Override
-	protected void onAttach() {
-		super.onAttach();
+    @Override
+    protected void onAttach() {
+        super.onAttach();
 
-		buildDynamicTab();
-		buildListTabIds();
+        buildDynamicTab();
+        buildListTabIds();
 
-		tabEvents.addSelectionHandler(selectionEvent -> MaterialToast.fireToast(selectionEvent.getSelectedItem() + " Selected Index"));
-	}
+        tabEvents.addSelectionHandler(selectionEvent -> MaterialToast.fireToast(selectionEvent.getSelectedItem() + " Selected Index"));
+    }
 
-	@UiHandler("lstTabIds")
-	void selectTab(ValueChangeEvent<String> e) {
-		tabGetIndex.selectTab(e.getValue());
-	}
+    @UiHandler("lstTabIds")
+    void selectTab(ValueChangeEvent<String> e) {
+        tabGetIndex.selectTab(e.getValue());
+    }
 
-	@UiHandler("btnGetTabIndex")
-	void getTabInde1x(ClickEvent e) {
-		MaterialToast.fireToast(tabGetIndex.getTabIndex() + "");
-	}
+    @UiHandler("btnGetTabIndex")
+    void getTabInde1x(ClickEvent e) {
+        MaterialToast.fireToast(tabGetIndex.getTabIndex() + "");
+    }
 
-	@UiHandler("addTab")
-	void addTab(ClickEvent e) {
-		index++;
-		dynamicTabs.add(newTabItem(index));
-		dynamicTabs.setTabIndex(index - 1);
-	}
+    @UiHandler("addTab")
+    void addTab(ClickEvent e) {
+        index++;
+        dynamicTabs.add(newTabItem(index));
+        dynamicTabs.setTabIndex(index - 1);
+    }
 
-	@UiHandler("setTabIndex")
-	void setTabIndex(ClickEvent e) {
-		tabSetIndex.setTabIndex(1);
-	}
+    @UiHandler("setTabIndex")
+    void setTabIndex(ClickEvent e) {
+        tabSetIndex.setTabIndex(1);
+    }
 
-	@Override
-	public void recalculateTabs() {
-		tabBasic.reload();
-		tabIntro.reload();
-		tabSetIndex.reload();
-		tabIcons.reload();
-		tabIndicatorColor.reload();
-		tabControlWidth.reload();
-		tabEvents.reload();
-		tabGetIndex.reload();
-		tabFit.reload();
-		dynamicTabs.reload();
-	}
+    @Override
+    public void recalculateTabs() {
+        tabBasic.reload();
+        tabIntro.reload();
+        tabSetIndex.reload();
+        tabIcons.reload();
+        tabIndicatorColor.reload();
+        tabControlWidth.reload();
+        tabEvents.reload();
+        tabGetIndex.reload();
+        tabFit.reload();
+        dynamicTabs.reload();
+    }
 
-	protected void buildListTabIds() {
-		lstTabIds.clear();
-		for (int i = 1; i <= 3; i++) {
-			lstTabIds.addItem("item" + i, "Tab Item" + i);
-		}
-	}
+    protected void buildListTabIds() {
+        lstTabIds.clear();
+        for (int i = 1; i <= 3; i++) {
+            lstTabIds.addItem("item" + i, "Tab Item" + i);
+        }
+    }
 
-	protected void buildDynamicTab() {
-		dynamicTabs.addSelectionHandler(selectionEvent -> MaterialToast.fireToast("Selected " + selectionEvent.getSelectedItem()));
-		for (int i = 1; i <= 2; i++) {
-			dynamicTabs.add(newTabItem(i));
-			index = i;
-		}
-	}
+    protected void buildDynamicTab() {
+        dynamicTabs.addSelectionHandler(selectionEvent -> MaterialToast.fireToast("Selected " + selectionEvent.getSelectedItem()));
+        for (int i = 1; i <= 2; i++) {
+            dynamicTabs.add(newTabItem(i));
+            index = i;
+        }
+    }
 
-	protected MaterialTabItem newTabItem(int index) {
-		MaterialTabItem item = new MaterialTabItem();
-		item.setWaves(WavesType.DEFAULT);
-		MaterialLink link = new MaterialLink("Tab " + index);
-		link.setTextColor(Color.WHITE);
-		link.setHref("#dynamicTab" + index);
-		item.add(link);
-		MaterialLabel content = new MaterialLabel("Content " + index);
-		content.setId("dynamicTab" + index);
-		dynamicTabsRow.add(content);
-		return item;
-	}
+    protected MaterialTabItem newTabItem(int index) {
+        MaterialTabItem item = new MaterialTabItem();
+        item.setWaves(WavesType.DEFAULT);
+        MaterialLink link = new MaterialLink("Tab " + index);
+        link.setTextColor(Color.WHITE);
+        link.setHref("#dynamicTab" + index);
+        item.add(link);
+        MaterialLabel content = new MaterialLabel("Content " + index);
+        content.setId("dynamicTab" + index);
+        dynamicTabsRow.add(content);
+        return item;
+    }
 }

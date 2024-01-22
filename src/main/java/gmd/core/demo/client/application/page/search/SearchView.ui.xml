@@ -18,169 +18,169 @@
   #L%
   -->
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-			 xmlns:m='urn:import:gwt.material.design.client.ui'
-			 xmlns:widget="urn:import:gmd.core.demo.client.application.widget"
-			 xmlns:g="urn:import:com.google.gwt.user.client.ui">
+             xmlns:m='urn:import:gwt.material.design.client.ui'
+             xmlns:widget="urn:import:gmd.core.demo.client.application.widget"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
-	<m:MaterialPanel>
-		<widget:CodeSection sectionTitle="Super Heroes"
-							description="Search icon must activate a search component inside the navbar. See below the guidelines on how to implement it.">
-			<m:MaterialRow>
-				<!-- Navbar component that contains a search icon -->
-				<m:MaterialNavBar ui:field="navBar" paddingLeft="20" width="100%">
-					<m:MaterialNavBrand ui:field="navBrand" text="GMD"/>
-					<m:MaterialLink ui:field="btnSearch" iconType="SEARCH" float="RIGHT"/>
-				</m:MaterialNavBar>
+    <m:MaterialPanel>
+        <widget:CodeSection sectionTitle="Super Heroes"
+                            description="Search icon must activate a search component inside the navbar. See below the guidelines on how to implement it.">
+            <m:MaterialRow>
+                <!-- Navbar component that contains a search icon -->
+                <m:MaterialNavBar ui:field="navBar" paddingLeft="20" width="100%">
+                    <m:MaterialNavBrand ui:field="navBrand" text="GMD"/>
+                    <m:MaterialLink ui:field="btnSearch" iconType="SEARCH" float="RIGHT"/>
+                </m:MaterialNavBar>
 
-				<!-- NavBar Search -->
-				<m:MaterialNavBar ui:field="navBarSearch" width="100%" visible="false">
-					<m:MaterialSearch ui:field="txtSearch" width="100%" placeholder="Component" backgroundColor="WHITE"
-									  iconColor="BLACK" active="true" shadow="1"/>
-				</m:MaterialNavBar>
+                <!-- NavBar Search -->
+                <m:MaterialNavBar ui:field="navBarSearch" width="100%" visible="false">
+                    <m:MaterialSearch ui:field="txtSearch" width="100%" placeholder="Component" backgroundColor="WHITE"
+                                      iconColor="BLACK" active="true" shadow="1"/>
+                </m:MaterialNavBar>
 
-				<m:MaterialRow padding="32" textAlign="CENTER">
-					<m:MaterialColumn grid="l6 m6 s12" offset="l3 m3 l0">
-						<m:MaterialImage ui:field="imgHero"
-										 url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/batman.png"
-										 circle="true" shadow="1"/>
-						<m:MaterialLabel ui:field="lblName" text="Batman" fontSize="2em"/>
-						<m:MaterialLabel ui:field="lblDescription"
-										 text="Batman's secret identity is Bruce Wayne, an American billionaire, playboy, philanthropist, and owner of Wayne Enterprises. After witnessing the murder of his parents as a child, he swore revenge on criminals, an oath tempered by a sense of justice. Wayne trains himself both physically and intellectually and crafts a bat-inspired persona to fight crime."/>
-						<m:MaterialRow offset="l3 m3 l0" grid="l6 m6 s12" marginTop="20">
-							<m:MaterialIcon iconType="STAR" grid="l2 m2 s2" offset="l1" iconColor="AMBER"/>
-							<m:MaterialIcon iconType="STAR" grid="l2 m2 s2" iconColor="AMBER"/>
-							<m:MaterialIcon iconType="STAR" grid="l2 m2 s2" iconColor="AMBER"/>
-							<m:MaterialIcon iconType="STAR" grid="l2 m2 s2" iconColor="AMBER"/>
-							<m:MaterialIcon iconType="STAR" grid="l2 m2 s2" iconColor="AMBER"/>
-						</m:MaterialRow>
-					</m:MaterialColumn>
-				</m:MaterialRow>
-			</m:MaterialRow>
-			<g:HTMLPanel>
-				<pre class="xml">
-					&lt;!-- Navbar component that contains a search icon -->
-					&lt;m:MaterialNavBar ui:field="navBar" paddingLeft="20" width="100%" textColor="WHITE">
-					&lt;m:MaterialNavBrand ui:field="navBrand" text="GMD"/>
-					&lt;m:MaterialLink ui:field="btnSearch" iconType="SEARCH" iconColor="WHITE" float="RIGHT"/>
-					&lt;/m:MaterialNavBar>
+                <m:MaterialRow padding="32" textAlign="CENTER">
+                    <m:MaterialColumn grid="l6 m6 s12" offset="l3 m3 l0">
+                        <m:MaterialImage ui:field="imgHero"
+                                         url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/batman.png"
+                                         circle="true" shadow="1"/>
+                        <m:MaterialLabel ui:field="lblName" text="Batman" fontSize="2em"/>
+                        <m:MaterialLabel ui:field="lblDescription"
+                                         text="Batman's secret identity is Bruce Wayne, an American billionaire, playboy, philanthropist, and owner of Wayne Enterprises. After witnessing the murder of his parents as a child, he swore revenge on criminals, an oath tempered by a sense of justice. Wayne trains himself both physically and intellectually and crafts a bat-inspired persona to fight crime."/>
+                        <m:MaterialRow offset="l3 m3 l0" grid="l6 m6 s12" marginTop="20">
+                            <m:MaterialIcon iconType="STAR" grid="l2 m2 s2" offset="l1" iconColor="AMBER"/>
+                            <m:MaterialIcon iconType="STAR" grid="l2 m2 s2" iconColor="AMBER"/>
+                            <m:MaterialIcon iconType="STAR" grid="l2 m2 s2" iconColor="AMBER"/>
+                            <m:MaterialIcon iconType="STAR" grid="l2 m2 s2" iconColor="AMBER"/>
+                            <m:MaterialIcon iconType="STAR" grid="l2 m2 s2" iconColor="AMBER"/>
+                        </m:MaterialRow>
+                    </m:MaterialColumn>
+                </m:MaterialRow>
+            </m:MaterialRow>
+            <g:HTMLPanel>
+                <pre class="xml">
+                    &lt;!-- Navbar component that contains a search icon -->
+                    &lt;m:MaterialNavBar ui:field="navBar" paddingLeft="20" width="100%" textColor="WHITE">
+                    &lt;m:MaterialNavBrand ui:field="navBrand" text="GMD"/>
+                    &lt;m:MaterialLink ui:field="btnSearch" iconType="SEARCH" iconColor="WHITE" float="RIGHT"/>
+                    &lt;/m:MaterialNavBar>
 
-					&lt;!-- NavBar Search -->
-					&lt;m:MaterialNavBar ui:field="navBarSearch" width="100%" visible="false">
-					&lt;m:MaterialSearch ui:field="txtSearch" placeholder="Component" backgroundColor="WHITE"
-					iconColor="BLACK" active="true" grid="l3" shadow="1"/>
-					&lt;/m:MaterialNavBar>
+                    &lt;!-- NavBar Search -->
+                    &lt;m:MaterialNavBar ui:field="navBarSearch" width="100%" visible="false">
+                    &lt;m:MaterialSearch ui:field="txtSearch" placeholder="Component" backgroundColor="WHITE"
+                    iconColor="BLACK" active="true" grid="l3" shadow="1"/>
+                    &lt;/m:MaterialNavBar>
 
-					&lt;m:MaterialRow padding="32" textAlign="CENTER">
-					&lt;m:MaterialColumn grid="l6 m6 s12" offset="l3 m3 l0">
-					&lt;m:MaterialImage ui:field="imgHero"
-					url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/batman.png" circle="true"
-					shadow="1"/>
-					&lt;m:MaterialLabel ui:field="lblName" text="Batman" fontSize="2em"/>
-					&lt;m:MaterialLabel ui:field="lblDescription" text="Batman's secret identity is Bruce Wayne, an
-					American billionaire, playboy, philanthropist, and owner of Wayne Enterprises. After witnessing the
-					murder of his parents as a child, he swore revenge on criminals, an oath tempered by a sense of
-					justice. Wayne trains himself both physically and intellectually and crafts a bat-inspired persona
-					to fight crime."/>
-					&lt;m:MaterialRow offset="l3 m3 l0" grid="l6 m6 s12" marginTop="20">
-					&lt;m:MaterialIcon iconType="STAR" grid="l2 m2 s2" offset="l1" iconColor="AMBER"/>
-					&lt;m:MaterialIcon iconType="STAR" grid="l2 m2 s2" iconColor="AMBER"/>
-					&lt;m:MaterialIcon iconType="STAR" grid="l2 m2 s2" iconColor="AMBER"/>
-					&lt;m:MaterialIcon iconType="STAR" grid="l2 m2 s2" iconColor="AMBER"/>
-					&lt;m:MaterialIcon iconType="STAR" grid="l2 m2 s2" iconColor="AMBER"/>
-					&lt;/m:MaterialRow>
-					&lt;/m:MaterialColumn>
-					&lt;/m:MaterialRow>
-				</pre>
-			</g:HTMLPanel>
-		</widget:CodeSection>
+                    &lt;m:MaterialRow padding="32" textAlign="CENTER">
+                    &lt;m:MaterialColumn grid="l6 m6 s12" offset="l3 m3 l0">
+                    &lt;m:MaterialImage ui:field="imgHero"
+                    url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/batman.png" circle="true"
+                    shadow="1"/>
+                    &lt;m:MaterialLabel ui:field="lblName" text="Batman" fontSize="2em"/>
+                    &lt;m:MaterialLabel ui:field="lblDescription" text="Batman's secret identity is Bruce Wayne, an
+                    American billionaire, playboy, philanthropist, and owner of Wayne Enterprises. After witnessing the
+                    murder of his parents as a child, he swore revenge on criminals, an oath tempered by a sense of
+                    justice. Wayne trains himself both physically and intellectually and crafts a bat-inspired persona
+                    to fight crime."/>
+                    &lt;m:MaterialRow offset="l3 m3 l0" grid="l6 m6 s12" marginTop="20">
+                    &lt;m:MaterialIcon iconType="STAR" grid="l2 m2 s2" offset="l1" iconColor="AMBER"/>
+                    &lt;m:MaterialIcon iconType="STAR" grid="l2 m2 s2" iconColor="AMBER"/>
+                    &lt;m:MaterialIcon iconType="STAR" grid="l2 m2 s2" iconColor="AMBER"/>
+                    &lt;m:MaterialIcon iconType="STAR" grid="l2 m2 s2" iconColor="AMBER"/>
+                    &lt;m:MaterialIcon iconType="STAR" grid="l2 m2 s2" iconColor="AMBER"/>
+                    &lt;/m:MaterialRow>
+                    &lt;/m:MaterialColumn>
+                    &lt;/m:MaterialRow>
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
 
-		<widget:CodeSection sectionTitle="Markup"
-							description="You must add visible='false' property into your navbar search component.">
+        <widget:CodeSection sectionTitle="Markup"
+                            description="You must add visible='false' property into your navbar search component.">
 
-			<g:HTMLPanel>
-				<pre class="xml">
-					&lt;!-- NavBar Search -->
-					&lt;m:MaterialNavBar ui:field="navBarSearch" width="100%" visible="false">
-					&lt;m:MaterialSearch ui:field="txtSearch" placeholder="Component" backgroundColor="WHITE"
-					iconColor="BLACK" active="true" grid="l3" shadow="1"/>
-					&lt;/m:MaterialNavBar>
-				</pre>
-			</g:HTMLPanel>
-		</widget:CodeSection>
+            <g:HTMLPanel>
+                <pre class="xml">
+                    &lt;!-- NavBar Search -->
+                    &lt;m:MaterialNavBar ui:field="navBarSearch" width="100%" visible="false">
+                    &lt;m:MaterialSearch ui:field="txtSearch" placeholder="Component" backgroundColor="WHITE"
+                    iconColor="BLACK" active="true" grid="l3" shadow="1"/>
+                    &lt;/m:MaterialNavBar>
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
 
-		<widget:CodeSection sectionTitle="Open and Close"
-							description="To show the search input field try to call open() or hide it using close()">
+        <widget:CodeSection sectionTitle="Open and Close"
+                            description="To show the search input field try to call open() or hide it using close()">
 
-			<g:HTMLPanel>
-				<pre class="java">
-					txtSearch.open();
-					txtSearch.close();
-				</pre>
-			</g:HTMLPanel>
-		</widget:CodeSection>
-		<widget:CodeSection sectionTitle="Open Handler"
-							description="You must specify the event callback after your search is open.">
+            <g:HTMLPanel>
+                <pre class="java">
+                    txtSearch.open();
+                    txtSearch.close();
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+        <widget:CodeSection sectionTitle="Open Handler"
+                            description="You must specify the event callback after your search is open.">
 
-			<g:HTMLPanel>
-				<pre class="java">
-					// Add Open Handler
-					txtSearch.addOpenHandler(openEvent -> {
-					navBar.setVisible(false);
-					navBarSearch.setVisible(true);
-					MaterialToast.fireToast("Open Event was fired");
-					});
-				</pre>
-			</g:HTMLPanel>
-		</widget:CodeSection>
-		<widget:CodeSection sectionTitle="Populating data"
-							description="Take note that we are using Search Object by default to handle the search results. You can also create an object and extend it to Search Object so that you can add your custom attribute e.g Hero.">
+            <g:HTMLPanel>
+                <pre class="java">
+                    // Add Open Handler
+                    txtSearch.addOpenHandler(openEvent -> {
+                    navBar.setVisible(false);
+                    navBarSearch.setVisible(true);
+                    MaterialToast.fireToast("Open Event was fired");
+                    });
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+        <widget:CodeSection sectionTitle="Populating data"
+                            description="Take note that we are using Search Object by default to handle the search results. You can also create an object and extend it to Search Object so that you can add your custom attribute e.g Hero.">
 
-			<g:HTMLPanel>
-				<pre class="java">
-					// Populate the search keyword into search component
-					List&lt;SearchObject> objects = new ArrayList&lt;>();
-					for(Hero hero : DataHelper.getAllHeroes()){
-					objects.add(hero);
-					}
-					txtSearch.setListSearches(objects);
+            <g:HTMLPanel>
+                <pre class="java">
+                    // Populate the search keyword into search component
+                    List&lt;SearchObject> objects = new ArrayList&lt;>();
+                    for(Hero hero : DataHelper.getAllHeroes()){
+                    objects.add(hero);
+                    }
+                    txtSearch.setListSearches(objects);
 
-					txtSearch.setSelectedObject(objects.get(3));
-				</pre>
-			</g:HTMLPanel>
-		</widget:CodeSection>
+                    txtSearch.setSelectedObject(objects.get(3));
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
 
-		<widget:CodeSection sectionTitle="Add Close Handler"
-							description="You can add a logic into your search component.">
+        <widget:CodeSection sectionTitle="Add Close Handler"
+                            description="You can add a logic into your search component.">
 
-			<g:HTMLPanel>
-				<pre class="java">
-					// Add Close Handler
-					txtSearch.addCloseHandler(event -> {
-					navBar.setVisible(true);
-					navBarSearch.setVisible(false);
-					MaterialToast.fireToast("Close Event was fired");
-					});
-				</pre>
-			</g:HTMLPanel>
-		</widget:CodeSection>
+            <g:HTMLPanel>
+                <pre class="java">
+                    // Add Close Handler
+                    txtSearch.addCloseHandler(event -> {
+                    navBar.setVisible(true);
+                    navBarSearch.setVisible(false);
+                    MaterialToast.fireToast("Close Event was fired");
+                    });
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
 
-		<widget:CodeSection sectionTitle="Add Finish Handler"
-							description="You can add a finish handler into your search component but by default you can just add link value to your search object to set its href attribute.">
+        <widget:CodeSection sectionTitle="Add Finish Handler"
+                            description="You can add a finish handler into your search component but by default you can just add link value to your search object to set its href attribute.">
 
-			<g:HTMLPanel>
-				<pre class="java">
-					// Add Finish Handler
-					txtSearch.addSearchFinishHandler(event -> {
-					// Get the selected search object
-					Hero hero = (Hero)txtSearch.getSelectedObject();
-					new MaterialAnimation().transition(Transition.ZOOMIN).animate(imgHero);
-					imgHero.setUrl(hero.getImageUrl());
-					lblName.setText(hero.getName());
-					lblDescription.setText(hero.getDescription());
-					MaterialToast.fireToast("Search Finish Event was fired");
-					});
-				</pre>
-			</g:HTMLPanel>
-		</widget:CodeSection>
-	</m:MaterialPanel>
+            <g:HTMLPanel>
+                <pre class="java">
+                    // Add Finish Handler
+                    txtSearch.addSearchFinishHandler(event -> {
+                    // Get the selected search object
+                    Hero hero = (Hero)txtSearch.getSelectedObject();
+                    new MaterialAnimation().transition(Transition.ZOOMIN).animate(imgHero);
+                    imgHero.setUrl(hero.getImageUrl());
+                    lblName.setText(hero.getName());
+                    lblDescription.setText(hero.getDescription());
+                    MaterialToast.fireToast("Search Finish Event was fired");
+                    });
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+    </m:MaterialPanel>
 </ui:UiBinder>

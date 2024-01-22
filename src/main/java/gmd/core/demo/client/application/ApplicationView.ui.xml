@@ -30,7 +30,8 @@
                 <m:MaterialNavBrand>
                     <m:MaterialLabel ui:field="navBrand" fontSize="0.8em"/>
                 </m:MaterialNavBrand>
-                <incubator:search.InlineSearch autocomplete="OFF" hideOn="HIDE_ON_MED_DOWN" ui:field="search" theme="LIGHT" width="50%" placeholder="Search" display="INLINE"/>
+                <incubator:search.InlineSearch autocomplete="OFF" hideOn="HIDE_ON_MED_DOWN" ui:field="search"
+                                               theme="LIGHT" width="50%" placeholder="Search" display="INLINE"/>
                 <m:MaterialNavSection hideOn="NONE" float="RIGHT" marginRight="40">
                     <m:MaterialDarkModeToggle/>
                 </m:MaterialNavSection>
@@ -39,7 +40,8 @@
 
         <m:MaterialSideNavPush ui:field="sidenav" m:id="right-sidenav" width="300">
             <m:MaterialSideNavContent ui:field="home" height="60px">
-                <ma:webp.MaterialWebpImage url="images/gmd-logo.webp" alt="logo" float="LEFT" width="32px" marginRight="20"/>
+                <ma:webp.MaterialWebpImage url="images/gmd-logo.webp" alt="logo" float="LEFT" width="32px"
+                                           marginRight="20"/>
                 <m:MaterialPanel>
                     <m:MaterialLabel ui:field="name" fontWeight="BOLD" lineHeight="24" marginTop="12"/>
                     <m:MaterialLabel ui:field="version" lineHeight="12" fontSize="0.8em"/>
@@ -52,13 +54,15 @@
             <m:MaterialPanel addStyleNames="app-header" ui:field="header" padding="40" borderBottom="1px solid #e9e9e9">
                 <m:MaterialRow marginBottom="0">
                     <m:MaterialColumn grid="s12 m12 l9">
-                        <m:MaterialLabel ui:field="title" fontSize="2.4em" />
+                        <m:MaterialLabel ui:field="title" fontSize="2.4em"/>
                         <m:MaterialLabel secondary="true" ui:field="description" marginBottom="20"/>
                     </m:MaterialColumn>
                 </m:MaterialRow>
                 <m:MaterialRow marginBottom="0" paddingLeft="20">
-                    <m:MaterialLink ui:field="javaSource" display="INLINE_BLOCK" marginRight="20" target="_blank" text="Java" paddingLeft="0" customIconType="fab fa-java"/>
-                    <m:MaterialLink ui:field="xmlSource" display="INLINE_BLOCK" target="_blank" text="XML" iconType="CODE"/>
+                    <m:MaterialLink ui:field="javaSource" display="INLINE_BLOCK" marginRight="20" target="_blank"
+                                    text="Java" paddingLeft="0" customIconType="fab fa-java"/>
+                    <m:MaterialLink ui:field="xmlSource" display="INLINE_BLOCK" target="_blank" text="XML"
+                                    iconType="CODE"/>
                 </m:MaterialRow>
             </m:MaterialPanel>
 
@@ -68,18 +72,21 @@
                 <m:MaterialRow marginBottom="0">
                     <m:MaterialColumn grid="s6 l4">
                         <m:MaterialLabel text="Copyright gwt-material - " float="LEFT" marginRight="12"/>
-                        <m:MaterialLabel ui:field="year" float="LEFT" />
+                        <m:MaterialLabel ui:field="year" float="LEFT"/>
                     </m:MaterialColumn>
                     <m:MaterialColumn grid="s6 l5" marginTop="-8" textAlign="RIGHT">
-                        <m:MaterialLink ui:field="github" display="INLINE_BLOCK" text="Github" marginRight="32" customIconType="fab fa-github" target="_blank" shadow="0"/>
-                        <m:MaterialLink ui:field="slack" display="INLINE_BLOCK" text="Slack" customIconType="fab fa-slack" target="_blank" shadow="0"/>
+                        <m:MaterialLink ui:field="github" display="INLINE_BLOCK" text="Github" marginRight="32"
+                                        customIconType="fab fa-github" target="_blank" shadow="0"/>
+                        <m:MaterialLink ui:field="slack" display="INLINE_BLOCK" text="Slack"
+                                        customIconType="fab fa-slack" target="_blank" shadow="0"/>
                     </m:MaterialColumn>
                 </m:MaterialRow>
             </m:MaterialPanel>
         </m:MaterialContainer>
 
         <m:MaterialFAB ui:field="fabUp" opacity="0">
-            <m:MaterialButton iconType="KEYBOARD_ARROW_UP" type="FLOATING" size="LARGE" backgroundColor="WHITE" iconColor="INDIGO"/>
+            <m:MaterialButton iconType="KEYBOARD_ARROW_UP" type="FLOATING" size="LARGE" backgroundColor="WHITE"
+                              iconColor="INDIGO"/>
         </m:MaterialFAB>
     </m:MaterialPanel>
 </ui:UiBinder>

@@ -30,17 +30,17 @@ import gwt.material.design.client.ui.MaterialToast;
 import javax.inject.Inject;
 
 public class DropdownView extends ViewImpl implements DropdownPresenter.MyView {
-	interface Binder extends UiBinder<Widget, DropdownView> {
-	}
+    interface Binder extends UiBinder<Widget, DropdownView> {
+    }
 
 
-	@Inject
-	DropdownView(Binder uiBinder) {
-		initWidget(uiBinder.createAndBindUi(this));
-	}
+    @Inject
+    DropdownView(Binder uiBinder) {
+        initWidget(uiBinder.createAndBindUi(this));
+    }
 
-	@UiHandler("dropdown")
-	void onDropdown(SelectionEvent<Widget> callback) {
-		MaterialToast.fireToast("Selected : " + ((MaterialLink) callback.getSelectedItem()).getText());
-	}
+    @UiHandler("dropdown")
+    void onDropdown(SelectionEvent<Widget> callback) {
+        MaterialToast.fireToast("Selected : " + ((MaterialLink) callback.getSelectedItem()).getText());
+    }
 }

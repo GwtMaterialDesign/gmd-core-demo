@@ -41,62 +41,62 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SearchView extends ViewImpl implements SearchPresenter.MyView {
-	interface Binder extends UiBinder<Widget, SearchView> {
-	}
+    interface Binder extends UiBinder<Widget, SearchView> {
+    }
 
-	@UiField
-	MaterialNavBar navBar, navBarSearch;
+    @UiField
+    MaterialNavBar navBar, navBarSearch;
 
-	@UiField
-	MaterialSearch txtSearch;
+    @UiField
+    MaterialSearch txtSearch;
 
-	@UiField
-	MaterialImage imgHero;
+    @UiField
+    MaterialImage imgHero;
 
-	@UiField
-	MaterialLabel lblName, lblDescription;
+    @UiField
+    MaterialLabel lblName, lblDescription;
 
-	@Inject
-	SearchView(Binder uiBinder) {
-		initWidget(uiBinder.createAndBindUi(this));
+    @Inject
+    SearchView(Binder uiBinder) {
+        initWidget(uiBinder.createAndBindUi(this));
 
-		// Add Open Handler
-		txtSearch.addOpenHandler(openEvent -> {
-			navBar.setVisible(false);
-			navBarSearch.setVisible(true);
-			MaterialToast.fireToast("Open Event was fired");
-		});
+        // Add Open Handler
+        txtSearch.addOpenHandler(openEvent -> {
+            navBar.setVisible(false);
+            navBarSearch.setVisible(true);
+            MaterialToast.fireToast("Open Event was fired");
+        });
 
-		// Add Close Handler
-		txtSearch.addCloseHandler(event -> {
-			navBar.setVisible(true);
-			navBarSearch.setVisible(false);
-			MaterialToast.fireToast("Close Event was fired");
-		});
+        // Add Close Handler
+        txtSearch.addCloseHandler(event -> {
+            navBar.setVisible(true);
+            navBarSearch.setVisible(false);
+            MaterialToast.fireToast("Close Event was fired");
+        });
 
-		// Populate the search keyword into search component
-		List<SearchObject> objects = new ArrayList<>();
+        // Populate the search keyword into search component
+        List<SearchObject> objects = new ArrayList<>();
 
-		objects.addAll(DataHelper.getAllHeroes());
+        objects.addAll(DataHelper.getAllHeroes());
 
-		txtSearch.setListSearches(objects);
+        txtSearch.setListSearches(objects);
 
-		txtSearch.setSelectedObject(objects.get(3));
+        txtSearch.setSelectedObject(objects.get(3));
 
-		// Add Finish Handler
-		txtSearch.addSearchFinishHandler(event -> {
-			// Get the selected search object
-			Hero hero = (Hero) txtSearch.getSelectedObject();
-			new MaterialAnimation().transition(Transition.ZOOMIN).animate(imgHero);
-			imgHero.setUrl(hero.getImageUrl());
-			lblName.setText(hero.getName());
-			lblDescription.setText(hero.getDescription());
-			MaterialToast.fireToast("Search Finish Event was fired");
-		});
-	}
+        // Add Finish Handler
+        txtSearch.addSearchFinishHandler(event -> {
+            // Get the selected search object
+            Hero hero = (Hero) txtSearch.getSelectedObject();
+            new MaterialAnimation().transition(Transition.ZOOMIN).animate(imgHero);
+            imgHero.setUrl(hero.getImageUrl());
+            lblName.setText(hero.getName());
+            lblDescription.setText(hero.getDescription());
+            MaterialToast.fireToast("Search Finish Event was fired");
+        });
+    }
 
-	@UiHandler("btnSearch")
-	void onSearch(ClickEvent e) {
-		txtSearch.open();
-	}
+    @UiHandler("btnSearch")
+    void onSearch(ClickEvent e) {
+        txtSearch.open();
+    }
 }

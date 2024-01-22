@@ -22,9 +22,9 @@ package gmd.core.demo.client.application.page.checkbox;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class CheckboxModule extends AbstractPresenterModule {
-	@Override
-	protected void configure() {
-		bindPresenter(CheckboxPresenter.class, CheckboxPresenter.MyView.class, CheckboxView.class,
-			CheckboxPresenter.MyProxy.class);
-	}
+    @Override
+    protected void configure() {
+        bindPresenter(CheckboxPresenter.class, CheckboxPresenter.MyView.class, CheckboxView.class,
+            CheckboxPresenter.MyProxy.class);
+    }
 }

@@ -22,9 +22,9 @@ package gmd.core.demo.client.application.page.dialogs;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class DialogModule extends AbstractPresenterModule {
-	@Override
-	protected void configure() {
-		bindPresenter(DialogPresenter.class, DialogPresenter.MyView.class, DialogView.class,
-			DialogPresenter.MyProxy.class);
-	}
+    @Override
+    protected void configure() {
+        bindPresenter(DialogPresenter.class, DialogPresenter.MyView.class, DialogView.class,
+            DialogPresenter.MyProxy.class);
+    }
 }

@@ -36,115 +36,115 @@ import gwt.material.design.client.ui.MaterialToast;
 import javax.inject.Inject;
 
 public class ListBoxView extends ViewImpl implements ListBoxPresenter.MyView {
-	interface Binder extends UiBinder<Widget, ListBoxView> {
-	}
+    interface Binder extends UiBinder<Widget, ListBoxView> {
+    }
 
 
-	@UiField
-	MaterialListBox lstOptions, lstSetValue, lstAddOptions, lstRemoveOptions, lstLazy, lstAllowBlank;
+    @UiField
+    MaterialListBox lstOptions, lstSetValue, lstAddOptions, lstRemoveOptions, lstLazy, lstAllowBlank;
 
-	@UiField
-	MaterialListValueBox<Hero> lstValueBox, lstEmptyPlacehoder, lstFocusAndBlur;
+    @UiField
+    MaterialListValueBox<Hero> lstValueBox, lstEmptyPlacehoder, lstFocusAndBlur;
 
-	@UiField
-	MaterialButton allowBlankSetValue;
+    @UiField
+    MaterialButton allowBlankSetValue;
 
-	@Inject
-	ListBoxView(Binder uiBinder) {
-		initWidget(uiBinder.createAndBindUi(this));
+    @Inject
+    ListBoxView(Binder uiBinder) {
+        initWidget(uiBinder.createAndBindUi(this));
 
-		generateAllowBlankItems(lstAllowBlank);
+        generateAllowBlankItems(lstAllowBlank);
 
-		buildListHeroes(lstValueBox);
-		buildListHeroes(lstEmptyPlacehoder);
+        buildListHeroes(lstValueBox);
+        buildListHeroes(lstEmptyPlacehoder);
 
-		lstFocusAndBlur.addFocusHandler(focusEvent -> MaterialToast.fireToast("Focus Event Fired"));
-		lstFocusAndBlur.addBlurHandler(blurEvent -> MaterialToast.fireToast("Blur Event Fired"));
-		buildListHeroes(lstFocusAndBlur);
+        lstFocusAndBlur.addFocusHandler(focusEvent -> MaterialToast.fireToast("Focus Event Fired"));
+        lstFocusAndBlur.addBlurHandler(blurEvent -> MaterialToast.fireToast("Blur Event Fired"));
+        buildListHeroes(lstFocusAndBlur);
 
-		lstOptions.addFocusHandler(focusEvent -> MaterialToast.fireToast("FOCUSED"));
+        lstOptions.addFocusHandler(focusEvent -> MaterialToast.fireToast("FOCUSED"));
 
-		lstOptions.addBlurHandler(blurEvent -> MaterialToast.fireToast("BLURRED"));
+        lstOptions.addBlurHandler(blurEvent -> MaterialToast.fireToast("BLURRED"));
 
-		lstOptions.addValueChangeHandler(valueChangeEvent -> MaterialToast.fireToast(valueChangeEvent.getValue()));
-	}
+        lstOptions.addValueChangeHandler(valueChangeEvent -> MaterialToast.fireToast(valueChangeEvent.getValue()));
+    }
 
-	protected void buildListHeroes(MaterialListValueBox<Hero> listBox) {
-		listBox.addValueChangeHandler(valueChangeEvent -> MaterialToast.fireToast("VALUE [ " + valueChangeEvent.getValue().getName() + " ]"));
-		for (Hero hero : DataHelper.getAllHeroes()) {
-			listBox.addItem(hero, hero.getName());
-		}
-	}
+    protected void buildListHeroes(MaterialListValueBox<Hero> listBox) {
+        listBox.addValueChangeHandler(valueChangeEvent -> MaterialToast.fireToast("VALUE [ " + valueChangeEvent.getValue().getName() + " ]"));
+        for (Hero hero : DataHelper.getAllHeroes()) {
+            listBox.addItem(hero, hero.getName());
+        }
+    }
 
-	@UiHandler("cbAllowBlank")
-	void allowBlank(ValueChangeEvent<Boolean> event) {
-		allowBlankSetValue.setVisible(event.getValue());
-		lstAllowBlank.setAllowBlank(event.getValue());
-		generateAllowBlankItems(lstAllowBlank);
-	}
+    @UiHandler("cbAllowBlank")
+    void allowBlank(ValueChangeEvent<Boolean> event) {
+        allowBlankSetValue.setVisible(event.getValue());
+        lstAllowBlank.setAllowBlank(event.getValue());
+        generateAllowBlankItems(lstAllowBlank);
+    }
 
-	protected void generateAllowBlankItems(MaterialListBox listBox) {
-		listBox.clear();
-		for (int i = 1; i <= 5; i++) {
-			listBox.addItem("Option " + i);
-		}
-		lstAllowBlank.reload();
-	}
+    protected void generateAllowBlankItems(MaterialListBox listBox) {
+        listBox.clear();
+        for (int i = 1; i <= 5; i++) {
+            listBox.addItem("Option " + i);
+        }
+        lstAllowBlank.reload();
+    }
 
-	@UiHandler("allowBlankGetValue")
-	void allowBlankGetValue(ClickEvent e) {
-		if (lstAllowBlank.getValue() == null || lstAllowBlank.getValue().isEmpty()) {
-			MaterialToast.fireToast("Null");
-		} else {
-			MaterialToast.fireToast(lstAllowBlank.getValue());
-		}
-	}
+    @UiHandler("allowBlankGetValue")
+    void allowBlankGetValue(ClickEvent e) {
+        if (lstAllowBlank.getValue() == null || lstAllowBlank.getValue().isEmpty()) {
+            MaterialToast.fireToast("Null");
+        } else {
+            MaterialToast.fireToast(lstAllowBlank.getValue());
+        }
+    }
 
-	@UiHandler("allowBlankSetValue")
-	void allowBlankSetValue(ClickEvent e) {
-		lstAllowBlank.setValue(null);
-	}
+    @UiHandler("allowBlankSetValue")
+    void allowBlankSetValue(ClickEvent e) {
+        lstAllowBlank.setValue(null);
+    }
 
-	@UiHandler("addItems")
-	void onAddItems(ClickEvent e) {
-		for (int i = 1; i <= 100; i++) {
-			lstLazy.addItem("Item " + i, false);
-		}
-	}
+    @UiHandler("addItems")
+    void onAddItems(ClickEvent e) {
+        for (int i = 1; i <= 100; i++) {
+            lstLazy.addItem("Item " + i, false);
+        }
+    }
 
-	@UiHandler("reload")
-	void reload(ClickEvent e) {
-		lstLazy.reload();
-	}
+    @UiHandler("reload")
+    void reload(ClickEvent e) {
+        lstLazy.reload();
+    }
 
-	@UiHandler("btnAddNewOption")
-	void addOption(ClickEvent e) {
-		lstAddOptions.addItem("Item added");
-		lstAddOptions.setSelectedIndex(lstAddOptions.getItemCount() - 1);
-	}
+    @UiHandler("btnAddNewOption")
+    void addOption(ClickEvent e) {
+        lstAddOptions.addItem("Item added");
+        lstAddOptions.setSelectedIndex(lstAddOptions.getItemCount() - 1);
+    }
 
-	@UiHandler("btnRemoveOption")
-	void removeOption(ClickEvent e) {
-		lstRemoveOptions.removeItem(0);
-	}
+    @UiHandler("btnRemoveOption")
+    void removeOption(ClickEvent e) {
+        lstRemoveOptions.removeItem(0);
+    }
 
-	@UiHandler("lstOptions")
-	void onChangeListBox(ValueChangeEvent<String> e) {
-		MaterialToast.fireToast("Selected Index: " + lstOptions.getSelectedIndex());
-	}
+    @UiHandler("lstOptions")
+    void onChangeListBox(ValueChangeEvent<String> e) {
+        MaterialToast.fireToast("Selected Index: " + lstOptions.getSelectedIndex());
+    }
 
-	@UiHandler("lstSetValue")
-	void onListBoxSetValue(ValueChangeEvent<String> e) {
-		MaterialToast.fireToast(e.getValue());
-	}
+    @UiHandler("lstSetValue")
+    void onListBoxSetValue(ValueChangeEvent<String> e) {
+        MaterialToast.fireToast(e.getValue());
+    }
 
-	@UiHandler("btnListBoxValue")
-	void onListBoxValue(ClickEvent e) {
-		lstSetValue.setValue("Option 2");
-	}
+    @UiHandler("btnListBoxValue")
+    void onListBoxValue(ClickEvent e) {
+        lstSetValue.setValue("Option 2");
+    }
 
-	@UiHandler("btnListBoxValueEvent")
-	void onListBoxValueEvent(ClickEvent e) {
-		lstSetValue.setValue("Option 3", true);
-	}
+    @UiHandler("btnListBoxValueEvent")
+    void onListBoxValueEvent(ClickEvent e) {
+        lstSetValue.setValue("Option 3", true);
+    }
 }

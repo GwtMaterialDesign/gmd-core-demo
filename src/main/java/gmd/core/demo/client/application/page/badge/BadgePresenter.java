@@ -31,20 +31,20 @@ import gmd.core.demo.client.application.page.AppPresenter;
 import gmd.core.demo.client.place.NameTokens;
 
 public class BadgePresenter extends AppPresenter<BadgePresenter.MyView, BadgePresenter.MyProxy> {
-	interface MyView extends View {
-	}
+    interface MyView extends View {
+    }
 
-	@ProxyStandard
-	@NameToken(NameTokens.BADGE)
-	interface MyProxy extends ProxyPlace<BadgePresenter> {
-	}
+    @ProxyStandard
+    @NameToken(NameTokens.BADGE)
+    interface MyProxy extends ProxyPlace<BadgePresenter> {
+    }
 
-	@Inject
-	BadgePresenter(
-		EventBus eventBus,
-		MyView view,
-		MyProxy proxy,
-		PlaceManager placeManager) {
-		super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN, placeManager);
-	}
+    @Inject
+    BadgePresenter(
+        EventBus eventBus,
+        MyView view,
+        MyProxy proxy,
+        PlaceManager placeManager) {
+        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN, placeManager);
+    }
 }

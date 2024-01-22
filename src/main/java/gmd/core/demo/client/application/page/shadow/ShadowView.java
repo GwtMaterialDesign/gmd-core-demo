@@ -26,11 +26,11 @@ import com.gwtplatform.mvp.client.ViewImpl;
 import javax.inject.Inject;
 
 public class ShadowView extends ViewImpl implements ShadowPresenter.MyView {
-	interface Binder extends UiBinder<Widget, ShadowView> {
-	}
+    interface Binder extends UiBinder<Widget, ShadowView> {
+    }
 
-	@Inject
-	ShadowView(Binder uiBinder) {
-		initWidget(uiBinder.createAndBindUi(this));
-	}
+    @Inject
+    ShadowView(Binder uiBinder) {
+        initWidget(uiBinder.createAndBindUi(this));
+    }
 }

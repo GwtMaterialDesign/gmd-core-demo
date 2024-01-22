@@ -28,14 +28,14 @@ import gmd.core.demo.client.application.ApplicationModule;
 import gmd.core.demo.client.place.NameTokens;
 
 public class ClientModule extends AbstractPresenterModule {
-	@Override
-	protected void configure() {
-		install(new DefaultModule.Builder().build());
-		install(new ApplicationModule());
+    @Override
+    protected void configure() {
+        install(new DefaultModule.Builder().build());
+        install(new ApplicationModule());
 
-		// DefaultPlaceManager Places
-		bindConstant().annotatedWith(DefaultPlace.class).to(NameTokens.HOME);
-		bindConstant().annotatedWith(ErrorPlace.class).to(NameTokens.HOME);
-		bindConstant().annotatedWith(UnauthorizedPlace.class).to(NameTokens.HOME);
-	}
+        // DefaultPlaceManager Places
+        bindConstant().annotatedWith(DefaultPlace.class).to(NameTokens.HOME);
+        bindConstant().annotatedWith(ErrorPlace.class).to(NameTokens.HOME);
+        bindConstant().annotatedWith(UnauthorizedPlace.class).to(NameTokens.HOME);
+    }
 }

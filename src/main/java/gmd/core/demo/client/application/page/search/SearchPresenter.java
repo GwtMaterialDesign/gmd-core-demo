@@ -31,20 +31,20 @@ import gmd.core.demo.client.application.page.AppPresenter;
 import gmd.core.demo.client.place.NameTokens;
 
 public class SearchPresenter extends AppPresenter<SearchPresenter.MyView, SearchPresenter.MyProxy> {
-	interface MyView extends View {
-	}
+    interface MyView extends View {
+    }
 
-	@ProxyStandard
-	@NameToken(NameTokens.SEARCH)
-	interface MyProxy extends ProxyPlace<SearchPresenter> {
-	}
+    @ProxyStandard
+    @NameToken(NameTokens.SEARCH)
+    interface MyProxy extends ProxyPlace<SearchPresenter> {
+    }
 
-	@Inject
-	SearchPresenter(
-		EventBus eventBus,
-		MyView view,
-		MyProxy proxy,
-		PlaceManager placeManager) {
-		super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN, placeManager);
-	}
+    @Inject
+    SearchPresenter(
+        EventBus eventBus,
+        MyView view,
+        MyProxy proxy,
+        PlaceManager placeManager) {
+        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN, placeManager);
+    }
 }

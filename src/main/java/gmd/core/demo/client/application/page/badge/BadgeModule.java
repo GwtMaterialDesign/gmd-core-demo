@@ -22,9 +22,9 @@ package gmd.core.demo.client.application.page.badge;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class BadgeModule extends AbstractPresenterModule {
-	@Override
-	protected void configure() {
-		bindPresenter(BadgePresenter.class, BadgePresenter.MyView.class, BadgeView.class,
-			BadgePresenter.MyProxy.class);
-	}
+    @Override
+    protected void configure() {
+        bindPresenter(BadgePresenter.class, BadgePresenter.MyView.class, BadgeView.class,
+            BadgePresenter.MyProxy.class);
+    }
 }

@@ -32,19 +32,19 @@ import gwt.material.design.client.ui.animate.Transition;
 import javax.inject.Inject;
 
 public class CardView extends ViewImpl implements CardPresenter.MyView {
-	interface Binder extends UiBinder<Widget, CardView> {
-	}
+    interface Binder extends UiBinder<Widget, CardView> {
+    }
 
-	@UiField
-	MaterialRow rowCards;
+    @UiField
+    MaterialRow rowCards;
 
-	@Inject
-	CardView(Binder uiBinder) {
-		initWidget(uiBinder.createAndBindUi(this));
-	}
+    @Inject
+    CardView(Binder uiBinder) {
+        initWidget(uiBinder.createAndBindUi(this));
+    }
 
-	@UiHandler("btnShow")
-	void onShow(ClickEvent e) {
-		new MaterialAnimation().transition(Transition.SHOW_GRID).animate(rowCards);
-	}
+    @UiHandler("btnShow")
+    void onShow(ClickEvent e) {
+        new MaterialAnimation().transition(Transition.SHOW_GRID).animate(rowCards);
+    }
 }

@@ -22,9 +22,9 @@ package gmd.core.demo.client.application.page.errors;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class ErrorsModule extends AbstractPresenterModule {
-	@Override
-	protected void configure() {
-		bindPresenter(ErrorsPresenter.class, ErrorsPresenter.MyView.class, ErrorsView.class,
-			ErrorsPresenter.MyProxy.class);
-	}
+    @Override
+    protected void configure() {
+        bindPresenter(ErrorsPresenter.class, ErrorsPresenter.MyView.class, ErrorsView.class,
+            ErrorsPresenter.MyProxy.class);
+    }
 }

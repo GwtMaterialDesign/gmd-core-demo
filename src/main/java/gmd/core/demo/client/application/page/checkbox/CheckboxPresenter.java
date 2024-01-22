@@ -31,20 +31,20 @@ import gmd.core.demo.client.application.page.AppPresenter;
 import gmd.core.demo.client.place.NameTokens;
 
 public class CheckboxPresenter extends AppPresenter<CheckboxPresenter.MyView, CheckboxPresenter.MyProxy> {
-	interface MyView extends View {
-	}
+    interface MyView extends View {
+    }
 
-	@ProxyStandard
-	@NameToken(NameTokens.CHECKBOX)
-	interface MyProxy extends ProxyPlace<CheckboxPresenter> {
-	}
+    @ProxyStandard
+    @NameToken(NameTokens.CHECKBOX)
+    interface MyProxy extends ProxyPlace<CheckboxPresenter> {
+    }
 
-	@Inject
-	CheckboxPresenter(
-		EventBus eventBus,
-		MyView view,
-		MyProxy proxy,
-		PlaceManager placeManager) {
-		super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN, placeManager);
-	}
+    @Inject
+    CheckboxPresenter(
+        EventBus eventBus,
+        MyView view,
+        MyProxy proxy,
+        PlaceManager placeManager) {
+        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN, placeManager);
+    }
 }

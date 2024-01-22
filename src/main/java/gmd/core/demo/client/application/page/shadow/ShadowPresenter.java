@@ -31,20 +31,20 @@ import gmd.core.demo.client.application.page.AppPresenter;
 import gmd.core.demo.client.place.NameTokens;
 
 public class ShadowPresenter extends AppPresenter<ShadowPresenter.MyView, ShadowPresenter.MyProxy> {
-	interface MyView extends View {
-	}
+    interface MyView extends View {
+    }
 
-	@ProxyStandard
-	@NameToken(NameTokens.SHADOW)
-	interface MyProxy extends ProxyPlace<ShadowPresenter> {
-	}
+    @ProxyStandard
+    @NameToken(NameTokens.SHADOW)
+    interface MyProxy extends ProxyPlace<ShadowPresenter> {
+    }
 
-	@Inject
-	ShadowPresenter(
-		EventBus eventBus,
-		MyView view,
-		MyProxy proxy,
-		PlaceManager placeManager) {
-		super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN, placeManager);
-	}
+    @Inject
+    ShadowPresenter(
+        EventBus eventBus,
+        MyView view,
+        MyProxy proxy,
+        PlaceManager placeManager) {
+        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN, placeManager);
+    }
 }

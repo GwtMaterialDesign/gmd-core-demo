@@ -26,12 +26,12 @@ import com.gwtplatform.mvp.client.ViewImpl;
 import javax.inject.Inject;
 
 public class FooterView extends ViewImpl implements FooterPresenter.MyView {
-	interface Binder extends UiBinder<Widget, FooterView> {
-	}
+    interface Binder extends UiBinder<Widget, FooterView> {
+    }
 
 
-	@Inject
-	FooterView(Binder uiBinder) {
-		initWidget(uiBinder.createAndBindUi(this));
-	}
+    @Inject
+    FooterView(Binder uiBinder) {
+        initWidget(uiBinder.createAndBindUi(this));
+    }
 }

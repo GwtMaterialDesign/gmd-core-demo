@@ -22,9 +22,9 @@ package gmd.core.demo.client.application.page.search;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class SearchModule extends AbstractPresenterModule {
-	@Override
-	protected void configure() {
-		bindPresenter(SearchPresenter.class, SearchPresenter.MyView.class, SearchView.class,
-			SearchPresenter.MyProxy.class);
-	}
+    @Override
+    protected void configure() {
+        bindPresenter(SearchPresenter.class, SearchPresenter.MyView.class, SearchView.class,
+            SearchPresenter.MyProxy.class);
+    }
 }

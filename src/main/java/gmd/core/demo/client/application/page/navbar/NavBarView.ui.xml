@@ -18,102 +18,102 @@
   #L%
   -->
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-			 xmlns:m='urn:import:gwt.material.design.client.ui'
-			 xmlns:widget="urn:import:gmd.core.demo.client.application.widget"
-			 xmlns:g="urn:import:com.google.gwt.user.client.ui">
+             xmlns:m='urn:import:gwt.material.design.client.ui'
+             xmlns:widget="urn:import:gmd.core.demo.client.application.widget"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
-	<m:MaterialPanel>
-		<widget:CodeSection sectionTitle="Links Icons and Waves"
-							description="Based on material links you can add icons, link with icons or link only and apply ripple effect by adding waves attribute.">
-			<m:MaterialNavBar marginBottom="20">
-				<m:MaterialNavBrand marginLeft="60" href="#Test" float="LEFT" text="Title"/>
-				<m:MaterialNavSection float="RIGHT">
-					<m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account" textColor="WHITE"
-									waves="LIGHT"/>
-					<m:MaterialLink iconType="AUTORENEW" iconPosition="LEFT" text="Refresh" textColor="WHITE"
-									waves="LIGHT"/>
-					<m:MaterialTooltip text="Menu">
-						<m:MaterialLink iconType="SEARCH" textColor="WHITE" waves="LIGHT"/>
-					</m:MaterialTooltip>
-					<m:MaterialTooltip text="Starter">
-						<m:MaterialLink iconType="MORE_VERT" textColor="WHITE" waves="LIGHT"/>
-					</m:MaterialTooltip>
-				</m:MaterialNavSection>
-			</m:MaterialNavBar>
-			<g:HTMLPanel>
-				<pre class="xml">
-					&lt;m:MaterialNavBar>
-					&lt;m:MaterialNavBrand marginLeft="60" href="#Test" float="LEFT" text="Title" />
-					&lt;m:MaterialNavSection float="RIGHT">
-					&lt;m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account" textColor="WHITE"
-					waves="LIGHT"/>
-					&lt;m:MaterialLink iconType="AUTORENEW" iconPosition="LEFT" text="Refresh" textColor="WHITE"
-					waves="LIGHT"/>
-					&lt;m:MaterialTooltip text="Menu">
-					&lt;m:MaterialLink iconType="SEARCH" textColor="WHITE" waves="LIGHT"/>
-					&lt;/m:MaterialTooltip>
-					&lt;m:MaterialTooltip text="Starter">
-					&lt;m:MaterialLink iconType="MORE_VERT" textColor="WHITE" waves="LIGHT"/>
-					&lt;/m:MaterialTooltip>
-					&lt;/m:MaterialNavSection>
-					&lt;/m:MaterialNavBar>
-				</pre>
-			</g:HTMLPanel>
-		</widget:CodeSection>
+    <m:MaterialPanel>
+        <widget:CodeSection sectionTitle="Links Icons and Waves"
+                            description="Based on material links you can add icons, link with icons or link only and apply ripple effect by adding waves attribute.">
+            <m:MaterialNavBar marginBottom="20">
+                <m:MaterialNavBrand marginLeft="60" href="#Test" float="LEFT" text="Title"/>
+                <m:MaterialNavSection float="RIGHT">
+                    <m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account" textColor="WHITE"
+                                    waves="LIGHT"/>
+                    <m:MaterialLink iconType="AUTORENEW" iconPosition="LEFT" text="Refresh" textColor="WHITE"
+                                    waves="LIGHT"/>
+                    <m:MaterialTooltip text="Menu">
+                        <m:MaterialLink iconType="SEARCH" textColor="WHITE" waves="LIGHT"/>
+                    </m:MaterialTooltip>
+                    <m:MaterialTooltip text="Starter">
+                        <m:MaterialLink iconType="MORE_VERT" textColor="WHITE" waves="LIGHT"/>
+                    </m:MaterialTooltip>
+                </m:MaterialNavSection>
+            </m:MaterialNavBar>
+            <g:HTMLPanel>
+                <pre class="xml">
+                    &lt;m:MaterialNavBar>
+                    &lt;m:MaterialNavBrand marginLeft="60" href="#Test" float="LEFT" text="Title" />
+                    &lt;m:MaterialNavSection float="RIGHT">
+                    &lt;m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account" textColor="WHITE"
+                    waves="LIGHT"/>
+                    &lt;m:MaterialLink iconType="AUTORENEW" iconPosition="LEFT" text="Refresh" textColor="WHITE"
+                    waves="LIGHT"/>
+                    &lt;m:MaterialTooltip text="Menu">
+                    &lt;m:MaterialLink iconType="SEARCH" textColor="WHITE" waves="LIGHT"/>
+                    &lt;/m:MaterialTooltip>
+                    &lt;m:MaterialTooltip text="Starter">
+                    &lt;m:MaterialLink iconType="MORE_VERT" textColor="WHITE" waves="LIGHT"/>
+                    &lt;/m:MaterialTooltip>
+                    &lt;/m:MaterialNavSection>
+                    &lt;/m:MaterialNavBar>
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
 
-		<widget:CodeSection sectionTitle="Selection Event"
-							description="We have provided a selection event to easily get the selected index.">
-			<m:MaterialNavBar width="100%" marginBottom="20">
-				<m:MaterialNavBrand marginLeft="60" href="#Test" float="LEFT" text="Title"/>
-				<m:MaterialNavSection ui:field="navSection" float="RIGHT">
-					<m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account" textColor="WHITE"
-									waves="LIGHT"/>
-					<m:MaterialLink iconType="AUTORENEW" iconPosition="LEFT" text="Refresh" textColor="WHITE"
-									waves="LIGHT"/>
-					<m:MaterialTooltip text="Menu">
-						<m:MaterialLink iconType="SEARCH" textColor="WHITE" waves="LIGHT"/>
-					</m:MaterialTooltip>
-					<m:MaterialTooltip text="Starter">
-						<m:MaterialLink iconType="MORE_VERT" textColor="WHITE" waves="LIGHT"/>
-					</m:MaterialTooltip>
-				</m:MaterialNavSection>
-			</m:MaterialNavBar>
-			<g:HTMLPanel>
-				<pre class="java">
-					navSection.addSelectionHandler(selectionEvent ->
-					MaterialToast.fireToast(selectionEvent.getSelectedItem() + " Selected Index"));
-				</pre>
-			</g:HTMLPanel>
-		</widget:CodeSection>
+        <widget:CodeSection sectionTitle="Selection Event"
+                            description="We have provided a selection event to easily get the selected index.">
+            <m:MaterialNavBar width="100%" marginBottom="20">
+                <m:MaterialNavBrand marginLeft="60" href="#Test" float="LEFT" text="Title"/>
+                <m:MaterialNavSection ui:field="navSection" float="RIGHT">
+                    <m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account" textColor="WHITE"
+                                    waves="LIGHT"/>
+                    <m:MaterialLink iconType="AUTORENEW" iconPosition="LEFT" text="Refresh" textColor="WHITE"
+                                    waves="LIGHT"/>
+                    <m:MaterialTooltip text="Menu">
+                        <m:MaterialLink iconType="SEARCH" textColor="WHITE" waves="LIGHT"/>
+                    </m:MaterialTooltip>
+                    <m:MaterialTooltip text="Starter">
+                        <m:MaterialLink iconType="MORE_VERT" textColor="WHITE" waves="LIGHT"/>
+                    </m:MaterialTooltip>
+                </m:MaterialNavSection>
+            </m:MaterialNavBar>
+            <g:HTMLPanel>
+                <pre class="java">
+                    navSection.addSelectionHandler(selectionEvent ->
+                    MaterialToast.fireToast(selectionEvent.getSelectedItem() + " Selected Index"));
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
 
-		<widget:CodeSection sectionTitle="Alignment"
-							description="Add align='right' to your nav brand and align='left' to your nav section">
-			<m:MaterialNavBar width="100%" marginBottom="20">
-				<m:MaterialNavBrand href="#Test" float="RIGHT" text="App Title"/>
-				<m:MaterialNavSection float="LEFT">
-					<m:MaterialTooltip text="Menu">
-						<m:MaterialLink iconType="SEARCH" textColor="WHITE"/>
-					</m:MaterialTooltip>
-					<m:MaterialTooltip text="Starter">
-						<m:MaterialLink iconType="MORE_VERT" textColor="WHITE"/>
-					</m:MaterialTooltip>
-				</m:MaterialNavSection>
-			</m:MaterialNavBar>
-			<g:HTMLPanel>
-				<pre class="xml">
-					&lt;m:MaterialNavBar width="100%">
-					&lt;m:MaterialNavBrand href="#Test" float="RIGHT" text="App Title"/>
-					&lt;m:MaterialNavSection float="LEFT">
-					&lt;m:MaterialTooltip text="Menu">
-					&lt;m:MaterialLink iconType="SEARCH" textColor="WHITE"/>
-					&lt;/m:MaterialTooltip>
-					&lt;m:MaterialTooltip text="Starter">
-					&lt;m:MaterialLink iconType="MORE_VERT" textColor="WHITE"/>
-					&lt;/m:MaterialTooltip>
-					&lt;/m:MaterialNavSection>
-					&lt;/m:MaterialNavBar>
-				</pre>
-			</g:HTMLPanel>
-		</widget:CodeSection>
-	</m:MaterialPanel>
+        <widget:CodeSection sectionTitle="Alignment"
+                            description="Add align='right' to your nav brand and align='left' to your nav section">
+            <m:MaterialNavBar width="100%" marginBottom="20">
+                <m:MaterialNavBrand href="#Test" float="RIGHT" text="App Title"/>
+                <m:MaterialNavSection float="LEFT">
+                    <m:MaterialTooltip text="Menu">
+                        <m:MaterialLink iconType="SEARCH" textColor="WHITE"/>
+                    </m:MaterialTooltip>
+                    <m:MaterialTooltip text="Starter">
+                        <m:MaterialLink iconType="MORE_VERT" textColor="WHITE"/>
+                    </m:MaterialTooltip>
+                </m:MaterialNavSection>
+            </m:MaterialNavBar>
+            <g:HTMLPanel>
+                <pre class="xml">
+                    &lt;m:MaterialNavBar width="100%">
+                    &lt;m:MaterialNavBrand href="#Test" float="RIGHT" text="App Title"/>
+                    &lt;m:MaterialNavSection float="LEFT">
+                    &lt;m:MaterialTooltip text="Menu">
+                    &lt;m:MaterialLink iconType="SEARCH" textColor="WHITE"/>
+                    &lt;/m:MaterialTooltip>
+                    &lt;m:MaterialTooltip text="Starter">
+                    &lt;m:MaterialLink iconType="MORE_VERT" textColor="WHITE"/>
+                    &lt;/m:MaterialTooltip>
+                    &lt;/m:MaterialNavSection>
+                    &lt;/m:MaterialNavBar>
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
+    </m:MaterialPanel>
 </ui:UiBinder>

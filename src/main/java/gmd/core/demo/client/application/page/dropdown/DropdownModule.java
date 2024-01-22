@@ -22,9 +22,9 @@ package gmd.core.demo.client.application.page.dropdown;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class DropdownModule extends AbstractPresenterModule {
-	@Override
-	protected void configure() {
-		bindPresenter(DropdownPresenter.class, DropdownPresenter.MyView.class, DropdownView.class,
-			DropdownPresenter.MyProxy.class);
-	}
+    @Override
+    protected void configure() {
+        bindPresenter(DropdownPresenter.class, DropdownPresenter.MyView.class, DropdownView.class,
+            DropdownPresenter.MyProxy.class);
+    }
 }

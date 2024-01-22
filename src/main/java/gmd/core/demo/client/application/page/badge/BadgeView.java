@@ -28,15 +28,15 @@ import gwt.material.design.client.ui.MaterialPanel;
 import javax.inject.Inject;
 
 public class BadgeView extends ViewImpl implements BadgePresenter.MyView {
-	interface Binder extends UiBinder<Widget, BadgeView> {
-	}
+    interface Binder extends UiBinder<Widget, BadgeView> {
+    }
 
-	@UiField
-	MaterialPanel panel;
+    @UiField
+    MaterialPanel panel;
 
-	@Inject
-	BadgeView(Binder uiBinder) {
-		initWidget(uiBinder.createAndBindUi(this));
-	}
+    @Inject
+    BadgeView(Binder uiBinder) {
+        initWidget(uiBinder.createAndBindUi(this));
+    }
 
 }

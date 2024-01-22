@@ -31,20 +31,20 @@ import gmd.core.demo.client.application.page.AppPresenter;
 import gmd.core.demo.client.place.NameTokens;
 
 public class DropdownPresenter extends AppPresenter<DropdownPresenter.MyView, DropdownPresenter.MyProxy> {
-	interface MyView extends View {
-	}
+    interface MyView extends View {
+    }
 
-	@ProxyStandard
-	@NameToken(NameTokens.DROPDOWN)
-	interface MyProxy extends ProxyPlace<DropdownPresenter> {
-	}
+    @ProxyStandard
+    @NameToken(NameTokens.DROPDOWN)
+    interface MyProxy extends ProxyPlace<DropdownPresenter> {
+    }
 
-	@Inject
-	DropdownPresenter(
-		EventBus eventBus,
-		MyView view,
-		MyProxy proxy,
-		PlaceManager placeManager) {
-		super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN, placeManager);
-	}
+    @Inject
+    DropdownPresenter(
+        EventBus eventBus,
+        MyView view,
+        MyProxy proxy,
+        PlaceManager placeManager) {
+        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN, placeManager);
+    }
 }

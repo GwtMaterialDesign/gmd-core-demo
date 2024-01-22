@@ -31,20 +31,20 @@ import gmd.core.demo.client.application.page.AppPresenter;
 import gmd.core.demo.client.place.NameTokens;
 
 public class MediaPresenter extends AppPresenter<MediaPresenter.MyView, MediaPresenter.MyProxy> {
-	interface MyView extends View {
-	}
+    interface MyView extends View {
+    }
 
-	@ProxyStandard
-	@NameToken(NameTokens.MEDIA)
-	interface MyProxy extends ProxyPlace<MediaPresenter> {
-	}
+    @ProxyStandard
+    @NameToken(NameTokens.MEDIA)
+    interface MyProxy extends ProxyPlace<MediaPresenter> {
+    }
 
-	@Inject
-	MediaPresenter(
-		EventBus eventBus,
-		MyView view,
-		MyProxy proxy,
-		PlaceManager placeManager) {
-		super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN, placeManager);
-	}
+    @Inject
+    MediaPresenter(
+        EventBus eventBus,
+        MyView view,
+        MyProxy proxy,
+        PlaceManager placeManager) {
+        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN, placeManager);
+    }
 }

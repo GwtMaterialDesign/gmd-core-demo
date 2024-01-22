@@ -57,43 +57,43 @@ import static gwt.material.design.jquery.client.api.JQuery.$;
 
 public class ApplicationView extends ViewWithUiHandlers<MenuHandlers> implements ApplicationPresenter.MyView {
 
-	private void onWindowScroll(Window.ScrollEvent event) {
-		boolean isInViewPort = new ScrollHelper().isInViewPort(title);
-		if (!isInViewPort) {
-			if (!scrolling) {
-				MaterialAnimation animation = new MaterialAnimation();
-				animation.setTransition(Transition.FADEINUP);
-				animation.animate(navBrand);
-				navBrand.setText(title.getText());
-				scrolling = true;
-			}
+    private void onWindowScroll(Window.ScrollEvent event) {
+        boolean isInViewPort = new ScrollHelper().isInViewPort(title);
+        if (!isInViewPort) {
+            if (!scrolling) {
+                MaterialAnimation animation = new MaterialAnimation();
+                animation.setTransition(Transition.FADEINUP);
+                animation.animate(navBrand);
+                navBrand.setText(title.getText());
+                scrolling = true;
+            }
 
-		} else {
-			MaterialAnimation animation = new MaterialAnimation();
-			animation.setTransition(Transition.FADEINUP);
-			animation.animate(navBrand);
-			navBrand.setText("");
-			scrolling = false;
-		}
+        } else {
+            MaterialAnimation animation = new MaterialAnimation();
+            animation.setTransition(Transition.FADEINUP);
+            animation.animate(navBrand);
+            navBrand.setText("");
+            scrolling = false;
+        }
 
-		if (event.getScrollTop() > 320) {
-			if (fabUp.getOpacity() == 0) {
-				MaterialAnimation animation = new MaterialAnimation();
-				animation.setTransition(Transition.ZOOMIN);
-				animation.animate(fabUp, () -> fabUp.setOpacity(1));
-			}
-		} else {
-			if (fabUp.getOpacity() == 1) {
-				MaterialAnimation animation = new MaterialAnimation();
-				animation.setTransition(Transition.ZOOMOUT);
-				animation.animate(fabUp, () -> {
-					fabUp.setOpacity(0);
-				});
-			}
-		}
-	}
+        if (event.getScrollTop() > 320) {
+            if (fabUp.getOpacity() == 0) {
+                MaterialAnimation animation = new MaterialAnimation();
+                animation.setTransition(Transition.ZOOMIN);
+                animation.animate(fabUp, () -> fabUp.setOpacity(1));
+            }
+        } else {
+            if (fabUp.getOpacity() == 1) {
+                MaterialAnimation animation = new MaterialAnimation();
+                animation.setTransition(Transition.ZOOMOUT);
+                animation.animate(fabUp, () -> {
+                    fabUp.setOpacity(0);
+                });
+            }
+        }
+    }
 
-	interface Binder extends UiBinder<Widget, ApplicationView> {
+    interface Binder extends UiBinder<Widget, ApplicationView> {
     }
 
     @UiField

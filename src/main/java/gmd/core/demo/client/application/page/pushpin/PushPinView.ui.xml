@@ -18,38 +18,38 @@
   #L%
   -->
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-			 xmlns:m='urn:import:gwt.material.design.client.ui'
-			 xmlns:widget="urn:import:gmd.core.demo.client.application.widget"
-			 xmlns:g="urn:import:com.google.gwt.user.client.ui">
+             xmlns:m='urn:import:gwt.material.design.client.ui'
+             xmlns:widget="urn:import:gmd.core.demo.client.application.widget"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
-	<m:MaterialPanel>
-		<widget:CodeSection sectionTitle="Basic"
-							description="A pushpinned element has 3 states. One above (TOP) and below (BELOW) the scrolling threshold, and the pinned state where the element becomes fixed (OFFSET).">
-			<g:HTMLPanel>
-				<pre class="xml">
-					&lt;m:MaterialPanel ui:field="source" grid="s12 m12 l12" backgroundColor="BLUE" paddingTop="50"
-					shadow="1" height="200px" width="200px">
-					&lt;m:MaterialLabel textColor="WHITE" text="Pinned Options top at 300, offset at 64 (navbar's
-					height)" />
-					&lt;/m:MaterialPanel>
-				</pre>
-			</g:HTMLPanel>
+    <m:MaterialPanel>
+        <widget:CodeSection sectionTitle="Basic"
+                            description="A pushpinned element has 3 states. One above (TOP) and below (BELOW) the scrolling threshold, and the pinned state where the element becomes fixed (OFFSET).">
+            <g:HTMLPanel>
+                <pre class="xml">
+                    &lt;m:MaterialPanel ui:field="source" grid="s12 m12 l12" backgroundColor="BLUE" paddingTop="50"
+                    shadow="1" height="200px" width="200px">
+                    &lt;m:MaterialLabel textColor="WHITE" text="Pinned Options top at 300, offset at 64 (navbar's
+                    height)" />
+                    &lt;/m:MaterialPanel>
+                </pre>
+            </g:HTMLPanel>
 
-			<g:HTMLPanel>
-				<pre class="java">
-					@UiField
-					MaterialPanel source;
+            <g:HTMLPanel>
+                <pre class="java">
+                    @UiField
+                    MaterialPanel source;
 
-					MaterialPushpin.apply(source, 300.0, 64.0);
-				</pre>
-			</g:HTMLPanel>
-			<m:MaterialRow height="1000px">
-				<m:MaterialPanel ui:field="source" grid="s12 m12 l12" backgroundColor="BLUE" paddingTop="50" shadow="1"
-								 height="200px" width="200px">
-					<m:MaterialLabel textColor="WHITE"
-									 text="Pinned Options top at 300, offset at 64 (navbar's height)"/>
-				</m:MaterialPanel>
-			</m:MaterialRow>
-		</widget:CodeSection>
-	</m:MaterialPanel>
+                    MaterialPushpin.apply(source, 300.0, 64.0);
+                </pre>
+            </g:HTMLPanel>
+            <m:MaterialRow height="1000px">
+                <m:MaterialPanel ui:field="source" grid="s12 m12 l12" backgroundColor="BLUE" paddingTop="50" shadow="1"
+                                 height="200px" width="200px">
+                    <m:MaterialLabel textColor="WHITE"
+                                     text="Pinned Options top at 300, offset at 64 (navbar's height)"/>
+                </m:MaterialPanel>
+            </m:MaterialRow>
+        </widget:CodeSection>
+    </m:MaterialPanel>
 </ui:UiBinder>

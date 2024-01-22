@@ -33,32 +33,32 @@ import gwt.material.design.client.ui.MaterialToast;
 import javax.inject.Inject;
 
 public class ButtonView extends ViewImpl implements ButtonPresenter.MyView {
-	interface Binder extends UiBinder<Widget, ButtonView> {
-	}
+    interface Binder extends UiBinder<Widget, ButtonView> {
+    }
 
-	@UiField
-	MaterialButton btnClick, btnHover, btnDoubleClick;
+    @UiField
+    MaterialButton btnClick, btnHover, btnDoubleClick;
 
-	@Inject
-	ButtonView(Binder uiBinder) {
-		initWidget(uiBinder.createAndBindUi(this));
-	}
+    @Inject
+    ButtonView(Binder uiBinder) {
+        initWidget(uiBinder.createAndBindUi(this));
+    }
 
-	@UiHandler("btnClick")
-	void onClick(ClickEvent e) {
-		MaterialToast.fireToast("Click Triggered");
-		btnClick.setText("Clicked");
-	}
+    @UiHandler("btnClick")
+    void onClick(ClickEvent e) {
+        MaterialToast.fireToast("Click Triggered");
+        btnClick.setText("Clicked");
+    }
 
-	@UiHandler("btnHover")
-	void onHover(MouseOverEvent e) {
-		MaterialToast.fireToast("Hover Triggered");
-		btnHover.setText("Hovered");
-	}
+    @UiHandler("btnHover")
+    void onHover(MouseOverEvent e) {
+        MaterialToast.fireToast("Hover Triggered");
+        btnHover.setText("Hovered");
+    }
 
-	@UiHandler("btnDoubleClick")
-	void onDoubleClick(DoubleClickEvent e) {
-		MaterialToast.fireToast("Double Click Triggered");
-		btnDoubleClick.setText("Double Clicked");
-	}
+    @UiHandler("btnDoubleClick")
+    void onDoubleClick(DoubleClickEvent e) {
+        MaterialToast.fireToast("Double Click Triggered");
+        btnDoubleClick.setText("Double Clicked");
+    }
 }

@@ -34,30 +34,30 @@ import java.util.List;
 
 public class HomeView extends ViewImpl implements HomePresenter.MyView {
 
-	interface Binder extends UiBinder<Widget, HomeView> {
-	}
+    interface Binder extends UiBinder<Widget, HomeView> {
+    }
 
-	@UiField
-	MaterialRow dashboardsRow, videosRow;
+    @UiField
+    MaterialRow dashboardsRow, videosRow;
 
-	@UiField
-	MaterialLink github, slack;
+    @UiField
+    MaterialLink github, slack;
 
-	@Inject
-	HomeView(Binder uiBinder) {
-		initWidget(uiBinder.createAndBindUi(this));
+    @Inject
+    HomeView(Binder uiBinder) {
+        initWidget(uiBinder.createAndBindUi(this));
 
-		github.setHref(AppConstants.GITHUB_REPO);
-		slack.setHref(AppConstants.SLACK_CHANNEL);
-	}
+        github.setHref(AppConstants.GITHUB_REPO);
+        slack.setHref(AppConstants.SLACK_CHANNEL);
+    }
 
-	@Override
-	public void buildDashboards(List<Dashboard> dashboards) {
-		dashboards.forEach(dashboard -> dashboardsRow.add(new DashboardCard(dashboard)));
-	}
+    @Override
+    public void buildDashboards(List<Dashboard> dashboards) {
+        dashboards.forEach(dashboard -> dashboardsRow.add(new DashboardCard(dashboard)));
+    }
 
-	@Override
-	public void buildVideos(List<Dashboard> videos) {
-		videos.forEach(video -> videosRow.add(new DashboardCard(video)));
-	}
+    @Override
+    public void buildVideos(List<Dashboard> videos) {
+        videos.forEach(video -> videosRow.add(new DashboardCard(video)));
+    }
 }

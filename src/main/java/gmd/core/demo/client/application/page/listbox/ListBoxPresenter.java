@@ -31,20 +31,20 @@ import gmd.core.demo.client.application.page.AppPresenter;
 import gmd.core.demo.client.place.NameTokens;
 
 public class ListBoxPresenter extends AppPresenter<ListBoxPresenter.MyView, ListBoxPresenter.MyProxy> {
-	interface MyView extends View {
-	}
+    interface MyView extends View {
+    }
 
-	@ProxyStandard
-	@NameToken(NameTokens.LISTBOX)
-	interface MyProxy extends ProxyPlace<ListBoxPresenter> {
-	}
+    @ProxyStandard
+    @NameToken(NameTokens.LISTBOX)
+    interface MyProxy extends ProxyPlace<ListBoxPresenter> {
+    }
 
-	@Inject
-	ListBoxPresenter(
-		EventBus eventBus,
-		MyView view,
-		MyProxy proxy,
-		PlaceManager placeManager) {
-		super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN, placeManager);
-	}
+    @Inject
+    ListBoxPresenter(
+        EventBus eventBus,
+        MyView view,
+        MyProxy proxy,
+        PlaceManager placeManager) {
+        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN, placeManager);
+    }
 }

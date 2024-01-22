@@ -22,9 +22,9 @@ package gmd.core.demo.client.application.page.loaders;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class LoadersModule extends AbstractPresenterModule {
-	@Override
-	protected void configure() {
-		bindPresenter(LoadersPresenter.class, LoadersPresenter.MyView.class, LoadersView.class,
-			LoadersPresenter.MyProxy.class);
-	}
+    @Override
+    protected void configure() {
+        bindPresenter(LoadersPresenter.class, LoadersPresenter.MyView.class, LoadersView.class,
+            LoadersPresenter.MyProxy.class);
+    }
 }

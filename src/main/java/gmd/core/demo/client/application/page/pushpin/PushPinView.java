@@ -29,16 +29,16 @@ import gwt.material.design.client.ui.MaterialPushpin;
 import javax.inject.Inject;
 
 public class PushPinView extends ViewImpl implements PushPinPresenter.MyView {
-	interface Binder extends UiBinder<Widget, PushPinView> {
-	}
+    interface Binder extends UiBinder<Widget, PushPinView> {
+    }
 
-	@UiField
-	MaterialPanel source;
+    @UiField
+    MaterialPanel source;
 
-	@Inject
-	PushPinView(Binder uiBinder) {
-		initWidget(uiBinder.createAndBindUi(this));
+    @Inject
+    PushPinView(Binder uiBinder) {
+        initWidget(uiBinder.createAndBindUi(this));
 
-		MaterialPushpin.apply(source, 300.0, 64.0);
-	}
+        MaterialPushpin.apply(source, 300.0, 64.0);
+    }
 }
