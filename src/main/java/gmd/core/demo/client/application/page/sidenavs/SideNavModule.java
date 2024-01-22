@@ -25,6 +25,6 @@ public class SideNavModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
         bindPresenter(SideNavPresenter.class, SideNavPresenter.MyView.class, SideNavView.class,
-                SideNavPresenter.MyProxy.class);
+            SideNavPresenter.MyProxy.class);
     }
 }

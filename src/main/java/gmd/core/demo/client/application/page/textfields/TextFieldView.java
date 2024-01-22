@@ -32,13 +32,26 @@ import gmd.core.demo.client.application.model.User;
 import gmd.core.demo.client.application.model.UserOracle;
 import gwt.material.design.addins.client.autocomplete.MaterialAutoComplete;
 import gwt.material.design.addins.client.combobox.MaterialComboBox;
-import gwt.material.design.client.base.*;
+import gwt.material.design.client.base.AbstractValueWidget;
 import gwt.material.design.client.base.CopyCommandCallback;
+import gwt.material.design.client.base.HasFieldTypes;
+import gwt.material.design.client.base.HasReadOnly;
+import gwt.material.design.client.base.HasStatusText;
+import gwt.material.design.client.base.MaterialWidget;
 import gwt.material.design.client.constants.FieldType;
 import gwt.material.design.client.constants.StatusDisplayType;
 import gwt.material.design.client.events.PasteEvent;
 import gwt.material.design.client.js.CopyCommandData;
-import gwt.material.design.client.ui.*;
+import gwt.material.design.client.ui.MaterialDoubleBox;
+import gwt.material.design.client.ui.MaterialFloatBox;
+import gwt.material.design.client.ui.MaterialIcon;
+import gwt.material.design.client.ui.MaterialIntegerBox;
+import gwt.material.design.client.ui.MaterialListValueBox;
+import gwt.material.design.client.ui.MaterialLongBox;
+import gwt.material.design.client.ui.MaterialRow;
+import gwt.material.design.client.ui.MaterialTextArea;
+import gwt.material.design.client.ui.MaterialTextBox;
+import gwt.material.design.client.ui.MaterialToast;
 
 import javax.inject.Inject;
 import java.util.ArrayList;
@@ -340,12 +353,12 @@ public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView
 
     @UiHandler("btnTextLongValue")
     void onTextLongValue(ClickEvent e) {
-        txtLongValue.setValue(20000l);
+        txtLongValue.setValue(20000L);
     }
 
     @UiHandler("btnTextLongValueEvent")
     void onTextLongValueEvent(ClickEvent e) {
-        txtLongValue.setValue(1000l, true);
+        txtLongValue.setValue(1000L, true);
     }
 
     @UiHandler("txtDoubleValue")

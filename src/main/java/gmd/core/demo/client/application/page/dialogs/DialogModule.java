@@ -25,6 +25,6 @@ public class DialogModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
         bindPresenter(DialogPresenter.class, DialogPresenter.MyView.class, DialogView.class,
-                DialogPresenter.MyProxy.class);
+            DialogPresenter.MyProxy.class);
     }
 }

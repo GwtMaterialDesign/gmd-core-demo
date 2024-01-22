@@ -7,9 +7,9 @@
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -28,7 +28,11 @@ import com.gwtplatform.mvp.client.ViewImpl;
 import gmd.core.demo.client.application.model.DataHelper;
 import gmd.core.demo.client.application.model.Hero;
 import gwt.material.design.client.base.SearchObject;
-import gwt.material.design.client.ui.*;
+import gwt.material.design.client.ui.MaterialImage;
+import gwt.material.design.client.ui.MaterialLabel;
+import gwt.material.design.client.ui.MaterialNavBar;
+import gwt.material.design.client.ui.MaterialSearch;
+import gwt.material.design.client.ui.MaterialToast;
 import gwt.material.design.client.ui.animate.MaterialAnimation;
 import gwt.material.design.client.ui.animate.Transition;
 
@@ -72,9 +76,9 @@ public class SearchView extends ViewImpl implements SearchPresenter.MyView {
 
         // Populate the search keyword into search component
         List<SearchObject> objects = new ArrayList<>();
-        for(Hero hero : DataHelper.getAllHeroes()){
-            objects.add(hero);
-        }
+
+        objects.addAll(DataHelper.getAllHeroes());
+
         txtSearch.setListSearches(objects);
 
         txtSearch.setSelectedObject(objects.get(3));
@@ -82,7 +86,7 @@ public class SearchView extends ViewImpl implements SearchPresenter.MyView {
         // Add Finish Handler
         txtSearch.addSearchFinishHandler(event -> {
             // Get the selected search object
-            Hero hero = (Hero)txtSearch.getSelectedObject();
+            Hero hero = (Hero) txtSearch.getSelectedObject();
             new MaterialAnimation().transition(Transition.ZOOMIN).animate(imgHero);
             imgHero.setUrl(hero.getImageUrl());
             lblName.setText(hero.getName());
@@ -92,7 +96,7 @@ public class SearchView extends ViewImpl implements SearchPresenter.MyView {
     }
 
     @UiHandler("btnSearch")
-    void onSearch(ClickEvent e){
+    void onSearch(ClickEvent e) {
         txtSearch.open();
     }
 }

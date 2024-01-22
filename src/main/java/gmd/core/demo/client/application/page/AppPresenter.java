@@ -20,7 +20,10 @@ import gwt.material.design.client.MaterialDesignBase;
 import gwt.material.design.client.base.MaterialWidget;
 import gwt.material.design.client.base.helper.ScrollHelper;
 import gwt.material.design.client.constants.HideOn;
-import gwt.material.design.client.ui.*;
+import gwt.material.design.client.ui.MaterialLink;
+import gwt.material.design.client.ui.MaterialLoader;
+import gwt.material.design.client.ui.MaterialPushpin;
+import gwt.material.design.client.ui.MaterialScrollspy;
 
 public class AppPresenter<V extends View, P extends Proxy<?>> extends Presenter<V, P> {
 
@@ -29,7 +32,7 @@ public class AppPresenter<V extends View, P extends Proxy<?>> extends Presenter<
         MaterialDesignBase.injectJs(AppResources.INSTANCE.highlightJs());
     }
 
-    private PlaceManager placeManager;
+    private final PlaceManager placeManager;
     private MaterialScrollspy scrollspy;
 
     public AppPresenter(EventBus eventBus, V view, P proxy, GwtEvent.Type<RevealContentHandler<?>> slot, PlaceManager placeManager) {
@@ -54,11 +57,10 @@ public class AppPresenter<V extends View, P extends Proxy<?>> extends Presenter<
 
         Component component = NavigationService.get(placeManager.getCurrentPlaceRequest().getNameToken());
         String source = AppConstants.GITHUB_SOURCE_CODE + getView().getClass().getName().replace(".", "/");
+        assert component != null;
         component.setJavaSource(source + ".java");
         component.setXmlSource(source + ".ui.xml");
-        if (component != null) {
-            ApplicationView.setComponent(component);
-        }
+        ApplicationView.setComponent(component);
 
         ApplicationView.showHeader(true);
 
@@ -108,8 +110,8 @@ public class AppPresenter<V extends View, P extends Proxy<?>> extends Presenter<
     }
 
     public static native void initPre() /*-{
-        $wnd.jQuery(document).ready(function() {
-            $wnd.jQuery('pre').each(function(i, block) {
+        $wnd.jQuery(document).ready(function () {
+            $wnd.jQuery('pre').each(function (i, block) {
                 $wnd.hljs.highlightBlock(block);
             });
         });

@@ -25,6 +25,6 @@ public class ScrollspyModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
         bindPresenter(ScrollspyPresenter.class, ScrollspyPresenter.MyView.class, ScrollspyView.class,
-                ScrollspyPresenter.MyProxy.class);
+            ScrollspyPresenter.MyProxy.class);
     }
 }

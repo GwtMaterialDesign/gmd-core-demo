@@ -7,9 +7,9 @@
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
-  
+
        http://www.apache.org/licenses/LICENSE-2.0
-  
+
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -23,54 +23,56 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <m:MaterialPanel>
-        <widget:CodeSection sectionTitle="Usage" description="Using MaterialIcon Widget you can easily make it by adding the lines below. Just set the icon attribute and indicate which icon you want to display. Please refer below about the list of icon.">
-            <m:MaterialIcon iconType="_3D_ROTATION" />
+        <widget:CodeSection sectionTitle="Usage"
+                            description="Using MaterialIcon Widget you can easily make it by adding the lines below. Just set the icon attribute and indicate which icon you want to display. Please refer below about the list of icon.">
+            <m:MaterialIcon iconType="_3D_ROTATION"/>
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialIcon iconType="ROTATION_3D" />
+                    &lt;m:MaterialIcon iconType="ROTATION_3D" />
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 
-        <widget:CodeSection sectionTitle="Sizes" description="To control the size of the icon, just set size attribute in your MaterialIcon widget.">
+        <widget:CodeSection sectionTitle="Sizes"
+                            description="To control the size of the icon, just set size attribute in your MaterialIcon widget.">
             <m:MaterialRow addStyleNames="valign-wrapper">
                 <m:MaterialColumn grid="s4 m2" textAlign="CENTER">
-                    <m:MaterialIcon iconType="POLYMER" iconSize="TINY" />
-                    <m:MaterialLabel text="Tiny" />
+                    <m:MaterialIcon iconType="POLYMER" iconSize="TINY"/>
+                    <m:MaterialLabel text="Tiny"/>
                 </m:MaterialColumn>
                 <m:MaterialColumn grid="s4 m2" textAlign="CENTER">
-                    <m:MaterialIcon iconType="POLYMER" iconSize="SMALL" />
-                    <m:MaterialLabel text="Small" />
+                    <m:MaterialIcon iconType="POLYMER" iconSize="SMALL"/>
+                    <m:MaterialLabel text="Small"/>
                 </m:MaterialColumn>
                 <m:MaterialColumn grid="s4 m2" textAlign="CENTER">
-                    <m:MaterialIcon iconType="POLYMER" iconSize="MEDIUM" />
-                    <m:MaterialLabel text="Medium" />
+                    <m:MaterialIcon iconType="POLYMER" iconSize="MEDIUM"/>
+                    <m:MaterialLabel text="Medium"/>
                 </m:MaterialColumn>
                 <m:MaterialColumn grid="s4 m2" textAlign="CENTER">
-                    <m:MaterialIcon iconType="POLYMER" iconSize="LARGE" />
-                    <m:MaterialLabel text="Large" />
+                    <m:MaterialIcon iconType="POLYMER" iconSize="LARGE"/>
+                    <m:MaterialLabel text="Large"/>
                 </m:MaterialColumn>
             </m:MaterialRow>
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialRow addStyleNames="valign-wrapper">
-        &lt;m:MaterialColumn grid="s4 m2" textAlign="CENTER">
-            &lt;m:MaterialIcon iconType="POLYMER" iconSize="TINY" />
-            &lt;m:MaterialLabel text="Tiny" />
-        &lt;/m:MaterialColumn>
-        &lt;m:MaterialColumn grid="s4 m2" textAlign="CENTER">
-            &lt;m:MaterialIcon iconType="POLYMER" iconSize="SMALL" />
-            &lt;m:MaterialLabel text="Small" />
-        &lt;/m:MaterialColumn>
-        &lt;m:MaterialColumn grid="s4 m2" textAlign="CENTER">
-            &lt;m:MaterialIcon iconType="POLYMER" iconSize="MEDIUM" />
-            &lt;m:MaterialLabel text="Medium" />
-        &lt;/m:MaterialColumn>
-        &lt;m:MaterialColumn grid="s4 m2" textAlign="CENTER">
-            &lt;m:MaterialIcon iconType="POLYMER" iconSize="LARGE" />
-            &lt;m:MaterialLabel text="Large" />
-        &lt;/m:MaterialColumn>
-    &lt;/m:MaterialRow>
+                    &lt;m:MaterialRow addStyleNames="valign-wrapper">
+                    &lt;m:MaterialColumn grid="s4 m2" textAlign="CENTER">
+                    &lt;m:MaterialIcon iconType="POLYMER" iconSize="TINY" />
+                    &lt;m:MaterialLabel text="Tiny" />
+                    &lt;/m:MaterialColumn>
+                    &lt;m:MaterialColumn grid="s4 m2" textAlign="CENTER">
+                    &lt;m:MaterialIcon iconType="POLYMER" iconSize="SMALL" />
+                    &lt;m:MaterialLabel text="Small" />
+                    &lt;/m:MaterialColumn>
+                    &lt;m:MaterialColumn grid="s4 m2" textAlign="CENTER">
+                    &lt;m:MaterialIcon iconType="POLYMER" iconSize="MEDIUM" />
+                    &lt;m:MaterialLabel text="Medium" />
+                    &lt;/m:MaterialColumn>
+                    &lt;m:MaterialColumn grid="s4 m2" textAlign="CENTER">
+                    &lt;m:MaterialIcon iconType="POLYMER" iconSize="LARGE" />
+                    &lt;m:MaterialLabel text="Large" />
+                    &lt;/m:MaterialColumn>
+                    &lt;/m:MaterialRow>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -78,83 +80,103 @@
         <widget:CodeSection sectionTitle="Display Types">
             <m:MaterialRow addStyleNames="valign-wrapper">
                 <m:MaterialColumn grid="s4 m2" textAlign="CENTER">
-                    <m:MaterialIcon iconType="HOME" iconDisplay="OUTLINED" iconSize="MEDIUM" />
-                    <m:MaterialLabel text="OUTLINED" />
+                    <m:MaterialIcon iconType="HOME" iconDisplay="OUTLINED" iconSize="MEDIUM"/>
+                    <m:MaterialLabel text="OUTLINED"/>
                 </m:MaterialColumn>
                 <m:MaterialColumn grid="s4 m2" textAlign="CENTER">
-                    <m:MaterialIcon iconType="HOME" iconDisplay="FILLED" iconSize="MEDIUM" />
-                    <m:MaterialLabel text="FILLED" />
+                    <m:MaterialIcon iconType="HOME" iconDisplay="FILLED" iconSize="MEDIUM"/>
+                    <m:MaterialLabel text="FILLED"/>
                 </m:MaterialColumn>
                 <m:MaterialColumn grid="s4 m2" textAlign="CENTER">
-                    <m:MaterialIcon iconType="HOME" iconDisplay="ROUNDED" iconSize="MEDIUM" />
-                    <m:MaterialLabel text="ROUNDED" />
+                    <m:MaterialIcon iconType="HOME" iconDisplay="ROUNDED" iconSize="MEDIUM"/>
+                    <m:MaterialLabel text="ROUNDED"/>
                 </m:MaterialColumn>
                 <m:MaterialColumn grid="s4 m2" textAlign="CENTER">
-                    <m:MaterialIcon iconType="HOME" iconDisplay="SHARP" iconSize="MEDIUM" />
-                    <m:MaterialLabel text="SHARP" />
+                    <m:MaterialIcon iconType="HOME" iconDisplay="SHARP" iconSize="MEDIUM"/>
+                    <m:MaterialLabel text="SHARP"/>
                 </m:MaterialColumn>
                 <m:MaterialColumn grid="s4 m2" textAlign="CENTER">
-                    <m:MaterialIcon iconType="HOME" iconDisplay="TWO_TONE" iconSize="MEDIUM" />
-                    <m:MaterialLabel text="TWO TONE" />
+                    <m:MaterialIcon iconType="HOME" iconDisplay="TWO_TONE" iconSize="MEDIUM"/>
+                    <m:MaterialLabel text="TWO TONE"/>
                 </m:MaterialColumn>
             </m:MaterialRow>
         </widget:CodeSection>
 
-        <widget:CodeSection sectionTitle="Icon inside MaterialLink" description="You can add in your material link an icon instance by adding icon attribute">
-            <m:MaterialLink fontSize="2em" text="I love Material Design" textColor="RED" iconType="FAVORITE" iconPosition="LEFT" />
+        <widget:CodeSection sectionTitle="Icon inside MaterialLink"
+                            description="You can add in your material link an icon instance by adding icon attribute">
+            <m:MaterialLink fontSize="2em" text="I love Material Design" textColor="RED" iconType="FAVORITE"
+                            iconPosition="LEFT"/>
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialLink fontSize="2em" text="I love Material Design" textColor="RED" iconType="FAVORITE" iconPosition="LEFT" />
+                    &lt;m:MaterialLink fontSize="2em" text="I love Material Design" textColor="RED" iconType="FAVORITE"
+                    iconPosition="LEFT" />
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 
-        <widget:CodeSection sectionTitle="Custom Icon" description="Calling setCustomIconType(String) will let you handle external icons like FontAwesomeIcons. Follow the guides below to implement custom icons.">
-            <m:MaterialLabel text="Step 1 - Include the FontAwesomeResources into your gwt.xml module" fontWeight="BOLD"/>
+        <widget:CodeSection sectionTitle="Custom Icon"
+                            description="Calling setCustomIconType(String) will let you handle external icons like FontAwesomeIcons. Follow the guides below to implement custom icons.">
+            <m:MaterialLabel text="Step 1 - Include the FontAwesomeResources into your gwt.xml module"
+                             fontWeight="BOLD"/>
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;!-- Font Awesome Icons import -->
-    &lt;inherits name="gwt.material.design.incubator.FontAwesomeResources" />
+                    &lt;!-- Font Awesome Icons import -->
+                    &lt;inherits name="gwt.material.design.incubator.FontAwesomeResources" />
                 </pre>
             </g:HTMLPanel>
 
-            <m:MaterialLabel text="Step 2 - Now you can call icon.setCustomIconType(String) to define the fontawesomeicon easily" fontWeight="BOLD"/>
+            <m:MaterialLabel
+                text="Step 2 - Now you can call icon.setCustomIconType(String) to define the fontawesomeicon easily"
+                fontWeight="BOLD"/>
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialIcon customIconType="fas fa-spider" iconColor="RED_DARKEN_2" iconSize="TINY" marginRight="20"/>
-    &lt;m:MaterialIcon customIconType="fas fa-spider" iconColor="RED_DARKEN_2" iconSize="SMALL" marginRight="20"/>
-    &lt;m:MaterialIcon customIconType="fas fa-spider" iconColor="RED_DARKEN_2" iconSize="MEDIUM" marginRight="20"/>
-    &lt;m:MaterialIcon customIconType="fas fa-spider" iconColor="RED_DARKEN_2" iconSize="LARGE" marginRight="20"/>
+                    &lt;m:MaterialIcon customIconType="fas fa-spider" iconColor="RED_DARKEN_2" iconSize="TINY"
+                    marginRight="20"/>
+                    &lt;m:MaterialIcon customIconType="fas fa-spider" iconColor="RED_DARKEN_2" iconSize="SMALL"
+                    marginRight="20"/>
+                    &lt;m:MaterialIcon customIconType="fas fa-spider" iconColor="RED_DARKEN_2" iconSize="MEDIUM"
+                    marginRight="20"/>
+                    &lt;m:MaterialIcon customIconType="fas fa-spider" iconColor="RED_DARKEN_2" iconSize="LARGE"
+                    marginRight="20"/>
                 </pre>
             </g:HTMLPanel>
 
             <m:MaterialRow padding="20">
-                <m:MaterialIcon customIconType="fas fa-spider" iconColor="RED_DARKEN_2" iconSize="TINY" marginRight="20"/>
-                <m:MaterialIcon customIconType="fas fa-spider" iconColor="RED_DARKEN_2" iconSize="SMALL" marginRight="20"/>
-                <m:MaterialIcon customIconType="fas fa-spider" iconColor="RED_DARKEN_2" iconSize="MEDIUM" marginRight="20"/>
-                <m:MaterialIcon customIconType="fas fa-spider" iconColor="RED_DARKEN_2" iconSize="LARGE" marginRight="20"/>
+                <m:MaterialIcon customIconType="fas fa-spider" iconColor="RED_DARKEN_2" iconSize="TINY"
+                                marginRight="20"/>
+                <m:MaterialIcon customIconType="fas fa-spider" iconColor="RED_DARKEN_2" iconSize="SMALL"
+                                marginRight="20"/>
+                <m:MaterialIcon customIconType="fas fa-spider" iconColor="RED_DARKEN_2" iconSize="MEDIUM"
+                                marginRight="20"/>
+                <m:MaterialIcon customIconType="fas fa-spider" iconColor="RED_DARKEN_2" iconSize="LARGE"
+                                marginRight="20"/>
             </m:MaterialRow>
 
             <m:MaterialRow padding="20">
-                <m:MaterialButton type="FLOATING" size="MEDIUM" iconColor="WHITE" backgroundColor="PURPLE" customIconType="fas fa-theater-masks" marginRight="20"/>
-                <m:MaterialButton type="FLOATING" size="LARGE" iconColor="WHITE" backgroundColor="PURPLE" customIconType="fas fa-theater-masks" />
+                <m:MaterialButton type="FLOATING" size="MEDIUM" iconColor="WHITE" backgroundColor="PURPLE"
+                                  customIconType="fas fa-theater-masks" marginRight="20"/>
+                <m:MaterialButton type="FLOATING" size="LARGE" iconColor="WHITE" backgroundColor="PURPLE"
+                                  customIconType="fas fa-theater-masks"/>
             </m:MaterialRow>
 
             <m:MaterialRow padding="20">
-                <m:MaterialButton text="Viber" size="MEDIUM" iconColor="WHITE" backgroundColor="INDIGO" customIconType="fab fa-viber" marginRight="20"/>
-                <m:MaterialButton text="Viber" size="LARGE" iconColor="WHITE" backgroundColor="INDIGO" customIconType="fab fa-viber" />
+                <m:MaterialButton text="Viber" size="MEDIUM" iconColor="WHITE" backgroundColor="INDIGO"
+                                  customIconType="fab fa-viber" marginRight="20"/>
+                <m:MaterialButton text="Viber" size="LARGE" iconColor="WHITE" backgroundColor="INDIGO"
+                                  customIconType="fab fa-viber"/>
             </m:MaterialRow>
 
             <m:MaterialRow padding="20">
                 <m:MaterialLink text="CSV File" customIconType="fas fa-file-csv" display="FLEX" marginBottom="8"/>
-                <m:MaterialLink text="Contract File" customIconType="fas fa-file-contract" display="FLEX" marginBottom="8"/>
+                <m:MaterialLink text="Contract File" customIconType="fas fa-file-contract" display="FLEX"
+                                marginBottom="8"/>
                 <m:MaterialLink text="Code File" customIconType="fas fa-file-code" display="FLEX" marginBottom="8"/>
                 <m:MaterialLink text="PDF File" customIconType="fas fa-file-pdf" display="FLEX" marginBottom="8"/>
             </m:MaterialRow>
         </widget:CodeSection>
-        
+
         <widget:CodeSection sectionTitle="Icon List" description="Get the specific name for your icon">
-            <m:MaterialRow ui:field="iconsRow" />
+            <m:MaterialRow ui:field="iconsRow"/>
             <g:HTMLPanel>
                 <pre class="xml">
 

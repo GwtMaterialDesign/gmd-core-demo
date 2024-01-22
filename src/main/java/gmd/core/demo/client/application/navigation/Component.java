@@ -8,7 +8,8 @@ public class Component {
     private String javaSource;
     private String xmlSource;
 
-    public Component() {}
+    public Component() {
+    }
 
     public Component(String name, String description, String href) {
         this.name = name;
@@ -48,9 +49,9 @@ public class Component {
 
     public static String generateName(String href) {
         String output = href.replaceAll("([A-Z][a-z]+)", " $1") // Words beginning with UC
-                .replaceAll("([A-Z][A-Z]+)", " $1") // "Words" of only UC
-                .replaceAll("([^A-Za-z ]+)", " $1") // "Words" of non-letters
-                .trim();
+            .replaceAll("([A-Z][A-Z]+)", " $1") // "Words" of only UC
+            .replaceAll("([^A-Za-z ]+)", " $1") // "Words" of non-letters
+            .trim();
 
         output = output.substring(0, 1).toUpperCase() + output.substring(1);
         return output;

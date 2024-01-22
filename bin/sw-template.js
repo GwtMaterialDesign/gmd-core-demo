@@ -3,7 +3,7 @@ var cacheName = '{{cacheName}}';
 var filesToCache = [  {{#each filesToCache}}
 '{{.}}'{{#unless @last}},{{/unless}}
     {{/each}}
-    ];
+    ]
 
 
 /**

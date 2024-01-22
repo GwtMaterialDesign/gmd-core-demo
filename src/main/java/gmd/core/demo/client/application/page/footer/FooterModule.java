@@ -25,6 +25,6 @@ public class FooterModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
         bindPresenter(FooterPresenter.class, FooterPresenter.MyView.class, FooterView.class,
-                FooterPresenter.MyProxy.class);
+            FooterPresenter.MyProxy.class);
     }
 }

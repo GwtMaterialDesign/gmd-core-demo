@@ -7,9 +7,9 @@
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -49,30 +49,32 @@ public class DatePickerView extends ViewImpl implements DatePickerPresenter.MyVi
     @UiField
     MaterialListBox lstLanguage;
 
-    private List<DatePickerLanguage> languages = new ArrayList<>();
+    private final List<DatePickerLanguage> languages = new ArrayList<>();
 
+    @SuppressWarnings({"deprecation"})
     @Inject
     DatePickerView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
+        //noinspection deprecation
         dpLimit.setDateMin(new Date(117, 0, 1));
         dpLimit.setDateMax(new Date(117, 0, 15));
         // Events on date picker
         dpEvents.addOpenHandler(event -> {
-            if(event.getTarget().getValue() != null){
+            if (event.getTarget().getValue() != null) {
                 MaterialToast.fireToast("Opened Date Picker " + event.getTarget().getValue());
-            }else{
-                MaterialToast.fireToast("Opened Date Picker" );
+            } else {
+                MaterialToast.fireToast("Opened Date Picker");
             }
         });
         dpEvents.addCloseHandler(event -> MaterialToast.fireToast("Closed Date Picker with value " + event.getTarget().getValue()));
         dpEvents.addValueChangeHandler(event -> MaterialToast.fireToast("Date Selected " + event.getValue()));
 
         dpOpenClose.addOpenHandler(event -> {
-            if(event.getTarget().getValue() != null){
+            if (event.getTarget().getValue() != null) {
                 MaterialToast.fireToast("Opened Date Picker " + event.getTarget().getValue());
             } else {
-                MaterialToast.fireToast("Opened Date Picker" );
+                MaterialToast.fireToast("Opened Date Picker");
             }
         });
         dpOpenClose.addCloseHandler(event -> MaterialToast.fireToast("Closed Date Picker with value " + event.getTarget().getValue()));
@@ -81,17 +83,15 @@ public class DatePickerView extends ViewImpl implements DatePickerPresenter.MyVi
             dpOpenClose.close();
         });
 
-        dpAutoClose.addValueChangeHandler(event -> {
-            MaterialToast.fireToast("Date Selected " + event.getValue());
-        });
+        dpAutoClose.addValueChangeHandler(event -> MaterialToast.fireToast("Date Selected " + event.getValue()));
 
-        dpBirthdate.setDate(new Date(50, 1, 1));
+        dpBirthdate.setDate(new Date(50, 0, 1));
 
         initLanguage();
     }
 
     private void initLanguage() {
-        for(DatePickerLanguage lang : DataService.getAllDateLanguage()) {
+        for (DatePickerLanguage lang : DataService.getAllDateLanguage()) {
             languages.add(lang);
             lstLanguage.add(new Option(lang.getName()));
         }
@@ -104,22 +104,24 @@ public class DatePickerView extends ViewImpl implements DatePickerPresenter.MyVi
     }
 
     @UiHandler("btnSetDate")
-    void onSetDate(ClickEvent e){
-        dp.setDate(new Date(116, 0,1));
+    void onSetDate(ClickEvent e) {
+        dp.setDate(new Date(116, 0, 1));
     }
 
     @UiHandler("btnGetDate")
-    void onGetDate(ClickEvent e){
+    void onGetDate(ClickEvent e) {
         MaterialToast.fireToast("" + dp.getDate());
     }
 
     @UiHandler("btnSetFormat")
-    void onDpFormat(ClickEvent e){
+    void onDpFormat(ClickEvent e) {
         dpFormat.setDate(new Date());
     }
 
     @UiHandler("btnClear")
-    void onDpClear(ClickEvent e) { dpClear.clear(); }
+    void onDpClear(ClickEvent e) {
+        dpClear.clear();
+    }
 
     @UiHandler("btnGetValue")
     void onDpGetValue(ClickEvent e) {
@@ -140,7 +142,7 @@ public class DatePickerView extends ViewImpl implements DatePickerPresenter.MyVi
     void onDpValue(ClickEvent e) {
         //dpValue.setValue(new Date());
         dpValue.setValue(new Date(), false);
-        Long l = new Date().getTime();
+        long l = new Date().getTime();
         l = l - 2592000000L;      //1 Months in Milliseconds = 2592000000
         Date dd = new Date();
         dd.setTime(l);
@@ -149,7 +151,7 @@ public class DatePickerView extends ViewImpl implements DatePickerPresenter.MyVi
 
     @UiHandler("btnDpValueEvent")
     void onDpValueEvent(ClickEvent e) {
-        Date date = new Date(123,1,1);
+        Date date = new Date(123, 0, 1);
         dpValue.setValue(date, true);
     }
 }

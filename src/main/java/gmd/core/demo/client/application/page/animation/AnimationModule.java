@@ -25,6 +25,6 @@ public class AnimationModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
         bindPresenter(AnimationPresenter.class, AnimationPresenter.MyView.class, AnimationView.class,
-                AnimationPresenter.MyProxy.class);
+            AnimationPresenter.MyProxy.class);
     }
 }

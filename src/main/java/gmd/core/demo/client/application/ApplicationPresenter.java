@@ -62,7 +62,7 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
         void setupSearch();
     }
 
-    private PlaceManager manager;
+    private final PlaceManager manager;
 
     public static final NestedSlot SLOT_MAIN = new NestedSlot();
 

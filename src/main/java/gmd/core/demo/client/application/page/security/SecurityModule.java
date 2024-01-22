@@ -25,6 +25,6 @@ public class SecurityModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
         bindPresenter(SecurityPresenter.class, SecurityPresenter.MyView.class, SecurityView.class,
-                SecurityPresenter.MyProxy.class);
+            SecurityPresenter.MyProxy.class);
     }
 }

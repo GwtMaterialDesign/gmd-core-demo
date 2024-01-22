@@ -25,6 +25,6 @@ public class NavBarModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
         bindPresenter(NavBarPresenter.class, NavBarPresenter.MyView.class, NavBarView.class,
-                NavBarPresenter.MyProxy.class);
+            NavBarPresenter.MyProxy.class);
     }
 }

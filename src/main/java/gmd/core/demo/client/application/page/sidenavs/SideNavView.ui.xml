@@ -7,9 +7,9 @@
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
-  
+
        http://www.apache.org/licenses/LICENSE-2.0
-  
+
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -26,12 +26,31 @@
         <widget:CodeSection sectionTitle="SideNav Properties">
             <g:HTMLPanel>
                 <blockquote>
-                    <p><b>width</b> - The width of your desired sidenav</p>
-                    <p><b>m:id</b> - The Id of your sidenav, required by material navbar component.</p>
-                    <p><b>closeOnClick</b> - If clicked on the sidemenu items it will be automatically closed if set to true.</p>
-                    <p><b>alwaysShowActivator</b> - Stop the side nav from hiding your activator element.</p>
-                    <p><b>allowBodyScroll</b> - Stop the side nav from blocking your body element from scrolling.</p>
-                    <p><b>showOnAttach</b> - Invoke a deferred show call to show your side nav (this isn't always required as some will automatically show).</p>
+                    <p>
+                        <b>width</b>
+                        - The width of your desired sidenav
+                    </p>
+                    <p>
+                        <b>m:id</b>
+                        - The id of your sidenav, required by material navbar component.
+                    </p>
+                    <p>
+                        <b>closeOnClick</b>
+                        - If clicked on the sidemenu items it will be automatically closed if set to true.
+                    </p>
+                    <p>
+                        <b>alwaysShowActivator</b>
+                        - Stop the side nav from hiding your activator element.
+                    </p>
+                    <p>
+                        <b>allowBodyScroll</b>
+                        - Stop the side nav from blocking your body element from scrolling.
+                    </p>
+                    <p>
+                        <b>showOnAttach</b>
+                        - Invoke a deferred show call to show your side nav (this isn't always required as some will
+                        automatically show).
+                    </p>
                 </blockquote>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -39,11 +58,31 @@
         <widget:CodeSection sectionTitle="SideNav classes">
             <g:HTMLPanel>
                 <blockquote>
-                    <p><b>MaterialSideNav (Fixed)</b> - It is the default type for Sidenav component, which has a permanent structure and opened by default.</p>
-                    <p><b>MaterialSideNavDrawer</b> - It's a persistent type of sidenav which can be opened (Adds also an overlay on top of the page) / closed. This type of sidenav is hidden by default.</p>
-                    <p><b>MaterialSideNavPush</b> - It's a persistent type of sidenav which can be opened / closed. It pushes the entire page including the header / footer / main components when opening the sidenav.</p>
-                    <p><b>MaterialSideNavMini</b> - Mini Variant / Icon Only sidenav is good for wide page content plus a section wherein you can easily navigate the sidenav menu. </p>
-                    <p><b>MaterialSideNavCard</b> - It adds a delightful shadow on this sidenav container, this sidenav is good for few sidenav link items.</p>
+                    <p>
+                        <b>MaterialSideNav (Fixed)</b>
+                        - It is the default type for Sidenav component, which has a permanent structure and opened by
+                        default.
+                    </p>
+                    <p>
+                        <b>MaterialSideNavDrawer</b>
+                        - It's a persistent type of sidenav which can be opened (Adds also an overlay on top of the
+                        page) / closed. This type of sidenav is hidden by default.
+                    </p>
+                    <p>
+                        <b>MaterialSideNavPush</b>
+                        - It's a persistent type of sidenav which can be opened / closed. It pushes the entire page
+                        including the header / footer / main components when opening the sidenav.
+                    </p>
+                    <p>
+                        <b>MaterialSideNavMini</b>
+                        - Mini Variant / Icon Only sidenav is good for wide page content plus a section wherein you can
+                        easily navigate the sidenav menu.
+                    </p>
+                    <p>
+                        <b>MaterialSideNavCard</b>
+                        - It adds a delightful shadow on this sidenav container, this sidenav is good for few sidenav
+                        link items.
+                    </p>
                 </blockquote>
             </g:HTMLPanel>
         </widget:CodeSection>

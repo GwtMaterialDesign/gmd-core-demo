@@ -41,10 +41,10 @@ public class ButtonPresenter extends AppPresenter<ButtonPresenter.MyView, Button
 
     @Inject
     ButtonPresenter(
-            EventBus eventBus,
-            MyView view,
-            MyProxy proxy,
-            PlaceManager placeManager) {
+        EventBus eventBus,
+        MyView view,
+        MyProxy proxy,
+        PlaceManager placeManager) {
         super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN, placeManager);
     }
 

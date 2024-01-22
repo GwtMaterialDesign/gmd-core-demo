@@ -28,162 +28,185 @@
         <widget:CodeSection sectionTitle="AnimationGlobalConfig">
             <g:HTMLPanel>
                 <pre class="java">
-// Will make all the animations to 4times slower
-// Available options are: FASTEST, FASTER, FAST, NORMAL, SLOW, SLOWER, SLOWEST
-AnimationGlobalConfig.SPEED = AnimationSpeed.SLOWEST
+                    // Will make all the animations to 4times slower
+                    // Available options are: FASTEST, FASTER, FAST, NORMAL, SLOW, SLOWER, SLOWEST
+                    AnimationGlobalConfig.SPEED = AnimationSpeed.SLOWEST
 
-// Will log all the animation properties on the browser's console
-AnimationGlobalConfig.ENABLE_DEBUGGING = true
+                    // Will log all the animation properties on the browser's console
+                    AnimationGlobalConfig.ENABLE_DEBUGGING = true
 
-// Will disable the animation that is present into your application
-AnimationGlobalConfig.ENABLE_ANIMATION = false;
+                    // Will disable the animation that is present into your application
+                    AnimationGlobalConfig.ENABLE_ANIMATION = false;
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
         <!-- Core Animation -->
-        <widget:CodeSection sectionTitle="Core Animation" description="Composing of animate.css plus new google motion transitions.">
+        <widget:CodeSection sectionTitle="Core Animation"
+                            description="Composing of animate.css plus new google motion transitions.">
             <m:MaterialRow>
                 <m:MaterialColumn grid="s12 m4">
                     <m:MaterialCard ui:field="card">
                         <m:MaterialCardContent>
-                            <m:MaterialCardTitle textColor="BLACK" text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
-                            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+                            <m:MaterialCardTitle textColor="BLACK" text="Sample" iconType="POLYMER"
+                                                 iconPosition="RIGHT"/>
+                            <m:MaterialLabel
+                                text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively."/>
                         </m:MaterialCardContent>
                         <m:MaterialCardAction>
-                            <m:MaterialLink text="Link 1" />
-                            <m:MaterialLink text="Link 1" />
+                            <m:MaterialLink text="Link 1"/>
+                            <m:MaterialLink text="Link 1"/>
                         </m:MaterialCardAction>
                     </m:MaterialCard>
-                    <m:MaterialListBox ui:field="lstAnimations" old="true" />
+                    <m:MaterialListBox ui:field="lstAnimations" old="true"/>
                     <m:MaterialButton ui:field="btnAnimate" text="Animate" marginTop="20"/>
                 </m:MaterialColumn>
             </m:MaterialRow>
             <g:HTMLPanel>
                 <pre class="java">
-    MaterialAnimation animation = new MaterialAnimation();
-    animation.setTransition(transition);
-    animation.setDelay(0);
-    animation.setDuration(1000);
-    animation.setInfinite(false);
-    animation.animate(card);
+                    MaterialAnimation animation = new MaterialAnimation();
+                    animation.setTransition(transition);
+                    animation.setDelay(0);
+                    animation.setDuration(1000);
+                    animation.setInfinite(false);
+                    animation.animate(card);
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="Infinite Animation">
             <m:MaterialRow>
-                <m:MaterialButton ui:field="iconHeart" width="100px" height="100px" type="FLOATING" size="LARGE" iconType="FAVORITE" backgroundColor="PINK" />
+                <m:MaterialButton ui:field="iconHeart" width="100px" height="100px" type="FLOATING" size="LARGE"
+                                  iconType="FAVORITE" backgroundColor="PINK"/>
             </m:MaterialRow>
             <m:MaterialRow>
                 <m:MaterialButton ui:field="btnAnimateInfinite" text="Infinite Animation"/>
-                <m:MaterialButton ui:field="btnStopAnimation" text="Stop Animation" type="FLAT" />
+                <m:MaterialButton ui:field="btnStopAnimation" text="Stop Animation" type="FLAT"/>
             </m:MaterialRow>
             <g:HTMLPanel>
                 <pre class="java">
-    MaterialAnimation animation = new MaterialAnimation();
-    animation.setTransition(transition);
-    animation.setDelay(0);
-    animation.setDuration(1000);
-    animation.setInfinite(true);
-    animation.animate(card);
+                    MaterialAnimation animation = new MaterialAnimation();
+                    animation.setTransition(transition);
+                    animation.setDelay(0);
+                    animation.setDuration(1000);
+                    animation.setInfinite(true);
+                    animation.animate(card);
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="Callback" description="Setting the callback after animation">
             <m:MaterialRow>
-                <m:MaterialButton ui:field="iconCallback" width="100px" height="100px" type="FLOATING" size="LARGE" iconType="DIRECTIONS_BIKE" />
+                <m:MaterialButton ui:field="iconCallback" width="100px" height="100px" type="FLOATING" size="LARGE"
+                                  iconType="DIRECTIONS_BIKE"/>
             </m:MaterialRow>
             <m:MaterialRow>
                 <m:MaterialButton ui:field="btnAnimateCallback" text="Animate with Callback"/>
             </m:MaterialRow>
             <g:HTMLPanel>
                 <pre class="java">
-    MaterialAnimation animation = new MaterialAnimation();
-    animation.setDelay(0);
-    animation.setDuration(1000);
-    animation.transition(Transition.FLIPINX);
-    animation.animate(iconCallback, () -> {
-        MaterialToast.fireToast("Animation is finished");
-    });
+                    MaterialAnimation animation = new MaterialAnimation();
+                    animation.setDelay(0);
+                    animation.setDuration(1000);
+                    animation.transition(Transition.FLIPINX);
+                    animation.animate(iconCallback, () -> {
+                    MaterialToast.fireToast("Animation is finished");
+                    });
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 
         <!-- Meaningful animation -->
-        <widget:CodeSection sectionTitle="Show Staggered List" description="You can add a transition staggered reveal effect for any Unordered List material widget with List Items.">
+        <widget:CodeSection sectionTitle="Show Staggered List"
+                            description="You can add a transition staggered reveal effect for any Unordered List material widget with List Items.">
             <m:MaterialButton ui:field="btnStaggered" text="ShowStaggeredList" waves="LIGHT" marginBottom="20"/>
-            <m:MaterialButton ui:field="btnHideStaggered" backgroundColor="WHITE" text="HideStaggeredList" waves="LIGHT" marginBottom="20"/>
+            <m:MaterialButton ui:field="btnHideStaggered" backgroundColor="WHITE" text="HideStaggeredList" waves="LIGHT"
+                              marginBottom="20"/>
             <m.html:UnorderedList ui:field="listContainer">
-                <m.html:ListItem opacity="0"><m:MaterialTitle title="List Item" description="List Item"/></m.html:ListItem>
-                <m.html:ListItem opacity="0"><m:MaterialTitle title="List Item" description="List Item"/></m.html:ListItem>
-                <m.html:ListItem opacity="0"><m:MaterialTitle title="List Item" description="List Item"/></m.html:ListItem>
-                <m.html:ListItem opacity="0"><m:MaterialTitle title="List Item" description="List Item"/></m.html:ListItem>
+                <m.html:ListItem opacity="0">
+                    <m:MaterialTitle title="List Item" description="List Item"/>
+                </m.html:ListItem>
+                <m.html:ListItem opacity="0">
+                    <m:MaterialTitle title="List Item" description="List Item"/>
+                </m.html:ListItem>
+                <m.html:ListItem opacity="0">
+                    <m:MaterialTitle title="List Item" description="List Item"/>
+                </m.html:ListItem>
+                <m.html:ListItem opacity="0">
+                    <m:MaterialTitle title="List Item" description="List Item"/>
+                </m.html:ListItem>
             </m.html:UnorderedList>
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialButton ui:field="btnStaggered" text="Click Me" waves="LIGHT" marginBottom="20"/>
-    &lt;m.html:UnorderedList ui:field="listContainer">
-        &lt;m.html:ListItem opacity="0">&lt;m:MaterialTitle title="List Item" description="List Item"/>&lt;/m.html:ListItem>
-        &lt;m.html:ListItem opacity="0">&lt;m:MaterialTitle title="List Item" description="List Item"/>&lt;/m.html:ListItem>
-        &lt;m.html:ListItem opacity="0">&lt;m:MaterialTitle title="List Item" description="List Item"/>&lt;/m.html:ListItem>
-        &lt;m.html:ListItem opacity="0">&lt;m:MaterialTitle title="List Item" description="List Item"/>&lt;/m.html:ListItem>
-    &lt;/m.html:UnorderedList>
+                    &lt;m:MaterialButton ui:field="btnStaggered" text="Click Me" waves="LIGHT" marginBottom="20"/>
+                    &lt;m.html:UnorderedList ui:field="listContainer">
+                    &lt;m.html:ListItem opacity="0">&lt;m:MaterialTitle title="List Item" description="List Item"/>&lt;/m.html:ListItem>
+                    &lt;m.html:ListItem opacity="0">&lt;m:MaterialTitle title="List Item" description="List Item"/>&lt;/m.html:ListItem>
+                    &lt;m.html:ListItem opacity="0">&lt;m:MaterialTitle title="List Item" description="List Item"/>&lt;/m.html:ListItem>
+                    &lt;m.html:ListItem opacity="0">&lt;m:MaterialTitle title="List Item" description="List Item"/>&lt;/m.html:ListItem>
+                    &lt;/m.html:UnorderedList>
                 </pre>
             </g:HTMLPanel>
             <g:HTMLPanel>
                 <pre class="java">
-    @UiHandler("btnStaggered")
-    void onStaggered(ClickEvent e) {
-        MaterialAnimation gridAnimation = new MaterialAnimation();
-        gridAnimation.setTransition(Transition.SHOW_STAGGERED_LIST);
-        gridAnimation.animate(listContainer);
-    }
+                    @UiHandler("btnStaggered")
+                    void onStaggered(ClickEvent e) {
+                    MaterialAnimation gridAnimation = new MaterialAnimation();
+                    gridAnimation.setTransition(Transition.SHOW_STAGGERED_LIST);
+                    gridAnimation.animate(listContainer);
+                    }
 
-    @UiHandler("btnHideStaggered")
-    void onHideStaggered(ClickEvent e) {
-        MaterialAnimation gridAnimation = new MaterialAnimation();
-        gridAnimation.setTransition(Transition.HIDE_STAGGERED_LIST);
-        gridAnimation.animate(listContainer);
-    }
+                    @UiHandler("btnHideStaggered")
+                    void onHideStaggered(ClickEvent e) {
+                    MaterialAnimation gridAnimation = new MaterialAnimation();
+                    gridAnimation.setTransition(Transition.HIDE_STAGGERED_LIST);
+                    gridAnimation.animate(listContainer);
+                    }
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 
-        <widget:CodeSection sectionTitle="Fade in Image" description="Use this to fade in images. It also animates grayscale and brightness to give it a unique effect.">
-            <m:MaterialButton ui:field="btnFade" text="Click Me" waves="LIGHT" />
-            <m:MaterialImage opacity="0" ui:field="image" url="https://www.topofandroid.com/wp-content/uploads/2015/05/Android-L-Material-Design-Wallpapers-5.png"  caption="I love Material Design"/>
+        <widget:CodeSection sectionTitle="Fade in Image"
+                            description="Use this to fade in images. It also animates grayscale and brightness to give it a unique effect.">
+            <m:MaterialButton ui:field="btnFade" text="Click Me" waves="LIGHT"/>
+            <m:MaterialImage opacity="0" ui:field="image"
+                             url="https://www.topofandroid.com/wp-content/uploads/2015/05/Android-L-Material-Design-Wallpapers-5.png"
+                             caption="I love Material Design"/>
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialButton ui:field="btnFade" text="Click Me" waves="LIGHT" />
-    &lt;m:MaterialImage opacity="0" ui:field="image" url="https://www.topofandroid.com/wp-content/uploads/2015/05/Android-L-Material-Design-Wallpapers-5.png"  caption="I love Material Design"/>
+                    &lt;m:MaterialButton ui:field="btnFade" text="Click Me" waves="LIGHT" />
+                    &lt;m:MaterialImage opacity="0" ui:field="image"
+                    url="https://www.topofandroid.com/wp-content/uploads/2015/05/Android-L-Material-Design-Wallpapers-5.png"
+                    caption="I love Material Design"/>
                 </pre>
             </g:HTMLPanel>
             <g:HTMLPanel>
                 <pre class="java">
-    @UiHandler("btnStaggered")
-    void onStaggered(ClickEvent e) {
-        MaterialAnimation gridAnimation = new MaterialAnimation();
-        gridAnimation.setTransition(Transition.SHOW_STAGGERED_LIST);
-        gridAnimation.animate(listContainer);
-    }
+                    @UiHandler("btnStaggered")
+                    void onStaggered(ClickEvent e) {
+                    MaterialAnimation gridAnimation = new MaterialAnimation();
+                    gridAnimation.setTransition(Transition.SHOW_STAGGERED_LIST);
+                    gridAnimation.animate(listContainer);
+                    }
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 
-        <widget:CodeSection sectionTitle="Show Grid" description="We provided a delightful animation to display grid in your apps.">
+        <widget:CodeSection sectionTitle="Show Grid"
+                            description="We provided a delightful animation to display grid in your apps.">
             <m:MaterialButton ui:field="btnShowGrid" text="Show Grid" waves="LIGHT"/>
-            <m:MaterialButton ui:field="btnCloseGrid" text="Close Grid" backgroundColor="WHITE" textColor="BLACK" waves="LIGHT"/>
+            <m:MaterialButton ui:field="btnCloseGrid" text="Close Grid" backgroundColor="WHITE" textColor="BLACK"
+                              waves="LIGHT"/>
             <m:MaterialRow ui:field="gridPanel" opacity="0">
                 <m:MaterialColumn grid="l3">
                     <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
                         <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
-                            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+                            <m:MaterialLabel
+                                text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively."/>
                         </m:MaterialCardContent>
                         <m:MaterialCardAction>
-                            <m:MaterialLink text="Link 1" />
-                            <m:MaterialLink text="Link 1" />
+                            <m:MaterialLink text="Link 1"/>
+                            <m:MaterialLink text="Link 1"/>
                         </m:MaterialCardAction>
                     </m:MaterialCard>
                 </m:MaterialColumn>
@@ -192,11 +215,12 @@ AnimationGlobalConfig.ENABLE_ANIMATION = false;
                     <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
                         <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
-                            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+                            <m:MaterialLabel
+                                text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively."/>
                         </m:MaterialCardContent>
                         <m:MaterialCardAction>
-                            <m:MaterialLink text="Link 1" />
-                            <m:MaterialLink text="Link 1" />
+                            <m:MaterialLink text="Link 1"/>
+                            <m:MaterialLink text="Link 1"/>
                         </m:MaterialCardAction>
                     </m:MaterialCard>
                 </m:MaterialColumn>
@@ -205,11 +229,12 @@ AnimationGlobalConfig.ENABLE_ANIMATION = false;
                     <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
                         <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
-                            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+                            <m:MaterialLabel
+                                text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively."/>
                         </m:MaterialCardContent>
                         <m:MaterialCardAction>
-                            <m:MaterialLink text="Link 1" />
-                            <m:MaterialLink text="Link 1" />
+                            <m:MaterialLink text="Link 1"/>
+                            <m:MaterialLink text="Link 1"/>
                         </m:MaterialCardAction>
                     </m:MaterialCard>
                 </m:MaterialColumn>
@@ -218,11 +243,12 @@ AnimationGlobalConfig.ENABLE_ANIMATION = false;
                     <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
                         <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
-                            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+                            <m:MaterialLabel
+                                text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively."/>
                         </m:MaterialCardContent>
                         <m:MaterialCardAction>
-                            <m:MaterialLink text="Link 1" />
-                            <m:MaterialLink text="Link 1" />
+                            <m:MaterialLink text="Link 1"/>
+                            <m:MaterialLink text="Link 1"/>
                         </m:MaterialCardAction>
                     </m:MaterialCard>
                 </m:MaterialColumn>
@@ -231,11 +257,12 @@ AnimationGlobalConfig.ENABLE_ANIMATION = false;
                     <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
                         <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
-                            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+                            <m:MaterialLabel
+                                text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively."/>
                         </m:MaterialCardContent>
                         <m:MaterialCardAction>
-                            <m:MaterialLink text="Link 1" />
-                            <m:MaterialLink text="Link 1" />
+                            <m:MaterialLink text="Link 1"/>
+                            <m:MaterialLink text="Link 1"/>
                         </m:MaterialCardAction>
                     </m:MaterialCard>
                 </m:MaterialColumn>
@@ -244,11 +271,12 @@ AnimationGlobalConfig.ENABLE_ANIMATION = false;
                     <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
                         <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
-                            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+                            <m:MaterialLabel
+                                text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively."/>
                         </m:MaterialCardContent>
                         <m:MaterialCardAction>
-                            <m:MaterialLink text="Link 1" />
-                            <m:MaterialLink text="Link 1" />
+                            <m:MaterialLink text="Link 1"/>
+                            <m:MaterialLink text="Link 1"/>
                         </m:MaterialCardAction>
                     </m:MaterialCard>
                 </m:MaterialColumn>
@@ -257,11 +285,12 @@ AnimationGlobalConfig.ENABLE_ANIMATION = false;
                     <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
                         <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
-                            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+                            <m:MaterialLabel
+                                text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively."/>
                         </m:MaterialCardContent>
                         <m:MaterialCardAction>
-                            <m:MaterialLink text="Link 1" />
-                            <m:MaterialLink text="Link 1" />
+                            <m:MaterialLink text="Link 1"/>
+                            <m:MaterialLink text="Link 1"/>
                         </m:MaterialCardAction>
                     </m:MaterialCard>
                 </m:MaterialColumn>
@@ -270,11 +299,12 @@ AnimationGlobalConfig.ENABLE_ANIMATION = false;
                     <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
                         <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
-                            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+                            <m:MaterialLabel
+                                text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively."/>
                         </m:MaterialCardContent>
                         <m:MaterialCardAction>
-                            <m:MaterialLink text="Link 1" />
-                            <m:MaterialLink text="Link 1" />
+                            <m:MaterialLink text="Link 1"/>
+                            <m:MaterialLink text="Link 1"/>
                         </m:MaterialCardAction>
                     </m:MaterialCard>
                 </m:MaterialColumn>
@@ -283,11 +313,12 @@ AnimationGlobalConfig.ENABLE_ANIMATION = false;
                     <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
                         <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
-                            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+                            <m:MaterialLabel
+                                text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively."/>
                         </m:MaterialCardContent>
                         <m:MaterialCardAction>
-                            <m:MaterialLink text="Link 1" />
-                            <m:MaterialLink text="Link 1" />
+                            <m:MaterialLink text="Link 1"/>
+                            <m:MaterialLink text="Link 1"/>
                         </m:MaterialCardAction>
                     </m:MaterialCard>
                 </m:MaterialColumn>
@@ -296,11 +327,12 @@ AnimationGlobalConfig.ENABLE_ANIMATION = false;
                     <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
                         <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
-                            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+                            <m:MaterialLabel
+                                text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively."/>
                         </m:MaterialCardContent>
                         <m:MaterialCardAction>
-                            <m:MaterialLink text="Link 1" />
-                            <m:MaterialLink text="Link 1" />
+                            <m:MaterialLink text="Link 1"/>
+                            <m:MaterialLink text="Link 1"/>
                         </m:MaterialCardAction>
                     </m:MaterialCard>
                 </m:MaterialColumn>
@@ -309,11 +341,12 @@ AnimationGlobalConfig.ENABLE_ANIMATION = false;
                     <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
                         <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
-                            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+                            <m:MaterialLabel
+                                text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively."/>
                         </m:MaterialCardContent>
                         <m:MaterialCardAction>
-                            <m:MaterialLink text="Link 1" />
-                            <m:MaterialLink text="Link 1" />
+                            <m:MaterialLink text="Link 1"/>
+                            <m:MaterialLink text="Link 1"/>
                         </m:MaterialCardAction>
                     </m:MaterialCard>
                 </m:MaterialColumn>
@@ -322,11 +355,12 @@ AnimationGlobalConfig.ENABLE_ANIMATION = false;
                     <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
                         <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
-                            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+                            <m:MaterialLabel
+                                text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively."/>
                         </m:MaterialCardContent>
                         <m:MaterialCardAction>
-                            <m:MaterialLink text="Link 1" />
-                            <m:MaterialLink text="Link 1" />
+                            <m:MaterialLink text="Link 1"/>
+                            <m:MaterialLink text="Link 1"/>
                         </m:MaterialCardAction>
                     </m:MaterialCard>
                 </m:MaterialColumn>
@@ -335,11 +369,12 @@ AnimationGlobalConfig.ENABLE_ANIMATION = false;
                     <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
                         <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
-                            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+                            <m:MaterialLabel
+                                text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively."/>
                         </m:MaterialCardContent>
                         <m:MaterialCardAction>
-                            <m:MaterialLink text="Link 1" />
-                            <m:MaterialLink text="Link 1" />
+                            <m:MaterialLink text="Link 1"/>
+                            <m:MaterialLink text="Link 1"/>
                         </m:MaterialCardAction>
                     </m:MaterialCard>
                 </m:MaterialColumn>
@@ -348,11 +383,12 @@ AnimationGlobalConfig.ENABLE_ANIMATION = false;
                     <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
                         <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
-                            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+                            <m:MaterialLabel
+                                text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively."/>
                         </m:MaterialCardContent>
                         <m:MaterialCardAction>
-                            <m:MaterialLink text="Link 1" />
-                            <m:MaterialLink text="Link 1" />
+                            <m:MaterialLink text="Link 1"/>
+                            <m:MaterialLink text="Link 1"/>
                         </m:MaterialCardAction>
                     </m:MaterialCard>
                 </m:MaterialColumn>
@@ -361,11 +397,12 @@ AnimationGlobalConfig.ENABLE_ANIMATION = false;
                     <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
                         <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
-                            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+                            <m:MaterialLabel
+                                text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively."/>
                         </m:MaterialCardContent>
                         <m:MaterialCardAction>
-                            <m:MaterialLink text="Link 1" />
-                            <m:MaterialLink text="Link 1" />
+                            <m:MaterialLink text="Link 1"/>
+                            <m:MaterialLink text="Link 1"/>
                         </m:MaterialCardAction>
                     </m:MaterialCard>
                 </m:MaterialColumn>
@@ -374,50 +411,52 @@ AnimationGlobalConfig.ENABLE_ANIMATION = false;
                     <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
                         <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
-                            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+                            <m:MaterialLabel
+                                text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively."/>
                         </m:MaterialCardContent>
                         <m:MaterialCardAction>
-                            <m:MaterialLink text="Link 1" />
-                            <m:MaterialLink text="Link 1" />
+                            <m:MaterialLink text="Link 1"/>
+                            <m:MaterialLink text="Link 1"/>
                         </m:MaterialCardAction>
                     </m:MaterialCard>
                 </m:MaterialColumn>
             </m:MaterialRow>
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialRow ui:field="gridPanel" opacity="0">
-        &lt;m:MaterialColumn grid="l3">
-            &lt;m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
-                &lt;m:MaterialCardContent textColor="WHITE">
+                    &lt;m:MaterialRow ui:field="gridPanel" opacity="0">
+                    &lt;m:MaterialColumn grid="l3">
+                    &lt;m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
+                    &lt;m:MaterialCardContent textColor="WHITE">
                     &lt;m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
-                    &lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
-                &lt;/m:MaterialCardContent>
-                &lt;m:MaterialCardAction>
+                    &lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of
+                    information. I am convenient because I require little markup to use effectively." />
+                    &lt;/m:MaterialCardContent>
+                    &lt;m:MaterialCardAction>
                     &lt;m:MaterialLink text="Link 1" />
                     &lt;m:MaterialLink text="Link 1" />
-                &lt;/m:MaterialCardAction>
-            &lt;/m:MaterialCard>
-        &lt;/m:MaterialColumn>
-        
-        ..... Other columns
-    &lt;/m:MaterialRow>
+                    &lt;/m:MaterialCardAction>
+                    &lt;/m:MaterialCard>
+                    &lt;/m:MaterialColumn>
+
+                    ..... Other columns
+                    &lt;/m:MaterialRow>
                 </pre>
             </g:HTMLPanel>
             <g:HTMLPanel>
                 <pre class="java">
-    @UiHandler("btnCloseGrid")
-    void onCloseGrid(ClickEvent e) {
-        MaterialAnimation gridAnimation = new MaterialAnimation();
-        gridAnimation.setTransition(Transition.CLOSE_GRID);
-        gridAnimation.animate(gridPanel);
-    }
+                    @UiHandler("btnCloseGrid")
+                    void onCloseGrid(ClickEvent e) {
+                    MaterialAnimation gridAnimation = new MaterialAnimation();
+                    gridAnimation.setTransition(Transition.CLOSE_GRID);
+                    gridAnimation.animate(gridPanel);
+                    }
 
-    @UiHandler("btnShowGrid")
-    void onShowGrid(ClickEvent e) {
-        MaterialAnimation gridAnimation = new MaterialAnimation();
-        gridAnimation.setTransition(Transition.SHOW_GRID);
-        gridAnimation.animate(gridPanel);
-    }
+                    @UiHandler("btnShowGrid")
+                    void onShowGrid(ClickEvent e) {
+                    MaterialAnimation gridAnimation = new MaterialAnimation();
+                    gridAnimation.setTransition(Transition.SHOW_GRID);
+                    gridAnimation.animate(gridPanel);
+                    }
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>

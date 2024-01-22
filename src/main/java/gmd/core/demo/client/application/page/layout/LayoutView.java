@@ -33,7 +33,6 @@ import gwt.material.design.client.constants.IconType;
 import gwt.material.design.client.constants.OffsetPosition;
 import gwt.material.design.client.ui.MaterialLink;
 import gwt.material.design.client.ui.MaterialPanel;
-import gwt.material.design.client.ui.MaterialRow;
 
 import javax.inject.Inject;
 
@@ -58,7 +57,7 @@ public class LayoutView extends ViewImpl implements LayoutPresenter.MyView {
     @UiField
     MaterialPanel container;
 
-    protected ScrollHelper scrollHelper = new ScrollHelper();
+    protected final ScrollHelper scrollHelper = new ScrollHelper();
 
     @Inject
     LayoutView(Binder uiBinder) {

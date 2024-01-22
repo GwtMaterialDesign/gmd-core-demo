@@ -25,6 +25,6 @@ public class ShadowModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
         bindPresenter(ShadowPresenter.class, ShadowPresenter.MyView.class, ShadowView.class,
-                ShadowPresenter.MyProxy.class);
+            ShadowPresenter.MyProxy.class);
     }
 }

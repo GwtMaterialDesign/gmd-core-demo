@@ -7,9 +7,9 @@
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
-  
+
        http://www.apache.org/licenses/LICENSE-2.0
-  
+
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -23,12 +23,15 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <m:MaterialPanel>
-        <widget:CodeSection sectionTitle="Links Icons and Waves" description="Based on material links you can add icons, link with icons or link only and apply ripple effect by adding waves attribute.">
+        <widget:CodeSection sectionTitle="Links Icons and Waves"
+                            description="Based on material links you can add icons, link with icons or link only and apply ripple effect by adding waves attribute.">
             <m:MaterialNavBar marginBottom="20">
-                <m:MaterialNavBrand marginLeft="60" href="#Test" float="LEFT" text="Title" />
+                <m:MaterialNavBrand marginLeft="60" href="#Test" float="LEFT" text="Title"/>
                 <m:MaterialNavSection float="RIGHT">
-                    <m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account"  textColor="WHITE" waves="LIGHT"/>
-                    <m:MaterialLink iconType="AUTORENEW" iconPosition="LEFT" text="Refresh" textColor="WHITE" waves="LIGHT"/>
+                    <m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account" textColor="WHITE"
+                                    waves="LIGHT"/>
+                    <m:MaterialLink iconType="AUTORENEW" iconPosition="LEFT" text="Refresh" textColor="WHITE"
+                                    waves="LIGHT"/>
                     <m:MaterialTooltip text="Menu">
                         <m:MaterialLink iconType="SEARCH" textColor="WHITE" waves="LIGHT"/>
                     </m:MaterialTooltip>
@@ -39,29 +42,34 @@
             </m:MaterialNavBar>
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialNavBar>
-        &lt;m:MaterialNavBrand marginLeft="60" href="#Test" float="LEFT" text="Title" />
-        &lt;m:MaterialNavSection float="RIGHT">
-            &lt;m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account"  textColor="WHITE" waves="LIGHT"/>
-            &lt;m:MaterialLink iconType="AUTORENEW" iconPosition="LEFT" text="Refresh" textColor="WHITE" waves="LIGHT"/>
-            &lt;m:MaterialTooltip text="Menu">
-                &lt;m:MaterialLink iconType="SEARCH" textColor="WHITE" waves="LIGHT"/>
-            &lt;/m:MaterialTooltip>
-            &lt;m:MaterialTooltip text="Starter">
-                &lt;m:MaterialLink iconType="MORE_VERT" textColor="WHITE" waves="LIGHT"/>
-            &lt;/m:MaterialTooltip>
-        &lt;/m:MaterialNavSection>
-    &lt;/m:MaterialNavBar>
+                    &lt;m:MaterialNavBar>
+                    &lt;m:MaterialNavBrand marginLeft="60" href="#Test" float="LEFT" text="Title" />
+                    &lt;m:MaterialNavSection float="RIGHT">
+                    &lt;m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account" textColor="WHITE"
+                    waves="LIGHT"/>
+                    &lt;m:MaterialLink iconType="AUTORENEW" iconPosition="LEFT" text="Refresh" textColor="WHITE"
+                    waves="LIGHT"/>
+                    &lt;m:MaterialTooltip text="Menu">
+                    &lt;m:MaterialLink iconType="SEARCH" textColor="WHITE" waves="LIGHT"/>
+                    &lt;/m:MaterialTooltip>
+                    &lt;m:MaterialTooltip text="Starter">
+                    &lt;m:MaterialLink iconType="MORE_VERT" textColor="WHITE" waves="LIGHT"/>
+                    &lt;/m:MaterialTooltip>
+                    &lt;/m:MaterialNavSection>
+                    &lt;/m:MaterialNavBar>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 
-        <widget:CodeSection sectionTitle="Selection Event" description="We have provided a selection event to easily get the selected index.">
+        <widget:CodeSection sectionTitle="Selection Event"
+                            description="We have provided a selection event to easily get the selected index.">
             <m:MaterialNavBar width="100%" marginBottom="20">
-                <m:MaterialNavBrand marginLeft="60" href="#Test" float="LEFT" text="Title" />
+                <m:MaterialNavBrand marginLeft="60" href="#Test" float="LEFT" text="Title"/>
                 <m:MaterialNavSection ui:field="navSection" float="RIGHT">
-                    <m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account"  textColor="WHITE" waves="LIGHT"/>
-                    <m:MaterialLink iconType="AUTORENEW" iconPosition="LEFT" text="Refresh" textColor="WHITE" waves="LIGHT"/>
+                    <m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account" textColor="WHITE"
+                                    waves="LIGHT"/>
+                    <m:MaterialLink iconType="AUTORENEW" iconPosition="LEFT" text="Refresh" textColor="WHITE"
+                                    waves="LIGHT"/>
                     <m:MaterialTooltip text="Menu">
                         <m:MaterialLink iconType="SEARCH" textColor="WHITE" waves="LIGHT"/>
                     </m:MaterialTooltip>
@@ -72,12 +80,14 @@
             </m:MaterialNavBar>
             <g:HTMLPanel>
                 <pre class="java">
-    navSection.addSelectionHandler(selectionEvent -> MaterialToast.fireToast(selectionEvent.getSelectedItem() + " Selected Index"));
+                    navSection.addSelectionHandler(selectionEvent ->
+                    MaterialToast.fireToast(selectionEvent.getSelectedItem() + " Selected Index"));
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 
-        <widget:CodeSection sectionTitle="Alignment" description="Add align='right' to your nav brand and align='left' to your nav section">
+        <widget:CodeSection sectionTitle="Alignment"
+                            description="Add align='right' to your nav brand and align='left' to your nav section">
             <m:MaterialNavBar width="100%" marginBottom="20">
                 <m:MaterialNavBrand href="#Test" float="RIGHT" text="App Title"/>
                 <m:MaterialNavSection float="LEFT">
@@ -91,17 +101,17 @@
             </m:MaterialNavBar>
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialNavBar width="100%">
-        &lt;m:MaterialNavBrand href="#Test" float="RIGHT" text="App Title"/>
-        &lt;m:MaterialNavSection float="LEFT">
-            &lt;m:MaterialTooltip text="Menu">
-                &lt;m:MaterialLink iconType="SEARCH" textColor="WHITE"/>
-            &lt;/m:MaterialTooltip>
-            &lt;m:MaterialTooltip text="Starter">
-                &lt;m:MaterialLink iconType="MORE_VERT" textColor="WHITE"/>
-            &lt;/m:MaterialTooltip>
-        &lt;/m:MaterialNavSection>
-    &lt;/m:MaterialNavBar>
+                    &lt;m:MaterialNavBar width="100%">
+                    &lt;m:MaterialNavBrand href="#Test" float="RIGHT" text="App Title"/>
+                    &lt;m:MaterialNavSection float="LEFT">
+                    &lt;m:MaterialTooltip text="Menu">
+                    &lt;m:MaterialLink iconType="SEARCH" textColor="WHITE"/>
+                    &lt;/m:MaterialTooltip>
+                    &lt;m:MaterialTooltip text="Starter">
+                    &lt;m:MaterialLink iconType="MORE_VERT" textColor="WHITE"/>
+                    &lt;/m:MaterialTooltip>
+                    &lt;/m:MaterialNavSection>
+                    &lt;/m:MaterialNavBar>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>

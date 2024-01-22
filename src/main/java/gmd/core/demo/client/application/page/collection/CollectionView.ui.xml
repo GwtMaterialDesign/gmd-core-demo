@@ -26,66 +26,90 @@
     <m:MaterialPanel>
         <widget:CodeSection sectionTitle="Basic">
             <m:MaterialCollection>
-                <m:MaterialCollectionItem><m:MaterialLink text="Badges Test" targetHistoryToken="badges"/></m:MaterialCollectionItem>
-                <m:MaterialCollectionItem><m:MaterialLabel text="Collecton 2"/></m:MaterialCollectionItem>
-                <m:MaterialCollectionItem><m:MaterialLabel text="Collecton 3"/></m:MaterialCollectionItem>
-                <m:MaterialCollectionItem><m:MaterialLabel text="Collecton 4"/></m:MaterialCollectionItem>
+                <m:MaterialCollectionItem>
+                    <m:MaterialLink text="Badges Test" targetHistoryToken="badges"/>
+                </m:MaterialCollectionItem>
+                <m:MaterialCollectionItem>
+                    <m:MaterialLabel text="Collecton 2"/>
+                </m:MaterialCollectionItem>
+                <m:MaterialCollectionItem>
+                    <m:MaterialLabel text="Collecton 3"/>
+                </m:MaterialCollectionItem>
+                <m:MaterialCollectionItem>
+                    <m:MaterialLabel text="Collecton 4"/>
+                </m:MaterialCollectionItem>
             </m:MaterialCollection>
 
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialCollection>
-        &lt;m:MaterialCollectionItem>&lt;m:MaterialLink text="Badges Test" targetHistoryToken="badges"/>&lt;/m:MaterialCollectionItem>
-        &lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 2"/>&lt;/m:MaterialCollectionItem>
-        &lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 3"/>&lt;/m:MaterialCollectionItem>
-        &lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 4"/>&lt;/m:MaterialCollectionItem>
-    &lt;/m:MaterialCollection>
+                    &lt;m:MaterialCollection>
+                    &lt;m:MaterialCollectionItem>&lt;m:MaterialLink text="Badges Test" targetHistoryToken="badges"/>&lt;/m:MaterialCollectionItem>
+                    &lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 2"/>&lt;/m:MaterialCollectionItem>
+                    &lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 3"/>&lt;/m:MaterialCollectionItem>
+                    &lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 4"/>&lt;/m:MaterialCollectionItem>
+                    &lt;/m:MaterialCollection>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="Preselection">
             <m:MaterialCollection active="1">
-                <m:MaterialCollectionItem tabIndex="0"><m:MaterialLabel text="Collecton 1"/></m:MaterialCollectionItem>
-                <m:MaterialCollectionItem tabIndex="0"><m:MaterialLabel text="Collecton 2"/></m:MaterialCollectionItem>
-                <m:MaterialCollectionItem tabIndex="0"><m:MaterialLabel text="Collecton 3"/></m:MaterialCollectionItem>
-                <m:MaterialCollectionItem tabIndex="0"><m:MaterialLabel text="Collecton 4"/></m:MaterialCollectionItem>
+                <m:MaterialCollectionItem tabIndex="0">
+                    <m:MaterialLabel text="Collecton 1"/>
+                </m:MaterialCollectionItem>
+                <m:MaterialCollectionItem tabIndex="0">
+                    <m:MaterialLabel text="Collecton 2"/>
+                </m:MaterialCollectionItem>
+                <m:MaterialCollectionItem tabIndex="0">
+                    <m:MaterialLabel text="Collecton 3"/>
+                </m:MaterialCollectionItem>
+                <m:MaterialCollectionItem tabIndex="0">
+                    <m:MaterialLabel text="Collecton 4"/>
+                </m:MaterialCollectionItem>
             </m:MaterialCollection>
 
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialCollection active="1">
-        &lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 1"/>&lt;/m:MaterialCollectionItem>
-        &lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 2"/>&lt;/m:MaterialCollectionItem>
-        &lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 3"/>&lt;/m:MaterialCollectionItem>
-        &lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 4"/>&lt;/m:MaterialCollectionItem>
-    &lt;/m:MaterialCollection>
+                    &lt;m:MaterialCollection active="1">
+                    &lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 1"/>&lt;/m:MaterialCollectionItem>
+                    &lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 2"/>&lt;/m:MaterialCollectionItem>
+                    &lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 3"/>&lt;/m:MaterialCollectionItem>
+                    &lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 4"/>&lt;/m:MaterialCollectionItem>
+                    &lt;/m:MaterialCollection>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="Header">
             <m:MaterialCollection header="Header Title" active="2">
-                <m:MaterialCollectionItem><m:MaterialLabel text="Collecton 1"/></m:MaterialCollectionItem>
-                <m:MaterialCollectionItem><m:MaterialLabel text="Collecton 2"/></m:MaterialCollectionItem>
-                <m:MaterialCollectionItem><m:MaterialLabel text="Collecton 3"/></m:MaterialCollectionItem>
-                <m:MaterialCollectionItem><m:MaterialLabel text="Collecton 4"/></m:MaterialCollectionItem>
+                <m:MaterialCollectionItem>
+                    <m:MaterialLabel text="Collecton 1"/>
+                </m:MaterialCollectionItem>
+                <m:MaterialCollectionItem>
+                    <m:MaterialLabel text="Collecton 2"/>
+                </m:MaterialCollectionItem>
+                <m:MaterialCollectionItem>
+                    <m:MaterialLabel text="Collecton 3"/>
+                </m:MaterialCollectionItem>
+                <m:MaterialCollectionItem>
+                    <m:MaterialLabel text="Collecton 4"/>
+                </m:MaterialCollectionItem>
             </m:MaterialCollection>
 
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialCollection header="Header Title" active="2">
-        &lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 1"/>&lt;/m:MaterialCollectionItem>
-        &lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 2"/>&lt;/m:MaterialCollectionItem>
-        &lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 3"/>&lt;/m:MaterialCollectionItem>
-        &lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 4"/>&lt;/m:MaterialCollectionItem>
-    &lt;/m:MaterialCollection>
+                    &lt;m:MaterialCollection header="Header Title" active="2">
+                    &lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 1"/>&lt;/m:MaterialCollectionItem>
+                    &lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 2"/>&lt;/m:MaterialCollectionItem>
+                    &lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 3"/>&lt;/m:MaterialCollectionItem>
+                    &lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 4"/>&lt;/m:MaterialCollectionItem>
+                    &lt;/m:MaterialCollection>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="Secondary Content">
-            <m:MaterialCollection header="Header Title" >
+            <m:MaterialCollection header="Header Title">
                 <m:MaterialCollectionItem>
                     <m:MaterialLabel text="Collecton 1"/>
                     <m:MaterialCollectionSecondary>
@@ -117,35 +141,35 @@
 
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialCollection header="Header Title" >
-        &lt;m:MaterialCollectionItem>
-            &lt;m:MaterialLabel text="Collecton 1"/>
-            &lt;m:MaterialCollectionSecondary>
-                &lt;m:MaterialIcon iconType="POLYMER" iconPosition="RIGHT" waves="DEFAULT"/>
-            &lt;/m:MaterialCollectionSecondary>
-        &lt;/m:MaterialCollectionItem>
+                    &lt;m:MaterialCollection header="Header Title" >
+                    &lt;m:MaterialCollectionItem>
+                    &lt;m:MaterialLabel text="Collecton 1"/>
+                    &lt;m:MaterialCollectionSecondary>
+                    &lt;m:MaterialIcon iconType="POLYMER" iconPosition="RIGHT" waves="DEFAULT"/>
+                    &lt;/m:MaterialCollectionSecondary>
+                    &lt;/m:MaterialCollectionItem>
 
-        &lt;m:MaterialCollectionItem>
-            &lt;m:MaterialLink text="Collecton 2"/>
-            &lt;m:MaterialCollectionSecondary>
-                &lt;m:MaterialIcon iconType="POLYMER" iconPosition="RIGHT" waves="DEFAULT"/>
-            &lt;/m:MaterialCollectionSecondary>
-        &lt;/m:MaterialCollectionItem>
+                    &lt;m:MaterialCollectionItem>
+                    &lt;m:MaterialLink text="Collecton 2"/>
+                    &lt;m:MaterialCollectionSecondary>
+                    &lt;m:MaterialIcon iconType="POLYMER" iconPosition="RIGHT" waves="DEFAULT"/>
+                    &lt;/m:MaterialCollectionSecondary>
+                    &lt;/m:MaterialCollectionItem>
 
-        &lt;m:MaterialCollectionItem>
-            &lt;m:MaterialLabel text="Collecton 3"/>
-            &lt;m:MaterialCollectionSecondary>
-                &lt;m:MaterialIcon iconType="POLYMER" iconPosition="RIGHT" waves="DEFAULT"/>
-            &lt;/m:MaterialCollectionSecondary>
-        &lt;/m:MaterialCollectionItem>
+                    &lt;m:MaterialCollectionItem>
+                    &lt;m:MaterialLabel text="Collecton 3"/>
+                    &lt;m:MaterialCollectionSecondary>
+                    &lt;m:MaterialIcon iconType="POLYMER" iconPosition="RIGHT" waves="DEFAULT"/>
+                    &lt;/m:MaterialCollectionSecondary>
+                    &lt;/m:MaterialCollectionItem>
 
-        &lt;m:MaterialCollectionItem>
-            &lt;m:MaterialLabel text="Collecton 4"/>
-            &lt;m:MaterialCollectionSecondary>
-                &lt;m:MaterialIcon iconType="POLYMER" iconPosition="RIGHT" waves="DEFAULT"/>
-            &lt;/m:MaterialCollectionSecondary>
-        &lt;/m:MaterialCollectionItem>
-    &lt;/m:MaterialCollection>
+                    &lt;m:MaterialCollectionItem>
+                    &lt;m:MaterialLabel text="Collecton 4"/>
+                    &lt;m:MaterialCollectionSecondary>
+                    &lt;m:MaterialIcon iconType="POLYMER" iconPosition="RIGHT" waves="DEFAULT"/>
+                    &lt;/m:MaterialCollectionSecondary>
+                    &lt;/m:MaterialCollectionItem>
+                    &lt;/m:MaterialCollection>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -153,7 +177,9 @@
         <widget:CodeSection sectionTitle="Avatar">
             <m:MaterialCollection>
                 <m:MaterialCollectionItem type="AVATAR">
-                    <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/lady.webp" fallbackExtension="jpeg" type="CIRCLE"/>
+                    <ma:webp.MaterialWebpImage
+                        url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/lady.webp"
+                        fallbackExtension="jpeg" type="CIRCLE"/>
                     <m:MaterialLabel text="Title" fontSize="2em"/>
                     <m:MaterialLabel text="First Line"/>
                     <m:MaterialLabel text="Second Line"/>
@@ -183,35 +209,37 @@
 
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialCollection>
-        &lt;m:MaterialCollectionItem type="AVATAR">
-            &lt;ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/lady.webp" fallbackExtension="jpeg" type="CIRCLE"/>
-            &lt;m:MaterialLabel text="Title" fontSize="2em"/>
-            &lt;m:MaterialLabel text="First Line"/>
-            &lt;m:MaterialLabel text="Second Line"/>
-        &lt;/m:MaterialCollectionItem>
+                    &lt;m:MaterialCollection>
+                    &lt;m:MaterialCollectionItem type="AVATAR">
+                    &lt;ma:webp.MaterialWebpImage
+                    url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/lady.webp"
+                    fallbackExtension="jpeg" type="CIRCLE"/>
+                    &lt;m:MaterialLabel text="Title" fontSize="2em"/>
+                    &lt;m:MaterialLabel text="First Line"/>
+                    &lt;m:MaterialLabel text="Second Line"/>
+                    &lt;/m:MaterialCollectionItem>
 
-        &lt;m:MaterialCollectionItem type="AVATAR">
-            &lt;m:MaterialIcon iconType="FOLDER" iconColor="WHITE" backgroundColor="BLUE" circle="true"/>
-            &lt;m:MaterialLabel text="Title" fontSize="2em"/>
-            &lt;m:MaterialLabel text="First Line"/>
-            &lt;m:MaterialLabel text="Second Line"/>
-        &lt;/m:MaterialCollectionItem>
+                    &lt;m:MaterialCollectionItem type="AVATAR">
+                    &lt;m:MaterialIcon iconType="FOLDER" iconColor="WHITE" backgroundColor="BLUE" circle="true"/>
+                    &lt;m:MaterialLabel text="Title" fontSize="2em"/>
+                    &lt;m:MaterialLabel text="First Line"/>
+                    &lt;m:MaterialLabel text="Second Line"/>
+                    &lt;/m:MaterialCollectionItem>
 
-        &lt;m:MaterialCollectionItem type="AVATAR">
-            &lt;m:MaterialIcon iconType="INSERT_CHART" iconColor="WHITE" backgroundColor="RED" circle="true"/>
-            &lt;m:MaterialLabel text="Title" fontSize="2em"/>
-            &lt;m:MaterialLabel text="First Line"/>
-            &lt;m:MaterialLabel text="Second Line"/>
-        &lt;/m:MaterialCollectionItem>
+                    &lt;m:MaterialCollectionItem type="AVATAR">
+                    &lt;m:MaterialIcon iconType="INSERT_CHART" iconColor="WHITE" backgroundColor="RED" circle="true"/>
+                    &lt;m:MaterialLabel text="Title" fontSize="2em"/>
+                    &lt;m:MaterialLabel text="First Line"/>
+                    &lt;m:MaterialLabel text="Second Line"/>
+                    &lt;/m:MaterialCollectionItem>
 
-        &lt;m:MaterialCollectionItem type="AVATAR">
-            &lt;m:MaterialIcon iconType="PLAY_ARROW" iconColor="WHITE" backgroundColor="AMBER" circle="true"/>
-            &lt;m:MaterialLabel text="Title" fontSize="2em"/>
-            &lt;m:MaterialLabel text="First Line"/>
-            &lt;m:MaterialLabel text="Second Line"/>
-        &lt;/m:MaterialCollectionItem>
-    &lt;/m:MaterialCollection>
+                    &lt;m:MaterialCollectionItem type="AVATAR">
+                    &lt;m:MaterialIcon iconType="PLAY_ARROW" iconColor="WHITE" backgroundColor="AMBER" circle="true"/>
+                    &lt;m:MaterialLabel text="Title" fontSize="2em"/>
+                    &lt;m:MaterialLabel text="First Line"/>
+                    &lt;m:MaterialLabel text="Second Line"/>
+                    &lt;/m:MaterialCollectionItem>
+                    &lt;/m:MaterialCollection>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -219,7 +247,9 @@
         <widget:CodeSection sectionTitle="Dismissable">
             <m:MaterialCollection>
                 <m:MaterialCollectionItem type="AVATAR" dismissible="true">
-                    <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/lady.webp" fallbackExtension="jpeg" type="CIRCLE"/>
+                    <ma:webp.MaterialWebpImage
+                        url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/lady.webp"
+                        fallbackExtension="jpeg" type="CIRCLE"/>
                     <m:MaterialLabel text="Title" fontSize="2em"/>
                     <m:MaterialLabel text="First Line"/>
                     <m:MaterialLabel text="Second Line"/>
@@ -249,20 +279,24 @@
 
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialCollectionItem type="AVATAR" dismissible="true">
-        &lt;ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/lady.webp" fallbackExtension="jpeg" type="CIRCLE"/>
-        &lt;m:MaterialLabel text="Title" fontSize="2em"/>
-        &lt;m:MaterialLabel text="First Line"/>
-        &lt;m:MaterialLabel text="Second Line"/>
-    &lt;/m:MaterialCollectionItem>
+                    &lt;m:MaterialCollectionItem type="AVATAR" dismissible="true">
+                    &lt;ma:webp.MaterialWebpImage
+                    url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/lady.webp"
+                    fallbackExtension="jpeg" type="CIRCLE"/>
+                    &lt;m:MaterialLabel text="Title" fontSize="2em"/>
+                    &lt;m:MaterialLabel text="First Line"/>
+                    &lt;m:MaterialLabel text="Second Line"/>
+                    &lt;/m:MaterialCollectionItem>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="3 line item">
-            <m:MaterialCollection >
+            <m:MaterialCollection>
                 <m:MaterialCollectionItem type="AVATAR" dismissible="true">
-                    <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
+                    <ma:webp.MaterialWebpImage
+                        url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/yuna.webp"
+                        fallbackExtension="jpg" type="CIRCLE"/>
                     <m:MaterialLabel text="Min Li Chan" fontSize="1.4em"/>
                     <m:MaterialLabel text="Brunch this weekend?" fontSize="1.2em"/>
                     <m:MaterialLabel text="I'll be in your neighborhood doing errands"/>
@@ -271,7 +305,9 @@
                     </m:MaterialCollectionSecondary>
                 </m:MaterialCollectionItem>
                 <m:MaterialCollectionItem type="AVATAR" dismissible="true">
-                    <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
+                    <ma:webp.MaterialWebpImage
+                        url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/yuna.webp"
+                        fallbackExtension="jpg" type="CIRCLE"/>
                     <m:MaterialLabel text="Min Li Chan" fontSize="1.4em"/>
                     <m:MaterialLabel text="Brunch this weekend?" fontSize="1.2em"/>
                     <m:MaterialLabel text="I'll be in your neighborhood doing errands"/>
@@ -280,7 +316,9 @@
                     </m:MaterialCollectionSecondary>
                 </m:MaterialCollectionItem>
                 <m:MaterialCollectionItem type="AVATAR" dismissible="true">
-                    <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
+                    <ma:webp.MaterialWebpImage
+                        url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/yuna.webp"
+                        fallbackExtension="jpg" type="CIRCLE"/>
                     <m:MaterialLabel text="Min Li Chan" fontSize="1.4em"/>
                     <m:MaterialLabel text="Brunch this weekend?" fontSize="1.2em"/>
                     <m:MaterialLabel text="I'll be in your neighborhood doing errands"/>
@@ -289,7 +327,9 @@
                     </m:MaterialCollectionSecondary>
                 </m:MaterialCollectionItem>
                 <m:MaterialCollectionItem type="AVATAR" dismissible="true">
-                    <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
+                    <ma:webp.MaterialWebpImage
+                        url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/yuna.webp"
+                        fallbackExtension="jpg" type="CIRCLE"/>
                     <m:MaterialLabel text="Min Li Chan" fontSize="1.4em"/>
                     <m:MaterialLabel text="Brunch this weekend?" fontSize="1.2em"/>
                     <m:MaterialLabel text="I'll be in your neighborhood doing errands"/>
@@ -301,15 +341,17 @@
 
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialCollectionItem type="AVATAR" dismissible="true">
-        &lt;ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
-        &lt;m:MaterialLabel text="Min Li Chan" fontSize="1.4em"/>
-        &lt;m:MaterialLabel text="Brunch this weekend?" fontSize="1.2em"/>
-        &lt;m:MaterialLabel text="I'll be in your neighborhood doing errands"/>
-        &lt;m:MaterialCollectionSecondary>
-            &lt;m:MaterialIcon iconType="STAR" iconColor="BLUE"/>
-        &lt;/m:MaterialCollectionSecondary>
-    &lt;/m:MaterialCollectionItem>
+                    &lt;m:MaterialCollectionItem type="AVATAR" dismissible="true">
+                    &lt;ma:webp.MaterialWebpImage
+                    url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/yuna.webp" fallbackExtension="jpg"
+                    type="CIRCLE"/>
+                    &lt;m:MaterialLabel text="Min Li Chan" fontSize="1.4em"/>
+                    &lt;m:MaterialLabel text="Brunch this weekend?" fontSize="1.2em"/>
+                    &lt;m:MaterialLabel text="I'll be in your neighborhood doing errands"/>
+                    &lt;m:MaterialCollectionSecondary>
+                    &lt;m:MaterialIcon iconType="STAR" iconColor="BLUE"/>
+                    &lt;/m:MaterialCollectionSecondary>
+                    &lt;/m:MaterialCollectionItem>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -317,7 +359,9 @@
         <widget:CodeSection sectionTitle="2 line item">
             <m:MaterialCollection>
                 <m:MaterialCollectionItem type="AVATAR" dismissible="true">
-                    <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
+                    <ma:webp.MaterialWebpImage
+                        url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/yuna.webp"
+                        fallbackExtension="jpg" type="CIRCLE"/>
                     <m:MaterialLabel text="Min Li Chan" fontSize="1.4em"/>
                     <m:MaterialLabel text="I'll be in your neighborhood doing errands"/>
                 </m:MaterialCollectionItem>
@@ -325,11 +369,13 @@
 
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialCollectionItem type="AVATAR" dismissible="true">
-        &lt;ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
-        &lt;m:MaterialLabel text="Min Li Chan" fontSize="1.4em"/>
-        &lt;m:MaterialLabel text="I'll be in your neighborhood doing errands"/>
-    &lt;/m:MaterialCollectionItem>
+                    &lt;m:MaterialCollectionItem type="AVATAR" dismissible="true">
+                    &lt;ma:webp.MaterialWebpImage
+                    url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/yuna.webp" fallbackExtension="jpg"
+                    type="CIRCLE"/>
+                    &lt;m:MaterialLabel text="Min Li Chan" fontSize="1.4em"/>
+                    &lt;m:MaterialLabel text="I'll be in your neighborhood doing errands"/>
+                    &lt;/m:MaterialCollectionItem>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -337,24 +383,35 @@
         <widget:CodeSection sectionTitle="2 line item long paragraph">
             <m:MaterialCollection>
                 <m:MaterialCollectionItem type="AVATAR" dismissible="true">
-                    <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
+                    <ma:webp.MaterialWebpImage
+                        url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/yuna.webp"
+                        fallbackExtension="jpg" type="CIRCLE"/>
                     <m:MaterialLabel text="Min Li Chan" fontSize="1.2em"/>
-                    <m:MaterialLabel text="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."/>
+                    <m:MaterialLabel
+                        text="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."/>
                 </m:MaterialCollectionItem>
                 <m:MaterialCollectionItem type="AVATAR" dismissible="true">
-                    <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
+                    <ma:webp.MaterialWebpImage
+                        url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/yuna.webp"
+                        fallbackExtension="jpg" type="CIRCLE"/>
                     <m:MaterialLabel text="Min Li Chan" fontSize="1.2em"/>
-                    <m:MaterialLabel text="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."/>
+                    <m:MaterialLabel
+                        text="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."/>
                 </m:MaterialCollectionItem>
             </m:MaterialCollection>
 
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialCollectionItem type="AVATAR" dismissible="true">
-        &lt;ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
-        &lt;m:MaterialLabel text="Min Li Chan" fontSize="1.2em"/>
-        &lt;m:MaterialLabel text="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."/>
-    &lt;/m:MaterialCollectionItem>
+                    &lt;m:MaterialCollectionItem type="AVATAR" dismissible="true">
+                    &lt;ma:webp.MaterialWebpImage
+                    url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/yuna.webp" fallbackExtension="jpg"
+                    type="CIRCLE"/>
+                    &lt;m:MaterialLabel text="Min Li Chan" fontSize="1.2em"/>
+                    &lt;m:MaterialLabel text="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Nam massa quam. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque
+                    volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                    inceptos himenaeos."/>
+                    &lt;/m:MaterialCollectionItem>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -389,12 +446,12 @@
 
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialCollectionItem ui:field="itemClick" type="CHECKBOX" waves="DEFAULT">
-        &lt;m:MaterialLabel text="Item 1"/>
-        &lt;m:MaterialCollectionSecondary>
-            &lt;m:MaterialCheckBox value="false" type="FILLED"/>
-        &lt;/m:MaterialCollectionSecondary>
-    &lt;/m:MaterialCollectionItem>
+                    &lt;m:MaterialCollectionItem ui:field="itemClick" type="CHECKBOX" waves="DEFAULT">
+                    &lt;m:MaterialLabel text="Item 1"/>
+                    &lt;m:MaterialCollectionSecondary>
+                    &lt;m:MaterialCheckBox value="false" type="FILLED"/>
+                    &lt;/m:MaterialCollectionSecondary>
+                    &lt;/m:MaterialCollectionItem>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -423,51 +480,54 @@
 
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialCollection>
-        &lt;m:MaterialCollectionItem ui:field="collectWifi" type="CHECKBOX" waves="DEFAULT">
-            &lt;m:MaterialLink text="Wifi" iconPosition="LEFT" iconType="NETWORK_WIFI" backgroundColor="WHITE" textColor="BLACK"/>
-            &lt;m:MaterialCollectionSecondary>
-                &lt;m:MaterialSwitch value="true"/>
-            &lt;/m:MaterialCollectionSecondary>
-        &lt;/m:MaterialCollectionItem>
-        &lt;m:MaterialCollectionItem ui:field="collectBluetooth" type="CHECKBOX" waves="DEFAULT">
-            &lt;m:MaterialLink text="Bluetooth" iconPosition="LEFT" iconType="BLUETOOTH" backgroundColor="WHITE" textColor="BLACK"/>
-            &lt;m:MaterialCollectionSecondary>
-                &lt;m:MaterialSwitch value="true"/>
-            &lt;/m:MaterialCollectionSecondary>
-        &lt;/m:MaterialCollectionItem>
-        &lt;m:MaterialCollectionItem ui:field="collectData" type="CHECKBOX" waves="DEFAULT">
-            &lt;m:MaterialLink text="Data Usage" iconPosition="LEFT" iconType="DATA_USAGE" backgroundColor="WHITE" textColor="BLACK"/>
-            &lt;m:MaterialCollectionSecondary>
-                &lt;m:MaterialSwitch value="true"/>
-            &lt;/m:MaterialCollectionSecondary>
-        &lt;/m:MaterialCollectionItem>
-    &lt;/m:MaterialCollection>
+                    &lt;m:MaterialCollection>
+                    &lt;m:MaterialCollectionItem ui:field="collectWifi" type="CHECKBOX" waves="DEFAULT">
+                    &lt;m:MaterialLink text="Wifi" iconPosition="LEFT" iconType="NETWORK_WIFI" backgroundColor="WHITE"
+                    textColor="BLACK"/>
+                    &lt;m:MaterialCollectionSecondary>
+                    &lt;m:MaterialSwitch value="true"/>
+                    &lt;/m:MaterialCollectionSecondary>
+                    &lt;/m:MaterialCollectionItem>
+                    &lt;m:MaterialCollectionItem ui:field="collectBluetooth" type="CHECKBOX" waves="DEFAULT">
+                    &lt;m:MaterialLink text="Bluetooth" iconPosition="LEFT" iconType="BLUETOOTH" backgroundColor="WHITE"
+                    textColor="BLACK"/>
+                    &lt;m:MaterialCollectionSecondary>
+                    &lt;m:MaterialSwitch value="true"/>
+                    &lt;/m:MaterialCollectionSecondary>
+                    &lt;/m:MaterialCollectionItem>
+                    &lt;m:MaterialCollectionItem ui:field="collectData" type="CHECKBOX" waves="DEFAULT">
+                    &lt;m:MaterialLink text="Data Usage" iconPosition="LEFT" iconType="DATA_USAGE"
+                    backgroundColor="WHITE" textColor="BLACK"/>
+                    &lt;m:MaterialCollectionSecondary>
+                    &lt;m:MaterialSwitch value="true"/>
+                    &lt;/m:MaterialCollectionSecondary>
+                    &lt;/m:MaterialCollectionItem>
+                    &lt;/m:MaterialCollection>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
-        
+
         <g:HTMLPanel>
             <pre class="java">
-    @UiHandler("collectWifi")
-    void onWifi(ClickEvent e) {
-        MaterialToast.fireToast("Wifi Network");
-    }
+                @UiHandler("collectWifi")
+                void onWifi(ClickEvent e) {
+                MaterialToast.fireToast("Wifi Network");
+                }
 
-    @UiHandler("collectBluetooth")
-    void onBluetooth(ClickEvent e) {
-        MaterialToast.fireToast("Bluetooth");
-    }
+                @UiHandler("collectBluetooth")
+                void onBluetooth(ClickEvent e) {
+                MaterialToast.fireToast("Bluetooth");
+                }
 
-    @UiHandler("collectData")
-    void onData(ClickEvent e) {
-        MaterialToast.fireToast("Data Usage");
-    }
+                @UiHandler("collectData")
+                void onData(ClickEvent e) {
+                MaterialToast.fireToast("Data Usage");
+                }
 
-    @UiHandler("itemClick")
-    void itemClick(ClickEvent e) {
-        MaterialToast.fireToast("DKO");
-    }
+                @UiHandler("itemClick")
+                void itemClick(ClickEvent e) {
+                MaterialToast.fireToast("DKO");
+                }
             </pre>
         </g:HTMLPanel>
     </m:MaterialPanel>

@@ -25,6 +25,6 @@ public class TextFieldModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
         bindPresenter(TextFieldPresenter.class, TextFieldPresenter.MyView.class, TextFieldView.class,
-                TextFieldPresenter.MyProxy.class);
+            TextFieldPresenter.MyProxy.class);
     }
 }

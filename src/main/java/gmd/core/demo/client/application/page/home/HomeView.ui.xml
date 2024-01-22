@@ -7,9 +7,9 @@
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
-  
+
        http://www.apache.org/licenses/LICENSE-2.0
-  
+
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -27,13 +27,15 @@
             <ma:webp.MaterialWebpImage url="images/gmd-logo.webp" alt="logo"/>
             <m:MaterialLabel text="GMD 2.6.1 + PWA" fontWeight="BOLD" fontSize="3em"/>
             <m:MaterialLabel text="Build the future of GWT using PWAs and Material Design Look and Feel."/>
-            <m:MaterialLink ui:field="github" display="INLINE_BLOCK" marginTop="32" text="Github" marginRight="32" customIconType="fab fa-github" target="_blank" shadow="0"/>
-            <m:MaterialLink ui:field="slack" display="INLINE_BLOCK" marginTop="32" text="Slack" customIconType="fab fa-slack" target="_blank" shadow="0"/>
+            <m:MaterialLink ui:field="github" display="INLINE_BLOCK" marginTop="32" text="Github" marginRight="32"
+                            customIconType="fab fa-github" target="_blank" shadow="0"/>
+            <m:MaterialLink ui:field="slack" display="INLINE_BLOCK" marginTop="32" text="Slack"
+                            customIconType="fab fa-slack" target="_blank" shadow="0"/>
         </m:MaterialRow>
 
         <m:MaterialRow textAlign="CENTER">
             <m:MaterialLabel text="Related Projects" fontSize="1.6em"/>
-            <m:MaterialLabel text="Explore our available modules below." />
+            <m:MaterialLabel text="Explore our available modules below."/>
         </m:MaterialRow>
 
         <m:MaterialRow addStyleNames="dashboard-row">
@@ -44,7 +46,7 @@
 
         <m:MaterialRow textAlign="CENTER">
             <m:MaterialLabel text="See our Tutorial Videos" fontSize="1.6em"/>
-            <m:MaterialLabel text="Below are series of videos on how to getting started with gwt-material." />
+            <m:MaterialLabel text="Below are series of videos on how to getting started with gwt-material."/>
         </m:MaterialRow>
 
         <m:MaterialRow addStyleNames="video-row">
@@ -56,11 +58,13 @@
         <m:MaterialRow>
             <m:MaterialPanel textAlign="CENTER">
                 <m:MaterialLabel text="Getting Started Using Maven" fontSize="1.6em"/>
-                <m:MaterialLabel text="Run this project into cmd / terminal, just follow the prompts. Then once you're done open your project on Eclipse / Intelij IDEA.Gwt-material-archetype provides a faster way to create a GMD Project. You can also watch at the very bottom of this page about the real time procedure." />
+                <m:MaterialLabel
+                    text="Run this project into cmd / terminal, just follow the prompts. Then once you're done open your project on Eclipse / Intelij IDEA.Gwt-material-archetype provides a faster way to create a GMD Project. You can also watch at the very bottom of this page about the real time procedure."/>
             </m:MaterialPanel>
             <g:HTMLPanel>
                 <pre class="xml">
-    mvn archetype:generate -DarchetypeGroupId=com.github.gwtmaterialdesign -DarchetypeArtifactId=gwt-material-archetype -DarchetypeVersion=2.1.1
+                    mvn archetype:generate -DarchetypeGroupId=com.github.gwtmaterialdesign
+                    -DarchetypeArtifactId=gwt-material-archetype -DarchetypeVersion=2.1.1
                 </pre>
             </g:HTMLPanel>
         </m:MaterialRow>
@@ -68,12 +72,15 @@
         <m:MaterialRow>
             <m:MaterialPanel textAlign="CENTER">
                 <m:MaterialLabel text="Or Using the Snapshot" fontSize="1.6em"/>
-                <m:MaterialLabel text="Below are series of videos on how to getting started with gwt-material." />
+                <m:MaterialLabel text="Below are series of videos on how to getting started with gwt-material."/>
             </m:MaterialPanel>
 
             <g:HTMLPanel>
                 <pre class="xml">
-    mvn archetype:generate -DarchetypeGroupId=com.github.gwtmaterialdesign -DarchetypeArtifactId=gwt-material-archetype -DarchetypeRepository=https://oss.sonatype.org/content/repositories/snapshots/ -DarchetypeVersion=2.2-SNAPSHOT
+                    mvn archetype:generate -DarchetypeGroupId=com.github.gwtmaterialdesign
+                    -DarchetypeArtifactId=gwt-material-archetype
+                    -DarchetypeRepository=https://oss.sonatype.org/content/repositories/snapshots/
+                    -DarchetypeVersion=2.2-SNAPSHOT
                 </pre>
             </g:HTMLPanel>
         </m:MaterialRow>
