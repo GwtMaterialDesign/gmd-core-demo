@@ -7,9 +7,9 @@
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
-  
+
        http://www.apache.org/licenses/LICENSE-2.0
-  
+
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -18,58 +18,60 @@
   #L%
   -->
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-			 xmlns:m='urn:import:gwt.material.design.client.ui'
-			 xmlns:widget="urn:import:gmd.core.demo.client.application.widget"
-			 xmlns:g="urn:import:com.google.gwt.user.client.ui">
+             xmlns:m='urn:import:gwt.material.design.client.ui'
+             xmlns:widget="urn:import:gmd.core.demo.client.application.widget"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
-	<m:MaterialPanel>
-		<widget:CodeSection sectionTitle="ValueSanitizer"
-							description="Uses a value sanitization algorithm for naughty or invalid strings.">
-			<m:MaterialPanel>
-				<m:MaterialTextBox ui:field="valueSanitizerBox" fieldType="OUTLINED" maxWidth="400px" label="TextBox" />
-			</m:MaterialPanel>
-		</widget:CodeSection>
+    <m:MaterialPanel>
+        <widget:CodeSection sectionTitle="ValueSanitizer"
+                            description="Uses a value sanitization algorithm for naughty or invalid strings.">
+            <m:MaterialPanel>
+                <m:MaterialTextBox ui:field="valueSanitizerBox" fieldType="OUTLINED" maxWidth="400px" label="TextBox"/>
+            </m:MaterialPanel>
+        </widget:CodeSection>
 
-		<widget:CodeSection sectionTitle="DefaultHtmlSanitizer"
-							description="By default we are using our DefaultHtmlSanitizer - used by TextMixin#setText(text) and
+        <widget:CodeSection sectionTitle="DefaultHtmlSanitizer"
+                            description="By default we are using our DefaultHtmlSanitizer - used by TextMixin#setText(text) and
 							 escapes any html argument and returns the result wrapped as a SafeHtml. See SafeHtmlUtils.fromString(html)">
 
-			<m:MaterialChip ui:field="chip" backgroundColor="BLUE" textColor="WHITE"/>
-			<m:MaterialLabel ui:field="label" fontSize="2em" marginTop="12" marginBottom="40"/>
+            <m:MaterialChip ui:field="chip" backgroundColor="BLUE" textColor="WHITE"/>
+            <m:MaterialLabel ui:field="label" fontSize="2em" marginTop="12" marginBottom="40"/>
 
-			<g:HTMLPanel>
-				<pre class="java">
-chip.setText("&lt;b>Chip&lt;/b> with &lt;i>DefaultHtmlSanitizer&lt;/i>");
-widget.setText("&lt;b>Sanitized Text&lt;/b> with &lt;i>DefaultHtmlSanitizer&lt;/i>");
-				</pre>
-			</g:HTMLPanel>
-		</widget:CodeSection>
+            <g:HTMLPanel>
+                <pre class="java">
+                    chip.setText("&lt;b>Chip&lt;/b> with &lt;i>DefaultHtmlSanitizer&lt;/i>");
+                    widget.setText("&lt;b>Sanitized Text&lt;/b> with &lt;i>DefaultHtmlSanitizer&lt;/i>");
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
 
-		<widget:CodeSection sectionTitle="Custom HtmlSanitizer"
-							description="You can use SimpleSafeHtmlSanitizer or create your own sanitizer by implementing GWT's HtmlSanitizer
+        <widget:CodeSection sectionTitle="Custom HtmlSanitizer"
+                            description="You can use SimpleSafeHtmlSanitizer or create your own sanitizer by implementing GWT's HtmlSanitizer
 							and add your tags to be whitelisted.">
-			<m:MaterialChip ui:field="chip2" backgroundColor="BLUE" textColor="WHITE"/>
-			<m:MaterialLabel ui:field="label2" fontSize="2em" marginTop="12" marginBottom="40"/>
-			<m:MaterialButton text="Get Value" ui:field="getValue" marginTop="20"/>
-			<g:HTMLPanel>
-				<pre class="java">
-TextMixin.setDefaultSanitizer(SimpleHtmlSanitizer.getInstance());
-chip2.setText("&lt;b>Chip&lt;/b> with &lt;i>SimpleHtmlSanitizer&lt;/i>");
-label2.setText("&lt;b>Sanitized Label&lt;/b> with &lt;i>SimpleHtmlSanitizer&lt;/i>");
-				</pre>
-			</g:HTMLPanel>
-		</widget:CodeSection>
+            <m:MaterialChip ui:field="chip2" backgroundColor="BLUE" textColor="WHITE"/>
+            <m:MaterialLabel ui:field="label2" fontSize="2em" marginTop="12" marginBottom="40"/>
+            <m:MaterialButton text="Get Value" ui:field="getValue" marginTop="20"/>
+            <g:HTMLPanel>
+                <pre class="java">
+                    TextMixin.setDefaultSanitizer(SimpleHtmlSanitizer.getInstance());
+                    chip2.setText("&lt;b>Chip&lt;/b> with &lt;i>SimpleHtmlSanitizer&lt;/i>");
+                    label2.setText("&lt;b>Sanitized Label&lt;/b> with &lt;i>SimpleHtmlSanitizer&lt;/i>");
+                </pre>
+            </g:HTMLPanel>
+        </widget:CodeSection>
 
-		<widget:CodeSection sectionTitle="SimpleHtmlSanitizer"
-							description="Uses a simple sanitization algorithm that accepts the following markup:">
-			<g:HTMLPanel>
-				<blockquote>
-					<li>A white-list of basic HTML tags without attributes, including &lt;b>,&lt;em>, &lt;i>, &lt;h1>, ..., &lt;h5>, &lt;hr>, &lt;ul>,&lt;ol>, &lt;li> and the corresponding end tags.</li>
-					<li>HTML entities and entity references, such as &#39;, &#x2F;,&amp;, &quot;,etc.</li>
-				</blockquote>
-			</g:HTMLPanel>
-		</widget:CodeSection>
+        <widget:CodeSection sectionTitle="SimpleHtmlSanitizer"
+                            description="Uses a simple sanitization algorithm that accepts the following markup:">
+            <g:HTMLPanel>
+                <blockquote>
+                    <li>A white-list of basic HTML tags without attributes, including &lt;b>,&lt;em>, &lt;i>, &lt;h1>,
+                        ..., &lt;h5>, &lt;hr>, &lt;ul>,&lt;ol>, &lt;li> and the corresponding end tags.
+                    </li>
+                    <li>HTML entities and entity references, such as &#39;, &#x2F;,&amp;, &quot;,etc.</li>
+                </blockquote>
+            </g:HTMLPanel>
+        </widget:CodeSection>
 
 
-	</m:MaterialPanel>
+    </m:MaterialPanel>
 </ui:UiBinder>

@@ -25,6 +25,6 @@ public class SwitchModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
         bindPresenter(SwitchPresenter.class, SwitchPresenter.MyView.class, SwitchView.class,
-                SwitchPresenter.MyProxy.class);
+            SwitchPresenter.MyProxy.class);
     }
 }

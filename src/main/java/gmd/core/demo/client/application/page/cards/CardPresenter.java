@@ -41,10 +41,10 @@ public class CardPresenter extends AppPresenter<CardPresenter.MyView, CardPresen
 
     @Inject
     CardPresenter(
-            EventBus eventBus,
-            MyView view,
-            MyProxy proxy,
-            PlaceManager placeManager) {
+        EventBus eventBus,
+        MyView view,
+        MyProxy proxy,
+        PlaceManager placeManager) {
         super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN, placeManager);
     }
 }

@@ -25,6 +25,6 @@ public class TabsModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
         bindPresenter(TabsPresenter.class, TabsPresenter.MyView.class, TabsView.class,
-                TabsPresenter.MyProxy.class);
+            TabsPresenter.MyProxy.class);
     }
 }

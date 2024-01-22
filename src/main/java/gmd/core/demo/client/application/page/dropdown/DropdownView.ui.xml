@@ -7,9 +7,9 @@
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
-  
+
        http://www.apache.org/licenses/LICENSE-2.0
-  
+
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -26,39 +26,54 @@
         <widget:CodeSection sectionTitle="Dropdown Properties">
             <g:HTMLPanel>
                 <blockquote>
-                    <p><b>activator</b> - name of your dropdown, a unique name needs for the activator to set it e.g activates='dropdown_name'</p>
-                    <p><b>constraintWidth</b> - Does not change width of dropdown to that of the activator</p>
-                    <p><b>belowOrigin</b> - displays dropdown below the button</p>
-                    <p><b>hover</b> - If sets to true, when you hover to your activator, dropdown component will be shown.</p>
+                    <p>
+                        <b>activator</b>
+                        - name of your dropdown, a unique name needs for the activator to set it e.g.
+                        activates='dropdown_name'
+                    </p>
+                    <p>
+                        <b>constraintWidth</b>
+                        - Does not change width of dropdown to that of the activator
+                    </p>
+                    <p>
+                        <b>belowOrigin</b>
+                        - displays dropdown below the button
+                    </p>
+                    <p>
+                        <b>hover</b>
+                        - If sets to true, when you hover to your activator, dropdown component will be shown.
+                    </p>
                 </blockquote>
             </g:HTMLPanel>
         </widget:CodeSection>
 
-        <widget:CodeSection sectionTitle="Introduction" description="Add a dropdown list to any button. Make sure to add the property activates to be able to initialize the dropdown plugin, it will use that as your id on your dropdown menu.">
-            <m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"  activates="dp-2"/>
-            <!-- My Drop Down -->
+        <widget:CodeSection sectionTitle="Introduction"
+                            description="Add a dropdown list to any button. Make sure to add the property activates to be able to initialize the dropdown plugin, it will use that as your id on your dropdown menu.">
+            <m:MaterialButton text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" activates="dp-2"/>
+            <!-- My Drop-Down -->
             <m:MaterialDropDown activator="dp-2" constrainWidth="true">
-                <m:MaterialLink text="First" />
-                <m:MaterialLink text="Second" />
-                <m:MaterialLink text="Third" />
+                <m:MaterialLink text="First"/>
+                <m:MaterialLink text="Second"/>
+                <m:MaterialLink text="Third"/>
             </m:MaterialDropDown>
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"  activates="dp-2"/>
-    &lt;!-- My Drop Down -->
-    &lt;m:MaterialDropDown activator="dp-2" constrainWidth="true">
-        &lt;m:MaterialLink text="First" />
-        &lt;m:MaterialLink text="Second" />
-        &lt;m:MaterialLink text="Third" />
-    &lt;/m:MaterialDropDown>
+                    &lt;m:MaterialButton text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"
+                    activates="dp-2"/>
+                    &lt;!-- My Drop Down -->
+                    &lt;m:MaterialDropDown activator="dp-2" constrainWidth="true">
+                    &lt;m:MaterialLink text="First" />
+                    &lt;m:MaterialLink text="Second" />
+                    &lt;m:MaterialLink text="Third" />
+                    &lt;/m:MaterialDropDown>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="Designing">
             <!-- Activator -->
-            <m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"  activates="dp-3"/>
-            <!-- My Drop Down -->
+            <m:MaterialButton text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" activates="dp-3"/>
+            <!-- My Drop-Down -->
             <m:MaterialDropDown activator="dp-3" constrainWidth="true">
                 <m:MaterialLink text="First" iconType="POLYMER" iconPosition="RIGHT" separator="true"/>
                 <m:MaterialLink text="Second" iconType="POLYMER" iconPosition="RIGHT" separator="true"/>
@@ -66,14 +81,15 @@
             </m:MaterialDropDown>
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;!-- Activator -->
-    &lt;m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"  activates="dp-3"/>
-    &lt;!-- My Drop Down -->
-    &lt;m:MaterialDropDown activator="dp-3" constrainWidth="true">
-        &lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="RIGHT" separator="true"/>
-        &lt;m:MaterialLink text="Second" iconType="POLYMER" iconPosition="RIGHT" separator="true"/>
-        &lt;m:MaterialLink text="Third" iconType="POLYMER" iconPosition="RIGHT" separator="true"/>
-    &lt;/m:MaterialDropDown>
+                    &lt;!-- Activator -->
+                    &lt;m:MaterialButton text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"
+                    activates="dp-3"/>
+                    &lt;!-- My Drop Down -->
+                    &lt;m:MaterialDropDown activator="dp-3" constrainWidth="true">
+                    &lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="RIGHT" separator="true"/>
+                    &lt;m:MaterialLink text="Second" iconType="POLYMER" iconPosition="RIGHT" separator="true"/>
+                    &lt;m:MaterialLink text="Third" iconType="POLYMER" iconPosition="RIGHT" separator="true"/>
+                    &lt;/m:MaterialDropDown>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -82,72 +98,84 @@
             <m:MaterialIcon iconType="PHONE" iconColor="BLACK" activates="dp-4" waves="DEFAULT"/>
 
             <m:MaterialDropDown activator="dp-4" constrainWidth="false">
-                <m:MaterialLink ui:field="linkDialPad" fontSize="0.9em"  width="200px" waves="DEFAULT" textColor="BLACK" iconType="DIALPAD" iconPosition="LEFT" text="Redial" />
-                <m:MaterialLink ui:field="linkVoicemail" fontSize="0.9em"  width="200px" waves="DEFAULT" enabled="false" textColor="BLACK" iconType="VOICEMAIL" iconPosition="LEFT" text="Check voicemail" separator="true"/>
-                <m:MaterialLink ui:field="linkNotification" fontSize="0.9em"  width="200px" waves="DEFAULT" textColor="BLACK" iconType="NOTIFICATIONS_OFF" iconPosition="LEFT" text="Disable Notification" />
+                <m:MaterialLink ui:field="linkDialPad" fontSize="0.9em" width="200px" waves="DEFAULT" textColor="BLACK"
+                                iconType="DIALPAD" iconPosition="LEFT" text="Redial"/>
+                <m:MaterialLink ui:field="linkVoicemail" fontSize="0.9em" width="200px" waves="DEFAULT" enabled="false"
+                                textColor="BLACK" iconType="VOICEMAIL" iconPosition="LEFT" text="Check voicemail"
+                                separator="true"/>
+                <m:MaterialLink ui:field="linkNotification" fontSize="0.9em" width="200px" waves="DEFAULT"
+                                textColor="BLACK" iconType="NOTIFICATIONS_OFF" iconPosition="LEFT"
+                                text="Disable Notification"/>
             </m:MaterialDropDown>
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialIcon iconType="PHONE" iconColor="BLACK" activates="dp-4" waves="DEFAULT"/>
+                    &lt;m:MaterialIcon iconType="PHONE" iconColor="BLACK" activates="dp-4" waves="DEFAULT"/>
 
-    &lt;m:MaterialDropDown activator="dp-4" constrainWidth="false">
-        &lt;m:MaterialLink ui:field="linkDialPad" fontSize="0.9em"  width="200px" waves="DEFAULT" textColor="BLACK" iconType="DIALPAD" iconPosition="LEFT" text="Redial" />
-        &lt;m:MaterialLink ui:field="linkVoicemail" fontSize="0.9em"  width="200px" waves="DEFAULT" enabled="false" textColor="BLACK" iconType="VOICEMAIL" iconPosition="LEFT" text="Check voicemail" separator="true"/>
-        &lt;m:MaterialLink ui:field="linkNotification" fontSize="0.9em"  width="200px" waves="DEFAULT" textColor="BLACK" iconType="NOTIFICATIONS_OFF" iconPosition="LEFT" text="Disable Notification" />
-    &lt;/m:MaterialDropDown>
+                    &lt;m:MaterialDropDown activator="dp-4" constrainWidth="false">
+                    &lt;m:MaterialLink ui:field="linkDialPad" fontSize="0.9em" width="200px" waves="DEFAULT"
+                    textColor="BLACK" iconType="DIALPAD" iconPosition="LEFT" text="Redial" />
+                    &lt;m:MaterialLink ui:field="linkVoicemail" fontSize="0.9em" width="200px" waves="DEFAULT"
+                    enabled="false" textColor="BLACK" iconType="VOICEMAIL" iconPosition="LEFT" text="Check voicemail"
+                    separator="true"/>
+                    &lt;m:MaterialLink ui:field="linkNotification" fontSize="0.9em" width="200px" waves="DEFAULT"
+                    textColor="BLACK" iconType="NOTIFICATIONS_OFF" iconPosition="LEFT" text="Disable Notification" />
+                    &lt;/m:MaterialDropDown>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 
-        <widget:CodeSection sectionTitle="Dropdown inside NavBar" description="You can now easily integrate an icon or link type dropdown inside navbar.">
+        <widget:CodeSection sectionTitle="Dropdown inside NavBar"
+                            description="You can now easily integrate an icon or link type dropdown inside navbar.">
             <m:MaterialNavBar width="100%">
                 <m:MaterialNavBrand paddingLeft="20" text="GMD" position="LEFT"/>
                 <m:MaterialNavSection position="RIGHT" hideOn="NONE">
                     <!--Activator -->
-                    <m:MaterialLink text="Dropdown" activates="dp-5"  iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"/>
+                    <m:MaterialLink text="Dropdown" activates="dp-5" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"/>
                 </m:MaterialNavSection>
             </m:MaterialNavBar>
 
             <!-- My Dropdown -->
             <m:MaterialDropDown activator="dp-5" constrainWidth="true">
-                <m:MaterialLink waves="DEFAULT" textColor="BLACK" text="Drop 1" />
-                <m:MaterialLink waves="DEFAULT" enabled="false" textColor="BLACK" text="Drop 2"  separator="true"/>
-                <m:MaterialLink waves="DEFAULT" textColor="BLACK" text="Drop 3" />
+                <m:MaterialLink waves="DEFAULT" textColor="BLACK" text="Drop 1"/>
+                <m:MaterialLink waves="DEFAULT" enabled="false" textColor="BLACK" text="Drop 2" separator="true"/>
+                <m:MaterialLink waves="DEFAULT" textColor="BLACK" text="Drop 3"/>
             </m:MaterialDropDown>
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialNavBar width="100%">
-        &lt;m:MaterialNavBrand paddingLeft="20" text="GMD" position="LEFT"/>
-        &lt;m:MaterialNavSection position="RIGHT" hideOn="NONE">
-            &lt;!--Activator -->
-            &lt;m:MaterialLink text="Dropdown" activates="dp-5"  iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"/>
-        &lt;/m:MaterialNavSection>
-    &lt;/m:MaterialNavBar>
+                    &lt;m:MaterialNavBar width="100%">
+                    &lt;m:MaterialNavBrand paddingLeft="20" text="GMD" position="LEFT"/>
+                    &lt;m:MaterialNavSection position="RIGHT" hideOn="NONE">
+                    &lt;!--Activator -->
+                    &lt;m:MaterialLink text="Dropdown" activates="dp-5" iconType="ARROW_DROP_DOWN"
+                    iconPosition="RIGHT"/>
+                    &lt;/m:MaterialNavSection>
+                    &lt;/m:MaterialNavBar>
 
-    &lt;!-- My Dropdown -->
-    &lt;m:MaterialDropDown activator="dp-5" constrainWidth="true">
-        &lt;m:MaterialLink waves="DEFAULT" textColor="BLACK" text="Drop 1" />
-        &lt;m:MaterialLink waves="DEFAULT" enabled="false" textColor="BLACK" text="Drop 2"  separator="true"/>
-        &lt;m:MaterialLink waves="DEFAULT" textColor="BLACK" text="Drop 3" />
-    &lt;/m:MaterialDropDown>
+                    &lt;!-- My Dropdown -->
+                    &lt;m:MaterialDropDown activator="dp-5" constrainWidth="true">
+                    &lt;m:MaterialLink waves="DEFAULT" textColor="BLACK" text="Drop 1" />
+                    &lt;m:MaterialLink waves="DEFAULT" enabled="false" textColor="BLACK" text="Drop 2"
+                    separator="true"/>
+                    &lt;m:MaterialLink waves="DEFAULT" textColor="BLACK" text="Drop 3" />
+                    &lt;/m:MaterialDropDown>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="Selection Event">
-            <m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"  activates="dp-selection"/>
-            <!-- My Drop Down -->
+            <m:MaterialButton text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" activates="dp-selection"/>
+            <!-- My Drop-Down -->
             <m:MaterialDropDown ui:field="dropdown" activator="dp-selection" constrainWidth="true">
-                <m:MaterialLink text="First" />
-                <m:MaterialLink text="Second" />
-                <m:MaterialLink text="Third" />
+                <m:MaterialLink text="First"/>
+                <m:MaterialLink text="Second"/>
+                <m:MaterialLink text="Third"/>
             </m:MaterialDropDown>
             <g:HTMLPanel>
                 <pre class="xml">
-    @UiHandler("dropdown")
-    void onDropdown(SelectionEvent&lt;Widget> callback){
-        MaterialToast.fireToast("Selected : " + ((MaterialLink)callback.getSelectedItem()).getText());
-    }
+                    @UiHandler("dropdown")
+                    void onDropdown(SelectionEvent&lt;Widget> callback){
+                    MaterialToast.fireToast("Selected : " + ((MaterialLink)callback.getSelectedItem()).getText());
+                    }
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>

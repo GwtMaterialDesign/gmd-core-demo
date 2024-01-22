@@ -25,6 +25,6 @@ public class LoadersModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
         bindPresenter(LoadersPresenter.class, LoadersPresenter.MyView.class, LoadersView.class,
-                LoadersPresenter.MyProxy.class);
+            LoadersPresenter.MyProxy.class);
     }
 }

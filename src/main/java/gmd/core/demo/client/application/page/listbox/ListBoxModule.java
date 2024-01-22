@@ -25,6 +25,6 @@ public class ListBoxModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
         bindPresenter(ListBoxPresenter.class, ListBoxPresenter.MyView.class, ListBoxView.class,
-                ListBoxPresenter.MyProxy.class);
+            ListBoxPresenter.MyProxy.class);
     }
 }

@@ -25,6 +25,6 @@ public class SearchModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
         bindPresenter(SearchPresenter.class, SearchPresenter.MyView.class, SearchView.class,
-                SearchPresenter.MyProxy.class);
+            SearchPresenter.MyProxy.class);
     }
 }

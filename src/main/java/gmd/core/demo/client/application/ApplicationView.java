@@ -39,7 +39,12 @@ import gwt.material.design.client.base.viewport.Resolution;
 import gwt.material.design.client.constants.Blur;
 import gwt.material.design.client.constants.Color;
 import gwt.material.design.client.constants.OverlayOption;
-import gwt.material.design.client.ui.*;
+import gwt.material.design.client.ui.MaterialFAB;
+import gwt.material.design.client.ui.MaterialLabel;
+import gwt.material.design.client.ui.MaterialLink;
+import gwt.material.design.client.ui.MaterialPanel;
+import gwt.material.design.client.ui.MaterialRow;
+import gwt.material.design.client.ui.MaterialSideNavPush;
 import gwt.material.design.client.ui.animate.MaterialAnimation;
 import gwt.material.design.client.ui.animate.Transition;
 import gwt.material.design.incubator.client.search.InlineSearch;
@@ -51,6 +56,42 @@ import java.util.List;
 import static gwt.material.design.jquery.client.api.JQuery.$;
 
 public class ApplicationView extends ViewWithUiHandlers<MenuHandlers> implements ApplicationPresenter.MyView {
+
+    private void onWindowScroll(Window.ScrollEvent event) {
+        boolean isInViewPort = new ScrollHelper().isInViewPort(title);
+        if (!isInViewPort) {
+            if (!scrolling) {
+                MaterialAnimation animation = new MaterialAnimation();
+                animation.setTransition(Transition.FADEINUP);
+                animation.animate(navBrand);
+                navBrand.setText(title.getText());
+                scrolling = true;
+            }
+
+        } else {
+            MaterialAnimation animation = new MaterialAnimation();
+            animation.setTransition(Transition.FADEINUP);
+            animation.animate(navBrand);
+            navBrand.setText("");
+            scrolling = false;
+        }
+
+        if (event.getScrollTop() > 320) {
+            if (fabUp.getOpacity() == 0) {
+                MaterialAnimation animation = new MaterialAnimation();
+                animation.setTransition(Transition.ZOOMIN);
+                animation.animate(fabUp, () -> fabUp.setOpacity(1));
+            }
+        } else {
+            if (fabUp.getOpacity() == 1) {
+                MaterialAnimation animation = new MaterialAnimation();
+                animation.setTransition(Transition.ZOOMOUT);
+                animation.animate(fabUp, () -> {
+                    fabUp.setOpacity(0);
+                });
+            }
+        }
+    }
 
     interface Binder extends UiBinder<Widget, ApplicationView> {
     }
@@ -114,43 +155,7 @@ public class ApplicationView extends ViewWithUiHandlers<MenuHandlers> implements
 
     @Override
     public void setupHeader() {
-        Window.addWindowScrollHandler(event -> {
-            boolean isInViewPort = new ScrollHelper().isInViewPort(title);
-            if (!isInViewPort) {
-                if (!scrolling) {
-                    MaterialAnimation animation = new MaterialAnimation();
-                    animation.setTransition(Transition.FADEINUP);
-                    animation.animate(navBrand);
-                    navBrand.setText(title.getText());
-                    scrolling = true;
-                }
-
-            } else {
-                MaterialAnimation animation = new MaterialAnimation();
-                animation.setTransition(Transition.FADEINUP);
-                animation.animate(navBrand);
-                navBrand.setText("");
-                scrolling = false;
-            }
-
-            if (event.getScrollTop() > 320) {
-                if (fabUp.getOpacity() == 0) {
-                    MaterialAnimation animation = new MaterialAnimation();
-                    animation.setTransition(Transition.ZOOMIN);
-                    animation.animate(fabUp, () -> {
-                        fabUp.setOpacity(1);
-                    });
-                }
-            } else {
-                if (fabUp.getOpacity() == 1) {
-                    MaterialAnimation animation = new MaterialAnimation();
-                    animation.setTransition(Transition.ZOOMOUT);
-                    animation.animate(fabUp, () -> {
-                        fabUp.setOpacity(0);
-                    });
-                }
-            }
-        });
+        Window.addWindowScrollHandler(this::onWindowScroll);
     }
 
     @Override

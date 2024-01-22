@@ -25,6 +25,6 @@ public class RangeModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
         bindPresenter(RangePresenter.class, RangePresenter.MyView.class, RangeView.class,
-                RangePresenter.MyProxy.class);
+            RangePresenter.MyProxy.class);
     }
 }

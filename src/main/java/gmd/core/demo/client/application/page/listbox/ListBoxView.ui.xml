@@ -7,9 +7,9 @@
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
-  
+
        http://www.apache.org/licenses/LICENSE-2.0
-  
+
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -24,7 +24,7 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <m:MaterialPanel>
-        <widget:CodeSection sectionTitle="ListBox" description="Select allows user input through specified options."  >
+        <widget:CodeSection sectionTitle="ListBox" description="Select allows user input through specified options.">
             <m:MaterialRow>
                 <m:MaterialListBox placeholder="ListBox" allowBlank="true" grid="s12 m4 l3" ui:field="lstOptions">
                     <m.html:Option text="Option 1"/>
@@ -42,40 +42,41 @@
 
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialListBox placeholder="ListBox">
-        &lt;m.html:Option text="Option 1"/>
-        &lt;m.html:Option text="Option 2"/>
-        &lt;m.html:Option text="Option 3"/>
-        &lt;m.html:Option text="Option 4"/>
-        &lt;m.html:Option text="Option 5"/>
-        &lt;m.html:Option text="Option 6"/>
-        &lt;m.html:Option text="Option 7"/>
-        &lt;m.html:Option text="Option 8"/>
-        &lt;m.html:Option text="Option 9"/>
-        &lt;m.html:Option text="Option 10"/>
-    &lt;/m:MaterialListBox>
+                    &lt;m:MaterialListBox placeholder="ListBox">
+                    &lt;m.html:Option text="Option 1"/>
+                    &lt;m.html:Option text="Option 2"/>
+                    &lt;m.html:Option text="Option 3"/>
+                    &lt;m.html:Option text="Option 4"/>
+                    &lt;m.html:Option text="Option 5"/>
+                    &lt;m.html:Option text="Option 6"/>
+                    &lt;m.html:Option text="Option 7"/>
+                    &lt;m.html:Option text="Option 8"/>
+                    &lt;m.html:Option text="Option 9"/>
+                    &lt;m.html:Option text="Option 10"/>
+                    &lt;/m:MaterialListBox>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 
-        <widget:CodeSection sectionTitle="Using MaterialListValueBox" description="You can easily set the generic param with your desired object into the MaterialListValueBox."  >
+        <widget:CodeSection sectionTitle="Using MaterialListValueBox"
+                            description="You can easily set the generic param with your desired object into the MaterialListValueBox.">
             <m:MaterialRow>
                 <m:MaterialListValueBox ui:field="lstValueBox" placeholder="Choose your hero" grid="s12 m4 l3"/>
             </m:MaterialRow>
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialListValueBox ui:field="lstValueBox" placeholder="Choose your hero" grid="s12 m4 l3"/>
+                    &lt;m:MaterialListValueBox ui:field="lstValueBox" placeholder="Choose your hero" grid="s12 m4 l3"/>
                 </pre>
             </g:HTMLPanel>
 
             <g:HTMLPanel>
                 <pre class="java">
-    @UiField
-    MaterialListValueBox&lt;Hero> lstValueBox;
+                    @UiField
+                    MaterialListValueBox&lt;Hero> lstValueBox;
 
-    Hero hero = new Hero();
-    hero.setName("Batman");
-    lstValueBox.addItem(hero, hero.getName())
+                    Hero hero = new Hero();
+                    hero.setName("Batman");
+                    lstValueBox.addItem(hero, hero.getName())
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -99,12 +100,13 @@
 
             <g:HTMLPanel>
                 <pre class="java">
-    lstAddOptions.addItem("Item added");
+                    lstAddOptions.addItem("Item added");
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 
-        <widget:CodeSection sectionTitle="Remove Option" description="You can easily remove an item by calling removeItem(0)">
+        <widget:CodeSection sectionTitle="Remove Option"
+                            description="You can easily remove an item by calling removeItem(0)">
             <m:MaterialRow>
                 <m:MaterialListBox placeholder="ListBox" grid="s12 m4 l3" ui:field="lstRemoveOptions">
                     <m.html:Option text="Option 1"/>
@@ -123,7 +125,7 @@
 
             <g:HTMLPanel>
                 <pre class="java">
-    lstRemoveOptions.removeItem(0);
+                    lstRemoveOptions.removeItem(0);
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -143,7 +145,7 @@
 
             <g:HTMLPanel>
                 <pre class="java">
-    lstSetValue.setValue("Option 2");
+                    lstSetValue.setValue("Option 2");
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -153,17 +155,18 @@
             <m:MaterialRow>
                 <m:MaterialCheckBox ui:field="cbAllowBlank" text="Allow Blank" type="FILLED" marginTop="32"/>
             </m:MaterialRow>
-            <m:MaterialButton ui:field="allowBlankGetValue" text="Get Value" marginRight="12" />
-            <m:MaterialButton ui:field="allowBlankSetValue" text="Set To Null" visible="false" />
-            
+            <m:MaterialButton ui:field="allowBlankGetValue" text="Get Value" marginRight="12"/>
+            <m:MaterialButton ui:field="allowBlankSetValue" text="Set To Null" visible="false"/>
+
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialListBox allowBlank="true"/>
+                    &lt;m:MaterialListBox allowBlank="true"/>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 
-        <widget:CodeSection sectionTitle="Native Browser List Box" description="You can add an attribute old='true' to get the browser default listbox.">
+        <widget:CodeSection sectionTitle="Native Browser List Box"
+                            description="You can add an attribute old='true' to get the browser default listbox.">
             <m:MaterialRow>
                 <m:MaterialListBox nativeBrowserStyle="true" grid="s12 m4 l3">
                     <m.html:Option text="Option 1"/>
@@ -175,14 +178,15 @@
 
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialListBox nativeBrowserStyle="true"/>
+                    &lt;m:MaterialListBox nativeBrowserStyle="true"/>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 
-        <widget:CodeSection sectionTitle="Disabled Styles" description="You can also add an attribute disabled='true' to the select element to make the whole thing disabled. Or if you add disabled to the options, the individual options will be unselectable.">
+        <widget:CodeSection sectionTitle="Disabled Styles"
+                            description="You can also add an attribute disabled='true' to the select element to make the whole thing disabled. Or if you add disabled to the options, the individual options will be unselectable.">
             <m:MaterialRow>
-                <m:MaterialListBox  enabled="false" grid="s12 m4 l3">
+                <m:MaterialListBox enabled="false" grid="s12 m4 l3">
                     <m.html:Option text="Option 1"/>
                     <m.html:Option text="Option 2"/>
                     <m.html:Option text="Option 3"/>
@@ -192,19 +196,20 @@
 
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialListBox  enabled="false"/>
+                    &lt;m:MaterialListBox enabled="false"/>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="Empty Placeholder">
             <m:MaterialRow>
-                <m:MaterialListValueBox ui:field="lstEmptyPlacehoder" emptyPlaceHolder="Select your Hero" grid="s12 m4 l3"/>
+                <m:MaterialListValueBox ui:field="lstEmptyPlacehoder" emptyPlaceHolder="Select your Hero"
+                                        grid="s12 m4 l3"/>
             </m:MaterialRow>
 
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialListValueBox emptyPlaceHolder="Select your Hero"
+                    &lt;m:MaterialListValueBox emptyPlaceHolder="Select your Hero"
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
@@ -216,27 +221,27 @@
 
             <g:HTMLPanel>
                 <pre class="java">
-    lstOptions.addFocusHandler(focusEvent -> {
-        MaterialToast.fireToast("FOCUSED");
-    });
+                    lstOptions.addFocusHandler(focusEvent -> {
+                    MaterialToast.fireToast("FOCUSED");
+                    });
 
-    lstOptions.addBlurHandler(blurEvent -> {
-        MaterialToast.fireToast("BLURRED");
-    });
+                    lstOptions.addBlurHandler(blurEvent -> {
+                    MaterialToast.fireToast("BLURRED");
+                    });
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 
         <widget:CodeSection sectionTitle="Lazyload">
             <m:MaterialRow>
-                <m:MaterialListBox placeholder="ListBox" grid="s12 m4 l3" ui:field="lstLazy" />
+                <m:MaterialListBox placeholder="ListBox" grid="s12 m4 l3" ui:field="lstLazy"/>
                 <m:MaterialButton ui:field="addItems" text="ADD 100 Items" marginRight="12" marginTop="20"/>
                 <m:MaterialButton ui:field="reload" text="Reload" marginTop="20"/>
             </m:MaterialRow>
 
             <g:HTMLPanel>
                 <pre class="java">
-    lstAllowBlank.reload();
+                    lstAllowBlank.reload();
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>

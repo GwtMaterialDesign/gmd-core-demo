@@ -5,7 +5,7 @@ import java.util.List;
 
 public class DataHelper {
 
-    public static List<Hero> getAllHeroes(){
+    public static List<Hero> getAllHeroes() {
         List<Hero> heroes = new ArrayList<>();
         heroes.add(new Hero("https://gwtmaterialdesign.github.io/gwt-material-demo/images/batman.png", "Batman", "Batman's secret identity is Bruce Wayne, an American billionaire, playboy, philanthropist, and owner of Wayne Enterprises. After witnessing the murder of his parents as a child, he swore revenge on criminals, an oath tempered by a sense of justice. Wayne trains himself both physically and intellectually and crafts a bat-inspired persona to fight crime.", 5));
         heroes.add(new Hero("https://gwtmaterialdesign.github.io/gwt-material-demo/images/captain_america.png", "Captain America", "Captain America wears a costume that bears an American flag motif, and is armed with a nearly indestructible shield that he throws at foes. The character is usually depicted as the alter ego of Steve Rogers, a frail young man enhanced to the peak of human perfection by an experimental serum to aid the United States government's imminent efforts in World War II.", 5));

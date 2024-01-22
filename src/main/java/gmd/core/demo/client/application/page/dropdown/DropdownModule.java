@@ -25,6 +25,6 @@ public class DropdownModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
         bindPresenter(DropdownPresenter.class, DropdownPresenter.MyView.class, DropdownView.class,
-                DropdownPresenter.MyProxy.class);
+            DropdownPresenter.MyProxy.class);
     }
 }

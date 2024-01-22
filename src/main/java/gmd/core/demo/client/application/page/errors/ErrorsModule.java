@@ -25,6 +25,6 @@ public class ErrorsModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
         bindPresenter(ErrorsPresenter.class, ErrorsPresenter.MyView.class, ErrorsView.class,
-                ErrorsPresenter.MyProxy.class);
+            ErrorsPresenter.MyProxy.class);
     }
 }

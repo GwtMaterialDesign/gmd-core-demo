@@ -25,6 +25,6 @@ public class IconModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
         bindPresenter(IconPresenter.class, IconPresenter.MyView.class, IconView.class,
-                IconPresenter.MyProxy.class);
+            IconPresenter.MyProxy.class);
     }
 }

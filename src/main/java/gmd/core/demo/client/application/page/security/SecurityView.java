@@ -29,7 +29,6 @@ import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.base.mixin.TextMixin;
 import gwt.material.design.client.sanitizer.DefaultValueSanitizer;
-import gwt.material.design.client.sanitizer.StandardValueSanitizer;
 import gwt.material.design.client.ui.MaterialChip;
 import gwt.material.design.client.ui.MaterialLabel;
 import gwt.material.design.client.ui.MaterialTextBox;

@@ -25,6 +25,6 @@ public class PushPinModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
         bindPresenter(PushPinPresenter.class, PushPinPresenter.MyView.class, PushPinView.class,
-                PushPinPresenter.MyProxy.class);
+            PushPinPresenter.MyProxy.class);
     }
 }

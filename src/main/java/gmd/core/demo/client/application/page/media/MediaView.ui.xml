@@ -7,9 +7,9 @@
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
-  
+
        http://www.apache.org/licenses/LICENSE-2.0
-  
+
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -23,34 +23,44 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <m:MaterialPanel>
-        <widget:CodeSection sectionTitle="Material Box" description="Material box is a material design implementation of the Lightbox plugin. When a user clicks on an image that can be enlarged. Material box centers the image and enlarges it in a smooth, non-jarring manner. To dismiss the image, the user can either click on the image again, scroll away, or press the ESC key.">
-            <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/candy-icons.gif"  type="MATERIALBOXED"/>
+        <widget:CodeSection sectionTitle="Material Box"
+                            description="Material box is a material design implementation of the Lightbox plugin. When a user clicks on an image that can be enlarged. Material box centers the image and enlarges it in a smooth, non-jarring manner. To dismiss the image, the user can either click on the image again, scroll away, or press the ESC key.">
+            <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/candy-icons.gif"
+                             type="MATERIALBOXED"/>
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/candy-icons.gif"  type="MATERIALBOXED"/>
+                    &lt;m:MaterialImage
+                    url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/candy-icons.gif"
+                    type="MATERIALBOXED"/>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 
-        <widget:CodeSection sectionTitle="Captions" description="It is very easy to add a short caption to your photo. Just add the caption as a caption attribute.">
-            <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/md-card-ripple.gif"  type="MATERIALBOXED" caption="I love Material Design"/>
+        <widget:CodeSection sectionTitle="Captions"
+                            description="It is very easy to add a short caption to your photo. Just add the caption as a caption attribute.">
+            <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/md-card-ripple.gif"
+                             type="MATERIALBOXED" caption="I love Material Design"/>
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/md-card-ripple.gif"  type="MATERIALBOXED" caption="I love Material Design"/>
+                    &lt;m:MaterialImage
+                    url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/md-card-ripple.gif"
+                    type="MATERIALBOXED" caption="I love Material Design"/>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 
-        <widget:CodeSection sectionTitle="Responsive Videos" description="We provide a container for Embedded Videos that resizes them responsively.">
+        <widget:CodeSection sectionTitle="Responsive Videos"
+                            description="We provide a container for Embedded Videos that resizes them responsively.">
             <m:MaterialVideo url="https://www.youtube.com/embed/Q8TXgCzxEnw?rel=0"/>
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialVideo url="https://www.youtube.com/embed/Q8TXgCzxEnw?rel=0"/>
+                    &lt;m:MaterialVideo url="https://www.youtube.com/embed/Q8TXgCzxEnw?rel=0"/>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
 
-        <widget:CodeSection sectionTitle="Material Slider" description="Our slider is a simple and elegant image carousel. You can also have captions that will be transitioned on their own depending on their alignment. You can also have indicators that show up on the bottom of the slider. Note: This is also Hammer.js compatible! Try swiping with your finger to scroll through the slider.">
+        <widget:CodeSection sectionTitle="Material Slider"
+                            description="Our slider is a simple and elegant image carousel. You can also have captions that will be transitioned on their own depending on their alignment. You can also have indicators that show up on the bottom of the slider. Note: This is also Hammer.js compatible! Try swiping with your finger to scroll through the slider.">
             <m:MaterialSlider ui:field="slider" fullscreen="false">
                 <m:MaterialSlideItem>
                     <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/blue.jpg"/>
@@ -82,39 +92,41 @@
             </m:MaterialSlider>
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialSlider ui:field="slider" fullscreen="false">
-        &lt;m:MaterialSlideItem>
-            &lt;m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/blue.jpg"/>
-            &lt;m:MaterialSlideCaption textAlign="CENTER">
-                &lt;m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
-            &lt;/m:MaterialSlideCaption>
-        &lt;/m:MaterialSlideItem>
+                    &lt;m:MaterialSlider ui:field="slider" fullscreen="false">
+                    &lt;m:MaterialSlideItem>
+                    &lt;m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/blue.jpg"/>
+                    &lt;m:MaterialSlideCaption textAlign="CENTER">
+                    &lt;m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
+                    &lt;/m:MaterialSlideCaption>
+                    &lt;/m:MaterialSlideItem>
 
-        &lt;m:MaterialSlideItem>
-            &lt;m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/grey.jpg"/>
-            &lt;m:MaterialSlideCaption textAlign="LEFT">
-                &lt;m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
-            &lt;/m:MaterialSlideCaption>
-        &lt;/m:MaterialSlideItem>
+                    &lt;m:MaterialSlideItem>
+                    &lt;m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/grey.jpg"/>
+                    &lt;m:MaterialSlideCaption textAlign="LEFT">
+                    &lt;m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
+                    &lt;/m:MaterialSlideCaption>
+                    &lt;/m:MaterialSlideItem>
 
-        &lt;m:MaterialSlideItem>
-            &lt;m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/light-blue.jpg"/>
-            &lt;m:MaterialSlideCaption textAlign="RIGHT">
-                &lt;m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
-            &lt;/m:MaterialSlideCaption>
-        &lt;/m:MaterialSlideItem>
+                    &lt;m:MaterialSlideItem>
+                    &lt;m:MaterialImage
+                    url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/light-blue.jpg"/>
+                    &lt;m:MaterialSlideCaption textAlign="RIGHT">
+                    &lt;m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
+                    &lt;/m:MaterialSlideCaption>
+                    &lt;/m:MaterialSlideItem>
 
-        &lt;m:MaterialSlideItem>
-            &lt;m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/pink.jpg"/>
-            &lt;m:MaterialSlideCaption textAlign="CENTER">
-                &lt;m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
-            &lt;/m:MaterialSlideCaption>
-        &lt;/m:MaterialSlideItem>
-    &lt;/m:MaterialSlider>
+                    &lt;m:MaterialSlideItem>
+                    &lt;m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/pink.jpg"/>
+                    &lt;m:MaterialSlideCaption textAlign="CENTER">
+                    &lt;m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
+                    &lt;/m:MaterialSlideCaption>
+                    &lt;/m:MaterialSlideItem>
+                    &lt;/m:MaterialSlider>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
-        <widget:CodeSection sectionTitle="Options" description="You can set the duration / interval in milliseconds of Material Slider easily.">
+        <widget:CodeSection sectionTitle="Options"
+                            description="You can set the duration / interval in milliseconds of Material Slider easily.">
             <m:MaterialSlider ui:field="optionSlider" duration="300" interval="1000">
                 <m:MaterialSlideItem>
                     <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/blue.jpg"/>
@@ -145,23 +157,24 @@
                 </m:MaterialSlideItem>
             </m:MaterialSlider>
 
-            <m:MaterialButton text="START" ui:field="start" />
-            <m:MaterialButton text="PAUSE" ui:field="pause" type="FLAT" waves="DEFAULT" />
+            <m:MaterialButton text="START" ui:field="start"/>
+            <m:MaterialButton text="PAUSE" ui:field="pause" type="FLAT" waves="DEFAULT"/>
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialSlider duration="300" interval="1000">
-        .....
-    &lt;/m:MaterialSlider>
+                    &lt;m:MaterialSlider duration="300" interval="1000">
+                    .....
+                    &lt;/m:MaterialSlider>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>
-        <widget:CodeSection sectionTitle="Basic"  description="You can easily add placeholder to indicate a label into your datepicker.">
-            <m:MaterialButton ui:field="fullscreenBtn" text="Fullscreen Slider" waves="LIGHT" iconType="FULLSCREEN" />
+        <widget:CodeSection sectionTitle="Basic"
+                            description="You can easily add placeholder to indicate a label into your datepicker.">
+            <m:MaterialButton ui:field="fullscreenBtn" text="Fullscreen Slider" waves="LIGHT" iconType="FULLSCREEN"/>
             <g:HTMLPanel>
                 <pre class="xml">
-    &lt;m:MaterialSlider fullscreen="true">
-        .....
-    &lt;/m:MaterialSlider>
+                    &lt;m:MaterialSlider fullscreen="true">
+                    .....
+                    &lt;/m:MaterialSlider>
                 </pre>
             </g:HTMLPanel>
         </widget:CodeSection>

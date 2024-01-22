@@ -25,6 +25,6 @@ public class RadioButtonModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
         bindPresenter(RadioButtonPresenter.class, RadioButtonPresenter.MyView.class, RadioButtonView.class,
-                RadioButtonPresenter.MyProxy.class);
+            RadioButtonPresenter.MyProxy.class);
     }
 }

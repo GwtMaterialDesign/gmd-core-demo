@@ -9,9 +9,9 @@ package gmd.core.demo.client.application.model;
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -27,9 +27,9 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-public class UserOracle extends MaterialSuggestionOracle{
+public class UserOracle extends MaterialSuggestionOracle {
 
-    private List<User> contacts = new LinkedList<>();
+    private final List<User> contacts = new LinkedList<>();
 
     public void addContacts(List<User> users) {
         contacts.addAll(users);
@@ -38,7 +38,7 @@ public class UserOracle extends MaterialSuggestionOracle{
     @Override
     public void requestSuggestions(Request request, Callback callback) {
         Response resp = new Response();
-        if(contacts.isEmpty()){
+        if (contacts.isEmpty()) {
             callback.onSuggestionsReady(request, resp);
             return;
         }
@@ -47,8 +47,8 @@ public class UserOracle extends MaterialSuggestionOracle{
 
         List<UserSuggestion> list = new ArrayList<>();
 
-        for(User contact : contacts){
-            if(contact.getName().toLowerCase().contains(text)){
+        for (User contact : contacts) {
+            if (contact.getName().toLowerCase().contains(text)) {
                 list.add(new UserSuggestion(contact));
             }
         }

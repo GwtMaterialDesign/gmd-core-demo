@@ -25,6 +25,6 @@ public class ColorModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
         bindPresenter(ColorPresenter.class, ColorPresenter.MyView.class, ColorView.class,
-                ColorPresenter.MyProxy.class);
+            ColorPresenter.MyProxy.class);
     }
 }
