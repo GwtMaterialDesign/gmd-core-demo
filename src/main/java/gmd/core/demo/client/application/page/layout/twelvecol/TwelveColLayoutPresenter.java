@@ -17,7 +17,7 @@
  * limitations under the License.
  * #L%
  */
-package gmd.core.demo.client.application.page.layout;
+package gmd.core.demo.client.application.page.layout.twelvecol;
 
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
@@ -30,17 +30,17 @@ import gmd.core.demo.client.application.ApplicationPresenter;
 import gmd.core.demo.client.application.page.AppPresenter;
 import gmd.core.demo.client.place.NameTokens;
 
-public class LayoutPresenter extends AppPresenter<LayoutPresenter.MyView, LayoutPresenter.MyProxy> {
+public class TwelveColLayoutPresenter extends AppPresenter<TwelveColLayoutPresenter.MyView, TwelveColLayoutPresenter.MyProxy> {
     interface MyView extends View {
     }
 
     @ProxyStandard
-    @NameToken(NameTokens.LAYOUT)
-    interface MyProxy extends ProxyPlace<LayoutPresenter> {
+    @NameToken(NameTokens.TWELEVE_COL_LAYOUT)
+    interface MyProxy extends ProxyPlace<TwelveColLayoutPresenter> {
     }
 
     @Inject
-    LayoutPresenter(
+    TwelveColLayoutPresenter(
             EventBus eventBus,
             MyView view,
             MyProxy proxy,

@@ -38,7 +38,8 @@ public class NameTokens {
     public static final String FAB = "fab";
     public static final String FOOTER = "footer";
     public static final String ICON = "icon";
-    public static final String LAYOUT = "layout";
+    public static final String TWELEVE_COL_LAYOUT = "twelveColLayout";
+    public static final String GRID_LAYOUT = "gridLayout";
     public static final String LOADERS = "loaders";
     public static final String LISTBOX = "listbox";
     public static final String MEDIA = "media";

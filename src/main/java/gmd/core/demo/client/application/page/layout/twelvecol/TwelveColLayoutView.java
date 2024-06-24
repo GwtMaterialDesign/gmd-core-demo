@@ -17,7 +17,7 @@
  * limitations under the License.
  * #L%
  */
-package gmd.core.demo.client.application.page.layout;
+package gmd.core.demo.client.application.page.layout.twelvecol;
 
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -33,14 +33,13 @@ import gwt.material.design.client.constants.IconType;
 import gwt.material.design.client.constants.OffsetPosition;
 import gwt.material.design.client.ui.MaterialLink;
 import gwt.material.design.client.ui.MaterialPanel;
-import gwt.material.design.client.ui.MaterialRow;
 
 import javax.inject.Inject;
 
 import static gwt.material.design.jquery.client.api.JQuery.$;
 
-public class LayoutView extends ViewImpl implements LayoutPresenter.MyView {
-    interface Binder extends UiBinder<Widget, LayoutView> {
+public class TwelveColLayoutView extends ViewImpl implements TwelveColLayoutPresenter.MyView {
+    interface Binder extends UiBinder<Widget, TwelveColLayoutView> {
     }
 
     @UiField
@@ -61,7 +60,7 @@ public class LayoutView extends ViewImpl implements LayoutPresenter.MyView {
     protected ScrollHelper scrollHelper = new ScrollHelper();
 
     @Inject
-    LayoutView(Binder uiBinder) {
+    TwelveColLayoutView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
 

@@ -17,14 +17,14 @@
  * limitations under the License.
  * #L%
  */
-package gmd.core.demo.client.application.page.layout;
+package gmd.core.demo.client.application.page.layout.twelvecol;
 
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
-public class LayoutModule extends AbstractPresenterModule {
+public class TwelveColLayoutModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
-        bindPresenter(LayoutPresenter.class, LayoutPresenter.MyView.class, LayoutView.class,
-                LayoutPresenter.MyProxy.class);
+        bindPresenter(TwelveColLayoutPresenter.class, TwelveColLayoutPresenter.MyView.class, TwelveColLayoutView.class,
+                TwelveColLayoutPresenter.MyProxy.class);
     }
 }
